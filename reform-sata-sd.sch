@@ -1,0 +1,284 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:DF40C-100DS-0.4V_51_
+LIBS:5622-4100-ML
+LIBS:mpcie
+LIBS:TPS54616PWPR
+LIBS:conn_hdmi
+LIBS:J0G-0003NL
+LIBS:reform-motherboard-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Micro_SD_Card_Det J4
+U 1 1 59F3B502
+P 2650 2700
+F 0 "J4" H 2000 3400 50  0000 C CNN
+F 1 "Micro_SD_Card_Det" H 3300 3400 50  0000 R CNN
+F 2 "Connect:microSD_Card_Receptacle_Wuerth_693072010801" H 4700 3400 50  0001 C CNN
+F 3 "" H 2650 2800 50  0001 C CNN
+	1    2650 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 5622-4100-ML P1
+U 1 1 59F3B793
+P 5450 3200
+F 0 "P1" H 5150 4421 50  0000 L BNN
+F 1 "5622-4100-ML" H 5150 1898 50  0000 L BNN
+F 2 "5622-4100-ML:3M_5622-4100-ML" H 5450 3200 50  0001 L BNN
+F 3 "5622-4100-ML" H 5450 3200 50  0001 L BNN
+F 4 "2.22 USD" H 5450 3200 50  0001 L BNN "Price"
+F 5 "3M" H 5450 3200 50  0001 L BNN "MF"
+F 6 "None" H 5450 3200 50  0001 L BNN "Package"
+F 7 "Conn SATA PL 15Power/7Signal POS 1.27mm Solder RA Thru-Hole 22 Terminal 1 Port" H 5450 3200 50  0001 L BNN "Description"
+F 8 "Good" H 5450 3200 50  0001 L BNN "Availability"
+	1    5450 3200
+	1    0    0    -1  
+$EndComp
+Text GLabel 4950 2500 0    60   Output ~ 0
+SATA_RX_N
+Text GLabel 4950 2600 0    60   Output ~ 0
+SATA_RX_P
+Text GLabel 4950 2200 0    60   Input ~ 0
+SATA_TX_P
+Text GLabel 4950 2300 0    60   Input ~ 0
+SATA_TX_N
+$Comp
+L GND #PWR057
+U 1 1 59F3BAAB
+P 4950 2100
+F 0 "#PWR057" H 4950 1850 50  0001 C CNN
+F 1 "GND" H 4950 1950 50  0000 C CNN
+F 2 "" H 4950 2100 50  0001 C CNN
+F 3 "" H 4950 2100 50  0001 C CNN
+	1    4950 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR058
+U 1 1 59F3BACB
+P 4950 2400
+F 0 "#PWR058" H 4950 2150 50  0001 C CNN
+F 1 "GND" H 4950 2250 50  0000 C CNN
+F 2 "" H 4950 2400 50  0001 C CNN
+F 3 "" H 4950 2400 50  0001 C CNN
+	1    4950 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR059
+U 1 1 59F3BADC
+P 4950 2700
+F 0 "#PWR059" H 4950 2450 50  0001 C CNN
+F 1 "GND" H 4950 2550 50  0000 C CNN
+F 2 "" H 4950 2700 50  0001 C CNN
+F 3 "" H 4950 2700 50  0001 C CNN
+	1    4950 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR060
+U 1 1 59F3BAFB
+P 4950 3300
+F 0 "#PWR060" H 4950 3050 50  0001 C CNN
+F 1 "GND" H 4950 3150 50  0000 C CNN
+F 2 "" H 4950 3300 50  0001 C CNN
+F 3 "" H 4950 3300 50  0001 C CNN
+	1    4950 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 3200 4950 3400
+Connection ~ 4950 3300
+$Comp
+L GND #PWR061
+U 1 1 59F3BB16
+P 4950 3800
+F 0 "#PWR061" H 4950 3550 50  0001 C CNN
+F 1 "GND" H 4950 3650 50  0000 C CNN
+F 2 "" H 4950 3800 50  0001 C CNN
+F 3 "" H 4950 3800 50  0001 C CNN
+	1    4950 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR062
+U 1 1 59F3BB27
+P 4950 4000
+F 0 "#PWR062" H 4950 3750 50  0001 C CNN
+F 1 "GND" H 4950 3850 50  0000 C CNN
+F 2 "" H 4950 4000 50  0001 C CNN
+F 3 "" H 4950 4000 50  0001 C CNN
+	1    4950 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L +3V3 #PWR063
+U 1 1 59F3BD2D
+P 4950 3000
+F 0 "#PWR063" H 4950 2850 50  0001 C CNN
+F 1 "+3V3" H 4950 3140 50  0000 C CNN
+F 2 "" H 4950 3000 50  0001 C CNN
+F 3 "" H 4950 3000 50  0001 C CNN
+	1    4950 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 2900 4950 3100
+Connection ~ 4950 3000
+$Comp
+L +5V #PWR064
+U 1 1 59F3BD57
+P 4950 3600
+F 0 "#PWR064" H 4950 3450 50  0001 C CNN
+F 1 "+5V" H 4950 3740 50  0000 C CNN
+F 2 "" H 4950 3600 50  0001 C CNN
+F 3 "" H 4950 3600 50  0001 C CNN
+	1    4950 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 3500 4950 3700
+Connection ~ 4950 3600
+Text GLabel 1750 2900 0    60   BiDi ~ 0
+SD3_DATA0
+Text GLabel 1750 3000 0    60   BiDi ~ 0
+SD3_DATA1
+Text GLabel 1750 2300 0    60   BiDi ~ 0
+SD3_DATA2
+Text GLabel 1750 2400 0    60   BiDi ~ 0
+SD3_DATA3
+Text GLabel 1650 3550 0    60   BiDi ~ 0
+SD3_WP
+Text GLabel 1750 3100 0    60   Input ~ 0
+SD3_CD
+Text GLabel 1750 2500 0    60   BiDi ~ 0
+SD3_CMD
+Text GLabel 1750 2700 0    60   Output ~ 0
+SD3_CLK
+$Comp
+L GND #PWR065
+U 1 1 59F3C8F9
+P 1750 3850
+F 0 "#PWR065" H 1750 3600 50  0001 C CNN
+F 1 "GND" H 1750 3700 50  0000 C CNN
+F 2 "" H 1750 3850 50  0001 C CNN
+F 3 "" H 1750 3850 50  0001 C CNN
+	1    1750 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 59F3C913
+P 1750 3700
+F 0 "R1" V 1830 3700 50  0000 C CNN
+F 1 "0" V 1750 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1680 3700 50  0001 C CNN
+F 3 "" H 1750 3700 50  0001 C CNN
+	1    1750 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 3550 1650 3550
+$Comp
+L GND #PWR066
+U 1 1 59F3CBCC
+P 3450 3200
+F 0 "#PWR066" H 3450 2950 50  0001 C CNN
+F 1 "GND" H 3450 3050 50  0000 C CNN
+F 2 "" H 3450 3200 50  0001 C CNN
+F 3 "" H 3450 3200 50  0001 C CNN
+	1    3450 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR067
+U 1 1 59F3CDDC
+P 800 2600
+F 0 "#PWR067" H 800 2450 50  0001 C CNN
+F 1 "+3V3" H 800 2740 50  0000 C CNN
+F 2 "" H 800 2600 50  0001 C CNN
+F 3 "" H 800 2600 50  0001 C CNN
+	1    800  2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C1
+U 1 1 59F3CE15
+P 800 2700
+F 0 "C1" H 810 2770 50  0000 L CNN
+F 1 "100nF" H 810 2620 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 800 2700 50  0001 C CNN
+F 3 "" H 800 2700 50  0001 C CNN
+	1    800  2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR068
+U 1 1 59F3CE96
+P 800 2800
+F 0 "#PWR068" H 800 2550 50  0001 C CNN
+F 1 "GND" H 800 2650 50  0000 C CNN
+F 2 "" H 800 2800 50  0001 C CNN
+F 3 "" H 800 2800 50  0001 C CNN
+	1    800  2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2600 800  2600
+$Comp
+L GND #PWR069
+U 1 1 59F3D112
+P 1750 2800
+F 0 "#PWR069" H 1750 2550 50  0001 C CNN
+F 1 "GND" H 1750 2650 50  0000 C CNN
+F 2 "" H 1750 2800 50  0001 C CNN
+F 3 "" H 1750 2800 50  0001 C CNN
+	1    1750 2800
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC

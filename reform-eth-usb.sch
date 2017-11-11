@@ -1,0 +1,246 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:DF40C-100DS-0.4V_51_
+LIBS:5622-4100-ML
+LIBS:mpcie
+LIBS:TPS54616PWPR
+LIBS:conn_hdmi
+LIBS:J0G-0003NL
+LIBS:reform-motherboard-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L USB_A J5
+U 1 1 5A02373C
+P 2800 3850
+F 0 "J5" H 2600 4300 50  0000 L CNN
+F 1 "USB_A" H 2600 4200 50  0000 L CNN
+F 2 "Connect:USB_A" H 2950 3800 50  0001 C CNN
+F 3 "" H 2950 3800 50  0001 C CNN
+	1    2800 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_A J7
+U 1 1 5A0237A7
+P 3550 3850
+F 0 "J7" H 3350 4300 50  0000 L CNN
+F 1 "USB_A" H 3350 4200 50  0000 L CNN
+F 2 "Connect:USB_A" H 3700 3800 50  0001 C CNN
+F 3 "" H 3700 3800 50  0001 C CNN
+	1    3550 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_A J9
+U 1 1 5A023813
+P 4250 3850
+F 0 "J9" H 4050 4300 50  0000 L CNN
+F 1 "USB_A" H 4050 4200 50  0000 L CNN
+F 2 "Connect:USB_A" H 4400 3800 50  0001 C CNN
+F 3 "" H 4400 3800 50  0001 C CNN
+	1    4250 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Audio-Jack-3 J6
+U 1 1 5A023B3B
+P 2800 4800
+F 0 "J6" H 2750 4975 50  0000 C CNN
+F 1 "Audio-Jack-3" H 2900 4730 50  0000 C CNN
+F 2 "Connect:PJ320D_3.5mm_Jack" H 3050 4900 50  0001 C CNN
+F 3 "" H 3050 4900 50  0001 C CNN
+	1    2800 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR094
+U 1 1 5A0241FD
+P 2800 4250
+F 0 "#PWR094" H 2800 4000 50  0001 C CNN
+F 1 "GND" H 2800 4100 50  0000 C CNN
+F 2 "" H 2800 4250 50  0001 C CNN
+F 3 "" H 2800 4250 50  0001 C CNN
+	1    2800 4250
+	1    0    0    -1  
+$EndComp
+Connection ~ 3550 4250
+Connection ~ 4150 4250
+Connection ~ 2800 4250
+Connection ~ 3450 4250
+Wire Wire Line
+	2700 4250 4250 4250
+$Comp
+L J0G-0003NL P2
+U 1 1 5A04FC73
+P 7150 3550
+F 0 "P2" H 6346 5711 50  0000 L BNN
+F 1 "J0G-0003NL" H 6347 1241 50  0000 L BNN
+F 2 "J0G-0003NL:PULSE_J0G-0003NL" H 7150 3550 50  0001 L BNN
+F 3 "Conn RJ-45 Integrated Magnetics F 8 POS 2.03mm Solder RA Thru-Hole 17 Terminal 1 Port" H 7150 3550 50  0001 L BNN
+F 4 "Pulse" H 7150 3550 50  0001 L BNN "MF"
+F 5 "Good" H 7150 3550 50  0001 L BNN "Availability"
+F 6 "7.33 USD" H 7150 3550 50  0001 L BNN "Price"
+F 7 "J0G-0003NL" H 7150 3550 50  0001 L BNN "MP"
+F 8 "None" H 7150 3550 50  0001 L BNN "Package"
+	1    7150 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR095
+U 1 1 5A04FD4C
+P 5250 4650
+F 0 "#PWR095" H 5250 4500 50  0001 C CNN
+F 1 "+3V3" H 5250 4790 50  0000 C CNN
+F 2 "" H 5250 4650 50  0001 C CNN
+F 3 "" H 5250 4650 50  0001 C CNN
+	1    5250 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 4750 6150 4750
+Wire Wire Line
+	5250 4650 5250 5350
+Wire Wire Line
+	5250 5350 6150 5350
+Connection ~ 5250 4750
+$Comp
+L C_Small C13
+U 1 1 5A04FD85
+P 5000 4900
+F 0 "C13" H 5010 4970 50  0000 L CNN
+F 1 "100n" H 5010 4820 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5000 4900 50  0001 C CNN
+F 3 "" H 5000 4900 50  0001 C CNN
+	1    5000 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR096
+U 1 1 5A04FDB4
+P 5000 5000
+F 0 "#PWR096" H 5000 4750 50  0001 C CNN
+F 1 "GND" H 5000 4850 50  0000 C CNN
+F 2 "" H 5000 5000 50  0001 C CNN
+F 3 "" H 5000 5000 50  0001 C CNN
+	1    5000 5000
+	1    0    0    -1  
+$EndComp
+Text GLabel 6150 2950 0    60   BiDi ~ 0
+TRD2_N
+Text GLabel 6150 2350 0    60   BiDi ~ 0
+TRD2_P
+Text GLabel 6150 2150 0    60   BiDi ~ 0
+TRD3_N
+Text GLabel 6150 1550 0    60   BiDi ~ 0
+TRD3_P
+Text GLabel 6150 4950 0    60   Output ~ 0
+ENET_LED_LINK
+Text GLabel 6150 5550 0    60   Output ~ 0
+ENET_LED_RX
+Wire Wire Line
+	5000 4800 5000 4750
+Text GLabel 6150 4550 0    60   BiDi ~ 0
+TRD0_N
+Text GLabel 6150 3950 0    60   BiDi ~ 0
+TRD0_P
+Text GLabel 6150 3750 0    60   BiDi ~ 0
+TRD1_N
+Text GLabel 6150 3150 0    60   BiDi ~ 0
+TRD1_P
+$Comp
+L C_Small C14
+U 1 1 5A05122D
+P 5450 1950
+F 0 "C14" H 5460 2020 50  0000 L CNN
+F 1 "100n" H 5460 1870 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5450 1950 50  0001 C CNN
+F 3 "" H 5450 1950 50  0001 C CNN
+	1    5450 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 1850 6150 1850
+$Comp
+L C_Small C15
+U 1 1 5A051336
+P 5450 2750
+F 0 "C15" H 5460 2820 50  0000 L CNN
+F 1 "100n" H 5460 2670 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5450 2750 50  0001 C CNN
+F 3 "" H 5450 2750 50  0001 C CNN
+	1    5450 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C16
+U 1 1 5A0513CA
+P 5450 3550
+F 0 "C16" H 5460 3620 50  0000 L CNN
+F 1 "100n" H 5460 3470 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5450 3550 50  0001 C CNN
+F 3 "" H 5450 3550 50  0001 C CNN
+	1    5450 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C17
+U 1 1 5A05141B
+P 5450 4350
+F 0 "C17" H 5460 4420 50  0000 L CNN
+F 1 "100n" H 5460 4270 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5450 4350 50  0001 C CNN
+F 3 "" H 5450 4350 50  0001 C CNN
+	1    5450 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4250 5450 4250
+Wire Wire Line
+	5450 3450 6150 3450
+Wire Wire Line
+	6150 2650 5450 2650
+$EndSCHEMATC
