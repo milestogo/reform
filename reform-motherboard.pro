@@ -1,4 +1,4 @@
-update=Thu 09 Nov 2017 07:16:44 PM CET
+update=Sat 18 Nov 2017 04:39:21 PM CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -37,7 +37,7 @@ SpiceUseNetNumbers=0
 LabSize=60
 [eeschema]
 version=1
-LibDir=../DF40C-100DS-0.4V_51_;../5622-4100-ML;../kicad-mini-pci-express-master;../TPS54616PWPR;../../trex-slim;../J0G-0003NL
+LibDir=../DF40C-100DS-0.4V_51_;../5622-4100-ML;../kicad-mini-pci-express-master;../TPS54616PWPR;../../trex-slim;../J0G-0003NL;../TUSB4041IPAPR;../TPS61235RWLR;../AP1501A-33K5G-13;../TPS74801DRCR;../MCP73123T-22SI_MF;../SGTL5000XNAA3;../CM2020-00TR
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -77,3 +77,10 @@ LibName35=/home/mntmn/code/mnt-computer/trex-slim/kicad-mini-pci-express-master/
 LibName36=TPS54616PWPR
 LibName37=/home/mntmn/code/mnt-computer/trex-slim/conn_hdmi
 LibName38=J0G-0003NL/J0G-0003NL
+LibName39=TUSB4041IPAPR/TUSB4041IPAPR
+LibName40=TPS61235RWLR/TPS61235RWLR
+LibName41=AP1501A-33K5G-13/AP1501A-33K5G-13
+LibName42=TPS74801DRCR/TPS74801DRCR
+LibName43=MCP73123T-22SI_MF/MCP73123T-22SI_MF
+LibName44=SGTL5000XNAA3/SGTL5000XNAA3
+LibName45=CM2020-00TR/CM2020-00TR
