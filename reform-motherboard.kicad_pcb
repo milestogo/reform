@@ -1728,6 +1728,11 @@
       (net 47 "Net-(J1-Pad99)"))
     (pad 100 smd rect (at 9.8 1.54) (size 0.2 0.7) (layers F.Cu F.Paste F.Mask)
       (net 48 "Net-(J1-Pad100)"))
+    (model /media/storage2/kicad-packages3D-master/Connectors_Hirose.3dshapes/DF40C-100DS.wrl
+      (at (xyz 0 -0.03 0.03))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module "df40c-100ds-0:HRS_DF40C-100DS-0.4V(51)" (layer F.Cu) (tedit 5A020767) (tstamp 5A020A63)
@@ -2063,6 +2068,11 @@
       (net 112 "Net-(J2-Pad99)"))
     (pad 100 smd rect (at 9.8 1.54 90) (size 0.2 0.7) (layers F.Cu F.Paste F.Mask)
       (net 113 "Net-(J2-Pad100)"))
+    (model /media/storage2/kicad-packages3D-master/Connectors_Hirose.3dshapes/DF40C-100DS.wrl
+      (at (xyz 0 -0.03 0.03))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module "df40c-100ds-0:HRS_DF40C-100DS-0.4V(51)" (layer F.Cu) (tedit 5A02076A) (tstamp 5A020ACA)
@@ -2399,6 +2409,11 @@
       (net 185 "Net-(J3-Pad99)"))
     (pad 100 smd rect (at 9.8 1.54) (size 0.2 0.7) (layers F.Cu F.Paste F.Mask)
       (net 186 "Net-(J3-Pad100)"))
+    (model /media/storage2/kicad-packages3D-master/Connectors_Hirose.3dshapes/DF40C-100DS.wrl
+      (at (xyz 0 -0.03 0.03))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module 5622-4100-ML:3M_5622-4100-ML (layer F.Cu) (tedit 0) (tstamp 5A020B31)
