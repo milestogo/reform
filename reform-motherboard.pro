@@ -1,4 +1,4 @@
-update=Tue 21 Nov 2017 11:04:56 PM CET
+update=Thu 23 Nov 2017 03:18:56 PM CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -20,9 +20,6 @@ SolderMaskMinWidth=0.000000000000
 DrawSegmentWidth=0.200000000000
 BoardOutlineThickness=0.100000000000
 ModuleOutlineThickness=0.150000000000
-[cvpcb]
-version=1
-NetIExt=net
 [general]
 version=1
 [schematic_editor]
@@ -87,3 +84,6 @@ LibName45=CM2020-00TR/CM2020-00TR
 LibName46=INA260AIPW/INA260AIPW
 LibName47=SN74LVC1G14DBVR/SN74LVC1G14DBVR
 LibName48=SN74LVC1G08DCKR/SN74LVC1G08DCKR
+[cvpcb]
+version=1
+NetIExt=net
