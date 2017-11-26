@@ -47,6 +47,7 @@ LIBS:CM2020-00TR
 LIBS:INA260AIPW
 LIBS:SN74LVC1G14DBVR
 LIBS:SN74LVC1G08DCKR
+LIBS:693072010801
 LIBS:reform-motherboard-cache
 EELAYER 25 0
 EELAYER END
@@ -545,7 +546,7 @@ L C_Small C11
 U 1 1 5A048D1E
 P 4200 6200
 F 0 "C11" H 4210 6270 50  0000 L CNN
-F 1 "100nF" H 4210 6120 50  0000 L CNN
+F 1 "0.1uF" H 4210 6120 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4200 6200 50  0001 C CNN
 F 3 "" H 4200 6200 50  0001 C CNN
 	1    4200 6200
@@ -845,7 +846,7 @@ U 1 1 5A04B860
 P 7700 1100
 F 0 "J10" H 7700 1370 50  0000 C CNN
 F 1 "TEST_PMIC_ON" H 7700 1300 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 7900 1100 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 7900 1100 50  0001 C CNN
 F 3 "" H 7900 1100 50  0001 C CNN
 	1    7700 1100
 	0    1    1    0   
@@ -858,7 +859,7 @@ U 1 1 5A04B954
 P 7900 1200
 F 0 "J11" H 7900 1470 50  0000 C CNN
 F 1 "TEST_ON" H 7900 1400 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 8100 1200 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 8100 1200 50  0001 C CNN
 F 3 "" H 8100 1200 50  0001 C CNN
 	1    7900 1200
 	0    1    1    0   
@@ -1147,7 +1148,7 @@ U 1 1 5A1692B9
 P 7750 4400
 F 0 "TP4" H 7750 4700 50  0000 C BNN
 F 1 "TEST_USB1PWR" H 7750 4650 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 7750 4400 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 7750 4400 50  0001 C CNN
 F 3 "" H 7750 4400 50  0001 C CNN
 	1    7750 4400
 	0    1    1    0   
@@ -1158,7 +1159,7 @@ U 1 1 5A169305
 P 8000 4500
 F 0 "TP10" H 8000 4800 50  0000 C BNN
 F 1 "TEST_USB0PWR" H 8000 4750 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 8000 4500 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 8000 4500 50  0001 C CNN
 F 3 "" H 8000 4500 50  0001 C CNN
 	1    8000 4500
 	0    1    1    0   
@@ -1380,7 +1381,7 @@ U 1 1 5A17B33B
 P 5250 7450
 F 0 "MH5" H 5250 7750 50  0000 C BNN
 F 1 "ModuleMount" H 5250 7700 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_2.2mm_M2_Pad" H 5250 7450 50  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_2.2mm_M2" H 5250 7450 50  0001 C CNN
 F 3 "" H 5250 7450 50  0001 C CNN
 	1    5250 7450
 	1    0    0    -1  
@@ -1391,7 +1392,7 @@ U 1 1 5A17B341
 P 5800 7450
 F 0 "MH6" H 5800 7750 50  0000 C BNN
 F 1 "ModuleMount" H 5800 7700 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_2.2mm_M2_Pad" H 5800 7450 50  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_2.2mm_M2" H 5800 7450 50  0001 C CNN
 F 3 "" H 5800 7450 50  0001 C CNN
 	1    5800 7450
 	1    0    0    -1  
