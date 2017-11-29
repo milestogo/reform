@@ -1,4 +1,4 @@
-update=Fri 24 Nov 2017 03:26:12 PM CET
+update=Wed 29 Nov 2017 02:47:47 PM CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -37,7 +37,7 @@ SpiceUseNetNumbers=0
 LabSize=60
 [eeschema]
 version=1
-LibDir=../DF40C-100DS-0.4V_51_;../5622-4100-ML;../kicad-mini-pci-express-master;../TPS54616PWPR;../../trex-slim;../J0G-0003NL;../TUSB4041IPAPR;../TPS61235RWLR;../AP1501A-33K5G-13;../TPS74801DRCR;../MCP73123T-22SI_MF;../SGTL5000XNAA3;../CM2020-00TR;/home/mntmn/code/mnt-computer/trex-slim/INA260AIPW;/home/mntmn/code/mnt-computer/trex-slim/SN74LVC1G14DBVR;/home/mntmn/code/mnt-computer/trex-slim/SN74LVC1G08DCKR;../693072010801
+LibDir=../DF40C-100DS-0.4V_51_;../5622-4100-ML;../kicad-mini-pci-express-master;../TPS54616PWPR;../../trex-slim;../J0G-0003NL;../TUSB4041IPAPR;../TPS61235RWLR;../AP1501A-33K5G-13;../TPS74801DRCR;../MCP73123T-22SI_MF;../SGTL5000XNAA3;../CM2020-00TR;/home/mntmn/code/mnt-computer/trex-slim/INA260AIPW;/home/mntmn/code/mnt-computer/trex-slim/SN74LVC1G14DBVR;/home/mntmn/code/mnt-computer/trex-slim/SN74LVC1G08DCKR;../693072010801;../67910-5700;../48099-5701
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -88,3 +88,5 @@ LibName46=INA260AIPW/INA260AIPW
 LibName47=SN74LVC1G14DBVR/SN74LVC1G14DBVR
 LibName48=SN74LVC1G08DCKR/SN74LVC1G08DCKR
 LibName49=693072010801/693072010801
+LibName50=48099-5701/48099-5701
+LibName51=67910-5700/67910-5700
