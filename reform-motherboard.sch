@@ -31,11 +31,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:DF40C-100DS-0.4V_51_
-LIBS:5622-4100-ML
-LIBS:mpcie
-LIBS:TPS54616PWPR
-LIBS:conn_hdmi
 LIBS:J0G-0003NL
 LIBS:TUSB4041IPAPR
 LIBS:TPS61235RWLR
@@ -50,6 +45,15 @@ LIBS:SN74LVC1G08DCKR
 LIBS:693072010801
 LIBS:48099-5701
 LIBS:67910-5700
+LIBS:DF40C-100DS-0.4V_51_
+LIBS:5622-4100-ML
+LIBS:TUSB2046BVFR
+LIBS:TPS2044BDR
+LIBS:LP3962EMP-2.5
+LIBS:M74VHC1GT00DTT1G
+LIBS:LTC4415IMSEPBF
+LIBS:INA220AIDGST
+LIBS:LTC4156IUFDPBF
 LIBS:reform-motherboard-cache
 EELAYER 25 0
 EELAYER END
@@ -57,13 +61,13 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 7
 Title "MNT Reform Baseboard for i.MX6 TinyRex"
-Date "2017-11-21"
-Rev "1"
+Date "2018-01-02"
+Rev "0.2"
 Comp "MNT Media and Technology UG (hb)"
 Comment1 "Lukas F. Hartmann / @mntmn"
 Comment2 ""
-Comment3 "Copyright 2017 Lukas F. Hartmann / @mntmn"
-Comment4 "License: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/"
+Comment3 "Copyright 2017,2018 Lukas F. Hartmann / @mntmn"
+Comment4 "License: GPLv3 https://www.gnu.org/licenses/gpl-3.0.txt"
 $EndDescr
 $Comp
 L TinyRex-J1-DF40C J1
@@ -558,7 +562,7 @@ U 1 1 5A048D63
 P 4550 6200
 F 0 "C12" H 4560 6270 50  0000 L CNN
 F 1 "22uF" H 4560 6120 50  0000 L CNN
-F 2 "Capacitors_SMD:CP_Elec_4x5.8" H 4550 6200 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4550 6200 50  0001 C CNN
 F 3 "" H 4550 6200 50  0001 C CNN
 	1    4550 6200
 	1    0    0    -1  
