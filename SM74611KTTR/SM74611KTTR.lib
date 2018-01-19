@@ -1,0 +1,31 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# SM74611KTTR
+#
+DEF SM74611KTTR U 0 40 Y Y 1 L N
+F0 "U" -702 441 50 H V L BNN
+F1 "SM74611KTTR" -702 -559 50 H V L BNN
+F2 "TO254P1435X464-3N" 0 0 50 H I L BNN
+F3 "DIODE GEN PURP 30V 15A DDPAK" 0 0 50 H I L BNN
+F4 "Texas Instruments" 0 0 50 H I L BNN
+F5 "2.68 USD" 0 0 50 H I L BNN
+F6 "Good" 0 0 50 H I L BNN
+F7 "TO-263-3 Texas Instruments" 0 0 50 H I L BNN
+F8 "SM74611KTTR" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 16 -700 400 700 400 N
+P 2 0 0 16 700 400 700 -400 N
+P 2 0 0 16 700 -400 -700 -400 N
+P 2 0 0 16 -700 -400 -700 400 N
+X CATHODE 5 -900 -200 200 R 40 40 0 0 B 
+X ANODE 1 900 300 200 L 40 40 0 0 W 
+X ANODE1 3 900 200 200 L 40 40 0 0 W 
+X CATHODE1 2 900 100 200 L 40 40 0 0 W 
+X CATHODE2 4 900 0 200 L 40 40 0 0 W 
+ENDDRAW
+ENDDEF
+#
+# End Library

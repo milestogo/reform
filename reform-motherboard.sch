@@ -499,7 +499,7 @@ U 1 1 5A048BE3
 P 1450 5800
 F 0 "J8" H 1450 6070 50  0000 C CNN
 F 1 "TEST_3V" H 1450 6000 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 1650 5800 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 1650 5800 50  0001 C CNN
 F 3 "" H 1650 5800 50  0001 C CNN
 	1    1450 5800
 	0    -1   -1   0   
@@ -912,17 +912,6 @@ F 1 "GND" V 7300 1200 50  0000 C CNN
 F 2 "" H 7300 1400 50  0001 C CNN
 F 3 "" H 7300 1400 50  0001 C CNN
 	1    7300 1400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L GND #PWR044
-U 1 1 5A04C15A
-P 7300 2500
-F 0 "#PWR044" H 7300 2250 50  0001 C CNN
-F 1 "GND" V 7300 2300 50  0000 C CNN
-F 2 "" H 7300 2500 50  0001 C CNN
-F 3 "" H 7300 2500 50  0001 C CNN
-	1    7300 2500
 	0    -1   -1   0   
 $EndComp
 $Comp
