@@ -1738,6 +1738,98 @@ F 3 "" V 14450 2550 50  0000 C CNN
 	1    14450 2550
 	0    -1   -1   0   
 $EndComp
+$Sheet
+S 2150 9650 500  500 
+U 5A2069AE
+F0 "Reform KBD MCU" 60
+F1 "reform-kbd-mcu.sch" 60
+$EndSheet
+Text GLabel 1350 2650 0    60   Input ~ 0
+ROW1
+Text GLabel 1350 2750 0    60   Input ~ 0
+ROW2
+Text GLabel 1350 2850 0    60   Input ~ 0
+ROW3
+Text GLabel 1350 2950 0    60   Input ~ 0
+ROW4
+Text GLabel 1350 3050 0    60   Input ~ 0
+ROW5
+Text GLabel 1350 3150 0    60   Input ~ 0
+ROW6
+Text GLabel 2150 1150 1    60   Input ~ 0
+COL1
+Text GLabel 2250 1150 1    60   Input ~ 0
+COL2
+Text GLabel 2350 1150 1    60   Input ~ 0
+COL3
+Text GLabel 2450 1150 1    60   Input ~ 0
+COL4
+Text GLabel 2550 1150 1    60   Input ~ 0
+COL5
+Text GLabel 2650 1150 1    60   Input ~ 0
+COL6
+Text GLabel 2750 1150 1    60   Input ~ 0
+COL7
+Text GLabel 2850 1150 1    60   Input ~ 0
+COL8
+Text GLabel 2950 1150 1    60   Input ~ 0
+COL9
+Text GLabel 3050 1150 1    60   Input ~ 0
+COL10
+Text GLabel 3150 1150 1    60   Input ~ 0
+COL11
+Text GLabel 3250 1150 1    60   Input ~ 0
+COL12
+Text GLabel 3350 1150 1    60   Input ~ 0
+COL13
+Text GLabel 3450 1150 1    60   Input ~ 0
+COL14
+Text GLabel 3550 1150 1    60   Input ~ 0
+COL15
+$Comp
+L ML SW78
+U 1 1 5A664C9C
+P 9350 7700
+F 0 "SW78" H 9641 7821 50  0000 L CNN
+F 1 "ML" H 9641 7730 50  0000 L CNN
+F 2 "mntcomp-keyboard:cherry-ml" H 9350 7700 50  0001 C CNN
+F 3 "" H 9350 7700 50  0000 C CNN
+	1    9350 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small D78
+U 1 1 5A664CA2
+P 9350 8000
+F 0 "D78" V 9396 7932 50  0000 R CNN
+F 1 "D_Small" V 9305 7932 50  0000 R CNN
+F 2 "Diodes_SMD:D_1206" V 9350 8000 50  0001 C CNN
+F 3 "" V 9350 8000 50  0000 C CNN
+	1    9350 8000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ML SW79
+U 1 1 5A664F6B
+P 10200 7700
+F 0 "SW79" H 10491 7821 50  0000 L CNN
+F 1 "ML" H 10491 7730 50  0000 L CNN
+F 2 "mntcomp-keyboard:cherry-ml" H 10200 7700 50  0001 C CNN
+F 3 "" H 10200 7700 50  0000 C CNN
+	1    10200 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small D79
+U 1 1 5A664F71
+P 10200 8000
+F 0 "D79" V 10246 7932 50  0000 R CNN
+F 1 "D_Small" V 10155 7932 50  0000 R CNN
+F 2 "Diodes_SMD:D_1206" V 10200 8000 50  0001 C CNN
+F 3 "" V 10200 8000 50  0000 C CNN
+	1    10200 8000
+	0    -1   -1   0   
+$EndComp
 Connection ~ 2550 2650
 Connection ~ 4250 2650
 Connection ~ 5950 2650
@@ -1808,7 +1900,7 @@ Connection ~ 6800 7000
 Connection ~ 5100 7000
 Connection ~ 3400 7000
 Wire Wire Line
-	1450 8100 8500 8100
+	1450 8100 10200 8100
 Connection ~ 2550 8100
 Connection ~ 4250 8100
 Connection ~ 5950 8100
@@ -1993,7 +2085,7 @@ Wire Wire Line
 Connection ~ 8150 1550
 Connection ~ 9000 1500
 Wire Wire Line
-	9850 1450 9850 6250
+	9850 1450 9850 7350
 Connection ~ 9850 1450
 Wire Wire Line
 	10700 1400 10700 6250
@@ -2139,56 +2231,104 @@ Wire Wire Line
 Wire Wire Line
 	11550 6250 11900 6250
 Wire Wire Line
-	9000 1500 9000 6250
+	9000 1500 9000 7350
 Wire Wire Line
 	10700 6250 11050 6250
 Connection ~ 10700 5150
-$Sheet
-S 2150 9650 500  500 
-U 5A2069AE
-F0 "Reform KBD MCU" 60
-F1 "reform-kbd-mcu.sch" 60
-$EndSheet
-Text GLabel 1350 2650 0    60   Input ~ 0
-ROW1
-Text GLabel 1350 2750 0    60   Input ~ 0
-ROW2
-Text GLabel 1350 2850 0    60   Input ~ 0
-ROW3
-Text GLabel 1350 2950 0    60   Input ~ 0
-ROW4
-Text GLabel 1350 3050 0    60   Input ~ 0
-ROW5
-Text GLabel 1350 3150 0    60   Input ~ 0
-ROW6
-Text GLabel 2150 1150 1    60   Input ~ 0
-COL1
-Text GLabel 2250 1150 1    60   Input ~ 0
-COL2
-Text GLabel 2350 1150 1    60   Input ~ 0
-COL3
-Text GLabel 2450 1150 1    60   Input ~ 0
-COL4
-Text GLabel 2550 1150 1    60   Input ~ 0
-COL5
-Text GLabel 2650 1150 1    60   Input ~ 0
-COL6
-Text GLabel 2750 1150 1    60   Input ~ 0
-COL7
-Text GLabel 2850 1150 1    60   Input ~ 0
-COL8
-Text GLabel 2950 1150 1    60   Input ~ 0
-COL9
-Text GLabel 3050 1150 1    60   Input ~ 0
-COL10
-Text GLabel 3150 1150 1    60   Input ~ 0
-COL11
-Text GLabel 3250 1150 1    60   Input ~ 0
-COL12
-Text GLabel 3350 1150 1    60   Input ~ 0
-COL13
-Text GLabel 3450 1150 1    60   Input ~ 0
-COL14
-Text GLabel 3550 1150 1    60   Input ~ 0
-COL15
+Wire Wire Line
+	9000 7350 9350 7350
+Wire Wire Line
+	9850 7350 10200 7350
+Connection ~ 8500 8100
+Connection ~ 9350 8100
+Connection ~ 9000 6250
+Connection ~ 9850 6250
+$Comp
+L TEST SH1
+U 1 1 5A6683D5
+P 5550 9600
+F 0 "SH1" H 5550 9900 50  0000 C BNN
+F 1 "Hole" H 5550 9850 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_4mm" H 5550 9600 50  0001 C CNN
+F 3 "" H 5550 9600 50  0001 C CNN
+	1    5550 9600
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST SH2
+U 1 1 5A6683DC
+P 5800 9600
+F 0 "SH2" H 5800 9900 50  0000 C BNN
+F 1 "Hole" H 5800 9850 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_4mm" H 5800 9600 50  0001 C CNN
+F 3 "" H 5800 9600 50  0001 C CNN
+	1    5800 9600
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST SH3
+U 1 1 5A6683E3
+P 6050 9600
+F 0 "SH3" H 6050 9900 50  0000 C BNN
+F 1 "Hole" H 6050 9850 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_4mm" H 6050 9600 50  0001 C CNN
+F 3 "" H 6050 9600 50  0001 C CNN
+	1    6050 9600
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST SH4
+U 1 1 5A6683EA
+P 6300 9600
+F 0 "SH4" H 6300 9900 50  0000 C BNN
+F 1 "Hole" H 6300 9850 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_4mm" H 6300 9600 50  0001 C CNN
+F 3 "" H 6300 9600 50  0001 C CNN
+	1    6300 9600
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST SH5
+U 1 1 5A6683F1
+P 6550 9600
+F 0 "SH5" H 6550 9900 50  0000 C BNN
+F 1 "Hole" H 6550 9850 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_4mm" H 6550 9600 50  0001 C CNN
+F 3 "" H 6550 9600 50  0001 C CNN
+	1    6550 9600
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST SH6
+U 1 1 5A6683F8
+P 6800 9600
+F 0 "SH6" H 6800 9900 50  0000 C BNN
+F 1 "Hole" H 6800 9850 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_4mm" H 6800 9600 50  0001 C CNN
+F 3 "" H 6800 9600 50  0001 C CNN
+	1    6800 9600
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST SH7
+U 1 1 5A6689FB
+P 7050 9600
+F 0 "SH7" H 7050 9900 50  0000 C BNN
+F 1 "Hole" H 7050 9850 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_4mm" H 7050 9600 50  0001 C CNN
+F 3 "" H 7050 9600 50  0001 C CNN
+	1    7050 9600
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST SH8
+U 1 1 5A668A01
+P 7300 9600
+F 0 "SH8" H 7300 9900 50  0000 C BNN
+F 1 "Hole" H 7300 9850 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_4mm" H 7300 9600 50  0001 C CNN
+F 3 "" H 7300 9600 50  0001 C CNN
+	1    7300 9600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
