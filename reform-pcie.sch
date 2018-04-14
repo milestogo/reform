@@ -58,6 +58,8 @@ LIBS:LM2673S-ADJ
 LIBS:ltc4000
 LIBS:TLV431AIDBVR
 LIBS:ADP5063
+LIBS:LM1085IS-ADJNOPB
+LIBS:BQ24650RVAT
 LIBS:reform-motherboard-cache
 EELAYER 25 0
 EELAYER END
@@ -368,32 +370,10 @@ Connection ~ 4150 3600
 Wire Wire Line
 	3800 2900 4150 2900
 Connection ~ 4150 3200
-$Comp
-L TEST TP9
-U 1 1 5A10AE79
-P 6050 3100
-F 0 "TP9" H 6050 3400 50  0000 C BNN
-F 1 "PCIe_USB_D+" H 6050 3350 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 6050 3100 50  0001 C CNN
-F 3 "" H 6050 3100 50  0001 C CNN
-	1    6050 3100
-	-1   0    0    1   
-$EndComp
-$Comp
-L TEST TP8
-U 1 1 5A10AEC8
-P 5500 3100
-F 0 "TP8" H 5500 3400 50  0000 C BNN
-F 1 "PCIe_USB_D-" H 5500 3350 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 5500 3100 50  0001 C CNN
-F 3 "" H 5500 3100 50  0001 C CNN
-	1    5500 3100
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
-	3800 3000 6050 3000
+	3800 3000 4300 3000
 Wire Wire Line
-	5500 3100 3800 3100
+	4300 3100 3800 3100
 Text GLabel 4450 3800 2    60   Input ~ 0
 RESETn
 Wire Wire Line
@@ -411,8 +391,6 @@ F 3 "" H 5100 3900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3800 3900 5100 3900
-Wire Wire Line
-	6050 3000 6050 3100
 Text GLabel 4300 3400 2    60   Input ~ 0
 PCIE_SMB_CLK
 Text GLabel 4300 3300 2    60   BiDi ~ 0
@@ -555,7 +533,7 @@ F 3 "" H 3400 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2800 6350 2800 6000
+	2800 6000 2800 6350
 Wire Wire Line
 	2800 6000 2900 6000
 Wire Wire Line
@@ -568,4 +546,102 @@ Wire Wire Line
 Wire Wire Line
 	3300 6000 3400 6000
 Connection ~ 3400 6100
+$Comp
+L SIM_Card J?
+U 1 1 5AD13B06
+P 8500 4050
+F 0 "J?" H 8400 4550 50  0000 R CNN
+F 1 "SIM_Card" H 8450 4450 50  0000 R CNN
+F 2 "" H 8500 4400 50  0000 C CNN
+F 3 "" H 8450 4050 50  0000 C CNN
+	1    8500 4050
+	1    0    0    -1  
+$EndComp
+Text GLabel 4250 4300 2    60   BiDi ~ 0
+UIM_RST
+Wire Wire Line
+	4250 4300 3800 4300
+Text GLabel 4250 4400 2    60   BiDi ~ 0
+UIM_CLK
+Text GLabel 4250 4500 2    60   BiDi ~ 0
+UIM_DATA
+Wire Wire Line
+	4250 4400 3800 4400
+Wire Wire Line
+	3800 4500 4250 4500
+Wire Wire Line
+	7900 3750 8000 3750
+Text GLabel 4250 4200 2    60   BiDi ~ 0
+UIM_VPP
+Wire Wire Line
+	4250 4200 3800 4200
+Text GLabel 7600 4150 0    60   BiDi ~ 0
+UIM_VPP
+$Comp
+L R_Small R?
+U 1 1 5AD1459D
+P 7800 4150
+F 0 "R?" H 7830 4170 50  0000 L CNN
+F 1 "0" H 7830 4110 50  0000 L CNN
+F 2 "" H 7800 4150 50  0001 C CNN
+F 3 "" H 7800 4150 50  0001 C CNN
+	1    7800 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7700 4150 7600 4150
+Text GLabel 7600 4250 0    60   BiDi ~ 0
+UIM_DATA
+Wire Wire Line
+	7600 4250 8000 4250
+Wire Wire Line
+	7900 4150 8000 4150
+$Comp
+L GND #PWR?
+U 1 1 5AD14894
+P 7950 4400
+F 0 "#PWR?" H 7950 4150 50  0001 C CNN
+F 1 "GND" H 7950 4250 50  0000 C CNN
+F 2 "" H 7950 4400 50  0001 C CNN
+F 3 "" H 7950 4400 50  0001 C CNN
+	1    7950 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 4400 7950 4050
+Wire Wire Line
+	7950 4050 8000 4050
+Text GLabel 7600 3950 0    60   BiDi ~ 0
+UIM_CLK
+Wire Wire Line
+	7600 3950 8000 3950
+Text GLabel 7600 3850 0    60   BiDi ~ 0
+UIM_RST
+Wire Wire Line
+	7600 3850 8000 3850
+$Comp
+L R_Small R?
+U 1 1 5AD1574A
+P 7800 3750
+F 0 "R?" H 7830 3770 50  0000 L CNN
+F 1 "0" H 7830 3710 50  0000 L CNN
+F 2 "" H 7800 3750 50  0001 C CNN
+F 3 "" H 7800 3750 50  0001 C CNN
+	1    7800 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7600 3750 7700 3750
+Text Notes 1400 5250 0    60   ~ 0
+TODO: support audio over COEX etc
+Text GLabel 4300 3000 2    60   BiDi ~ 0
+USB_HUB0_P
+Text GLabel 4300 3100 2    60   BiDi ~ 0
+USB_HUB0_N
+Text GLabel 4250 4600 2    60   BiDi ~ 0
+UIM_PWR
+Wire Wire Line
+	4250 4600 3800 4600
+Text GLabel 7600 3750 0    60   BiDi ~ 0
+UIM_PWR
 $EndSCHEMATC

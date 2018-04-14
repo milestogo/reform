@@ -58,6 +58,8 @@ LIBS:LM2673S-ADJ
 LIBS:ltc4000
 LIBS:TLV431AIDBVR
 LIBS:ADP5063
+LIBS:LM1085IS-ADJNOPB
+LIBS:BQ24650RVAT
 LIBS:reform-motherboard-cache
 EELAYER 25 0
 EELAYER END
@@ -746,4 +748,8 @@ F 3 "" H 2800 3050 50  0001 C CNN
 	1    2800 3050
 	0    1    1    0   
 $EndComp
+Text Notes 1300 3750 0    60   ~ 0
+TODO route pwm gpio here
+Text Notes 1300 3950 0    60   ~ 0
+TODO route pwm for fan control
 $EndSCHEMATC
