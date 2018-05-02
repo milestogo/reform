@@ -1,4 +1,4 @@
-update=Thu 05 Apr 2018 10:50:03 AM CEST
+update=Thu 26 Apr 2018 02:49:17 PM CEST
 version=1
 last_client=kicad
 [general]
@@ -25,16 +25,6 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.15
 ModuleOutlineThickness=0.15
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [eeschema]
 version=1
 LibDir=
@@ -100,3 +90,13 @@ LibName58=TLV431AIDBVR/TLV431AIDBVR
 LibName59=ADP5063/ADP5063
 LibName60=LM1085IS-ADJNOPB/LM1085IS-ADJNOPB
 LibName61=BQ24650RVAT/BQ24650RVAT
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=/tmp
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
