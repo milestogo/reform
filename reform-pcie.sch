@@ -603,8 +603,6 @@ F 3 "" H 6450 5000 50  0001 C CNN
 	1    6450 5000
 	0    1    1    0   
 $EndComp
-Text Notes 8350 4500 0    60   ~ 0
-TODO: support audio over COEX etc
 Text GLabel 9250 2150 2    60   BiDi ~ 0
 USB_HUB0_P
 Text GLabel 9250 2250 2    60   BiDi ~ 0
