@@ -1,4 +1,4 @@
-(module DIO_SBR10U200P5-13 (layer F.Cu) (tedit 5AE88796)
+(module DIO_SBR10U200P5-13 (layer F.Cu) (tedit 5AEB6391)
   (attr smd)
   (fp_text reference D8 (at -0.405868 -4.73288) (layer F.SilkS)
     (effects (font (size 1.55928 1.55928) (thickness 0.05)))
