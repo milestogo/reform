@@ -1,4 +1,4 @@
-update=Thu 26 Apr 2018 02:49:17 PM CEST
+update=Tue 08 May 2018 10:59:02 AM CEST
 version=1
 last_client=kicad
 [general]
@@ -25,6 +25,16 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.15
 ModuleOutlineThickness=0.15
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=/tmp
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
 LibDir=
@@ -81,22 +91,4 @@ LibName49=TUSB2046BVFR/TUSB2046BVFR
 LibName50=TPS2044BDR/TPS2044BDR
 LibName51=LP3962EMP-2.5/LP3962EMP-2.5
 LibName52=M74VHC1GT00DTT1G/M74VHC1GT00DTT1G
-LibName53=LTC4415IMSEPBF/LTC4415IMSEPBF
-LibName54=INA220AIDGST/INA220AIDGST
-LibName55=LTC4156IUFDPBF/LTC4156IUFDPBF
-LibName56=LM2673S-ADJ/LM2673S-ADJ
-LibName57=LTC4000/ltc4000
-LibName58=TLV431AIDBVR/TLV431AIDBVR
-LibName59=ADP5063/ADP5063
-LibName60=LM1085IS-ADJNOPB/LM1085IS-ADJNOPB
-LibName61=BQ24650RVAT/BQ24650RVAT
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=/tmp
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
+LibName53=BQ24650RVAT/BQ24650RVAT

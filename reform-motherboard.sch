@@ -1432,4 +1432,46 @@ F 3 "" H 10650 6050 50  0001 C CNN
 	1    10650 6050
 	-1   0    0    1   
 $EndComp
+Text GLabel 5650 5400 0    60   Input ~ 0
+CSI_D2_N
+Text GLabel 5650 5500 0    60   Input ~ 0
+CSI_D2_P
+Text GLabel 5650 5700 0    60   Input ~ 0
+CSI_D3_N
+Text GLabel 5650 5800 0    60   Input ~ 0
+CSI_D3_P
+Text GLabel 7300 5400 2    60   Input ~ 0
+CSI_D0_N
+Text GLabel 7300 5500 2    60   Input ~ 0
+CSI_D0_P
+Text GLabel 7300 5700 2    60   Input ~ 0
+CSI_D1_N
+Text GLabel 7300 5800 2    60   Input ~ 0
+CSI_D1_P
+$Comp
+L GND #PWR065
+U 1 1 5AEF6F62
+P 7300 5600
+F 0 "#PWR065" H 7300 5350 50  0001 C CNN
+F 1 "GND" V 7300 5400 50  0000 C CNN
+F 2 "" H 7300 5600 50  0001 C CNN
+F 3 "" H 7300 5600 50  0001 C CNN
+	1    7300 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR066
+U 1 1 5AEF6FAF
+P 5650 5600
+F 0 "#PWR066" H 5650 5350 50  0001 C CNN
+F 1 "GND" V 5650 5400 50  0000 C CNN
+F 2 "" H 5650 5600 50  0001 C CNN
+F 3 "" H 5650 5600 50  0001 C CNN
+	1    5650 5600
+	0    1    1    0   
+$EndComp
+Text GLabel 7300 5100 2    60   Input ~ 0
+CSI_CLK0_N
+Text GLabel 7300 5200 2    60   Input ~ 0
+CSI_CLK0_P
 $EndSCHEMATC
