@@ -1,76 +1,106 @@
-C0603C104K5RECAUTO,500
-F951A106MRAAQ2,10
-LMK107BBj106KALT,100
-T491C106K025AT7280,10
-GCM1885C1H180JA16D,20
-JMK107C6105KA-T,50
-GRM219R61A226MEA0D,50
-EEE-FK1A220AR,20
-GRM188R60J226MEA0D,50
-EEE-FKJ331XAP,15
-GCM1885C1H330FA16J,30
-81-GRM21BR60G336ME5L,10
-EEE-FKJ470UAR,5
-F380J686MSALZT,5
-APTD2012LVBC/D,50
-PDS1040,20
-ZLLS350,10
-48099-5701,28
-693072010801,8
-78938-104HLF,10
-KLDX-0202-AC,8
-90120-0123,10
-90120-0124,10
-951104-8622-AR,30
-826949-2,10
-M22-2520205,10
-826936-2,30
-M22-2510646,10
-826631-6,10
-M22-2520305,10
-M22-2510446,10
-710-685119134923,10
-951210-7622-AR,10
-M22-2510305,10
-M22-2510646,10
-M22-2520346,10
-2199337-5,10
-SJ-43516-SMT,7
-DF40C-100DS-0.4V(51),21
-614004190021,12
-78438356010,10
-SRP4020TA-100M,10
-B953AS-180M=P3,10
-FBMH1608HM221-TV,20
-J0G-0003NL,8
-2N7002-T1-E3,10
-SI2333DDS-T1-GE3,20
-DMNH4015SSDQ-13,10
-CRCW06030000Z0EAC,50
-ESR03EZPJ103,50
-ERA-3ARB222V,10
-PF1206FRF070R02L,10
-ERJ-3EKF2400V,25
-ERJ-3EKF27R0V,50
-CR0603-FX-2702ELF,10
-ERJ-3EKF3300V,25
-CRT0603-BY-4991ELF,15
-ERJ-3EKF4702V,10
-ERA-3AED9531V,10
-ERA-3AED9092V,10
-AP1501A-33K5G-13,7
-ATTINY841-SSU,10
-BQ24650RVAT,11
-CM2020-00TR,10
-INA260AIPW,5
-LP3962EMP-2.5,8
-SGTL5000XNAA3,10
-SN74LVC1G08DCKR,10
-TLV1117-15IDCYR,5
-TLV74311PDBVR,11
-TPS2044BDR,8
-TPS61235RWLR,10
-TUSB4041IPAPR,10
-67910-5700,28
-445I23D24M00000,10
-500SSP1S1M1QEB,15
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,ORDER,MP,,Datasheet,MF,Package,Price,Availability,Digi-Key_Purchase_URL,Digi-Key_Part_Number,Field8,Field4,Field7,Field6,Field5
+1,Unpolarized capacitor,C_Small,"C1 C4 C5 C6 C7 C8 C9 C11 C13 C14 C15 C16 C17
+ C25 C30 C33 C35 C36 C37 C48 C49 C50 C52 C54
+ C55 C56 C57 C58 C59 C61 C63 C66 C69 C70 C71
+ C72 C73 C75 C77 C81 C83 C84 C86 C87 C88 C90
+ C91 C92 C93",0.1uF,C_0603_HandSoldering,49,500,C0603C104K5RECAUTO,ok,,,,,,,,,,,,
+2,Unpolarized capacitor,C_Small,C42,100uF,C_0805_HandSoldering,1,10,F951A106MRAAQ2,ok,,,,,,,,,,,,
+3,Unpolarized capacitor,C,C27 C38 C51 C67 C68 C74 C76 C82 C85 C89,10uF,C_0603_HandSoldering,10,100,LMK107BBj106KALT,ok,,,,,,,,,,,,
+4,Unpolarized capacitor,C,C3,10uF,CP_Tantalum_Case-T_EIA-3528-12_Hand,1,10,T491C106K025AT7280,ok,,,,,,,,,,,,
+5,Unpolarized capacitor,C_Small,C40 C41,18pF,C_0603_HandSoldering,2,20,GCM1885C1H180JA16D,ok,,,,,,,,,,,,
+6,Unpolarized capacitor,C_Small,C2 C24 C29 C34 C39 C43 C44 C60 C62 C64 C65,1uF,C_0603_HandSoldering,11,50,JMK107C6105KA-T,ok,,,,,,,,,,,,
+7,Unpolarized capacitor,C_Small,C12 C18 C19 C20,22uF,C_0805_HandSoldering,4,50,GRM219R61A226MEA0D,ok,,,,,,,,,,,,
+8,Polarised capacitor,CP1_Small,C21 C22,22uF,CP_Elec_4x5.8,2,20,EEE-FK1A220AR,ok,,,,,,,,,,,,
+9,Unpolarized capacitor,C_Small,C45 C46 C47 C53,22uF,C_0603_HandSoldering,4,50,GRM188R60J226MEA0D,ok,,,,,,,,,,,,
+10,Polarised capacitor,CP1_Small,C31 C32,330uF,CP_Elec_6.3x7.7,2,15,EEE-FKJ331XAP,ok,,,,,,,,,,,,
+11,Unpolarized capacitor,C_Small,C78 C79 C80,33pF,C_0603_HandSoldering,3,30,GCM1885C1H330FA16J,ok,,,,,,,,,,,,
+12,Unpolarized capacitor,C_Small,C28,33uF,C_0805_HandSoldering,1,10,81-GRM21BR60G336ME5L,ok,,,,,,,,,,,,
+13,Unpolarized capacitor,C_Small,C10,4.7uF,C_0603_HandSoldering,1,0,JMK107BB7475KA-T,ok,,,,,,,,,,,,
+14,Polarised capacitor,CP1_Small,C23,47uF,CP_Elec_4x5.8,1,5,EEE-FKJ470UAR,ok,,,,,,,,,,,,
+15,Unpolarized capacitor,C_Small,C26,68uF,C_0805_HandSoldering,1,5,F380J686MSALZT,ok,,,,,,,,,,,,
+16,Schottky diode,D_Schottky,D4 D6,D_Schottky,D_SOD-323_HandSoldering,2,0,---,ok,,,,,,,,,,,,
+17,"LED, small symbol",LED_Small,D11,LED_3V3,LED_0805_HandSoldering,1,50,APTD2012LVBC/D,,,,,,,,,,,,,
+18,"LED, small symbol",LED_Small,D3,LED_CStat2,LED_0805_HandSoldering,1,0,---,,,,,,,,,,,,,
+19,"LED, small symbol",LED_Small,D7,LED_Charge,LED_0805_HandSoldering,1,0,---,,,,,,,,,,,,,
+20,"LED, small symbol",LED_Small,D9,LED_WLAN,LED_0805_HandSoldering,1,0,---,,,,,,,,,,,,,
+21,"LED, small symbol",LED_Small,D10,LED_WWAN,LED_0805_HandSoldering,1,0,---,,,,,,,,,,,,,
+22,Schottky diode,D_Schottky,D2 D8,PDS1040,DIO_SBR10U200P5-13,2,20,PDS1040,ok,,,,,,,,,,,,
+23,"Schottky diode, small symbol",D_Schottky_Small,D5,ZLLS350,D_SOD-523,1,10,ZLLS350,ok,,,,,,,,,,,,
+24,"LATCH ASSEMBLY, FOR MINI PCI; Accessory Type: Latch; For Use With: 67910 Series Edge Card Connectors",48099-5701,J27 J30 J31,48099-5701,MOLEX_48099-5701,3,28,48099-5701,ok,,,,,,,,,,,,
+25,Micro-SD Card Connector [Würth Elektronik] 693072010801 Micro-SD Card Connector,693072010801,J4,693072010801,693072010801,1,8,693072010801,ok,,,,,,,,,,,,
+26,"Generic connector, single row, 01x04",Conn_01x04,J33,BAT,Pin_Header_Angled_1x04_Pitch2.54mm,1,10,78938-104HLF,,,,,,,,,,,,,
+27,DC Barrel Jack,Barrel_Jack,J6,Barrel_Jack,SWC_RAPC712X,1,8,KLDX-0202-AC,ok,,,,,,,,,,,,
+28,"Generic connector, single row, 01x03",Conn_01x03,J15,Conn_01x03,Pin_Header_Straight_1x03_Pitch2.54mm,1,10,90120-0123,,,,,,,,,,,,,
+29,"Generic connector, single row, 01x04",Conn_01x04,J22,Conn_01x04,Pin_Header_Straight_1x04_Pitch2.54mm,1,10,90120-0124,,,,,,,,,,,,,
+30,"Generic connector, single row, 01x04",Conn_01x04,J24,Conn_01x04,Pin_Header_Straight_1x04_Pitch2.00mm,1,30,951104-8622-AR,,,,,,,,,,,,,
+31,"Generic connector, single row, 01x02",Conn_01x02,J29,Conn_5V,Pin_Header_Angled_1x02_Pitch2.54mm,1,10,826949-2,,,,,,,,,,,,,
+32,"Generic connector, single row, 01x08",Conn_01x08,J34,Conn_ATTINY,Pin_Header_Straight_2x04_Pitch2.00mm,1,10,M22-2520205,,,,,,,,,,,,,
+33,"Generic connector, single row, 01x02",Conn_01x02,J19,Conn_BOOT,Pin_Header_Straight_1x02_Pitch2.54mm,1,30,826936-2,,,,,,,,,,,,,
+34,"Generic connector, single row, 01x06",Conn_01x06,J26,Conn_Backlight,Pin_Header_Angled_1x06_Pitch2.00mm,1,10,M22-2510646,,,,,,,,,,,,,
+35,"Generic connector, single row, 01x06",Conn_01x06,J25,Conn_CONSOLE,Pin_Header_Angled_1x06_Pitch2.54mm,1,10,826631-6,,,,,,,,,,,,,
+36,"Generic connector, double row, 02x06, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers)",Conn_02x06_Odd_Even,J37,Conn_CSI,Pin_Header_Straight_2x06_Pitch2.00mm,1,10,M22-2520305,,,,,,,,,,,,,
+37,"Generic connector, single row, 01x04",Conn_01x04,J20,Conn_GPIO1,Pin_Header_Straight_1x04_Pitch2.00mm,1,10,M22-2510446,,,,,,,,,,,,,
+38,,Conn_HDMI,J13,Conn_HDMI,685119134923,1,10,710-685119134923,ok,,,,,,,,,,,,
+39,"Generic connector, double row, 02x10, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers)",Conn_02x10_Odd_Even,J14,Conn_LVDS,Pin_Header_Angled_2x10_Pitch2.00mm,1,10,951210-7622-AR,,,,,,,,,,,,,
+40,"Generic connector, single row, 01x03",Conn_01x03,J16,Conn_LineIn,Pin_Header_Straight_1x03_Pitch2.00mm,1,10,M22-2510305,,,,,,,,,,,,,
+41,"Generic connector, single row, 01x03",Conn_01x03,J17,Conn_LineOut,Pin_Header_Straight_1x03_Pitch2.00mm,1,0,---,,,,,,,,,,,,,
+42,"Generic connector, single row, 01x02",Conn_01x02,J23,Conn_RESET,Pin_Header_Straight_1x02_Pitch2.54mm,1,0,---,,,,,,,,,,,,,
+43,"Generic connector, single row, 01x02",Conn_01x02,J28,Conn_SDWP,Pin_Header_Straight_1x02_Pitch2.54mm,1,0,---,,,,,,,,,,,,,
+44,"Generic connector, single row, 01x06",Conn_01x06,J35,Conn_SPI1,Pin_Header_Straight_1x06_Pitch2.00mm,1,10,M22-2510646,,,,,,,,,,,,,
+45,"Generic connector, single row, 01x06",Conn_01x06,J21,Conn_SPI2,Pin_Header_Straight_1x06_Pitch2.00mm,1,0,---,,,,,,,,,,,,,
+46,"Generic connector, single row, 01x06",Conn_01x06,J36,Conn_WWAN_AUX,Pin_Header_Straight_2x03_Pitch2.00mm,1,10,M22-2520346,,,,,,,,,,,,,
+47,SIM Card,SIM_Card,J32,SIM_Card,TE_2199337-5,1,10,2199337-5,ok,,,,,,,,,,,,
+48,point,TEST_1P,J8,TEST_3V,Measurement_Point_Round-SMD-Pad_Small,1,0,---,,,,,,,,,,,,,
+49,point,TEST_1P,J11,TEST_ON,Measurement_Point_Round-SMD-Pad_Small,1,0,---,,,,,,,,,,,,,
+50,point,TEST_1P,J10,TEST_PMIC_ON,Measurement_Point_Round-SMD-Pad_Small,1,0,---,,,,,,,,,,,,,
+51,4-pin (audio) jack receptable (stereo + 4th pin/TRRS connector),Audio-Jack-4,J18,TRRS,SJ-43516-SMT,1,7,SJ-43516-SMT,ok,,,,,,,,,,,,
+52,DF40 Series 100 Position Dual Row 0.4 mm Pitch Surface Mount Vertical Receptacle,TinyRex-J1-DF40C,J1,TinyRex-J1-DF40C,HRS_DF40C-100DS-0.4V(51),1,21,DF40C-100DS-0.4V(51),ok,Hirose,,,,,,,,,,,
+53,DF40 Series 100 Position Dual Row 0.4 mm Pitch Surface Mount Vertical Receptacle,TinyRex-J2-DF40C,J2,TinyRex-J2-DF40C,HRS_DF40C-100DS-0.4V(51),1,0,DF40C-100DS-0.4V(51),ok,Hirose,,,,,,,,,,,
+54,DF40 Series 100 Position Dual Row 0.4 mm Pitch Surface Mount Vertical Receptacle,TinyRex-J3-DF40C,J3,TinyRex-J3-DF40C,HRS_DF40C-100DS-0.4V(51),1,0,DF40C-100DS-0.4V(51),ok,Hirose,,,,,,,,,,,
+55,USB Type A connector,USB_A,J5 J7,USB_A,USB_A,2,12,614004190021,ok,,,,,,,,,,,,
+56,"Generic connector, single row, 01x04",Conn_01x04,J9,USB_INT_1,Pin_Header_Angled_1x04_Pitch2.00mm,1,0,---,,,,,,,,,,,,,
+57,"Generic connector, single row, 01x04",Conn_01x04,J12,USB_INT_3,Pin_Header_Angled_1x04_Pitch2.00mm,1,0,---,,,,,,,,,,,,,
+58,Inductor,L,L1,1 uH,Inductor_Wurth_MAPI-4020,1,10,78438356010,ok,78438356010,,,,,,,,,,,
+59,Inductor,L,L3,10 uH,Inductor_Wurth_MAPI-4020,1,10,SRP4020TA-100M,ok,,,,,,,,,,,,
+60,Inductor,L,L2,18 uH,SELF-WE-PD-XXL,1,10,B953AS-180M=P3,ok,B953AS-180M=P3,,,,,,,,,,,
+61,"Ferrite bead, small symbol",Ferrite_Bead_Small,L4 L5,220@100MHz,R_0603_HandSoldering,2,20,FBMH1608HM221-TV,ok,,,,,,,,,,,,
+62,,J0G-0003NL,P2,J0G-0003NL,PULSE_J0G-0003NL,1,8,J0G-0003NL,ok,Conn RJ-45 Integrated Magnetics F 8 POS 2.03mm Solder RA Thru-Hole 17 Terminal 1 Port,Pulse,,,,,,,,,,
+63,"50V Vds, 0.22 A Id, N-channel MOSFET, SOT-23",2N7002,Q1,2N7002,SOT-23,1,10,2N7002-T1-E3,ok,,,,,,,,,,,,
+64,"-60V Vds, -0.18A Id, P-Channel MOSFET, SOT-23-3",TP0610T,Q2 Q5,Si2333DDS,SOT-23,2,20,SI2333DDS-T1-GE3,ok,,,,,,,,,,,,
+65,"20V Vds, 7.5A Id, 18mOhm Rds, Dual N-Channel MOSFET, SO-8",FDS6898A,Q3,Si7288DP,PowerPAK_SO-8_Dual,1,10,DMNH4015SSDQ-13,ok,,,,,,,,,,,,
+66,"Resistor, small symbol",R_Small,R3 R4 R6 R13 R14 R15 R16 R42 R47 R48 R49 R50 R54,0,R_0603_HandSoldering,13,50,CRCW06030000Z0EAC,ok,,,,,,,,,,,,
+67,"Resistor, small symbol",R_Small,R43 R44 R45 R46,1.5k,R_0603_HandSoldering,4,0,---,ok,,,,,,,,,,,,
+68,"Resistor, small symbol",R_Small,R1 R2,100k,R_0603_HandSoldering,2,0,---,ok,,,,,,,,,,,,
+69,"Resistor, small symbol",R_Small,R12 R25 R32 R41 R51 R52 R53,10k,R_0603_HandSoldering,7,50,ESR03EZPJ103,ok,,,,,,,,,,,,
+70,"Resistor, small symbol",R_Small,R40,15k,R_0603_HandSoldering,1,0,---,ok,,,,,,,,,,,,
+71,"Resistor, small symbol",R_Small,R30,1M,R_0603_HandSoldering,1,0,---,ok,,,,,,,,,,,,
+72,"Resistor, small symbol",R_Small,R31,2.2k,R_0603_HandSoldering,1,10,ERA-3ARB222V,ok,,,,,,,,,,,,
+73,"Resistor, small symbol",R_Small,R5,20m,R_1206_HandSoldering,1,10,PF1206FRF070R02L,ok,,,,,,,,,,,,
+74,"Resistor, small symbol",R_Small,R11 R17 R29,240,R_0603_HandSoldering,3,25,ERJ-3EKF2400V,ok,,,,,,,,,,,,
+75,"Resistor, small symbol",R_Small,R18 R19 R20 R21 R23 R24 R26 R27,27,R_0603_HandSoldering,8,50,ERJ-3EKF27R0V,ok,,,,,,,,,,,,
+76,"Resistor, small symbol",R_Small,R37,27k,R_0603_HandSoldering,1,10,CR0603-FX-2702ELF,ok,,,,,,,,,,,,
+77,"Resistor, small symbol",R_Small,R8,3.6k,R_0603_HandSoldering,1,0,---,ok,,,,,,,,,,,,
+78,"Resistor, small symbol",R_Small,R7 R9,330,R_0603_HandSoldering,2,25,ERJ-3EKF3300V,ok,,,,,,,,,,,,
+79,"Resistor, small symbol",R_Small,R10 R33 R34 R35,4.7k,R_0603_HandSoldering,4,0,---,ok,,,,,,,,,,,,
+80,"Resistor, small symbol",R_Small,R38 R39,4.99k,R_0603_HandSoldering,2,15,CRT0603-BY-4991ELF,ok,,,,,,,,,,,,
+81,"Resistor, small symbol",R_Small,R36,47k,R_0603_HandSoldering,1,10,ERJ-3EKF4702V,ok,,,,,,,,,,,,
+82,"Resistor, small symbol",R_Small,R22,9.53k,R_0603_HandSoldering,1,10,ERA-3AED9531V,ok,,,,,,,,,,,,
+83,"Resistor, small symbol",R_Small,R28,90.9k,R_0603_HandSoldering,1,10,ERA-3AED9092V,ok,,,,,,,,,,,,
+84,Voltage stabiliser; PMIC; 5A; TO263-5; SMD; buck; -20÷85°C; 800pcs.,AP1501A-33K5G-13,U4,AP1501A-33K5G-13,DPAK171P1524X485-6N,1,7,AP1501A-33K5G-13,ok,,Diodes Inc.,TO-263-5 Diodes Inc.,,,,,,,,,
+85,"SO14, 4k Flash, 256B SRAM, 256B EEPROM, ADC, ACI, dW",ATTINY841-SSU,U16,ATTINY841-SSU,SOIC-14_3.9x8.7mm_Pitch1.27mm,1,10,ATTINY841-SSU,ok,,,,,,,,,,,,
+86,,BQ24650RVAT,U2,BQ24650RVAT,QFN50P350X350X100-17N,1,11,BQ24650RVAT,ok,,,,,,,,,,,,
+87,CM2020-00TR Series 10.8 V HDMI Transmitter Port Protection and Interface Device,CM2020-00TR,U14,CM2020-00TR,TSSOP50P640X120-38N,1,10,CM2020-00TR,ok,,ON Semiconductor,TSSOP-38 ON Semiconductor,,,,,,,,,
+88,,INA260AIPW,U6,INA260AIPW,SOP65P640X120-16N,1,5,INA260AIPW,ok,INA260AIPW,,,,,,,,,,,
+89,,LP3962EMP-2.5,U11,LP3962EMP-2.5,SOT150P696X180-5N,1,8,LP3962EMP-2.5,ok,SOT-223-5 Texas Instruments,,,,,,,,,,,
+90,"Audio Codec , Ultra Low-Power, 4 mw for DAC-to-HP, 98 dB SNR and -80 dB THD+N, QFN 32, Tray",SGTL5000XNAA3,U10,SGTL5000XNAA3,QFN50P500X500X100-33N,1,10,SGTL5000XNAA3,ok,NXP Semiconductors,,QFN-32 NXP Semiconductors,,,,,,,,,
+91,Single 2-Input Positive-AND Gate 5-SC70 -40 to 125,SN74LVC1G08DCKR,U12,SN74LVC1G08DCKR,SOT65P210X110-5N,1,10,SN74LVC1G08DCKR,ok,SC-70-5 Texas Instruments,Texas Instruments,,,,,,,,,,
+92,"800mA Low-Dropout Linear Regulator, 1.8V fixed output, TO-220/TO-252/TO-263/SOT-223",TLV1117-15,U13,TLV1117-15,SOT-223,1,5,TLV1117-15IDCYR,ok,,,,,,,,,,,,
+93,"200 mA Low Dropout Voltage Regulator, Fixed Output 1.2V, SOT-23-5",TLV70012_SOT23-5,U5,TLV74311PDBVR,SOT-23-5,1,11,TLV74311PDBVR,ok,,,,,,,,,,,,
+94,,TPS2044BDR,U15,TPS2044BDR,SOIC127P600X175-16N,1,8,TPS2044BDR,ok,,,,,,,,,,,,
+95,TPS6123x 8-A Valley Current Synchronous Boost Converters with Constant Current Output Feature 9-VQFN-HR -40 to 85,TPS61235RWLR,U3,TPS61235RWLR,CONV_TPS61235RWLR,1,10,TPS61235RWLR,ok,,Texas Instruments,VQFN-9 Texas Instruments,,,,,,,,,
+96,Four-Port USB 2.0 Hub 64-HTQFP -40 to 85,TUSB4041IPAPR,U9,TUSB4041IPAPR,QFP50P1200X1200X105-65N,1,10,TUSB4041IPAPR,ok,Texas Instruments,,HTQFP-64 Texas Instruments,,,,,,,,,
+97,,MPCIE-Socket,U8,WWAN USB2.0,MOLEX_67910-5700,1,28,67910-5700,ok,,,,,,,,,,,,
+98,,MPCIE-Socket,U1,mPCIE 2.0,MOLEX_67910-5700,1,0,---,ok,,,,,,,,,,,,
+99,,MPCIE-Socket,U7,mSATA II,MOLEX_67910-5700,1,0,---,ok,,,,,,,,,,,,
+100,"Two pin crystal, small symbol",Crystal_Small,Y1,24MHz,Crystal_SMD_5032-2pin_5.0x3.2mm_HandSoldering,1,10,445I23D24M00000,ok,,,,,,,,,,,,
+,,,,,Power Switch,1,15,500SSP1S1M1QEB,,,,,,,,,,,,,
