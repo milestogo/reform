@@ -7,8 +7,8 @@ This is the work-in-progress repository for the MNT Reform DIY Open Source Porta
 
 ## Parts List
 
-[Reform Parts](spreadsheets/production_status.csv)
-[Motherboard BOM](spreadsheets/motherboard_bom.csv) (FIXME: this table does not have the actual part counts)
+* [Reform Parts](spreadsheets/production_status.csv)
+* [Motherboard BOM](spreadsheets/motherboard_bom.csv)
 
 ## Getting Started
 
