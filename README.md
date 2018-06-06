@@ -28,6 +28,6 @@ It is not recommended that you do anything with these files yet, and wait until 
 
 ## License
 
-Copyright 2018 Lukas F. Hartmann.
+Copyright 2018 Lukas F. Hartmann & Ana Beatriz Albertini Dantas.
 
 This project is licensed under the GPLv3 License - see the [LICENSE.md](LICENSE.md) file for details
