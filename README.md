@@ -2,6 +2,14 @@
 
 This is the work-in-progress repository for the MNT Reform DIY Open Source Portable Computer.
 
+![Reform 0.4 Motherboard PCB](pics/reform04-motherboardpcb.png)
+![Reform 0.4 Keyboard PCB](pics/reform04-kbdpcb.png)
+
+## Parts List
+
+[Reform Parts](spreadsheets/production_status.csv)
+[Motherboard BOM](spreadsheets/motherboard_bom.csv) (FIXME: this table does not have the actual part counts)
+
 ## Getting Started
 
 It is not recommended that you do anything with these files yet, and wait until the project has reached beta state.
