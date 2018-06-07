@@ -1,0 +1,90 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Boot The System &#8212; Reform  documentation</title>
+    <link rel="stylesheet" href="../_static/mntstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="The Motherboard" href="../motherboard/index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../motherboard/index.html" title="The Motherboard"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Reform  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="boot-the-system">
+<h1>Boot The System<a class="headerlink" href="#boot-the-system" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="powering-up">
+<h2>Powering Up<a class="headerlink" href="#powering-up" title="Permalink to this headline">¶</a></h2>
+<p>When the power switch is turned on, the TinyRex circuit receives power. If it is happy with the applied voltages, the green LED on the TinyRex module will light up. If only the red LED lights up, there is a problem with the power supply.</p>
+<p>Next, the i.MX6 chip will jump to internal boot ROM code at memory address _0x00000000_. The boot ROM looks for an SD card on SD card port SD1 and reads the DCD (Device Configuration Data) table from physical address 0x400 on the SD card. Normally, a bootloader such as U-Boot includes this DCD.</p>
+<p>We recommend to use the U-Boot bootloader. It will be installed onto the SD card and brings its own DCD block that configures the DDR memory parameters and clocks.</p>
+</div>
+<div class="section" id="u-boot">
+<h2>U-Boot<a class="headerlink" href="#u-boot" title="Permalink to this headline">¶</a></h2>
+<p>U-Boot is a mini operating system and shell that allows you to inspect parts of the system (like PCIe, USB devices and Harddisks) and set up parameters to be passed to a “big” operating system kernel such as Linux, and start such an operating system.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../case/index.html">The Case</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../motherboard/index.html">The Motherboard</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Boot The System</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#powering-up">Powering Up</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#u-boot">U-Boot</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../motherboard/index.html" title="The Motherboard"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Reform  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, Lukas F. Hartmann (mntmn).
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.4.
+    </div>
+  </body>
+</html>

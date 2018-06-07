@@ -1,0 +1,110 @@
+@import url('inter_ui_webfont/inter-ui.css');
+
+* { font-family: 'Inter UI', sans-serif; }
+
+html {
+}
+
+h1 {
+    font-size: 75px;
+    font-weight: 800;
+    margin-left: -5px;
+    line-height: 1.0;
+    margin-bottom: 1em;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 34px;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+p, section li, td, th {
+    font-size: 19px;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 2em;
+}
+
+th {
+    padding-right: 20px;
+    vertical-align: top;
+    text-align: left;
+}
+
+th {
+    font-weight: 800;
+}
+
+#logo {
+    width: 100px;
+    margin-bottom: 50px;
+}
+
+div.body {
+    max-width: 750px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 300px;
+    padding-left: 200px;
+}
+
+a {
+    color: #333;
+    padding-right: 10px;
+    text-decoration: underscore;
+}
+
+a:active {
+    color: white;
+    background-color: black;
+}
+
+a:visited {
+    color: #666;
+}
+
+.section img {
+    width: 100%;
+}
+
+.sphinxsidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 50px;
+    margin-left: 25px;
+    width: 200px;
+}
+
+.sphinxsidebar ul {
+    list-style-type: none;
+}
+
+.related {
+    display: none;
+}
+
+.footer {
+    margin: auto;
+    display: block;
+    width: 400px;
+    opacity: 0.2;
+}
