@@ -4,6 +4,7 @@ This is the work-in-progress repository for the MNT Reform DIY Open Source Porta
 
 ![Reform 0.4 Motherboard PCB](pics/reform04-motherboardpcb.png)
 ![Reform 0.4 Keyboard PCB](pics/reform04-kbdpcb.png)
+![Reform 0.3 Laptop Prototype](pics/reform03-laptop.jpg)
 
 ## Parts List
 
