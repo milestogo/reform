@@ -3,6 +3,8 @@
 * { font-family: 'Inter UI', sans-serif; }
 
 html {
+    font-size: 19px;
+    line-height: 1.5;
 }
 
 h1 {
@@ -22,15 +24,13 @@ h2 {
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 800;
     margin-top: 0;
     margin-bottom: 1em;
 }
 
 p, section li, td, th {
-    font-size: 19px;
-    line-height: 1.5;
     margin-top: 0;
     margin-bottom: 1em;
 }
@@ -86,15 +86,19 @@ a:visited {
 }
 
 .sphinxsidebar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     margin-top: 50px;
     margin-left: 25px;
-    width: 200px;
+    width: 220px;
 }
 
 .sphinxsidebar ul {
+    list-style-type: none;
+}
+
+.toctree-wrapper ul {
     list-style-type: none;
 }
 
@@ -103,8 +107,29 @@ a:visited {
 }
 
 .footer {
-    margin: auto;
-    display: block;
-    width: 400px;
-    opacity: 0.2;
+    display: none;
+}
+
+.headerlink {
+    opacity: 0.1;
+}
+
+.highlight {   
+    padding-left: 40px;
+    padding-right: 10px;
+}
+
+.highlight pre {
+    white-space: pre-wrap;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+}
+
+.highlight * {
+    font-family: Input Mono, monospace;
+}
+
+#mnt-reform-operator-handbook img {
+    margin-bottom: 100px;
 }

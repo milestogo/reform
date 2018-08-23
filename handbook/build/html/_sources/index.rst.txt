@@ -7,10 +7,14 @@ MNT Reform Operator Handbook
 ============================
 
 .. image:: reform-title.png
-           
+
+Table of Contents
+-----------------
+
 .. toctree::
    :maxdepth: 3
 
+   quickstart/index
    case/index
    motherboard/index
    boot/index
