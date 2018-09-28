@@ -17,4 +17,10 @@ Table of Contents
    quickstart/index
    case/index
    motherboard/index
+   motherboard/attiny
+   keyboard/index
+   trackball/index
+   thermal/index
    boot/index
+   debug/index
+   faq/index

@@ -9,13 +9,14 @@
     <title>System Boot Details &#8212; Reform  documentation</title>
     <link rel="stylesheet" href="../_static/mntstyle.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="The Motherboard" href="../motherboard/index.html" /> 
+    <link rel="next" title="Debugging" href="../debug/index.html" />
+    <link rel="prev" title="Thermal" href="../thermal/index.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
@@ -24,7 +25,10 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="../motherboard/index.html" title="The Motherboard"
+          <a href="../debug/index.html" title="Debugging"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../thermal/index.html" title="Thermal"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Reform  documentation</a> &#187;</li> 
       </ul>
@@ -40,7 +44,7 @@
 <div class="section" id="powering-up">
 <h2>Powering Up<a class="headerlink" href="#powering-up" title="Permalink to this headline">¶</a></h2>
 <p>When the power switch is turned on, the TinyRex circuit receives power. If it is happy with the applied voltages (POWEROK signals are present), the green LED on the TinyRex module will light up. If only the red LED lights up, there is a problem with the power supply.</p>
-<p>Next, the i.MX6 chip will jump to internal boot ROM code at memory address _0x00000000_. The boot ROM looks for an SD card on port SD1 and reads the DCD (Device Configuration Data) table from physical address 0x400 (1024 decimal, or the second physical block) on the SD card. This means that you can only use the MBR partition scheme on the boot disk, as it only occupies the first disk block. The more modern GPT partition format could work in theory, but most GPT tools and parsers do not understand GPT structures where the second block is in an alternative location.</p>
+<p>Next, the i.MX6 chip will jump to internal boot ROM code at memory address <em>0x00000000</em>. The boot ROM looks for an SD card on port SD1 and reads the DCD (Device Configuration Data) table from physical address 0x400 (1024 decimal, or the second physical block) on the SD card. This means that you can only use the MBR partition scheme on the boot disk, as it only occupies the first disk block. The more modern GPT partition format could work in theory, but most GPT tools and parsers do not understand GPT structures where the second block is in an alternative location.</p>
 <p>We recommend to use the SD card as a boot and rescue disk, and set up an mSATA SSD disk with your actual operating system and data. You can then use alternative partition schemes and encryption.</p>
 <p>Reform ships with U-Boot. It is installed onto the SD card and includes the DCD block that configures the DDR memory parameters and clocks.</p>
 </div>
@@ -112,12 +116,17 @@ fdt resize
 <li class="toctree-l1"><a class="reference internal" href="../quickstart/index.html">Quick Start</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../case/index.html">The Case</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../motherboard/index.html">The Motherboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../motherboard/attiny.html">The ATTiny</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../keyboard/index.html">The Keyboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trackball/index.html">The Trackball</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../thermal/index.html">Thermal</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">System Boot Details</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#powering-up">Powering Up</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#u-boot">U-Boot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#booting-the-linux-kernel">Booting the Linux Kernel</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../debug/index.html">Debugging</a></li>
 </ul>
 
         </div>
@@ -131,14 +140,17 @@ fdt resize
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="../motherboard/index.html" title="The Motherboard"
+          <a href="../debug/index.html" title="Debugging"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../thermal/index.html" title="Thermal"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Reform  documentation</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2018, Lukas F. Hartmann (mntmn).
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.4.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.9.
     </div>
   </body>
 </html>

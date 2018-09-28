@@ -1,0 +1,150 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>The ATTiny &#8212; Reform  documentation</title>
+    <link rel="stylesheet" href="../_static/mntstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="The Keyboard" href="../keyboard/index.html" />
+    <link rel="prev" title="The Motherboard" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../keyboard/index.html" title="The Keyboard"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="The Motherboard"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Reform  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="the-attiny">
+<h1>The ATTiny<a class="headerlink" href="#the-attiny" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="in-a-nutshell">
+<h2>In a Nutshell<a class="headerlink" href="#in-a-nutshell" title="Permalink to this headline">¶</a></h2>
+<p>The ATTiny841 MCU works as:</p>
+<ul class="simple">
+<li>Battery voltage and current monitor/gauge</li>
+<li>System current monitor</li>
+<li>Lid sensor</li>
+</ul>
+<p>The Atmel ATTiny841 (U16) is a 8-bit microcontroller that uses very little power and is always on when there is battery power in the system.
+Its job is to keep track of how much current is going in and out of the battery and what voltage the battery has. It does this with the help of the voltage/current monitor chip INA260 that is connected to the ATTiny via I2C.</p>
+</div>
+<div class="section" id="communcation">
+<h2>Communcation<a class="headerlink" href="#communcation" title="Permalink to this headline">¶</a></h2>
+<p>The ATTiny is permanently connected to the i.MX6 UART2 (/dev/ttymxc1 in Linux). If you want to interrupt this connection, you can desolder resistors R48 and R50.</p>
+<p>The ATTiny firmware configures its serial port to 9600 baud 8N1. You can talk to it using the program screen (or another serial terminal):</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>screen /dev/ttymxc1 <span class="m">9600</span>
+</pre></div>
+</div>
+<p>It accepts commands in the form of a single letter and sends a string in response. The current commands are:</p>
+<ul class="simple">
+<li><em>p</em>: Get battery power information (estimated capacity in amp hours, voltage, current)</li>
+<li><em>l</em>: Get lid state (0: open, 1: closed)</li>
+<li><em>h</em>: Get hall sensor raw analog value</li>
+<li><em>r</em>: Reset the battery capacity counter to 10Ah (TODO: make it possible to set a value)</li>
+</ul>
+</div>
+<div class="section" id="undervoltage-protection-uvlo">
+<h2>Undervoltage Protection (UVLO)<a class="headerlink" href="#undervoltage-protection-uvlo" title="Permalink to this headline">¶</a></h2>
+<p>The microcontroller is supposed to detect a dangerously low voltage on the battery and switch the 5V boost converter off via its PWRON output when the voltage is below 2.8V. This way, the system will not draw power from the battery until it is charged to a reasonable level again. This functionality is still being tested and not activated in the beta boards.</p>
+</div>
+<div class="section" id="lid-sensor">
+<h2>Lid Sensor<a class="headerlink" href="#lid-sensor" title="Permalink to this headline">¶</a></h2>
+<p>The ATTiny also senses if the lid is open or closed. A hall effect sensor is connected to pins 3 and 4 (analog input). The lid is considered closed when a magnet is close to the sensor. The ATTiny outputs the string “lid_open” via its serial port which can wake the i.MX6 up from sleep.</p>
+</div>
+<div class="section" id="flashing-the-firmware">
+<h2>Flashing the Firmware<a class="headerlink" href="#flashing-the-firmware" title="Permalink to this headline">¶</a></h2>
+<p>You can find the source code of the <a class="reference external" href="https://github.com/mntmn/reform/reform-attiny-fw">firmware</a> in the folder “reform-attiny-fw” of the Reform source repository.</p>
+<p>To change (flash) the firmware of the ATTiny, you need an Atmel ISP (In System Programmer) compatible programmer/cable. An easy way is to use an Arduino to <a class="reference external" href="https://www.arduino.cc/en/Tutorial/ArduinoISP">emulate</a> an ISP.</p>
+<p>The relevant pins of J34 on the Reform motherboard for connecting the ISP cable are as follows:</p>
+<p>Upper row (left to right):</p>
+<ul class="simple">
+<li><strong>1</strong> SCK</li>
+<li><strong>3</strong> MISO</li>
+<li><strong>5</strong> MOSI</li>
+<li><strong>7</strong> GND</li>
+</ul>
+<p>Lower row (left to right):</p>
+<ul class="simple">
+<li><strong>2</strong> Not connected</li>
+<li><strong>4</strong> Not connected</li>
+<li><strong>6</strong> Not connected</li>
+<li><strong>8</strong> RESET</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart/index.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../case/index.html">The Case</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">The Motherboard</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">The ATTiny</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#in-a-nutshell">In a Nutshell</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#communcation">Communcation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#undervoltage-protection-uvlo">Undervoltage Protection (UVLO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lid-sensor">Lid Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#flashing-the-firmware">Flashing the Firmware</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../keyboard/index.html">The Keyboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trackball/index.html">The Trackball</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../thermal/index.html">Thermal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../boot/index.html">System Boot Details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../debug/index.html">Debugging</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../keyboard/index.html" title="The Keyboard"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="The Motherboard"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Reform  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, Lukas F. Hartmann (mntmn).
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.9.
+    </div>
+  </body>
+</html>

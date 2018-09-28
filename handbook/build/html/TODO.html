@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -7,21 +6,21 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Index &#8212; Reform  documentation</title>
+    <title>topics todo &#8212; Reform  documentation</title>
     <link rel="stylesheet" href="_static/mntstyle.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="index" title="Index" href="#" />
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="#" title="General Index"
+          <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="nav-item nav-item-0"><a href="index.html">Reform  documentation</a> &#187;</li> 
       </ul>
@@ -32,11 +31,60 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="topics-todo">
+<h1>topics todo<a class="headerlink" href="#topics-todo" title="Permalink to this headline">¶</a></h1>
+<p>faq
+- how full/empty is the battery?
+- how do i change the display brightness?</p>
+<blockquote>
+<div>brightnessctl s [1-7]</div></blockquote>
+<ul>
+<li><p class="first">what temperature does the cpu/system have?</p>
+<p>cat /sys/class/thermal/thermal_zone0/temp</p>
+</li>
+<li><p class="first">how do i use the proprietary hardware video decoder?</p>
+</li>
+<li><p class="first">what does the boot rom do?</p>
+</li>
+<li><p class="first">where are the schematics for tinyRex?</p>
+</li>
+<li><p class="first">where are the schematics for REFORM?</p>
+<p>The schematics of the motherboard, keyboard and trackball are in the git repository <a class="reference external" href="https://github.com/mntmn/reform">https://github.com/mntmn/reform</a></p>
+</li>
+<li><p class="first">how do i use an LTE modem/WWAN?</p>
+<p>The only modem tested so far is Huawei XYZ999. It presents itself as 5 serial ports (tty*) and an ethernet device in the system.
+You have to connect with a serial terminal like screen to /dev/tty* and issue AT commands to unlock the SIM and connect to the internet.</p>
+</li>
+<li><p class="first">how do i setup WiFi on the console?</p>
+<p>wicd-curses</p>
+</li>
+<li><p class="first">can i use a discrete graphics card by nvidia or amd?</p>
+</li>
+<li><p class="first">what is the resolution of the display?</p>
+</li>
+</ul>
+<p>The internal display has a resolution of 1366x768, but it is configured in the device tree (DTS) as 1368x768 to avoid problems with graphics drivers/hardware that can only handle multiples of 8 as the width.</p>
+<ul class="simple">
+<li>what is the maximum resolution of HDMI?</li>
+</ul>
+<p>The maximum tested resolution of the HDMI output is 1920x1200.</p>
+<ul class="simple">
+<li>how do i use the microphone input in the headphone jack?</li>
+<li>where are the speakers?</li>
+</ul>
+<p>Reform does not include any speakers, but a stereo speaker module is in the making. You can also build your own by connecting an amplifier and speakers to the motherboard header labelled Line Out.</p>
+<ul class="simple">
+<li>how do i use SPI, I2C, GPIO?</li>
+<li>how do i use CSI, DSI?</li>
+<li>how can i use the bootrom’s usb device mode?</li>
+<li>how do i print/make my own case part?</li>
+<li>how do i make a new keycap?</li>
+<li>how to use OpenGL/ES hardware acceleration in Xorg?</li>
+<li>how to use OpenGL/ES hardware acceleration in wayland?</li>
+<li>software/game XYZ does not work, is there a workaround?</li>
+<li>how can i run x86 software?</li>
+<li>how can i run Raspberry Pi compatible software?</li>
+</ul>
 </div>
 
 
@@ -66,7 +114,7 @@
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="#" title="General Index"
+          <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="nav-item nav-item-0"><a href="index.html">Reform  documentation</a> &#187;</li> 
       </ul>

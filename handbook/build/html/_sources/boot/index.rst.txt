@@ -6,7 +6,7 @@ Powering Up
 
 When the power switch is turned on, the TinyRex circuit receives power. If it is happy with the applied voltages (POWEROK signals are present), the green LED on the TinyRex module will light up. If only the red LED lights up, there is a problem with the power supply.
 
-Next, the i.MX6 chip will jump to internal boot ROM code at memory address _0x00000000_. The boot ROM looks for an SD card on port SD1 and reads the DCD (Device Configuration Data) table from physical address 0x400 (1024 decimal, or the second physical block) on the SD card. This means that you can only use the MBR partition scheme on the boot disk, as it only occupies the first disk block. The more modern GPT partition format could work in theory, but most GPT tools and parsers do not understand GPT structures where the second block is in an alternative location.
+Next, the i.MX6 chip will jump to internal boot ROM code at memory address *0x00000000*. The boot ROM looks for an SD card on port SD1 and reads the DCD (Device Configuration Data) table from physical address 0x400 (1024 decimal, or the second physical block) on the SD card. This means that you can only use the MBR partition scheme on the boot disk, as it only occupies the first disk block. The more modern GPT partition format could work in theory, but most GPT tools and parsers do not understand GPT structures where the second block is in an alternative location.
 
 We recommend to use the SD card as a boot and rescue disk, and set up an mSATA SSD disk with your actual operating system and data. You can then use alternative partition schemes and encryption.
 

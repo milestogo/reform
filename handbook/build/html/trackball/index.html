@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Quick Start &#8212; Reform  documentation</title>
+    <title>The Trackball &#8212; Reform  documentation</title>
     <link rel="stylesheet" href="../_static/mntstyle.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -15,8 +15,8 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="The Case" href="../case/index.html" />
-    <link rel="prev" title="MNT Reform Operator Handbook" href="../index.html" /> 
+    <link rel="next" title="Thermal" href="../thermal/index.html" />
+    <link rel="prev" title="The Keyboard" href="../keyboard/index.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
@@ -25,10 +25,10 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="../case/index.html" title="The Case"
+          <a href="../thermal/index.html" title="Thermal"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="../index.html" title="MNT Reform Operator Handbook"
+          <a href="../keyboard/index.html" title="The Keyboard"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Reform  documentation</a> &#187;</li> 
       </ul>
@@ -39,23 +39,27 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="quick-start">
-<h1>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h1>
-<p>Reform can be powered either by the internal LiFePo4 battery or by the 5V wall adapter. The wall adapter will automatically charge the battery if present.</p>
-<p>For safety reasons, the battery cable is not connected by default. To use the battery, unscrew the bottom lid and plug the white battery cable plug into the battery connector on the motherboard. Then reattach the bottom lid.</p>
-<p>To switch the system on, push the power switch (that is located on the front of the device) to the right.</p>
-<p>The central processor (CPU) will try to boot from the internal SD card.</p>
-<p>You should be greeted by U-Boot and the MNT logo in the upper right corner of the display.</p>
-<p>If not interrupted by a keypress, Reform will boot into the Debian GNU/Linux operating system that is preinstalled on the SD card.</p>
-<p>The kernel will show diagnostic information as it activates all the devices in the system, and you’ll end up at the login prompt if everything is OK.</p>
-<p>To log in, enter “root” as the username and “reform” as the password.</p>
-<p>From this console environment, you can:</p>
-<ul class="simple">
-<li>Format an mSATA SSD drive (if you put one in the mSATA slot) and install an OS to it</li>
-<li>Secure the root account and create standard user accounts</li>
-<li>Try some preinstalled graphical demos</li>
-<li>Inspect or repair the system</li>
-</ul>
+  <div class="section" id="the-trackball">
+<h1>The Trackball<a class="headerlink" href="#the-trackball" title="Permalink to this headline">¶</a></h1>
+<p>The trackball uses the same microcontroller and LUFA framework as the <a class="reference external" href="../keyboard/index.html">keyboard</a>, but instead of scanning a matrix of switches, it gets X and Y movement coordinates from the PMW3360DM-T2QU optical sensor that is connected via SPI.</p>
+<div class="section" id="wheel-mode-middle-click">
+<h2>Wheel Mode, Middle Click<a class="headerlink" href="#wheel-mode-middle-click" title="Permalink to this headline">¶</a></h2>
+<p>The trackball firmware has a special “wheel mode” that allows you to use it like a mouse wheel for scrolling or to perform a middle mouse click.</p>
+<p>You can enter wheel mode by pressing the left button and then pressing the right button while keeping the left button pressed. Release both buttons. Rolling the ball up and down will send wheel up/down commands. Clicking the right button will perform a middle click. Clicking the left button will exit wheel mode.</p>
+</div>
+<div class="section" id="firmware">
+<h2>Firmware<a class="headerlink" href="#firmware" title="Permalink to this headline">¶</a></h2>
+<p>You can find the Reform trackball <a class="reference external" href="https://github.com/mntmn/reform/reform-trackball-fw">firmware</a> in the source folder “reform-trackball-fw”.</p>
+<p>The trackball firmware is based on the LUFA USB device library and implements a USB HID Mouse. To modify the behaviour of the trackball, edit the file Mouse.c and rebuild the firmware by typing the following command in a terminal:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>make
+</pre></div>
+</div>
+<p>As with the keyboard, the trackball’s MCU has to be in “Atmega DFU bootloader” USB mode. This is achieved by shorting the pins HWB and GND with a jumper and then briefly shorting the RESET pin to ground. The pins are marked on the silkscreen of the main trackball PCB.</p>
+<p>After a reset with HWB pulled to ground, The trackball will reappear as a Atmel DFU bootloader USB device. You can then upload your new firmware by executing:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>./flash.sh
+</pre></div>
+</div>
+</div>
 </div>
 
 
@@ -66,12 +70,16 @@
         <div class="sphinxsidebarwrapper">
 <h3><a href="../index.html">Table Of Contents</a></h3>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart/index.html">Quick Start</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../case/index.html">The Case</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../motherboard/index.html">The Motherboard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../motherboard/attiny.html">The ATTiny</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../keyboard/index.html">The Keyboard</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../trackball/index.html">The Trackball</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">The Trackball</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#wheel-mode-middle-click">Wheel Mode, Middle Click</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#firmware">Firmware</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../thermal/index.html">Thermal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../boot/index.html">System Boot Details</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../debug/index.html">Debugging</a></li>
@@ -88,10 +96,10 @@
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="../case/index.html" title="The Case"
+          <a href="../thermal/index.html" title="Thermal"
              >next</a> |</li>
         <li class="right" >
-          <a href="../index.html" title="MNT Reform Operator Handbook"
+          <a href="../keyboard/index.html" title="The Keyboard"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Reform  documentation</a> &#187;</li> 
       </ul>
