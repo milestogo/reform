@@ -1,0 +1,15 @@
+{#
+    basic/globaltoc.html
+    ~~~~~~~~~~~~~~~~~~~~
+
+    Sphinx sidebar template: global table of contents.
+
+    :copyright: Copyright 2007-2018 by the Sphinx team, see AUTHORS.
+    :license: BSD, see LICENSE for details.
+#}
+<a href="{{ pathto('index') }}">
+  <img class="logo" src="{{ pathto('_static/mnt-reform-logo.png', 1) }}" alt="Logo"/>
+</a>
+
+<!--h3><a href="{{ pathto(master_doc) }}">{{ _('MNT Reform Operator Handbook') }}</a></h3-->
+{{ toctree() }}
