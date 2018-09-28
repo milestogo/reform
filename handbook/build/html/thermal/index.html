@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Quick Start &#8212; Reform  documentation</title>
+    <title>Thermal &#8212; Reform  documentation</title>
     <link rel="stylesheet" href="../_static/mntstyle.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -15,8 +15,8 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="The Case" href="../case/index.html" />
-    <link rel="prev" title="MNT Reform Operator Handbook" href="../index.html" /> 
+    <link rel="next" title="System Boot Details" href="../boot/index.html" />
+    <link rel="prev" title="The Trackball" href="../trackball/index.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
@@ -25,10 +25,10 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="../case/index.html" title="The Case"
+          <a href="../boot/index.html" title="System Boot Details"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="../index.html" title="MNT Reform Operator Handbook"
+          <a href="../trackball/index.html" title="The Trackball"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Reform  documentation</a> &#187;</li> 
       </ul>
@@ -39,23 +39,26 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="quick-start">
-<h1>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h1>
-<p>Reform can be powered either by the internal LiFePo4 battery or by the 5V wall adapter. The wall adapter will automatically charge the battery if present.</p>
-<p>For safety reasons, the battery cable is not connected by default. To use the battery, unscrew the bottom lid and plug the white battery cable plug into the battery connector on the motherboard. Then reattach the bottom lid.</p>
-<p>To switch the system on, push the power switch (that is located on the front of the device) to the right.</p>
-<p>The central processor (CPU) will try to boot from the internal SD card.</p>
-<p>You should be greeted by U-Boot and the MNT logo in the upper right corner of the display.</p>
-<p>If not interrupted by a keypress, Reform will boot into the Debian GNU/Linux operating system that is preinstalled on the SD card.</p>
-<p>The kernel will show diagnostic information as it activates all the devices in the system, and you’ll end up at the login prompt if everything is OK.</p>
-<p>To log in, enter “root” as the username and “reform” as the password.</p>
-<p>From this console environment, you can:</p>
-<ul class="simple">
-<li>Format an mSATA SSD drive (if you put one in the mSATA slot) and install an OS to it</li>
-<li>Secure the root account and create standard user accounts</li>
-<li>Try some preinstalled graphical demos</li>
-<li>Inspect or repair the system</li>
-</ul>
+  <div class="section" id="thermal">
+<h1>Thermal<a class="headerlink" href="#thermal" title="Permalink to this headline">¶</a></h1>
+<p>The main source of heat inside Reform is the i.MX6 SoC and its memory chips. Most of the heat goes into the blue passive heatsink that is glued to it. A fan which is mounted to the bottom plate then blows air over the heatsink into the direction of the ports, where it can escape through gaps in the case.</p>
+<p>The fan is needed to push hot air out of the case, preventing overheating of the system. Normally, its full power is only needed when the system is under heavy load, for example when the GPU (3D graphics processor) is very active or all 4 cores are busy compiling code. The fan should turn on to full power when the SoC temperature is over 65 degrees celcius.</p>
+<p>One of the three fan cables (yellow) connects to the PWM1 pin of the i.MX6. The fan’s speed can be controlled via pulse width modulation. This is usually the job of the reformd script, which monitors the core temperature and sets the fan to full power when the temperature is over 65 degrees Celcius.</p>
+<p>To check the temperature of the system, you can use the command:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>cat /sys/class/thermal/thermal_zone0/temp
+</pre></div>
+</div>
+<p>The following is an example of commands that reformd uses to change the fan speed (in this instance, to set it to 75%):</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># make the first PWM device available</span>
+<span class="nb">echo</span> <span class="m">0</span> &gt; /sys/class/pwm/pwmchip1/export
+<span class="c1"># define what a full period is</span>
+<span class="nb">echo</span> <span class="m">10000</span> &gt; /sys/class/pwm/pwmchip1/pwm0/period
+<span class="c1"># set how much of this period should be in the &quot;ON&quot; state (75%)</span>
+<span class="nb">echo</span> <span class="m">7500</span> &gt; /sys/class/pwm/pwmchip1/pwm0/duty_cycle
+<span class="c1"># enable the PWM output</span>
+<span class="nb">echo</span> <span class="m">1</span> &gt; /sys/class/pwm/pwmchip1/pwm0/enable
+</pre></div>
+</div>
 </div>
 
 
@@ -66,13 +69,13 @@
         <div class="sphinxsidebarwrapper">
 <h3><a href="../index.html">Table Of Contents</a></h3>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart/index.html">Quick Start</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../case/index.html">The Case</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../motherboard/index.html">The Motherboard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../motherboard/attiny.html">The ATTiny</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../keyboard/index.html">The Keyboard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../trackball/index.html">The Trackball</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../thermal/index.html">Thermal</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Thermal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../boot/index.html">System Boot Details</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../debug/index.html">Debugging</a></li>
 </ul>
@@ -88,10 +91,10 @@
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="../case/index.html" title="The Case"
+          <a href="../boot/index.html" title="System Boot Details"
              >next</a> |</li>
         <li class="right" >
-          <a href="../index.html" title="MNT Reform Operator Handbook"
+          <a href="../trackball/index.html" title="The Trackball"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Reform  documentation</a> &#187;</li> 
       </ul>

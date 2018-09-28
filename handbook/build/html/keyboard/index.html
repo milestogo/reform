@@ -1,0 +1,121 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>The Keyboard &#8212; Reform  documentation</title>
+    <link rel="stylesheet" href="../_static/mntstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="The Trackball" href="../trackball/index.html" />
+    <link rel="prev" title="The ATTiny" href="../motherboard/attiny.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../trackball/index.html" title="The Trackball"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../motherboard/attiny.html" title="The ATTiny"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Reform  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="the-keyboard">
+<h1>The Keyboard<a class="headerlink" href="#the-keyboard" title="Permalink to this headline">¶</a></h1>
+<p>The keyboard is a row/column matrix scanner with anti-ghosting diodes on each switch. Each row and column is connected to one pin of the <a class="reference external" href="http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf">ATMega32U4</a> 8-bit microcontroller. This microcontroller runs a firmware based on <a class="reference external" href="http://www.fourwalledcubicle.com/files/LUFA/Doc/170418/html/">LUFA</a>. This converts the scanned out keycodes to the USB HID protocol.</p>
+<div class="section" id="firmware">
+<h2>Firmware<a class="headerlink" href="#firmware" title="Permalink to this headline">¶</a></h2>
+<p>You can find the Reform keyboard <a class="reference external" href="https://github.com/mntmn/reform/reform-keyboard-fw">firmware</a> in the source folder “reform-keyboard-fw”.</p>
+<p>To modify the scancodes of the keyboard matrix, edit the file Keyboard.c and rebuild the firmware by typing the following command in a terminal:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>make
+</pre></div>
+</div>
+<p>To be able to flash the firmware to the keyboard, the ATMega has to be in a special mode where it identifies as an “Atmega DFU bootloader” USB device. This is achieved by shorting the pins HWB and GND with a jumper and then briefly shorting the RESET pin to ground.</p>
+<p>The RESET pin is pin 2 of J1, pin 1 is GND.</p>
+<p>HWB and GND are pins 3 and 4 of J3, respectively. Start counting at the “J3” label.</p>
+<p>The keyboard will reappear as a Atmel DFU bootloader USB device. You can then upload your new firmware by executing:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>./flash.sh
+</pre></div>
+</div>
+</div>
+<div class="section" id="replacing-a-keycap">
+<h2>Replacing a Keycap<a class="headerlink" href="#replacing-a-keycap" title="Permalink to this headline">¶</a></h2>
+<p>The keycaps of the Reform beta units are printed with Clear Resin on Formlabs Form2 printers and then sanded by hand. Small irregularities are normal and a result of this process. The stems of the square 1x1 keycaps are slightly wider than the stems of other keycaps to make them more stable. This makes them harder to remove without breaking a stem. If a stem breaks inside of the keyswitch, you’ll have to replace the keyswitch (see the following section).</p>
+<p>To pull out bigger keycaps, use pincers and try to push them between the top of the switch and the cap and wiggle very carefully and evenly until you can pull out the cap.</p>
+<p>There are some companies who produce “standard” Cherry ML keycaps, such as <a class="reference external" href="https://www.gmk-electronic-design.de/en.html">GMK</a>.</p>
+</div>
+<div class="section" id="replacing-a-keyswitch">
+<h2>Replacing a Keyswitch<a class="headerlink" href="#replacing-a-keyswitch" title="Permalink to this headline">¶</a></h2>
+<p>Only 2 of the 4 Cherry ML switch pins are soldered in to make it easier to swap switches with just a soldering iron. Set your iron/station to 380 degrees and dissolve the solder of one pin. Try to pull out the corresponding side of the switch from the top while continuing to heat the pin. Repeat the same for the other pin and go back and forth until you can remove the switch.</p>
+<p>Replace with model Cherry ML1A-11JW.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart/index.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../case/index.html">The Case</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../motherboard/index.html">The Motherboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../motherboard/attiny.html">The ATTiny</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">The Keyboard</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#firmware">Firmware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#replacing-a-keycap">Replacing a Keycap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#replacing-a-keyswitch">Replacing a Keyswitch</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../trackball/index.html">The Trackball</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../thermal/index.html">Thermal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../boot/index.html">System Boot Details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../debug/index.html">Debugging</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../trackball/index.html" title="The Trackball"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../motherboard/attiny.html" title="The ATTiny"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Reform  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, Lukas F. Hartmann (mntmn).
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.9.
+    </div>
+  </body>
+</html>

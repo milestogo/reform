@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Quick Start &#8212; Reform  documentation</title>
+    <title>Debugging &#8212; Reform  documentation</title>
     <link rel="stylesheet" href="../_static/mntstyle.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -15,8 +15,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="The Case" href="../case/index.html" />
-    <link rel="prev" title="MNT Reform Operator Handbook" href="../index.html" /> 
+    <link rel="prev" title="System Boot Details" href="../boot/index.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
@@ -25,10 +24,7 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="../case/index.html" title="The Case"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="../index.html" title="MNT Reform Operator Handbook"
+          <a href="../boot/index.html" title="System Boot Details"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Reform  documentation</a> &#187;</li> 
       </ul>
@@ -39,23 +35,40 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="quick-start">
-<h1>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h1>
-<p>Reform can be powered either by the internal LiFePo4 battery or by the 5V wall adapter. The wall adapter will automatically charge the battery if present.</p>
-<p>For safety reasons, the battery cable is not connected by default. To use the battery, unscrew the bottom lid and plug the white battery cable plug into the battery connector on the motherboard. Then reattach the bottom lid.</p>
-<p>To switch the system on, push the power switch (that is located on the front of the device) to the right.</p>
-<p>The central processor (CPU) will try to boot from the internal SD card.</p>
-<p>You should be greeted by U-Boot and the MNT logo in the upper right corner of the display.</p>
-<p>If not interrupted by a keypress, Reform will boot into the Debian GNU/Linux operating system that is preinstalled on the SD card.</p>
-<p>The kernel will show diagnostic information as it activates all the devices in the system, and you’ll end up at the login prompt if everything is OK.</p>
-<p>To log in, enter “root” as the username and “reform” as the password.</p>
-<p>From this console environment, you can:</p>
+  <div class="section" id="debugging">
+<h1>Debugging<a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="power">
+<h2>Power<a class="headerlink" href="#power" title="Permalink to this headline">¶</a></h2>
+<p>The TinyRex module has a red and a green LED. Both have to light up to signal good power.</p>
+<p>To troubleshoot power, disconnect the internal battery and all internal and external peripherals, connect the 5V wall adapter. If you want to unplug the TinyRex module, you should take the motherboard out of the case first.</p>
+<p>Turn the power switch on. Get a multimeter and find the following voltages in the system:</p>
 <ul class="simple">
-<li>Format an mSATA SSD drive (if you put one in the mSATA slot) and install an OS to it</li>
-<li>Secure the root account and create standard user accounts</li>
-<li>Try some preinstalled graphical demos</li>
-<li>Inspect or repair the system</li>
+<li><strong>5V</strong> The main input rail. Can be found on pin 1 of J25 or J29.</li>
+<li><strong>3.3V</strong> The big regulator U4 (AP1501A-33) turns 5V into 3.3V. Check test point TP3 next to the big coil L2.</li>
+<li><strong>2.5V</strong> Regulated by U11 (LP3962EMP-2.5). Check TP5 next to it.</li>
+<li><strong>1.5V</strong> Regulated by U13. Check TP12. Needed for PCIe.</li>
+<li><strong>1.1V</strong> Regulated by U5 near the USB hub U9. Check TP6.</li>
 </ul>
+<p>If voltages are way off, there can be a short somewhere on the board which usually generates heat.</p>
+</div>
+<div class="section" id="serial-console">
+<h2>Serial Console<a class="headerlink" href="#serial-console" title="Permalink to this headline">¶</a></h2>
+<p>The motherboard connector labelled CONSOLE is a serial port (UART) to which U-Boot and the Linux kernel output diagnostic information on startup. The baud rate is 115200.</p>
+<p>Wire up a generic USB-to-UART adapter to the following pins of J25 (pin 1 is next to the J25 label):</p>
+<ul class="simple">
+<li><strong>1</strong> 5V, don’t connect</li>
+<li><strong>2</strong> UART1_TXD, connect to RX of your adapter</li>
+<li><strong>3</strong> UART1_RXD, connect to TX of your adapter</li>
+<li><strong>4</strong> UART1_RTS, don’t connect</li>
+<li><strong>5</strong> UART1_CTS, don’t connect</li>
+<li><strong>6</strong> GND, connect to GND of your adapter</li>
+</ul>
+<p>Then, use a terminal program such as screen on your host computer:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>screen /dev/ttyUSB0 <span class="m">115200</span>
+</pre></div>
+</div>
+<p>If you then switch on Reform with a prepared SD card inserted, you should see the U-Boot console in <em>screen</em>.</p>
+</div>
 </div>
 
 
@@ -66,7 +79,7 @@
         <div class="sphinxsidebarwrapper">
 <h3><a href="../index.html">Table Of Contents</a></h3>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart/index.html">Quick Start</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../case/index.html">The Case</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../motherboard/index.html">The Motherboard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../motherboard/attiny.html">The ATTiny</a></li>
@@ -74,7 +87,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../trackball/index.html">The Trackball</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../thermal/index.html">Thermal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../boot/index.html">System Boot Details</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../debug/index.html">Debugging</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Debugging</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#power">Power</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#serial-console">Serial Console</a></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -88,10 +105,7 @@
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="../case/index.html" title="The Case"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="../index.html" title="MNT Reform Operator Handbook"
+          <a href="../boot/index.html" title="System Boot Details"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Reform  documentation</a> &#187;</li> 
       </ul>

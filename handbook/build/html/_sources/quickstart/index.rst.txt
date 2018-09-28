@@ -19,7 +19,7 @@ To log in, enter "root" as the username and "reform" as the password.
 
 From this console environment, you can:
 
-- Format an mSATA SSD drive (if installed) and install an OS to it
+- Format an mSATA SSD drive (if you put one in the mSATA slot) and install an OS to it
 - Secure the root account and create standard user accounts
 - Try some preinstalled graphical demos
 - Inspect or repair the system
