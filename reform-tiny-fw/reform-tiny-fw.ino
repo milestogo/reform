@@ -25,6 +25,14 @@ int16_t ina_read16(unsigned char reg) {
   return val;
 }
 
+#define ST_EXPECT_DIGIT_0 0
+#define ST_EXPECT_DIGIT_1 1
+#define ST_EXPECT_DIGIT_2 2
+#define ST_EXPECT_DIGIT_3 3
+#define ST_EXPECT_CMD     4
+#define ST_SYNTAX_ERROR   5
+#define ST_EXPECT_RETURN  6
+
 #define LID_CLOSED 1
 #define LID_OPEN   0
 
@@ -36,7 +44,7 @@ int thresh = 500;
 int window = 10;
 int hallSense = 0;
 
-unsigned char state = 0;
+unsigned char state = ST_EXPECT_DIGIT_0;
 unsigned int inputNumber = 0;
 unsigned long lastTime = 0;
 
@@ -67,44 +75,45 @@ void handleCommands() {
   // 5   syntax error (unexpected character)
   // 6   command letter entered
   
-  if (state>=0 && state<=3) {
+  if (state>=ST_EXPECT_DIGIT_0 && state<=ST_EXPECT_DIGIT_3) {
     // read number or command
     if (chr >= '0' && chr <= '9') {
       inputNumber*=10;
       inputNumber+=(chr-'0');
       state++;
     } else if (chr >= 'a' && chr <= 'z') {
+      // command entered instead of digit
       cmd = chr;
-      state = 6;
+      state = ST_EXPECT_RETURN;
     } else if (chr == '\n' || chr == ' ') {
       // ignore newlines or spaces
     } else if (chr == '\r') {
       softSerial.println("error:syntax");
-      state = 0;
+      state = ST_EXPECT_DIGIT_0;
       inputNumber = 0;
     } else {
       // syntax error
-      state = 5;
+      state = ST_SYNTAX_ERROR;
     }
   }
-  else if (state == 4) {
+  else if (state == ST_EXPECT_CMD) {
     // read command
     if (chr >= 'a' && chr <= 'z') {
       cmd = chr;
-      state = 6;
+      state = ST_EXPECT_RETURN;
     } else {
-      state = 5;
+      state = ST_SYNTAX_ERROR;
     }
   }
-  else if (state == 5) {
+  else if (state == ST_SYNTAX_ERROR) {
     // syntax error
     if (chr == '\r') {
       softSerial.println("error:syntax");
-      state = 0;
+      state = ST_EXPECT_DIGIT_0;
       inputNumber = 0;
     }
   }
-  else if (state == 6) {
+  else if (state == ST_EXPECT_RETURN) {
     if (chr == '\n' or chr == ' ') {
       // ignore newlines or spaces
     }
@@ -168,10 +177,10 @@ void handleCommands() {
         softSerial.println("error:command");
       }
     
-      state = 0;
+      state = ST_EXPECT_DIGIT_0;
       inputNumber = 0;
     } else {
-      state = 5;
+      state = ST_SYNTAX_ERROR;
     }
   }
 }
