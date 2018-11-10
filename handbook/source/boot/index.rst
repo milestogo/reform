@@ -4,7 +4,7 @@ System Boot Details
 Powering Up
 -----------
 
-When the power switch is turned on, the TinyRex circuit receives power. If it is happy with the applied voltages (POWEROK signals are present), the green LED on the TinyRex module will light up. If only the red LED lights up, there is a problem with the power supply.
+When the power switch is turned on, the TinyRex module (the little red board that contains the i.MX6 and the memory chips) receives power. If it is happy with the applied voltages (POWEROK signals are present), the green LED on the TinyRex module will light up. If only the red LED lights up, there is a problem with the power supply.
 
 Next, the i.MX6 chip will jump to internal boot ROM code at memory address *0x00000000*. The boot ROM looks for an SD card on port SD1 and reads the DCD (Device Configuration Data) table from physical address 0x400 (1024 decimal, or the second physical block) on the SD card. This means that you can only use the MBR partition scheme on the boot disk, as it only occupies the first disk block. The more modern GPT partition format could work in theory, but most GPT tools and parsers do not understand GPT structures where the second block is in an alternative location.
 
@@ -41,7 +41,7 @@ If you want to boot manually, these are the steps.
 
 .. code-block:: shell
                 
-   setenv bootargs noinitrd root=/dev/mmcblk0p1 rw rootwait cma=256M pci=nomsi
+   setenv bootargs noinitrd root=/dev/mmcblk0p1 rw rootwait cma=256M pci=nomsi no_console_suspend=1
 
 2. Set the maximum address/size for the device tree structure (called FDT in U-Boot, DTS/DTB in Linux). The kernel can fail to start without this.
 
