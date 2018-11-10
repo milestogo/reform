@@ -40,6 +40,7 @@ release = ''
 # ones.
 extensions = [
     'sphinx.ext.githubpages',
+    'rinoh.frontend.sphinx'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -70,7 +71,6 @@ exclude_patterns = []
 # ['manni', 'igor', 'lovelace', 'xcode', 'vim', 'autumn', 'abap', 'vs', 'rrt', 'native', 'perldoc', 'borland', 'arduino', 'tango', 'emacs', 'friendly', 'monokai', 'paraiso-dark', 'colorful', 'murphy', 'bw', 'pastie', 'rainbow_dash', 'algol_nu', 'paraiso-light', 'trac', 'default', 'algol', 'fruity']
 
 pygments_style = 'fruity'
-
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -110,30 +110,40 @@ htmlhelp_basename = 'Reformdoc'
 
 # -- Options for LaTeX output ------------------------------------------------
 
+latex_engine = 'xelatex'
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #
-    # 'papersize': 'letterpaper',
+    'papersize': 'a4paper',
 
     # The font size ('10pt', '11pt' or '12pt').
     #
-    # 'pointsize': '10pt',
+    'pointsize': '10pt',
 
     # Additional stuff for the LaTeX preamble.
     #
-    # 'preamble': '',
+    #'preamble': '',
 
     # Latex figure (float) alignment
     #
-    # 'figure_align': 'htbp',
+    'figure_align': 'htbp',
+
+    'passoptionstopackages': r'\PassOptionsToPackage{svgnames}{xcolor}',
+
+    'sphinxsetup': r'TitleColor={named}{Black},InnerLinkColor={named}{Black},OuterLinkColor={named}{Black}',
+
+    'fontpkg': r'''\setmainfont{EB Garamond}
+\setsansfont{Inter UI}
+'''
 }
+
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'Reform.tex', 'Reform Documentation',
-     'Lukas F. Hartmann (mntmn)', 'manual'),
+    (master_doc, 'Reform.tex', 'MNT Reform Operator Handbook',
+     'Lukas F. Hartmann', 'manual'),
 ]
 
 
@@ -142,7 +152,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'reform', 'Reform Documentation',
+    (master_doc, 'reform', 'MNT Reform Operator Handbook',
      [author], 1)
 ]
 
@@ -153,7 +163,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'Reform', 'Reform Documentation',
+    (master_doc, 'Reform', 'MNT Reform Operator Handbook',
      author, 'Reform', 'One line description of project.',
      'Miscellaneous'),
 ]

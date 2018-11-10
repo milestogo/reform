@@ -13,8 +13,8 @@ The ATTiny works as:
 - System current monitor
 - Lid sensor
 
-Communcation
-------------
+Communication
+-------------
 
 The ATTiny is permanently connected to the i.MX6 UART2 (/dev/ttymxc1 in Linux). If you want to interrupt this connection, you can desolder resistors R48 and R50.
 
