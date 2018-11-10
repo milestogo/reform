@@ -13,8 +13,8 @@ The ATTiny841 MCU works as:
 The Atmel ATTiny841 (U16) is a 8-bit microcontroller that uses very little power and is always on when there is battery power in the system.
 Its job is to keep track of how much current is going in and out of the battery and what voltage the battery has. It does this with the help of the voltage/current monitor chip INA260 that is connected to the ATTiny via I2C.
 
-Communcation
-------------
+Communication
+-------------
 
 The ATTiny is permanently connected to the i.MX6 UART2 (/dev/ttymxc1 in Linux). If you want to interrupt this connection, you can desolder resistors R48 and R50.
 
