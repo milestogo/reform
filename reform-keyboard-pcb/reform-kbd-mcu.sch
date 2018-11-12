@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2
+EESchema Schematic File Version 4
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,18 +30,18 @@ LIBS:contrib
 LIBS:valves
 LIBS:mntcomp-keyboard
 LIBS:mntcomp-keyboard-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
+Title "Reform Keyboard"
+Date "2018-11-11"
+Rev "0.4"
+Comp "MNT Media and Technology UG"
+Comment1 "License: GPLv3+ https://www.gnu.org/licenses/gpl-3.0.en.html"
+Comment2 "Copyright 2017,2018 Lukas F. Hartmann / mntmn"
+Comment3 "https://mntmn.com/reform"
 Comment4 ""
 $EndDescr
 $Comp
@@ -60,7 +60,7 @@ L C_Small C1
 U 1 1 5A2073AA
 P 2700 3600
 F 0 "C1" H 2710 3670 50  0000 L CNN
-F 1 "10pF" H 2710 3520 50  0000 L CNN
+F 1 "18pF" H 2710 3520 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2700 3600 50  0001 C CNN
 F 3 "" H 2700 3600 50  0001 C CNN
 	1    2700 3600
@@ -71,7 +71,7 @@ L C_Small C2
 U 1 1 5A2073F7
 P 3300 3600
 F 0 "C2" H 3310 3670 50  0000 L CNN
-F 1 "10pF" H 3310 3520 50  0000 L CNN
+F 1 "18pF" H 3310 3520 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3300 3600 50  0001 C CNN
 F 3 "" H 3300 3600 50  0001 C CNN
 	1    3300 3600
@@ -238,7 +238,7 @@ L R_Small R2
 U 1 1 5A213EDF
 P 3750 4150
 F 0 "R2" V 3850 4100 50  0000 L CNN
-F 1 "22" V 3850 4250 50  0000 L CNN
+F 1 "0" V 3850 4250 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 3750 4150 50  0001 C CNN
 F 3 "" H 3750 4150 50  0001 C CNN
 	1    3750 4150
@@ -249,7 +249,7 @@ L R_Small R1
 U 1 1 5A213F64
 P 3750 4050
 F 0 "R1" V 3650 4000 50  0000 L CNN
-F 1 "22" V 3650 4150 50  0000 L CNN
+F 1 "0" V 3650 4150 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 3750 4050 50  0001 C CNN
 F 3 "" H 3750 4050 50  0001 C CNN
 	1    3750 4050

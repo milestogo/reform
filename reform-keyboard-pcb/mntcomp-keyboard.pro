@@ -1,4 +1,4 @@
-update=Fri 02 Feb 2018 06:37:29 PM CET
+update=Sun 11 Nov 2018 02:39:42 PM CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -62,10 +62,10 @@ LibName30=mntcomp-keyboard
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=
+PlotDirectoryName=/tmp/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
+SpiceAjustPassiveValues=0
 LabSize=60
+ERC_TestSimilarLabels=1
