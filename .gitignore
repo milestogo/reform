@@ -1,6 +1,5 @@
 *.bak
 *-bak
-*.pdf
 *.dcm
 *.bck
 *-cache.lib
