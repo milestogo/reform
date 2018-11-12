@@ -34,7 +34,7 @@ Wire up a generic USB-to-UART adapter to the following pins of J25 (pin 1 is nex
 
 Then, use a terminal program such as screen on your host computer:
 
-.. code-block:: shell
+.. code-block:: none
 
    screen /dev/ttyUSB0 115200
 

@@ -20,8 +20,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Reform'
-copyright = '2018, Lukas F. Hartmann (mntmn)'
-author = 'Lukas F. Hartmann (mntmn)'
+copyright = '2018, Lukas F. Hartmann / MNT Media and Technology UG, Berlin'
+author = ''
 
 # The short X.Y version
 version = ''
@@ -39,8 +39,7 @@ release = ''
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.githubpages',
-    'rinoh.frontend.sphinx'
+    'sphinx.ext.githubpages'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -118,7 +117,7 @@ latex_elements = {
 
     # The font size ('10pt', '11pt' or '12pt').
     #
-    'pointsize': '10pt',
+    'pointsize': '11pt',
 
     # Additional stuff for the LaTeX preamble.
     #
@@ -126,11 +125,11 @@ latex_elements = {
 
     # Latex figure (float) alignment
     #
-    'figure_align': 'htbp',
+    'figure_align': 'h', #tbp',
 
     'passoptionstopackages': r'\PassOptionsToPackage{svgnames}{xcolor}',
 
-    'sphinxsetup': r'TitleColor={named}{Black},InnerLinkColor={named}{Black},OuterLinkColor={named}{Black}',
+    'sphinxsetup': r'TitleColor={named}{Black},InnerLinkColor={named}{Black},OuterLinkColor={named}{Black},verbatimborder=0pt,noteborder=0pt',
 
     'fontpkg': r'''\setmainfont{EB Garamond}
 \setsansfont{Inter UI}
@@ -143,7 +142,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'Reform.tex', 'MNT Reform Operator Handbook',
-     'Lukas F. Hartmann', 'manual'),
+     'Lukas F. Hartmann, MNT Media and Technology UG, Berlin', 'manual'),
 ]
 
 

@@ -1,0 +1,13 @@
+[STYLESHEET]
+name=Reform
+description=Tweaks made to the Sphinx style sheet
+base=sphinx
+
+[VARIABLES]
+mono_typeface=Inconsolata
+serif_typeface=Inter UI
+sans_typeface=Inter UI
+fallback_typeface=Inter UI
+thin_black_stroke=0.5pt,#000
+blue=#000000
+

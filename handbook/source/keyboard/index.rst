@@ -1,6 +1,10 @@
 The Keyboard
 ============
 
+.. image:: keyboard.pdf
+   :target: keyboard.pdf
+
+
 The keyboard is a row/column matrix scanner with anti-ghosting diodes on each switch. Each row and column is connected to one pin of the ATMega32U4_ 8-bit microcontroller. This microcontroller runs a firmware based on LUFA_. This converts the scanned out keycodes to the USB HID protocol.
 
 Firmware
@@ -10,7 +14,7 @@ You can find the Reform keyboard firmware_ in the source folder "reform-keyboard
 
 To modify the scancodes of the keyboard matrix, edit the file Keyboard.c and rebuild the firmware by typing the following command in a terminal:
 
-.. code-block:: shell
+.. code-block:: none
                 
    make
    
@@ -22,7 +26,7 @@ HWB and GND are pins 3 and 4 of J3, respectively. Start counting at the "J3" lab
 
 The keyboard will reappear as a Atmel DFU bootloader USB device. You can then upload your new firmware by executing:
 
-.. code-block:: shell
+.. code-block:: none
                 
    ./flash.sh
 
@@ -46,3 +50,15 @@ Replace with model Cherry ML1A-11JW.
 .. _ATMega32U4: http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf
 .. _GMK: https://www.gmk-electronic-design.de/en.html
 .. _firmware: https://github.com/mntmn/reform/reform-keyboard-fw
+
+Keyboard Schematics (Matrix)
+----------------------------
+
+.. image:: reform-keyboard-page-1b.pdf
+   :target: reform-keyboard-page-1.pdf
+
+Keyboard Schematics (Controller)
+--------------------------------
+
+.. image:: reform-keyboard-page-2b.pdf
+   :target: reform-keyboard-page-2.pdf

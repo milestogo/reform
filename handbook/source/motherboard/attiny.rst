@@ -20,7 +20,7 @@ The ATTiny is permanently connected to the i.MX6 UART2 (/dev/ttymxc1 in Linux). 
 
 The ATTiny firmware configures its serial port to 9600 baud 8N1. You can talk to it using the program screen (or another serial terminal):
 
-.. code-block:: shell
+.. code-block:: none
                 
    screen /dev/ttymxc1 2400
 
@@ -56,17 +56,19 @@ The relevant pins of J34 on the Reform motherboard for connecting the ISP cable 
 
 Upper row (left to right):
 
-- **7** GND
-- **5** MOSI
-- **3** MISO
-- **1** SCK
++-----+------+------+------+
+| 7   | 5    | 3    | 1    |
++=====+======+======+======+
+| GND | MOSI | MISO | SCK  |
++-----+------+------+------+
 
 Lower row (left to right):
 
-- **8** RESET
-- **6** Not connected
-- **4** Not connected
-- **2** Not connected
++-------+------+------+------+
+| 8     | 6    | 4    | 2    |
++=======+======+======+======+
+| RESET | None | None | None |
++-------+------+------+------+
 
 .. _emulate: https://www.arduino.cc/en/Tutorial/ArduinoISP
 .. _firmware: https://github.com/mntmn/reform/reform-attiny-fw

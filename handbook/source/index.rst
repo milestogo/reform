@@ -6,11 +6,6 @@
 MNT Reform Operator Handbook
 ============================
 
-.. image:: reform-title.png
-
-Table of Contents
------------------
-
 .. toctree::
    :maxdepth: 3
 
@@ -23,4 +18,8 @@ Table of Contents
    thermal/index
    boot/index
    debug/index
-   faq/index
+   credits/index
+
+.. raw:: latex
+
+    \clearpage

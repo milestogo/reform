@@ -9,13 +9,13 @@ One of the three fan cables (orange) connects to the PWM1 pin of the i.MX6. The 
 
 To check the temperature of the system, you can use the command:
   
-.. code-block:: shell
+.. code-block:: none
 
    cat /sys/class/thermal/thermal_zone0/temp
 
 The following is an example of commands that reformd uses to change the fan speed (in this instance, to set it to 75%):
    
-.. code-block:: shell
+.. code-block:: none
 
    # make the first PWM device available
    echo 0 > /sys/class/pwm/pwmchip1/export

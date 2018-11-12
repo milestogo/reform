@@ -1,49 +1,47 @@
 The Motherboard
 ===============
 
-.. image:: reform04-motherboardpcb.png
-   :target: ../_images/reform04-motherboardpcb.png
-
-
+.. image:: reform-motherboard-markupb.pdf
+   :target: reform-motherboard-markup.pdf
             
 Schematics
 ----------
-           
-.. image:: reform-motherboard2.pdf
-   :target: ../_images/reform-motherboard.svg
+
+.. image:: reform-motherboard-page-1b.pdf
+   :target: reform-motherboard-page-1.pdf
 
 Power
 -----
 
-.. image:: reform-power-ReformPower2.pdf
-   :target: ../_images/reform-power-ReformPower.svg
+.. image:: reform-motherboard-page-2b.pdf
+   :target: reform-motherboard-page-2.pdf
 
 Storage
 -------
 
-.. image:: reform-sata-sd-ReformSATA_SD2.pdf
-   :target: ../_images/reform-sata-sd-ReformSATA_SD.svg
+.. image:: reform-motherboard-page-3b.pdf
+   :target: reform-motherboard-page-3.pdf
 
 Display
 -------
 
-.. image:: reform-display-ReformDisplay2.pdf
-   :target: ../_images/reform-display-ReformDisplay.svg
+.. image:: reform-motherboard-page-6b.pdf
+   :target: reform-motherboard-page-6.pdf
            
 PCIe
 ----
 
-.. image:: reform-pcie-ReformPCIe2.pdf
-   :target: ../_images/reform-pcie-ReformPCIe.svg
+.. image:: reform-motherboard-page-4b.pdf
+   :target: reform-motherboard-page-4.pdf
 
 Ethernet, USB
 -------------
 
-.. image:: reform-eth-usb-reform-eth-usb2.pdf
-   :target: ../_images/reform-eth-usb-reform-eth-usb.svg
-
+.. image:: reform-motherboard-page-5b.pdf
+   :target: reform-motherboard-page-5.pdf
+            
 Audio
 -----
 
-.. image:: reform-audio-ReformAudio2.pdf
-   :target: ../_images/reform-audio-ReformAudio.svg
+.. image:: reform-motherboard-page-7b.pdf
+   :target: reform-motherboard-page-7.pdf

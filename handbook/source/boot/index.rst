@@ -39,38 +39,38 @@ If you want to boot manually, these are the steps.
 
 1. Configure the kernel command line to use no initial ram disk, use the first partition of the first SD card as the root volume (read/write), and wait for the root device. Also, set the continuous memory allocation (CMA) pool to 256MB and disable message signaled interrupts (MSI) for PCI express. The CMA pool is needed by the etnaviv GPU drivers. MSI has to be disabled for some expansions like ath9k-based WiFi cards.
 
-.. code-block:: shell
+.. code-block:: none
                 
    setenv bootargs noinitrd root=/dev/mmcblk0p1 rw rootwait cma=256M pci=nomsi no_console_suspend=1
 
 2. Set the maximum address/size for the device tree structure (called FDT in U-Boot, DTS/DTB in Linux). The kernel can fail to start without this.
 
-.. code-block:: shell
+.. code-block:: none
                 
    setenv fdt_high 0xffffffff
 
 3. Load the Kernel (zImage) to address 0x10008000 from the SD card (also called "MMC") device 0, partition 1 (there is no partition 0, 1 is the first). ext4load works for ext4 formatted partitions. For FAT, you would use fatload.
 
-.. code-block:: shell
+.. code-block:: none
                 
    ext4load mmc 0:1 0x10008000 zImage
 
 4. Load the device tree (FDT/DTB) to address 0x18000000 from the same partition.
 
-.. code-block:: shell
+.. code-block:: none
                 
    ext4load mmc 0:1 0x18000000 imx6qp-mntreform.dtb
 
 5. Tell U-Boot where you just loaded the FDT and to please resize it.
 
-.. code-block:: shell
+.. code-block:: none
                 
    fdt addr 0x18000000
    fdt resize
 
 6. Start Linux from the load address and pass the FDT address to it.
 
-.. code-block:: shell
+.. code-block:: none
                 
    bootz 0x10008000 - 0x18000000
 

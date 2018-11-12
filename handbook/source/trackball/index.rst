@@ -1,6 +1,9 @@
 The Trackball
 =============
 
+.. image:: trackball.pdf
+   :target: trackball.pdf
+
 The trackball uses the same microcontroller and LUFA framework as the keyboard_, but instead of scanning a matrix of switches, it gets X and Y movement coordinates from the PMW3360DM-T2QU optical sensor that is connected via SPI.
 
 Wheel Mode, Middle Click
@@ -17,7 +20,7 @@ You can find the Reform trackball firmware_ in the source folder "reform-trackba
 
 The trackball firmware is based on the LUFA USB device library and implements a USB HID Mouse. To modify the behaviour of the trackball, edit the file Mouse.c and rebuild the firmware by typing the following command in a terminal:
 
-.. code-block:: shell
+.. code-block:: none
                 
    make
    
@@ -25,9 +28,15 @@ As with the keyboard, the trackball's MCU has to be in "Atmega DFU bootloader" U
 
 After a reset with HWB pulled to ground, The trackball will reappear as a Atmel DFU bootloader USB device. You can then upload your new firmware by executing:
 
-.. code-block:: shell
+.. code-block:: none
                 
    ./flash.sh
 
 .. _firmware: https://github.com/mntmn/reform/reform-trackball-fw
 .. _keyboard: ../keyboard/index.html
+
+Schematics
+----------
+
+.. image:: reform-trackballb.pdf
+   :target: reform-trackball.pdf

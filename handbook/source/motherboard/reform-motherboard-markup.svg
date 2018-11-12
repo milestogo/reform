@@ -1,0 +1,1050 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="148mm"
+   viewBox="0 0 210 148"
+   version="1.1"
+   id="svg7914"
+   inkscape:version="0.92.3pre0 (0ab9bec, 2018-03-03)"
+   sodipodi:docname="reform-motherboard-markup.svg">
+  <defs
+     id="defs7908" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="643.48246"
+     inkscape:cy="337.87612"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     inkscape:window-width="1916"
+     inkscape:window-height="1060"
+     inkscape:window-x="0"
+     inkscape:window-y="18"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7911">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     transform="translate(0,-149)">
+    <image
+       sodipodi:absref="/home/mntmn/code/reform/handbook/source/motherboard/reform04-motherboardpcb-crop.png"
+       xlink:href="reform04-motherboardpcb-crop.png"
+       width="180.31984"
+       height="115.42708"
+       preserveAspectRatio="none"
+       style="image-rendering:optimizeSpeed"
+       id="image7994"
+       x="33.438293"
+       y="165.5811" />
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-149)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="29.036467"
+       y="220.52646"
+       id="text7999-9"><tspan
+         sodipodi:role="line"
+         x="29.036467"
+         y="220.52646"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8001-4">ATTiny</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="68.016052"
+       y="244.5316"
+       id="text7999-9-7-6"><tspan
+         sodipodi:role="line"
+         x="68.016052"
+         y="244.5316"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1">Charger</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="59.205383"
+       y="237.58215"
+       id="text7999-9-7-6-0"><tspan
+         sodipodi:role="line"
+         x="59.205383"
+         y="237.58215"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6">Bat. Voltage to 5V</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="59.205383"
+       y="240.63719"
+       id="text7999-9-7-6-0-3"><tspan
+         sodipodi:role="line"
+         x="59.205383"
+         y="240.63719"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-2">Boost Converter</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="18.907749"
+       y="229.04655"
+       id="text7999-9-7-6-0-0"><tspan
+         sodipodi:role="line"
+         x="18.907749"
+         y="229.04655"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-6">Power Switch</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="18.907749"
+       y="232.10159"
+       id="text7999-9-7-6-0-3-1"><tspan
+         sodipodi:role="line"
+         x="18.907749"
+         y="232.10159"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-2-5">Connector</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 35.720141,230.66517 H 48.90067 l 2.244233,-2.24424"
+       id="path8191"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 50.64881,245.40624 6.18936,-6.18936 h 1.748139"
+       id="path8195"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 56.082219,247.81584 4.535712,-4.53572 h 6.52009"
+       id="path8197"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="18.907749"
+       y="250.29446"
+       id="text7999-9-7-6-0-7"><tspan
+         sodipodi:role="line"
+         x="18.907749"
+         y="250.29446"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-65">Current Sense</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="18.943829"
+       y="253.3495"
+       id="text7999-9-7-6-0-3-6"><tspan
+         sodipodi:role="line"
+         x="18.943829"
+         y="253.3495"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-2-9">Shunt Resistor</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 40.553543,249.81955 h 5.34539"
+       id="path8270"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="18.83559"
+       y="262.06787"
+       id="text7999-9-7-6-0-7-3"><tspan
+         sodipodi:role="line"
+         x="18.83559"
+         y="262.06787"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-65-7">Power Monitor</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 39.818552,219.55128 h 4.810852"
+       id="path8298"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 41.355352,261.04487 H 53.649751"
+       id="path8302"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="18.943829"
+       y="238.58652"
+       id="text7999-9-7-6-0-0-5"><tspan
+         sodipodi:role="line"
+         x="18.943829"
+         y="238.58652"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-6-4">Charger</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="18.943829"
+       y="241.64156"
+       id="text7999-9-7-6-0-3-1-7"><tspan
+         sodipodi:role="line"
+         x="18.943829"
+         y="241.64156"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-2-5-4">Status LEDs</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="18.83559"
+       y="211.46674"
+       id="text7999-9-7-6-0-0-3"><tspan
+         sodipodi:role="line"
+         x="18.83559"
+         y="211.46674"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-6-0">Lid Sensor</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="18.907749"
+       y="214.52177"
+       id="text7999-9-7-6-0-3-1-78"><tspan
+         sodipodi:role="line"
+         x="18.907749"
+         y="214.52177"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-2-5-6">Connector</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 41.530135,210.15996 H 35.624257"
+       id="path8358"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 41.388394,209.41345 v 2.66946 h 6.425596 v -2.97657 h -6.425596 z"
+       id="path8360"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="67.248749"
+       y="226.67773"
+       id="text7999-9-7-6-8"><tspan
+         sodipodi:role="line"
+         x="67.248749"
+         y="226.67773"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-8">3.3V Regulator</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 66.144601,225.69848 h -3.875408 l -2.539061,2.53905"
+       id="path8380"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="85.155815"
+       y="211.84427"
+       id="text7999-9-7-6-4"><tspan
+         sodipodi:role="line"
+         x="85.155815"
+         y="211.84427"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-3">Sound Chip</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 93.528981,208.19232 v -12.0973"
+       id="path8400"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="99.569344"
+       y="200.42224"
+       id="text7999-9-7-6-4-1"><tspan
+         sodipodi:role="line"
+         x="99.569344"
+         y="200.42224"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-3-4">HDMI Interface</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 110.69979,197.26152 v -6.3311"
+       id="path8420"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="120.71838"
+       y="185.81235"
+       id="text7999-9-7-6-0-06"><tspan
+         sodipodi:role="line"
+         x="120.71838"
+         y="185.81235"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-8">USB Port</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="120.71838"
+       y="188.86739"
+       id="text7999-9-7-6-0-3-9"><tspan
+         sodipodi:role="line"
+         x="120.71838"
+         y="188.86739"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-2-2">Power Switch</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 129.78759,189.04054 v 4.58296"
+       id="path8464"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="142.07129"
+       y="192.36"
+       id="text7999-9-7-6-0-06-6"><tspan
+         sodipodi:role="line"
+         x="142.07129"
+         y="192.36"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-8-6">USB Hub</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 148.12955,193.47282 v 4.58296"
+       id="path8464-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="173.11275"
+       y="196.28545"
+       id="text7999-9-7-6-0-06-6-0"><tspan
+         sodipodi:role="line"
+         x="173.11275"
+         y="196.28545"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-8-6-4">DSI Display Header</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="176.45605"
+       y="202.2041"
+       id="text7999-9-7-6-0-06-6-0-8"><tspan
+         sodipodi:role="line"
+         x="176.45605"
+         y="202.2041"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-8-6-4-7">I2C Header 2</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 166.49853,203.07291 6.37834,-6.37835"
+       id="path8553"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 170.27829,206.66368 5.48065,-5.48065"
+       id="path8555"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="174.3952"
+       y="211.78249"
+       id="text7999-9-7-6-0-06-6-0-8-1"><tspan
+         sodipodi:role="line"
+         x="174.3952"
+         y="211.78249"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-8-6-4-7-7">SD Card Write Protect</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="87.716431"
+       y="253.3082"
+       id="text7999-9-7-6-0-06-6-0-8-1-2"><tspan
+         sodipodi:role="line"
+         x="87.716431"
+         y="253.3082"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-8-6-4-7-7-7">SIM Card Slot</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 103.82961,264.31892 v -9.88897"
+       id="path8597"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="105.9556"
+       y="276.77185"
+       id="text7999-9-2"><tspan
+         sodipodi:role="line"
+         x="105.9556"
+         y="276.77185"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8001-4-2">WWAN LED</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="97.295341"
+       y="235.54466"
+       id="text7999-9-2-6"><tspan
+         sodipodi:role="line"
+         x="97.295341"
+         y="235.54466"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8001-4-2-1">WiFi LED</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 113.98586,273.00518 V 268.4616"
+       id="path8648"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 110.6784,234.38473 h 3.87541"
+       id="path8650"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="18.889709"
+       y="274.22864"
+       id="text7999-9-7-6-0-7-1"><tspan
+         sodipodi:role="line"
+         x="18.889709"
+         y="274.22864"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-65-5">3.2V LiFePo4</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="18.83559"
+       y="277.28366"
+       id="text7999-9-7-6-0-3-6-9"><tspan
+         sodipodi:role="line"
+         x="18.83559"
+         y="277.28366"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-2-9-4">Battery Connector</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 39.684917,273.00518 H 51.57841"
+       id="path8724"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="46.821106"
+       y="281.77466"
+       id="text7999-9-7-6-0-7-3-9"><tspan
+         sodipodi:role="line"
+         x="46.821106"
+         y="281.77466"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-65-7-0">- + + -</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="54.216137"
+       y="287.80872"
+       id="text7999-9-7-6-0-7-1-7"><tspan
+         sodipodi:role="line"
+         x="54.216137"
+         y="287.80872"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-65-5-1">Single Channel LVDS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="54.162014"
+       y="290.86374"
+       id="text7999-9-7-6-0-3-6-9-1"><tspan
+         sodipodi:role="line"
+         x="54.162014"
+         y="290.86374"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-2-9-4-5">Display Connector</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="79.53492"
+       y="280.4588"
+       id="text7999-9-7-6-0-7-1-7-9"><tspan
+         sodipodi:role="line"
+         x="79.53492"
+         y="280.4588"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-65-5-1-7">Display Power &amp;</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="79.480797"
+       y="283.51382"
+       id="text7999-9-7-6-0-3-6-9-1-7"><tspan
+         sodipodi:role="line"
+         x="79.480797"
+         y="283.51382"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-2-9-4-5-6">Backlight Connector</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 87.258893,277.14786 v -4.54358"
+       id="path8822"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 68.791667,284.43227 V 272.52602"
+       id="path8824"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="153.5323"
+       y="243.06581"
+       id="text7999-9-7-6-0-06-6-0-8-1-7"><tspan
+         sodipodi:role="line"
+         x="153.5323"
+         y="243.06581"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-8-6-4-7-7-3">SD Card Slot</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="159.31488"
+       y="255.69521"
+       id="text7999-9-7-6-0-06-6-0-6"><tspan
+         sodipodi:role="line"
+         x="159.31488"
+         y="255.69521"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-8-6-4-5">CSI Camera Header</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 188.68769,254.5958 h 4.67722 l 2.47224,-2.47224"
+       id="path8864"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="174.16841"
+       y="235.97295"
+       id="text7999-9-7-6-0-06-6-0-8-6"><tspan
+         sodipodi:role="line"
+         x="174.16841"
+         y="235.97295"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-8-6-4-7-3">GPIO Header</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 194.10969,235.31428 5.48066,5.48066"
+       id="path8884"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="92.72094"
+       y="218.43823"
+       id="text7999-9-7-6-4-9"><tspan
+         sodipodi:role="line"
+         x="92.72094"
+         y="218.43823"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-3-48">mPCIE Slot</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 109.825,217.45899 h 11.8935"
+       id="path8650-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="85.736656"
+       y="246.17831"
+       id="text7999-9-7-6-4-9-2"><tspan
+         sodipodi:role="line"
+         x="85.736656"
+         y="246.17831"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-3-48-9">WWAN USB Slot</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 110.30575,245.19906 h 11.89349"
+       id="path8650-1-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 171.58244,224.76303 v -11.69304 l 2.27179,-2.27179"
+       id="path8940"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 173.58558,241.90996 h 9.82738"
+       id="path8942"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="181.15245"
+       y="219.2475"
+       id="text7999-9-7-6-0-06-6-0-8-6-9"><tspan
+         sodipodi:role="line"
+         x="181.15245"
+         y="219.2475"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-8-6-4-7-3-0">mSATA Slot</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 189.0826,220.74329 v 8.40997"
+       id="path8962"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="135.47604"
+       y="228.45987"
+       id="text7999-9-7-6-0-5"><tspan
+         sodipodi:role="line"
+         x="135.47604"
+         y="228.45987"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-0">i.MX6QP TinyRex</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="135.47604"
+       y="231.51492"
+       id="text7999-9-7-6-0-3-96"><tspan
+         sodipodi:role="line"
+         x="135.47604"
+         y="231.51492"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-2-3">Connectors</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 150.2928,225.3735 V 214.50668"
+       id="path9016"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 160.6399,227.83035 h 4.81919"
+       id="path9018"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 150.2928,232.55505 v 10.48884"
+       id="path9020"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="18.83559"
+       y="177.16318"
+       id="text7999-9-8"><tspan
+         sodipodi:role="line"
+         x="18.83559"
+         y="177.16318"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8001-4-5">Power LED</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 35.151787,175.95312 H 59.720239"
+       id="path9058"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="183.18214"
+       y="283.08701"
+       id="text7999-9-7-6-0-06-6-0-6-6"><tspan
+         sodipodi:role="line"
+         x="183.18214"
+         y="283.08701"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-8-6-4-5-1">Internal USB</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="183.5916"
+       y="276.1022"
+       id="text7999-9-7-6-0-7-3-9-1"><tspan
+         sodipodi:role="line"
+         x="183.5916"
+         y="276.1022"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-65-7-0-5">-    +</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="186.19017"
+       y="279.04831"
+       id="text7999-9-7-6-0-7-3-9-1-9"><tspan
+         sodipodi:role="line"
+         x="186.19017"
+         y="279.04831"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-65-7-0-5-8">(red)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="194.22389"
+       y="276.08926"
+       id="text7999-9-7-6-0-7-3-9-1-4"><tspan
+         sodipodi:role="line"
+         x="194.22389"
+         y="276.08926"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-65-7-0-5-81">-    +</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="196.82246"
+       y="278.90173"
+       id="text7999-9-7-6-0-7-3-9-1-9-0"><tspan
+         sodipodi:role="line"
+         x="196.82246"
+         y="278.90173"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-65-7-0-5-8-3">(red)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="142.87601"
+       y="287.0134"
+       id="text7999-9-7-6-0-7-1-7-9-4"><tspan
+         sodipodi:role="line"
+         x="142.87601"
+         y="287.0134"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-65-5-1-7-4">Console UART</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="142.82187"
+       y="290.06842"
+       id="text7999-9-7-6-0-3-6-9-1-7-4"><tspan
+         sodipodi:role="line"
+         x="142.82187"
+         y="290.06842"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-2-9-4-5-6-7">115200 Baud</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="133.29233"
+       y="274.19302"
+       id="text7999-9-2-63"><tspan
+         sodipodi:role="line"
+         x="133.29233"
+         y="274.19302"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8001-4-2-17">SPI</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="88.855629"
+       y="276.01459"
+       id="text7999-9-7-6-0-7-3-9-1-9-0-5"><tspan
+         sodipodi:role="line"
+         x="88.855629"
+         y="276.01459"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-65-7-0-5-8-3-9">(red)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="73.287178"
+       y="276.68277"
+       id="text7999-9-7-6-0-7-3-9-1-9-0-5-6"><tspan
+         sodipodi:role="line"
+         x="73.287178"
+         y="276.68277"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-65-7-0-5-8-3-9-2">(red)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="141.17815"
+       y="279.23337"
+       id="text7999-9-2-63-1"><tspan
+         sodipodi:role="line"
+         x="141.17815"
+         y="279.23337"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8001-4-2-17-7">GND  RTS  TX</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="144.47806"
+       y="282.24466"
+       id="text7999-9-2-63-1-7"><tspan
+         sodipodi:role="line"
+         x="144.47806"
+         y="282.24466"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8001-4-2-17-7-4">CTS    RX    5V</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 146.32547,275.67748 V 271.5348"
+       id="path9298"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 148.79771,278.61745 V 271.5348"
+       id="path9300"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 151.60404,276.01157 V 271.5348"
+       id="path9302"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 156.61535,279.28562 v -4.54358 l -2.40543,-2.40543 v -0.80181"
+       id="path9304"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 159.22249,276.30675 v -1.74814 l -2.26786,-2.26785 v -0.75596"
+       id="path9308"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 159.26973,271.62834 4.18136,4.18136 v 3.51515"
+       id="path9310"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="173.09396"
+       y="276.17636"
+       id="text7999-9-7-6-0-7-3-9-1-4-1"><tspan
+         sodipodi:role="line"
+         x="173.09396"
+         y="276.17636"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-65-7-0-5-81-8">-  +</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="173.70314"
+       y="279.8013"
+       id="text7999-9-7-6-0-06-6-0-6-6-5"><tspan
+         sodipodi:role="line"
+         x="173.70314"
+         y="279.8013"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-8-6-4-5-1-9">5V</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="159.18475"
+       y="263.28174"
+       id="text7999-9-7-6-0-06-6-0-8-1-7-7"><tspan
+         sodipodi:role="line"
+         x="159.18475"
+         y="263.28174"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-8-6-4-7-7-3-5">Extra SD Card Header</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 163.56921,263.83258 v 1.5119 l 3.63802,3.63802"
+       id="path9366"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="183.83147"
+       y="267.06149"
+       id="text7999-9-7-6-0-06-6-0-8-1-7-7-3"><tspan
+         sodipodi:role="line"
+         x="183.83147"
+         y="267.06149"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-8-6-4-7-7-3-5-8">Fan Header</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 182.846,265.81695 h -7.37054"
+       id="path9386"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="159.27779"
+       y="248.63098"
+       id="text7999-9-7-6-0-06-6-0-8-1-8"><tspan
+         sodipodi:role="line"
+         x="159.27779"
+         y="248.63098"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-8-6-4-7-7-31">Reset</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 168.44202,247.68139 2.63929,2.63929"
+       id="path9406"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="128.65785"
+       y="167.48505"
+       id="text7999-9-7-6-0-06-6-8"><tspan
+         sodipodi:role="line"
+         x="128.65785"
+         y="167.48505"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-8-6-9">USB 2.0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="150.41013"
+       y="167.48505"
+       id="text7999-9-7-6-0-06-6-8-6"><tspan
+         sodipodi:role="line"
+         x="150.41013"
+         y="167.48505"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-8-6-9-4">USB 2.0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="107.94353"
+       y="167.45348"
+       id="text7999-9-7-6-0-06-6-8-3"><tspan
+         sodipodi:role="line"
+         x="107.94353"
+         y="167.45348"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-8-6-9-3">HDMI</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="64.265564"
+       y="167.45348"
+       id="text7999-9-7-6-0-06-6-8-3-3"><tspan
+         sodipodi:role="line"
+         x="64.265564"
+         y="167.45348"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-8-6-9-3-8">Ethernet</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="49.485279"
+       y="167.48505"
+       id="text7999-9-7-6-0-06-6-8-3-3-6"><tspan
+         sodipodi:role="line"
+         x="49.485279"
+         y="167.48505"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-8-6-9-3-8-0">5VDC</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="84.530197"
+       y="167.48505"
+       id="text7999-9-7-6-0-06-6-8-3-3-6-4"><tspan
+         sodipodi:role="line"
+         x="84.530197"
+         y="167.48505"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-8-6-9-3-8-0-8">Phone/Mic</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="67.955986"
+       y="192.40042"
+       id="text7999-9-7-6-4-8"><tspan
+         sodipodi:role="line"
+         x="67.955986"
+         y="192.40042"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-3-8">Line In</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="67.955986"
+       y="198.45338"
+       id="text7999-9-7-6-4-8-9"><tspan
+         sodipodi:role="line"
+         x="67.955986"
+         y="198.45338"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-3-8-7">Line Out</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 80.844424,197.70199 1.904294,1.9043 v 1.77066"
+       id="path9552"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 78.241073,191.49739 h 3.685267 l 2.952938,2.95293"
+       id="path9556"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="117.63258"
+       y="283.63702"
+       id="text7999-9-7-6-0-7-1-7-9-7"><tspan
+         sodipodi:role="line"
+         x="117.63258"
+         y="283.63702"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-65-5-1-7-6">WWAN Misc</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="117.57846"
+       y="286.69205"
+       id="text7999-9-7-6-0-3-6-9-1-7-43"><tspan
+         sodipodi:role="line"
+         x="117.57846"
+         y="286.69205"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:3.17499995px;font-family:'Inter UI';-inkscape-font-specification:'Inter UI';stroke-width:0.26458332"
+         id="tspan8045-1-6-2-9-4-5-6-0">Signals</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 126.24406,279.99106 v -5.66964 l -5.05543,-5.05544"
+       id="path9584"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
