@@ -8,10 +8,12 @@
 #define SCL_PORT PORTA
 #define SDA_PIN 1
 #define SDA_PORT PORTA
+#define HALL_SENSOR_PIN A5
+#define HALL_SENSOR_SUPPLY_PIN 4
+#define INA_ADDR 0x4e
+
 #include <SoftI2CMaster.h>
 #include <SoftwareSerial.h>
-
-#define INA_ADDR 0x4e
 
 int16_t ina_read16(unsigned char reg) {
   uint16_t val = 0;
@@ -54,8 +56,9 @@ float current = 0;
 char cmd = 'a';
 unsigned char echo = 1;
 
+// TODO if there is no battery power, ignore lid sensor (values >900)
 void handleLidSensor() {
-  hallSense = analogRead(A10);
+  hallSense = analogRead(HALL_SENSOR_PIN);
   if (hallSense>(thresh+window) && hallState==LID_OPEN) {
     hallState = LID_CLOSED;
   }
@@ -226,14 +229,11 @@ void setup() {
     softSerial.println("error:i2c");
   }
 
-  // physical pin 3 for hall effect sensor
-  pinMode(A10, INPUT);
-  // physical pin 2 for hall effect sensor supply voltage
-  pinMode(0, OUTPUT);
-  digitalWrite(0, HIGH);
-  // physical pin 5 for hall effect sensor GND
-  pinMode(2, OUTPUT);
-  digitalWrite(2, LOW);
+  // physical pin 8 (J34 pin 3) for hall effect sensor
+  pinMode(HALL_SENSOR_PIN, INPUT);
+  // physical pin 7 (J34 pin 5) for hall effect sensor supply voltage
+  pinMode(HALL_SENSOR_SUPPLY_PIN, OUTPUT);
+  digitalWrite(HALL_SENSOR_SUPPLY_PIN, HIGH);
 
   // PWRON output (TODO: ULVO)
   pinMode(7, OUTPUT);

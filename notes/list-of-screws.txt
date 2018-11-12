@@ -1,0 +1,22 @@
+Reform 0.4 Screws
+
+bottom lid				6x M2 0.6cm
+fan								2x M3 0.6cm
+power switch			2x M2 0.4cm
+									2x M2 nut
+battery holder		3x M3 0.6cm
+									2x M3 0.8cm
+									2x M3 nut
+support to main		4x M3 1cm
+support closure		3x M3 1cm
+support hinges		8x M2 0.4cm
+motherboard				4x M3 0.6cm
+grid							6x M2 0.6cm
+									1x M3 1cm
+trackball					4x M3 0.6cm
+									3x M2 0.6cm
+									3x M2 nut
+screen						6x M3 0.6cm
+									4x M2 0.4cm
+									6x M4 0.4cm
+keyboard closure	2x M2 0.6cm
