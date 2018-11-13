@@ -71,7 +71,7 @@ function system_suspend {
     set +e; timeout 1 head /dev/ttymxc1; set -e
 
     # zzZzzZ
-    systemctl suspend
+    # systemctl suspend
 }
 
 function regulate_fan {
@@ -119,14 +119,13 @@ function main {
     # important: this works only if the kernel option no_console_suspend=1 is set!
     # also, requires kernel patch when using PCIe cards: https://github.com/sakaki-/novena-kernel-patches/blob/master/0017-pci-fix-suspend-on-i.MX6.patch
     # (workaround for erratum "PCIe does not support L2 Power Down")
-    if [ "$lid_state" ] && [ "$lid_state" -eq "1" ]
-    then
-        system_suspend
-        exit
-    fi
+    #if [ "$lid_state" ] && [ "$lid_state" -eq "1" ]
+    #then
+    #    system_suspend
+    #    exit
+    #fi
 }
 
-brightnessctl s 5
 disable_echo
 
 while true; do
