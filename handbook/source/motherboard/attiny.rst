@@ -32,9 +32,10 @@ It accepts commands in the form of a single letter followed by return. The curre
 
 In addition, these commands can be prefixed with a decimal number (up to four digits):
 
-- *600b*: Reset the battery capacity counter to 10Ah (600 Amp minutes)
+- *600c: Reset the battery capacity counter to 10Ah (600 Amp minutes)
 - *500t*: Set the lid sensor open/closed threshold to the value 500
-  
+- *10w*: Set the lid sensor open/closed hysteresis to 10
+
 Undervoltage Protection (UVLO)
 ------------------------------
 
@@ -43,7 +44,7 @@ The microcontroller is supposed to detect a dangerously low voltage on the batte
 Lid Sensor
 ----------
 
-The ATTiny senses if the lid is open or closed using the hall effect sensor (Honeywell SS495A). The lid is considered closed when a magnet is close to the sensor. The ATTiny outputs the string "lid_open" via its serial port which can wake the i.MX6 up from sleep.
+The ATTiny senses if the lid is open or closed using the hall effect sensor (Honeywell SS495A). The lid is considered closed when a magnet is close to the sensor. The ATTiny outputs the string "wake" via its serial port which can wake the i.MX6 up from sleep.
 
 Flashing the Firmware
 ---------------------

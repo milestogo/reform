@@ -57,7 +57,7 @@ function reset_bat_capacity {
     setup_serial
     exec 99<>/dev/ttymxc1
     :<&99
-    printf "0600b\r" >&99
+    printf "0600c\r" >&99
     exec 99>&-
 }
 
@@ -71,7 +71,7 @@ function system_suspend {
     set +e; timeout 1 head /dev/ttymxc1; set -e
 
     # zzZzzZ
-    systemctl suspend
+    echo -n mem > /sys/power/state
 }
 
 function regulate_fan {
@@ -102,12 +102,12 @@ function main {
     # so it can be graphed and we can estimate remaining running time
     # TODO actually append to log and rotate it out
     # TODO interval?
-    timestamp=$(date +%Y-%m-%dT%H:%M:%S)
+    timestamp=$(date +%s)
     get_soc_temperature
     get_battery_state
     get_lid_state
 
-    if [ "$bat_amps" == "0.00A" ]
+    if [ "$bat_amps" == "0.00" ]
     then
         reset_bat_capacity
     fi
@@ -119,14 +119,13 @@ function main {
     # important: this works only if the kernel option no_console_suspend=1 is set!
     # also, requires kernel patch when using PCIe cards: https://github.com/sakaki-/novena-kernel-patches/blob/master/0017-pci-fix-suspend-on-i.MX6.patch
     # (workaround for erratum "PCIe does not support L2 Power Down")
-    if [ "$lid_state" ] && [ "$lid_state" -eq "1" ]
-    then
-        system_suspend
-        exit
-    fi
+    #if [ "$lid_state" ] && [ "$lid_state" -eq "1" ]
+    #then
+    #    system_suspend
+    #    exit
+    #fi
 }
 
-brightnessctl s 5
 disable_echo
 
 while true; do

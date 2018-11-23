@@ -1,0 +1,12 @@
+[Unit]
+Description=Reform Battery, Fan, Lid Controller
+
+[Service]
+Type=simple
+ExecStart=/etc/reform/reformd.sh
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
+
