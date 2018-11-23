@@ -32,7 +32,7 @@ It accepts commands in the form of a single letter followed by return. The curre
 
 In addition, these commands can be prefixed with a decimal number (up to four digits):
 
-- *600c: Reset the battery capacity counter to 10Ah (600 Amp minutes)
+- *600c*: Reset the battery capacity counter to 10Ah (600 Amp minutes)
 - *500t*: Set the lid sensor open/closed threshold to the value 500
 - *10w*: Set the lid sensor open/closed hysteresis to 10
 
