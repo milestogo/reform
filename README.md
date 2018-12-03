@@ -4,6 +4,8 @@ This is the main repository for the MNT Reform DIY Open Source Portable Computer
 
 ## How to Report Issues / Contribute
 
+First, you need an account at source.mntmn.com. If you don't have one, just write to lukas@mntmn.com stating your desired username.
+
 There are several Git repositories that make up Reform. Here is a list of topics to help you decide on which repository to report your problem or contribute code:
 
 ### reform (this one)
