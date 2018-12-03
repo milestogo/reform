@@ -56,15 +56,18 @@ float current = 0;
 char cmd = 'a';
 unsigned char echo = 1;
 
+char hallSenseDir = 0;
+char hallSenseEvents = 0;
+
 // TODO if there is no battery power, ignore lid sensor (values >900)
 void handleLidSensor() {
   hallSense = analogRead(HALL_SENSOR_PIN);
-  if (hallSense>(thresh+window) && hallState==LID_OPEN) {
+  if (hallState==LID_OPEN && (hallSenseDir == 0 && hallSense>(thresh+window) || hallSenseDir == 1 && hallSense<(thresh-window))) {
     hallState = LID_CLOSED;
   }
-  if (hallSense<(thresh+window) && hallState==LID_CLOSED) {
-    softSerial.println("event:wake");
+  if (hallState==LID_CLOSED && (hallSenseDir == 0 && hallSense<(thresh-window) || hallSenseDir == 1 && hallSense>(thresh+window))) {
     hallState = LID_OPEN;
+    if (hallSenseEvents) softSerial.println("event:wake");
   }
 }
 
@@ -158,7 +161,7 @@ void handleCommands() {
         softSerial.println(thresh);
       }
       else if (cmd == 'w') {
-        // set open/closed threshold fuzz window
+        // set open/closed threshold hysteresis window
         if (inputNumber>0) {
           window = inputNumber;
         }
@@ -175,6 +178,18 @@ void handleCommands() {
         echo = inputNumber?1:0;
         softSerial.print("echo:");
         softSerial.println(echo);
+      }
+      else if (cmd == 'o') {
+        // toggle lid sensor magnet orientation
+        hallSenseDir = inputNumber?1:0;
+        softSerial.print("orientation:");
+        softSerial.println(hallSenseDir);
+      }
+      else if (cmd == 'v') {
+        // toggle lid sensor wake events
+        hallSenseEvents = inputNumber?1:0;
+        softSerial.print("events:");
+        softSerial.println(hallSenseEvents);
       }
       else {
         softSerial.println("error:command");
