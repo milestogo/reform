@@ -7,7 +7,7 @@ Credits
 
 :Sleeve Design, Assembly: Greta Melnik
 
-:Special Thanks: FabLab Berlin, Neuform, CCC Berlin/n-te, Fedevel/Voipac, etnaviv, Xorg, Mesa, wayland, Igalia, heise/Make Germany/Helga Hansen, Philip Steffan, Maker Faire Berlin, Interface Critique/Florian Hadler, Gabriel Yoran, JD Music Labs, Crowd Supply, malcolmputer, zakx, darthrake, erlehmann, plomlompom, scallo, dridde, grncdr, oomono, Daniel Stone, Martin Meyerhoff, Gregor May, Chris Healy, Martin Borgert, Stephan Urbach, furan, Novena, Mastodon, a1k, Disko Koenig, S.I.H., The Reform Beta Testers (you!)
+:Special Thanks: FabLab Berlin, Neuform, CCC Berlin/n-te, Fedevel/Voipac, etnaviv, Xorg, Mesa, wayland, Igalia, heise/Make Germany/Helga Hansen, Philip Steffan, Maker Faire Berlin, Interface Critique/Florian Hadler, Gabriel Yoran, JD Music Labs, Crowd Supply, malcolmputer, zakx, darthrake, erlehmann, plomlompom, scallo, dridde, grncdr, oomono, Daniel Stone, Martin Meyerhoff, Gregor May, Chris Healy, Martin Borgert, Stephan Urbach, furan, Radoslaw Kujawa, Novena, Mastodon, a1k, Disko Koenig, S.I.H., The Reform Beta Testers (you!)
 
 :Inter UI Font: rsms
 
