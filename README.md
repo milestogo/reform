@@ -10,7 +10,7 @@ There are several Git repositories that make up Reform. Here is a list of topics
 
 ### reform (this one)
 
-* Mechanical parts (case, keyboard, trackball, display, battery, power supply)
+* Mechanical parts (case, keyboard, trackball, display, power supply)
 * Electronics
 * Firmware
 * [Issue reports go here](https://source.mntmn.com/MNT/reform/issues)
@@ -22,6 +22,7 @@ There are several Git repositories that make up Reform. Here is a list of topics
 * Setup script, date/time, keyboard layout
 * Default configuration (networking, Xorg, users, passwords...)
 * SD Card shipped with the device
+* **reformd** (Reform daemon: battery status/gauge, fan control, suspend/wake)
 * [Issue reports go here](https://source.mntmn.com/MNT/reform-system-image/issues)
 
 ### reform-userland
