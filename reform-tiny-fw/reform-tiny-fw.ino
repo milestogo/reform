@@ -42,7 +42,7 @@ SoftwareSerial softSerial(8, 3);
 
 float ampSecs = 5*3600.0;
 unsigned char hallState = LID_OPEN;
-int thresh = 500;
+int thresh = 100;
 int window = 10;
 int hallSense = 0;
 
@@ -56,7 +56,7 @@ float current = 0;
 char cmd = 'a';
 unsigned char echo = 1;
 
-char hallSenseDir = 0;
+char hallSenseDir = 1;
 char hallSenseEvents = 0;
 
 // TODO if there is no battery power, ignore lid sensor (values >900)
@@ -125,31 +125,27 @@ void handleCommands() {
     }
     else if (chr == '\r') {
       // execute
-      if (cmd == 'p') {
-        // print power stats
-        softSerial.print("power(Ah,V,A):");
-        softSerial.print(ampSecs/3600.0);
-        softSerial.print("\t");
-        softSerial.print(volts);
-        softSerial.print("\t");
-        softSerial.println(current);
+      if (cmd == 'a') {
+        // get current (mA)
+        softSerial.println((int)(current*1000.0));
+      }
+      else if (cmd == 'v') {
+        // get voltage
+        softSerial.println((int)(volts*1000.0));
       }
       else if (cmd == 'c') {
-        // set battery capacity
+        // set/get battery capacity (mAh)
         if (inputNumber>0) {
-          ampSecs = inputNumber*60.0;
+          ampSecs = ((float)inputNumber)*3.6;
         }
-        softSerial.print("capacity(Ah):");
-        softSerial.println(ampSecs/3600.0);
+        softSerial.println((int)(ampSecs/3.6));
       }
-      else if (cmd == 'h') {
-        // print hall sensor analog reading
-        softSerial.print("sensor:");
+      else if (cmd == 's') {
+        // print sensor analog reading 0-1023
         softSerial.println(hallSense);
       }
       else if (cmd == 'l') {
         // print lid open/close state
-        softSerial.print("lid:");
         softSerial.println(hallState);
       }
       else if (cmd == 't') {
@@ -157,7 +153,6 @@ void handleCommands() {
         if (inputNumber>0) {
           thresh = inputNumber;
         }
-        softSerial.print("threshold:");
         softSerial.println(thresh);
       }
       else if (cmd == 'w') {
@@ -165,31 +160,29 @@ void handleCommands() {
         if (inputNumber>0) {
           window = inputNumber;
         }
-        softSerial.print("window:");
         softSerial.println(window);
       }
       else if (cmd == 'u') {
         // uptime of attiny in seconds
-        softSerial.print("uptime(s):");
         softSerial.println(millis()/1000);
       }
       else if (cmd == 'e') {
         // toggle serial echo
         echo = inputNumber?1:0;
-        softSerial.print("echo:");
-        softSerial.println(echo);
+        //softSerial.print("echo:");
+        //softSerial.println(echo);
       }
       else if (cmd == 'o') {
         // toggle lid sensor magnet orientation
         hallSenseDir = inputNumber?1:0;
-        softSerial.print("orientation:");
+        //softSerial.print("orientation:");
         softSerial.println(hallSenseDir);
       }
-      else if (cmd == 'v') {
-        // toggle lid sensor wake events
+      else if (cmd == 'k') {
+        // toggle lid sensor waKe events
         hallSenseEvents = inputNumber?1:0;
-        softSerial.print("events:");
-        softSerial.println(hallSenseEvents);
+        //softSerial.print("events:");
+        //softSerial.println(hallSenseEvents);
       }
       else {
         softSerial.println("error:command");
