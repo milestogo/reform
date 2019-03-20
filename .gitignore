@@ -2,7 +2,6 @@
 *-bak
 *.dcm
 *.bck
-*-cache.lib
 attic
 obj
 build
