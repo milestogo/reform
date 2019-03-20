@@ -1,59 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:J0G-0003NL
-LIBS:TUSB4041IPAPR
-LIBS:TPS61235RWLR
-LIBS:AP1501A-33K5G-13
-LIBS:TPS74801DRCR
-LIBS:MCP73123T-22SI_MF
-LIBS:SGTL5000XNAA3
-LIBS:CM2020-00TR
-LIBS:INA260AIPW
-LIBS:SN74LVC1G14DBVR
-LIBS:SN74LVC1G08DCKR
-LIBS:693072010801
-LIBS:48099-5701
-LIBS:67910-5700
-LIBS:DF40C-100DS-0.4V_51_
-LIBS:5622-4100-ML
-LIBS:TUSB2046BVFR
-LIBS:TPS2044BDR
-LIBS:LP3962EMP-2.5
-LIBS:BQ24650RVAT
-LIBS:SJ-43516-SMT
+EESchema Schematic File Version 4
 LIBS:reform-motherboard-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -68,7 +15,7 @@ Comment3 "Copyright 2017,2018 Lukas F. Hartmann / @mntmn"
 Comment4 "License: GPLv3 https://www.gnu.org/licenses/gpl-3.0.txt"
 $EndDescr
 $Comp
-L SGTL5000XNAA3 U10
+L reform-motherboard-rescue:SGTL5000XNAA3 U10
 U 1 1 5A11FBBE
 P 5400 3550
 F 0 "U10" H 4700 5350 50  0000 L BNN
@@ -104,7 +51,7 @@ AUD4_RXD
 Wire Wire Line
 	7950 1950 7950 5800
 $Comp
-L GND #PWR0224
+L reform-motherboard-rescue:GND #PWR0224
 U 1 1 5A120C9E
 P 6300 5400
 F 0 "#PWR0224" H 6300 5150 50  0001 C CNN
@@ -121,7 +68,7 @@ I2C3_SDA
 Text GLabel 4500 4250 0    60   Input ~ 0
 I2C3_SCL
 $Comp
-L GND #PWR0225
+L reform-motherboard-rescue:GND #PWR0225
 U 1 1 5A122337
 P 4050 4850
 F 0 "#PWR0225" H 4050 4600 50  0001 C CNN
@@ -143,7 +90,7 @@ Wire Wire Line
 Wire Wire Line
 	4500 5800 7950 5800
 $Comp
-L C_Small C64
+L reform-motherboard-rescue:C_Small C64
 U 1 1 5A122A76
 P 6500 2950
 F 0 "C64" H 6510 3020 50  0000 L CNN
@@ -154,7 +101,7 @@ F 3 "" H 6500 2950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small C65
+L reform-motherboard-rescue:C_Small C65
 U 1 1 5A122B49
 P 6750 3050
 F 0 "C65" H 6760 3120 50  0000 L CNN
@@ -173,7 +120,7 @@ Wire Wire Line
 Wire Wire Line
 	6950 3050 6850 3050
 $Comp
-L C_Small C62
+L reform-motherboard-rescue:C_Small C62
 U 1 1 5A122C86
 P 4300 2950
 F 0 "C62" H 4310 3020 50  0000 L CNN
@@ -184,7 +131,7 @@ F 3 "" H 4300 2950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small C60
+L reform-motherboard-rescue:C_Small C60
 U 1 1 5A122CF9
 P 3950 3050
 F 0 "C60" H 3960 3120 50  0000 L CNN
@@ -205,7 +152,7 @@ Wire Wire Line
 Wire Wire Line
 	3300 3450 4500 3450
 $Comp
-L GND #PWR0226
+L reform-motherboard-rescue:GND #PWR0226
 U 1 1 5A1234F8
 P 3300 3650
 F 0 "#PWR0226" H 3300 3400 50  0001 C CNN
@@ -217,7 +164,7 @@ F 3 "" H 3300 3650 50  0001 C CNN
 $EndComp
 Connection ~ 6300 5250
 $Comp
-L C_Small C55
+L reform-motherboard-rescue:C_Small C55
 U 1 1 5A124351
 P 2550 3550
 F 0 "C55" H 2560 3620 50  0000 L CNN
@@ -228,7 +175,7 @@ F 3 "" H 2550 3550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR0227
+L reform-motherboard-rescue:GND #PWR0227
 U 1 1 5A124399
 P 2550 3650
 F 0 "#PWR0227" H 2550 3400 50  0001 C CNN
@@ -241,7 +188,7 @@ $EndComp
 Wire Wire Line
 	2550 2650 2550 3450
 $Comp
-L R_Small R31
+L reform-motherboard-rescue:R_Small R31
 U 1 1 5A124AE8
 P 2950 3250
 F 0 "R31" H 2980 3270 50  0000 L CNN
@@ -252,7 +199,7 @@ F 3 "" H 2950 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C57
+L reform-motherboard-rescue:C_Small C57
 U 1 1 5A124B94
 P 3200 2950
 F 0 "C57" H 3210 3020 50  0000 L CNN
@@ -274,7 +221,7 @@ Wire Wire Line
 	2950 2550 3200 2550
 Connection ~ 3200 2550
 $Comp
-L C_Small C56
+L reform-motherboard-rescue:C_Small C56
 U 1 1 5A1269AF
 P 2950 3550
 F 0 "C56" H 2960 3620 50  0000 L CNN
@@ -287,7 +234,7 @@ $EndComp
 Wire Wire Line
 	2950 3450 2950 3350
 $Comp
-L GND #PWR0228
+L reform-motherboard-rescue:GND #PWR0228
 U 1 1 5A126A30
 P 2950 3650
 F 0 "#PWR0228" H 2950 3400 50  0001 C CNN
@@ -298,7 +245,7 @@ F 3 "" H 2950 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C63
+L reform-motherboard-rescue:C_Small C63
 U 1 1 5A127261
 P 6400 2150
 F 0 "C63" H 6410 2220 50  0000 L CNN
@@ -313,7 +260,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 1950 6400 2050
 $Comp
-L C_Small C59
+L reform-motherboard-rescue:C_Small C59
 U 1 1 5A127330
 P 3750 2000
 F 0 "C59" H 3760 2070 50  0000 L CNN
@@ -324,7 +271,7 @@ F 3 "" H 3750 2000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C_Small C61
+L reform-motherboard-rescue:C_Small C61
 U 1 1 5A1273F1
 P 4050 2250
 F 0 "C61" H 4060 2320 50  0000 L CNN
@@ -345,7 +292,7 @@ Wire Wire Line
 Wire Wire Line
 	4350 2550 4500 2550
 $Comp
-L GND #PWR0229
+L reform-motherboard-rescue:GND #PWR0229
 U 1 1 5A1274D7
 P 4050 2350
 F 0 "#PWR0229" H 4050 2100 50  0001 C CNN
@@ -356,7 +303,7 @@ F 3 "" H 4050 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0230
+L reform-motherboard-rescue:GND #PWR0230
 U 1 1 5A127512
 P 3750 2100
 F 0 "#PWR0230" H 3750 1850 50  0001 C CNN
@@ -369,7 +316,7 @@ $EndComp
 Connection ~ 4200 2150
 Connection ~ 4200 1900
 $Comp
-L +3V3 #PWR0231
+L reform-motherboard-rescue:+3V3 #PWR0231
 U 1 1 5A1282F7
 P 6400 1950
 F 0 "#PWR0231" H 6400 1800 50  0001 C CNN
@@ -380,7 +327,7 @@ F 3 "" H 6400 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0232
+L reform-motherboard-rescue:GND #PWR0232
 U 1 1 5A1289F2
 P 6400 2250
 F 0 "#PWR0232" H 6400 2000 50  0001 C CNN
@@ -391,7 +338,7 @@ F 3 "" H 6400 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x03 J16
+L reform-motherboard-rescue:Conn_01x03 J16
 U 1 1 5A180365
 P 3550 2950
 F 0 "J16" H 3550 3150 50  0000 C CNN
@@ -406,7 +353,7 @@ Wire Wire Line
 Wire Wire Line
 	4500 2650 4500 2750
 $Comp
-L Conn_01x03 J17
+L reform-motherboard-rescue:Conn_01x03 J17
 U 1 1 5A18063F
 P 7250 2950
 F 0 "J17" H 7250 3150 50  0000 C CNN
@@ -421,7 +368,7 @@ Wire Wire Line
 Wire Wire Line
 	6950 2850 7050 2850
 $Comp
-L GND #PWR0233
+L reform-motherboard-rescue:GND #PWR0233
 U 1 1 5A1809B9
 P 7000 3450
 F 0 "#PWR0233" H 7000 3200 50  0001 C CNN
@@ -436,7 +383,7 @@ Wire Wire Line
 Wire Wire Line
 	7000 3050 7050 3050
 $Comp
-L GND #PWR0234
+L reform-motherboard-rescue:GND #PWR0234
 U 1 1 5A180B77
 P 3800 3650
 F 0 "#PWR0234" H 3800 3400 50  0001 C CNN
@@ -451,7 +398,7 @@ Wire Wire Line
 Wire Wire Line
 	3800 2850 3750 2850
 $Comp
-L +1V5 #PWR0235
+L reform-motherboard-rescue:+1V5 #PWR0235
 U 1 1 5A1DA4BE
 P 4200 1900
 F 0 "#PWR0235" H 4200 1750 50  0001 C CNN
@@ -462,7 +409,7 @@ F 3 "" H 4200 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR0236
+L reform-motherboard-rescue:+3V3 #PWR0236
 U 1 1 5A4E2A64
 P 4200 2150
 F 0 "#PWR0236" H 4200 2000 50  0001 C CNN
@@ -473,7 +420,7 @@ F 3 "" H 4200 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C58
+L reform-motherboard-rescue:C_Small C58
 U 1 1 5A123466
 P 3300 3550
 F 0 "C58" H 3310 3620 50  0000 L CNN
@@ -486,7 +433,7 @@ $EndComp
 Text Notes 4700 5700 0    39   ~ 0
 I2C Addr: 0001010
 $Comp
-L SJ-43516-SMT J18
+L reform-motherboard-rescue:SJ-43516-SMT J18
 U 1 1 5B151703
 P 7350 2050
 F 0 "J18" H 7049 2271 50  0000 L BNN

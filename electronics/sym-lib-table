@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name reform-motherboard-rescue)(type Legacy)(uri ${KIPRJMOD}/reform-motherboard-rescue.lib)(options "")(descr ""))
+)
