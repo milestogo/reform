@@ -1,59 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:J0G-0003NL
-LIBS:TUSB4041IPAPR
-LIBS:TPS61235RWLR
-LIBS:AP1501A-33K5G-13
-LIBS:TPS74801DRCR
-LIBS:MCP73123T-22SI_MF
-LIBS:SGTL5000XNAA3
-LIBS:CM2020-00TR
-LIBS:INA260AIPW
-LIBS:SN74LVC1G14DBVR
-LIBS:SN74LVC1G08DCKR
-LIBS:693072010801
-LIBS:48099-5701
-LIBS:67910-5700
-LIBS:DF40C-100DS-0.4V_51_
-LIBS:5622-4100-ML
-LIBS:TUSB2046BVFR
-LIBS:TPS2044BDR
-LIBS:LP3962EMP-2.5
-LIBS:BQ24650RVAT
-LIBS:SJ-43516-SMT
+EESchema Schematic File Version 4
 LIBS:reform-motherboard-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -68,7 +15,7 @@ Comment3 "Copyright 2017,2018 Lukas F. Hartmann / @mntmn"
 Comment4 "License: GPLv3 https://www.gnu.org/licenses/gpl-3.0.txt"
 $EndDescr
 $Comp
-L USB_A J5
+L reform-motherboard-rescue:USB_A J5
 U 1 1 5A02373C
 P 1000 1300
 F 0 "J5" H 800 1750 50  0000 L CNN
@@ -79,7 +26,7 @@ F 3 "" H 1150 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L USB_A J7
+L reform-motherboard-rescue:USB_A J7
 U 1 1 5A0237A7
 P 3000 1300
 F 0 "J7" H 2800 1750 50  0000 L CNN
@@ -90,7 +37,7 @@ F 3 "" H 3150 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L J0G-0003NL P2
+L reform-motherboard-rescue:J0G-0003NL P2
 U 1 1 5A04FC73
 P 9600 3700
 F 0 "P2" H 8796 5861 50  0000 L BNN
@@ -106,7 +53,7 @@ F 8 "None" H 9600 3700 50  0001 L BNN "Package"
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR0162
+L reform-motherboard-rescue:+3V3 #PWR0162
 U 1 1 5A04FD4C
 P 7700 4800
 F 0 "#PWR0162" H 7700 4650 50  0001 C CNN
@@ -117,7 +64,7 @@ F 3 "" H 7700 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C13
+L reform-motherboard-rescue:C_Small C13
 U 1 1 5A04FD85
 P 7450 5050
 F 0 "C13" H 7460 5120 50  0000 L CNN
@@ -128,7 +75,7 @@ F 3 "" H 7450 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0163
+L reform-motherboard-rescue:GND #PWR0163
 U 1 1 5A04FDB4
 P 7450 5150
 F 0 "#PWR0163" H 7450 4900 50  0001 C CNN
@@ -159,7 +106,7 @@ TRD1_N
 Text GLabel 8600 3300 0    60   BiDi ~ 0
 TRD1_P
 $Comp
-L C_Small C14
+L reform-motherboard-rescue:C_Small C14
 U 1 1 5A05122D
 P 7900 2100
 F 0 "C14" H 7910 2170 50  0000 L CNN
@@ -170,7 +117,7 @@ F 3 "" H 7900 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C15
+L reform-motherboard-rescue:C_Small C15
 U 1 1 5A051336
 P 7900 2900
 F 0 "C15" H 7910 2970 50  0000 L CNN
@@ -181,7 +128,7 @@ F 3 "" H 7900 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C16
+L reform-motherboard-rescue:C_Small C16
 U 1 1 5A0513CA
 P 7900 3700
 F 0 "C16" H 7910 3770 50  0000 L CNN
@@ -192,7 +139,7 @@ F 3 "" H 7900 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C17
+L reform-motherboard-rescue:C_Small C17
 U 1 1 5A05141B
 P 7900 4500
 F 0 "C17" H 7910 4570 50  0000 L CNN
@@ -213,7 +160,7 @@ USB0_N
 Text GLabel 3600 1600 2    60   BiDi ~ 0
 USB0_P
 $Comp
-L Crystal_Small Y1
+L reform-motherboard-rescue:Crystal_Small Y1
 U 1 1 5A09FDB8
 P 4900 2500
 F 0 "Y1" H 4900 2600 50  0000 C CNN
@@ -224,7 +171,7 @@ F 3 "" H 4900 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R30
+L reform-motherboard-rescue:R_Small R30
 U 1 1 5A09FE1D
 P 4900 2250
 F 0 "R30" H 4930 2270 50  0000 L CNN
@@ -235,7 +182,7 @@ F 3 "" H 4900 2250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C_Small C41
+L reform-motherboard-rescue:C_Small C41
 U 1 1 5A09FE88
 P 5200 2600
 F 0 "C41" H 5210 2670 50  0000 L CNN
@@ -246,7 +193,7 @@ F 3 "" H 5200 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0164
+L reform-motherboard-rescue:GND #PWR0164
 U 1 1 5A0A0266
 P 5200 2700
 F 0 "#PWR0164" H 5200 2450 50  0001 C CNN
@@ -257,7 +204,7 @@ F 3 "" H 5200 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C40
+L reform-motherboard-rescue:C_Small C40
 U 1 1 5A0A036B
 P 4600 2600
 F 0 "C40" H 4610 2670 50  0000 L CNN
@@ -268,7 +215,7 @@ F 3 "" H 4600 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0165
+L reform-motherboard-rescue:GND #PWR0165
 U 1 1 5A0A046A
 P 4600 2700
 F 0 "#PWR0165" H 4600 2450 50  0001 C CNN
@@ -279,7 +226,7 @@ F 3 "" H 4600 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x04 J9
+L reform-motherboard-rescue:Conn_01x04 J9
 U 1 1 5A0A50EF
 P 750 6950
 F 0 "J9" H 750 7150 50  0000 C CNN
@@ -290,7 +237,7 @@ F 3 "" H 750 6950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR0166
+L reform-motherboard-rescue:GND #PWR0166
 U 1 1 5A0A5607
 P 1000 6750
 F 0 "#PWR0166" H 1000 6500 50  0001 C CNN
@@ -301,7 +248,7 @@ F 3 "" H 1000 6750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR0167
+L reform-motherboard-rescue:GND #PWR0167
 U 1 1 5A118EA5
 P 7900 2200
 F 0 "#PWR0167" H 7900 1950 50  0001 C CNN
@@ -312,7 +259,7 @@ F 3 "" H 7900 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0168
+L reform-motherboard-rescue:GND #PWR0168
 U 1 1 5A118FBC
 P 7900 3000
 F 0 "#PWR0168" H 7900 2750 50  0001 C CNN
@@ -323,7 +270,7 @@ F 3 "" H 7900 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0169
+L reform-motherboard-rescue:GND #PWR0169
 U 1 1 5A119060
 P 7900 3800
 F 0 "#PWR0169" H 7900 3550 50  0001 C CNN
@@ -334,7 +281,7 @@ F 3 "" H 7900 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0170
+L reform-motherboard-rescue:GND #PWR0170
 U 1 1 5A119104
 P 7900 4600
 F 0 "#PWR0170" H 7900 4350 50  0001 C CNN
@@ -345,7 +292,7 @@ F 3 "" H 7900 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0171
+L reform-motherboard-rescue:GND #PWR0171
 U 1 1 5A119D9C
 P 10700 5600
 F 0 "#PWR0171" H 10700 5350 50  0001 C CNN
@@ -356,7 +303,7 @@ F 3 "" H 10700 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x04 J12
+L reform-motherboard-rescue:Conn_01x04 J12
 U 1 1 5A11B075
 P 750 5650
 F 0 "J12" H 750 5850 50  0000 C CNN
@@ -367,7 +314,7 @@ F 3 "" H 750 5650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR0172
+L reform-motherboard-rescue:GND #PWR0172
 U 1 1 5A11B5E8
 P 1000 5450
 F 0 "#PWR0172" H 1000 5200 50  0001 C CNN
@@ -406,7 +353,7 @@ USB_HUB2_N
 Text GLabel 1400 5750 2    60   BiDi ~ 0
 USB_HUB1_N
 $Comp
-L R_Small R19
+L reform-motherboard-rescue:R_Small R19
 U 1 1 5A4BAC3A
 P 1300 5750
 F 0 "R19" H 1330 5770 50  0000 L CNN
@@ -417,7 +364,7 @@ F 3 "" H 1300 5750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R18
+L reform-motherboard-rescue:R_Small R18
 U 1 1 5A4BACBC
 P 1300 5450
 F 0 "R18" H 1330 5470 50  0000 L CNN
@@ -428,7 +375,7 @@ F 3 "" H 1300 5450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R23
+L reform-motherboard-rescue:R_Small R23
 U 1 1 5A4BC166
 P 1600 1600
 F 0 "R23" H 1630 1620 50  0000 L CNN
@@ -439,7 +386,7 @@ F 3 "" H 1600 1600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R24
+L reform-motherboard-rescue:R_Small R24
 U 1 1 5A4BC208
 P 1600 1800
 F 0 "R24" H 1630 1820 50  0000 L CNN
@@ -450,7 +397,7 @@ F 3 "" H 1600 1800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R26
+L reform-motherboard-rescue:R_Small R26
 U 1 1 5A4BC64D
 P 3500 1600
 F 0 "R26" H 3530 1620 50  0000 L CNN
@@ -461,7 +408,7 @@ F 3 "" H 3500 1600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R27
+L reform-motherboard-rescue:R_Small R27
 U 1 1 5A4BC6F7
 P 3500 1800
 F 0 "R27" H 3530 1820 50  0000 L CNN
@@ -472,7 +419,7 @@ F 3 "" H 3500 1800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR0173
+L reform-motherboard-rescue:GND #PWR0173
 U 1 1 5A4BD424
 P 6050 4300
 F 0 "#PWR0173" H 6050 4050 50  0001 C CNN
@@ -483,7 +430,7 @@ F 3 "" H 6050 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR0174
+L reform-motherboard-rescue:+3V3 #PWR0174
 U 1 1 5A4BE6E1
 P 6950 3850
 F 0 "#PWR0174" H 6950 3700 50  0001 C CNN
@@ -494,7 +441,7 @@ F 3 "" H 6950 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TPS2044BDR U15
+L reform-motherboard-rescue:TPS2044BDR U15
 U 1 1 5A4BF0CB
 P 4650 6550
 F 0 "U15" H 4600 6550 50  0000 L BNN
@@ -510,7 +457,7 @@ F 8 "Texas Instruments" H 4650 6550 50  0001 L BNN "Field8"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0175
+L reform-motherboard-rescue:GND #PWR0175
 U 1 1 5A4BF46D
 P 3950 7150
 F 0 "#PWR0175" H 3950 6900 50  0001 C CNN
@@ -527,7 +474,7 @@ USB_HUB2_5V
 Text GLabel 1750 5950 2    60   BiDi ~ 0
 USB_HUB1_5V
 $Comp
-L +5V #PWR0176
+L reform-motherboard-rescue:+5V #PWR0176
 U 1 1 5A4C0B83
 P 2850 6200
 F 0 "#PWR0176" H 2850 6050 50  0001 C CNN
@@ -546,7 +493,7 @@ USB_HUB1_5V
 Text GLabel 5350 6650 2    60   BiDi ~ 0
 USB_HUB0_5V
 $Comp
-L C_Small C52
+L reform-motherboard-rescue:C_Small C52
 U 1 1 5A4C2012
 P 3200 6450
 F 0 "C52" H 3210 6520 50  0000 L CNN
@@ -557,7 +504,7 @@ F 3 "" H 3200 6450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0177
+L reform-motherboard-rescue:GND #PWR0177
 U 1 1 5A4C2097
 P 3200 6550
 F 0 "#PWR0177" H 3200 6300 50  0001 C CNN
@@ -568,7 +515,7 @@ F 3 "" H 3200 6550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R49
+L reform-motherboard-rescue:R_Small R49
 U 1 1 5A4C462D
 P 3650 3250
 F 0 "R49" H 3680 3270 50  0000 L CNN
@@ -579,7 +526,7 @@ F 3 "" H 3650 3250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR0178
+L reform-motherboard-rescue:GND #PWR0178
 U 1 1 5A4C727D
 P 1000 1750
 F 0 "#PWR0178" H 1000 1500 50  0001 C CNN
@@ -590,7 +537,7 @@ F 3 "" H 1000 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0179
+L reform-motherboard-rescue:GND #PWR0179
 U 1 1 5A4C73BE
 P 3000 1750
 F 0 "#PWR0179" H 3000 1500 50  0001 C CNN
@@ -601,7 +548,7 @@ F 3 "" H 3000 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR0180
+L reform-motherboard-rescue:+3V3 #PWR0180
 U 1 1 5A4CA3C1
 P 5450 5800
 F 0 "#PWR0180" H 5450 5650 50  0001 C CNN
@@ -612,7 +559,7 @@ F 3 "" H 5450 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R46
+L reform-motherboard-rescue:R_Small R46
 U 1 1 5A4CA51D
 P 6200 5950
 F 0 "R46" H 6230 5970 50  0000 L CNN
@@ -623,7 +570,7 @@ F 3 "" H 6200 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R45
+L reform-motherboard-rescue:R_Small R45
 U 1 1 5A4CA606
 P 5950 5950
 F 0 "R45" H 5980 5970 50  0000 L CNN
@@ -634,7 +581,7 @@ F 3 "" H 5950 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R44
+L reform-motherboard-rescue:R_Small R44
 U 1 1 5A4CA678
 P 5700 5950
 F 0 "R44" H 5730 5970 50  0000 L CNN
@@ -645,7 +592,7 @@ F 3 "" H 5700 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R43
+L reform-motherboard-rescue:R_Small R43
 U 1 1 5A4CA6F3
 P 5450 5950
 F 0 "R43" H 5480 5970 50  0000 L CNN
@@ -656,7 +603,7 @@ F 3 "" H 5450 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C51
+L reform-motherboard-rescue:C_Small C51
 U 1 1 5A4CB746
 P 2850 6450
 F 0 "C51" H 2860 6520 50  0000 L CNN
@@ -667,7 +614,7 @@ F 3 "" H 2850 6450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0181
+L reform-motherboard-rescue:GND #PWR0181
 U 1 1 5A4CBB6F
 P 2850 6550
 F 0 "#PWR0181" H 2850 6300 50  0001 C CNN
@@ -678,7 +625,7 @@ F 3 "" H 2850 6550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C48
+L reform-motherboard-rescue:C_Small C48
 U 1 1 5A4CDBE3
 P 1600 6100
 F 0 "C48" H 1610 6170 50  0000 L CNN
@@ -689,7 +636,7 @@ F 3 "" H 1600 6100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C45
+L reform-motherboard-rescue:C_Small C45
 U 1 1 5A4CDBEF
 P 1350 6100
 F 0 "C45" H 1360 6170 50  0000 L CNN
@@ -700,7 +647,7 @@ F 3 "" H 1350 6100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0182
+L reform-motherboard-rescue:GND #PWR0182
 U 1 1 5A4CDBF5
 P 1350 6250
 F 0 "#PWR0182" H 1350 6000 50  0001 C CNN
@@ -711,7 +658,7 @@ F 3 "" H 1350 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C49
+L reform-motherboard-rescue:C_Small C49
 U 1 1 5A4CE963
 P 1650 7400
 F 0 "C49" H 1660 7470 50  0000 L CNN
@@ -722,7 +669,7 @@ F 3 "" H 1650 7400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0183
+L reform-motherboard-rescue:GND #PWR0183
 U 1 1 5A4CE969
 P 1650 7550
 F 0 "#PWR0183" H 1650 7300 50  0001 C CNN
@@ -733,7 +680,7 @@ F 3 "" H 1650 7550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C46
+L reform-motherboard-rescue:C_Small C46
 U 1 1 5A4CE96F
 P 1400 7400
 F 0 "C46" H 1410 7470 50  0000 L CNN
@@ -744,7 +691,7 @@ F 3 "" H 1400 7400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0184
+L reform-motherboard-rescue:GND #PWR0184
 U 1 1 5A4CE975
 P 1400 7550
 F 0 "#PWR0184" H 1400 7300 50  0001 C CNN
@@ -755,7 +702,7 @@ F 3 "" H 1400 7550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR0185
+L reform-motherboard-rescue:+5V #PWR0185
 U 1 1 5A4CEB4B
 P 3400 950
 F 0 "#PWR0185" H 3400 800 50  0001 C CNN
@@ -766,7 +713,7 @@ F 3 "" H 3400 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C50
+L reform-motherboard-rescue:C_Small C50
 U 1 1 5A4CF266
 P 1800 1200
 F 0 "C50" H 1810 1270 50  0000 L CNN
@@ -777,7 +724,7 @@ F 3 "" H 1800 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0186
+L reform-motherboard-rescue:GND #PWR0186
 U 1 1 5A4CF26C
 P 1800 1300
 F 0 "#PWR0186" H 1800 1050 50  0001 C CNN
@@ -788,7 +735,7 @@ F 3 "" H 1800 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C47
+L reform-motherboard-rescue:C_Small C47
 U 1 1 5A4CF272
 P 1550 1200
 F 0 "C47" H 1560 1270 50  0000 L CNN
@@ -799,7 +746,7 @@ F 3 "" H 1550 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0187
+L reform-motherboard-rescue:GND #PWR0187
 U 1 1 5A4CF278
 P 1550 1300
 F 0 "#PWR0187" H 1550 1050 50  0001 C CNN
@@ -810,7 +757,7 @@ F 3 "" H 1550 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C54
+L reform-motherboard-rescue:C_Small C54
 U 1 1 5A4D065C
 P 3800 1200
 F 0 "C54" H 3810 1270 50  0000 L CNN
@@ -821,7 +768,7 @@ F 3 "" H 3800 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0188
+L reform-motherboard-rescue:GND #PWR0188
 U 1 1 5A4D0662
 P 3800 1300
 F 0 "#PWR0188" H 3800 1050 50  0001 C CNN
@@ -832,7 +779,7 @@ F 3 "" H 3800 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C53
+L reform-motherboard-rescue:C_Small C53
 U 1 1 5A4D0668
 P 3550 1200
 F 0 "C53" H 3560 1270 50  0000 L CNN
@@ -843,7 +790,7 @@ F 3 "" H 3550 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0189
+L reform-motherboard-rescue:GND #PWR0189
 U 1 1 5A4D066E
 P 3550 1300
 F 0 "#PWR0189" H 3550 1050 50  0001 C CNN
@@ -854,7 +801,7 @@ F 3 "" H 3550 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R21
+L reform-motherboard-rescue:R_Small R21
 U 1 1 5A4D19CF
 P 1350 7050
 F 0 "R21" H 1380 7070 50  0000 L CNN
@@ -865,7 +812,7 @@ F 3 "" H 1350 7050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R20
+L reform-motherboard-rescue:R_Small R20
 U 1 1 5A4D19D5
 P 1350 6750
 F 0 "R20" H 1380 6770 50  0000 L CNN
@@ -1064,7 +1011,7 @@ Wire Wire Line
 Wire Wire Line
 	1350 6250 1350 6200
 $Comp
-L GND #PWR0190
+L reform-motherboard-rescue:GND #PWR0190
 U 1 1 5A4CDBE9
 P 1600 6250
 F 0 "#PWR0190" H 1600 6000 50  0001 C CNN
@@ -1087,7 +1034,7 @@ Wire Wire Line
 Wire Wire Line
 	1500 1600 1400 1600
 $Comp
-L TUSB4041IPAPR U9
+L reform-motherboard-rescue:TUSB4041IPAPR U9
 U 1 1 5AD2535F
 P 4900 4100
 F 0 "U9" H 4900 4100 50  0000 L BNN
@@ -1115,7 +1062,7 @@ Wire Wire Line
 	5900 4350 5850 4350
 Connection ~ 5900 4250
 $Comp
-L GND #PWR0191
+L reform-motherboard-rescue:GND #PWR0191
 U 1 1 5AD2942B
 P 6050 3200
 F 0 "#PWR0191" H 6050 2950 50  0001 C CNN
@@ -1143,7 +1090,7 @@ Wire Wire Line
 	6050 4100 6050 4050
 Connection ~ 6050 4050
 $Comp
-L C_Small C75
+L reform-motherboard-rescue:C_Small C75
 U 1 1 5A4C2B78
 P 6050 4200
 F 0 "C75" H 6060 4270 50  0000 L CNN
@@ -1158,7 +1105,7 @@ Wire Wire Line
 Wire Wire Line
 	1300 1400 1300 1800
 $Comp
-L GND #PWR0192
+L reform-motherboard-rescue:GND #PWR0192
 U 1 1 5AD2D0AC
 P 2950 5700
 F 0 "#PWR0192" H 2950 5450 50  0001 C CNN
@@ -1173,7 +1120,7 @@ Wire Wire Line
 Wire Wire Line
 	3200 5400 3950 5400
 $Comp
-L +1V1 #PWR0193
+L reform-motherboard-rescue:+1V1 #PWR0193
 U 1 1 5AD30EF5
 P 7050 3150
 F 0 "#PWR0193" H 7050 3000 50  0001 C CNN
@@ -1207,7 +1154,7 @@ Wire Wire Line
 	5900 3950 5850 3950
 Connection ~ 5900 3850
 $Comp
-L R_Small R22
+L reform-motherboard-rescue:R_Small R22
 U 1 1 5AD3211E
 P 2850 3250
 F 0 "R22" H 2880 3270 50  0000 L CNN
@@ -1224,7 +1171,7 @@ Wire Wire Line
 Wire Wire Line
 	2850 3150 3950 3150
 $Comp
-L GND #PWR0194
+L reform-motherboard-rescue:GND #PWR0194
 U 1 1 5AD3291B
 P 2850 3350
 F 0 "#PWR0194" H 2850 3100 50  0001 C CNN
@@ -1235,7 +1182,7 @@ F 3 "" H 2850 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R28
+L reform-motherboard-rescue:R_Small R28
 U 1 1 5AD33797
 P 6700 4550
 F 0 "R28" H 6730 4570 50  0000 L CNN
@@ -1246,7 +1193,7 @@ F 3 "" H 6700 4550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R25
+L reform-motherboard-rescue:R_Small R25
 U 1 1 5AD33861
 P 6500 4750
 F 0 "R25" H 6530 4770 50  0000 L CNN
@@ -1257,7 +1204,7 @@ F 3 "" H 6500 4750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR0195
+L reform-motherboard-rescue:GND #PWR0195
 U 1 1 5AD338F9
 P 6500 4900
 F 0 "#PWR0195" H 6500 4650 50  0001 C CNN
@@ -1273,7 +1220,7 @@ Wire Wire Line
 	6500 4550 6500 4650
 Connection ~ 6500 4550
 $Comp
-L +5V #PWR0196
+L reform-motherboard-rescue:+5V #PWR0196
 U 1 1 5AD33C45
 P 6850 4550
 F 0 "#PWR0196" H 6850 4400 50  0001 C CNN
@@ -1288,7 +1235,7 @@ Wire Wire Line
 Wire Wire Line
 	950  6950 1250 6950
 $Comp
-L GND #PWR0197
+L reform-motherboard-rescue:GND #PWR0197
 U 1 1 5AD37367
 P 3800 5500
 F 0 "#PWR0197" H 3800 5250 50  0001 C CNN
@@ -1311,7 +1258,7 @@ Wire Wire Line
 Wire Wire Line
 	5200 2250 5200 2500
 $Comp
-L R_Small R34
+L reform-motherboard-rescue:R_Small R34
 U 1 1 5ADF8D4F
 P 2950 5500
 F 0 "R34" H 2980 5520 50  0000 L CNN
@@ -1324,7 +1271,7 @@ $EndComp
 Wire Wire Line
 	2950 5300 2950 5400
 $Comp
-L R_Small R35
+L reform-motherboard-rescue:R_Small R35
 U 1 1 5ADF91A9
 P 3200 5500
 F 0 "R35" H 3230 5520 50  0000 L CNN
@@ -1342,7 +1289,7 @@ Wire Wire Line
 	2650 5650 3200 5650
 Connection ~ 2950 5650
 $Comp
-L C_Small C83
+L reform-motherboard-rescue:C_Small C83
 U 1 1 5ADF9F1C
 P 6050 3500
 F 0 "C83" H 6060 3570 50  0000 L CNN
@@ -1353,7 +1300,7 @@ F 3 "" H 6050 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C84
+L reform-motherboard-rescue:C_Small C84
 U 1 1 5ADF9FC9
 P 6300 3500
 F 0 "C84" H 6310 3570 50  0000 L CNN
@@ -1364,7 +1311,7 @@ F 3 "" H 6300 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C86
+L reform-motherboard-rescue:C_Small C86
 U 1 1 5ADFA0C9
 P 6550 3500
 F 0 "C86" H 6560 3570 50  0000 L CNN
@@ -1375,7 +1322,7 @@ F 3 "" H 6550 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C87
+L reform-motherboard-rescue:C_Small C87
 U 1 1 5ADFA16C
 P 6800 3500
 F 0 "C87" H 6810 3570 50  0000 L CNN
@@ -1398,7 +1345,7 @@ Wire Wire Line
 	6050 3400 6050 3350
 Connection ~ 6050 3350
 $Comp
-L GND #PWR0198
+L reform-motherboard-rescue:GND #PWR0198
 U 1 1 5ADFA5CF
 P 6050 3700
 F 0 "#PWR0198" H 6050 3450 50  0001 C CNN
@@ -1422,7 +1369,7 @@ Wire Wire Line
 	6800 3650 6800 3600
 Connection ~ 6550 3650
 $Comp
-L C_Small C85
+L reform-motherboard-rescue:C_Small C85
 U 1 1 5ADFB21E
 P 6400 4200
 F 0 "C85" H 6410 4270 50  0000 L CNN
@@ -1436,7 +1383,7 @@ Wire Wire Line
 	6400 4100 6400 4050
 Connection ~ 6400 4050
 $Comp
-L GND #PWR0199
+L reform-motherboard-rescue:GND #PWR0199
 U 1 1 5ADFB4A6
 P 6400 4300
 F 0 "#PWR0199" H 6400 4050 50  0001 C CNN
@@ -1447,7 +1394,7 @@ F 3 "" H 6400 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R33
+L reform-motherboard-rescue:R_Small R33
 U 1 1 5ADFBD4A
 P 2650 5500
 F 0 "R33" H 2680 5520 50  0000 L CNN
@@ -1462,7 +1409,7 @@ Wire Wire Line
 Wire Wire Line
 	2650 5600 2650 5650
 $Comp
-L Ferrite_Bead_Small L4
+L reform-motherboard-rescue:Ferrite_Bead_Small L4
 U 1 1 5ADFE237
 P 6950 3950
 F 0 "L4" H 7025 4000 50  0000 L CNN
@@ -1473,7 +1420,7 @@ F 3 "" H 6950 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ferrite_Bead_Small L5
+L reform-motherboard-rescue:Ferrite_Bead_Small L5
 U 1 1 5ADFEFD7
 P 7050 3250
 F 0 "L5" H 7125 3300 50  0000 L CNN

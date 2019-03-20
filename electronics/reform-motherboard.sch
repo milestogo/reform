@@ -1,59 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:J0G-0003NL
-LIBS:TUSB4041IPAPR
-LIBS:TPS61235RWLR
-LIBS:AP1501A-33K5G-13
-LIBS:TPS74801DRCR
-LIBS:MCP73123T-22SI_MF
-LIBS:SGTL5000XNAA3
-LIBS:CM2020-00TR
-LIBS:INA260AIPW
-LIBS:SN74LVC1G14DBVR
-LIBS:SN74LVC1G08DCKR
-LIBS:693072010801
-LIBS:48099-5701
-LIBS:67910-5700
-LIBS:DF40C-100DS-0.4V_51_
-LIBS:5622-4100-ML
-LIBS:TUSB2046BVFR
-LIBS:TPS2044BDR
-LIBS:LP3962EMP-2.5
-LIBS:BQ24650RVAT
-LIBS:SJ-43516-SMT
+EESchema Schematic File Version 4
 LIBS:reform-motherboard-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -68,7 +15,7 @@ Comment3 "Copyright 2017,2018 Lukas F. Hartmann / @mntmn"
 Comment4 "License: GPLv3 https://www.gnu.org/licenses/gpl-3.0.txt"
 $EndDescr
 $Comp
-L TinyRex-J1-DF40C J1
+L reform-motherboard-rescue:TinyRex-J1-DF40C J1
 U 1 1 59F31EE6
 P 2050 4800
 F 0 "J1" H 1749 7306 50  0000 L BNN
@@ -83,7 +30,7 @@ F 7 "DF40C-100DS-0.4V(51)" H 1750 1700 50  0001 L BNN "MP"
 	1    0    0    -1  
 $EndComp
 $Comp
-L TinyRex-J2-DF40C J2
+L reform-motherboard-rescue:TinyRex-J2-DF40C J2
 U 1 1 59F31F4D
 P 6150 3300
 F 0 "J2" H 5849 5806 50  0000 L BNN
@@ -99,7 +46,7 @@ F 8 "DF40C-100DS-0.4V(51)" H 5900 100 50  0001 L BNN "MP"
 	1    0    0    -1  
 $EndComp
 $Comp
-L TinyRex-J3-DF40C J3
+L reform-motherboard-rescue:TinyRex-J3-DF40C J3
 U 1 1 59F36512
 P 9200 3300
 F 0 "J3" H 8899 5806 50  0000 L BNN
@@ -125,7 +72,7 @@ Text GLabel 1400 2400 0    60   Input ~ 0
 Text GLabel 1400 2600 0    60   Input ~ 0
 GND
 $Comp
-L +5V #PWR01
+L reform-motherboard-rescue:+5V #PWR01
 U 1 1 59F391D0
 P 1450 2400
 F 0 "#PWR01" H 1450 2250 50  0001 C CNN
@@ -136,7 +83,7 @@ F 3 "" H 1450 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR02
+L reform-motherboard-rescue:GND #PWR02
 U 1 1 59F391ED
 P 1450 2600
 F 0 "#PWR02" H 1450 2350 50  0001 C CNN
@@ -149,7 +96,7 @@ $EndComp
 Text GLabel 3400 3400 2    60   Input ~ 0
 +3V3
 $Comp
-L +3V3 #PWR03
+L reform-motherboard-rescue:+3V3 #PWR03
 U 1 1 59F393B1
 P 3350 3400
 F 0 "#PWR03" H 3350 3250 50  0001 C CNN
@@ -220,7 +167,7 @@ SD1_WP
 Text GLabel 8700 4200 0    60   Input ~ 0
 SD1_CD
 $Comp
-L +2V5 #PWR04
+L reform-motherboard-rescue:+2V5 #PWR04
 U 1 1 59F3A612
 P 10550 3200
 F 0 "#PWR04" H 10550 3050 50  0001 C CNN
@@ -259,7 +206,7 @@ SD3_DATA2
 Text GLabel 5650 3300 0    60   BiDi ~ 0
 SD3_DATA3
 $Comp
-L GND #PWR05
+L reform-motherboard-rescue:GND #PWR05
 U 1 1 59F3BFDC
 P 5650 2900
 F 0 "#PWR05" H 5650 2650 50  0001 C CNN
@@ -270,7 +217,7 @@ F 3 "" H 5650 2900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR06
+L reform-motherboard-rescue:GND #PWR06
 U 1 1 59F3BFF7
 P 5650 3400
 F 0 "#PWR06" H 5650 3150 50  0001 C CNN
@@ -281,7 +228,7 @@ F 3 "" H 5650 3400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR07
+L reform-motherboard-rescue:GND #PWR07
 U 1 1 59F3C00B
 P 5650 4100
 F 0 "#PWR07" H 5650 3850 50  0001 C CNN
@@ -336,7 +283,7 @@ Wire Wire Line
 Wire Wire Line
 	1400 2400 1550 2400
 Wire Wire Line
-	3200 3400 3400 3400
+	3200 3400 3350 3400
 Wire Wire Line
 	5350 1100 5650 1100
 Wire Wire Line
@@ -346,7 +293,7 @@ Wire Wire Line
 Wire Wire Line
 	10350 3700 10550 3700
 Wire Wire Line
-	1550 2600 1550 3500
+	1550 2600 1550 2700
 Connection ~ 1550 2700
 Connection ~ 1550 2800
 Connection ~ 1550 3400
@@ -356,11 +303,11 @@ Connection ~ 1550 3100
 Connection ~ 1550 3000
 Connection ~ 1550 2900
 Wire Wire Line
-	1550 2150 1550 2500
+	1550 2150 1550 2400
 Connection ~ 1550 2400
 Connection ~ 1550 2600
 Wire Wire Line
-	3200 2150 3200 3300
+	3200 2150 3200 2400
 Wire Wire Line
 	1550 2150 3200 2150
 Connection ~ 3200 2400
@@ -376,10 +323,10 @@ Wire Wire Line
 	3200 3400 3200 3500
 Connection ~ 3200 3400
 Wire Wire Line
-	3200 4400 3200 4600
+	3200 4400 3200 4500
 Connection ~ 3200 4500
 $Comp
-L +3V3 #PWR08
+L reform-motherboard-rescue:+3V3 #PWR08
 U 1 1 5A0486F1
 P 3200 4500
 F 0 "#PWR08" H 3200 4350 50  0001 C CNN
@@ -390,7 +337,7 @@ F 3 "" H 3200 4500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR09
+L reform-motherboard-rescue:GND #PWR09
 U 1 1 5A04870B
 P 1550 3800
 F 0 "#PWR09" H 1550 3550 50  0001 C CNN
@@ -401,7 +348,7 @@ F 3 "" H 1550 3800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR010
+L reform-motherboard-rescue:GND #PWR010
 U 1 1 5A048725
 P 1550 4100
 F 0 "#PWR010" H 1550 3850 50  0001 C CNN
@@ -412,7 +359,7 @@ F 3 "" H 1550 4100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR011
+L reform-motherboard-rescue:GND #PWR011
 U 1 1 5A048740
 P 1550 4400
 F 0 "#PWR011" H 1550 4150 50  0001 C CNN
@@ -423,7 +370,7 @@ F 3 "" H 1550 4400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR012
+L reform-motherboard-rescue:GND #PWR012
 U 1 1 5A048754
 P 1550 4800
 F 0 "#PWR012" H 1550 4550 50  0001 C CNN
@@ -434,7 +381,7 @@ F 3 "" H 1550 4800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR013
+L reform-motherboard-rescue:GND #PWR013
 U 1 1 5A048768
 P 1550 5300
 F 0 "#PWR013" H 1550 5050 50  0001 C CNN
@@ -445,7 +392,7 @@ F 3 "" H 1550 5300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR014
+L reform-motherboard-rescue:GND #PWR014
 U 1 1 5A048782
 P 1550 6500
 F 0 "#PWR014" H 1550 6250 50  0001 C CNN
@@ -456,7 +403,7 @@ F 3 "" H 1550 6500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR015
+L reform-motherboard-rescue:GND #PWR015
 U 1 1 5A048796
 P 1550 6800
 F 0 "#PWR015" H 1550 6550 50  0001 C CNN
@@ -467,7 +414,7 @@ F 3 "" H 1550 6800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR016
+L reform-motherboard-rescue:GND #PWR016
 U 1 1 5A0487AA
 P 1550 7100
 F 0 "#PWR016" H 1550 6850 50  0001 C CNN
@@ -478,13 +425,13 @@ F 3 "" H 1550 7100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3200 6100 4550 6100
+	3200 6100 4050 6100
 Wire Wire Line
 	4050 6100 4050 6500
 Wire Wire Line
 	4050 6500 3200 6500
 $Comp
-L +5V #PWR017
+L reform-motherboard-rescue:+5V #PWR017
 U 1 1 5A048CBD
 P 4050 6100
 F 0 "#PWR017" H 4050 5950 50  0001 C CNN
@@ -496,7 +443,7 @@ F 3 "" H 4050 6100 50  0001 C CNN
 $EndComp
 Connection ~ 4050 6100
 $Comp
-L GND #PWR018
+L reform-motherboard-rescue:GND #PWR018
 U 1 1 5A048CE6
 P 4200 6350
 F 0 "#PWR018" H 4200 6100 50  0001 C CNN
@@ -507,7 +454,7 @@ F 3 "" H 4200 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR019
+L reform-motherboard-rescue:GND #PWR019
 U 1 1 5A048D02
 P 4550 6350
 F 0 "#PWR019" H 4550 6100 50  0001 C CNN
@@ -518,7 +465,7 @@ F 3 "" H 4550 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C11
+L reform-motherboard-rescue:C_Small C11
 U 1 1 5A048D1E
 P 4200 6250
 F 0 "C11" H 4210 6320 50  0000 L CNN
@@ -529,7 +476,7 @@ F 3 "" H 4200 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C12
+L reform-motherboard-rescue:C_Small C12
 U 1 1 5A048D63
 P 4550 6250
 F 0 "C12" H 4560 6320 50  0000 L CNN
@@ -565,7 +512,7 @@ LVDS0_PWM
 Text GLabel 3200 4300 2    60   Output ~ 0
 LVDS0_CABC
 $Comp
-L GND #PWR020
+L reform-motherboard-rescue:GND #PWR020
 U 1 1 5A049456
 P 3200 3800
 F 0 "#PWR020" H 3200 3550 50  0001 C CNN
@@ -576,7 +523,7 @@ F 3 "" H 3200 3800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR021
+L reform-motherboard-rescue:GND #PWR021
 U 1 1 5A049473
 P 3200 4100
 F 0 "#PWR021" H 3200 3850 50  0001 C CNN
@@ -587,7 +534,7 @@ F 3 "" H 3200 4100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR022
+L reform-motherboard-rescue:GND #PWR022
 U 1 1 5A04949C
 P 3200 5100
 F 0 "#PWR022" H 3200 4850 50  0001 C CNN
@@ -598,7 +545,7 @@ F 3 "" H 3200 5100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR023
+L reform-motherboard-rescue:GND #PWR023
 U 1 1 5A0494B9
 P 3200 5600
 F 0 "#PWR023" H 3200 5350 50  0001 C CNN
@@ -609,7 +556,7 @@ F 3 "" H 3200 5600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR024
+L reform-motherboard-rescue:GND #PWR024
 U 1 1 5A049500
 P 3200 6800
 F 0 "#PWR024" H 3200 6550 50  0001 C CNN
@@ -620,7 +567,7 @@ F 3 "" H 3200 6800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR025
+L reform-motherboard-rescue:GND #PWR025
 U 1 1 5A04951D
 P 3200 7100
 F 0 "#PWR025" H 3200 6850 50  0001 C CNN
@@ -648,7 +595,7 @@ Text GLabel 10350 1300 2    60   BiDi ~ 0
 TRD3_P
 Connection ~ 11100 1400
 Wire Wire Line
-	11100 1050 11100 1800
+	11100 1050 11100 1100
 Wire Wire Line
 	11100 1100 10350 1100
 Text GLabel 10350 1500 2    60   Output ~ 0
@@ -658,7 +605,7 @@ ENET_LED_RX
 Wire Wire Line
 	11100 1800 10350 1800
 $Comp
-L GND #PWR026
+L reform-motherboard-rescue:GND #PWR026
 U 1 1 5A04A6EB
 P 8700 1100
 F 0 "#PWR026" H 8700 850 50  0001 C CNN
@@ -669,7 +616,7 @@ F 3 "" H 8700 1100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR027
+L reform-motherboard-rescue:GND #PWR027
 U 1 1 5A04A712
 P 8700 1400
 F 0 "#PWR027" H 8700 1150 50  0001 C CNN
@@ -680,7 +627,7 @@ F 3 "" H 8700 1400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR028
+L reform-motherboard-rescue:GND #PWR028
 U 1 1 5A04A732
 P 8700 2100
 F 0 "#PWR028" H 8700 1850 50  0001 C CNN
@@ -691,7 +638,7 @@ F 3 "" H 8700 2100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR029
+L reform-motherboard-rescue:GND #PWR029
 U 1 1 5A04A752
 P 8700 2600
 F 0 "#PWR029" H 8700 2350 50  0001 C CNN
@@ -702,7 +649,7 @@ F 3 "" H 8700 2600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR030
+L reform-motherboard-rescue:GND #PWR030
 U 1 1 5A04A772
 P 8700 3100
 F 0 "#PWR030" H 8700 2850 50  0001 C CNN
@@ -713,7 +660,7 @@ F 3 "" H 8700 3100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR031
+L reform-motherboard-rescue:GND #PWR031
 U 1 1 5A04A7B5
 P 8700 3600
 F 0 "#PWR031" H 8700 3350 50  0001 C CNN
@@ -724,7 +671,7 @@ F 3 "" H 8700 3600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR032
+L reform-motherboard-rescue:GND #PWR032
 U 1 1 5A04A7D5
 P 8700 4300
 F 0 "#PWR032" H 8700 4050 50  0001 C CNN
@@ -735,7 +682,7 @@ F 3 "" H 8700 4300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR033
+L reform-motherboard-rescue:GND #PWR033
 U 1 1 5A04A826
 P 8700 4800
 F 0 "#PWR033" H 8700 4550 50  0001 C CNN
@@ -746,7 +693,7 @@ F 3 "" H 8700 4800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR034
+L reform-motherboard-rescue:GND #PWR034
 U 1 1 5A04A846
 P 8700 5400
 F 0 "#PWR034" H 8700 5150 50  0001 C CNN
@@ -757,7 +704,7 @@ F 3 "" H 8700 5400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR035
+L reform-motherboard-rescue:GND #PWR035
 U 1 1 5A04A866
 P 10350 5400
 F 0 "#PWR035" H 10350 5150 50  0001 C CNN
@@ -768,7 +715,7 @@ F 3 "" H 10350 5400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR036
+L reform-motherboard-rescue:GND #PWR036
 U 1 1 5A04A886
 P 10350 4800
 F 0 "#PWR036" H 10350 4550 50  0001 C CNN
@@ -779,7 +726,7 @@ F 3 "" H 10350 4800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR037
+L reform-motherboard-rescue:GND #PWR037
 U 1 1 5A04A8E4
 P 10350 4200
 F 0 "#PWR037" H 10350 3950 50  0001 C CNN
@@ -790,7 +737,7 @@ F 3 "" H 10350 4200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR038
+L reform-motherboard-rescue:GND #PWR038
 U 1 1 5A04A935
 P 10350 2700
 F 0 "#PWR038" H 10350 2450 50  0001 C CNN
@@ -806,7 +753,7 @@ Wire Wire Line
 	10550 3200 10550 3700
 Connection ~ 10550 3200
 $Comp
-L GND #PWR039
+L reform-motherboard-rescue:GND #PWR039
 U 1 1 5A04AFCE
 P 10350 2200
 F 0 "#PWR039" H 10350 1950 50  0001 C CNN
@@ -817,7 +764,7 @@ F 3 "" H 10350 2200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L TEST_1P J10
+L reform-motherboard-rescue:TEST_1P J10
 U 1 1 5A04B860
 P 7700 1100
 F 0 "J10" H 7700 1370 50  0000 C CNN
@@ -830,7 +777,7 @@ $EndComp
 Wire Wire Line
 	7700 1100 7300 1100
 $Comp
-L TEST_1P J11
+L reform-motherboard-rescue:TEST_1P J11
 U 1 1 5A04B954
 P 7900 1200
 F 0 "J11" H 7900 1470 50  0000 C CNN
@@ -843,7 +790,7 @@ $EndComp
 Wire Wire Line
 	7900 1200 7300 1200
 $Comp
-L GND #PWR040
+L reform-motherboard-rescue:GND #PWR040
 U 1 1 5A04BD7D
 P 5650 1400
 F 0 "#PWR040" H 5650 1150 50  0001 C CNN
@@ -854,7 +801,7 @@ F 3 "" H 5650 1400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR041
+L reform-motherboard-rescue:GND #PWR041
 U 1 1 5A04BDC9
 P 5650 2400
 F 0 "#PWR041" H 5650 2150 50  0001 C CNN
@@ -865,7 +812,7 @@ F 3 "" H 5650 2400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR042
+L reform-motherboard-rescue:GND #PWR042
 U 1 1 5A04C105
 P 7300 2000
 F 0 "#PWR042" H 7300 1750 50  0001 C CNN
@@ -876,7 +823,7 @@ F 3 "" H 7300 2000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR043
+L reform-motherboard-rescue:GND #PWR043
 U 1 1 5A04C12B
 P 7300 1400
 F 0 "#PWR043" H 7300 1150 50  0001 C CNN
@@ -887,7 +834,7 @@ F 3 "" H 7300 1400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR044
+L reform-motherboard-rescue:GND #PWR044
 U 1 1 5A04C180
 P 7300 2800
 F 0 "#PWR044" H 7300 2550 50  0001 C CNN
@@ -898,7 +845,7 @@ F 3 "" H 7300 2800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR045
+L reform-motherboard-rescue:GND #PWR045
 U 1 1 5A04C1A6
 P 7300 3100
 F 0 "#PWR045" H 7300 2850 50  0001 C CNN
@@ -909,7 +856,7 @@ F 3 "" H 7300 3100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR046
+L reform-motherboard-rescue:GND #PWR046
 U 1 1 5A04C1CC
 P 7300 3600
 F 0 "#PWR046" H 7300 3350 50  0001 C CNN
@@ -920,7 +867,7 @@ F 3 "" H 7300 3600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR047
+L reform-motherboard-rescue:GND #PWR047
 U 1 1 5A04C1F2
 P 7700 4100
 F 0 "#PWR047" H 7700 3850 50  0001 C CNN
@@ -931,7 +878,7 @@ F 3 "" H 7700 4100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR048
+L reform-motherboard-rescue:GND #PWR048
 U 1 1 5A04C233
 P 7300 4700
 F 0 "#PWR048" H 7300 4450 50  0001 C CNN
@@ -942,7 +889,7 @@ F 3 "" H 7300 4700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR049
+L reform-motherboard-rescue:GND #PWR049
 U 1 1 5A04C259
 P 7300 5000
 F 0 "#PWR049" H 7300 4750 50  0001 C CNN
@@ -953,7 +900,7 @@ F 3 "" H 7300 5000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR050
+L reform-motherboard-rescue:GND #PWR050
 U 1 1 5A04C27F
 P 7300 5300
 F 0 "#PWR050" H 7300 5050 50  0001 C CNN
@@ -964,7 +911,7 @@ F 3 "" H 7300 5300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR051
+L reform-motherboard-rescue:GND #PWR051
 U 1 1 5A04C2A5
 P 5650 5300
 F 0 "#PWR051" H 5650 5050 50  0001 C CNN
@@ -975,7 +922,7 @@ F 3 "" H 5650 5300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR052
+L reform-motherboard-rescue:GND #PWR052
 U 1 1 5A04C2CB
 P 5650 5000
 F 0 "#PWR052" H 5650 4750 50  0001 C CNN
@@ -986,7 +933,7 @@ F 3 "" H 5650 5000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR053
+L reform-motherboard-rescue:GND #PWR053
 U 1 1 5A04C2F1
 P 5650 4700
 F 0 "#PWR053" H 5650 4450 50  0001 C CNN
@@ -997,7 +944,7 @@ F 3 "" H 5650 4700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR054
+L reform-motherboard-rescue:GND #PWR054
 U 1 1 5A04C317
 P 5650 4400
 F 0 "#PWR054" H 5650 4150 50  0001 C CNN
@@ -1044,13 +991,13 @@ Wire Wire Line
 Wire Wire Line
 	5400 1000 5400 950 
 Wire Wire Line
-	7300 4100 7700 4100
+	7300 4100 7650 4100
 Wire Wire Line
 	7300 4200 7450 4200
 Text Notes 7500 4000 0    60   ~ 0
 host mode
 $Comp
-L R_Small R6
+L reform-motherboard-rescue:R_Small R6
 U 1 1 5A168A79
 P 7550 4200
 F 0 "R6" V 7500 4000 50  0000 L CNN
@@ -1065,7 +1012,7 @@ Wire Wire Line
 Wire Wire Line
 	4550 1600 5650 1600
 $Comp
-L GND #PWR055
+L reform-motherboard-rescue:GND #PWR055
 U 1 1 5A16A102
 P 4550 1400
 F 0 "#PWR055" H 4550 1150 50  0001 C CNN
@@ -1092,7 +1039,7 @@ Wire Wire Line
 Wire Wire Line
 	10350 4600 11050 4600
 $Comp
-L TEST MH1
+L reform-motherboard-rescue:TEST MH1
 U 1 1 5A17ADF3
 P 5250 6750
 F 0 "MH1" H 5250 7050 50  0000 C BNN
@@ -1103,7 +1050,7 @@ F 3 "" H 5250 6750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEST MH2
+L reform-motherboard-rescue:TEST MH2
 U 1 1 5A17AFB5
 P 5700 6750
 F 0 "MH2" H 5700 7050 50  0000 C BNN
@@ -1114,7 +1061,7 @@ F 3 "" H 5700 6750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEST MH3
+L reform-motherboard-rescue:TEST MH3
 U 1 1 5A17B009
 P 6150 6750
 F 0 "MH3" H 6150 7050 50  0000 C BNN
@@ -1125,7 +1072,7 @@ F 3 "" H 6150 6750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEST MH4
+L reform-motherboard-rescue:TEST MH4
 U 1 1 5A17B05A
 P 6600 6750
 F 0 "MH4" H 6600 7050 50  0000 C BNN
@@ -1136,7 +1083,7 @@ F 3 "" H 6600 6750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR056
+L reform-motherboard-rescue:GND #PWR056
 U 1 1 5A17B13C
 P 5250 6750
 F 0 "#PWR056" H 5250 6500 50  0001 C CNN
@@ -1147,7 +1094,7 @@ F 3 "" H 5250 6750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR057
+L reform-motherboard-rescue:GND #PWR057
 U 1 1 5A17B184
 P 5700 6750
 F 0 "#PWR057" H 5700 6500 50  0001 C CNN
@@ -1158,7 +1105,7 @@ F 3 "" H 5700 6750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR058
+L reform-motherboard-rescue:GND #PWR058
 U 1 1 5A17B1C5
 P 6150 6750
 F 0 "#PWR058" H 6150 6500 50  0001 C CNN
@@ -1169,7 +1116,7 @@ F 3 "" H 6150 6750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR059
+L reform-motherboard-rescue:GND #PWR059
 U 1 1 5A17B206
 P 6600 6750
 F 0 "#PWR059" H 6600 6500 50  0001 C CNN
@@ -1180,7 +1127,7 @@ F 3 "" H 6600 6750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEST MH5
+L reform-motherboard-rescue:TEST MH5
 U 1 1 5A17B33B
 P 5250 7450
 F 0 "MH5" H 5250 7750 50  0000 C BNN
@@ -1191,7 +1138,7 @@ F 3 "" H 5250 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEST MH6
+L reform-motherboard-rescue:TEST MH6
 U 1 1 5A17B341
 P 5800 7450
 F 0 "MH6" H 5800 7750 50  0000 C BNN
@@ -1202,7 +1149,7 @@ F 3 "" H 5800 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEST TP13
+L reform-motherboard-rescue:TEST TP13
 U 1 1 5A1DCAB2
 P 11100 1050
 F 0 "TP13" H 11100 1350 50  0000 C BNN
@@ -1213,7 +1160,7 @@ F 3 "" H 11100 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x06 J21
+L reform-motherboard-rescue:Conn_01x06 J21
 U 1 1 5A1FEE7D
 P 10850 6250
 F 0 "J21" H 10850 6550 50  0000 C CNN
@@ -1237,7 +1184,7 @@ Wire Wire Line
 	7650 4200 7650 4100
 Connection ~ 7650 4100
 $Comp
-L GND #PWR060
+L reform-motherboard-rescue:GND #PWR060
 U 1 1 5A16A41F
 P 4100 2400
 F 0 "#PWR060" H 4100 2150 50  0001 C CNN
@@ -1254,7 +1201,7 @@ UART2_RXD
 Text GLabel 4650 1700 2    60   BiDi ~ 0
 GPIO3
 $Comp
-L Conn_01x04 J20
+L reform-motherboard-rescue:Conn_01x04 J20
 U 1 1 5AEE25C5
 P 4350 1600
 F 0 "J20" H 4350 1800 50  0000 C CNN
@@ -1267,7 +1214,7 @@ $EndComp
 Wire Wire Line
 	4650 1700 4550 1700
 $Comp
-L Conn_01x06 J35
+L reform-motherboard-rescue:Conn_01x06 J35
 U 1 1 5AEE3AF4
 P 3900 2600
 F 0 "J35" H 3900 2900 50  0000 C CNN
@@ -1294,7 +1241,7 @@ Wire Wire Line
 Wire Wire Line
 	4550 2800 4100 2800
 $Comp
-L +3V3 #PWR061
+L reform-motherboard-rescue:+3V3 #PWR061
 U 1 1 5AEE4AA5
 P 4250 2300
 F 0 "#PWR061" H 4250 2150 50  0001 C CNN
@@ -1327,7 +1274,7 @@ Wire Wire Line
 Wire Wire Line
 	10950 5850 10950 6050
 $Comp
-L +3V3 #PWR062
+L reform-motherboard-rescue:+3V3 #PWR062
 U 1 1 5AEE6D45
 P 10550 6000
 F 0 "#PWR062" H 10550 5850 50  0001 C CNN
@@ -1340,7 +1287,7 @@ $EndComp
 Wire Wire Line
 	10550 6000 10550 6050
 $Comp
-L GND #PWR063
+L reform-motherboard-rescue:GND #PWR063
 U 1 1 5AEE6E09
 P 10650 6050
 F 0 "#PWR063" H 10650 5800 50  0001 C CNN
@@ -1367,7 +1314,7 @@ CSI_D1_N
 Text GLabel 7300 5800 2    60   Input ~ 0
 CSI_D1_P
 $Comp
-L GND #PWR064
+L reform-motherboard-rescue:GND #PWR064
 U 1 1 5AEF6F62
 P 7300 5600
 F 0 "#PWR064" H 7300 5350 50  0001 C CNN
@@ -1378,7 +1325,7 @@ F 3 "" H 7300 5600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR065
+L reform-motherboard-rescue:GND #PWR065
 U 1 1 5AEF6FAF
 P 5650 5600
 F 0 "#PWR065" H 5650 5350 50  0001 C CNN
@@ -1405,7 +1352,7 @@ DSI_CLK0_N
 Text GLabel 3200 7300 2    60   Output ~ 0
 DSI_CLK0_P
 $Comp
-L TEST_1P J8
+L reform-motherboard-rescue:TEST_1P J8
 U 1 1 5B16D331
 P 5400 950
 F 0 "J8" H 5400 1220 50  0000 C CNN
@@ -1415,4 +1362,54 @@ F 3 "" H 5600 950 50  0001 C CNN
 	1    5400 950 
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1550 2700 1550 2800
+Wire Wire Line
+	1550 2800 1550 2900
+Wire Wire Line
+	1550 3400 1550 3500
+Wire Wire Line
+	1550 3300 1550 3400
+Wire Wire Line
+	1550 3200 1550 3300
+Wire Wire Line
+	1550 3100 1550 3200
+Wire Wire Line
+	1550 3000 1550 3100
+Wire Wire Line
+	1550 2900 1550 3000
+Wire Wire Line
+	1550 2400 1550 2500
+Wire Wire Line
+	3200 2400 3200 2500
+Wire Wire Line
+	3200 2500 3200 2600
+Wire Wire Line
+	3200 2600 3200 2700
+Wire Wire Line
+	3200 2700 3200 2800
+Wire Wire Line
+	3200 2800 3200 2900
+Wire Wire Line
+	3200 2900 3200 3000
+Wire Wire Line
+	3200 3000 3200 3100
+Wire Wire Line
+	3200 3100 3200 3200
+Wire Wire Line
+	3200 3200 3200 3300
+Wire Wire Line
+	3200 4500 3200 4600
+Wire Wire Line
+	4050 6100 4200 6100
+Wire Wire Line
+	4200 6100 4550 6100
+Wire Wire Line
+	11100 1400 11100 1800
+Wire Wire Line
+	3350 3400 3400 3400
+Wire Wire Line
+	11100 1100 11100 1400
+Wire Wire Line
+	7650 4100 7700 4100
 $EndSCHEMATC
