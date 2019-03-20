@@ -13,5 +13,4 @@ build
 *.eep
 *.sym
 *.gcode
-*-rescue.lib
 _autosave*
