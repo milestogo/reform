@@ -1,51 +1,21 @@
 EESchema Schematic File Version 4
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:mntcomp-keyboard
 LIBS:mntcomp-keyboard-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 2
 Title "Reform Keyboard"
-Date "2018-11-11"
-Rev "0.4"
-Comp "MNT Media and Technology UG"
+Date "2019-03-29"
+Rev "0.5"
+Comp "MNT Research GmbH"
 Comment1 "License: GPLv3+ https://www.gnu.org/licenses/gpl-3.0.en.html"
-Comment2 "Copyright 2017,2018 Lukas F. Hartmann / mntmn"
-Comment3 "https://mntmn.com/reform"
+Comment2 "Copyright 2017,2018,2019 Lukas F. Hartmann / mntmn"
+Comment3 "https://mntre.com/reform"
 Comment4 ""
 $EndDescr
 $Comp
-L ML SW1
+L mntcomp-keyboard:ML SW1
 U 1 1 594D7DFA
 P 2550 2250
 F 0 "SW1" H 2841 2371 50  0000 L CNN
@@ -56,7 +26,7 @@ F 3 "" H 2550 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW2
+L mntcomp-keyboard:ML SW2
 U 1 1 594D7E8E
 P 3400 2250
 F 0 "SW2" H 3691 2371 50  0000 L CNN
@@ -67,7 +37,7 @@ F 3 "" H 3400 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D1
+L Device:D_Small D1
 U 1 1 594D7FFC
 P 2550 2550
 F 0 "D1" V 2596 2482 50  0000 R CNN
@@ -78,7 +48,7 @@ F 3 "" V 2550 2550 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D2
+L Device:D_Small D2
 U 1 1 594D80D3
 P 3400 2550
 F 0 "D2" V 3446 2482 50  0000 R CNN
@@ -89,7 +59,7 @@ F 3 "" V 3400 2550 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW3
+L mntcomp-keyboard:ML SW3
 U 1 1 594D872C
 P 4250 2250
 F 0 "SW3" H 4541 2371 50  0000 L CNN
@@ -100,7 +70,7 @@ F 3 "" H 4250 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW4
+L mntcomp-keyboard:ML SW4
 U 1 1 594D8732
 P 5100 2250
 F 0 "SW4" H 5391 2371 50  0000 L CNN
@@ -111,7 +81,7 @@ F 3 "" H 5100 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D3
+L Device:D_Small D3
 U 1 1 594D873A
 P 4250 2550
 F 0 "D3" V 4296 2482 50  0000 R CNN
@@ -122,7 +92,7 @@ F 3 "" V 4250 2550 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D4
+L Device:D_Small D4
 U 1 1 594D8740
 P 5100 2550
 F 0 "D4" V 5146 2482 50  0000 R CNN
@@ -133,7 +103,7 @@ F 3 "" V 5100 2550 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW5
+L mntcomp-keyboard:ML SW5
 U 1 1 594D8B3E
 P 5950 2250
 F 0 "SW5" H 6241 2371 50  0000 L CNN
@@ -144,7 +114,7 @@ F 3 "" H 5950 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW6
+L mntcomp-keyboard:ML SW6
 U 1 1 594D8B44
 P 6800 2250
 F 0 "SW6" H 7091 2371 50  0000 L CNN
@@ -155,7 +125,7 @@ F 3 "" H 6800 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D5
+L Device:D_Small D5
 U 1 1 594D8B4C
 P 5950 2550
 F 0 "D5" V 5996 2482 50  0000 R CNN
@@ -166,7 +136,7 @@ F 3 "" V 5950 2550 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D6
+L Device:D_Small D6
 U 1 1 594D8B52
 P 6800 2550
 F 0 "D6" V 6846 2482 50  0000 R CNN
@@ -177,7 +147,7 @@ F 3 "" V 6800 2550 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW7
+L mntcomp-keyboard:ML SW7
 U 1 1 594D8B58
 P 7650 2250
 F 0 "SW7" H 7941 2371 50  0000 L CNN
@@ -188,7 +158,7 @@ F 3 "" H 7650 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW8
+L mntcomp-keyboard:ML SW8
 U 1 1 594D8B5E
 P 8500 2250
 F 0 "SW8" H 8791 2371 50  0000 L CNN
@@ -199,7 +169,7 @@ F 3 "" H 8500 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D7
+L Device:D_Small D7
 U 1 1 594D8B66
 P 7650 2550
 F 0 "D7" V 7696 2482 50  0000 R CNN
@@ -210,7 +180,7 @@ F 3 "" V 7650 2550 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D8
+L Device:D_Small D8
 U 1 1 594D8B6C
 P 8500 2550
 F 0 "D8" V 8546 2482 50  0000 R CNN
@@ -221,7 +191,7 @@ F 3 "" V 8500 2550 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW9
+L mntcomp-keyboard:ML SW9
 U 1 1 594D96D7
 P 9350 2250
 F 0 "SW9" H 9641 2371 50  0000 L CNN
@@ -232,7 +202,7 @@ F 3 "" H 9350 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW10
+L mntcomp-keyboard:ML SW10
 U 1 1 594D96DD
 P 10200 2250
 F 0 "SW10" H 10491 2371 50  0000 L CNN
@@ -243,7 +213,7 @@ F 3 "" H 10200 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D9
+L Device:D_Small D9
 U 1 1 594D96E5
 P 9350 2550
 F 0 "D9" V 9396 2482 50  0000 R CNN
@@ -254,7 +224,7 @@ F 3 "" V 9350 2550 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D10
+L Device:D_Small D10
 U 1 1 594D96EB
 P 10200 2550
 F 0 "D10" V 10246 2482 50  0000 R CNN
@@ -265,7 +235,7 @@ F 3 "" V 10200 2550 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW11
+L mntcomp-keyboard:ML SW11
 U 1 1 594D96F1
 P 11050 2250
 F 0 "SW11" H 11341 2371 50  0000 L CNN
@@ -276,7 +246,7 @@ F 3 "" H 11050 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW12
+L mntcomp-keyboard:ML SW12
 U 1 1 594D96F7
 P 11900 2250
 F 0 "SW12" H 12191 2371 50  0000 L CNN
@@ -287,7 +257,7 @@ F 3 "" H 11900 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D11
+L Device:D_Small D11
 U 1 1 594D96FF
 P 11050 2550
 F 0 "D11" V 11096 2482 50  0000 R CNN
@@ -298,7 +268,7 @@ F 3 "" V 11050 2550 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D12
+L Device:D_Small D12
 U 1 1 594D9705
 P 11900 2550
 F 0 "D12" V 11946 2482 50  0000 R CNN
@@ -309,7 +279,7 @@ F 3 "" V 11900 2550 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW13
+L mntcomp-keyboard:ML SW13
 U 1 1 594D970B
 P 12750 2250
 F 0 "SW13" H 13041 2371 50  0000 L CNN
@@ -320,7 +290,7 @@ F 3 "" H 12750 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW14
+L mntcomp-keyboard:ML SW14
 U 1 1 594D9711
 P 13600 2250
 F 0 "SW14" H 13891 2371 50  0000 L CNN
@@ -331,7 +301,7 @@ F 3 "" H 13600 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D13
+L Device:D_Small D13
 U 1 1 594D9719
 P 12750 2550
 F 0 "D13" V 12796 2482 50  0000 R CNN
@@ -342,7 +312,7 @@ F 3 "" V 12750 2550 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D14
+L Device:D_Small D14
 U 1 1 594D971F
 P 13600 2550
 F 0 "D14" V 13646 2482 50  0000 R CNN
@@ -353,7 +323,7 @@ F 3 "" V 13600 2550 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW16
+L mntcomp-keyboard:ML SW16
 U 1 1 594DAC25
 P 2550 3350
 F 0 "SW16" H 2841 3471 50  0000 L CNN
@@ -364,7 +334,7 @@ F 3 "" H 2550 3350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW17
+L mntcomp-keyboard:ML SW17
 U 1 1 594DAC2B
 P 3400 3350
 F 0 "SW17" H 3691 3471 50  0000 L CNN
@@ -375,7 +345,7 @@ F 3 "" H 3400 3350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D16
+L Device:D_Small D16
 U 1 1 594DAC33
 P 2550 3650
 F 0 "D16" V 2596 3582 50  0000 R CNN
@@ -386,7 +356,7 @@ F 3 "" V 2550 3650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D17
+L Device:D_Small D17
 U 1 1 594DAC39
 P 3400 3650
 F 0 "D17" V 3446 3582 50  0000 R CNN
@@ -397,7 +367,7 @@ F 3 "" V 3400 3650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW18
+L mntcomp-keyboard:ML SW18
 U 1 1 594DAC3F
 P 4250 3350
 F 0 "SW18" H 4541 3471 50  0000 L CNN
@@ -408,7 +378,7 @@ F 3 "" H 4250 3350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW19
+L mntcomp-keyboard:ML SW19
 U 1 1 594DAC45
 P 5100 3350
 F 0 "SW19" H 5391 3471 50  0000 L CNN
@@ -419,7 +389,7 @@ F 3 "" H 5100 3350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D18
+L Device:D_Small D18
 U 1 1 594DAC4C
 P 4250 3650
 F 0 "D18" V 4296 3582 50  0000 R CNN
@@ -430,7 +400,7 @@ F 3 "" V 4250 3650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D19
+L Device:D_Small D19
 U 1 1 594DAC52
 P 5100 3650
 F 0 "D19" V 5146 3582 50  0000 R CNN
@@ -441,7 +411,7 @@ F 3 "" V 5100 3650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW20
+L mntcomp-keyboard:ML SW20
 U 1 1 594DAC58
 P 5950 3350
 F 0 "SW20" H 6241 3471 50  0000 L CNN
@@ -452,7 +422,7 @@ F 3 "" H 5950 3350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW21
+L mntcomp-keyboard:ML SW21
 U 1 1 594DAC5E
 P 6800 3350
 F 0 "SW21" H 7091 3471 50  0000 L CNN
@@ -463,7 +433,7 @@ F 3 "" H 6800 3350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D20
+L Device:D_Small D20
 U 1 1 594DAC65
 P 5950 3650
 F 0 "D20" V 5996 3582 50  0000 R CNN
@@ -474,7 +444,7 @@ F 3 "" V 5950 3650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D21
+L Device:D_Small D21
 U 1 1 594DAC6B
 P 6800 3650
 F 0 "D21" V 6846 3582 50  0000 R CNN
@@ -485,7 +455,7 @@ F 3 "" V 6800 3650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW22
+L mntcomp-keyboard:ML SW22
 U 1 1 594DAC71
 P 7650 3350
 F 0 "SW22" H 7941 3471 50  0000 L CNN
@@ -496,7 +466,7 @@ F 3 "" H 7650 3350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW23
+L mntcomp-keyboard:ML SW23
 U 1 1 594DAC77
 P 8500 3350
 F 0 "SW23" H 8791 3471 50  0000 L CNN
@@ -507,7 +477,7 @@ F 3 "" H 8500 3350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D22
+L Device:D_Small D22
 U 1 1 594DAC7E
 P 7650 3650
 F 0 "D22" V 7696 3582 50  0000 R CNN
@@ -518,7 +488,7 @@ F 3 "" V 7650 3650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D23
+L Device:D_Small D23
 U 1 1 594DAC84
 P 8500 3650
 F 0 "D23" V 8546 3582 50  0000 R CNN
@@ -529,7 +499,7 @@ F 3 "" V 8500 3650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW24
+L mntcomp-keyboard:ML SW24
 U 1 1 594DAC8A
 P 9350 3350
 F 0 "SW24" H 9641 3471 50  0000 L CNN
@@ -540,7 +510,7 @@ F 3 "" H 9350 3350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW25
+L mntcomp-keyboard:ML SW25
 U 1 1 594DAC90
 P 10200 3350
 F 0 "SW25" H 10491 3471 50  0000 L CNN
@@ -551,7 +521,7 @@ F 3 "" H 10200 3350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D24
+L Device:D_Small D24
 U 1 1 594DAC97
 P 9350 3650
 F 0 "D24" V 9396 3582 50  0000 R CNN
@@ -562,7 +532,7 @@ F 3 "" V 9350 3650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D25
+L Device:D_Small D25
 U 1 1 594DAC9D
 P 10200 3650
 F 0 "D25" V 10246 3582 50  0000 R CNN
@@ -573,7 +543,7 @@ F 3 "" V 10200 3650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW26
+L mntcomp-keyboard:ML SW26
 U 1 1 594DACA3
 P 11050 3350
 F 0 "SW26" H 11341 3471 50  0000 L CNN
@@ -584,7 +554,7 @@ F 3 "" H 11050 3350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW27
+L mntcomp-keyboard:ML SW27
 U 1 1 594DACA9
 P 11900 3350
 F 0 "SW27" H 12191 3471 50  0000 L CNN
@@ -595,7 +565,7 @@ F 3 "" H 11900 3350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D26
+L Device:D_Small D26
 U 1 1 594DACB0
 P 11050 3650
 F 0 "D26" V 11096 3582 50  0000 R CNN
@@ -606,7 +576,7 @@ F 3 "" V 11050 3650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D27
+L Device:D_Small D27
 U 1 1 594DACB6
 P 11900 3650
 F 0 "D27" V 11946 3582 50  0000 R CNN
@@ -617,7 +587,7 @@ F 3 "" V 11900 3650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW28
+L mntcomp-keyboard:ML SW28
 U 1 1 594DACBC
 P 12750 3350
 F 0 "SW28" H 13041 3471 50  0000 L CNN
@@ -628,7 +598,7 @@ F 3 "" H 12750 3350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D28
+L Device:D_Small D28
 U 1 1 594DACC9
 P 12750 3650
 F 0 "D28" V 12796 3582 50  0000 R CNN
@@ -639,7 +609,7 @@ F 3 "" V 12750 3650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW30
+L mntcomp-keyboard:ML SW30
 U 1 1 594DBB03
 P 2550 4450
 F 0 "SW30" H 2841 4571 50  0000 L CNN
@@ -650,7 +620,7 @@ F 3 "" H 2550 4450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW31
+L mntcomp-keyboard:ML SW31
 U 1 1 594DBB09
 P 3400 4450
 F 0 "SW31" H 3691 4571 50  0000 L CNN
@@ -661,7 +631,7 @@ F 3 "" H 3400 4450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D30
+L Device:D_Small D30
 U 1 1 594DBB11
 P 2550 4750
 F 0 "D30" V 2596 4682 50  0000 R CNN
@@ -672,7 +642,7 @@ F 3 "" V 2550 4750 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D31
+L Device:D_Small D31
 U 1 1 594DBB17
 P 3400 4750
 F 0 "D31" V 3446 4682 50  0000 R CNN
@@ -683,7 +653,7 @@ F 3 "" V 3400 4750 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW32
+L mntcomp-keyboard:ML SW32
 U 1 1 594DBB1D
 P 4250 4450
 F 0 "SW32" H 4541 4571 50  0000 L CNN
@@ -694,7 +664,7 @@ F 3 "" H 4250 4450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW33
+L mntcomp-keyboard:ML SW33
 U 1 1 594DBB23
 P 5100 4450
 F 0 "SW33" H 5391 4571 50  0000 L CNN
@@ -705,7 +675,7 @@ F 3 "" H 5100 4450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D32
+L Device:D_Small D32
 U 1 1 594DBB2A
 P 4250 4750
 F 0 "D32" V 4296 4682 50  0000 R CNN
@@ -716,7 +686,7 @@ F 3 "" V 4250 4750 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D33
+L Device:D_Small D33
 U 1 1 594DBB30
 P 5100 4750
 F 0 "D33" V 5146 4682 50  0000 R CNN
@@ -727,7 +697,7 @@ F 3 "" V 5100 4750 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW34
+L mntcomp-keyboard:ML SW34
 U 1 1 594DBB36
 P 5950 4450
 F 0 "SW34" H 6241 4571 50  0000 L CNN
@@ -738,7 +708,7 @@ F 3 "" H 5950 4450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW35
+L mntcomp-keyboard:ML SW35
 U 1 1 594DBB3C
 P 6800 4450
 F 0 "SW35" H 7091 4571 50  0000 L CNN
@@ -749,7 +719,7 @@ F 3 "" H 6800 4450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D34
+L Device:D_Small D34
 U 1 1 594DBB43
 P 5950 4750
 F 0 "D34" V 5996 4682 50  0000 R CNN
@@ -760,7 +730,7 @@ F 3 "" V 5950 4750 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D35
+L Device:D_Small D35
 U 1 1 594DBB49
 P 6800 4750
 F 0 "D35" V 6846 4682 50  0000 R CNN
@@ -771,7 +741,7 @@ F 3 "" V 6800 4750 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW36
+L mntcomp-keyboard:ML SW36
 U 1 1 594DBB4F
 P 7650 4450
 F 0 "SW36" H 7941 4571 50  0000 L CNN
@@ -782,7 +752,7 @@ F 3 "" H 7650 4450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW37
+L mntcomp-keyboard:ML SW37
 U 1 1 594DBB55
 P 8500 4450
 F 0 "SW37" H 8791 4571 50  0000 L CNN
@@ -793,7 +763,7 @@ F 3 "" H 8500 4450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D36
+L Device:D_Small D36
 U 1 1 594DBB5C
 P 7650 4750
 F 0 "D36" V 7696 4682 50  0000 R CNN
@@ -804,7 +774,7 @@ F 3 "" V 7650 4750 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D37
+L Device:D_Small D37
 U 1 1 594DBB62
 P 8500 4750
 F 0 "D37" V 8546 4682 50  0000 R CNN
@@ -815,7 +785,7 @@ F 3 "" V 8500 4750 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW38
+L mntcomp-keyboard:ML SW38
 U 1 1 594DBB68
 P 9350 4450
 F 0 "SW38" H 9641 4571 50  0000 L CNN
@@ -826,7 +796,7 @@ F 3 "" H 9350 4450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW39
+L mntcomp-keyboard:ML SW39
 U 1 1 594DBB6E
 P 10200 4450
 F 0 "SW39" H 10491 4571 50  0000 L CNN
@@ -837,7 +807,7 @@ F 3 "" H 10200 4450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D38
+L Device:D_Small D38
 U 1 1 594DBB75
 P 9350 4750
 F 0 "D38" V 9396 4682 50  0000 R CNN
@@ -848,7 +818,7 @@ F 3 "" V 9350 4750 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D39
+L Device:D_Small D39
 U 1 1 594DBB7B
 P 10200 4750
 F 0 "D39" V 10246 4682 50  0000 R CNN
@@ -859,7 +829,7 @@ F 3 "" V 10200 4750 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW40
+L mntcomp-keyboard:ML SW40
 U 1 1 594DBB81
 P 11050 4450
 F 0 "SW40" H 11341 4571 50  0000 L CNN
@@ -870,7 +840,7 @@ F 3 "" H 11050 4450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW41
+L mntcomp-keyboard:ML SW41
 U 1 1 594DBB87
 P 11900 4450
 F 0 "SW41" H 12191 4571 50  0000 L CNN
@@ -881,7 +851,7 @@ F 3 "" H 11900 4450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D40
+L Device:D_Small D40
 U 1 1 594DBB8E
 P 11050 4750
 F 0 "D40" V 11096 4682 50  0000 R CNN
@@ -892,7 +862,7 @@ F 3 "" V 11050 4750 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D41
+L Device:D_Small D41
 U 1 1 594DBB94
 P 11900 4750
 F 0 "D41" V 11946 4682 50  0000 R CNN
@@ -903,7 +873,7 @@ F 3 "" V 11900 4750 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW42
+L mntcomp-keyboard:ML SW42
 U 1 1 594DBB9A
 P 12750 4450
 F 0 "SW42" H 13041 4571 50  0000 L CNN
@@ -914,7 +884,7 @@ F 3 "" H 12750 4450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW43
+L mntcomp-keyboard:ML SW43
 U 1 1 594DBBA0
 P 13600 4450
 F 0 "SW43" H 13891 4571 50  0000 L CNN
@@ -925,7 +895,7 @@ F 3 "" H 13600 4450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D42
+L Device:D_Small D42
 U 1 1 594DBBA7
 P 12750 4750
 F 0 "D42" V 12796 4682 50  0000 R CNN
@@ -936,7 +906,7 @@ F 3 "" V 12750 4750 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D43
+L Device:D_Small D43
 U 1 1 594DBBAD
 P 13600 4750
 F 0 "D43" V 13646 4682 50  0000 R CNN
@@ -947,7 +917,7 @@ F 3 "" V 13600 4750 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW44
+L mntcomp-keyboard:ML SW44
 U 1 1 594DCA61
 P 2550 5500
 F 0 "SW44" H 2841 5621 50  0000 L CNN
@@ -958,7 +928,7 @@ F 3 "" H 2550 5500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW45
+L mntcomp-keyboard:ML SW45
 U 1 1 594DCA67
 P 3400 5500
 F 0 "SW45" H 3691 5621 50  0000 L CNN
@@ -969,7 +939,7 @@ F 3 "" H 3400 5500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D44
+L Device:D_Small D44
 U 1 1 594DCA6F
 P 2550 5800
 F 0 "D44" V 2596 5732 50  0000 R CNN
@@ -980,7 +950,7 @@ F 3 "" V 2550 5800 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D45
+L Device:D_Small D45
 U 1 1 594DCA75
 P 3400 5800
 F 0 "D45" V 3446 5732 50  0000 R CNN
@@ -991,7 +961,7 @@ F 3 "" V 3400 5800 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW46
+L mntcomp-keyboard:ML SW46
 U 1 1 594DCA7B
 P 4250 5500
 F 0 "SW46" H 4541 5621 50  0000 L CNN
@@ -1002,7 +972,7 @@ F 3 "" H 4250 5500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW47
+L mntcomp-keyboard:ML SW47
 U 1 1 594DCA81
 P 5100 5500
 F 0 "SW47" H 5391 5621 50  0000 L CNN
@@ -1013,7 +983,7 @@ F 3 "" H 5100 5500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D46
+L Device:D_Small D46
 U 1 1 594DCA88
 P 4250 5800
 F 0 "D46" V 4296 5732 50  0000 R CNN
@@ -1024,7 +994,7 @@ F 3 "" V 4250 5800 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D47
+L Device:D_Small D47
 U 1 1 594DCA8E
 P 5100 5800
 F 0 "D47" V 5146 5732 50  0000 R CNN
@@ -1035,7 +1005,7 @@ F 3 "" V 5100 5800 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW48
+L mntcomp-keyboard:ML SW48
 U 1 1 594DCA94
 P 5950 5500
 F 0 "SW48" H 6241 5621 50  0000 L CNN
@@ -1046,7 +1016,7 @@ F 3 "" H 5950 5500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW49
+L mntcomp-keyboard:ML SW49
 U 1 1 594DCA9A
 P 6800 5500
 F 0 "SW49" H 7091 5621 50  0000 L CNN
@@ -1057,7 +1027,7 @@ F 3 "" H 6800 5500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D48
+L Device:D_Small D48
 U 1 1 594DCAA1
 P 5950 5800
 F 0 "D48" V 5996 5732 50  0000 R CNN
@@ -1068,7 +1038,7 @@ F 3 "" V 5950 5800 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D49
+L Device:D_Small D49
 U 1 1 594DCAA7
 P 6800 5800
 F 0 "D49" V 6846 5732 50  0000 R CNN
@@ -1079,7 +1049,7 @@ F 3 "" V 6800 5800 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW50
+L mntcomp-keyboard:ML SW50
 U 1 1 594DCAAD
 P 7650 5500
 F 0 "SW50" H 7941 5621 50  0000 L CNN
@@ -1090,7 +1060,7 @@ F 3 "" H 7650 5500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW51
+L mntcomp-keyboard:ML SW51
 U 1 1 594DCAB3
 P 8500 5500
 F 0 "SW51" H 8791 5621 50  0000 L CNN
@@ -1101,7 +1071,7 @@ F 3 "" H 8500 5500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D50
+L Device:D_Small D50
 U 1 1 594DCABA
 P 7650 5800
 F 0 "D50" V 7696 5732 50  0000 R CNN
@@ -1112,7 +1082,7 @@ F 3 "" V 7650 5800 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D51
+L Device:D_Small D51
 U 1 1 594DCAC0
 P 8500 5800
 F 0 "D51" V 8546 5732 50  0000 R CNN
@@ -1123,7 +1093,7 @@ F 3 "" V 8500 5800 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW52
+L mntcomp-keyboard:ML SW52
 U 1 1 594DCAC6
 P 9350 5500
 F 0 "SW52" H 9641 5621 50  0000 L CNN
@@ -1134,7 +1104,7 @@ F 3 "" H 9350 5500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW53
+L mntcomp-keyboard:ML SW53
 U 1 1 594DCACC
 P 10200 5500
 F 0 "SW53" H 10491 5621 50  0000 L CNN
@@ -1145,7 +1115,7 @@ F 3 "" H 10200 5500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D52
+L Device:D_Small D52
 U 1 1 594DCAD3
 P 9350 5800
 F 0 "D52" V 9396 5732 50  0000 R CNN
@@ -1156,7 +1126,7 @@ F 3 "" V 9350 5800 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D53
+L Device:D_Small D53
 U 1 1 594DCAD9
 P 10200 5800
 F 0 "D53" V 10246 5732 50  0000 R CNN
@@ -1167,7 +1137,7 @@ F 3 "" V 10200 5800 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW54
+L mntcomp-keyboard:ML SW54
 U 1 1 594DCADF
 P 11050 5500
 F 0 "SW54" H 11341 5621 50  0000 L CNN
@@ -1178,7 +1148,7 @@ F 3 "" H 11050 5500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW55
+L mntcomp-keyboard:ML SW55
 U 1 1 594DCAE5
 P 11900 5500
 F 0 "SW55" H 12191 5621 50  0000 L CNN
@@ -1189,7 +1159,7 @@ F 3 "" H 11900 5500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D54
+L Device:D_Small D54
 U 1 1 594DCAEC
 P 11050 5800
 F 0 "D54" V 11096 5732 50  0000 R CNN
@@ -1200,7 +1170,7 @@ F 3 "" V 11050 5800 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D55
+L Device:D_Small D55
 U 1 1 594DCAF2
 P 11900 5800
 F 0 "D55" V 11946 5732 50  0000 R CNN
@@ -1211,7 +1181,7 @@ F 3 "" V 11900 5800 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW56
+L mntcomp-keyboard:ML SW56
 U 1 1 594DCAF8
 P 12750 5500
 F 0 "SW56" H 13041 5621 50  0000 L CNN
@@ -1222,7 +1192,7 @@ F 3 "" H 12750 5500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D56
+L Device:D_Small D56
 U 1 1 594DCB05
 P 12750 5800
 F 0 "D56" V 12796 5732 50  0000 R CNN
@@ -1233,7 +1203,7 @@ F 3 "" V 12750 5800 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW57
+L mntcomp-keyboard:ML SW57
 U 1 1 594DCB17
 P 2550 6600
 F 0 "SW57" H 2841 6721 50  0000 L CNN
@@ -1244,7 +1214,7 @@ F 3 "" H 2550 6600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW58
+L mntcomp-keyboard:ML SW58
 U 1 1 594DCB1D
 P 3400 6600
 F 0 "SW58" H 3691 6721 50  0000 L CNN
@@ -1255,7 +1225,7 @@ F 3 "" H 3400 6600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D57
+L Device:D_Small D57
 U 1 1 594DCB25
 P 2550 6900
 F 0 "D57" V 2596 6832 50  0000 R CNN
@@ -1266,7 +1236,7 @@ F 3 "" V 2550 6900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D58
+L Device:D_Small D58
 U 1 1 594DCB2B
 P 3400 6900
 F 0 "D58" V 3446 6832 50  0000 R CNN
@@ -1277,7 +1247,7 @@ F 3 "" V 3400 6900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW59
+L mntcomp-keyboard:ML SW59
 U 1 1 594DCB31
 P 4250 6600
 F 0 "SW59" H 4541 6721 50  0000 L CNN
@@ -1288,7 +1258,7 @@ F 3 "" H 4250 6600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW60
+L mntcomp-keyboard:ML SW60
 U 1 1 594DCB37
 P 5100 6600
 F 0 "SW60" H 5391 6721 50  0000 L CNN
@@ -1299,7 +1269,7 @@ F 3 "" H 5100 6600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D59
+L Device:D_Small D59
 U 1 1 594DCB3E
 P 4250 6900
 F 0 "D59" V 4296 6832 50  0000 R CNN
@@ -1310,7 +1280,7 @@ F 3 "" V 4250 6900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D60
+L Device:D_Small D60
 U 1 1 594DCB44
 P 5100 6900
 F 0 "D60" V 5146 6832 50  0000 R CNN
@@ -1321,7 +1291,7 @@ F 3 "" V 5100 6900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW61
+L mntcomp-keyboard:ML SW61
 U 1 1 594DCB4A
 P 5950 6600
 F 0 "SW61" H 6241 6721 50  0000 L CNN
@@ -1332,7 +1302,7 @@ F 3 "" H 5950 6600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW62
+L mntcomp-keyboard:ML SW62
 U 1 1 594DCB50
 P 6800 6600
 F 0 "SW62" H 7091 6721 50  0000 L CNN
@@ -1343,7 +1313,7 @@ F 3 "" H 6800 6600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D61
+L Device:D_Small D61
 U 1 1 594DCB57
 P 5950 6900
 F 0 "D61" V 5996 6832 50  0000 R CNN
@@ -1354,7 +1324,7 @@ F 3 "" V 5950 6900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D62
+L Device:D_Small D62
 U 1 1 594DCB5D
 P 6800 6900
 F 0 "D62" V 6846 6832 50  0000 R CNN
@@ -1365,7 +1335,7 @@ F 3 "" V 6800 6900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW63
+L mntcomp-keyboard:ML SW63
 U 1 1 594DCB63
 P 7650 6600
 F 0 "SW63" H 7941 6721 50  0000 L CNN
@@ -1376,7 +1346,7 @@ F 3 "" H 7650 6600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW64
+L mntcomp-keyboard:ML SW64
 U 1 1 594DCB69
 P 8500 6600
 F 0 "SW64" H 8791 6721 50  0000 L CNN
@@ -1387,7 +1357,7 @@ F 3 "" H 8500 6600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D63
+L Device:D_Small D63
 U 1 1 594DCB70
 P 7650 6900
 F 0 "D63" V 7696 6832 50  0000 R CNN
@@ -1398,7 +1368,7 @@ F 3 "" V 7650 6900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D64
+L Device:D_Small D64
 U 1 1 594DCB76
 P 8500 6900
 F 0 "D64" V 8546 6832 50  0000 R CNN
@@ -1409,7 +1379,7 @@ F 3 "" V 8500 6900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW65
+L mntcomp-keyboard:ML SW65
 U 1 1 594DCB7C
 P 9350 6600
 F 0 "SW65" H 9641 6721 50  0000 L CNN
@@ -1420,7 +1390,7 @@ F 3 "" H 9350 6600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW66
+L mntcomp-keyboard:ML SW66
 U 1 1 594DCB82
 P 10200 6600
 F 0 "SW66" H 10491 6721 50  0000 L CNN
@@ -1431,7 +1401,7 @@ F 3 "" H 10200 6600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D65
+L Device:D_Small D65
 U 1 1 594DCB89
 P 9350 6900
 F 0 "D65" V 9396 6832 50  0000 R CNN
@@ -1442,7 +1412,7 @@ F 3 "" V 9350 6900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D66
+L Device:D_Small D66
 U 1 1 594DCB8F
 P 10200 6900
 F 0 "D66" V 10246 6832 50  0000 R CNN
@@ -1453,7 +1423,7 @@ F 3 "" V 10200 6900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW67
+L mntcomp-keyboard:ML SW67
 U 1 1 594DCB95
 P 11050 6600
 F 0 "SW67" H 11341 6721 50  0000 L CNN
@@ -1464,7 +1434,7 @@ F 3 "" H 11050 6600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW68
+L mntcomp-keyboard:ML SW68
 U 1 1 594DCB9B
 P 11900 6600
 F 0 "SW68" H 12191 6721 50  0000 L CNN
@@ -1475,7 +1445,7 @@ F 3 "" H 11900 6600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D67
+L Device:D_Small D67
 U 1 1 594DCBA2
 P 11050 6900
 F 0 "D67" V 11096 6832 50  0000 R CNN
@@ -1486,7 +1456,7 @@ F 3 "" V 11050 6900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D68
+L Device:D_Small D68
 U 1 1 594DCBA8
 P 11900 6900
 F 0 "D68" V 11946 6832 50  0000 R CNN
@@ -1497,7 +1467,7 @@ F 3 "" V 11900 6900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW69
+L mntcomp-keyboard:ML SW69
 U 1 1 594DCBAE
 P 12750 6600
 F 0 "SW69" H 13041 6721 50  0000 L CNN
@@ -1508,7 +1478,7 @@ F 3 "" H 12750 6600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D69
+L Device:D_Small D69
 U 1 1 594DCBBB
 P 12750 6900
 F 0 "D69" V 12796 6832 50  0000 R CNN
@@ -1519,7 +1489,7 @@ F 3 "" V 12750 6900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW70
+L mntcomp-keyboard:ML SW70
 U 1 1 594DD691
 P 2550 7700
 F 0 "SW70" H 2841 7821 50  0000 L CNN
@@ -1530,7 +1500,7 @@ F 3 "" H 2550 7700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW71
+L mntcomp-keyboard:ML SW71
 U 1 1 594DD697
 P 3400 7700
 F 0 "SW71" H 3691 7821 50  0000 L CNN
@@ -1541,7 +1511,7 @@ F 3 "" H 3400 7700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D70
+L Device:D_Small D70
 U 1 1 594DD69F
 P 2550 8000
 F 0 "D70" V 2596 7932 50  0000 R CNN
@@ -1552,7 +1522,7 @@ F 3 "" V 2550 8000 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D71
+L Device:D_Small D71
 U 1 1 594DD6A5
 P 3400 8000
 F 0 "D71" V 3446 7932 50  0000 R CNN
@@ -1563,7 +1533,7 @@ F 3 "" V 3400 8000 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW72
+L mntcomp-keyboard:ML SW72
 U 1 1 594DD6AB
 P 4250 7700
 F 0 "SW72" H 4541 7821 50  0000 L CNN
@@ -1574,7 +1544,7 @@ F 3 "" H 4250 7700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW73
+L mntcomp-keyboard:ML SW73
 U 1 1 594DD6B1
 P 5100 7700
 F 0 "SW73" H 5391 7821 50  0000 L CNN
@@ -1585,7 +1555,7 @@ F 3 "" H 5100 7700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D72
+L Device:D_Small D72
 U 1 1 594DD6B8
 P 4250 8000
 F 0 "D72" V 4296 7932 50  0000 R CNN
@@ -1596,7 +1566,7 @@ F 3 "" V 4250 8000 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D73
+L Device:D_Small D73
 U 1 1 594DD6BE
 P 5100 8000
 F 0 "D73" V 5146 7932 50  0000 R CNN
@@ -1607,7 +1577,7 @@ F 3 "" V 5100 8000 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW74
+L mntcomp-keyboard:ML SW74
 U 1 1 594DD6C4
 P 5950 7700
 F 0 "SW74" H 6241 7821 50  0000 L CNN
@@ -1618,7 +1588,7 @@ F 3 "" H 5950 7700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW75
+L mntcomp-keyboard:ML SW75
 U 1 1 594DD6CA
 P 6800 7700
 F 0 "SW75" H 7091 7821 50  0000 L CNN
@@ -1629,7 +1599,7 @@ F 3 "" H 6800 7700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D74
+L Device:D_Small D74
 U 1 1 594DD6D1
 P 5950 8000
 F 0 "D74" V 5996 7932 50  0000 R CNN
@@ -1640,7 +1610,7 @@ F 3 "" V 5950 8000 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D75
+L Device:D_Small D75
 U 1 1 594DD6D7
 P 6800 8000
 F 0 "D75" V 6846 7932 50  0000 R CNN
@@ -1651,7 +1621,7 @@ F 3 "" V 6800 8000 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW76
+L mntcomp-keyboard:ML SW76
 U 1 1 594DD6DD
 P 7650 7700
 F 0 "SW76" H 7941 7821 50  0000 L CNN
@@ -1662,7 +1632,7 @@ F 3 "" H 7650 7700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW77
+L mntcomp-keyboard:ML SW77
 U 1 1 594DD6E3
 P 8500 7700
 F 0 "SW77" H 8791 7821 50  0000 L CNN
@@ -1673,7 +1643,7 @@ F 3 "" H 8500 7700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D76
+L Device:D_Small D76
 U 1 1 594DD6EA
 P 7650 8000
 F 0 "D76" V 7696 7932 50  0000 R CNN
@@ -1684,7 +1654,7 @@ F 3 "" V 7650 8000 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D77
+L Device:D_Small D77
 U 1 1 594DD6F0
 P 8500 8000
 F 0 "D77" V 8546 7932 50  0000 R CNN
@@ -1695,7 +1665,7 @@ F 3 "" V 8500 8000 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D_Small D29
+L Device:D_Small D29
 U 1 1 594DACCF
 P 13600 3650
 F 0 "D29" V 13646 3582 50  0000 R CNN
@@ -1706,7 +1676,7 @@ F 3 "" V 13600 3650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW29
+L mntcomp-keyboard:ML SW29
 U 1 1 594DACC2
 P 13600 3350
 F 0 "SW29" H 13891 3471 50  0000 L CNN
@@ -1717,7 +1687,7 @@ F 3 "" H 13600 3350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ML SW15
+L mntcomp-keyboard:ML SW15
 U 1 1 594EABB7
 P 14450 2250
 F 0 "SW15" H 14741 2371 50  0000 L CNN
@@ -1728,7 +1698,7 @@ F 3 "" H 14450 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D15
+L Device:D_Small D15
 U 1 1 594EABBD
 P 14450 2550
 F 0 "D15" V 14496 2482 50  0000 R CNN
@@ -1787,7 +1757,7 @@ COL14
 Text GLabel 3550 1150 1    60   Input ~ 0
 COL15
 $Comp
-L ML SW78
+L mntcomp-keyboard:ML SW78
 U 1 1 5A664C9C
 P 9350 7700
 F 0 "SW78" H 9641 7821 50  0000 L CNN
@@ -1798,7 +1768,7 @@ F 3 "" H 9350 7700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D78
+L Device:D_Small D78
 U 1 1 5A664CA2
 P 9350 8000
 F 0 "D78" V 9396 7932 50  0000 R CNN
@@ -1809,7 +1779,7 @@ F 3 "" V 9350 8000 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ML SW79
+L mntcomp-keyboard:ML SW79
 U 1 1 5A664F6B
 P 10200 7700
 F 0 "SW79" H 10491 7821 50  0000 L CNN
@@ -1820,7 +1790,7 @@ F 3 "" H 10200 7700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D79
+L Device:D_Small D79
 U 1 1 5A664F71
 P 10200 8000
 F 0 "D79" V 10246 7932 50  0000 R CNN
@@ -1830,84 +1800,6 @@ F 3 "" V 10200 8000 50  0000 C CNN
 	1    10200 8000
 	0    -1   -1   0   
 $EndComp
-Connection ~ 2550 2650
-Connection ~ 4250 2650
-Connection ~ 5950 2650
-Connection ~ 7650 2650
-Connection ~ 9350 2650
-Connection ~ 11050 2650
-Connection ~ 12750 2650
-Connection ~ 11900 2650
-Connection ~ 10200 2650
-Connection ~ 8500 2650
-Connection ~ 6800 2650
-Connection ~ 5100 2650
-Connection ~ 3400 2650
-Connection ~ 2550 3750
-Connection ~ 4250 3750
-Connection ~ 5950 3750
-Connection ~ 7650 3750
-Connection ~ 9350 3750
-Connection ~ 11050 3750
-Connection ~ 12750 3750
-Connection ~ 11900 3750
-Connection ~ 10200 3750
-Connection ~ 8500 3750
-Connection ~ 6800 3750
-Connection ~ 5100 3750
-Connection ~ 3400 3750
-Wire Wire Line
-	1750 4850 2550 4850
-Connection ~ 2550 4850
-Connection ~ 4250 4850
-Connection ~ 5950 4850
-Connection ~ 7650 4850
-Connection ~ 9350 4850
-Connection ~ 11050 4850
-Connection ~ 12750 4850
-Connection ~ 11900 4850
-Connection ~ 10200 4850
-Connection ~ 8500 4850
-Connection ~ 6800 4850
-Connection ~ 5100 4850
-Connection ~ 3400 4850
-Wire Wire Line
-	1650 5900 2550 5900
-Connection ~ 2550 5900
-Connection ~ 4250 5900
-Connection ~ 5950 5900
-Connection ~ 7650 5900
-Connection ~ 9350 5900
-Connection ~ 11050 5900
-Connection ~ 11900 5900
-Connection ~ 10200 5900
-Connection ~ 8500 5900
-Connection ~ 6800 5900
-Connection ~ 5100 5900
-Connection ~ 3400 5900
-Wire Wire Line
-	1550 7000 2550 7000
-Connection ~ 2550 7000
-Connection ~ 4250 7000
-Connection ~ 5950 7000
-Connection ~ 7650 7000
-Connection ~ 9350 7000
-Connection ~ 11050 7000
-Connection ~ 11900 7000
-Connection ~ 10200 7000
-Connection ~ 8500 7000
-Connection ~ 6800 7000
-Connection ~ 5100 7000
-Connection ~ 3400 7000
-Wire Wire Line
-	1450 8100 2550 8100
-Connection ~ 2550 8100
-Connection ~ 4250 8100
-Connection ~ 5950 8100
-Connection ~ 7650 8100
-Connection ~ 6800 8100
-Connection ~ 5100 8100
-Connection ~ 3400 8100
 Wire Wire Line
 	2150 1150 2150 1900
 Wire Wire Line
@@ -1927,8 +1819,6 @@ Wire Wire Line
 Connection ~ 2150 6250
 Wire Wire Line
 	2150 7350 2550 7350
-Wire Wire Line
-	1350 2650 2550 2650
 Wire Wire Line
 	1350 2750 1850 2750
 Wire Wire Line
@@ -2045,14 +1935,11 @@ Wire Wire Line
 	3400 6250 3050 6250
 Connection ~ 3050 6250
 Wire Wire Line
-	1850 3750 2550 3750
-Wire Wire Line
 	14450 1200 14450 1900
 Wire Wire Line
 	3550 1150 3550 1200
 Wire Wire Line
 	3550 1200 14450 1200
-Connection ~ 13600 2650
 Wire Wire Line
 	3900 7350 4250 7350
 Wire Wire Line
@@ -2239,12 +2126,10 @@ Wire Wire Line
 	9000 7350 9350 7350
 Wire Wire Line
 	9850 7350 10200 7350
-Connection ~ 8500 8100
-Connection ~ 9350 8100
 Connection ~ 9000 6250
 Connection ~ 9850 6250
 $Comp
-L TEST SH1
+L Mechanical:MountingHole SH1
 U 1 1 5A6683D5
 P 5550 9600
 F 0 "SH1" H 5550 9900 50  0000 C BNN
@@ -2255,7 +2140,7 @@ F 3 "" H 5550 9600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEST SH2
+L Mechanical:MountingHole SH2
 U 1 1 5A6683DC
 P 5800 9600
 F 0 "SH2" H 5800 9900 50  0000 C BNN
@@ -2266,7 +2151,7 @@ F 3 "" H 5800 9600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEST SH3
+L Mechanical:MountingHole SH3
 U 1 1 5A6683E3
 P 6050 9600
 F 0 "SH3" H 6050 9900 50  0000 C BNN
@@ -2277,7 +2162,7 @@ F 3 "" H 6050 9600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEST SH4
+L Mechanical:MountingHole SH4
 U 1 1 5A6683EA
 P 6300 9600
 F 0 "SH4" H 6300 9900 50  0000 C BNN
@@ -2288,7 +2173,7 @@ F 3 "" H 6300 9600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEST SH5
+L Mechanical:MountingHole SH5
 U 1 1 5A6683F1
 P 6550 9600
 F 0 "SH5" H 6550 9900 50  0000 C BNN
@@ -2299,7 +2184,7 @@ F 3 "" H 6550 9600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEST SH6
+L Mechanical:MountingHole SH6
 U 1 1 5A6683F8
 P 6800 9600
 F 0 "SH6" H 6800 9900 50  0000 C BNN
@@ -2310,7 +2195,7 @@ F 3 "" H 6800 9600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEST SH7
+L Mechanical:MountingHole SH7
 U 1 1 5A6689FB
 P 7050 9600
 F 0 "SH7" H 7050 9900 50  0000 C BNN
@@ -2321,7 +2206,7 @@ F 3 "" H 7050 9600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEST SH8
+L Mechanical:MountingHole SH8
 U 1 1 5A668A01
 P 7300 9600
 F 0 "SH8" H 7300 9900 50  0000 C BNN
@@ -2331,146 +2216,6 @@ F 3 "" H 7300 9600 50  0001 C CNN
 	1    7300 9600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2550 2650 3400 2650
-Wire Wire Line
-	4250 2650 5100 2650
-Wire Wire Line
-	5950 2650 6800 2650
-Wire Wire Line
-	7650 2650 8500 2650
-Wire Wire Line
-	9350 2650 10200 2650
-Wire Wire Line
-	11050 2650 11900 2650
-Wire Wire Line
-	12750 2650 13600 2650
-Wire Wire Line
-	11900 2650 12750 2650
-Wire Wire Line
-	10200 2650 11050 2650
-Wire Wire Line
-	8500 2650 9350 2650
-Wire Wire Line
-	6800 2650 7650 2650
-Wire Wire Line
-	5100 2650 5950 2650
-Wire Wire Line
-	3400 2650 4250 2650
-Wire Wire Line
-	2550 3750 3400 3750
-Wire Wire Line
-	4250 3750 5100 3750
-Wire Wire Line
-	5950 3750 6800 3750
-Wire Wire Line
-	7650 3750 8500 3750
-Wire Wire Line
-	9350 3750 10200 3750
-Wire Wire Line
-	11050 3750 11900 3750
-Wire Wire Line
-	12750 3750 13600 3750
-Wire Wire Line
-	11900 3750 12750 3750
-Wire Wire Line
-	10200 3750 11050 3750
-Wire Wire Line
-	8500 3750 9350 3750
-Wire Wire Line
-	6800 3750 7650 3750
-Wire Wire Line
-	5100 3750 5950 3750
-Wire Wire Line
-	3400 3750 4250 3750
-Wire Wire Line
-	2550 4850 3400 4850
-Wire Wire Line
-	4250 4850 5100 4850
-Wire Wire Line
-	5950 4850 6800 4850
-Wire Wire Line
-	7650 4850 8500 4850
-Wire Wire Line
-	9350 4850 10200 4850
-Wire Wire Line
-	11050 4850 11900 4850
-Wire Wire Line
-	12750 4850 13600 4850
-Wire Wire Line
-	11900 4850 12750 4850
-Wire Wire Line
-	10200 4850 11050 4850
-Wire Wire Line
-	8500 4850 9350 4850
-Wire Wire Line
-	6800 4850 7650 4850
-Wire Wire Line
-	5100 4850 5950 4850
-Wire Wire Line
-	3400 4850 4250 4850
-Wire Wire Line
-	2550 5900 3400 5900
-Wire Wire Line
-	4250 5900 5100 5900
-Wire Wire Line
-	5950 5900 6800 5900
-Wire Wire Line
-	7650 5900 8500 5900
-Wire Wire Line
-	9350 5900 10200 5900
-Wire Wire Line
-	11050 5900 11900 5900
-Wire Wire Line
-	11900 5900 12750 5900
-Wire Wire Line
-	10200 5900 11050 5900
-Wire Wire Line
-	8500 5900 9350 5900
-Wire Wire Line
-	6800 5900 7650 5900
-Wire Wire Line
-	5100 5900 5950 5900
-Wire Wire Line
-	3400 5900 4250 5900
-Wire Wire Line
-	2550 7000 3400 7000
-Wire Wire Line
-	4250 7000 5100 7000
-Wire Wire Line
-	5950 7000 6800 7000
-Wire Wire Line
-	7650 7000 8500 7000
-Wire Wire Line
-	9350 7000 10200 7000
-Wire Wire Line
-	11050 7000 11900 7000
-Wire Wire Line
-	11900 7000 12750 7000
-Wire Wire Line
-	10200 7000 11050 7000
-Wire Wire Line
-	8500 7000 9350 7000
-Wire Wire Line
-	6800 7000 7650 7000
-Wire Wire Line
-	5100 7000 5950 7000
-Wire Wire Line
-	3400 7000 4250 7000
-Wire Wire Line
-	2550 8100 3400 8100
-Wire Wire Line
-	4250 8100 5100 8100
-Wire Wire Line
-	5950 8100 6800 8100
-Wire Wire Line
-	7650 8100 8500 8100
-Wire Wire Line
-	6800 8100 7650 8100
-Wire Wire Line
-	5100 8100 5950 8100
-Wire Wire Line
-	3400 8100 4250 8100
 Wire Wire Line
 	2150 1900 2150 3000
 Wire Wire Line
@@ -2491,8 +2236,6 @@ Wire Wire Line
 	3050 5150 3050 6250
 Wire Wire Line
 	3050 6250 3050 7350
-Wire Wire Line
-	13600 2650 14450 2650
 Wire Wire Line
 	3900 1800 4250 1800
 Wire Wire Line
@@ -2598,11 +2341,19 @@ Wire Wire Line
 Wire Wire Line
 	10700 5150 10700 6250
 Wire Wire Line
-	8500 8100 9350 8100
-Wire Wire Line
-	9350 8100 10200 8100
-Wire Wire Line
 	9000 6250 9000 7350
 Wire Wire Line
 	9850 6250 9850 7350
+Wire Wire Line
+	1450 8100 10200 8100
+Wire Wire Line
+	1350 2650 14450 2650
+Wire Wire Line
+	1850 3750 13600 3750
+Wire Wire Line
+	1750 4850 13600 4850
+Wire Wire Line
+	1650 5900 12750 5900
+Wire Wire Line
+	1550 7000 12750 7000
 $EndSCHEMATC
