@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:reform2-motherboard-cache
 EELAYER 29 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title "REFORM 2"
 Date "2019-04-25"
 Rev ""
@@ -95,17 +96,17 @@ Text GLabel 2500 10700 0    50   Input ~ 0
 HDMI_D1+
 Text GLabel 2500 10800 0    50   Input ~ 0
 HDMI_D1-
-Text GLabel 20250 4050 0    50   Input ~ 0
+Text GLabel 19000 4050 0    50   Input ~ 0
 HDMI_D2-
-Text GLabel 20250 3950 0    50   Input ~ 0
+Text GLabel 19000 3950 0    50   Input ~ 0
 HDMI_D2+
-Text GLabel 20250 4250 0    50   Input ~ 0
+Text GLabel 19000 4250 0    50   Input ~ 0
 HDMI_D1-
-Text GLabel 20250 4150 0    50   Input ~ 0
+Text GLabel 19000 4150 0    50   Input ~ 0
 HDMI_D1+
-Text GLabel 20250 4650 0    50   Input ~ 0
+Text GLabel 19000 4650 0    50   Input ~ 0
 HDMI_D3-
-Text GLabel 20250 4550 0    50   Input ~ 0
+Text GLabel 19000 4550 0    50   Input ~ 0
 HDMI_D3+
 Connection ~ 12500 14600
 Wire Wire Line
@@ -512,9 +513,9 @@ Wire Wire Line
 	4500 8200 4500 8300
 Wire Wire Line
 	4500 8100 4500 8200
-Text GLabel 20250 4450 0    50   Input ~ 0
+Text GLabel 19000 4450 0    50   Input ~ 0
 HDMI_D0-
-Text GLabel 20250 4350 0    50   Input ~ 0
+Text GLabel 19000 4350 0    50   Input ~ 0
 HDMI_D0+
 $Comp
 L reform2:phycore-imx8m-alpha U1
@@ -543,20 +544,26 @@ Text GLabel 2500 13400 0    50   Input ~ 0
 SD2_WP
 Text GLabel 2500 13300 0    50   Input ~ 0
 SD2_CD
-Text GLabel 19400 7850 0    50   Input ~ 0
+Text GLabel 18550 7850 0    50   Input ~ 0
 SD2_DATA0
-Text GLabel 19400 7950 0    50   Input ~ 0
+Text GLabel 18550 7950 0    50   Input ~ 0
 SD2_DATA1
-Text GLabel 19400 7150 0    50   Input ~ 0
+Text GLabel 18550 7150 0    50   Input ~ 0
 SD2_DATA2
-Text GLabel 19400 7250 0    50   Input ~ 0
+Text GLabel 18550 7250 0    50   Input ~ 0
 SD2_DATA3
-Text GLabel 19400 7350 0    50   Input ~ 0
+Text GLabel 18550 7350 0    50   Input ~ 0
 SD2_CMD
-Text GLabel 19400 7650 0    50   Input ~ 0
+Text GLabel 18550 7650 0    50   Input ~ 0
 SD2_CLK
-Text GLabel 18450 8000 0    50   Input ~ 0
+Text GLabel 18550 8100 0    50   Input ~ 0
 SD2_WP
-Text GLabel 18450 8100 0    50   Input ~ 0
+Text GLabel 18550 8200 0    50   Input ~ 0
 SD2_CD
+$Sheet
+S 20850 12750 500  150 
+U 5CC81028
+F0 "Reform 2 Power" 50
+F1 "reform2-power.sch" 50
+$EndSheet
 $EndSCHEMATC
