@@ -1,7 +1,15 @@
 /*
- * MNT Reform 0.3+ ATtiny 841 controller firmware
+ * MNT Reform 0.5.0 ATtiny 841 controller firmware
  * Copyright 2018 MNT Media and Technology UG, Berlin
  * SPDX-License-Identifier: GPL-3.0-or-later
+ * Use ATTinyCore for building with Arduino IDE: https://github.com/SpenceKonde/ATTinyCore
+ * 
+ * GOTCHAS:
+ * - select 1MHz clock
+ * - "burn bootloader" once
+ * - select "counterclockwise" pin mapping
+ * - flash with an "Arduino as ISP"
+ * 
  */
 
 #define SCL_PIN 0
@@ -12,8 +20,13 @@
 #define HALL_SENSOR_SUPPLY_PIN 4
 #define INA_ADDR 0x4e
 
-#include <SoftI2CMaster.h>
+#define I2C_WRITE 0
+#define I2C_READ 1
+
+#include "SoftI2CMaster.h"
 #include <SoftwareSerial.h>
+
+SoftwareSerial softSerial(8, 3);
 
 int16_t ina_read16(unsigned char reg) {
   uint16_t val = 0;
@@ -38,12 +51,10 @@ int16_t ina_read16(unsigned char reg) {
 #define LID_CLOSED 1
 #define LID_OPEN   0
 
-SoftwareSerial softSerial(8, 3);
-
 float ampSecs = 5*3600.0;
 unsigned char hallState = LID_OPEN;
-int thresh = 100;
-int window = 10;
+int thresh = 580;
+int window = 30;
 int hallSense = 0;
 
 unsigned char state = ST_EXPECT_DIGIT_0;
@@ -56,7 +67,7 @@ float current = 0;
 char cmd = 'a';
 unsigned char echo = 1;
 
-char hallSenseDir = 1;
+char hallSenseDir = 0;
 char hallSenseEvents = 0;
 
 // TODO if there is no battery power, ignore lid sensor (values >900)
@@ -232,7 +243,15 @@ void loop() {
 
 void setup() {
   softSerial.begin(2400);
-  softSerial.println("reform:attiny:0.4.0:boot");
+  softSerial.println("reform:attiny:0.5.0:boot");
+  
+  analogReference(DEFAULT);
+
+  // if you don't want to use an analog sensor, you can
+  // disable the ADC to save a bit of power
+  //
+  //ADCSRA&=(~(1<<ADEN));
+
   if (!i2c_init()) {
     softSerial.println("error:i2c");
   }
