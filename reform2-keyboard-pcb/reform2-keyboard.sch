@@ -6,8 +6,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 2
 Title "Reform Keyboard"
-Date "2019-03-29"
-Rev "0.5"
+Date "2019-05-29"
+Rev "0.6"
 Comp "MNT Research GmbH"
 Comment1 "License: GPLv3+ https://www.gnu.org/licenses/gpl-3.0.en.html"
 Comment2 "Copyright 2017,2018,2019 Lukas F. Hartmann / mntmn"
