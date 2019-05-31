@@ -199,12 +199,12 @@ $EndComp
 $Comp
 L power:+5V #PWR08
 U 1 1 5A635C68
-P 4300 2450
-F 0 "#PWR08" H 4300 2300 50  0001 C CNN
-F 1 "+5V" H 4300 2590 50  0000 C CNN
-F 2 "" H 4300 2450 50  0001 C CNN
-F 3 "" H 4300 2450 50  0001 C CNN
-	1    4300 2450
+P 4200 2350
+F 0 "#PWR08" H 4200 2200 50  0001 C CNN
+F 1 "+5V" H 4200 2490 50  0000 C CNN
+F 2 "" H 4200 2350 50  0001 C CNN
+F 3 "" H 4200 2350 50  0001 C CNN
+	1    4200 2350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -261,11 +261,6 @@ Connection ~ 4200 2700
 Wire Wire Line
 	4300 2700 4300 2850
 Wire Wire Line
-	3850 2450 4100 2450
-Connection ~ 4100 2450
-Wire Wire Line
-	4200 2450 4300 2450
-Wire Wire Line
 	3050 4250 3000 4250
 Wire Wire Line
 	3050 4150 3000 4150
@@ -274,7 +269,6 @@ Wire Wire Line
 Wire Wire Line
 	3300 3150 3400 3150
 Connection ~ 3400 3150
-Connection ~ 4300 2450
 Wire Wire Line
 	4550 2700 4550 2650
 Wire Wire Line
@@ -305,13 +299,9 @@ Wire Wire Line
 Wire Wire Line
 	4200 2700 4300 2700
 Wire Wire Line
-	4100 2450 4100 2850
-Wire Wire Line
 	4200 2450 4200 2700
 Wire Wire Line
 	3400 3150 3600 3150
-Wire Wire Line
-	4300 2450 4550 2450
 Wire Wire Line
 	2050 3550 2050 3750
 Wire Wire Line
@@ -348,8 +338,6 @@ Wire Wire Line
 Connection ~ 4100 6450
 Wire Wire Line
 	3400 2500 3400 2700
-Wire Wire Line
-	4200 2450 4100 2450
 Connection ~ 4200 2450
 $Comp
 L Connector_Generic:Conn_01x04 J2
@@ -693,7 +681,7 @@ F 3 "~" H 8300 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7750 3150 8250 3150
+	7750 3150 7800 3150
 $Comp
 L Connector:Conn_01x03_Male J3
 U 1 1 5CF86675
@@ -740,7 +728,7 @@ $EndComp
 Text GLabel 9500 3150 0    60   Input ~ 0
 PWRIN
 Wire Wire Line
-	9500 3150 9650 3150
+	9500 3150 9550 3150
 $Comp
 L power:+5V #PWR010
 U 1 1 5D097D89
@@ -752,13 +740,11 @@ F 3 "" H 9950 3150 50  0001 C CNN
 	1    9950 3150
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	9950 3150 9850 3150
 $Comp
-L Connector_Generic:Conn_01x04 J?
+L Connector_Generic:Conn_01x04 J4
 U 1 1 5D0C1E6C
 P 9600 4300
-F 0 "J?" H 9600 4600 50  0000 C CNN
+F 0 "J4" H 9600 4600 50  0000 C CNN
 F 1 "AUX" H 9600 3900 50  0000 C CNN
 F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Horizontal" H 9600 4300 50  0001 C CNN
 F 3 "" H 9600 4300 50  0001 C CNN
@@ -766,10 +752,10 @@ F 3 "" H 9600 4300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0106
 U 1 1 5D0C1E76
 P 10250 4400
-F 0 "#PWR?" H 10250 4250 50  0001 C CNN
+F 0 "#PWR0106" H 10250 4250 50  0001 C CNN
 F 1 "+5V" H 10250 4540 50  0000 C CNN
 F 2 "" H 10250 4400 50  0001 C CNN
 F 3 "" H 10250 4400 50  0001 C CNN
@@ -779,10 +765,10 @@ $EndComp
 Wire Wire Line
 	10250 4400 9800 4400
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0107
 U 1 1 5D0C1E81
 P 10250 4100
-F 0 "#PWR?" H 10250 3850 50  0001 C CNN
+F 0 "#PWR0107" H 10250 3850 50  0001 C CNN
 F 1 "GND" H 10250 3950 50  0000 C CNN
 F 2 "" H 10250 4100 50  0001 C CNN
 F 3 "" H 10250 4100 50  0001 C CNN
@@ -795,4 +781,50 @@ Text GLabel 9800 4200 2    60   Input ~ 0
 AUX1
 Text GLabel 9800 4300 2    60   Input ~ 0
 AUX2
+NoConn ~ 8500 1750
+NoConn ~ 8500 2350
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5D14B686
+P 9550 3050
+F 0 "#FLG0101" H 9550 3125 50  0001 C CNN
+F 1 "PWR_FLAG" H 9550 3223 50  0000 C CNN
+F 2 "" H 9550 3050 50  0001 C CNN
+F 3 "~" H 9550 3050 50  0001 C CNN
+	1    9550 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5D14D536
+P 7800 3100
+F 0 "#FLG0102" H 7800 3175 50  0001 C CNN
+F 1 "PWR_FLAG" H 7800 3273 50  0000 C CNN
+F 2 "" H 7800 3100 50  0001 C CNN
+F 3 "~" H 7800 3100 50  0001 C CNN
+	1    7800 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 3100 7800 3150
+Connection ~ 7800 3150
+Wire Wire Line
+	7800 3150 8250 3150
+Wire Wire Line
+	9850 3150 9950 3150
+Wire Wire Line
+	9550 3050 9550 3150
+Connection ~ 9550 3150
+Wire Wire Line
+	9550 3150 9650 3150
+Wire Wire Line
+	4200 2350 4200 2450
+Wire Wire Line
+	4200 2450 4550 2450
+Wire Wire Line
+	3850 2450 4200 2450
+Wire Wire Line
+	4100 2850 4100 2700
+Wire Wire Line
+	4100 2700 4200 2700
 $EndSCHEMATC

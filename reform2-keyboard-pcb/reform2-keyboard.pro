@@ -1,4 +1,4 @@
-update=Thu 30 May 2019 02:37:25 PM CEST
+update=Fri 31 May 2019 03:11:49 PM CEST
 version=1
 last_client=kicad
 [cvpcb]
@@ -62,7 +62,7 @@ OthersTextSizeThickness=0.15
 OthersTextItalic=0
 OthersTextUpright=1
 SolderMaskClearance=0.2
-SolderMaskMinWidth=0
+SolderMaskMinWidth=0.25
 SolderPasteClearance=0
 SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
@@ -248,7 +248,7 @@ Name=Power
 Clearance=0.25
 TrackWidth=0.5
 ViaDiameter=1
-ViaDrill=0.8
+ViaDrill=0.6
 uViaDiameter=0.3
 uViaDrill=0.1
 dPairWidth=0.2

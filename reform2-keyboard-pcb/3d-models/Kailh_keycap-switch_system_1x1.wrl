@@ -45,7 +45,7 @@ Group {
                                   Appearance {
                                     material 
                                     Material {
-                                      diffuseColor 0.098039217 0.098039217 0.098039217
+                                      diffuseColor 0.998039217 0.098039217 0.098039217
                                       shininess 1
 
                                     }
