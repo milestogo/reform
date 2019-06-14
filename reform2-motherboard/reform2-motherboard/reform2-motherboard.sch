@@ -4,13 +4,13 @@ EELAYER 29 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 1 2
-Title "REFORM 2"
-Date "2019-04-25"
-Rev ""
+Sheet 1 9
+Title "MNT Reform 2"
+Date "2019-06-14"
+Rev "0.1"
 Comp "MNT Research GmbH"
-Comment1 ""
-Comment2 ""
+Comment1 "https://mntre.com"
+Comment2 "Engineer: Lukas F. Hartmann"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -58,28 +58,6 @@ NoConn ~ 10500 14100
 NoConn ~ 2500 9500
 NoConn ~ 2500 9600
 NoConn ~ 2500 9700
-$Comp
-L Connector:HDMI_A J13
-U 1 1 5CCAF72C
-P 20650 4750
-F 0 "J13" H 21080 4796 50  0000 L CNN
-F 1 "HDMI_A" H 21080 4705 50  0000 L CNN
-F 2 "" H 20675 4750 50  0001 C CNN
-F 3 "https://en.wikipedia.org/wiki/HDMI" H 20675 4750 50  0001 C CNN
-	1    20650 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:SD_Card J14
-U 1 1 5CCB07EE
-P 20300 7550
-F 0 "J14" H 20300 8215 50  0000 C CNN
-F 1 "SD_Card" H 20300 8124 50  0000 C CNN
-F 2 "" H 20300 7550 50  0001 C CNN
-F 3 "http://portal.fciconnect.com/Comergent//fci/drawing/10067847.pdf" H 20300 7550 50  0001 C CNN
-	1    20300 7550
-	1    0    0    -1  
-$EndComp
 Text GLabel 2500 10900 0    50   Input ~ 0
 HDMI_D0+
 Text GLabel 2500 11000 0    50   Input ~ 0
@@ -96,18 +74,6 @@ Text GLabel 2500 10700 0    50   Input ~ 0
 HDMI_D1+
 Text GLabel 2500 10800 0    50   Input ~ 0
 HDMI_D1-
-Text GLabel 19000 4050 0    50   Input ~ 0
-HDMI_D2-
-Text GLabel 19000 3950 0    50   Input ~ 0
-HDMI_D2+
-Text GLabel 19000 4250 0    50   Input ~ 0
-HDMI_D1-
-Text GLabel 19000 4150 0    50   Input ~ 0
-HDMI_D1+
-Text GLabel 19000 4650 0    50   Input ~ 0
-HDMI_D3-
-Text GLabel 19000 4550 0    50   Input ~ 0
-HDMI_D3+
 Connection ~ 12500 14600
 Wire Wire Line
 	12500 14750 12500 14600
@@ -513,10 +479,6 @@ Wire Wire Line
 	4500 8200 4500 8300
 Wire Wire Line
 	4500 8100 4500 8200
-Text GLabel 19000 4450 0    50   Input ~ 0
-HDMI_D0-
-Text GLabel 19000 4350 0    50   Input ~ 0
-HDMI_D0+
 $Comp
 L reform2:phycore-imx8m-alpha U1
 U 1 1 5CC23859
@@ -544,26 +506,64 @@ Text GLabel 2500 13400 0    50   Input ~ 0
 SD2_WP
 Text GLabel 2500 13300 0    50   Input ~ 0
 SD2_CD
-Text GLabel 18550 7850 0    50   Input ~ 0
-SD2_DATA0
-Text GLabel 18550 7950 0    50   Input ~ 0
-SD2_DATA1
-Text GLabel 18550 7150 0    50   Input ~ 0
-SD2_DATA2
-Text GLabel 18550 7250 0    50   Input ~ 0
-SD2_DATA3
-Text GLabel 18550 7350 0    50   Input ~ 0
-SD2_CMD
-Text GLabel 18550 7650 0    50   Input ~ 0
-SD2_CLK
-Text GLabel 18550 8100 0    50   Input ~ 0
-SD2_WP
-Text GLabel 18550 8200 0    50   Input ~ 0
-SD2_CD
 $Sheet
-S 20850 12750 500  150 
+S 18750 11100 500  150 
 U 5CC81028
 F0 "Reform 2 Power" 50
 F1 "reform2-power.sch" 50
+$EndSheet
+$Sheet
+S 18750 11500 500  150 
+U 5D06A2FD
+F0 "Reform 2 USB" 50
+F1 "reform2-usb.sch" 50
+$EndSheet
+$Sheet
+S 18750 11900 500  150 
+U 5D06A32E
+F0 "Reform 2 Ethernet" 50
+F1 "reform2-eth.sch" 50
+$EndSheet
+$Sheet
+S 18750 12300 500  150 
+U 5D06A7B6
+F0 "Reform 2 Display" 50
+F1 "reform2-display.sch" 50
+$EndSheet
+$Sheet
+S 18750 12700 500  150 
+U 5D06AC46
+F0 "Reform 2 PCIe" 50
+F1 "reform2-pcie.sch" 50
+$EndSheet
+$Sheet
+S 18750 13100 500  150 
+U 5D0CA3EB
+F0 "Reform 2 SD Card" 50
+F1 "reform2-sd.sch" 50
+$EndSheet
+$Sheet
+S 18750 13500 500  150 
+U 5D0D8363
+F0 "Reform 2 HDMI" 50
+F1 "reform2-hdmi.sch" 50
+$EndSheet
+Text GLabel 2500 12300 0    50   Output ~ 0
+USB1_TX_N
+Text GLabel 2500 12400 0    50   Output ~ 0
+USB1_TX_P
+Text GLabel 2500 12500 0    50   Output ~ 0
+USB1_DN
+Text GLabel 2500 12600 0    50   Output ~ 0
+USB1_DP
+Text GLabel 2500 12100 0    50   Input ~ 0
+USB1_RX_N
+Text GLabel 2500 12200 0    50   Input ~ 0
+USB1_RX_P
+$Sheet
+S 18750 13900 500  150 
+U 5D1F6C04
+F0 "Reform 2 Audio" 50
+F1 "reform2-audio.sch" 50
 $EndSheet
 $EndSCHEMATC

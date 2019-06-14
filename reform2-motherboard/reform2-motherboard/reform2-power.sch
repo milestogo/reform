@@ -4,13 +4,13 @@ EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 2 2
-Title "MNT Reform V2 Power System"
-Date "2019-06-12"
+Sheet 2 9
+Title "MNT Reform 2 Power System"
+Date "2019-06-14"
 Rev "0.1"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
-Comment2 ""
+Comment2 "Engineer: Lukas F. Hartmann"
 Comment3 ""
 Comment4 ""
 $EndDescr
