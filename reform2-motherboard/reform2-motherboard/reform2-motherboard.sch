@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 5CC38630
 P 4500 14750
-F 0 "#PWR?" H 4500 14500 50  0001 C CNN
+F 0 "#PWR0101" H 4500 14500 50  0001 C CNN
 F 1 "GND" H 4505 14577 50  0000 C CNN
 F 2 "" H 4500 14750 50  0001 C CNN
 F 3 "" H 4500 14750 50  0001 C CNN
@@ -26,10 +26,10 @@ F 3 "" H 4500 14750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0102
 U 1 1 5CC3F1E2
 P 8500 14750
-F 0 "#PWR?" H 8500 14500 50  0001 C CNN
+F 0 "#PWR0102" H 8500 14500 50  0001 C CNN
 F 1 "GND" H 8505 14577 50  0000 C CNN
 F 2 "" H 8500 14750 50  0001 C CNN
 F 3 "" H 8500 14750 50  0001 C CNN
@@ -37,10 +37,10 @@ F 3 "" H 8500 14750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0103
 U 1 1 5CC4F10E
 P 12500 14750
-F 0 "#PWR?" H 12500 14500 50  0001 C CNN
+F 0 "#PWR0103" H 12500 14500 50  0001 C CNN
 F 1 "GND" H 12505 14577 50  0000 C CNN
 F 2 "" H 12500 14750 50  0001 C CNN
 F 3 "" H 12500 14750 50  0001 C CNN
@@ -485,7 +485,7 @@ U 1 1 5CC23859
 P 2500 14600
 F 0 "U1" H 2550 14650 50  0000 L CNN
 F 1 "phycore-imx8m-alpha" H 12819 21120 50  0000 L CNN
-F 2 "" H 2500 14600 50  0001 C CNN
+F 2 "reform2-motherboard:phycore-imx8m-alpha" H 2500 14600 50  0001 C CNN
 F 3 "" H 2500 14600 50  0001 C CNN
 	1    2500 14600
 	1    0    0    -1  
@@ -566,4 +566,78 @@ U 5D1F6C04
 F0 "Reform 2 Audio" 50
 F1 "reform2-audio.sch" 50
 $EndSheet
+$Comp
+L power:+3V3 #PWR0104
+U 1 1 5DA19DD9
+P 1800 7900
+F 0 "#PWR0104" H 1800 7750 50  0001 C CNN
+F 1 "+3V3" H 1815 8073 50  0000 C CNN
+F 2 "" H 1800 7900 50  0001 C CNN
+F 3 "" H 1800 7900 50  0001 C CNN
+	1    1800 7900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 7900 2300 7900
+Wire Wire Line
+	2500 8000 2300 8000
+Wire Wire Line
+	2300 8000 2300 7900
+Connection ~ 2300 7900
+Wire Wire Line
+	2300 7900 2500 7900
+Wire Wire Line
+	2500 8100 2300 8100
+Wire Wire Line
+	2300 8100 2300 8000
+Connection ~ 2300 8000
+Wire Wire Line
+	2500 8200 2300 8200
+Wire Wire Line
+	2300 8200 2300 8100
+Connection ~ 2300 8100
+Text GLabel 6500 10700 0    50   Output ~ 0
+UART1_TX
+Text GLabel 6500 10800 0    50   Input ~ 0
+UART1_RX
+Text GLabel 2500 14500 0    60   Output ~ 0
+ETH0_LED_LINK
+Text GLabel 2500 14600 0    60   Output ~ 0
+ETH0_LED_RX
+Text GLabel 2500 13700 0    60   Output ~ 0
+ETH0_D-
+Text GLabel 2500 13800 0    60   Output ~ 0
+ETH0_D+
+Text GLabel 2500 13900 0    60   Output ~ 0
+ETH0_C-
+Text GLabel 2500 14000 0    60   Output ~ 0
+ETH0_C+
+Text GLabel 2500 14100 0    60   Output ~ 0
+ETH0_B-
+Text GLabel 2500 14200 0    60   Output ~ 0
+ETH0_B+
+Text GLabel 2500 14300 0    60   Output ~ 0
+ETH0_A-
+Text GLabel 2500 14400 0    60   Output ~ 0
+ETH0_A+
+Text GLabel 2500 1500 0    50   Output ~ 0
+DSI_D3_N
+Text GLabel 2500 1600 0    50   Output ~ 0
+DSI_D3_P
+Text GLabel 2500 1700 0    50   Output ~ 0
+DSI_D0_N
+Text GLabel 2500 1800 0    50   Output ~ 0
+DSI_D0_P
+Text GLabel 2500 1900 0    50   Output ~ 0
+DSI_CLK_N
+Text GLabel 2500 2000 0    50   Output ~ 0
+DSI_CLK_P
+Text GLabel 2500 2100 0    50   Output ~ 0
+DSI_D1_N
+Text GLabel 2500 2200 0    50   Output ~ 0
+DSI_D1_P
+Text GLabel 2500 2300 0    50   Output ~ 0
+DSI_D2_N
+Text GLabel 2500 2400 0    50   Output ~ 0
+DSI_D2_P
 $EndSCHEMATC

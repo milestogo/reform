@@ -15,23 +15,23 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L reform-motherboard-rescue:MPCIE-Socket U?
+L reform-motherboard-rescue:MPCIE-Socket U11
 U 1 1 5D1F1F73
 P 4100 3550
-F 0 "U?" H 4100 4987 60  0000 C CNN
+F 0 "U11" H 4100 4987 60  0000 C CNN
 F 1 "MPCIE-Socket" H 4100 4881 60  0000 C CNN
-F 2 "" H 4200 2550 60  0000 C CNN
+F 2 "footprints:MOLEX_67910-5700" H 4200 2550 60  0001 C CNN
 F 3 "" H 4200 2550 60  0000 C CNN
 	1    4100 3550
 	1    0    0    -1  
 $EndComp
 $Comp
-L reform-motherboard-rescue:MPCIE-Socket U?
+L reform-motherboard-rescue:MPCIE-Socket U12
 U 1 1 5D1F2FE0
 P 7350 3550
-F 0 "U?" H 7350 4987 60  0000 C CNN
+F 0 "U12" H 7350 4987 60  0000 C CNN
 F 1 "MPCIE-Socket" H 7350 4881 60  0000 C CNN
-F 2 "" H 7450 2550 60  0000 C CNN
+F 2 "footprints:MOLEX_67910-5700" H 7450 2550 60  0001 C CNN
 F 3 "" H 7450 2550 60  0000 C CNN
 	1    7350 3550
 	1    0    0    -1  
