@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 9
 Title "MNT Reform 2 PCIe"
-Date "2019-06-14"
+Date "2019-06-21"
 Rev "0.1"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
@@ -15,27 +15,459 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L reform-motherboard-rescue:MPCIE-Socket U11
+L reform2-motherboard-rescue:MPCIE-Socket-reform-motherboard-rescue U11
 U 1 1 5D1F1F73
-P 4100 3550
-F 0 "U11" H 4100 4987 60  0000 C CNN
-F 1 "MPCIE-Socket" H 4100 4881 60  0000 C CNN
-F 2 "footprints:MOLEX_67910-5700" H 4200 2550 60  0001 C CNN
-F 3 "" H 4200 2550 60  0000 C CNN
-	1    4100 3550
+P 3500 4050
+AR Path="/5D1F1F73" Ref="U11"  Part="1" 
+AR Path="/5D06AC46/5D1F1F73" Ref="U11"  Part="1" 
+F 0 "U11" H 3500 5487 60  0000 C CNN
+F 1 "MPCIE-Socket" H 3500 5381 60  0000 C CNN
+F 2 "footprints:MOLEX_67910-5700" H 3600 3050 60  0001 C CNN
+F 3 "" H 3600 3050 60  0000 C CNN
+	1    3500 4050
+	1    0    0    -1  
+$EndComp
+Text Notes 4350 1800 0    50   ~ 0
+TODO: mSATA controller or M.2 SSD?
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DABFC96
+P 1900 2100
+F 0 "#PWR?" H 1900 1950 50  0001 C CNN
+F 1 "+3V3" H 1915 2273 50  0000 C CNN
+F 2 "" H 1900 2100 50  0001 C CNN
+F 3 "" H 1900 2100 50  0001 C CNN
+	1    1900 2100
 	1    0    0    -1  
 $EndComp
 $Comp
-L reform-motherboard-rescue:MPCIE-Socket U12
-U 1 1 5D1F2FE0
-P 7350 3550
-F 0 "U12" H 7350 4987 60  0000 C CNN
-F 1 "MPCIE-Socket" H 7350 4881 60  0000 C CNN
-F 2 "footprints:MOLEX_67910-5700" H 7450 2550 60  0001 C CNN
-F 3 "" H 7450 2550 60  0000 C CNN
-	1    7350 3550
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5DAC08FC
+P 1900 2250
+F 0 "FB?" H 2000 2296 50  0000 L CNN
+F 1 "Ferrite_Bead_Small" H 2000 2205 50  0000 L CNN
+F 2 "" V 1830 2250 50  0001 C CNN
+F 3 "~" H 1900 2250 50  0001 C CNN
+	1    1900 2250
 	1    0    0    -1  
 $EndComp
-Text Notes 6650 1850 0    50   ~ 0
-TODO: mSATA controller or M.2 SSD?
+Wire Wire Line
+	1900 2100 1900 2150
+Wire Wire Line
+	1900 2350 1900 2450
+Wire Wire Line
+	1900 3400 2750 3400
+Wire Wire Line
+	2750 3400 2750 3500
+Wire Wire Line
+	2750 3500 2850 3500
+Connection ~ 2750 3400
+Wire Wire Line
+	2750 3400 2850 3400
+Wire Wire Line
+	1900 2450 4250 2450
+Wire Wire Line
+	4250 2450 4250 2900
+Wire Wire Line
+	4250 2900 4150 2900
+Connection ~ 1900 2450
+Wire Wire Line
+	1900 2450 1900 3400
+Wire Wire Line
+	4250 2900 4250 4300
+Wire Wire Line
+	4250 4300 4150 4300
+Connection ~ 4250 2900
+Wire Wire Line
+	4250 4300 4250 5500
+Wire Wire Line
+	4250 5500 4150 5500
+Connection ~ 4250 4300
+$Comp
+L power:GND #PWR?
+U 1 1 5DAC2389
+P 4400 5550
+F 0 "#PWR?" H 4400 5300 50  0001 C CNN
+F 1 "GND" H 4405 5377 50  0000 C CNN
+F 2 "" H 4400 5550 50  0001 C CNN
+F 3 "" H 4400 5550 50  0001 C CNN
+	1    4400 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 5550 4400 5400
+Wire Wire Line
+	4400 5400 4150 5400
+Wire Wire Line
+	4400 5400 4400 4600
+Wire Wire Line
+	4400 4600 4150 4600
+Connection ~ 4400 5400
+Wire Wire Line
+	4400 4600 4400 4200
+Wire Wire Line
+	4400 4200 4150 4200
+Connection ~ 4400 4600
+Wire Wire Line
+	4400 4200 4400 3800
+Wire Wire Line
+	4400 3800 4150 3800
+Connection ~ 4400 4200
+Wire Wire Line
+	4400 3800 4400 3500
+Wire Wire Line
+	4400 3500 4150 3500
+Connection ~ 4400 3800
+Wire Wire Line
+	4400 3500 4400 3000
+Wire Wire Line
+	4400 3000 4150 3000
+Connection ~ 4400 3500
+$Comp
+L power:GND #PWR?
+U 1 1 5DAC3BC6
+P 2600 5550
+F 0 "#PWR?" H 2600 5300 50  0001 C CNN
+F 1 "GND" H 2605 5377 50  0000 C CNN
+F 2 "" H 2600 5550 50  0001 C CNN
+F 3 "" H 2600 5550 50  0001 C CNN
+	1    2600 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 5550 2600 5100
+Wire Wire Line
+	2600 3300 2850 3300
+Wire Wire Line
+	2850 3600 2600 3600
+Connection ~ 2600 3600
+Wire Wire Line
+	2600 3600 2600 3300
+Wire Wire Line
+	2600 3700 2850 3700
+Connection ~ 2600 3700
+Wire Wire Line
+	2600 3700 2600 3600
+Wire Wire Line
+	2850 4000 2600 4000
+Connection ~ 2600 4000
+Wire Wire Line
+	2600 4000 2600 3700
+Wire Wire Line
+	2600 4100 2850 4100
+Connection ~ 2600 4100
+Wire Wire Line
+	2600 4100 2600 4000
+Wire Wire Line
+	2850 4400 2600 4400
+Connection ~ 2600 4400
+Wire Wire Line
+	2600 4400 2600 4100
+Wire Wire Line
+	2850 4800 2600 4800
+Connection ~ 2600 4800
+Wire Wire Line
+	2600 4800 2600 4400
+Wire Wire Line
+	2850 5100 2600 5100
+Connection ~ 2600 5100
+Wire Wire Line
+	2600 5100 2600 4800
+Text GLabel 2400 3900 0    50   Input ~ 0
+PCIE1_TX_N
+Text GLabel 2400 4300 0    50   Input ~ 0
+PCIE1_RX_N
+Text GLabel 2400 3800 0    50   Input ~ 0
+PCIE1_TX_P
+Text GLabel 2400 4200 0    50   Input ~ 0
+PCIE1_RX_P
+Wire Wire Line
+	2400 4200 2850 4200
+Wire Wire Line
+	2850 4300 2400 4300
+Wire Wire Line
+	2400 3800 2850 3800
+Wire Wire Line
+	2850 3900 2400 3900
+Text Notes 4350 1950 0    50   ~ 0
+TODO: bunch of caps
+Text Notes 4350 2100 0    50   ~ 0
+TODO: WIFI LEDs
+$Comp
+L Device:LED_Small D?
+U 1 1 5DB65D52
+P 4750 3300
+F 0 "D?" H 4750 3535 50  0000 C CNN
+F 1 "LED_WLAN1" H 4750 3444 50  0000 C CNN
+F 2 "" V 4750 3300 50  0001 C CNN
+F 3 "~" V 4750 3300 50  0001 C CNN
+	1    4750 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3300 4150 3300
+$Comp
+L Device:R_Small R?
+U 1 1 5DB66E46
+P 5100 3300
+F 0 "R?" V 4904 3300 50  0000 C CNN
+F 1 "240" V 4995 3300 50  0000 C CNN
+F 2 "" H 5100 3300 50  0001 C CNN
+F 3 "~" H 5100 3300 50  0001 C CNN
+	1    5100 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 3300 4850 3300
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DB67DC7
+P 5350 3300
+F 0 "#PWR?" H 5350 3150 50  0001 C CNN
+F 1 "+3V3" H 5365 3473 50  0000 C CNN
+F 2 "" H 5350 3300 50  0001 C CNN
+F 3 "" H 5350 3300 50  0001 C CNN
+	1    5350 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3300 5200 3300
+Text GLabel 4600 4400 2    50   Input ~ 0
+PCIE_RESETn
+Wire Wire Line
+	4600 4400 4150 4400
+Text GLabel 2400 5000 0    50   Input ~ 0
+PCIE1_CLK_N
+Text GLabel 2400 4900 0    50   Input ~ 0
+PCIE1_CLK_P
+Wire Wire Line
+	2400 4900 2850 4900
+Wire Wire Line
+	2850 5000 2400 5000
+Text Notes 4350 2250 0    50   ~ 0
+TODO: Latch parts (48099-5701)
+$Comp
+L reform2-motherboard-rescue:MPCIE-Socket-reform-motherboard-rescue U?
+U 1 1 5DB754D8
+P 8350 4050
+AR Path="/5DB754D8" Ref="U?"  Part="1" 
+AR Path="/5D06AC46/5DB754D8" Ref="U12"  Part="1" 
+F 0 "U12" H 8350 5487 60  0000 C CNN
+F 1 "MPCIE-Socket" H 8350 5381 60  0000 C CNN
+F 2 "footprints:MOLEX_67910-5700" H 8450 3050 60  0001 C CNN
+F 3 "" H 8450 3050 60  0000 C CNN
+	1    8350 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DB754E3
+P 6750 2100
+F 0 "#PWR?" H 6750 1950 50  0001 C CNN
+F 1 "+3V3" H 6765 2273 50  0000 C CNN
+F 2 "" H 6750 2100 50  0001 C CNN
+F 3 "" H 6750 2100 50  0001 C CNN
+	1    6750 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5DB754ED
+P 6750 2250
+F 0 "FB?" H 6850 2296 50  0000 L CNN
+F 1 "Ferrite_Bead_Small" H 6850 2205 50  0000 L CNN
+F 2 "" V 6680 2250 50  0001 C CNN
+F 3 "~" H 6750 2250 50  0001 C CNN
+	1    6750 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 2100 6750 2150
+Wire Wire Line
+	6750 2350 6750 2450
+Wire Wire Line
+	6750 3400 7600 3400
+Wire Wire Line
+	7600 3400 7600 3500
+Wire Wire Line
+	7600 3500 7700 3500
+Connection ~ 7600 3400
+Wire Wire Line
+	7600 3400 7700 3400
+Wire Wire Line
+	6750 2450 9100 2450
+Wire Wire Line
+	9100 2450 9100 2900
+Wire Wire Line
+	9100 2900 9000 2900
+Connection ~ 6750 2450
+Wire Wire Line
+	6750 2450 6750 3400
+Wire Wire Line
+	9100 2900 9100 4300
+Wire Wire Line
+	9100 4300 9000 4300
+Connection ~ 9100 2900
+Wire Wire Line
+	9100 4300 9100 5500
+Wire Wire Line
+	9100 5500 9000 5500
+Connection ~ 9100 4300
+$Comp
+L power:GND #PWR?
+U 1 1 5DB75509
+P 9250 5550
+F 0 "#PWR?" H 9250 5300 50  0001 C CNN
+F 1 "GND" H 9255 5377 50  0000 C CNN
+F 2 "" H 9250 5550 50  0001 C CNN
+F 3 "" H 9250 5550 50  0001 C CNN
+	1    9250 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 5550 9250 5400
+Wire Wire Line
+	9250 5400 9000 5400
+Wire Wire Line
+	9250 5400 9250 4600
+Wire Wire Line
+	9250 4600 9000 4600
+Connection ~ 9250 5400
+Wire Wire Line
+	9250 4600 9250 4200
+Wire Wire Line
+	9250 4200 9000 4200
+Connection ~ 9250 4600
+Wire Wire Line
+	9250 4200 9250 3800
+Wire Wire Line
+	9250 3800 9000 3800
+Connection ~ 9250 4200
+Wire Wire Line
+	9250 3800 9250 3500
+Wire Wire Line
+	9250 3500 9000 3500
+Connection ~ 9250 3800
+Wire Wire Line
+	9250 3500 9250 3000
+Wire Wire Line
+	9250 3000 9000 3000
+Connection ~ 9250 3500
+$Comp
+L power:GND #PWR?
+U 1 1 5DB75524
+P 7450 5550
+F 0 "#PWR?" H 7450 5300 50  0001 C CNN
+F 1 "GND" H 7455 5377 50  0000 C CNN
+F 2 "" H 7450 5550 50  0001 C CNN
+F 3 "" H 7450 5550 50  0001 C CNN
+	1    7450 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 5550 7450 5100
+Wire Wire Line
+	7450 3300 7700 3300
+Wire Wire Line
+	7700 3600 7450 3600
+Connection ~ 7450 3600
+Wire Wire Line
+	7450 3600 7450 3300
+Wire Wire Line
+	7450 3700 7700 3700
+Connection ~ 7450 3700
+Wire Wire Line
+	7450 3700 7450 3600
+Wire Wire Line
+	7700 4000 7450 4000
+Connection ~ 7450 4000
+Wire Wire Line
+	7450 4000 7450 3700
+Wire Wire Line
+	7450 4100 7700 4100
+Connection ~ 7450 4100
+Wire Wire Line
+	7450 4100 7450 4000
+Wire Wire Line
+	7700 4400 7450 4400
+Connection ~ 7450 4400
+Wire Wire Line
+	7450 4400 7450 4100
+Wire Wire Line
+	7700 4800 7450 4800
+Connection ~ 7450 4800
+Wire Wire Line
+	7450 4800 7450 4400
+Wire Wire Line
+	7700 5100 7450 5100
+Connection ~ 7450 5100
+Wire Wire Line
+	7450 5100 7450 4800
+Text GLabel 7250 3900 0    50   Input ~ 0
+PCIE2_TX_N
+Text GLabel 7250 4300 0    50   Input ~ 0
+PCIE2_RX_N
+Text GLabel 7250 3800 0    50   Input ~ 0
+PCIE2_TX_P
+Text GLabel 7250 4200 0    50   Input ~ 0
+PCIE2_RX_P
+Wire Wire Line
+	7250 4200 7700 4200
+Wire Wire Line
+	7700 4300 7250 4300
+Wire Wire Line
+	7250 3800 7700 3800
+Wire Wire Line
+	7700 3900 7250 3900
+$Comp
+L Device:LED_Small D?
+U 1 1 5DB7554F
+P 9600 3300
+F 0 "D?" H 9600 3535 50  0000 C CNN
+F 1 "LED_WLAN1" H 9600 3444 50  0000 C CNN
+F 2 "" V 9600 3300 50  0001 C CNN
+F 3 "~" V 9600 3300 50  0001 C CNN
+	1    9600 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 3300 9000 3300
+$Comp
+L Device:R_Small R?
+U 1 1 5DB7555A
+P 9950 3300
+F 0 "R?" V 9754 3300 50  0000 C CNN
+F 1 "240" V 9845 3300 50  0000 C CNN
+F 2 "" H 9950 3300 50  0001 C CNN
+F 3 "~" H 9950 3300 50  0001 C CNN
+	1    9950 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9850 3300 9700 3300
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DB75565
+P 10200 3300
+F 0 "#PWR?" H 10200 3150 50  0001 C CNN
+F 1 "+3V3" H 10215 3473 50  0000 C CNN
+F 2 "" H 10200 3300 50  0001 C CNN
+F 3 "" H 10200 3300 50  0001 C CNN
+	1    10200 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 3300 10050 3300
+Text GLabel 9450 4400 2    50   Input ~ 0
+PCIE_RESETn
+Wire Wire Line
+	9450 4400 9000 4400
+Text GLabel 7250 5000 0    50   Input ~ 0
+PCIE2_CLK_N
+Text GLabel 7250 4900 0    50   Input ~ 0
+PCIE2_CLK_P
+Wire Wire Line
+	7250 4900 7700 4900
+Wire Wire Line
+	7700 5000 7250 5000
 $EndSCHEMATC

@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 9
 Title "MNT Reform 2 SD Card"
-Date "2019-06-14"
+Date "2019-06-21"
 Rev "0.1"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
@@ -145,4 +145,6 @@ Wire Wire Line
 Connection ~ 7200 3650
 Text Notes 5450 2400 0    50   ~ 0
 TODO: isolation / level shift?
+Text Notes 5450 2550 0    50   ~ 0
+TODO: caps
 $EndSCHEMATC

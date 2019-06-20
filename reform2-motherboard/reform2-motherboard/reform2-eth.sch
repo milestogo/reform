@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 9
 Title "MNT Reform 2 Ethernet"
-Date "2019-06-14"
+Date "2019-06-21"
 Rev "0.1"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
@@ -15,9 +15,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L reform-motherboard-rescue:J0G-0003NL P1
+L reform2-motherboard-rescue:J0G-0003NL-reform-motherboard-rescue P1
 U 1 1 5A04FC73
 P 6050 3650
+AR Path="/5A04FC73" Ref="P1"  Part="1" 
+AR Path="/5D06A32E/5A04FC73" Ref="P1"  Part="1" 
 F 0 "P1" H 5246 5811 50  0000 L BNN
 F 1 "J0G-0003NL" H 5247 1341 50  0000 L BNN
 F 2 "footprints:PULSE_J0G-0003NL" H 6050 3650 50  0001 L BNN
@@ -31,9 +33,11 @@ F 8 "None" H 6050 3650 50  0001 L BNN "Package"
 	1    0    0    -1  
 $EndComp
 $Comp
-L reform-motherboard-rescue:+3V3 #PWR0139
+L reform2-motherboard-rescue:+3V3-reform-motherboard-rescue #PWR0139
 U 1 1 5A04FD4C
 P 4150 4750
+AR Path="/5A04FD4C" Ref="#PWR0139"  Part="1" 
+AR Path="/5D06A32E/5A04FD4C" Ref="#PWR0139"  Part="1" 
 F 0 "#PWR0139" H 4150 4600 50  0001 C CNN
 F 1 "+3V3" H 4150 4890 50  0000 C CNN
 F 2 "" H 4150 4750 50  0001 C CNN
@@ -42,9 +46,11 @@ F 3 "" H 4150 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L reform-motherboard-rescue:C_Small C22
+L reform2-motherboard-rescue:C_Small-reform-motherboard-rescue C22
 U 1 1 5A04FD85
 P 3900 5000
+AR Path="/5A04FD85" Ref="C22"  Part="1" 
+AR Path="/5D06A32E/5A04FD85" Ref="C22"  Part="1" 
 F 0 "C22" H 3910 5070 50  0000 L CNN
 F 1 "0.1uF" H 3910 4920 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3900 5000 50  0001 C CNN
@@ -53,9 +59,11 @@ F 3 "" H 3900 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L reform-motherboard-rescue:GND #PWR0140
+L reform2-motherboard-rescue:GND-reform-motherboard-rescue #PWR0140
 U 1 1 5A04FDB4
 P 3900 5100
+AR Path="/5A04FDB4" Ref="#PWR0140"  Part="1" 
+AR Path="/5D06A32E/5A04FDB4" Ref="#PWR0140"  Part="1" 
 F 0 "#PWR0140" H 3900 4850 50  0001 C CNN
 F 1 "GND" H 3900 4950 50  0000 C CNN
 F 2 "" H 3900 5100 50  0001 C CNN
@@ -64,9 +72,11 @@ F 3 "" H 3900 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L reform-motherboard-rescue:C_Small C23
+L reform2-motherboard-rescue:C_Small-reform-motherboard-rescue C23
 U 1 1 5A05122D
 P 4350 2050
+AR Path="/5A05122D" Ref="C23"  Part="1" 
+AR Path="/5D06A32E/5A05122D" Ref="C23"  Part="1" 
 F 0 "C23" H 4360 2120 50  0000 L CNN
 F 1 "0.1uF" H 4360 1970 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4350 2050 50  0001 C CNN
@@ -75,9 +85,11 @@ F 3 "" H 4350 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L reform-motherboard-rescue:C_Small C24
+L reform2-motherboard-rescue:C_Small-reform-motherboard-rescue C24
 U 1 1 5A051336
 P 4350 2850
+AR Path="/5A051336" Ref="C24"  Part="1" 
+AR Path="/5D06A32E/5A051336" Ref="C24"  Part="1" 
 F 0 "C24" H 4360 2920 50  0000 L CNN
 F 1 "0.1uF" H 4360 2770 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4350 2850 50  0001 C CNN
@@ -86,9 +98,11 @@ F 3 "" H 4350 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L reform-motherboard-rescue:C_Small C25
+L reform2-motherboard-rescue:C_Small-reform-motherboard-rescue C25
 U 1 1 5A0513CA
 P 4350 3650
+AR Path="/5A0513CA" Ref="C25"  Part="1" 
+AR Path="/5D06A32E/5A0513CA" Ref="C25"  Part="1" 
 F 0 "C25" H 4360 3720 50  0000 L CNN
 F 1 "0.1uF" H 4360 3570 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4350 3650 50  0001 C CNN
@@ -97,9 +111,11 @@ F 3 "" H 4350 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L reform-motherboard-rescue:C_Small C26
+L reform2-motherboard-rescue:C_Small-reform-motherboard-rescue C26
 U 1 1 5A05141B
 P 4350 4450
+AR Path="/5A05141B" Ref="C26"  Part="1" 
+AR Path="/5D06A32E/5A05141B" Ref="C26"  Part="1" 
 F 0 "C26" H 4360 4520 50  0000 L CNN
 F 1 "0.1uF" H 4360 4370 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4350 4450 50  0001 C CNN
@@ -108,9 +124,11 @@ F 3 "" H 4350 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L reform-motherboard-rescue:GND #PWR0141
+L reform2-motherboard-rescue:GND-reform-motherboard-rescue #PWR0141
 U 1 1 5A118EA5
 P 4350 2150
+AR Path="/5A118EA5" Ref="#PWR0141"  Part="1" 
+AR Path="/5D06A32E/5A118EA5" Ref="#PWR0141"  Part="1" 
 F 0 "#PWR0141" H 4350 1900 50  0001 C CNN
 F 1 "GND" H 4350 2000 50  0000 C CNN
 F 2 "" H 4350 2150 50  0001 C CNN
@@ -119,9 +137,11 @@ F 3 "" H 4350 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L reform-motherboard-rescue:GND #PWR0142
+L reform2-motherboard-rescue:GND-reform-motherboard-rescue #PWR0142
 U 1 1 5A118FBC
 P 4350 2950
+AR Path="/5A118FBC" Ref="#PWR0142"  Part="1" 
+AR Path="/5D06A32E/5A118FBC" Ref="#PWR0142"  Part="1" 
 F 0 "#PWR0142" H 4350 2700 50  0001 C CNN
 F 1 "GND" H 4350 2800 50  0000 C CNN
 F 2 "" H 4350 2950 50  0001 C CNN
@@ -130,9 +150,11 @@ F 3 "" H 4350 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L reform-motherboard-rescue:GND #PWR0143
+L reform2-motherboard-rescue:GND-reform-motherboard-rescue #PWR0143
 U 1 1 5A119060
 P 4350 3750
+AR Path="/5A119060" Ref="#PWR0143"  Part="1" 
+AR Path="/5D06A32E/5A119060" Ref="#PWR0143"  Part="1" 
 F 0 "#PWR0143" H 4350 3500 50  0001 C CNN
 F 1 "GND" H 4350 3600 50  0000 C CNN
 F 2 "" H 4350 3750 50  0001 C CNN
@@ -141,9 +163,11 @@ F 3 "" H 4350 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L reform-motherboard-rescue:GND #PWR0144
+L reform2-motherboard-rescue:GND-reform-motherboard-rescue #PWR0144
 U 1 1 5A119104
 P 4350 4550
+AR Path="/5A119104" Ref="#PWR0144"  Part="1" 
+AR Path="/5D06A32E/5A119104" Ref="#PWR0144"  Part="1" 
 F 0 "#PWR0144" H 4350 4300 50  0001 C CNN
 F 1 "GND" H 4350 4400 50  0000 C CNN
 F 2 "" H 4350 4550 50  0001 C CNN
@@ -152,9 +176,11 @@ F 3 "" H 4350 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L reform-motherboard-rescue:GND #PWR0145
+L reform2-motherboard-rescue:GND-reform-motherboard-rescue #PWR0145
 U 1 1 5A119D9C
 P 7150 5550
+AR Path="/5A119D9C" Ref="#PWR0145"  Part="1" 
+AR Path="/5D06A32E/5A119D9C" Ref="#PWR0145"  Part="1" 
 F 0 "#PWR0145" H 7150 5300 50  0001 C CNN
 F 1 "GND" H 7150 5400 50  0000 C CNN
 F 2 "" H 7150 5550 50  0001 C CNN

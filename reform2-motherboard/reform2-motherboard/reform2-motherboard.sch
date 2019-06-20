@@ -6,7 +6,7 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 9
 Title "MNT Reform 2"
-Date "2019-06-14"
+Date "2019-06-21"
 Rev "0.1"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
@@ -640,4 +640,58 @@ Text GLabel 2500 2300 0    50   Output ~ 0
 DSI_D2_N
 Text GLabel 2500 2400 0    50   Output ~ 0
 DSI_D2_P
+Text GLabel 2400 4000 0    50   Output ~ 0
+PCIE1_TX_N
+Text GLabel 2400 3800 0    50   Output ~ 0
+PCIE1_RX_N
+Text GLabel 2400 3900 0    50   Output ~ 0
+PCIE1_TX_P
+Text GLabel 2400 3700 0    50   Output ~ 0
+PCIE1_RX_P
+Wire Wire Line
+	2400 3700 2500 3700
+Wire Wire Line
+	2500 3800 2400 3800
+Wire Wire Line
+	2400 3900 2500 3900
+Wire Wire Line
+	2400 4000 2500 4000
+Text GLabel 2400 3200 0    50   Output ~ 0
+PCIE2_TX_N
+Text GLabel 2400 3000 0    50   Output ~ 0
+PCIE2_RX_N
+Text GLabel 2400 3100 0    50   Output ~ 0
+PCIE2_TX_P
+Text GLabel 2400 2900 0    50   Output ~ 0
+PCIE2_RX_P
+Wire Wire Line
+	2400 2900 2500 2900
+Wire Wire Line
+	2500 3000 2400 3000
+Wire Wire Line
+	2400 3100 2500 3100
+Wire Wire Line
+	2500 3200 2400 3200
+Text GLabel 2400 2800 0    50   Output ~ 0
+PCIE2_CLK_P
+Wire Wire Line
+	2400 2800 2500 2800
+Text GLabel 2400 2700 0    50   Output ~ 0
+PCIE2_CLK_N
+Wire Wire Line
+	2400 2700 2500 2700
+Text GLabel 2400 2600 0    50   Output ~ 0
+PCIE1_CLK_P
+Text GLabel 2400 2500 0    50   Output ~ 0
+PCIE1_CLK_N
+Wire Wire Line
+	2500 2500 2400 2500
+Wire Wire Line
+	2400 2600 2500 2600
+Text Notes 1300 800  0    50   ~ 0
+TODO: PCIe 100 MHz Ref Clock generator
+Text Notes 1300 950  0    50   ~ 0
+TODO: Bootmode / RESET / ONOFF
+Text Notes 1300 1100 0    50   ~ 0
+TODO: JTAG
 $EndSCHEMATC
