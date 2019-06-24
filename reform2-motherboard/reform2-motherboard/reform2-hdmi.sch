@@ -22,7 +22,7 @@ AR Path="/5D123420" Ref="J?"  Part="1"
 AR Path="/5D0D8363/5D123420" Ref="J4"  Part="1" 
 F 0 "J4" H 8480 2646 50  0000 L CNN
 F 1 "HDMI_A" H 8480 2555 50  0000 L CNN
-F 2 "Connector_HDMI:HDMI_A_Contact_Technology_HDMI-19APL2_Horizontal" H 8075 2600 50  0001 C CNN
+F 2 "footprints:HDMI-685119134923" H 8075 2600 50  0001 C CNN
 F 3 "https://en.wikipedia.org/wiki/HDMI" H 8075 2600 50  0001 C CNN
 	1    8050 2600
 	1    0    0    -1  

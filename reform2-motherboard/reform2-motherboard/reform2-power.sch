@@ -3048,8 +3048,6 @@ Wire Wire Line
 	7000 5400 7800 5400
 Text Notes 5550 10200 0    50   ~ 0
 TODO: GPIOs useful?
-Text Notes 2850 2100 0    50   ~ 0
-TODO: fuse
 $Comp
 L Device:Polyfuse F1
 U 1 1 5DC0FDCA
@@ -3067,9 +3065,6 @@ Wire Wire Line
 	3000 1200 4550 1200
 Connection ~ 4550 1200
 Connection ~ 7000 4400
-Connection ~ 7000 5400
-Wire Wire Line
-	7000 5050 7000 5400
 Wire Wire Line
 	7000 4750 7000 4400
 $Comp
@@ -3086,10 +3081,10 @@ $EndComp
 Wire Wire Line
 	11500 3000 11600 3000
 $Comp
-L Diode:1N5821 D?
+L Diode:1N5821 D21
 U 1 1 5DDA6FF2
 P 11600 3150
-F 0 "D?" V 11554 3229 50  0000 L CNN
+F 0 "D21" V 11554 3229 50  0000 L CNN
 F 1 "B220A-13-F" V 11645 3229 50  0000 L CNN
 F 2 "Diode_SMD:D_SMA" H 11600 2975 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 11600 3150 50  0001 C CNN
@@ -3099,4 +3094,11 @@ $EndComp
 Connection ~ 11600 3000
 Wire Wire Line
 	11600 3000 11950 3000
+Wire Wire Line
+	7000 5050 7000 5200
+Wire Wire Line
+	7000 5200 10100 5200
+Wire Wire Line
+	10100 5200 10100 5400
+Connection ~ 10100 5400
 $EndSCHEMATC
