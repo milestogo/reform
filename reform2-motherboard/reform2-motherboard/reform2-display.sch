@@ -350,20 +350,16 @@ Wire Wire Line
 $Comp
 L power:GND #PWR038
 U 1 1 5DAA7616
-P 6100 3600
-F 0 "#PWR038" H 6100 3350 50  0001 C CNN
-F 1 "GND" H 6105 3427 50  0000 C CNN
-F 2 "" H 6100 3600 50  0001 C CNN
-F 3 "" H 6100 3600 50  0001 C CNN
-	1    6100 3600
+P 6100 3450
+F 0 "#PWR038" H 6100 3200 50  0001 C CNN
+F 1 "GND" H 6105 3277 50  0000 C CNN
+F 2 "" H 6100 3450 50  0001 C CNN
+F 3 "" H 6100 3450 50  0001 C CNN
+	1    6100 3450
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6100 3600 6100 3650
-Wire Wire Line
 	6100 3650 5900 3650
-Text Notes 6250 1500 0    50   ~ 0
-TODO: optional 27MHz input for refclk?
 Text GLabel 6850 3850 2    50   Input ~ 0
 EDP_RESETn
 Text GLabel 4250 4650 0    50   Output ~ 0
@@ -452,7 +448,18 @@ Wire Wire Line
 Wire Wire Line
 	7500 5050 6950 5050
 Text Notes 6250 1800 0    50   ~ 0
-TODO: Manual has "DNI" caps on all EDP pairs
+NOTE: Manual has "DNI" caps on all EDP pairs
 Text Notes 6250 1950 0    50   ~ 0
 TODO: Hook up reset and I2C bus
+$Comp
+L Device:R_Small R77
+U 1 1 60F2545C
+P 6100 3550
+F 0 "R77" H 6159 3596 50  0000 L CNN
+F 1 "0" H 6159 3505 50  0000 L CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2" H 6100 3550 50  0001 C CNN
+F 3 "~" H 6100 3550 50  0001 C CNN
+	1    6100 3550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

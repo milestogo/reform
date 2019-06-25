@@ -694,4 +694,69 @@ Text Notes 1300 950  0    50   ~ 0
 TODO: Bootmode / RESET / ONOFF
 Text Notes 1300 1100 0    50   ~ 0
 TODO: JTAG
+Text GLabel 2350 5100 0    50   Input ~ 0
+EDP_SCL
+Text GLabel 2350 5200 0    50   BiDi ~ 0
+EDP_SDA
+Wire Wire Line
+	2350 5100 2500 5100
+Wire Wire Line
+	2500 5200 2350 5200
+Text GLabel 2450 11700 0    50   Output ~ 0
+USB2_TX_N
+Text GLabel 2450 11800 0    50   Output ~ 0
+USB2_TX_P
+Text GLabel 2450 11900 0    50   Output ~ 0
+USB2_DN
+Text GLabel 2450 12000 0    50   Output ~ 0
+USB2_DP
+Text GLabel 2450 11500 0    50   Input ~ 0
+USB2_RX_N
+Text GLabel 2450 11600 0    50   Input ~ 0
+USB2_RX_P
+Wire Wire Line
+	2500 11500 2450 11500
+Wire Wire Line
+	2450 11600 2500 11600
+Wire Wire Line
+	2500 11700 2450 11700
+Wire Wire Line
+	2450 11800 2500 11800
+Wire Wire Line
+	2500 11900 2450 11900
+Wire Wire Line
+	2450 12000 2500 12000
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 61115EAF
+P 18750 9400
+F 0 "H2" H 18850 9446 50  0000 L CNN
+F 1 "LOGO_REFORM" H 18850 9355 50  0000 L CNN
+F 2 "reform2-motherboard:mntreform" H 18750 9400 50  0001 C CNN
+F 3 "~" H 18750 9400 50  0001 C CNN
+	1    18750 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 611164C9
+P 18750 9650
+F 0 "H3" H 18850 9696 50  0000 L CNN
+F 1 "LABEL_MPCIE1" H 18850 9605 50  0000 L CNN
+F 2 "footprints:label-mpcie" H 18750 9650 50  0001 C CNN
+F 3 "~" H 18750 9650 50  0001 C CNN
+	1    18750 9650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 611177F8
+P 18750 9900
+F 0 "H4" H 18850 9946 50  0000 L CNN
+F 1 "LABEL_MPCIE2" H 18850 9855 50  0000 L CNN
+F 2 "footprints:label-mpcie" H 18750 9900 50  0001 C CNN
+F 3 "~" H 18750 9900 50  0001 C CNN
+	1    18750 9900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

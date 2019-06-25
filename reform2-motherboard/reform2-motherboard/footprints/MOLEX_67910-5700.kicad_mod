@@ -1,9 +1,9 @@
-(module 67910-5700:MOLEX_67910-5700 (layer F.Cu) (tedit 5B16DED1)
+(module MOLEX_67910-5700 (layer F.Cu) (tedit 5D1288FF)
   (attr smd)
   (fp_text reference U7 (at -12.340457 -6.424727) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value "mSATA II" (at -0.190457 -0.124727) (layer F.SilkS) hide
+  (fp_text value mPCIe (at -0.190457 -0.124727) (layer F.SilkS) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start -1 5.1) (end -3.8 5.1) (layer F.SilkS) (width 0.1524))

@@ -20,7 +20,7 @@ U 1 1 5D0E6993
 P 6200 3450
 F 0 "J3" H 6200 4115 50  0000 C CNN
 F 1 "SD_Card" H 6200 4024 50  0000 C CNN
-F 2 "Connector_Card:SD_Kyocera_145638109511859+" H 6200 3450 50  0001 C CNN
+F 2 "footprints:TE_1775059-1" H 6200 3450 50  0001 C CNN
 F 3 "http://portal.fciconnect.com/Comergent//fci/drawing/10067847.pdf" H 6200 3450 50  0001 C CNN
 	1    6200 3450
 	1    0    0    -1  
@@ -147,4 +147,8 @@ Text Notes 5450 2400 0    50   ~ 0
 TODO: isolation / level shift?
 Text Notes 5450 2550 0    50   ~ 0
 TODO: caps
+Text Notes 5600 4250 0    50   ~ 0
+Replace with Molex 5035000993
+Text Notes 5650 4400 0    50   ~ 0
+Replace with TE 1775059-1
 $EndSCHEMATC

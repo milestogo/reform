@@ -835,4 +835,37 @@ Text GLabel 1550 5850 2    50   Input ~ 0
 USB3_2_VBUS
 Text Notes 800  850  0    50   ~ 0
 TODO: pullup/down on ENs?
+$Comp
+L Connector:Conn_01x04_Male J9
+U 1 1 60F17696
+P 3850 3750
+F 0 "J9" H 3958 4031 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 3958 3940 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Horizontal" H 3850 3750 50  0001 C CNN
+F 3 "~" H 3850 3750 50  0001 C CNN
+	1    3850 3750
+	1    0    0    -1  
+$EndComp
+Text GLabel 7000 3750 0    50   Input ~ 0
+USBH_SCL
+Wire Wire Line
+	7000 3750 7450 3750
+Text GLabel 7000 3850 0    50   Input ~ 0
+USBH_SDA
+Wire Wire Line
+	7000 3850 7450 3850
+Text GLabel 6450 7000 0    50   Output ~ 0
+USB2_TX_N
+Text GLabel 6450 7100 0    50   Output ~ 0
+USB2_TX_P
+Text GLabel 6450 7200 0    50   Output ~ 0
+USB2_DN
+Text GLabel 6450 7300 0    50   Output ~ 0
+USB2_DP
+Text GLabel 6450 6800 0    50   Input ~ 0
+USB2_RX_N
+Text GLabel 6450 6900 0    50   Input ~ 0
+USB2_RX_P
+Text Notes 5900 6700 0    50   ~ 0
+TODO: 3rd USB
 $EndSCHEMATC
