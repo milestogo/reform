@@ -43,9 +43,11 @@ L Device:Ferrite_Bead_Small FB3
 U 1 1 5DAC08FC
 P 1900 1800
 F 0 "FB3" H 2000 1846 50  0000 L CNN
-F 1 "Ferrite_Bead_Small" H 2000 1755 50  0000 L CNN
+F 1 "220@100MHz 1.4A" H 2000 1755 50  0000 L CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" V 1830 1800 50  0001 C CNN
 F 3 "~" H 1900 1800 50  0001 C CNN
+F 4 "Murata" H 1900 1800 50  0001 C CNN "Manufacturer"
+F 5 "BLM18PG221SH1D" H 1900 1800 50  0001 C CNN "Manufacturer_No"
 	1    1900 1800
 	1    0    0    -1  
 $EndComp
@@ -190,42 +192,42 @@ Wire Wire Line
 $Comp
 L Device:LED_Small D22
 U 1 1 5DB65D52
-P 4750 3300
-F 0 "D22" H 4750 3535 50  0000 C CNN
-F 1 "LED_WLAN1" H 4750 3444 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" V 4750 3300 50  0001 C CNN
-F 3 "~" V 4750 3300 50  0001 C CNN
-	1    4750 3300
+P 5150 3300
+F 0 "D22" H 5150 3535 50  0000 C CNN
+F 1 "LED_WLAN1" H 5150 3444 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 5150 3300 50  0001 C CNN
+F 3 "~" V 5150 3300 50  0001 C CNN
+	1    5150 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4650 3300 4150 3300
+	5050 3300 4150 3300
 $Comp
 L Device:R_Small R67
 U 1 1 5DB66E46
-P 5100 3300
-F 0 "R67" V 4904 3300 50  0000 C CNN
-F 1 "240" V 4995 3300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5100 3300 50  0001 C CNN
-F 3 "~" H 5100 3300 50  0001 C CNN
-	1    5100 3300
+P 5500 3300
+F 0 "R67" V 5304 3300 50  0000 C CNN
+F 1 "240" V 5395 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5500 3300 50  0001 C CNN
+F 3 "~" H 5500 3300 50  0001 C CNN
+	1    5500 3300
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5000 3300 4850 3300
+	5400 3300 5250 3300
 $Comp
 L power:+3V3 #PWR046
 U 1 1 5DB67DC7
-P 5350 3300
-F 0 "#PWR046" H 5350 3150 50  0001 C CNN
-F 1 "+3V3" H 5365 3473 50  0000 C CNN
-F 2 "" H 5350 3300 50  0001 C CNN
-F 3 "" H 5350 3300 50  0001 C CNN
-	1    5350 3300
+P 5750 3300
+F 0 "#PWR046" H 5750 3150 50  0001 C CNN
+F 1 "+3V3" H 5765 3473 50  0000 C CNN
+F 2 "" H 5750 3300 50  0001 C CNN
+F 3 "" H 5750 3300 50  0001 C CNN
+	1    5750 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5350 3300 5200 3300
+	5750 3300 5600 3300
 Text GLabel 4600 4400 2    50   Input ~ 0
 PCIE_RESETn
 Wire Wire Line
@@ -238,8 +240,6 @@ Wire Wire Line
 	2400 4900 2850 4900
 Wire Wire Line
 	2850 5000 2400 5000
-Text Notes 3200 1400 0    50   ~ 0
-TODO: Latch parts (48099-5701)
 $Comp
 L power:+3V3 #PWR047
 U 1 1 5DB754E3
@@ -256,24 +256,14 @@ L Device:Ferrite_Bead_Small FB4
 U 1 1 5DB754ED
 P 7050 1650
 F 0 "FB4" H 7150 1696 50  0000 L CNN
-F 1 "Ferrite_Bead_Small" H 7150 1605 50  0000 L CNN
+F 1 "220@100MHz 1.4A" H 7150 1605 50  0000 L CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" V 6980 1650 50  0001 C CNN
 F 3 "~" H 7050 1650 50  0001 C CNN
+F 4 "Murata" H 7050 1650 50  0001 C CNN "Manufacturer"
+F 5 "BLM18PG221SH1D" H 7050 1650 50  0001 C CNN "Manufacturer_No"
 	1    7050 1650
 	1    0    0    -1  
 $EndComp
-Text GLabel 8100 4300 0    50   Input ~ 0
-PCIE2_TX_N
-Text GLabel 8100 4000 0    50   Input ~ 0
-PCIE2_RX_N
-Text GLabel 8100 4400 0    50   Input ~ 0
-PCIE2_TX_P
-Text GLabel 8100 4100 0    50   Input ~ 0
-PCIE2_RX_P
-Text GLabel 8100 4600 0    50   Input ~ 0
-PCIE2_CLK_N
-Text GLabel 8100 4700 0    50   Input ~ 0
-PCIE2_CLK_P
 $Comp
 L Device:C_Small C52
 U 1 1 60FC9F01
@@ -399,201 +389,57 @@ M.2 footprint by takigama https://github.com/takigama/KiCADComponents
 Text Notes 7000 800  0    50   ~ 0
 https://superuser.com/questions/946346/are-there-ssds-compatible-with-pcie-x1
 $Comp
-L reform2:1-2199230-5 J10
+L reform2:1-2199230-6 J10
 U 1 1 610031F1
-P 8600 4100
-F 0 "J10" H 8600 6065 50  0000 C CNN
-F 1 "1-2199230-5" H 8600 5974 50  0000 C CNN
-F 2 "footprints:TE_1-2199230-5" H 8600 4100 50  0001 L BNN
-F 3 "" H 8600 4100 50  0001 L BNN
-F 4 "TE Connectivity" H 8600 4100 50  0001 L BNN "Field4"
-F 5 "1-2199230-5" H 8600 4100 50  0001 L BNN "Field5"
-F 6 "Conn Edge Dual Fmale 67pos 0.020" H 8600 4100 50  0001 L BNN "Field6"
-F 7 "https://www.te.com/usa-en/product-1-2199230-5.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493" H 8600 4100 50  0001 L BNN "Field7"
-F 8 "None" H 8600 4100 50  0001 L BNN "Field8"
-F 9 "1-2199230-5" H 8600 4100 50  0001 L BNN "Field9"
-F 10 "A124992CT-ND" H 8600 4100 50  0001 L BNN "Field10"
-F 11 "https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/1-2199230-5/A124992CT-ND/6810693?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 8600 4100 50  0001 L BNN "Field11"
-	1    8600 4100
+P 8600 4250
+F 0 "J10" H 8600 2100 50  0000 C CNN
+F 1 "1-2199230-6" H 8600 2200 50  0000 C CNN
+F 2 "footprints:TE_1-2199230-5" H 8600 4250 50  0001 L BNN
+F 3 "" H 8600 4250 50  0001 L BNN
+F 4 "TE Connectivity" H 8600 4250 50  0001 L BNN "Field4"
+F 5 "1-2199230-5" H 8600 4250 50  0001 L BNN "Field5"
+F 6 "Conn Edge Dual Fmale 67pos 0.020" H 8600 4250 50  0001 L BNN "Field6"
+F 7 "https://www.te.com/usa-en/product-1-2199230-5.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493" H 8600 4250 50  0001 L BNN "Field7"
+F 8 "None" H 8600 4250 50  0001 L BNN "Field8"
+F 9 "1-2199230-5" H 8600 4250 50  0001 L BNN "Field9"
+F 10 "A124992CT-ND" H 8600 4250 50  0001 L BNN "Field10"
+F 11 "https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/1-2199230-5/A124992CT-ND/6810693?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 8600 4250 50  0001 L BNN "Field11"
+	1    8600 4250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9750 2400 9100 2400
 Text Notes 7000 950  0    50   ~ 0
 https://pinoutguide.com/HD/M.2_NGFF_connector_pinout.shtml
-Wire Wire Line
-	9100 2500 9750 2500
-Wire Wire Line
-	9750 2500 9750 2400
-Connection ~ 9750 2400
-$Comp
-L power:GND #PWR0175
-U 1 1 610114A2
-P 7300 2550
-F 0 "#PWR0175" H 7300 2300 50  0001 C CNN
-F 1 "GND" H 7305 2377 50  0000 C CNN
-F 2 "" H 7300 2550 50  0001 C CNN
-F 3 "" H 7300 2550 50  0001 C CNN
-	1    7300 2550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8100 2500 7300 2500
-Wire Wire Line
-	7300 2500 7300 2550
-NoConn ~ 8100 2600
-NoConn ~ 9100 2600
-NoConn ~ 9100 2700
-NoConn ~ 8100 2700
-NoConn ~ 8100 2800
-NoConn ~ 8100 2900
-NoConn ~ 9100 3300
-NoConn ~ 9100 3400
-NoConn ~ 9100 3000
-NoConn ~ 9100 3100
-NoConn ~ 9100 3200
-NoConn ~ 8100 3100
-NoConn ~ 8100 3200
-NoConn ~ 9100 3900
-NoConn ~ 9100 4000
-$Comp
-L power:GND #PWR0176
-U 1 1 6102FA41
-P 7300 5800
-F 0 "#PWR0176" H 7300 5550 50  0001 C CNN
-F 1 "GND" H 7305 5627 50  0000 C CNN
-F 2 "" H 7300 5800 50  0001 C CNN
-F 3 "" H 7300 5800 50  0001 C CNN
-	1    7300 5800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7300 5800 7300 5600
-Wire Wire Line
-	7300 4200 8100 4200
-Wire Wire Line
-	8100 3900 7300 3900
-Wire Wire Line
-	7300 3900 7300 4200
-Connection ~ 7300 4200
-NoConn ~ 8100 3800
-NoConn ~ 8100 3700
-NoConn ~ 8100 3500
-NoConn ~ 8100 3400
-Text Notes 7800 3850 0    50   ~ 0
-PETp1
-Text Notes 7800 3750 0    50   ~ 0
-PETn1
-Text Notes 7800 3150 0    50   ~ 0
-PETn2
-Text Notes 7800 3250 0    50   ~ 0
-PETp2
-Text Notes 7800 3550 0    50   ~ 0
-PERp1
-Text Notes 7800 3450 0    50   ~ 0
-PERn1
-Wire Wire Line
-	7300 3900 7300 3600
-Wire Wire Line
-	7300 3600 8100 3600
-Connection ~ 7300 3900
-Wire Wire Line
-	8100 3300 7300 3300
-Wire Wire Line
-	7300 3300 7300 3600
-Connection ~ 7300 3600
-Text Notes 7650 3050 0    50   ~ 0
-CONFIG_0
-Text Notes 7650 2450 0    50   ~ 0
-CONFIG_3
-Text Label 9100 2800 0    50   ~ 0
-M2_DAS_DSS
-NoConn ~ 9100 2900
-NoConn ~ 9100 3500
-NoConn ~ 9100 3600
-NoConn ~ 9100 3700
-Text Label 9100 3800 0    50   ~ 0
-M2_DEVSLP
-NoConn ~ 9100 4100
-NoConn ~ 9100 4200
-NoConn ~ 9100 4300
-Text Label 9100 4400 0    50   ~ 0
-M2_NPERST
-Wire Wire Line
-	8100 4500 7300 4500
-Connection ~ 7300 4500
-Wire Wire Line
-	7300 4500 7300 4200
-Wire Wire Line
-	8100 4800 7300 4800
-Connection ~ 7300 4800
-Wire Wire Line
-	7300 4800 7300 4500
-NoConn ~ 8100 5100
-NoConn ~ 8100 5200
-NoConn ~ 8100 5300
-NoConn ~ 8100 4900
-NoConn ~ 8100 5000
-NoConn ~ 9100 4900
-NoConn ~ 9100 5000
-NoConn ~ 9100 5100
-NoConn ~ 9100 5200
-Text Label 9100 5300 0    50   ~ 0
-M2_SUSCLK
-Text Notes 7700 5450 0    50   ~ 0
-CONFIG_1
-Wire Wire Line
-	8100 5500 7300 5500
-Connection ~ 7300 5500
-Wire Wire Line
-	7300 5500 7300 4800
-Wire Wire Line
-	8100 5600 7300 5600
-Connection ~ 7300 5600
-Wire Wire Line
-	7300 5600 7300 5500
-Text Notes 7700 5750 0    50   ~ 0
-CONFIG_2
-Text Label 9100 4600 0    50   ~ 0
-M2_NPEWAKE
-Text Notes 9700 4600 0    50   ~ 0
+NoConn ~ 9000 3250
+NoConn ~ 9000 3350
+NoConn ~ 9000 3750
+NoConn ~ 9000 3850
+NoConn ~ 9000 3450
+NoConn ~ 9000 3550
+NoConn ~ 9000 3650
+NoConn ~ 9000 3950
+NoConn ~ 9000 4050
+NoConn ~ 9000 4150
+Text Label 9000 4750 0    50   ~ 0
+M2_PERSTn
+Text Notes 10000 4600 0    50   ~ 0
 Pull Up?
-NoConn ~ 9100 4800
-NoConn ~ 9100 4700
-Wire Wire Line
-	9750 2500 9750 5400
-Wire Wire Line
-	9750 5400 9100 5400
-Connection ~ 9750 2500
-Wire Wire Line
-	9100 5500 9750 5500
-Wire Wire Line
-	9750 5500 9750 5400
-Connection ~ 9750 5400
-Wire Wire Line
-	9100 5600 9750 5600
-Wire Wire Line
-	9750 5600 9750 5500
-Connection ~ 9750 5500
 $Comp
 L power:GND #PWR0177
 U 1 1 610897DE
-P 9300 5900
-F 0 "#PWR0177" H 9300 5650 50  0001 C CNN
-F 1 "GND" H 9305 5727 50  0000 C CNN
-F 2 "" H 9300 5900 50  0001 C CNN
-F 3 "" H 9300 5900 50  0001 C CNN
-	1    9300 5900
+P 9200 6250
+F 0 "#PWR0177" H 9200 6000 50  0001 C CNN
+F 1 "GND" H 9205 6077 50  0000 C CNN
+F 2 "" H 9200 6250 50  0001 C CNN
+F 3 "" H 9200 6250 50  0001 C CNN
+	1    9200 6250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9100 5800 9300 5800
+	9000 6150 9200 6150
 Wire Wire Line
-	9300 5800 9300 5900
-Text GLabel 9850 4400 2    50   Input ~ 0
+	9200 6150 9200 6250
+Text GLabel 9850 4750 2    50   Input ~ 0
 PCIE_RESETn
-Wire Wire Line
-	9850 4400 9100 4400
 $Comp
 L Device:C_Small C58
 U 1 1 6109426D
@@ -707,8 +553,6 @@ Wire Wire Line
 	7050 1800 7400 1800
 Wire Wire Line
 	9400 1800 9750 1800
-Wire Wire Line
-	9750 1800 9750 2400
 Connection ~ 9400 1800
 $Comp
 L Mechanical:MountingHole_Pad H1
@@ -790,4 +634,458 @@ Wire Wire Line
 Wire Wire Line
 	3900 6300 3900 6400
 Connection ~ 3900 6400
+NoConn ~ 8200 5750
+Text Notes 7900 3800 0    50   ~ 0
+PERn1
+Text Notes 7900 3900 0    50   ~ 0
+PERp1
+Text Notes 7900 3600 0    50   ~ 0
+PETp2
+Text Notes 7900 3500 0    50   ~ 0
+PETn2
+Text Notes 7900 4100 0    50   ~ 0
+PETn1
+Text Notes 7900 4200 0    50   ~ 0
+PETp1
+NoConn ~ 8200 3750
+NoConn ~ 8200 3850
+$Comp
+L power:GND #PWR0176
+U 1 1 6102FA41
+P 7300 6250
+F 0 "#PWR0176" H 7300 6000 50  0001 C CNN
+F 1 "GND" H 7305 6077 50  0000 C CNN
+F 2 "" H 7300 6250 50  0001 C CNN
+F 3 "" H 7300 6250 50  0001 C CNN
+	1    7300 6250
+	1    0    0    -1  
+$EndComp
+Text GLabel 8200 5050 0    50   Input ~ 0
+PCIE2_CLK_P
+Text GLabel 8200 4950 0    50   Input ~ 0
+PCIE2_CLK_N
+Text GLabel 8200 4450 0    50   Output ~ 0
+PCIE2_RX_P
+Text GLabel 6500 4750 0    50   Input ~ 0
+PCIE2_TX_P
+Text GLabel 8200 4350 0    50   Output ~ 0
+PCIE2_RX_N
+Text GLabel 6500 4650 0    50   Input ~ 0
+PCIE2_TX_N
+Wire Wire Line
+	9750 1800 9750 2350
+NoConn ~ 9000 5650
+Wire Wire Line
+	8200 4550 7300 4550
+Connection ~ 7300 4550
+Wire Wire Line
+	7300 4550 7300 4850
+Wire Wire Line
+	8200 4850 7300 4850
+Connection ~ 7300 4850
+Wire Wire Line
+	7300 4850 7300 5150
+Wire Wire Line
+	8200 5150 7300 5150
+Connection ~ 7300 5150
+Wire Wire Line
+	7300 5150 7300 5850
+Wire Wire Line
+	8200 4250 7300 4250
+Connection ~ 7300 4250
+Wire Wire Line
+	7300 4250 7300 4550
+Wire Wire Line
+	9000 2850 9750 2850
+Connection ~ 9750 2850
+Wire Wire Line
+	9750 2850 9750 2950
+Wire Wire Line
+	9000 2950 9750 2950
+Connection ~ 9750 2950
+Wire Wire Line
+	9750 2950 9750 3050
+Wire Wire Line
+	9750 3050 9000 3050
+Connection ~ 9750 3050
+Wire Wire Line
+	9750 3050 9750 3150
+Wire Wire Line
+	9000 3150 9750 3150
+Connection ~ 9750 3150
+$Comp
+L Device:LED_Small D?
+U 1 1 5D21DAF3
+P 9250 2750
+F 0 "D?" H 9250 2985 50  0000 C CNN
+F 1 "LED_NVME" H 9250 2894 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 9250 2750 50  0001 C CNN
+F 3 "~" V 9250 2750 50  0001 C CNN
+	1    9250 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 2750 9000 2750
+$Comp
+L Device:R_Small R?
+U 1 1 5D21DAFE
+P 9550 2750
+F 0 "R?" V 9354 2750 50  0000 C CNN
+F 1 "240" V 9445 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9550 2750 50  0001 C CNN
+F 3 "~" H 9550 2750 50  0001 C CNN
+	1    9550 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9450 2750 9350 2750
+Wire Wire Line
+	9750 2750 9650 2750
+Connection ~ 9750 2750
+Wire Wire Line
+	9750 2750 9750 2850
+NoConn ~ 9000 2650
+NoConn ~ 9000 2550
+Wire Wire Line
+	9000 2350 9750 2350
+Connection ~ 9750 2350
+Wire Wire Line
+	9750 2350 9750 2450
+Wire Wire Line
+	9750 2450 9000 2450
+Connection ~ 9750 2450
+Wire Wire Line
+	9750 2450 9750 2750
+Wire Wire Line
+	7300 2350 8200 2350
+Wire Wire Line
+	8200 2450 7300 2450
+Connection ~ 7300 2450
+Wire Wire Line
+	7300 2450 7300 2350
+Wire Wire Line
+	7300 2450 7300 2750
+Text Notes 7900 3200 0    50   ~ 0
+PERn2
+Text Notes 7900 3300 0    50   ~ 0
+PERp2
+NoConn ~ 8200 3250
+NoConn ~ 8200 3150
+Text Notes 7900 3000 0    50   ~ 0
+PETp3
+Text Notes 7900 2900 0    50   ~ 0
+PETn3
+Text Notes 7900 2600 0    50   ~ 0
+PERn3
+Text Notes 7900 2700 0    50   ~ 0
+PERp3
+Wire Wire Line
+	8200 2750 7300 2750
+Connection ~ 7300 2750
+Wire Wire Line
+	7300 2750 7300 2850
+Wire Wire Line
+	8200 3050 7300 3050
+Connection ~ 7300 3050
+Wire Wire Line
+	7300 3050 7300 3350
+Wire Wire Line
+	8200 3350 7300 3350
+Connection ~ 7300 3350
+Wire Wire Line
+	7300 3350 7300 3450
+Wire Wire Line
+	8200 3650 7300 3650
+Connection ~ 7300 3650
+Wire Wire Line
+	8200 3950 7300 3950
+Wire Wire Line
+	7300 3650 7300 3950
+Connection ~ 7300 3950
+Wire Wire Line
+	7300 3950 7300 4050
+Wire Wire Line
+	9850 4750 9000 4750
+Text Label 9000 4350 0    50   ~ 0
+M2_SMB_DATA
+Text Label 9000 4250 0    50   ~ 0
+M2_SMB_CLK
+Text Label 9000 4450 0    50   ~ 0
+M2_SMB_ALERTn
+NoConn ~ 9000 4550
+NoConn ~ 9000 4650
+Text Label 9000 4850 0    50   ~ 0
+M2_CLKREQn
+NoConn ~ 9000 4950
+NoConn ~ 9000 5050
+NoConn ~ 9000 5150
+Wire Wire Line
+	9750 5950 9000 5950
+Wire Wire Line
+	9750 3150 9750 5750
+Wire Wire Line
+	9000 5850 9750 5850
+Connection ~ 9750 5850
+Wire Wire Line
+	9750 5850 9750 5950
+Wire Wire Line
+	9750 5750 9000 5750
+Connection ~ 9750 5750
+Wire Wire Line
+	9750 5750 9750 5850
+NoConn ~ 8200 5650
+Wire Wire Line
+	8200 5850 7300 5850
+Connection ~ 7300 5850
+Wire Wire Line
+	7300 5850 7300 5950
+Wire Wire Line
+	7300 5950 8200 5950
+Connection ~ 7300 5950
+Wire Wire Line
+	7300 5950 7300 6050
+Wire Wire Line
+	8200 6050 7300 6050
+Connection ~ 7300 6050
+Wire Wire Line
+	7300 6050 7300 6250
+NoConn ~ 8200 2550
+NoConn ~ 8200 2650
+$Comp
+L Device:R_Small R?
+U 1 1 5D2DBE2E
+P 7700 2850
+F 0 "R?" V 7600 2850 50  0000 C CNN
+F 1 "0" V 7700 2850 50  0000 C CNN
+F 2 "" H 7700 2850 50  0001 C CNN
+F 3 "~" H 7700 2850 50  0001 C CNN
+	1    7700 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5D2DCFF0
+P 7450 2950
+F 0 "R?" V 7350 2950 50  0000 C CNN
+F 1 "0" V 7450 2950 50  0000 C CNN
+F 2 "" H 7450 2950 50  0001 C CNN
+F 3 "~" H 7450 2950 50  0001 C CNN
+	1    7450 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7350 2950 7300 2950
+Connection ~ 7300 2950
+Wire Wire Line
+	7300 2950 7300 3050
+Wire Wire Line
+	7300 2850 7600 2850
+Connection ~ 7300 2850
+Wire Wire Line
+	7300 2850 7300 2950
+Wire Wire Line
+	7550 2950 8200 2950
+Wire Wire Line
+	8200 2850 7800 2850
+$Comp
+L Device:R_Small R?
+U 1 1 5D2F70BD
+P 7700 3450
+F 0 "R?" V 7600 3450 50  0000 C CNN
+F 1 "0" V 7700 3450 50  0000 C CNN
+F 2 "" H 7700 3450 50  0001 C CNN
+F 3 "~" H 7700 3450 50  0001 C CNN
+	1    7700 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5D2F70C7
+P 7450 3550
+F 0 "R?" V 7350 3550 50  0000 C CNN
+F 1 "0" V 7450 3550 50  0000 C CNN
+F 2 "" H 7450 3550 50  0001 C CNN
+F 3 "~" H 7450 3550 50  0001 C CNN
+	1    7450 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 3450 7600 3450
+Wire Wire Line
+	7550 3550 8200 3550
+Wire Wire Line
+	8200 3450 7800 3450
+Connection ~ 7300 3450
+Wire Wire Line
+	7300 3450 7300 3550
+Wire Wire Line
+	7350 3550 7300 3550
+Connection ~ 7300 3550
+Wire Wire Line
+	7300 3550 7300 3650
+$Comp
+L Device:R_Small R?
+U 1 1 5D304129
+P 7700 4050
+F 0 "R?" V 7600 4050 50  0000 C CNN
+F 1 "0" V 7700 4050 50  0000 C CNN
+F 2 "" H 7700 4050 50  0001 C CNN
+F 3 "~" H 7700 4050 50  0001 C CNN
+	1    7700 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5D304133
+P 7450 4150
+F 0 "R?" V 7350 4150 50  0000 C CNN
+F 1 "0" V 7450 4150 50  0000 C CNN
+F 2 "" H 7450 4150 50  0001 C CNN
+F 3 "~" H 7450 4150 50  0001 C CNN
+	1    7450 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 4050 7600 4050
+Wire Wire Line
+	7550 4150 8200 4150
+Wire Wire Line
+	8200 4050 7800 4050
+Wire Wire Line
+	7350 4150 7300 4150
+Connection ~ 7300 4050
+Wire Wire Line
+	7300 4050 7300 4150
+Connection ~ 7300 4150
+Wire Wire Line
+	7300 4150 7300 4250
+$Comp
+L Device:C_Small C?
+U 1 1 5D313053
+P 7050 4650
+F 0 "C?" V 6821 4650 50  0000 C CNN
+F 1 "100nF" V 6912 4650 50  0000 C CNN
+F 2 "" H 7050 4650 50  0001 C CNN
+F 3 "~" H 7050 4650 50  0001 C CNN
+	1    7050 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D319B59
+P 6750 4750
+F 0 "C?" V 6521 4750 50  0000 C CNN
+F 1 "100nF" V 6612 4750 50  0000 C CNN
+F 2 "" H 6750 4750 50  0001 C CNN
+F 3 "~" H 6750 4750 50  0001 C CNN
+	1    6750 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 4750 6650 4750
+Wire Wire Line
+	6500 4650 6950 4650
+Wire Wire Line
+	7150 4650 8200 4650
+Wire Wire Line
+	8200 4750 6850 4750
+Text Notes 6100 3600 0    50   ~ 0
+Thanks to Austin @ ZII for\nlane wrangling info!
+NoConn ~ 2850 2900
+NoConn ~ 2850 3000
+NoConn ~ 2850 3100
+NoConn ~ 2850 3200
+NoConn ~ 2850 4500
+NoConn ~ 2850 4600
+NoConn ~ 2850 5200
+NoConn ~ 2850 5300
+NoConn ~ 2850 5400
+NoConn ~ 2850 5500
+NoConn ~ 4150 5200
+NoConn ~ 4150 5100
+NoConn ~ 4150 5000
+NoConn ~ 4150 4900
+NoConn ~ 4150 4800
+NoConn ~ 9000 4850
+Text GLabel 4600 4500 2    50   Input ~ 0
+PCIE_WDISn
+Wire Wire Line
+	4600 4500 4150 4500
+$Comp
+L Device:C_Small C?
+U 1 1 5D6779B0
+P 5200 2400
+F 0 "C?" H 5292 2446 50  0000 L CNN
+F 1 "10uF" H 5292 2355 50  0000 L CNN
+F 2 "" H 5200 2400 50  0001 C CNN
+F 3 "~" H 5200 2400 50  0001 C CNN
+	1    5200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D677BF9
+P 4800 2400
+F 0 "C?" H 4892 2446 50  0000 L CNN
+F 1 "0.1uF" H 4892 2355 50  0000 L CNN
+F 2 "" H 4800 2400 50  0001 C CNN
+F 3 "~" H 4800 2400 50  0001 C CNN
+	1    4800 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V5 #PWR?
+U 1 1 5D678680
+P 5550 2250
+F 0 "#PWR?" H 5550 2100 50  0001 C CNN
+F 1 "+1V5" H 5565 2423 50  0000 C CNN
+F 2 "" H 5550 2250 50  0001 C CNN
+F 3 "" H 5550 2250 50  0001 C CNN
+	1    5550 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 2250 5550 2300
+Wire Wire Line
+	5550 2300 5200 2300
+Connection ~ 5200 2300
+Wire Wire Line
+	5200 2300 4800 2300
+$Comp
+L power:GND #PWR?
+U 1 1 5D67FFE8
+P 5200 2650
+F 0 "#PWR?" H 5200 2400 50  0001 C CNN
+F 1 "GND" H 5205 2477 50  0000 C CNN
+F 2 "" H 5200 2650 50  0001 C CNN
+F 3 "" H 5200 2650 50  0001 C CNN
+	1    5200 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2550 4800 2500
+Wire Wire Line
+	4800 2550 5200 2550
+Wire Wire Line
+	5200 2550 5200 2500
+Wire Wire Line
+	5200 2550 5200 2650
+Connection ~ 5200 2550
+Wire Wire Line
+	4800 2300 4500 2300
+Wire Wire Line
+	4500 2300 4500 3100
+Wire Wire Line
+	4500 5300 4150 5300
+Connection ~ 4800 2300
+Wire Wire Line
+	4150 3100 4500 3100
+Connection ~ 4500 3100
+Wire Wire Line
+	4500 3100 4500 4100
+Wire Wire Line
+	4150 4100 4500 4100
+Connection ~ 4500 4100
+Wire Wire Line
+	4500 4100 4500 5300
 $EndSCHEMATC

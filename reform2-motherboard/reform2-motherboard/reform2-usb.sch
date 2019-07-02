@@ -30,99 +30,100 @@ $EndComp
 $Comp
 L reform2-motherboard-rescue:Crystal_Small-reform-motherboard-rescue Y1
 U 1 1 5D1A9B07
-P 6700 2350
+P 5800 2350
 AR Path="/5D1A9B07" Ref="Y1"  Part="1" 
 AR Path="/5D06A2FD/5D1A9B07" Ref="Y1"  Part="1" 
-F 0 "Y1" H 6700 2450 50  0000 C CNN
-F 1 "24MHz" H 6700 2250 50  0000 C CNN
-F 2 "Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm" H 6700 2350 50  0001 C CNN
-F 3 "" H 6700 2350 50  0001 C CNN
-	1    6700 2350
+F 0 "Y1" H 5800 2450 50  0000 C CNN
+F 1 "24MHz" H 5800 2250 50  0000 C CNN
+F 2 "Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm" H 5800 2350 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/3/ABM8AIG-783590.pdf" H 5800 2350 50  0001 C CNN
+F 4 "ABM8AIG" H 5800 2350 50  0001 C CNN "Manufacturer_No"
+	1    5800 2350
 	1    0    0    -1  
 $EndComp
 $Comp
 L reform2-motherboard-rescue:R_Small-reform-motherboard-rescue R41
 U 1 1 5D1A9B0D
-P 6700 2100
+P 5800 2100
 AR Path="/5D1A9B0D" Ref="R41"  Part="1" 
 AR Path="/5D06A2FD/5D1A9B0D" Ref="R41"  Part="1" 
-F 0 "R41" H 6730 2120 50  0000 L CNN
-F 1 "1M" H 6730 2060 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6700 2100 50  0001 C CNN
-F 3 "" H 6700 2100 50  0001 C CNN
-	1    6700 2100
+F 0 "R41" H 5830 2120 50  0000 L CNN
+F 1 "1M" H 5830 2060 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5800 2100 50  0001 C CNN
+F 3 "" H 5800 2100 50  0001 C CNN
+	1    5800 2100
 	0    -1   -1   0   
 $EndComp
 $Comp
 L reform2-motherboard-rescue:C_Small-reform-motherboard-rescue C21
 U 1 1 5D1A9B13
-P 7000 2450
+P 6100 2450
 AR Path="/5D1A9B13" Ref="C21"  Part="1" 
 AR Path="/5D06A2FD/5D1A9B13" Ref="C21"  Part="1" 
-F 0 "C21" H 7010 2520 50  0000 L CNN
-F 1 "18pF" H 7010 2370 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7000 2450 50  0001 C CNN
-F 3 "" H 7000 2450 50  0001 C CNN
-	1    7000 2450
+F 0 "C21" H 6110 2520 50  0000 L CNN
+F 1 "18pF" H 6110 2370 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6100 2450 50  0001 C CNN
+F 3 "" H 6100 2450 50  0001 C CNN
+	1    6100 2450
 	1    0    0    -1  
 $EndComp
 $Comp
 L reform2-motherboard-rescue:GND-reform-motherboard-rescue #PWR0136
 U 1 1 5D1A9B19
-P 7000 2550
+P 6100 2550
 AR Path="/5D1A9B19" Ref="#PWR0136"  Part="1" 
 AR Path="/5D06A2FD/5D1A9B19" Ref="#PWR0136"  Part="1" 
-F 0 "#PWR0136" H 7000 2300 50  0001 C CNN
-F 1 "GND" H 7000 2400 50  0000 C CNN
-F 2 "" H 7000 2550 50  0001 C CNN
-F 3 "" H 7000 2550 50  0001 C CNN
-	1    7000 2550
+F 0 "#PWR0136" H 6100 2300 50  0001 C CNN
+F 1 "GND" H 6100 2400 50  0000 C CNN
+F 2 "" H 6100 2550 50  0001 C CNN
+F 3 "" H 6100 2550 50  0001 C CNN
+	1    6100 2550
 	1    0    0    -1  
 $EndComp
 $Comp
 L reform2-motherboard-rescue:C_Small-reform-motherboard-rescue C20
 U 1 1 5D1A9B1F
-P 6400 2450
+P 5500 2450
 AR Path="/5D1A9B1F" Ref="C20"  Part="1" 
 AR Path="/5D06A2FD/5D1A9B1F" Ref="C20"  Part="1" 
-F 0 "C20" H 6410 2520 50  0000 L CNN
-F 1 "18pF" H 6410 2370 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6400 2450 50  0001 C CNN
-F 3 "" H 6400 2450 50  0001 C CNN
-	1    6400 2450
+F 0 "C20" H 5510 2520 50  0000 L CNN
+F 1 "18pF" H 5510 2370 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5500 2450 50  0001 C CNN
+F 3 "" H 5500 2450 50  0001 C CNN
+	1    5500 2450
 	1    0    0    -1  
 $EndComp
 $Comp
 L reform2-motherboard-rescue:GND-reform-motherboard-rescue #PWR0137
 U 1 1 5D1A9B25
-P 6400 2550
+P 5500 2550
 AR Path="/5D1A9B25" Ref="#PWR0137"  Part="1" 
 AR Path="/5D06A2FD/5D1A9B25" Ref="#PWR0137"  Part="1" 
-F 0 "#PWR0137" H 6400 2300 50  0001 C CNN
-F 1 "GND" H 6400 2400 50  0000 C CNN
-F 2 "" H 6400 2550 50  0001 C CNN
-F 3 "" H 6400 2550 50  0001 C CNN
-	1    6400 2550
+F 0 "#PWR0137" H 5500 2300 50  0001 C CNN
+F 1 "GND" H 5500 2400 50  0000 C CNN
+F 2 "" H 5500 2550 50  0001 C CNN
+F 3 "" H 5500 2550 50  0001 C CNN
+	1    5500 2550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6800 2350 7000 2350
+	5900 2350 6100 2350
 Wire Wire Line
-	6200 2350 6400 2350
-Connection ~ 6400 2350
-Connection ~ 7000 2350
+	5300 2350 5500 2350
+Connection ~ 5500 2350
+Connection ~ 6100 2350
 Wire Wire Line
-	6400 2350 6400 2100
+	5500 2350 5500 2100
 Wire Wire Line
-	6400 2100 6600 2100
+	5500 2100 5700 2100
 Wire Wire Line
-	6800 2100 7000 2100
+	5900 2100 6100 2100
 Wire Wire Line
-	7000 2100 7000 2350
+	6100 2100 6100 2350
 Wire Wire Line
-	6400 2350 6600 2350
+	5500 2350 5700 2350
 Wire Wire Line
-	7000 2350 7250 2350
+	6100 2350 6400 2350
 Text GLabel 6150 3050 0    50   Output ~ 0
 USB1_TX_N
 Text GLabel 6150 2950 0    50   Output ~ 0
@@ -640,13 +641,13 @@ F 3 "http://www.ti.com/lit/ds/symlink/tps2561.pdf" H 3900 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7250 2350 7250 2650
+	6400 2350 6400 2650
 Wire Wire Line
-	7250 2650 7450 2650
+	6400 2650 7450 2650
 Wire Wire Line
-	6200 2350 6200 2750
+	5300 2350 5300 2750
 Wire Wire Line
-	6200 2750 7450 2750
+	5300 2750 7450 2750
 Wire Wire Line
 	7000 1300 7400 1300
 Wire Wire Line
@@ -659,9 +660,11 @@ L Device:Ferrite_Bead_Small FB2
 U 1 1 5DA4FAF9
 P 9050 1100
 F 0 "FB2" H 9150 1146 50  0000 L CNN
-F 1 "220@100MHz" H 9150 1055 50  0000 L CNN
+F 1 "220@100MHz 1.4A" H 9150 1055 50  0000 L CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" V 8980 1100 50  0001 C CNN
 F 3 "~" H 9050 1100 50  0001 C CNN
+F 4 "Murata" H 9050 1100 50  0001 C CNN "Manufacturer"
+F 5 "BLM18PG221SH1D" H 9050 1100 50  0001 C CNN "Manufacturer_No"
 	1    9050 1100
 	1    0    0    -1  
 $EndComp
@@ -670,9 +673,11 @@ L Device:Ferrite_Bead_Small FB1
 U 1 1 5DA53C5D
 P 7850 1100
 F 0 "FB1" H 7950 1146 50  0000 L CNN
-F 1 "220@100MHz" H 7950 1055 50  0000 L CNN
+F 1 "220@100MHz 1.4A" H 7950 1055 50  0000 L CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" V 7780 1100 50  0001 C CNN
 F 3 "~" H 7850 1100 50  0001 C CNN
+F 4 "BLM18PG221SH1D" H 7850 1100 50  0001 C CNN "Manufacturer_No"
+F 5 "Murata" H 7850 1100 50  0001 C CNN "Manufacturer"
 	1    7850 1100
 	1    0    0    -1  
 $EndComp
@@ -840,7 +845,7 @@ L Connector:Conn_01x04_Male J9
 U 1 1 60F17696
 P 3850 3750
 F 0 "J9" H 3958 4031 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 3958 3940 50  0000 C CNN
+F 1 "USB_INT1" H 3958 3940 50  0000 C CNN
 F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Horizontal" H 3850 3750 50  0001 C CNN
 F 3 "~" H 3850 3750 50  0001 C CNN
 	1    3850 3750
@@ -868,4 +873,32 @@ Text GLabel 6450 6900 0    50   Input ~ 0
 USB2_RX_P
 Text Notes 5900 6700 0    50   ~ 0
 TODO: 3rd USB
+$Comp
+L Connector:Conn_01x04_Male J14
+U 1 1 5DBC25D6
+P 4650 3750
+F 0 "J14" H 4758 4031 50  0000 C CNN
+F 1 "USB_INT2" H 4758 3940 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Horizontal" H 4650 3750 50  0001 C CNN
+F 3 "~" H 4650 3750 50  0001 C CNN
+	1    4650 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5D907271
+P 7300 2450
+F 0 "R?" V 7200 2450 50  0000 C CNN
+F 1 "0" V 7300 2450 50  0000 C CNN
+F 2 "" H 7300 2450 50  0001 C CNN
+F 3 "~" H 7300 2450 50  0001 C CNN
+	1    7300 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 2450 7450 2450
+Text GLabel 7100 2450 0    50   Input ~ 0
+USB_RESETn
+Wire Wire Line
+	7100 2450 7200 2450
 $EndSCHEMATC
