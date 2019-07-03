@@ -6,12 +6,12 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 9
 Title "MNT Reform 2 Ethernet"
-Date "2019-06-21"
+Date "2019-07-03"
 Rev "0.1"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
-Comment3 ""
+Comment3 "License: GPL v3+"
 Comment4 ""
 $EndDescr
 $Comp

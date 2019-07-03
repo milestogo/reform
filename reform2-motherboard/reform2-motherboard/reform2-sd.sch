@@ -6,12 +6,12 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 9
 Title "MNT Reform 2 SD Card"
-Date "2019-06-21"
+Date "2019-07-03"
 Rev "0.1"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
-Comment3 ""
+Comment3 "License: GPL v3+"
 Comment4 ""
 $EndDescr
 $Comp
@@ -37,9 +37,9 @@ Text GLabel 4450 3250 0    50   Input ~ 0
 SD2_CMD
 Text GLabel 4450 3550 0    50   Input ~ 0
 SD2_CLK
-Text GLabel 7550 3350 2    50   Input ~ 0
+Text GLabel 7550 3350 2    50   Output ~ 0
 SD2_WP
-Text GLabel 7550 3250 2    50   Input ~ 0
+Text GLabel 7550 3250 2    50   Output ~ 0
 SD2_CD
 Wire Wire Line
 	4450 3050 5300 3050
@@ -85,16 +85,14 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR0152
 U 1 1 5D1CC1EA
-P 4850 2750
-F 0 "#PWR0152" H 4850 2600 50  0001 C CNN
-F 1 "+3V3" H 4865 2923 50  0000 C CNN
-F 2 "" H 4850 2750 50  0001 C CNN
-F 3 "" H 4850 2750 50  0001 C CNN
-	1    4850 2750
+P 4050 2400
+F 0 "#PWR0152" H 4050 2250 50  0001 C CNN
+F 1 "+3V3" H 4065 2573 50  0000 C CNN
+F 2 "" H 4050 2400 50  0001 C CNN
+F 3 "" H 4050 2400 50  0001 C CNN
+	1    4050 2400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4850 2750 4850 3450
 Wire Wire Line
 	4850 3450 5300 3450
 $Comp
@@ -144,11 +142,59 @@ Wire Wire Line
 	7200 3550 7200 3650
 Connection ~ 7200 3650
 Text Notes 5450 2400 0    50   ~ 0
-TODO: isolation / level shift?
-Text Notes 5450 2550 0    50   ~ 0
-TODO: caps
+TODO: ESD diodes
+Text Notes 5450 2200 0    50   ~ 0
+TODO: CD/WP polarity?
 Text Notes 5600 4250 0    50   ~ 0
 Replace with Molex 5035000993
 Text Notes 5650 4400 0    50   ~ 0
 Replace with TE 1775059-1
+$Comp
+L Device:C_Small C?
+U 1 1 5EE5821E
+P 4050 2550
+F 0 "C?" H 4142 2596 50  0000 L CNN
+F 1 "47uF" H 4142 2505 50  0000 L CNN
+F 2 "" H 4050 2550 50  0001 C CNN
+F 3 "~" H 4050 2550 50  0001 C CNN
+	1    4050 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EE585F1
+P 4400 2550
+F 0 "C?" H 4492 2596 50  0000 L CNN
+F 1 "0.1uF" H 4492 2505 50  0000 L CNN
+F 2 "" H 4400 2550 50  0001 C CNN
+F 3 "~" H 4400 2550 50  0001 C CNN
+	1    4400 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2450 4400 2450
+Wire Wire Line
+	4850 2450 4850 3450
+Wire Wire Line
+	4400 2450 4050 2450
+Connection ~ 4400 2450
+Wire Wire Line
+	4050 2400 4050 2450
+Connection ~ 4050 2450
+$Comp
+L power:GND #PWR?
+U 1 1 5EE59DFE
+P 4050 2700
+F 0 "#PWR?" H 4050 2450 50  0001 C CNN
+F 1 "GND" H 4055 2527 50  0000 C CNN
+F 2 "" H 4050 2700 50  0001 C CNN
+F 3 "" H 4050 2700 50  0001 C CNN
+	1    4050 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 2650 4050 2700
+Wire Wire Line
+	4050 2650 4400 2650
+Connection ~ 4050 2650
 $EndSCHEMATC

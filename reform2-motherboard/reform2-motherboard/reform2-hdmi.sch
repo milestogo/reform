@@ -6,12 +6,12 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 9
 Title "MNT Reform 2 External Display"
-Date "2019-06-21"
+Date "2019-07-03"
 Rev "0.1"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
-Comment3 ""
+Comment3 "License: GPL v3+"
 Comment4 ""
 $EndDescr
 $Comp
@@ -293,7 +293,7 @@ L Device:C_Small C30
 U 1 1 5D14719E
 P 7400 1400
 F 0 "C30" H 7492 1446 50  0000 L CNN
-F 1 "C_Small" H 7492 1355 50  0000 L CNN
+F 1 "0.1uF" H 7492 1355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7400 1400 50  0001 C CNN
 F 3 "~" H 7400 1400 50  0001 C CNN
 	1    7400 1400

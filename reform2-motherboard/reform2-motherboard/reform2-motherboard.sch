@@ -6,12 +6,12 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 9
 Title "MNT Reform 2"
-Date "2019-06-21"
+Date "2019-07-03"
 Rev "0.1"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
-Comment3 ""
+Comment3 "License: GPL v3+"
 Comment4 ""
 $EndDescr
 $Comp
@@ -847,4 +847,40 @@ F 3 "" H 18750 8900 50  0001 C CNN
 	1    18750 8900
 	1    0    0    -1  
 $EndComp
+Text GLabel 6400 6500 0    50   Output ~ 0
+BACKLIGHT_EN
+Text GLabel 6400 6800 0    50   Output ~ 0
+BACKLIGHT_PWM
+Wire Wire Line
+	6400 6800 6500 6800
+Wire Wire Line
+	6400 6500 6500 6500
+Text GLabel 6450 12300 0    50   Output ~ 0
+DAC_TXFS
+Text GLabel 6450 12400 0    50   Output ~ 0
+DAC_DOUT
+Text GLabel 6450 12500 0    50   Input ~ 0
+DAC_DIN
+Text GLabel 6450 12200 0    50   Output ~ 0
+DAC_BCLK
+Wire Wire Line
+	6450 12500 6500 12500
+Wire Wire Line
+	6450 12400 6500 12400
+Wire Wire Line
+	6450 12300 6500 12300
+Text GLabel 6450 12600 0    50   Output ~ 0
+DAC_RXFS
+Wire Wire Line
+	6450 12600 6500 12600
+Wire Wire Line
+	6450 12200 6500 12200
+Text GLabel 6450 12100 0    50   Output ~ 0
+DAC_MCLK
+Wire Wire Line
+	6450 12100 6500 12100
+Text GLabel 6450 12700 0    50   Output ~ 0
+DAC_RXCLK
+Wire Wire Line
+	6450 12700 6500 12700
 $EndSCHEMATC
