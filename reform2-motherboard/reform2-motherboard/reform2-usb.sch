@@ -2362,14 +2362,6 @@ Wire Wire Line
 	11300 1750 11450 1750
 Connection ~ 11450 1750
 Wire Wire Line
-	11300 2300 11300 1950
-Wire Wire Line
-	11300 1950 11450 1950
-Connection ~ 11300 1950
-Wire Wire Line
-	11300 1950 11300 1750
-Connection ~ 11450 1950
-Wire Wire Line
 	11450 1950 11850 1950
 Connection ~ 11850 1950
 Wire Wire Line
@@ -2394,4 +2386,6 @@ $EndComp
 Wire Wire Line
 	13050 2000 13050 1950
 Connection ~ 13050 1950
+Wire Wire Line
+	11300 1750 11300 2300
 $EndSCHEMATC
