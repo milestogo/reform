@@ -6,8 +6,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 3 9
 Title "MNT Reform 2 USB"
-Date "2019-07-03"
-Rev "0.1"
+Date "2019-07-09"
+Rev "0.1.1"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
@@ -720,8 +720,6 @@ F 3 "" H 9500 4800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9500 4800 9500 4750
-Text Notes 3750 10300 0    50   ~ 0
-TODO: wire up port power switches
 $Comp
 L Device:R_Small R60
 U 1 1 5DB86F24
@@ -2388,4 +2386,23 @@ Wire Wire Line
 Connection ~ 13050 1950
 Wire Wire Line
 	11300 1750 11300 2300
+Text GLabel 9000 1100 0    50   Input ~ 0
+USB_PWR
+$Comp
+L power:+5V #PWR0126
+U 1 1 5DBF4AD4
+P 9200 1000
+F 0 "#PWR0126" H 9200 850 50  0001 C CNN
+F 1 "+5V" H 9215 1173 50  0000 C CNN
+F 2 "" H 9200 1000 50  0001 C CNN
+F 3 "" H 9200 1000 50  0001 C CNN
+	1    9200 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 1000 9200 1100
+Wire Wire Line
+	9200 1100 9000 1100
+Text Notes 1350 8150 0    50   ~ 0
+TODO: get rid of these?!
 $EndSCHEMATC

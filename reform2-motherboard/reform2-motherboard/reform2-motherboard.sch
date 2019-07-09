@@ -6,45 +6,45 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 9
 Title "MNT Reform 2"
-Date "2019-07-03"
-Rev "0.1"
+Date "2019-07-09"
+Rev "0.1.1"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
 Comment3 "License: GPL v3+"
 Comment4 ""
 $EndDescr
-Text GLabel -2350 11950 0    50   Input ~ 0
+Text GLabel 9150 5100 2    50   Output ~ 0
 HDMI_D0+
-Text GLabel -2350 12050 0    50   Input ~ 0
+Text GLabel 9150 5200 2    50   Output ~ 0
 HDMI_D0-
-Text GLabel -2350 12150 0    50   Input ~ 0
+Text GLabel 9150 4800 2    50   Output ~ 0
 HDMI_D3+
-Text GLabel -2350 12250 0    50   Input ~ 0
+Text GLabel 9150 4900 2    50   Output ~ 0
 HDMI_D3-
-Text GLabel -2350 11300 0    50   Input ~ 0
+Text GLabel 9150 5700 2    50   Output ~ 0
 HDMI_D2+
-Text GLabel -2350 11650 0    50   Input ~ 0
+Text GLabel 9150 5800 2    50   Output ~ 0
 HDMI_D2-
-Text GLabel -2350 11750 0    50   Input ~ 0
+Text GLabel 9150 5400 2    50   Output ~ 0
 HDMI_D1+
-Text GLabel -2350 11850 0    50   Input ~ 0
+Text GLabel 9150 5500 2    50   Output ~ 0
 HDMI_D1-
-Text GLabel -2350 14150 0    50   Input ~ 0
+Text GLabel 9150 7500 2    50   BiDi ~ 0
 SD2_DATA0
-Text GLabel -2350 14250 0    50   Input ~ 0
+Text GLabel 9150 7600 2    50   BiDi ~ 0
 SD2_DATA1
-Text GLabel -2350 13750 0    50   Input ~ 0
+Text GLabel 9150 7700 2    50   BiDi ~ 0
 SD2_DATA2
-Text GLabel -2350 13850 0    50   Input ~ 0
+Text GLabel 9150 7800 2    50   BiDi ~ 0
 SD2_DATA3
-Text GLabel -2350 13950 0    50   Input ~ 0
+Text GLabel 9150 7400 2    50   Output ~ 0
 SD2_CMD
-Text GLabel -2350 14050 0    50   Input ~ 0
+Text GLabel 9150 7300 2    50   Output ~ 0
 SD2_CLK
-Text GLabel -2350 14450 0    50   Input ~ 0
+Text GLabel 7300 6700 0    50   Input ~ 0
 SD2_WP
-Text GLabel -2350 14350 0    50   Input ~ 0
+Text GLabel 7300 6400 0    50   Input ~ 0
 SD2_CD
 $Sheet
 S 18750 11100 500  150 
@@ -88,17 +88,17 @@ U 5D0D8363
 F0 "Reform 2 HDMI" 50
 F1 "reform2-hdmi.sch" 50
 $EndSheet
-Text GLabel -2350 13350 0    50   Output ~ 0
+Text GLabel 9150 12800 2    50   Output ~ 0
 USB1_TX_N
-Text GLabel -2350 13450 0    50   Output ~ 0
+Text GLabel 9150 12700 2    50   Output ~ 0
 USB1_TX_P
-Text GLabel -2350 13550 0    50   Output ~ 0
+Text GLabel 9150 12200 2    50   Output ~ 0
 USB1_DN
-Text GLabel -2350 13650 0    50   Output ~ 0
+Text GLabel 9150 12100 2    50   Output ~ 0
 USB1_DP
-Text GLabel -2350 13150 0    50   Input ~ 0
+Text GLabel 9150 12500 2    50   Input ~ 0
 USB1_RX_N
-Text GLabel -2350 13250 0    50   Input ~ 0
+Text GLabel 9150 12400 2    50   Input ~ 0
 USB1_RX_P
 $Sheet
 S 18750 13900 500  150 
@@ -106,89 +106,85 @@ U 5D1F6C04
 F0 "Reform 2 Audio" 50
 F1 "reform2-audio.sch" 50
 $EndSheet
-Text GLabel -2350 15550 0    60   Output ~ 0
-ETH0_LED_LINK
-Text GLabel -2350 15650 0    60   Output ~ 0
+Text GLabel 9150 4100 2    60   Output ~ 0
+ETH0_LED_LINK1
+Text GLabel 9150 3500 2    60   Output ~ 0
 ETH0_LED_RX
-Text GLabel -2350 14750 0    60   Output ~ 0
+Text GLabel 9150 4500 2    60   Output ~ 0
 ETH0_D-
-Text GLabel -2350 14850 0    60   Output ~ 0
+Text GLabel 9150 4600 2    60   Output ~ 0
 ETH0_D+
-Text GLabel -2350 14950 0    60   Output ~ 0
+Text GLabel 9150 4200 2    60   Output ~ 0
 ETH0_C-
-Text GLabel -2350 15050 0    60   Output ~ 0
+Text GLabel 9150 4300 2    60   Output ~ 0
 ETH0_C+
-Text GLabel -2350 15150 0    60   Output ~ 0
+Text GLabel 9150 4000 2    60   Output ~ 0
 ETH0_B-
-Text GLabel -2350 15250 0    60   Output ~ 0
+Text GLabel 9150 3900 2    60   Output ~ 0
 ETH0_B+
-Text GLabel -2350 15350 0    60   Output ~ 0
+Text GLabel 9150 3600 2    60   Output ~ 0
 ETH0_A-
-Text GLabel -2350 15450 0    60   Output ~ 0
+Text GLabel 9150 3700 2    60   Output ~ 0
 ETH0_A+
-Text GLabel -2450 2300 0    50   Output ~ 0
+Text GLabel 7300 6000 0    50   Output ~ 0
 DSI_D3_N
-Text GLabel -2450 2400 0    50   Output ~ 0
+Text GLabel 7300 5900 0    50   Output ~ 0
 DSI_D3_P
-Text GLabel -2450 2500 0    50   Output ~ 0
+Text GLabel 7300 5400 0    50   Output ~ 0
 DSI_D0_N
-Text GLabel -2450 2600 0    50   Output ~ 0
+Text GLabel 7300 5300 0    50   Output ~ 0
 DSI_D0_P
-Text GLabel -2450 2700 0    50   Output ~ 0
+Text GLabel 7300 6200 0    50   Output ~ 0
 DSI_CLK_N
-Text GLabel -2450 2800 0    50   Output ~ 0
+Text GLabel 7300 6300 0    50   Output ~ 0
 DSI_CLK_P
-Text GLabel -2450 2900 0    50   Output ~ 0
+Text GLabel 7300 5700 0    50   Output ~ 0
 DSI_D1_N
-Text GLabel -2450 3000 0    50   Output ~ 0
+Text GLabel 7300 5600 0    50   Output ~ 0
 DSI_D1_P
-Text GLabel -2450 3100 0    50   Output ~ 0
+Text GLabel 7300 5100 0    50   Output ~ 0
 DSI_D2_N
-Text GLabel -2450 3200 0    50   Output ~ 0
+Text GLabel 7300 5000 0    50   Output ~ 0
 DSI_D2_P
-Text GLabel -2450 4800 0    50   Output ~ 0
+Text GLabel 7300 9700 0    50   Output ~ 0
 PCIE1_TX_N
-Text GLabel -2450 4600 0    50   Output ~ 0
+Text GLabel 7300 10000 0    50   Output ~ 0
 PCIE1_RX_N
-Text GLabel -2450 4700 0    50   Output ~ 0
+Text GLabel 7300 9600 0    50   Output ~ 0
 PCIE1_TX_P
-Text GLabel -2450 4500 0    50   Output ~ 0
+Text GLabel 7300 9900 0    50   Output ~ 0
 PCIE1_RX_P
-Text GLabel -2450 4000 0    50   Output ~ 0
+Text GLabel 7250 12100 0    50   Output ~ 0
 PCIE2_TX_N
-Text GLabel -2450 3800 0    50   Output ~ 0
+Text GLabel 7250 11700 0    50   Output ~ 0
 PCIE2_RX_N
-Text GLabel -2450 3900 0    50   Output ~ 0
+Text GLabel 7250 12000 0    50   Output ~ 0
 PCIE2_TX_P
-Text GLabel -2450 3700 0    50   Output ~ 0
+Text GLabel 7250 11800 0    50   Output ~ 0
 PCIE2_RX_P
-Text GLabel -2450 3600 0    50   Output ~ 0
+Text GLabel 7250 12400 0    50   Output ~ 0
 PCIE2_CLK_P
-Text GLabel -2450 3500 0    50   Output ~ 0
+Text GLabel 7250 12300 0    50   Output ~ 0
 PCIE2_CLK_N
-Text GLabel -2450 3400 0    50   Output ~ 0
+Text GLabel 7300 9300 0    50   Output ~ 0
 PCIE1_CLK_P
-Text GLabel -2450 3300 0    50   Output ~ 0
+Text GLabel 7300 9400 0    50   Output ~ 0
 PCIE1_CLK_N
-Text Notes -3550 1600 0    50   ~ 0
-TODO: PCIe 100 MHz Ref Clock generator
-Text Notes -3550 1750 0    50   ~ 0
-TODO: Bootmode / RESET
-Text GLabel -2500 6000 0    50   Output ~ 0
+Text GLabel 7300 7000 0    50   Output ~ 0
 EDP_SCL
-Text GLabel -2500 5900 0    50   BiDi ~ 0
+Text GLabel 7300 7100 0    50   BiDi ~ 0
 EDP_SDA
-Text GLabel -2400 12750 0    50   Output ~ 0
+Text GLabel 9150 11600 2    50   Output ~ 0
 USB2_TX_N
-Text GLabel -2400 12850 0    50   Output ~ 0
+Text GLabel 9150 11500 2    50   Output ~ 0
 USB2_TX_P
-Text GLabel -2400 12950 0    50   Output ~ 0
+Text GLabel 9150 11800 2    50   Output ~ 0
 USB2_DN
-Text GLabel -2400 13050 0    50   Output ~ 0
+Text GLabel 9150 11900 2    50   Output ~ 0
 USB2_DP
-Text GLabel -2400 12550 0    50   Input ~ 0
+Text GLabel 9150 11300 2    50   Input ~ 0
 USB2_RX_N
-Text GLabel -2400 12650 0    50   Input ~ 0
+Text GLabel 9150 11200 2    50   Input ~ 0
 USB2_RX_P
 $Comp
 L Mechanical:MountingHole H10
@@ -311,31 +307,31 @@ F 3 "" H 18750 8900 50  0001 C CNN
 	1    18750 8900
 	1    0    0    -1  
 $EndComp
-Text GLabel -6400 7950 0    50   Output ~ 0
+Text GLabel 9150 13200 2    50   Output ~ 0
 BACKLIGHT_EN
-Text GLabel -6400 8250 0    50   Output ~ 0
+Text GLabel 9150 13300 2    50   Output ~ 0
 BACKLIGHT_PWM
-Text GLabel -6350 13750 0    50   Output ~ 0
+Text GLabel 6800 13200 0    50   Output ~ 0
 DAC_TXFS
-Text GLabel -6350 13850 0    50   Output ~ 0
+Text GLabel 7250 13400 0    50   Output ~ 0
 DAC_DOUT
-Text GLabel -6350 13950 0    50   Input ~ 0
+Text GLabel 7250 13500 0    50   Input ~ 0
 DAC_DIN
-Text GLabel -6350 13650 0    50   Output ~ 0
+Text GLabel 7300 13200 0    50   Output ~ 0
 DAC_BCLK
-Text GLabel -6350 14050 0    50   Output ~ 0
+Text GLabel 6800 13300 0    50   Output ~ 0
 DAC_RXFS
-Text GLabel -6350 13550 0    50   Output ~ 0
+Text GLabel 7300 12900 0    50   Output ~ 0
 DAC_MCLK
-Text GLabel -6350 14150 0    50   Output ~ 0
+Text GLabel 7300 14000 0    50   Output ~ 0
 DAC_RXCLK
-Text GLabel -6400 12950 0    50   Output ~ 0
+Text GLabel 7300 4600 0    50   Output ~ 0
 HDMI_SCL
-Text GLabel -6400 13050 0    50   BiDi ~ 0
+Text GLabel 7300 4900 0    50   BiDi ~ 0
 HDMI_SDA
-Text GLabel -6400 12750 0    50   Input ~ 0
+Text GLabel 9150 5300 2    50   Output ~ 0
 HDMI_HPD
-Text GLabel -6400 12850 0    50   BiDi ~ 0
+Text GLabel 9150 5000 2    50   BiDi ~ 0
 HDMI_CEC
 $Comp
 L Connector:Conn_01x03_Male J18
@@ -373,13 +369,9 @@ Wire Wire Line
 	15000 2800 15000 2700
 Wire Wire Line
 	15000 2700 14900 2700
-Text GLabel -6400 12150 0    50   Output ~ 0
+Text GLabel 7300 8900 0    50   Output ~ 0
 IMX_UART1_TX
-Text GLabel -6400 12250 0    50   Input ~ 0
-IMX_UART1_RX
-Text GLabel -6350 14500 0    50   Output ~ 0
-IMX_UART1_TX
-Text GLabel -6350 14600 0    50   Input ~ 0
+Text GLabel 7300 9200 0    50   Input ~ 0
 IMX_UART1_RX
 $Comp
 L Connector:Conn_01x03_Male J20
@@ -417,9 +409,9 @@ Wire Wire Line
 	16350 2800 16350 2700
 Wire Wire Line
 	16350 2700 16250 2700
-Text GLabel -2500 6600 0    50   BiDi ~ 0
+Text GLabel 5750 5700 0    50   BiDi ~ 0
 DAC_SDA
-Text GLabel -2500 6500 0    50   Output ~ 0
+Text GLabel 5750 5400 0    50   Output ~ 0
 DAC_SCL
 $Comp
 L Timer_RTC:PCF8523T U?
@@ -624,9 +616,9 @@ Wire Wire Line
 Connection ~ 18900 3600
 Wire Wire Line
 	18900 3600 18900 3700
-Text GLabel -6450 11550 0    50   Output ~ 0
+Text GLabel 5750 5300 0    50   Output ~ 0
 RTC_SCL
-Text GLabel -6450 11650 0    50   BiDi ~ 0
+Text GLabel 5750 5600 0    50   BiDi ~ 0
 RTC_SDA
 $Comp
 L Switch:SW_Push SW?
@@ -688,135 +680,31 @@ Wire Wire Line
 $Comp
 L Switch:SW_Push SW?
 U 1 1 5DC264F3
-P 15650 8100
+P 15650 8300
 AR Path="/5CC81028/5DC264F3" Ref="SW?"  Part="1" 
 AR Path="/5DC264F3" Ref="SW7"  Part="1" 
-F 0 "SW7" H 15650 8385 50  0000 C CNN
-F 1 "SW_Push" H 15650 8294 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2" H 15650 8300 50  0001 C CNN
-F 3 "~" H 15650 8300 50  0001 C CNN
-F 4 "CK" H 15650 8100 50  0001 C CNN "Manufacturer"
-F 5 "KMR2" H 15650 8100 50  0001 C CNN "Manufacturer_No"
-	1    15650 8100
+F 0 "SW7" H 15650 8585 50  0000 C CNN
+F 1 "SW_Push" H 15650 8494 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2" H 15650 8500 50  0001 C CNN
+F 3 "~" H 15650 8500 50  0001 C CNN
+F 4 "CK" H 15650 8300 50  0001 C CNN "Manufacturer"
+F 5 "KMR2" H 15650 8300 50  0001 C CNN "Manufacturer_No"
+	1    15650 8300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	16400 8100 15950 8100
 $Comp
 L power:GND #PWR055
 U 1 1 5DC264FE
-P 15400 8100
-F 0 "#PWR055" H 15400 7850 50  0001 C CNN
-F 1 "GND" V 15405 7972 50  0000 R CNN
-F 2 "" H 15400 8100 50  0001 C CNN
-F 3 "" H 15400 8100 50  0001 C CNN
-	1    15400 8100
+P 15400 8300
+F 0 "#PWR055" H 15400 8050 50  0001 C CNN
+F 1 "GND" V 15405 8172 50  0000 R CNN
+F 2 "" H 15400 8300 50  0001 C CNN
+F 3 "" H 15400 8300 50  0001 C CNN
+	1    15400 8300
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	15400 8100 15450 8100
-$Comp
-L power:+3V3 #PWR060
-U 1 1 5DC2650A
-P 15950 7900
-F 0 "#PWR060" H 15950 7750 50  0001 C CNN
-F 1 "+3V3" H 16100 7950 50  0000 C CNN
-F 2 "" H 15950 7900 50  0001 C CNN
-F 3 "" H 15950 7900 50  0001 C CNN
-	1    15950 7900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R116
-U 1 1 5DC26514
-P 15950 8000
-F 0 "R116" H 16009 8046 50  0000 L CNN
-F 1 "10k" H 16009 7955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 15950 8000 50  0001 C CNN
-F 3 "~" H 15950 8000 50  0001 C CNN
-F 4 "Vishay Dale" H 15950 8000 50  0001 C CNN "Manufacturer"
-F 5 "CRCW060310K0JNEAC" H 15950 8000 50  0001 C CNN "Manufacturer_No"
-	1    15950 8000
-	1    0    0    -1  
-$EndComp
-Connection ~ 15950 8100
-Wire Wire Line
-	15950 8100 15850 8100
-$Comp
-L Switch:SW_DIP_x02 SW4
-U 1 1 5DC76CE0
-P -3350 10400
-F 0 "SW4" H -3350 10767 50  0000 C CNN
-F 1 "SW_DIP_x02" H -3350 10676 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx02_Slide_6.7x6.64mm_W8.61mm_P2.54mm_LowProfile" H -3350 10400 50  0001 C CNN
-F 3 "~" H -3350 10400 50  0001 C CNN
-	1    -3350 10400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	-3050 10300 -3050 9500
-Wire Wire Line
-	-3050 9500 -2350 9500
-Wire Wire Line
-	-2350 9600 -3000 9600
-Wire Wire Line
-	-3000 9600 -3000 10400
-$Comp
-L Device:R_Small R112
-U 1 1 5DCB70EA
-P -3900 10200
-F 0 "R112" H -3841 10246 50  0000 L CNN
-F 1 "10k" H -3841 10155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H -3900 10200 50  0001 C CNN
-F 3 "~" H -3900 10200 50  0001 C CNN
-F 4 "Vishay Dale" H -3900 10200 50  0001 C CNN "Manufacturer"
-F 5 "CRCW060310K0JNEAC" H -3900 10200 50  0001 C CNN "Manufacturer_No"
-	1    -3900 10200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR049
-U 1 1 5DCB7390
-P -3900 10100
-F 0 "#PWR049" H -3900 9950 50  0001 C CNN
-F 1 "+3V3" H -3750 10150 50  0000 C CNN
-F 2 "" H -3900 10100 50  0001 C CNN
-F 3 "" H -3900 10100 50  0001 C CNN
-	1    -3900 10100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R111
-U 1 1 5DCCBCDE
-P -4200 10300
-F 0 "R111" H -4141 10346 50  0000 L CNN
-F 1 "10k" H -4141 10255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H -4200 10300 50  0001 C CNN
-F 3 "~" H -4200 10300 50  0001 C CNN
-F 4 "Vishay Dale" H -4200 10300 50  0001 C CNN "Manufacturer"
-F 5 "CRCW060310K0JNEAC" H -4200 10300 50  0001 C CNN "Manufacturer_No"
-	1    -4200 10300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR048
-U 1 1 5DCF682B
-P -4200 10100
-F 0 "#PWR048" H -4200 9950 50  0001 C CNN
-F 1 "+3V3" H -4050 10150 50  0000 C CNN
-F 2 "" H -4200 10100 50  0001 C CNN
-F 3 "" H -4200 10100 50  0001 C CNN
-	1    -4200 10100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	-3900 10300 -3650 10300
-Wire Wire Line
-	-3050 10400 -3000 10400
-Wire Wire Line
-	-4200 10400 -3650 10400
-Wire Wire Line
-	-4200 10200 -4200 10100
+	15400 8300 15450 8300
 $Comp
 L Connector:Conn_ARM_JTAG_SWD_10 J19
 U 1 1 5E0FDF75
@@ -861,71 +749,40 @@ Text GLabel 17250 4400 2    50   Output ~ 0
 IMX_JTAG_RSTn
 Wire Wire Line
 	15950 4400 16700 4400
-Text GLabel -2500 7400 0    50   Output ~ 0
+Text GLabel 9150 6800 2    50   Output ~ 0
 IMX_JTAG_TDI
-Text GLabel -2500 7300 0    50   Input ~ 0
+Text GLabel 9150 6900 2    50   Input ~ 0
 IMX_JTAG_TDO
-Text GLabel -2500 7500 0    50   Input ~ 0
+Text GLabel 9150 6700 2    50   Input ~ 0
 IMX_JTAG_TMS
-Text GLabel -2500 7600 0    50   Input ~ 0
+Text GLabel 9150 6600 2    50   Input ~ 0
 IMX_JTAG_TCK
-Text GLabel -2500 7200 0    50   Input ~ 0
+Text GLabel 9150 6100 2    50   Input ~ 0
 IMX_JTAG_RSTn
-$Comp
-L power:GND #PWR025
-U 1 1 5E27D226
-P -4200 7350
-F 0 "#PWR025" H -4200 7100 50  0001 C CNN
-F 1 "GND" H -4195 7177 50  0000 C CNN
-F 2 "" H -4200 7350 50  0001 C CNN
-F 3 "" H -4200 7350 50  0001 C CNN
-	1    -4200 7350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_DIP_x01 SW3
-U 1 1 5E29784D
-P -3900 7100
-F 0 "SW3" H -3900 7367 50  0000 C CNN
-F 1 "SW_DIP_x01" H -3900 7276 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W8.61mm_P2.54mm_LowProfile" H -3900 7100 50  0001 C CNN
-F 3 "~" H -3900 7100 50  0001 C CNN
-	1    -3900 7100
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R_Small R113
 U 1 1 5E2AEC8A
-P -3550 6900
-F 0 "R113" H -3609 6854 50  0000 R CNN
-F 1 "10k" H -3609 6945 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H -3550 6900 50  0001 C CNN
-F 3 "~" H -3550 6900 50  0001 C CNN
-F 4 "Vishay Dale" H -3550 6900 50  0001 C CNN "Manufacturer"
-F 5 "CRCW060310K0JNEAC" H -3550 6900 50  0001 C CNN "Manufacturer_No"
-	1    -3550 6900
+P 4400 12400
+F 0 "R113" H 4341 12354 50  0000 R CNN
+F 1 "10k" H 4341 12445 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4400 12400 50  0001 C CNN
+F 3 "~" H 4400 12400 50  0001 C CNN
+F 4 "Vishay Dale" H 4400 12400 50  0001 C CNN "Manufacturer"
+F 5 "CRCW060310K0JNEAC" H 4400 12400 50  0001 C CNN "Manufacturer_No"
+	1    4400 12400
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	-3600 7100 -3550 7100
-Wire Wire Line
-	-3550 7100 -3550 7000
-Wire Wire Line
-	-3550 7100 -2350 7100
-Connection ~ -3550 7100
 $Comp
 L power:+3V3 #PWR051
 U 1 1 5E2F5AF5
-P -3550 6800
-F 0 "#PWR051" H -3550 6650 50  0001 C CNN
-F 1 "+3V3" H -3535 6973 50  0000 C CNN
-F 2 "" H -3550 6800 50  0001 C CNN
-F 3 "" H -3550 6800 50  0001 C CNN
-	1    -3550 6800
+P 4400 12300
+F 0 "#PWR051" H 4400 12150 50  0001 C CNN
+F 1 "+3V3" H 4415 12473 50  0000 C CNN
+F 2 "" H 4400 12300 50  0001 C CNN
+F 3 "" H 4400 12300 50  0001 C CNN
+	1    4400 12300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	-4200 7100 -4200 7350
 Wire Wire Line
 	15450 5300 15450 5450
 Wire Wire Line
@@ -1050,74 +907,13 @@ Wire Wire Line
 Wire Wire Line
 	16700 3850 16700 3950
 Connection ~ 16400 3850
-$Comp
-L Switch:SW_Push SW?
-U 1 1 5E6EC51E
-P 15650 7200
-AR Path="/5CC81028/5E6EC51E" Ref="SW?"  Part="1" 
-AR Path="/5E6EC51E" Ref="SW5"  Part="1" 
-F 0 "SW5" H 15650 7485 50  0000 C CNN
-F 1 "SW_Push" H 15650 7394 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2" H 15650 7400 50  0001 C CNN
-F 3 "~" H 15650 7400 50  0001 C CNN
-F 4 "CK" H 15650 7200 50  0001 C CNN "Manufacturer"
-F 5 "KMR2" H 15650 7200 50  0001 C CNN "Manufacturer_No"
-	1    15650 7200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR053
-U 1 1 5E6EC529
-P 15400 7200
-F 0 "#PWR053" H 15400 6950 50  0001 C CNN
-F 1 "GND" V 15405 7072 50  0000 R CNN
-F 2 "" H 15400 7200 50  0001 C CNN
-F 3 "" H 15400 7200 50  0001 C CNN
-	1    15400 7200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	15400 7200 15450 7200
-$Comp
-L power:+3V3 #PWR058
-U 1 1 5E6EC534
-P 15950 7000
-F 0 "#PWR058" H 15950 6850 50  0001 C CNN
-F 1 "+3V3" H 16100 7050 50  0000 C CNN
-F 2 "" H 15950 7000 50  0001 C CNN
-F 3 "" H 15950 7000 50  0001 C CNN
-	1    15950 7000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R114
-U 1 1 5E6EC53E
-P 15950 7100
-F 0 "R114" H 16009 7146 50  0000 L CNN
-F 1 "10k" H 16009 7055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 15950 7100 50  0001 C CNN
-F 3 "~" H 15950 7100 50  0001 C CNN
-F 4 "Vishay Dale" H 15950 7100 50  0001 C CNN "Manufacturer"
-F 5 "CRCW060310K0JNEAC" H 15950 7100 50  0001 C CNN "Manufacturer_No"
-	1    15950 7100
-	1    0    0    -1  
-$EndComp
-Connection ~ 15950 7200
-Wire Wire Line
-	15950 7200 15850 7200
-Wire Wire Line
-	15950 7200 16400 7200
-Text GLabel 16400 7200 2    50   Output ~ 0
-IMX_POR_B
 Text GLabel 16400 7650 2    50   Output ~ 0
 IMX_RESETn
-Text GLabel 16400 8100 2    50   Output ~ 0
+Text GLabel 16400 8300 2    50   Output ~ 0
 IMX_ONOFF
-Text GLabel -2450 9400 0    50   Input ~ 0
-IMX_POR_B
-Text GLabel -2450 9300 0    50   Input ~ 0
+Text GLabel 7250 11900 0    50   Input ~ 0
 IMX_RESETn
-Text GLabel -2450 9700 0    50   Input ~ 0
+Text GLabel 7250 11600 0    50   Input ~ 0
 IMX_ONOFF
 $Comp
 L reform2:CL-SOM-iMX8 U1
@@ -1214,4 +1010,667 @@ F 3 "~" H 20050 9100 50  0001 C CNN
 	1    20050 9100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7300 6200 7350 6200
+Wire Wire Line
+	7350 6300 7300 6300
+Wire Wire Line
+	7300 5000 7350 5000
+Wire Wire Line
+	7350 5100 7300 5100
+Wire Wire Line
+	7300 5900 7350 5900
+Wire Wire Line
+	7350 6000 7300 6000
+Wire Wire Line
+	7300 5300 7350 5300
+Wire Wire Line
+	7350 5400 7300 5400
+Wire Wire Line
+	7300 5600 7350 5600
+Wire Wire Line
+	7350 5700 7300 5700
+Wire Wire Line
+	7300 9600 7350 9600
+Wire Wire Line
+	7350 9700 7300 9700
+Wire Wire Line
+	7300 9900 7350 9900
+Wire Wire Line
+	7350 10000 7300 10000
+Wire Wire Line
+	9150 6900 9100 6900
+Wire Wire Line
+	9100 6800 9150 6800
+Wire Wire Line
+	9150 6700 9100 6700
+Wire Wire Line
+	9150 6600 9100 6600
+Wire Wire Line
+	7250 12300 7350 12300
+Wire Wire Line
+	7350 12400 7250 12400
+Wire Wire Line
+	7300 9200 7350 9200
+Wire Wire Line
+	7350 9300 7300 9300
+Wire Wire Line
+	7250 11700 7350 11700
+Wire Wire Line
+	7350 11800 7250 11800
+Wire Wire Line
+	7250 12000 7350 12000
+Wire Wire Line
+	7350 12100 7250 12100
+$Comp
+L power:GND #PWR0102
+U 1 1 5D2EE257
+P 6350 13650
+F 0 "#PWR0102" H 6350 13400 50  0001 C CNN
+F 1 "GND" H 6355 13477 50  0000 C CNN
+F 2 "" H 6350 13650 50  0001 C CNN
+F 3 "" H 6350 13650 50  0001 C CNN
+	1    6350 13650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 6100 6350 6100
+Wire Wire Line
+	7350 5200 6350 5200
+Wire Wire Line
+	6350 5200 6350 6100
+Connection ~ 6350 6100
+Wire Wire Line
+	7350 4300 6350 4300
+Wire Wire Line
+	6350 4300 6350 5200
+Connection ~ 6350 5200
+Wire Wire Line
+	7350 3400 6350 3400
+Wire Wire Line
+	6350 3400 6350 4300
+Connection ~ 6350 4300
+Wire Wire Line
+	9150 6100 9100 6100
+Wire Wire Line
+	9150 5700 9100 5700
+Wire Wire Line
+	9100 5800 9150 5800
+Wire Wire Line
+	9150 5400 9100 5400
+Wire Wire Line
+	9100 5500 9150 5500
+Wire Wire Line
+	9150 5100 9100 5100
+Wire Wire Line
+	9150 5200 9100 5200
+Wire Wire Line
+	9150 4800 9100 4800
+Wire Wire Line
+	9150 4900 9100 4900
+Wire Wire Line
+	9150 5000 9100 5000
+Wire Wire Line
+	9150 5300 9100 5300
+NoConn ~ 7350 12700
+Wire Wire Line
+	7300 4600 7350 4600
+Wire Wire Line
+	7300 4900 7350 4900
+Wire Wire Line
+	7250 11600 7350 11600
+Wire Wire Line
+	7250 11900 7350 11900
+Wire Wire Line
+	9150 3600 9100 3600
+Wire Wire Line
+	9100 3700 9150 3700
+Wire Wire Line
+	9150 3900 9100 3900
+Wire Wire Line
+	9150 4000 9100 4000
+Wire Wire Line
+	9100 4200 9150 4200
+Wire Wire Line
+	9150 4300 9100 4300
+Wire Wire Line
+	9150 4500 9100 4500
+Wire Wire Line
+	9100 4600 9150 4600
+Wire Wire Line
+	9150 4100 9100 4100
+Wire Wire Line
+	9150 3500 9100 3500
+$Comp
+L power:+3V3 #PWR0103
+U 1 1 5D498676
+P 10250 3150
+F 0 "#PWR0103" H 10250 3000 50  0001 C CNN
+F 1 "+3V3" H 10265 3323 50  0000 C CNN
+F 2 "" H 10250 3150 50  0001 C CNN
+F 3 "" H 10250 3150 50  0001 C CNN
+	1    10250 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 3150 10250 3800
+Wire Wire Line
+	10250 3800 9100 3800
+Wire Wire Line
+	9100 4700 10250 4700
+Wire Wire Line
+	10250 4700 10250 3800
+Connection ~ 10250 3800
+Wire Wire Line
+	9100 5600 10250 5600
+Wire Wire Line
+	10250 5600 10250 4700
+Connection ~ 10250 4700
+Wire Wire Line
+	9100 6500 10250 6500
+Wire Wire Line
+	10250 6500 10250 5600
+Connection ~ 10250 5600
+Wire Wire Line
+	9100 7200 10250 7200
+Wire Wire Line
+	10250 7200 10250 6500
+Connection ~ 10250 6500
+Wire Wire Line
+	9100 8100 10250 8100
+Wire Wire Line
+	10250 8100 10250 7200
+Connection ~ 10250 7200
+Wire Wire Line
+	9100 9000 10250 9000
+Wire Wire Line
+	10250 9000 10250 8100
+Connection ~ 10250 8100
+Wire Wire Line
+	9100 9900 10250 9900
+Wire Wire Line
+	10250 9900 10250 9000
+Connection ~ 10250 9000
+Wire Wire Line
+	9100 10800 10250 10800
+Wire Wire Line
+	10250 10800 10250 9900
+Connection ~ 10250 9900
+Wire Wire Line
+	9100 11700 10250 11700
+Wire Wire Line
+	10250 11700 10250 10800
+Connection ~ 10250 10800
+Wire Wire Line
+	9100 12600 10250 12600
+Wire Wire Line
+	10250 12600 10250 11700
+Connection ~ 10250 11700
+Wire Wire Line
+	9100 13500 10250 13500
+Wire Wire Line
+	10250 13500 10250 12600
+Connection ~ 10250 12600
+Wire Wire Line
+	9150 7300 9100 7300
+Wire Wire Line
+	9100 7400 9150 7400
+Wire Wire Line
+	9150 7700 9100 7700
+Wire Wire Line
+	9100 7800 9150 7800
+Wire Wire Line
+	9150 7500 9100 7500
+Wire Wire Line
+	9100 7600 9150 7600
+Wire Wire Line
+	9150 11200 9100 11200
+Wire Wire Line
+	9100 11300 9150 11300
+Wire Wire Line
+	9150 11500 9100 11500
+Wire Wire Line
+	9100 11600 9150 11600
+Wire Wire Line
+	9150 11900 9100 11900
+Wire Wire Line
+	9100 11800 9150 11800
+Wire Wire Line
+	9150 12700 9100 12700
+Wire Wire Line
+	9100 12800 9150 12800
+Wire Wire Line
+	9150 12400 9100 12400
+Wire Wire Line
+	9100 12500 9150 12500
+Wire Wire Line
+	9150 12200 9100 12200
+Wire Wire Line
+	9150 12100 9100 12100
+Wire Wire Line
+	9150 13300 9100 13300
+Wire Wire Line
+	9150 13200 9100 13200
+NoConn ~ 7350 4200
+NoConn ~ 7350 3800
+NoConn ~ 7350 3700
+NoConn ~ 7350 4400
+NoConn ~ 7350 4500
+NoConn ~ 7350 4800
+NoConn ~ 7350 4700
+Wire Wire Line
+	7300 6400 7350 6400
+Wire Wire Line
+	7300 6700 7350 6700
+NoConn ~ 7350 7200
+NoConn ~ 7350 7300
+NoConn ~ 7350 7400
+NoConn ~ 7350 7500
+NoConn ~ 7350 7600
+NoConn ~ 7350 7800
+NoConn ~ 7350 8200
+NoConn ~ 7350 8100
+NoConn ~ 7350 8000
+NoConn ~ 7350 7900
+NoConn ~ 7350 8300
+NoConn ~ 7350 8400
+NoConn ~ 7350 8500
+NoConn ~ 7350 8700
+NoConn ~ 7350 9000
+NoConn ~ 7350 10800
+NoConn ~ 7350 10900
+NoConn ~ 7350 11000
+NoConn ~ 7350 11100
+NoConn ~ 7350 11200
+NoConn ~ 7350 11500
+NoConn ~ 7350 13000
+NoConn ~ 7350 13100
+NoConn ~ 9100 12900
+NoConn ~ 9100 13000
+NoConn ~ 9100 10900
+NoConn ~ 9100 10700
+NoConn ~ 9100 10600
+NoConn ~ 9100 10500
+NoConn ~ 9100 10400
+NoConn ~ 9100 10300
+NoConn ~ 9100 10200
+NoConn ~ 9100 10100
+NoConn ~ 9100 10000
+NoConn ~ 9100 9800
+NoConn ~ 9100 9700
+NoConn ~ 9100 9600
+NoConn ~ 9100 9400
+NoConn ~ 9100 9300
+NoConn ~ 9100 9200
+NoConn ~ 9100 9100
+NoConn ~ 9100 9500
+NoConn ~ 9100 8500
+NoConn ~ 9100 8400
+NoConn ~ 9100 8300
+NoConn ~ 9100 8200
+NoConn ~ 9100 7900
+NoConn ~ 9100 8000
+NoConn ~ 9100 8900
+NoConn ~ 9100 8800
+NoConn ~ 9100 8700
+NoConn ~ 9100 8600
+NoConn ~ 9100 7100
+NoConn ~ 9100 7000
+NoConn ~ 9100 11400
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5DBAB563
+P 10500 13400
+F 0 "TP8" V 10454 13588 50  0000 L CNN
+F 1 "T_PMIC_ON_REQ" V 10545 13588 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10700 13400 50  0001 C CNN
+F 3 "~" H 10700 13400 50  0001 C CNN
+	1    10500 13400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10500 13400 9100 13400
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5DBBBAE9
+P 10500 12000
+F 0 "TP6" V 10454 12188 50  0000 L CNN
+F 1 "T_USB1_ID" V 10545 12188 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10700 12000 50  0001 C CNN
+F 3 "~" H 10700 12000 50  0001 C CNN
+	1    10500 12000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10500 12000 9100 12000
+Text Notes 10750 12200 0    50   ~ 0
+VERIFY
+Text GLabel 10600 11100 2    50   Input ~ 0
+USB_PWR
+$Comp
+L Device:R_Small R111
+U 1 1 5DC1E478
+P 10450 11100
+F 0 "R111" V 10350 11100 50  0000 C CNN
+F 1 "0" V 10450 11100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10450 11100 50  0001 C CNN
+F 3 "~" H 10450 11100 50  0001 C CNN
+	1    10450 11100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10550 11100 10600 11100
+Wire Wire Line
+	10350 11100 9100 11100
+$Comp
+L Connector:TestPoint TP9
+U 1 1 5DC3EE9C
+P 11100 11000
+F 0 "TP9" V 11054 11188 50  0000 L CNN
+F 1 "T_SD2_RESET" V 11145 11188 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 11300 11000 50  0001 C CNN
+F 3 "~" H 11300 11000 50  0001 C CNN
+	1    11100 11000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11100 11000 9100 11000
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5DC50C6F
+P 10400 6000
+F 0 "TP4" V 10354 6188 50  0000 L CNN
+F 1 "T_JTAG_MOD" V 10445 6188 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10600 6000 50  0001 C CNN
+F 3 "~" H 10600 6000 50  0001 C CNN
+	1    10400 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10400 6000 9100 6000
+Text Notes 9150 3400 0    50   ~ 0
+VERIFY
+Text GLabel 7300 3600 0    50   Output ~ 0
+PCIE1_CLKREQn
+Wire Wire Line
+	7350 3600 7300 3600
+Text GLabel 7300 3500 0    50   Output ~ 0
+PCIE2_CLKREQn
+Wire Wire Line
+	7350 3500 7300 3500
+Wire Wire Line
+	5850 5500 5850 5400
+Wire Wire Line
+	5850 5400 5750 5400
+Wire Wire Line
+	5850 5500 7350 5500
+Wire Wire Line
+	5850 5400 5850 5300
+Wire Wire Line
+	5850 5300 5750 5300
+Connection ~ 5850 5400
+Wire Wire Line
+	5750 5600 5850 5600
+Wire Wire Line
+	5850 5600 5850 5700
+Wire Wire Line
+	5850 5800 7350 5800
+Wire Wire Line
+	5750 5700 5850 5700
+Connection ~ 5850 5700
+Wire Wire Line
+	5850 5700 5850 5800
+NoConn ~ 7350 10100
+NoConn ~ 7350 10200
+NoConn ~ 7350 10600
+NoConn ~ 7350 10700
+Text GLabel 9150 6200 2    50   Output ~ 0
+IMX_UART2_TX
+Text GLabel 7300 6500 0    50   Output ~ 0
+IMX_UART2_RX
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5DE7A63E
+P 10500 13100
+F 0 "TP7" V 10454 13288 50  0000 L CNN
+F 1 "T_PWM3" V 10545 13288 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10700 13100 50  0001 C CNN
+F 3 "~" H 10700 13100 50  0001 C CNN
+	1    10500 13100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9100 13100 10500 13100
+Wire Wire Line
+	6800 13300 6850 13300
+Wire Wire Line
+	6800 13200 6850 13200
+Wire Wire Line
+	6850 13200 6850 13300
+Connection ~ 6850 13300
+Wire Wire Line
+	6850 13300 7350 13300
+Wire Wire Line
+	7350 13200 7300 13200
+Wire Wire Line
+	7350 13400 7250 13400
+Wire Wire Line
+	7250 13500 7350 13500
+Wire Wire Line
+	7350 12900 7300 12900
+Wire Wire Line
+	9150 6200 9100 6200
+Wire Wire Line
+	7350 6500 7300 6500
+Text Notes 4550 11950 0    50   ~ 0
+TODO Must be pulled low through 49.9 Ohms
+Wire Notes Line
+	5800 12000 5950 12000
+Wire Notes Line
+	5950 12300 6650 12300
+Wire Notes Line
+	5950 12400 6650 12400
+Wire Notes Line
+	5950 12000 5950 12400
+Wire Wire Line
+	6350 12200 7350 12200
+Connection ~ 6350 12200
+Wire Wire Line
+	6350 12200 6350 13650
+Wire Wire Line
+	7350 11300 6350 11300
+Connection ~ 6350 11300
+Wire Wire Line
+	6350 11300 6350 12200
+Wire Wire Line
+	7350 10400 6350 10400
+Connection ~ 6350 10400
+Wire Wire Line
+	6350 10400 6350 11300
+Wire Wire Line
+	7350 9400 7300 9400
+Wire Wire Line
+	7350 8900 7300 8900
+Wire Wire Line
+	7350 9500 6350 9500
+Connection ~ 6350 9500
+Wire Wire Line
+	6350 9500 6350 10400
+NoConn ~ 7350 9100
+NoConn ~ 7350 8800
+Wire Wire Line
+	7350 8600 6350 8600
+Connection ~ 6350 8600
+Wire Wire Line
+	6350 8600 6350 9500
+Wire Wire Line
+	6350 6100 6350 6900
+Wire Wire Line
+	7350 6900 6350 6900
+Connection ~ 6350 6900
+Wire Wire Line
+	6350 6900 6350 7700
+Wire Wire Line
+	7350 7700 6350 7700
+Connection ~ 6350 7700
+Wire Wire Line
+	6350 7700 6350 8600
+NoConn ~ 7350 9800
+NoConn ~ 9100 5900
+Wire Wire Line
+	15850 8300 16400 8300
+Text Notes 15800 8500 0    50   ~ 0
+has internal 100k pullup
+Text GLabel 9150 4400 2    60   Output ~ 0
+ETH0_LED_LINK2
+Wire Wire Line
+	9150 4400 9100 4400
+Text GLabel 7300 4100 0    50   Input ~ 0
+LPC_MISO
+Text GLabel 7300 3900 0    50   Output ~ 0
+LPC_MOSI
+Text GLabel 7300 4000 0    50   Output ~ 0
+LPC_SCK
+Wire Wire Line
+	7300 4100 7350 4100
+Wire Wire Line
+	7350 4000 7300 4000
+Wire Wire Line
+	7300 3900 7350 3900
+Wire Wire Line
+	7300 7000 7350 7000
+Wire Wire Line
+	7300 7100 7350 7100
+Text Notes 5300 5200 0    50   ~ 0
+VERIFY PULLUPS
+Text Notes 6750 14200 0    50   ~ 0
+TODO DAC RXCLK?
+Wire Wire Line
+	5200 12600 7350 12600
+Wire Wire Line
+	4600 12600 4400 12600
+$Comp
+L Switch:SW_DIP_x01 SW3
+U 1 1 5E29784D
+P 4900 12600
+F 0 "SW3" H 4900 12867 50  0000 C CNN
+F 1 "SW_DIP_x01" H 4900 12776 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W8.61mm_P2.54mm_LowProfile" H 4900 12600 50  0001 C CNN
+F 3 "~" H 4900 12600 50  0001 C CNN
+	1    4900 12600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 12600 4400 12500
+$Comp
+L Device:R_Small R112
+U 1 1 5E367CB7
+P 4100 12700
+F 0 "R112" H 4041 12654 50  0000 R CNN
+F 1 "10k" H 4041 12745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4100 12700 50  0001 C CNN
+F 3 "~" H 4100 12700 50  0001 C CNN
+F 4 "Vishay Dale" H 4100 12700 50  0001 C CNN "Manufacturer"
+F 5 "CRCW060310K0JNEAC" H 4100 12700 50  0001 C CNN "Manufacturer_No"
+	1    4100 12700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7350 12800 4100 12800
+$Comp
+L power:+3V3 #PWR0104
+U 1 1 5E37CA94
+P 4100 12300
+F 0 "#PWR0104" H 4100 12150 50  0001 C CNN
+F 1 "+3V3" H 4115 12473 50  0000 C CNN
+F 2 "" H 4100 12300 50  0001 C CNN
+F 3 "" H 4100 12300 50  0001 C CNN
+	1    4100 12300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 12300 4100 12600
+Text Notes 4450 13200 0    50   ~ 0
+TODO coin cell instead of our own RTC
+Wire Notes Line
+	5500 13050 5500 12500
+Wire Notes Line
+	5500 12500 7200 12500
+Text GLabel 10600 12300 2    50   Input ~ 0
+USB_PWR
+$Comp
+L Device:R_Small R114
+U 1 1 5E3A8EBA
+P 10450 12300
+F 0 "R114" V 10350 12300 50  0000 C CNN
+F 1 "0" V 10450 12300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10450 12300 50  0001 C CNN
+F 3 "~" H 10450 12300 50  0001 C CNN
+	1    10450 12300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10550 12300 10600 12300
+Wire Wire Line
+	10350 12300 9100 12300
+Text Notes 9950 2850 0    50   ~ 0
+TODO ACTUALLY 4.2V
+$Bitmap
+Pos 22250 15100
+Scale 1.000000
+Data
+89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 01 2C 00 00 00 70 08 06 00 00 00 A4 46 4D 
+4D 00 00 00 04 73 42 49 54 08 08 08 08 7C 08 64 88 00 00 06 2D 49 44 41 54 78 9C ED DD BB 8B 1D 
+65 1C 87 F1 67 77 45 B1 08 82 26 F1 D2 6A 5A FF 00 0B B5 16 4C 36 12 5D 2F 9D 69 BC 04 0D 5E 62 
+A3 A4 B1 D0 CE 4B C4 24 42 2A 05 03 21 85 FA 07 68 B4 8A 60 67 21 12 6D 04 0D 1A 90 04 4C 97 B5 
+98 19 CE 64 F7 9C 39 B7 77 DE DF 7B F6 3C 1F 38 EC 16 CB EC 97 2D 1E 66 66 77 CF 80 24 49 92 24 
+49 92 24 49 92 24 49 92 24 49 92 24 49 92 24 49 92 24 49 92 24 49 92 24 49 52 42 8F 00 7B A2 47 
+B4 1C 8A 1E D0 F2 10 70 5F F4 08 49 03 C7 81 B3 94 13 AD 3F 80 67 A2 47 D4 8E 02 DF 60 B4 A4 62 
+1C 07 36 29 27 5A D7 81 7F 28 23 5A 47 A9 7E 36 5F 63 B4 A4 22 34 C1 2A 25 5A D7 EB 2D 25 44 AB 
+09 96 D1 92 0A D1 0E 56 09 D1 6A 82 55 42 B4 DA C1 32 5A 52 01 B6 06 AB 89 D6 EE A0 3D ED 60 45 
+47 6B 6B B0 8C 96 14 6C 58 B0 22 A3 B5 35 58 91 D1 1A 16 2C A3 25 05 1A 15 AC A8 68 0D 0B 56 54 
+B4 46 05 AB 89 D6 BD 99 F7 48 4B AF 2B 58 11 D1 1A 15 AC 88 68 75 05 6B 13 F8 0A A3 25 65 35 2E 
+58 B9 A3 D5 15 AC 4D E0 6F F2 45 6B 5C B0 8C 96 94 D9 24 C1 DA 04 BE 24 4F B4 C6 05 2B 67 B4 26 
+09 96 D1 92 32 9A 34 58 B9 A2 35 49 B0 9A 68 3D DD F3 96 49 83 65 B4 34 97 5B A2 07 EC 50 1B F5 
+C7 23 54 F7 93 22 ED 06 3E 66 70 C9 1A ED 71 AA 2D 2F 00 7F F6 F4 3D 1E 05 6E ED E9 D8 7D B8 54 
+BF 34 86 C1 EA 4F 69 D1 3A 51 7F 5E 42 B4 F6 D7 1F FB 8A D6 67 C4 FF 27 C2 34 DE AB 5F 1A C3 60 
+F5 CB 68 8D D6 67 B4 76 01 77 24 3E 66 9F 6E 8B 1E B0 28 56 A3 07 2C 81 0D AA 50 44 FD 45 7C 5B 
+13 AD 8D 71 5F 98 C9 7E E0 24 DE D3 D2 84 0C 56 1E 1B 54 F7 91 EE 8A 1E C2 E0 9E 96 D1 D2 C2 31 
+58 F9 94 14 AD 3D 18 2D 2D 20 83 95 CF 0A D5 9F 17 18 AD E1 8C 96 C6 32 58 79 95 1A AD A7 A2 87 
+D4 8C 96 3A 19 AC FC 4A 8C D6 09 8C 96 16 80 C1 8A 61 B4 BA ED 07 3E 05 EE 89 1E A2 B2 18 AC 38 
+46 AB DB 01 E0 14 46 4B 2D 06 2B 96 D1 EA D6 5C 1E 1A 2D 01 06 AB 04 4D B4 3E C2 68 0D 73 80 EA 
+F2 F0 EE E8 21 8A 67 B0 CA B0 42 F5 36 30 46 6B B8 75 AA 33 2D A3 B5 E4 0C 56 39 8C 56 37 A3 25 
+83 55 98 52 A3 F5 64 F4 90 9A D1 5A 72 06 AB 3C A5 46 EB 50 F4 90 DA 3A DE D3 5A 5A 06 AB 4C A5 
+45 6B 2F F0 09 E5 44 EB 20 46 6B 29 F9 7E 58 E5 6A A2 05 F0 0A 70 25 70 0B 0C A2 05 70 2E 72 48 
+ED 60 FD F1 45 E0 72 0F C7 FF 17 F8 BC 87 E3 0E 73 31 D3 F7 D1 12 99 E6 3D DD 53 BE 6E 00 5F 00 
+77 6E D9 33 E9 7B BA A7 7E 5D 66 FB 99 D6 34 EF E9 9E FA 75 9E ED 67 5A 7F 25 38 EE 2F A8 38 5E 
+12 96 AF 7D 79 B8 35 5A 11 BC 3C 54 18 83 B5 18 56 80 67 81 0F 31 5A C3 18 AD 25 E1 3D AC C5 B1 
+02 3C 57 7F FE 6A E4 90 5A FB 9E 56 09 DA F7 B4 B4 43 19 AC C5 D2 8E 56 09 67 C7 4D B4 7E 8C 1E 
+52 6B A2 E5 43 1D 76 28 83 B5 78 DA D1 2A C1 5E E0 B1 E8 11 2D 07 A9 6E 9A 6B 07 32 58 8B 69 25 
+7A C0 16 EE 51 16 25 5C 56 48 D2 44 0C 96 A4 85 61 B0 24 2D 0C 83 25 69 61 18 AC FC 4A FA 0D 56 
+49 5B A0 BC 3D 2A 8C C1 CA EF 2C F0 5F F4 88 DA EF C0 B7 D1 23 5A CE 01 57 A3 47 A8 5C 06 2B BF 
+33 C0 DB 94 11 AD 2B C0 61 CA 89 D6 59 E0 4D 8C 96 46 30 58 F9 DD A0 FA 9F C0 52 A2 F5 1B E5 44 
+6B 13 38 8D D1 D2 08 06 2B 86 D1 EA 66 B4 34 94 C1 8A 63 B4 BA 19 2D 6D 63 B0 62 19 AD 6E 46 4B 
+37 31 58 F1 8C 56 B7 D3 C0 31 8C 96 30 58 A5 30 5A DD 8C 96 00 83 55 92 52 A3 F5 5D F4 10 06 BF 
+3D 3C 06 5C 0B DE A2 40 06 AB 2C 4D B4 DE A1 9C 68 3D 8F D1 52 21 0C 56 79 6E 00 1F 60 B4 86 D9 
+04 4E 61 B4 96 96 C1 2A 93 D1 1A AD 89 D6 5B 18 AD A5 63 B0 CA 55 62 B4 0E 03 17 A2 87 50 45 EB 
+24 46 6B E9 18 AC B2 95 16 AD 4B 54 67 5A 46 4B 21 7C 4F F7 C9 9D 07 7E 4D 70 9C 9F A7 FC FA 26 
+5A 00 EF 02 B7 27 D8 30 8F 26 5A 67 80 87 83 B7 34 D1 02 78 1F D8 15 B8 45 52 CB 2A F0 1A D5 99 
+56 AA C7 BC 5F 9C 63 CF FD 54 F7 B4 52 3E 76 FE 89 19 B7 AC 50 3D 8F F0 6A C2 2D 3E AA 5E 9A D3 
+2A F0 3A E9 A2 35 4F B0 20 7D B4 66 0D 16 A4 8F 96 C1 92 12 58 05 DE 20 4D B4 E6 0D 16 C0 03 A4 
+8B D6 3C C1 82 B4 D1 32 58 52 22 A9 A2 95 22 58 90 2E 5A F3 06 0B D2 45 CB 60 49 09 A5 88 56 AA 
+60 41 9A 68 A5 08 16 A4 89 96 C1 92 12 9B 37 5A 29 83 05 55 B4 2E CC B8 25 65 B0 60 FE 68 19 2C 
+A9 07 F3 44 2B 75 B0 60 BE 68 A5 0C 16 0C A2 75 6D 86 2D 06 4B EA C9 AC D1 EA 23 58 30 7B B4 52 
+07 0B 66 8F 96 C1 92 7A 34 4B B4 FA 0A 16 CC 16 AD 3E 82 05 55 B4 5E 62 BA 68 19 2C A9 67 6B 4C 
+17 AD 3E 83 05 D3 47 AB AF 60 C1 F4 D1 32 58 52 06 D3 44 AB EF 60 C1 74 D1 EA 33 58 50 45 EB 65 
+26 8B 96 C1 92 32 99 34 5A 39 82 05 93 47 AB EF 60 C1 E4 D1 32 58 52 46 6B 54 4F 9C E9 8A 56 AE 
+60 C1 64 D1 CA 11 2C 98 2C 5A 06 4B CA 6C 5C B4 72 06 0B AA 68 7D 3F 62 4B CE 60 C1 F8 68 19 2C 
+29 40 57 B4 72 07 0B 60 1F A3 A3 95 33 58 D0 1D 2D 83 25 05 19 15 AD 88 60 C1 E8 68 E5 0E 16 8C 
+8E 96 C1 92 02 0D 8B 56 54 B0 A0 8A D6 0F C4 07 0B 86 47 CB 60 49 C1 D6 A8 9E 38 73 9D F8 60 C1 
+F6 68 45 05 0B AA 68 1D 61 10 2D 83 25 15 A0 1D AD E8 60 C1 CD D1 8A 0C 16 DC 1C 2D 83 25 15 A2 
+89 56 09 0F 93 80 41 B4 A2 83 05 83 68 FD 14 3D 44 D2 C0 1A B0 1E 3D A2 65 1F F0 60 F4 88 DA 0A 
+65 C4 53 92 24 49 92 24 49 92 24 49 92 24 49 92 24 49 92 24 49 92 24 49 92 24 49 92 24 49 52 41 
+FE 07 39 BD 85 89 55 AA C4 B1 00 00 00 00 49 45 4E 44 AE 42 60 82 
+EndData
+$EndBitmap
 $EndSCHEMATC

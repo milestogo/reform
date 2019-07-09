@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 9
 Title "MNT Reform 2 PCIe"
-Date "2019-07-03"
-Rev "0.1"
+Date "2019-07-09"
+Rev "0.1.1"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
@@ -1025,7 +1025,6 @@ NoConn ~ 2850 3100
 NoConn ~ 2850 3200
 NoConn ~ 2850 4500
 NoConn ~ 2850 4600
-NoConn ~ 2850 5200
 NoConn ~ 2850 5300
 NoConn ~ 2850 5400
 NoConn ~ 2850 5500
@@ -1034,7 +1033,6 @@ NoConn ~ 4150 5100
 NoConn ~ 4150 5000
 NoConn ~ 4150 4900
 NoConn ~ 4150 4800
-NoConn ~ 9000 4850
 Text GLabel 4600 4500 2    50   Input ~ 0
 PCIE_WDISn
 Wire Wire Line
@@ -1120,4 +1118,12 @@ Wire Wire Line
 Connection ~ 4500 4100
 Wire Wire Line
 	4500 4100 4500 5300
+Text GLabel 2400 5200 0    50   Output ~ 0
+PCIE1_CLKREQn
+Wire Wire Line
+	2850 5200 2400 5200
+Text GLabel 9850 4850 2    50   Output ~ 0
+PCIE2_CLKREQn
+Wire Wire Line
+	9850 4850 9000 4850
 $EndSCHEMATC

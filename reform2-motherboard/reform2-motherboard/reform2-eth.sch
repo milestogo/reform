@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 9
 Title "MNT Reform 2 Ethernet"
-Date "2019-07-03"
-Rev "0.1"
+Date "2019-07-09"
+Rev "0.1.1"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
@@ -225,9 +225,9 @@ Wire Wire Line
 	4150 4850 5050 4850
 Wire Wire Line
 	4150 4850 4150 5450
-Text GLabel 5050 5050 0    60   Output ~ 0
-ETH0_LED_LINK
-Text GLabel 5050 5650 0    60   Output ~ 0
+Text GLabel 5050 5650 0    60   Input ~ 0
+ETH0_LED_LINK1
+Text GLabel 5050 5050 0    60   Input ~ 0
 ETH0_LED_RX
 Text GLabel 5050 2250 0    60   Output ~ 0
 ETH0_D-
@@ -245,4 +245,6 @@ Text GLabel 5050 4650 0    60   Output ~ 0
 ETH0_A-
 Text GLabel 5050 4050 0    60   Output ~ 0
 ETH0_A+
+Text GLabel 5050 5250 0    60   Input ~ 0
+ETH0_LED_LINK2
 $EndSCHEMATC

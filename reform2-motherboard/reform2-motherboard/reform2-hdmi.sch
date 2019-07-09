@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 9
 Title "MNT Reform 2 External Display"
-Date "2019-07-03"
-Rev "0.1"
+Date "2019-07-09"
+Rev "0.1.1"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
