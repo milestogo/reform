@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 9
 Title "MNT Reform 2 SD Card"
-Date "2019-07-09"
-Rev "0.1.1"
+Date "2019-07-10"
+Rev "0.1.2"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
@@ -205,4 +205,6 @@ Wire Wire Line
 Wire Wire Line
 	4050 2650 4400 2650
 Connection ~ 4050 2650
+Text Notes 5450 1950 0    50   ~ 0
+TODO: footprint/symbol mismatch for 10,11,12,13
 $EndSCHEMATC

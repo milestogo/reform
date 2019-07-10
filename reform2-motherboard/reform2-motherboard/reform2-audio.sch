@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 9 9
 Title "Reform 2 Audio"
-Date "2019-07-09"
-Rev "0.1.1"
+Date "2019-07-10"
+Rev "0.1.2"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
@@ -377,36 +377,10 @@ $EndComp
 Wire Wire Line
 	6100 5950 6100 5900
 Connection ~ 6100 5900
-$Comp
-L Device:CP_Small C145
-U 1 1 5F0D443E
-P 5650 4700
-F 0 "C145" V 5700 4850 50  0000 C CNN
-F 1 "220uF" V 5700 4550 50  0000 C CNN
-F 2 "Capacitor_SMD:CP_Elec_8x10" H 5650 4700 50  0001 C CNN
-F 3 "~" H 5650 4700 50  0001 C CNN
-F 4 "Panasonic" H 5650 4700 50  0001 C CNN "Manufacturer"
-F 5 "EEE-FT1H221GP" H 5650 4700 50  0001 C CNN "Manufacturer_No"
-	1    5650 4700
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5550 4700 5300 4700
 Wire Wire Line
 	5750 4700 6000 4700
-$Comp
-L Device:CP_Small C148
-U 1 1 5F0D63B2
-P 5850 4400
-F 0 "C148" V 5900 4550 50  0000 C CNN
-F 1 "220uF" V 5900 4250 50  0000 C CNN
-F 2 "Capacitor_SMD:CP_Elec_8x10" H 5850 4400 50  0001 C CNN
-F 3 "~" H 5850 4400 50  0001 C CNN
-F 4 "Panasonic" H 5850 4400 50  0001 C CNN "Manufacturer"
-F 5 "EEE-FT1H221GP" H 5850 4400 50  0001 C CNN "Manufacturer_No"
-	1    5850 4400
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5950 4400 6350 4400
 Wire Wire Line
@@ -459,19 +433,6 @@ Wire Wire Line
 Connection ~ 6350 4900
 Wire Wire Line
 	6350 4900 6000 4900
-$Comp
-L Device:CP_Small C147
-U 1 1 5F0E0306
-P 5850 4200
-F 0 "C147" V 5900 4350 50  0000 C CNN
-F 1 "1uF" V 5900 4050 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5850 4200 50  0001 C CNN
-F 3 "~" H 5850 4200 50  0001 C CNN
-F 4 "Taiyo Yuden" H 5850 4200 50  0001 C CNN "Manufacturer"
-F 5 "JMK107C6105KA" H 5850 4200 50  0001 C CNN "Manufacturer_No"
-	1    5850 4200
-	0    -1   -1   0   
-$EndComp
 $Comp
 L Device:C_Small C152
 U 1 1 5F0E081B
@@ -966,4 +927,37 @@ $EndComp
 Connection ~ 2750 5150
 Wire Wire Line
 	2750 5150 4200 5150
+$Comp
+L Device:C_Small C147
+U 1 1 5F2211CD
+P 5850 4400
+F 0 "C147" V 5900 4250 50  0000 C CNN
+F 1 "47uF" V 5950 4400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5850 4400 50  0001 C CNN
+F 3 "~" H 5850 4400 50  0001 C CNN
+	1    5850 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C127
+U 1 1 5F2217E7
+P 5650 4700
+F 0 "C127" V 5700 4550 50  0000 C CNN
+F 1 "47uF" V 5750 4700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5650 4700 50  0001 C CNN
+F 3 "~" H 5650 4700 50  0001 C CNN
+	1    5650 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C145
+U 1 1 5F221A6E
+P 5850 4200
+F 0 "C145" V 5800 4050 50  0000 C CNN
+F 1 "1uF" V 5750 4200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5850 4200 50  0001 C CNN
+F 3 "~" H 5850 4200 50  0001 C CNN
+	1    5850 4200
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 9
 Title "MNT Reform 2 PCIe"
-Date "2019-07-09"
-Rev "0.1.1"
+Date "2019-07-10"
+Rev "0.1.2"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
@@ -322,32 +322,6 @@ F 5 "CGA3E2X8R1E104K080AE" H 3200 2050 50  0001 C CNN "Manufacturer_No"
 	1    3200 2050
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:CP1_Small C56
-U 1 1 60FCBB5A
-P 3600 2050
-F 0 "C56" H 3691 2096 50  0000 L CNN
-F 1 "220uF" H 3691 2005 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_8x10" H 3600 2050 50  0001 C CNN
-F 3 "~" H 3600 2050 50  0001 C CNN
-F 4 "Panasonic" H 3600 2050 50  0001 C CNN "Manufacturer"
-F 5 "EEE-FT1H221GP" H 3600 2050 50  0001 C CNN "Manufacturer_No"
-	1    3600 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1_Small C57
-U 1 1 60FCC62A
-P 4000 2050
-F 0 "C57" H 4091 2096 50  0000 L CNN
-F 1 "220uF" H 4091 2005 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_8x10" H 4000 2050 50  0001 C CNN
-F 3 "~" H 4000 2050 50  0001 C CNN
-F 4 "Panasonic" H 4000 2050 50  0001 C CNN "Manufacturer"
-F 5 "EEE-FT1H221GP" H 4000 2050 50  0001 C CNN "Manufacturer_No"
-	1    4000 2050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1900 1950 2000 1950
 Connection ~ 1900 1950
@@ -363,13 +337,6 @@ Connection ~ 2800 1950
 Wire Wire Line
 	2800 1950 3200 1950
 Connection ~ 3200 1950
-Wire Wire Line
-	3200 1950 3600 1950
-Connection ~ 3600 1950
-Wire Wire Line
-	3600 1950 4000 1950
-Wire Wire Line
-	4000 2150 3600 2150
 Connection ~ 2400 2150
 Wire Wire Line
 	2400 2150 2000 2150
@@ -379,9 +346,6 @@ Wire Wire Line
 Connection ~ 3200 2150
 Wire Wire Line
 	3200 2150 2800 2150
-Connection ~ 3600 2150
-Wire Wire Line
-	3600 2150 3200 2150
 $Comp
 L power:GND #PWR0174
 U 1 1 60FE4FEC
@@ -393,7 +357,6 @@ F 3 "" H 4000 2150 50  0001 C CNN
 	1    4000 2150
 	1    0    0    -1  
 $EndComp
-Connection ~ 4000 2150
 Text Notes 8200 1200 0    50   ~ 0
 1-2199230-5
 Text Notes 8200 1300 0    50   ~ 0
@@ -510,32 +473,6 @@ F 5 "CGA3E2X8R1E104K080AE" H 8600 1900 50  0001 C CNN "Manufacturer_No"
 	1    8600 1900
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:CP1_Small C62
-U 1 1 61094295
-P 9000 1900
-F 0 "C62" H 9091 1946 50  0000 L CNN
-F 1 "220uF" H 9091 1855 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_8x10" H 9000 1900 50  0001 C CNN
-F 3 "~" H 9000 1900 50  0001 C CNN
-F 4 "Panasonic" H 9000 1900 50  0001 C CNN "Manufacturer"
-F 5 "EEE-FT1H221GP" H 9000 1900 50  0001 C CNN "Manufacturer_No"
-	1    9000 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1_Small C63
-U 1 1 6109429F
-P 9400 1900
-F 0 "C63" H 9491 1946 50  0000 L CNN
-F 1 "220uF" H 9491 1855 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_8x10" H 9400 1900 50  0001 C CNN
-F 3 "~" H 9400 1900 50  0001 C CNN
-F 4 "Panasonic" H 9400 1900 50  0001 C CNN "Manufacturer"
-F 5 "EEE-FT1H221GP" H 9400 1900 50  0001 C CNN "Manufacturer_No"
-	1    9400 1900
-	1    0    0    -1  
-$EndComp
 Connection ~ 7400 1800
 Wire Wire Line
 	7400 1800 7800 1800
@@ -546,13 +483,6 @@ Connection ~ 8200 1800
 Wire Wire Line
 	8200 1800 8600 1800
 Connection ~ 8600 1800
-Wire Wire Line
-	8600 1800 9000 1800
-Connection ~ 9000 1800
-Wire Wire Line
-	9000 1800 9400 1800
-Wire Wire Line
-	9400 2000 9000 2000
 Connection ~ 7800 2000
 Wire Wire Line
 	7800 2000 7400 2000
@@ -562,9 +492,6 @@ Wire Wire Line
 Connection ~ 8600 2000
 Wire Wire Line
 	8600 2000 8200 2000
-Connection ~ 9000 2000
-Wire Wire Line
-	9000 2000 8600 2000
 $Comp
 L power:GND #PWR0178
 U 1 1 610942BD
@@ -576,14 +503,10 @@ F 3 "" H 9400 2000 50  0001 C CNN
 	1    9400 2000
 	1    0    0    -1  
 $EndComp
-Connection ~ 9400 2000
 Wire Wire Line
 	7050 1800 7050 1750
 Wire Wire Line
 	7050 1800 7400 1800
-Wire Wire Line
-	9400 1800 9750 1800
-Connection ~ 9400 1800
 $Comp
 L reform2:48099-5701 J11
 U 1 1 610F1B47
@@ -1126,4 +1049,83 @@ Text GLabel 9850 4850 2    50   Output ~ 0
 PCIE2_CLKREQn
 Wire Wire Line
 	9850 4850 9000 4850
+Wire Wire Line
+	3200 1950 3600 1950
+Wire Wire Line
+	3200 2150 3600 2150
+$Comp
+L Device:C_Small C83
+U 1 1 5EEACCAD
+P 3600 2050
+F 0 "C83" H 3692 2096 50  0000 L CNN
+F 1 "47uF" H 3692 2005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3600 2050 50  0001 C CNN
+F 3 "~" H 3600 2050 50  0001 C CNN
+F 4 "Taiyo Yuden" H 3600 2050 50  0001 C CNN "Manufacturer"
+F 5 "LMK107BBJ106KALT" H 3600 2050 50  0001 C CNN "Manufacturer_No"
+	1    3600 2050
+	1    0    0    -1  
+$EndComp
+Connection ~ 3600 1950
+Wire Wire Line
+	3600 1950 4000 1950
+Connection ~ 3600 2150
+Wire Wire Line
+	3600 2150 4000 2150
+$Comp
+L Device:C_Small C123
+U 1 1 5EEAD537
+P 4000 2050
+F 0 "C123" H 4092 2096 50  0000 L CNN
+F 1 "47uF" H 4092 2005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4000 2050 50  0001 C CNN
+F 3 "~" H 4000 2050 50  0001 C CNN
+F 4 "Taiyo Yuden" H 4000 2050 50  0001 C CNN "Manufacturer"
+F 5 "LMK107BBJ106KALT" H 4000 2050 50  0001 C CNN "Manufacturer_No"
+	1    4000 2050
+	1    0    0    -1  
+$EndComp
+Connection ~ 4000 2150
+Wire Wire Line
+	8600 2000 9000 2000
+Wire Wire Line
+	8600 1800 9000 1800
+$Comp
+L Device:C_Small C124
+U 1 1 5EEAEFE2
+P 9000 1900
+F 0 "C124" H 9092 1946 50  0000 L CNN
+F 1 "47uF" H 9092 1855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9000 1900 50  0001 C CNN
+F 3 "~" H 9000 1900 50  0001 C CNN
+F 4 "TDK" H 9000 1900 50  0001 C CNN "Manufacturer"
+F 5 "CGA3E2X8R1E104K080AE" H 9000 1900 50  0001 C CNN "Manufacturer_No"
+	1    9000 1900
+	1    0    0    -1  
+$EndComp
+Connection ~ 9000 1800
+Wire Wire Line
+	9000 1800 9400 1800
+Connection ~ 9000 2000
+Wire Wire Line
+	9000 2000 9400 2000
+$Comp
+L Device:C_Small C126
+U 1 1 5EEAF1A5
+P 9400 1900
+F 0 "C126" H 9492 1946 50  0000 L CNN
+F 1 "47uF" H 9492 1855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9400 1900 50  0001 C CNN
+F 3 "~" H 9400 1900 50  0001 C CNN
+F 4 "TDK" H 9400 1900 50  0001 C CNN "Manufacturer"
+F 5 "CGA3E2X8R1E104K080AE" H 9400 1900 50  0001 C CNN "Manufacturer_No"
+	1    9400 1900
+	1    0    0    -1  
+$EndComp
+Connection ~ 9400 1800
+Wire Wire Line
+	9400 1800 9750 1800
+Connection ~ 9400 2000
+Text Notes 6600 2300 0    50   ~ 0
+TODO: symbol/connector pin mismatch
 $EndSCHEMATC

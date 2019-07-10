@@ -6,8 +6,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 3 9
 Title "MNT Reform 2 USB"
-Date "2019-07-09"
-Rev "0.1.1"
+Date "2019-07-10"
+Rev "0.1.2"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
@@ -1486,19 +1486,6 @@ $EndComp
 Wire Wire Line
 	5500 5900 5550 5900
 $Comp
-L Device:CP_Small C69
-U 1 1 5DC97328
-P 2550 3550
-F 0 "C69" H 2638 3596 50  0000 L CNN
-F 1 "220uF" H 2638 3505 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_8x10" H 2550 3550 50  0001 C CNN
-F 3 "~" H 2550 3550 50  0001 C CNN
-F 4 "Panasonic" H 2550 3550 50  0001 C CNN "Manufacturer"
-F 5 "EEE-FT1H221GP" H 2550 3550 50  0001 C CNN "Manufacturer_No"
-	1    2550 3550
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C70
 U 1 1 5DC98163
 P 2950 3550
@@ -1541,19 +1528,6 @@ Wire Wire Line
 Connection ~ 2950 3700
 Wire Wire Line
 	2950 3700 2950 3650
-$Comp
-L Device:CP_Small C83
-U 1 1 5DCE097A
-P 6100 3550
-F 0 "C83" H 6188 3596 50  0000 L CNN
-F 1 "220uF" H 6188 3505 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_8x10" H 6100 3550 50  0001 C CNN
-F 3 "~" H 6100 3550 50  0001 C CNN
-F 4 "Panasonic" H 6100 3550 50  0001 C CNN "Manufacturer"
-F 5 "EEE-FT1H221GP" H 6100 3550 50  0001 C CNN "Manufacturer_No"
-	1    6100 3550
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C_Small C85
 U 1 1 5DCE0984
@@ -1598,19 +1572,6 @@ Connection ~ 6500 3700
 Wire Wire Line
 	6500 3700 6500 3650
 $Comp
-L Device:CP_Small C71
-U 1 1 5DCED67A
-P 4700 8800
-F 0 "C71" H 4788 8846 50  0000 L CNN
-F 1 "220uF" H 4788 8755 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_8x10" H 4700 8800 50  0001 C CNN
-F 3 "~" H 4700 8800 50  0001 C CNN
-F 4 "Panasonic" H 4700 8800 50  0001 C CNN "Manufacturer"
-F 5 "EEE-FT1H221GP" H 4700 8800 50  0001 C CNN "Manufacturer_No"
-	1    4700 8800
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C76
 U 1 1 5DCED684
 P 5100 8800
@@ -1651,19 +1612,6 @@ Wire Wire Line
 Connection ~ 5100 8950
 Wire Wire Line
 	5100 8950 5100 8900
-$Comp
-L Device:CP_Small C72
-U 1 1 5DCFA988
-P 4700 9700
-F 0 "C72" H 4788 9746 50  0000 L CNN
-F 1 "220uF" H 4788 9655 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_8x10" H 4700 9700 50  0001 C CNN
-F 3 "~" H 4700 9700 50  0001 C CNN
-F 4 "Panasonic" H 4700 9700 50  0001 C CNN "Manufacturer"
-F 5 "EEE-FT1H221GP" H 4700 9700 50  0001 C CNN "Manufacturer_No"
-	1    4700 9700
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C_Small C77
 U 1 1 5DCFA992
@@ -1709,19 +1657,6 @@ Wire Wire Line
 	3650 8650 4700 8650
 Wire Wire Line
 	3650 9550 4700 9550
-$Comp
-L Device:CP_Small C81
-U 1 1 5DDBD7E6
-P 6050 6050
-F 0 "C81" H 6138 6096 50  0000 L CNN
-F 1 "220uF" H 6138 6005 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_8x10" H 6050 6050 50  0001 C CNN
-F 3 "~" H 6050 6050 50  0001 C CNN
-F 4 "Panasonic" H 6050 6050 50  0001 C CNN "Manufacturer"
-F 5 "EEE-FT1H221GP" H 6050 6050 50  0001 C CNN "Manufacturer_No"
-	1    6050 6050
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C_Small C84
 U 1 1 5DDBD7F0
@@ -2405,4 +2340,71 @@ Wire Wire Line
 	9200 1100 9000 1100
 Text Notes 1350 8150 0    50   ~ 0
 TODO: get rid of these?!
+$Comp
+L Device:C_Small C63
+U 1 1 5EEA2B4F
+P 2550 3550
+F 0 "C63" H 2642 3596 50  0000 L CNN
+F 1 "10uF" H 2642 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2550 3550 50  0001 C CNN
+F 3 "~" H 2550 3550 50  0001 C CNN
+F 4 "TDK" H 2550 3550 50  0001 C CNN "Manufacturer"
+F 5 "CGA3E2X8R1E104K080AE" H 2550 3550 50  0001 C CNN "Manufacturer_No"
+	1    2550 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C81
+U 1 1 5EEA2FE2
+P 6100 3550
+F 0 "C81" H 6192 3596 50  0000 L CNN
+F 1 "10uF" H 6192 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6100 3550 50  0001 C CNN
+F 3 "~" H 6100 3550 50  0001 C CNN
+F 4 "TDK" H 6100 3550 50  0001 C CNN "Manufacturer"
+F 5 "CGA3E2X8R1E104K080AE" H 6100 3550 50  0001 C CNN "Manufacturer_No"
+	1    6100 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C72
+U 1 1 5EEA3522
+P 6050 6050
+F 0 "C72" H 6142 6096 50  0000 L CNN
+F 1 "10uF" H 6142 6005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6050 6050 50  0001 C CNN
+F 3 "~" H 6050 6050 50  0001 C CNN
+F 4 "TDK" H 6050 6050 50  0001 C CNN "Manufacturer"
+F 5 "CGA3E2X8R1E104K080AE" H 6050 6050 50  0001 C CNN "Manufacturer_No"
+	1    6050 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C69
+U 1 1 5EEA41F9
+P 4700 8800
+F 0 "C69" H 4792 8846 50  0000 L CNN
+F 1 "10uF" H 4792 8755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4700 8800 50  0001 C CNN
+F 3 "~" H 4700 8800 50  0001 C CNN
+F 4 "TDK" H 4700 8800 50  0001 C CNN "Manufacturer"
+F 5 "CGA3E2X8R1E104K080AE" H 4700 8800 50  0001 C CNN "Manufacturer_No"
+	1    4700 8800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C71
+U 1 1 5EEA4792
+P 4700 9700
+F 0 "C71" H 4792 9746 50  0000 L CNN
+F 1 "10uF" H 4792 9655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4700 9700 50  0001 C CNN
+F 3 "~" H 4700 9700 50  0001 C CNN
+F 4 "TDK" H 4700 9700 50  0001 C CNN "Manufacturer"
+F 5 "CGA3E2X8R1E104K080AE" H 4700 9700 50  0001 C CNN "Manufacturer_No"
+	1    4700 9700
+	1    0    0    -1  
+$EndComp
+Text Notes 6300 7150 0    50   ~ 0
+TODO: consider ESD7016
 $EndSCHEMATC
