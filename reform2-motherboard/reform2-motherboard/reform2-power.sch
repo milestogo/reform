@@ -44,7 +44,6 @@ Text Notes 6450 1800 0    50   ~ 0
 max 28.8v
 Wire Wire Line
 	2300 1600 2300 1200
-Connection ~ 2300 1600
 $Comp
 L Sensor:INA260 U6
 U 1 1 5CC9E442
@@ -2181,35 +2180,6 @@ Wire Wire Line
 Wire Wire Line
 	1300 3400 1500 3400
 $Comp
-L Device:C_Small C31
-U 1 1 5D165A91
-P 1950 3600
-F 0 "C31" H 2042 3646 50  0000 L CNN
-F 1 "0.1uF" H 2042 3555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1950 3600 50  0001 C CNN
-F 3 "~" H 1950 3600 50  0001 C CNN
-F 4 "TDK" H 1950 3600 50  0001 C CNN "Manufacturer"
-F 5 "CGA3E2X8R1E104K080AE" H 1950 3600 50  0001 C CNN "Manufacturer_No"
-	1    1950 3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1950 3400 1950 3500
-Connection ~ 1950 3400
-Wire Wire Line
-	1950 3400 2300 3400
-$Comp
-L power:GND #PWR02
-U 1 1 5D18D1C9
-P 1950 3700
-F 0 "#PWR02" H 1950 3450 50  0001 C CNN
-F 1 "GND" H 1955 3527 50  0000 C CNN
-F 2 "" H 1950 3700 50  0001 C CNN
-F 3 "" H 1950 3700 50  0001 C CNN
-	1    1950 3700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C3
 U 1 1 5D1DC14A
 P 1500 3600
@@ -2236,8 +2206,6 @@ $EndComp
 Wire Wire Line
 	1500 3500 1500 3400
 Connection ~ 1500 3400
-Wire Wire Line
-	1500 3400 1950 3400
 Wire Wire Line
 	1300 4250 1300 4200
 Wire Wire Line
@@ -2288,9 +2256,6 @@ Wire Wire Line
 	1600 4000 3000 4000
 Wire Wire Line
 	2300 3850 3000 3850
-Wire Wire Line
-	2300 1600 2300 3400
-Connection ~ 2300 3400
 Wire Wire Line
 	2300 3400 2300 3850
 $Comp
@@ -3110,20 +3075,20 @@ Wire Wire Line
 $Comp
 L Device:Polyfuse F1
 U 1 1 5DC0FDCA
-P 2850 1200
-F 0 "F1" V 2625 1200 50  0000 C CNN
-F 1 "0ZCF0100AF2A" V 2716 1200 50  0000 C CNN
-F 2 "Fuse:Fuse_2920_7451Metric" H 2900 1000 50  0001 L CNN
-F 3 "~" H 2850 1200 50  0001 C CNN
-F 4 "Bel Fuse" H 2850 1200 50  0001 C CNN "Manufacturer"
-F 5 "0ZCF0100AF2A" H 2850 1200 50  0001 C CNN "Manufacturer_No"
-	1    2850 1200
+P 2600 1200
+F 0 "F1" V 2375 1200 50  0000 C CNN
+F 1 "0ZCF0100AF2A" V 2466 1200 50  0000 C CNN
+F 2 "Fuse:Fuse_2920_7451Metric" H 2650 1000 50  0001 L CNN
+F 3 "~" H 2600 1200 50  0001 C CNN
+F 4 "Bel Fuse" H 2600 1200 50  0001 C CNN "Manufacturer"
+F 5 "0ZCF0100AF2A" H 2600 1200 50  0001 C CNN "Manufacturer_No"
+	1    2600 1200
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2700 1200 2300 1200
+	2450 1200 2300 1200
 Wire Wire Line
-	3000 1200 4550 1200
+	2750 1200 3200 1200
 Connection ~ 4550 1200
 Connection ~ 7000 4400
 Wire Wire Line
@@ -4780,4 +4745,18 @@ Text Label 3350 1200 0    50   ~ 0
 36V_IN
 Text Label 8450 1900 0    50   ~ 0
 28V_GATE2
+Wire Wire Line
+	2300 3400 2300 1800
+Wire Wire Line
+	2300 1800 3200 1800
+Wire Wire Line
+	3200 1800 3200 1200
+Connection ~ 2300 3400
+Connection ~ 3200 1200
+Wire Wire Line
+	3200 1200 4550 1200
+Wire Wire Line
+	1500 3400 2300 3400
+Text Notes 7850 3100 0    50   ~ 0
+TODO: where is pin 3???
 $EndSCHEMATC
