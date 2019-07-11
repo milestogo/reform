@@ -373,7 +373,7 @@ U 1 1 610031F1
 P 8600 4250
 F 0 "J10" H 8600 2100 50  0000 C CNN
 F 1 "1-2199230-6" H 8600 2200 50  0000 C CNN
-F 2 "footprints:TE_1-2199230-5" H 8600 4250 50  0001 L BNN
+F 2 "footprints:TE_1-2199230-6" H 8600 4250 50  0001 L BNN
 F 3 "" H 8600 4250 50  0001 L BNN
 F 4 "TE Connectivity" H 8600 4250 50  0001 L BNN "Field4"
 F 5 "1-2199230-5" H 8600 4250 50  0001 L BNN "Field5"
@@ -1128,4 +1128,8 @@ Wire Wire Line
 Connection ~ 9400 2000
 Text Notes 6600 2300 0    50   ~ 0
 TODO: symbol/connector pin mismatch
+Text Label 7450 4650 0    50   ~ 0
+PCIE2_TXC_N
+Text Label 7450 4750 0    50   ~ 0
+PCIE2_TXC_P
 $EndSCHEMATC

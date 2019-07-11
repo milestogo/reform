@@ -4758,5 +4758,5 @@ Wire Wire Line
 Wire Wire Line
 	1500 3400 2300 3400
 Text Notes 7850 3100 0    50   ~ 0
-TODO: where is pin 3???
+TODO: where is pin 3 and 7???
 $EndSCHEMATC
