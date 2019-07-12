@@ -758,9 +758,9 @@ Text GLabel 13500 6100 2    50   Output ~ 0
 USB3_4_EN
 Text GLabel 3700 3400 2    50   Input ~ 0
 USB3_1_VBUS
-Text GLabel 2900 1500 2    50   Output ~ 0
-USB3_1_VBUS
 Text GLabel 2900 1800 2    50   Output ~ 0
+USB3_1_VBUS
+Text GLabel 2900 1500 2    50   Output ~ 0
 USB3_2_VBUS
 $Comp
 L power:GND #PWR026
@@ -878,9 +878,9 @@ Wire Wire Line
 Wire Wire Line
 	4900 1600 4900 1500
 Connection ~ 4900 1500
-Text GLabel 1200 1900 0    50   Input ~ 0
-USB3_2_EN
 Text GLabel 1200 1800 0    50   Input ~ 0
+USB3_2_EN
+Text GLabel 1200 1900 0    50   Input ~ 0
 USB3_1_EN
 Text GLabel 4550 1900 0    50   Input ~ 0
 USB3_4_EN
@@ -997,94 +997,6 @@ Wire Wire Line
 	3900 9750 4050 9750
 Wire Wire Line
 	3700 9750 3650 9750
-Text GLabel 1850 8600 2    50   Output ~ 0
-USB3_3_SSTXP
-Text GLabel 1850 8700 2    50   Output ~ 0
-USB3_3_SSTXN
-Text GLabel 1850 8800 2    50   Output ~ 0
-USB3_3_SSRXP
-Text GLabel 1850 8900 2    50   Output ~ 0
-USB3_3_SSRXN
-Text GLabel 1850 9600 2    50   Output ~ 0
-USB3_4_SSTXP
-Text GLabel 1850 9700 2    50   Output ~ 0
-USB3_4_SSTXN
-Text GLabel 1850 9800 2    50   Output ~ 0
-USB3_4_SSRXP
-Text GLabel 1850 9900 2    50   Output ~ 0
-USB3_4_SSRXN
-$Comp
-L Connector:Conn_01x06_Male J15
-U 1 1 5D9A256D
-P 1400 8700
-F 0 "J15" H 1508 9081 50  0000 C CNN
-F 1 "Conn_01x06_Male" H 1508 8990 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 1400 8700 50  0001 C CNN
-F 3 "~" H 1400 8700 50  0001 C CNN
-F 4 "TE" H 1400 8700 50  0001 C CNN "Manufacturer"
-F 5 "826936-6" H 1400 8700 50  0001 C CNN "Manufacturer_No"
-	1    1400 8700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x06_Male J16
-U 1 1 5D9A6768
-P 1400 9700
-F 0 "J16" H 1508 10081 50  0000 C CNN
-F 1 "Conn_01x06_Male" H 1508 9990 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 1400 9700 50  0001 C CNN
-F 3 "~" H 1400 9700 50  0001 C CNN
-F 4 "TE" H 1400 9700 50  0001 C CNN "Manufacturer"
-F 5 "826936-6" H 1400 9700 50  0001 C CNN "Manufacturer_No"
-	1    1400 9700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1850 8600 1600 8600
-Wire Wire Line
-	1600 8700 1850 8700
-Wire Wire Line
-	1850 8800 1600 8800
-Wire Wire Line
-	1600 8900 1850 8900
-Wire Wire Line
-	1850 9600 1600 9600
-Wire Wire Line
-	1600 9700 1850 9700
-Wire Wire Line
-	1850 9800 1600 9800
-Wire Wire Line
-	1600 9900 1850 9900
-$Comp
-L power:GND #PWR0197
-U 1 1 5D9CE045
-P 1650 9000
-F 0 "#PWR0197" H 1650 8750 50  0001 C CNN
-F 1 "GND" H 1655 8827 50  0000 C CNN
-F 2 "" H 1650 9000 50  0001 C CNN
-F 3 "" H 1650 9000 50  0001 C CNN
-	1    1650 9000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1600 9000 1650 9000
-$Comp
-L power:GND #PWR0198
-U 1 1 5D9D77BB
-P 1650 10000
-F 0 "#PWR0198" H 1650 9750 50  0001 C CNN
-F 1 "GND" H 1655 9827 50  0000 C CNN
-F 2 "" H 1650 10000 50  0001 C CNN
-F 3 "" H 1650 10000 50  0001 C CNN
-	1    1650 10000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1650 10000 1600 10000
-Text GLabel 1600 9500 2    50   Input ~ 0
-USB3_4_VBUS
-Text GLabel 1600 8500 2    50   Input ~ 0
-USB3_3_VBUS
 $Comp
 L Connector:USB3_A J17
 U 1 1 5DA0C9AF
@@ -1198,9 +1110,9 @@ Text GLabel 13500 5300 2    50   Input ~ 0
 USB3_3_OVERCURn
 Text GLabel 13500 6200 2    50   Input ~ 0
 USB3_4_OVERCURn
-Text GLabel 3100 1600 2    50   Output ~ 0
-USB3_1_OVERCURn
 Text GLabel 3100 1900 2    50   Output ~ 0
+USB3_1_OVERCURn
+Text GLabel 3100 1600 2    50   Output ~ 0
 USB3_2_OVERCURn
 Text GLabel 2100 6700 2    50   Output ~ 0
 USB3_3_OVERCURn
@@ -2338,8 +2250,6 @@ Wire Wire Line
 	9200 1000 9200 1100
 Wire Wire Line
 	9200 1100 9000 1100
-Text Notes 1350 8150 0    50   ~ 0
-TODO: get rid of these?!
 $Comp
 L Device:C_Small C63
 U 1 1 5EEA2B4F
@@ -2407,4 +2317,10 @@ F 5 "CGA3E2X8R1E104K080AE" H 4700 9700 50  0001 C CNN "Manufacturer_No"
 $EndComp
 Text Notes 6300 7150 0    50   ~ 0
 TODO: consider ESD7016
+Text Label 9850 3900 0    50   ~ 0
+USB_SSTXP
+Text Label 9850 4000 0    50   ~ 0
+USB_SSTXN
+Text Notes 14400 4750 0    50   ~ 0
+TODO: terminate unused superspeeds?
 $EndSCHEMATC
