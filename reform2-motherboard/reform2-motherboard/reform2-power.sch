@@ -3686,36 +3686,6 @@ Wire Wire Line
 	2250 9050 2750 9050
 Wire Wire Line
 	2750 9150 2250 9150
-Text Label 2250 9550 0    50   ~ 0
-LPC_SDA
-Text Label 2250 9450 0    50   ~ 0
-LPC_SCL
-$Comp
-L Connector:TestPoint TP1
-U 1 1 608E9805
-P 2950 9450
-F 0 "TP1" V 2850 9650 50  0000 L CNN
-F 1 "T_LSCL" V 2950 9650 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 3150 9450 50  0001 C CNN
-F 3 "~" H 3150 9450 50  0001 C CNN
-	1    2950 9450
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2250 9450 2950 9450
-$Comp
-L Connector:TestPoint TP2
-U 1 1 60939E8A
-P 2950 9550
-F 0 "TP2" V 2950 9750 50  0000 L CNN
-F 1 "T_LSDA" V 3050 9750 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 3150 9550 50  0001 C CNN
-F 3 "~" H 3150 9550 50  0001 C CNN
-	1    2950 9550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2250 9550 2950 9550
 $Comp
 L Device:R_Small R69
 U 1 1 609DDFBB
