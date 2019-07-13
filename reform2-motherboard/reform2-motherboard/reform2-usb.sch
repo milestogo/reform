@@ -854,9 +854,9 @@ Text GLabel 10000 3400 0    50   Input ~ 0
 USB_RESETn
 Wire Wire Line
 	10000 3400 10650 3400
-Text GLabel 6400 1500 2    50   Output ~ 0
-USB3_3_VBUS
 Text GLabel 6400 1800 2    50   Output ~ 0
+USB3_3_VBUS
+Text GLabel 6400 1500 2    50   Output ~ 0
 USB3_4_VBUS
 $Comp
 L power:+5V #PWR0193
@@ -882,9 +882,9 @@ Text GLabel 1200 1800 0    50   Input ~ 0
 USB3_2_EN
 Text GLabel 1200 1900 0    50   Input ~ 0
 USB3_1_EN
-Text GLabel 4550 1900 0    50   Input ~ 0
-USB3_4_EN
 Text GLabel 4550 1800 0    50   Input ~ 0
+USB3_4_EN
+Text GLabel 4550 1900 0    50   Input ~ 0
 USB3_3_EN
 $Comp
 L power:GND #PWR0194
@@ -1269,9 +1269,9 @@ Wire Wire Line
 Connection ~ 1550 6200
 Wire Wire Line
 	1550 6200 1800 6200
-Text GLabel 6600 1600 2    50   Output ~ 0
-USB3_3_OVERCURn
 Text GLabel 6600 1900 2    50   Output ~ 0
+USB3_3_OVERCURn
+Text GLabel 6600 1600 2    50   Output ~ 0
 USB3_4_OVERCURn
 $Comp
 L Device:C_Small C73
