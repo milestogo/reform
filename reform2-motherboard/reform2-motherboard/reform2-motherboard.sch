@@ -1540,4 +1540,15 @@ F 3 "~" H 3550 10000 50  0001 C CNN
 	1    3550 10000
 	-1   0    0    1   
 $EndComp
+$Comp
+L Mechanical:MountingHole H13
+U 1 1 616FBC04
+P 16500 9800
+F 0 "H13" H 16600 9846 50  0000 L CNN
+F 1 "LABEL_CPU" H 16600 9755 50  0000 L CNN
+F 2 "footprints:label-mpcie" H 16500 9800 50  0001 C CNN
+F 3 "~" H 16500 9800 50  0001 C CNN
+	1    16500 9800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
