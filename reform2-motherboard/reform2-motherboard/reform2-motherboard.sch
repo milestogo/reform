@@ -124,26 +124,6 @@ Text GLabel 10150 4650 0    60   Output ~ 0
 ETH0_A-
 Text GLabel 10150 4750 0    60   Output ~ 0
 ETH0_A+
-Text GLabel 8200 5500 0    50   Output ~ 0
-DSI_D3_N
-Text GLabel 8200 5400 0    50   Output ~ 0
-DSI_D3_P
-Text GLabel 8200 4900 0    50   Output ~ 0
-DSI_D0_N
-Text GLabel 8200 4800 0    50   Output ~ 0
-DSI_D0_P
-Text GLabel 8200 5700 0    50   Output ~ 0
-DSI_CLK_N
-Text GLabel 8200 5800 0    50   Output ~ 0
-DSI_CLK_P
-Text GLabel 8200 5200 0    50   Output ~ 0
-DSI_D1_N
-Text GLabel 8200 5100 0    50   Output ~ 0
-DSI_D1_P
-Text GLabel 8200 4600 0    50   Output ~ 0
-DSI_D2_N
-Text GLabel 8200 4500 0    50   Output ~ 0
-DSI_D2_P
 Text GLabel 11850 5650 2    50   Output ~ 0
 PCIE1_TX_N
 Text GLabel 11850 5950 2    50   Output ~ 0
@@ -1440,4 +1420,124 @@ NoConn ~ 10150 10150
 NoConn ~ 10150 10050
 Text Notes 12500 4200 0    50   ~ 0
 TODO: check sd2 wp
+Text GLabel 3950 9100 2    50   Input ~ 0
+DSI_D0_P
+Wire Wire Line
+	3950 9100 3750 9100
+Text GLabel 3950 9200 2    50   Output ~ 0
+DSI_D0_N
+Wire Wire Line
+	3950 9200 3750 9200
+Text GLabel 3950 9500 2    50   Output ~ 0
+DSI_D1_N
+Text GLabel 3950 9400 2    50   Output ~ 0
+DSI_D1_P
+Text GLabel 3950 10100 2    50   Output ~ 0
+DSI_D2_N
+Text GLabel 3950 10000 2    50   Output ~ 0
+DSI_D2_P
+Text GLabel 3950 10400 2    50   Output ~ 0
+DSI_D3_N
+Text GLabel 3950 10300 2    50   Output ~ 0
+DSI_D3_P
+Text GLabel 3950 9800 2    50   Output ~ 0
+DSI_CLK_N
+Text GLabel 3950 9700 2    50   Output ~ 0
+DSI_CLK_P
+Wire Wire Line
+	3950 9400 3750 9400
+Wire Wire Line
+	3750 9500 3950 9500
+Wire Wire Line
+	3950 9700 3750 9700
+Wire Wire Line
+	3750 9800 3950 9800
+Wire Wire Line
+	3950 10000 3750 10000
+Wire Wire Line
+	3750 10100 3950 10100
+Wire Wire Line
+	3950 10300 3750 10300
+Wire Wire Line
+	3750 10400 3950 10400
+$Comp
+L power:GND #PWR02
+U 1 1 613E21E1
+P 3900 11700
+F 0 "#PWR02" H 3900 11450 50  0001 C CNN
+F 1 "GND" H 3905 11527 50  0000 C CNN
+F 2 "" H 3900 11700 50  0001 C CNN
+F 3 "" H 3900 11700 50  0001 C CNN
+	1    3900 11700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 11700 3900 11600
+Wire Wire Line
+	3900 11600 3750 11600
+Wire Wire Line
+	3750 11500 3900 11500
+Wire Wire Line
+	3900 11500 3900 11600
+Connection ~ 3900 11600
+NoConn ~ 3750 11000
+NoConn ~ 3750 10900
+NoConn ~ 3750 10800
+NoConn ~ 3750 10700
+NoConn ~ 3750 10600
+Wire Wire Line
+	3750 10500 3900 10500
+Wire Wire Line
+	3900 10500 3900 11500
+Connection ~ 3900 11500
+Wire Wire Line
+	3750 10200 3900 10200
+Wire Wire Line
+	3900 10200 3900 10500
+Connection ~ 3900 10500
+Wire Wire Line
+	3750 9900 3900 9900
+Wire Wire Line
+	3900 9900 3900 10200
+Connection ~ 3900 10200
+Wire Wire Line
+	3750 9600 3900 9600
+Wire Wire Line
+	3900 9600 3900 9900
+Connection ~ 3900 9900
+Wire Wire Line
+	3750 9300 3900 9300
+Wire Wire Line
+	3900 9300 3900 9600
+Connection ~ 3900 9600
+Wire Wire Line
+	3750 9000 3900 9000
+Wire Wire Line
+	3900 9000 3900 9300
+Connection ~ 3900 9300
+Wire Wire Line
+	3750 8700 3900 8700
+Wire Wire Line
+	3900 8700 3900 9000
+Connection ~ 3900 9000
+NoConn ~ 3750 8800
+NoConn ~ 3750 8900
+NoConn ~ 3750 8400
+NoConn ~ 3750 8500
+NoConn ~ 3750 8600
+NoConn ~ 3750 11400
+NoConn ~ 3750 11300
+NoConn ~ 3750 11200
+NoConn ~ 3750 11100
+$Comp
+L Connector_Generic:Conn_01x33 J15
+U 1 1 613584E8
+P 3550 10000
+F 0 "J15" H 3468 8175 50  0000 C CNN
+F 1 "Conn_01x33" H 3468 8266 50  0000 C CNN
+F 2 "Connector_FFC-FPC:Hirose_FH12-33S-0.5SH_1x33-1MP_P0.50mm_Horizontal" H 3550 10000 50  0001 C CNN
+F 3 "~" H 3550 10000 50  0001 C CNN
+	1    3550 10000
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
