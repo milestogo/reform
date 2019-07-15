@@ -18,9 +18,9 @@ Text GLabel 10150 11850 0    50   Output ~ 0
 HDMI_D0+
 Text GLabel 10150 11750 0    50   Output ~ 0
 HDMI_D0-
-Text GLabel 10150 12650 0    50   Output ~ 0
+Text GLabel 10150 11450 0    50   Output ~ 0
 HDMI_D3+
-Text GLabel 10150 12750 0    50   Output ~ 0
+Text GLabel 10150 11550 0    50   Output ~ 0
 HDMI_D3-
 Text GLabel 10150 12450 0    50   Output ~ 0
 HDMI_D2+
@@ -42,8 +42,6 @@ Text GLabel 11850 4250 2    50   Output ~ 0
 SD2_CMD
 Text GLabel 11850 4350 2    50   Output ~ 0
 SD2_CLK
-Text GLabel 12500 4550 2    50   Input ~ 0
-SD2_WP
 Text GLabel 11850 4550 2    50   Input ~ 0
 SD2_CD
 $Sheet
@@ -110,21 +108,21 @@ Text GLabel 8000 7100 0    60   Output ~ 0
 ETH0_LED_LINK1
 Text GLabel 8000 7000 0    60   Output ~ 0
 ETH0_LED_RX
-Text GLabel 9800 4750 0    60   Output ~ 0
+Text GLabel 10150 3750 0    60   Output ~ 0
 ETH0_D-
-Text GLabel 9800 4650 0    60   Output ~ 0
+Text GLabel 10150 3850 0    60   Output ~ 0
 ETH0_D+
-Text GLabel 9800 4450 0    60   Output ~ 0
+Text GLabel 10150 4350 0    60   Output ~ 0
 ETH0_C-
-Text GLabel 9800 4350 0    60   Output ~ 0
+Text GLabel 10150 4450 0    60   Output ~ 0
 ETH0_C+
-Text GLabel 9800 4050 0    60   Output ~ 0
+Text GLabel 10150 4050 0    60   Output ~ 0
 ETH0_B-
-Text GLabel 9800 4150 0    60   Output ~ 0
+Text GLabel 10150 4150 0    60   Output ~ 0
 ETH0_B+
-Text GLabel 9800 3750 0    60   Output ~ 0
+Text GLabel 10150 4650 0    60   Output ~ 0
 ETH0_A-
-Text GLabel 9800 3850 0    60   Output ~ 0
+Text GLabel 10150 4750 0    60   Output ~ 0
 ETH0_A+
 Text GLabel 8200 5500 0    50   Output ~ 0
 DSI_D3_N
@@ -789,8 +787,10 @@ U 1 1 5E29784D
 P 8700 10250
 F 0 "SW3" H 8700 10517 50  0000 C CNN
 F 1 "SW_DIP_x01" H 8700 10426 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W8.61mm_P2.54mm_LowProfile" H 8700 10250 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_Omron_A6S-110x_W8.9mm_P2.54mm" H 8700 10250 50  0001 C CNN
 F 3 "~" H 8700 10250 50  0001 C CNN
+F 4 "Omron" H 8700 10250 50  0001 C CNN "Manufacturer"
+F 5 "A6S-1101-H" H 8700 10250 50  0001 C CNN "Manufacturer_No"
 	1    8700 10250
 	1    0    0    -1  
 $EndComp
@@ -1381,4 +1381,63 @@ Wire Wire Line
 Connection ~ 8650 8550
 Wire Wire Line
 	8650 8550 8650 8450
+NoConn ~ 10150 5450
+NoConn ~ 10150 5550
+NoConn ~ 10150 5750
+NoConn ~ 10150 5850
+NoConn ~ 10150 6050
+NoConn ~ 10150 6150
+NoConn ~ 10150 6350
+NoConn ~ 10150 6450
+NoConn ~ 10150 6650
+NoConn ~ 10150 6750
+NoConn ~ 11850 9750
+NoConn ~ 11850 9850
+NoConn ~ 11850 9950
+NoConn ~ 11850 10050
+NoConn ~ 11850 10150
+NoConn ~ 11850 10250
+NoConn ~ 11850 10350
+NoConn ~ 11850 10450
+NoConn ~ 11850 10550
+NoConn ~ 11850 10650
+NoConn ~ 11850 10750
+NoConn ~ 11850 10850
+NoConn ~ 11850 10950
+NoConn ~ 11850 11050
+NoConn ~ 11850 11150
+NoConn ~ 11850 11250
+NoConn ~ 11850 11350
+NoConn ~ 11850 8050
+NoConn ~ 11850 7850
+NoConn ~ 11850 7750
+NoConn ~ 11850 7650
+NoConn ~ 11850 7550
+NoConn ~ 11850 7450
+NoConn ~ 11850 7350
+NoConn ~ 10150 4950
+NoConn ~ 11850 12250
+NoConn ~ 11850 12350
+NoConn ~ 11850 12450
+NoConn ~ 11850 12550
+NoConn ~ 11850 12650
+NoConn ~ 11850 12750
+NoConn ~ 11850 12850
+NoConn ~ 11850 12950
+NoConn ~ 11850 13050
+NoConn ~ 11850 13150
+NoConn ~ 11850 13250
+NoConn ~ 10150 12650
+NoConn ~ 10150 12750
+NoConn ~ 10150 11250
+NoConn ~ 10150 11150
+NoConn ~ 10150 11050
+NoConn ~ 10150 10950
+NoConn ~ 10150 10850
+NoConn ~ 10150 10750
+NoConn ~ 10150 10650
+NoConn ~ 10150 10150
+NoConn ~ 10150 10050
+Text Notes 12500 4200 0    50   ~ 0
+TODO: check sd2 wp
 $EndSCHEMATC
