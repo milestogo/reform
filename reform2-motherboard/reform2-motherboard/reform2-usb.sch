@@ -498,26 +498,10 @@ Text GLabel 13500 4100 2    50   Output ~ 0
 USB3_2_DP
 Text GLabel 13500 4200 2    50   Output ~ 0
 USB3_2_DN
-Text GLabel 13500 4600 2    50   Output ~ 0
-USB3_3_SSTXP
-Text GLabel 13500 4700 2    50   Output ~ 0
-USB3_3_SSTXN
-Text GLabel 13500 4800 2    50   Output ~ 0
-USB3_3_SSRXP
-Text GLabel 13500 4900 2    50   Output ~ 0
-USB3_3_SSRXN
 Text GLabel 13500 5000 2    50   Output ~ 0
 USB3_3_DP
 Text GLabel 13500 5100 2    50   Output ~ 0
 USB3_3_DN
-Text GLabel 13500 5500 2    50   Output ~ 0
-USB3_4_SSTXP
-Text GLabel 13500 5600 2    50   Output ~ 0
-USB3_4_SSTXN
-Text GLabel 13500 5700 2    50   Output ~ 0
-USB3_4_SSRXP
-Text GLabel 13500 5800 2    50   Output ~ 0
-USB3_4_SSRXN
 Text GLabel 13500 5900 2    50   Output ~ 0
 USB3_4_DP
 Text GLabel 13500 6000 2    50   Output ~ 0
@@ -2323,4 +2307,12 @@ Text Label 9850 4000 0    50   ~ 0
 USB_SSTXN
 Text Notes 14400 4750 0    50   ~ 0
 TODO: terminate unused superspeeds?
+NoConn ~ 13500 4600
+NoConn ~ 13500 4700
+NoConn ~ 13500 4800
+NoConn ~ 13500 4900
+NoConn ~ 13500 5500
+NoConn ~ 13500 5600
+NoConn ~ 13500 5700
+NoConn ~ 13500 5800
 $EndSCHEMATC

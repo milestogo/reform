@@ -39,8 +39,6 @@ Text GLabel 4450 3250 0    50   Input ~ 0
 SD2_CMD
 Text GLabel 4450 3550 0    50   Input ~ 0
 SD2_CLK
-Text GLabel 7550 3350 2    50   Output ~ 0
-SD2_WP
 Text GLabel 7550 3250 2    50   Output ~ 0
 SD2_CD
 Wire Wire Line
@@ -207,4 +205,5 @@ Wire Wire Line
 Connection ~ 4050 2650
 Text Notes 5450 1950 0    50   ~ 0
 TODO: footprint/symbol mismatch for 10,11,12,13
+NoConn ~ 7550 3350
 $EndSCHEMATC

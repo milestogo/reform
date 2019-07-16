@@ -90,9 +90,9 @@ Text GLabel 11850 8550 2    50   Output ~ 0
 USB1_TX_N
 Text GLabel 11850 8650 2    50   Output ~ 0
 USB1_TX_P
-Text GLabel 11850 8350 2    50   Output ~ 0
-USB1_DN
 Text GLabel 11850 8250 2    50   Output ~ 0
+USB1_DN
+Text GLabel 11850 8350 2    50   Output ~ 0
 USB1_DP
 Text GLabel 11850 8850 2    50   Input ~ 0
 USB1_RX_N
@@ -104,9 +104,9 @@ U 5D1F6C04
 F0 "Reform 2 Audio" 50
 F1 "reform2-audio.sch" 50
 $EndSheet
-Text GLabel 8000 7100 0    60   Output ~ 0
+Text GLabel 8850 7450 0    60   Output ~ 0
 ETH0_LED_LINK1
-Text GLabel 8000 7000 0    60   Output ~ 0
+Text GLabel 8850 7250 0    60   Output ~ 0
 ETH0_LED_RX
 Text GLabel 10150 3750 0    60   Output ~ 0
 ETH0_D-
@@ -132,11 +132,11 @@ Text GLabel 11850 5550 2    50   Output ~ 0
 PCIE1_TX_P
 Text GLabel 11850 5850 2    50   Output ~ 0
 PCIE1_RX_P
-Text GLabel 11850 6750 2    50   Output ~ 0
+Text GLabel 11850 6850 2    50   Output ~ 0
 PCIE2_TX_N
 Text GLabel 11850 7150 2    50   Output ~ 0
 PCIE2_RX_N
-Text GLabel 11850 6850 2    50   Output ~ 0
+Text GLabel 11850 6750 2    50   Output ~ 0
 PCIE2_TX_P
 Text GLabel 11850 7050 2    50   Output ~ 0
 PCIE2_RX_P
@@ -181,7 +181,7 @@ U 1 1 611164C9
 P 16500 9300
 F 0 "H11" H 16600 9346 50  0000 L CNN
 F 1 "LABEL_MPCIE1" H 16600 9255 50  0000 L CNN
-F 2 "footprints:label-mpcie" H 16500 9300 50  0001 C CNN
+F 2 "footprints:mpcie" H 16500 9300 50  0001 C CNN
 F 3 "~" H 16500 9300 50  0001 C CNN
 	1    16500 9300
 	1    0    0    -1  
@@ -192,7 +192,7 @@ U 1 1 611177F8
 P 16500 9550
 F 0 "H12" H 16600 9596 50  0000 L CNN
 F 1 "LABEL_MPCIE2" H 16600 9505 50  0000 L CNN
-F 2 "footprints:label-mpcie" H 16500 9550 50  0001 C CNN
+F 2 "footprints:nvme" H 16500 9550 50  0001 C CNN
 F 3 "~" H 16500 9550 50  0001 C CNN
 	1    16500 9550
 	1    0    0    -1  
@@ -287,7 +287,7 @@ F 3 "" H 16500 8550 50  0001 C CNN
 $EndComp
 Text GLabel 10150 8550 0    50   Output ~ 0
 BACKLIGHT_EN
-Text GLabel 11850 11450 2    50   Output ~ 0
+Text GLabel 13000 11450 2    50   Output ~ 0
 BACKLIGHT_PWM
 Text GLabel 11850 11850 2    50   Output ~ 0
 DAC_TXFS
@@ -315,7 +315,7 @@ U 1 1 5D742FCD
 P 15900 2450
 F 0 "J18" H 16008 2731 50  0000 C CNN
 F 1 "Conn_01x03_Male" H 16008 2640 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 15900 2450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 15900 2450 50  0001 C CNN
 F 3 "~" H 15900 2450 50  0001 C CNN
 F 4 "TE" H 15900 2450 50  0001 C CNN "Manufacturer"
 F 5 "826936-3" H 15900 2450 50  0001 C CNN "Manufacturer_No"
@@ -355,7 +355,7 @@ U 1 1 5D81C2BF
 P 17250 2450
 F 0 "J20" H 17358 2731 50  0000 C CNN
 F 1 "Conn_01x03_Male" H 17358 2640 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 17250 2450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 17250 2450 50  0001 C CNN
 F 3 "~" H 17250 2450 50  0001 C CNN
 F 4 "TE" H 17250 2450 50  0001 C CNN "Manufacturer"
 F 5 "826936-3" H 17250 2450 50  0001 C CNN "Manufacturer_No"
@@ -385,14 +385,10 @@ Wire Wire Line
 	17550 2650 17550 2550
 Wire Wire Line
 	17550 2550 17450 2550
-Text GLabel 8550 8650 0    50   BiDi ~ 0
+Text GLabel 8550 8500 0    50   BiDi ~ 0
 DAC_SDA
-Text GLabel 8550 8250 0    50   Output ~ 0
+Text GLabel 8550 8300 0    50   Output ~ 0
 DAC_SCL
-Text GLabel 8550 8150 0    50   Output ~ 0
-RTC_SCL
-Text GLabel 8550 8550 0    50   BiDi ~ 0
-RTC_SDA
 $Comp
 L Switch:SW_Push SW?
 U 1 1 5DBC8BEC
@@ -450,74 +446,20 @@ $EndComp
 Connection ~ 20450 2150
 Wire Wire Line
 	20450 2150 20350 2150
-$Comp
-L Switch:SW_Push SW?
-U 1 1 5DC264F3
-P 20150 2800
-AR Path="/5CC81028/5DC264F3" Ref="SW?"  Part="1" 
-AR Path="/5DC264F3" Ref="SW7"  Part="1" 
-F 0 "SW7" H 20150 3085 50  0000 C CNN
-F 1 "SW_Push" H 20150 2994 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2" H 20150 3000 50  0001 C CNN
-F 3 "~" H 20150 3000 50  0001 C CNN
-F 4 "CK" H 20150 2800 50  0001 C CNN "Manufacturer"
-F 5 "KMR2" H 20150 2800 50  0001 C CNN "Manufacturer_No"
-	1    20150 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR055
-U 1 1 5DC264FE
-P 19900 2800
-F 0 "#PWR055" H 19900 2550 50  0001 C CNN
-F 1 "GND" V 19905 2672 50  0000 R CNN
-F 2 "" H 19900 2800 50  0001 C CNN
-F 3 "" H 19900 2800 50  0001 C CNN
-	1    19900 2800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	19900 2800 19950 2800
 Text GLabel 16050 4800 0    50   Output ~ 0
 IMX_JTAG_TDO
 Text GLabel 16050 4600 0    50   Output ~ 0
 IMX_JTAG_TCK
 Text GLabel 16050 4900 0    50   Output ~ 0
 IMX_JTAG_RSTn
-Text GLabel 10150 7050 0    50   Output ~ 0
-IMX_JTAG_TDI
-Text GLabel 10150 7450 0    50   Input ~ 0
+Text GLabel 8850 7550 0    50   Output ~ 0
 IMX_JTAG_TDO
 Text GLabel 10150 7150 0    50   Input ~ 0
 IMX_JTAG_TMS
 Text GLabel 10150 6950 0    50   Input ~ 0
 IMX_JTAG_TCK
-Text GLabel 10150 7350 0    50   Input ~ 0
+Text GLabel 8850 7350 0    50   Input ~ 0
 IMX_JTAG_RSTn
-$Comp
-L Device:R_Small R113
-U 1 1 5E2AEC8A
-P 8200 10050
-F 0 "R113" H 8141 10004 50  0000 R CNN
-F 1 "10k" H 8141 10095 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 8200 10050 50  0001 C CNN
-F 3 "~" H 8200 10050 50  0001 C CNN
-F 4 "Vishay Dale" H 8200 10050 50  0001 C CNN "Manufacturer"
-F 5 "CRCW060310K0JNEAC" H 8200 10050 50  0001 C CNN "Manufacturer_No"
-	1    8200 10050
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+3V3 #PWR051
-U 1 1 5E2F5AF5
-P 8200 9950
-F 0 "#PWR051" H 8200 9800 50  0001 C CNN
-F 1 "+3V3" H 8215 10123 50  0000 C CNN
-F 2 "" H 8200 9950 50  0001 C CNN
-F 3 "" H 8200 9950 50  0001 C CNN
-	1    8200 9950
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R_Small R117
 U 1 1 5E4884F3
@@ -572,12 +514,8 @@ F 5 "CRCW060310K0JNEAC" H 16900 3850 50  0001 C CNN "Manufacturer_No"
 $EndComp
 Text GLabel 20900 2150 2    50   Output ~ 0
 IMX_RESETn
-Text GLabel 20900 2800 2    50   Output ~ 0
-IMX_ONOFF
 Text GLabel 10150 7650 0    50   Input ~ 0
 IMX_RESETn
-Text GLabel 8000 7550 0    50   Input ~ 0
-IMX_ONOFF
 Wire Wire Line
 	17800 7650 17800 7500
 $Comp
@@ -705,51 +643,23 @@ Wire Wire Line
 	13300 9150 13350 9150
 Wire Wire Line
 	13100 9150 11850 9150
-$Comp
-L Connector:TestPoint TP4
-U 1 1 5DC50C6F
-P 8850 7250
-F 0 "TP4" V 8804 7438 50  0000 L CNN
-F 1 "T_JTAG_MOD" V 8895 7438 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 9050 7250 50  0001 C CNN
-F 3 "~" H 9050 7250 50  0001 C CNN
-	1    8850 7250
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	8850 7250 10150 7250
-Text GLabel 13750 6500 0    50   Output ~ 0
-PCIE1_CLKREQn
-Text GLabel 13750 6400 0    50   Output ~ 0
-PCIE2_CLKREQn
 Wire Wire Line
-	8650 8350 8650 8250
+	8650 8350 8650 8300
 Wire Wire Line
-	8650 8250 8550 8250
+	8650 8300 8550 8300
 Wire Wire Line
 	8650 8350 10150 8350
 Wire Wire Line
-	8650 8250 8650 8150
-Wire Wire Line
-	8650 8150 8550 8150
-Connection ~ 8650 8250
-Wire Wire Line
-	8550 8550 8650 8550
-Wire Wire Line
-	8650 8550 8650 8650
-Wire Wire Line
 	8650 8450 10150 8450
 Wire Wire Line
-	8550 8650 8650 8650
+	8550 8500 8650 8500
 Text GLabel 11850 9450 2    50   Output ~ 0
 IMX_UART2_TX
 Text GLabel 11850 9350 2    50   Output ~ 0
 IMX_UART2_RX
-Wire Wire Line
-	20350 2800 20900 2800
-Text Notes 20300 3000 0    50   ~ 0
-has internal 100k pullup
-Text GLabel 8000 7200 0    60   Output ~ 0
+Text GLabel 8850 7150 0    60   Output ~ 0
 ETH0_LED_LINK2
 Text GLabel 10150 7950 0    50   Input ~ 0
 LPC_MISO
@@ -757,25 +667,6 @@ Text GLabel 10150 7850 0    50   Output ~ 0
 LPC_MOSI
 Text GLabel 10150 8150 0    50   Output ~ 0
 LPC_SCK
-Text Notes 8100 8050 0    50   ~ 0
-VERIFY PULLUPS
-Wire Wire Line
-	8400 10250 8200 10250
-$Comp
-L Switch:SW_DIP_x01 SW3
-U 1 1 5E29784D
-P 8700 10250
-F 0 "SW3" H 8700 10517 50  0000 C CNN
-F 1 "SW_DIP_x01" H 8700 10426 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_Omron_A6S-110x_W8.9mm_P2.54mm" H 8700 10250 50  0001 C CNN
-F 3 "~" H 8700 10250 50  0001 C CNN
-F 4 "Omron" H 8700 10250 50  0001 C CNN "Manufacturer"
-F 5 "A6S-1101-H" H 8700 10250 50  0001 C CNN "Manufacturer_No"
-	1    8700 10250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8200 10250 8200 10150
 Text Notes 12000 2400 0    50   ~ 0
 ACTUALLY 5V
 $Bitmap
@@ -1358,9 +1249,6 @@ Wire Wire Line
 Connection ~ 12750 5750
 Wire Wire Line
 	10150 10250 9000 10250
-Connection ~ 8650 8550
-Wire Wire Line
-	8650 8550 8650 8450
 NoConn ~ 10150 5450
 NoConn ~ 10150 5550
 NoConn ~ 10150 5750
@@ -1418,8 +1306,6 @@ NoConn ~ 10150 10750
 NoConn ~ 10150 10650
 NoConn ~ 10150 10150
 NoConn ~ 10150 10050
-Text Notes 12500 4200 0    50   ~ 0
-TODO: check sd2 wp
 Text GLabel 3950 9100 2    50   Input ~ 0
 DSI_D0_P
 Wire Wire Line
@@ -1546,9 +1432,201 @@ U 1 1 616FBC04
 P 16500 9800
 F 0 "H13" H 16600 9846 50  0000 L CNN
 F 1 "LABEL_CPU" H 16600 9755 50  0000 L CNN
-F 2 "footprints:label-mpcie" H 16500 9800 50  0001 C CNN
+F 2 "footprints:cpu" H 16500 9800 50  0001 C CNN
 F 3 "~" H 16500 9800 50  0001 C CNN
 	1    16500 9800
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole H14
+U 1 1 6179BED4
+P 16500 10050
+F 0 "H14" H 16600 10096 50  0000 L CNN
+F 1 "LABEL_36V" H 16600 10005 50  0000 L CNN
+F 2 "footprints:36v" H 16500 10050 50  0001 C CNN
+F 3 "~" H 16500 10050 50  0001 C CNN
+	1    16500 10050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 8450 8650 8500
+$Comp
+L Device:R_Small R65
+U 1 1 618F87B6
+P 12550 11950
+F 0 "R65" V 12746 11950 50  0000 C CNN
+F 1 "0" V 12655 11950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 12550 11950 50  0001 C CNN
+F 3 "~" H 12550 11950 50  0001 C CNN
+	1    12550 11950
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	12450 11950 11850 11950
+NoConn ~ 12650 11950
+NoConn ~ 11850 3750
+Wire Wire Line
+	8200 10250 8200 10150
+$Comp
+L Switch:SW_DIP_x01 SW3
+U 1 1 5E29784D
+P 8700 10250
+F 0 "SW3" H 8700 10517 50  0000 C CNN
+F 1 "SW_DIP_x01" H 8700 10426 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_Omron_A6S-110x_W8.9mm_P2.54mm" H 8700 10250 50  0001 C CNN
+F 3 "~" H 8700 10250 50  0001 C CNN
+F 4 "Omron" H 8700 10250 50  0001 C CNN "Manufacturer"
+F 5 "A6S-1101-H" H 8700 10250 50  0001 C CNN "Manufacturer_No"
+	1    8700 10250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 10250 8200 10250
+$Comp
+L power:+3V3 #PWR051
+U 1 1 5E2F5AF5
+P 8200 9950
+F 0 "#PWR051" H 8200 9800 50  0001 C CNN
+F 1 "+3V3" H 8215 10123 50  0000 C CNN
+F 2 "" H 8200 9950 50  0001 C CNN
+F 3 "" H 8200 9950 50  0001 C CNN
+	1    8200 9950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R113
+U 1 1 5E2AEC8A
+P 8200 10050
+F 0 "R113" H 8141 10004 50  0000 R CNN
+F 1 "10k" H 8141 10095 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8200 10050 50  0001 C CNN
+F 3 "~" H 8200 10050 50  0001 C CNN
+F 4 "Vishay Dale" H 8200 10050 50  0001 C CNN "Manufacturer"
+F 5 "CRCW060310K0JNEAC" H 8200 10050 50  0001 C CNN "Manufacturer_No"
+	1    8200 10050
+	-1   0    0    1   
+$EndComp
+NoConn ~ 10150 10350
+NoConn ~ 10150 10450
+NoConn ~ 10150 10550
+Text GLabel 9900 9850 0    50   Output ~ 0
+USB_RESETn
+Wire Wire Line
+	9900 9850 10150 9850
+NoConn ~ 10150 9950
+$Comp
+L Connector:TestPoint TP2
+U 1 1 61A56E27
+P 8850 5050
+F 0 "TP2" V 8804 5238 50  0000 L CNN
+F 1 "T_OTG" V 8895 5238 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 9050 5050 50  0001 C CNN
+F 3 "~" H 9050 5050 50  0001 C CNN
+	1    8850 5050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8850 5050 10150 5050
+NoConn ~ 10150 7550
+NoConn ~ 11850 4650
+NoConn ~ 11850 5350
+NoConn ~ 11850 5250
+NoConn ~ 11850 5150
+NoConn ~ 10150 5250
+Wire Wire Line
+	10150 7450 8950 7450
+Wire Wire Line
+	8850 7350 8950 7350
+Wire Wire Line
+	8850 7550 8950 7550
+Wire Wire Line
+	8950 7550 8950 7450
+Connection ~ 8950 7450
+Wire Wire Line
+	8950 7450 8850 7450
+Wire Wire Line
+	8850 7150 8950 7150
+Wire Wire Line
+	8950 7150 8950 7350
+Connection ~ 8950 7350
+Wire Wire Line
+	8950 7350 10150 7350
+Text Notes 16850 4000 0    50   ~ 0
+NOSTUFF
+Text Notes 16100 4000 0    50   ~ 0
+NOSTUFF
+Text Notes 16500 4000 0    50   ~ 0
+NOSTUFF
+NoConn ~ 11850 4450
+$Comp
+L Device:R_Small R153
+U 1 1 61B0FF04
+P 8150 5150
+F 0 "R153" V 7954 5150 50  0000 C CNN
+F 1 "0" V 8045 5150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8150 5150 50  0001 C CNN
+F 3 "~" H 8150 5150 50  0001 C CNN
+	1    8150 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8250 5150 10150 5150
+Text GLabel 8050 5150 0    50   Output ~ 0
+PCIE_RESETn
+NoConn ~ 11850 9250
+$Comp
+L Device:R_Small R156
+U 1 1 61B3EC18
+P 12550 11450
+F 0 "R156" V 12746 11450 50  0000 C CNN
+F 1 "0" V 12655 11450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 12550 11450 50  0001 C CNN
+F 3 "~" H 12550 11450 50  0001 C CNN
+	1    12550 11450
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	12650 11450 13000 11450
+Wire Wire Line
+	12450 11450 11850 11450
+Text GLabel 10150 7750 0    50   Output ~ 0
+LPC_SS0
+Text GLabel 12500 4750 2    50   Output ~ 0
+LPC_UART2_RX
+Text GLabel 12500 4850 2    50   Output ~ 0
+LPC_UART2_TX
+$Comp
+L Device:R_Small R154
+U 1 1 61C521BA
+P 12350 4750
+F 0 "R154" V 12250 4750 50  0000 C CNN
+F 1 "0" V 12350 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 12350 4750 50  0001 C CNN
+F 3 "~" H 12350 4750 50  0001 C CNN
+	1    12350 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R155
+U 1 1 61C5240B
+P 12350 4850
+F 0 "R155" V 12250 4850 50  0000 C CNN
+F 1 "0" V 12350 4850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 12350 4850 50  0001 C CNN
+F 3 "~" H 12350 4850 50  0001 C CNN
+	1    12350 4850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12250 4850 11850 4850
+Wire Wire Line
+	11850 4750 12250 4750
+Wire Wire Line
+	12450 4750 12500 4750
+Wire Wire Line
+	12450 4850 12500 4850
+NoConn ~ 11850 4950
+NoConn ~ 11850 5050
+Text GLabel 10150 7050 0    50   Input ~ 0
+IMX_JTAG_TDI
 $EndSCHEMATC
