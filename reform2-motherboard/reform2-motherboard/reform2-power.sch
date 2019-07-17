@@ -4807,9 +4807,9 @@ F 3 "~" H 2350 10150 50  0001 C CNN
 	1    2350 10150
 	1    0    0    -1  
 $EndComp
-Text GLabel 3300 10050 2    50   Input ~ 0
-~ON~_USB
 Text GLabel 2900 10150 2    50   Input ~ 0
+~ON~_USB
+Text GLabel 3300 10050 2    50   Input ~ 0
 ~ON~_SOM
 Wire Wire Line
 	3300 10050 2550 10050
@@ -4884,7 +4884,7 @@ U 1 1 6428E0F2
 P 4400 3200
 F 0 "C31" V 4171 3200 50  0000 C CNN
 F 1 "0.1uF" V 4262 3200 50  0000 C CNN
-F 2 "" H 4400 3200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4400 3200 50  0001 C CNN
 F 3 "~" H 4400 3200 50  0001 C CNN
 	1    4400 3200
 	0    1    1    0   
