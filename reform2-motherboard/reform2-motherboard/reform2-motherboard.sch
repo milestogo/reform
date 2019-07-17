@@ -18,10 +18,10 @@ Text GLabel 10150 11850 0    50   Output ~ 0
 HDMI_D0+
 Text GLabel 10150 11750 0    50   Output ~ 0
 HDMI_D0-
-Text GLabel 10150 11450 0    50   Output ~ 0
-HDMI_D3+
 Text GLabel 10150 11550 0    50   Output ~ 0
-HDMI_D3-
+HDMI_CLK+
+Text GLabel 10150 11450 0    50   Output ~ 0
+HDMI_CLK-
 Text GLabel 10150 12450 0    50   Output ~ 0
 HDMI_D2+
 Text GLabel 10150 12350 0    50   Output ~ 0
@@ -619,7 +619,7 @@ U 1 1 5DBAB563
 P 13250 3650
 F 0 "TP8" V 13204 3838 50  0000 L CNN
 F 1 "T_PMIC_ON_REQ" V 13295 3838 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 13450 3650 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 13450 3650 50  0001 C CNN
 F 3 "~" H 13450 3650 50  0001 C CNN
 	1    13250 3650
 	0    1    1    0   
@@ -1520,7 +1520,7 @@ U 1 1 61A56E27
 P 8850 5050
 F 0 "TP2" V 8804 5238 50  0000 L CNN
 F 1 "T_OTG" V 8895 5238 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 9050 5050 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9050 5050 50  0001 C CNN
 F 3 "~" H 9050 5050 50  0001 C CNN
 	1    8850 5050
 	0    -1   -1   0   
@@ -1530,8 +1530,6 @@ Wire Wire Line
 NoConn ~ 10150 7550
 NoConn ~ 11850 4650
 NoConn ~ 11850 5350
-NoConn ~ 11850 5250
-NoConn ~ 11850 5150
 NoConn ~ 10150 5250
 Wire Wire Line
 	10150 7450 8950 7450
@@ -1629,4 +1627,38 @@ NoConn ~ 11850 4950
 NoConn ~ 11850 5050
 Text GLabel 10150 7050 0    50   Input ~ 0
 IMX_JTAG_TDI
+Text GLabel 12500 5250 2    50   Output ~ 0
+EDP_IRQ
+$Comp
+L Device:R_Small R158
+U 1 1 636E4DF1
+P 12350 5250
+F 0 "R158" V 12250 5250 50  0000 C CNN
+F 1 "0" V 12350 5250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 12350 5250 50  0001 C CNN
+F 3 "~" H 12350 5250 50  0001 C CNN
+	1    12350 5250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12500 5250 12450 5250
+Wire Wire Line
+	11850 5250 12250 5250
+$Comp
+L Device:R_Small R159
+U 1 1 63FE6619
+P 12350 5150
+F 0 "R159" V 12450 5150 50  0000 C CNN
+F 1 "0" V 12350 5150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 12350 5150 50  0001 C CNN
+F 3 "~" H 12350 5150 50  0001 C CNN
+	1    12350 5150
+	0    -1   -1   0   
+$EndComp
+Text GLabel 12500 5150 2    50   Output ~ 0
+EDP_RESETn
+Wire Wire Line
+	12500 5150 12450 5150
+Wire Wire Line
+	11850 5150 12250 5150
 $EndSCHEMATC

@@ -38,9 +38,9 @@ HDMI_D1-
 Text GLabel 2650 2000 0    50   Input ~ 0
 HDMI_D1+
 Text GLabel 2650 2500 0    50   Input ~ 0
-HDMI_D3-
+HDMI_CLK-
 Text GLabel 2650 2400 0    50   Input ~ 0
-HDMI_D3+
+HDMI_CLK+
 Text GLabel 2650 2300 0    50   Input ~ 0
 HDMI_D0-
 Text GLabel 2650 2200 0    50   Input ~ 0

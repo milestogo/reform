@@ -21,7 +21,7 @@ P 6200 3450
 F 0 "J3" H 6200 4115 50  0000 C CNN
 F 1 "SD_Card" H 6200 4024 50  0000 C CNN
 F 2 "footprints:TE_1775059-1" H 6200 3450 50  0001 C CNN
-F 3 "http://portal.fciconnect.com/Comergent//fci/drawing/10067847.pdf" H 6200 3450 50  0001 C CNN
+F 3 "https://www.te.com/usa-en/product-1775059-1.html" H 6200 3450 50  0001 C CNN
 F 4 "TE" H 6200 3450 50  0001 C CNN "Manufacturer"
 F 5 "1775059-1" H 6200 3450 50  0001 C CNN "Manufacturer_No"
 	1    6200 3450
@@ -143,14 +143,10 @@ Wire Wire Line
 Wire Wire Line
 	7200 3550 7200 3650
 Connection ~ 7200 3650
-Text Notes 5450 2400 0    50   ~ 0
+Text Notes 5850 4300 0    50   ~ 0
 TODO: ESD diodes
-Text Notes 5450 2200 0    50   ~ 0
-TODO: CD/WP polarity?
-Text Notes 5600 4250 0    50   ~ 0
-Replace with Molex 5035000993
-Text Notes 5650 4400 0    50   ~ 0
-Replace with TE 1775059-1
+Text Notes 5850 4150 0    50   ~ 0
+TE 1775059-1
 $Comp
 L Device:C_Small C137
 U 1 1 5EE5821E
@@ -203,7 +199,5 @@ Wire Wire Line
 Wire Wire Line
 	4050 2650 4400 2650
 Connection ~ 4050 2650
-Text Notes 5450 1950 0    50   ~ 0
-TODO: footprint/symbol mismatch for 10,11,12,13
 NoConn ~ 7550 3350
 $EndSCHEMATC

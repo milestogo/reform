@@ -231,13 +231,6 @@ Wire Wire Line
 	3550 1600 3550 1800
 Connection ~ 3550 1600
 Wire Wire Line
-	3550 1600 3650 1600
-Wire Wire Line
-	3650 1800 3650 1600
-Connection ~ 3650 1600
-Wire Wire Line
-	3650 1600 3750 1600
-Wire Wire Line
 	3750 1600 3750 1800
 Connection ~ 3750 1600
 Wire Wire Line
@@ -292,10 +285,6 @@ Wire Wire Line
 Wire Wire Line
 	4750 5400 4750 5300
 Connection ~ 4750 5300
-Text GLabel 1850 5100 0    50   Input ~ 0
-EDP_SCL
-Text GLabel 1850 5200 0    50   BiDi ~ 0
-EDP_SDA
 NoConn ~ 2900 5600
 NoConn ~ 2900 5500
 NoConn ~ 2900 5400
@@ -329,25 +318,8 @@ Wire Wire Line
 	4750 3800 4550 3800
 Text GLabel 5500 4000 2    50   Input ~ 0
 EDP_RESETn
-Text GLabel 2550 4200 0    50   Output ~ 0
+Text GLabel 2500 4800 0    50   Output ~ 0
 EDP_IRQ
-$Comp
-L power:GND #PWR036
-U 1 1 5DAABCBB
-P 1050 5000
-F 0 "#PWR036" H 1050 4750 50  0001 C CNN
-F 1 "GND" H 1055 4827 50  0000 C CNN
-F 2 "" H 1050 5000 50  0001 C CNN
-F 3 "" H 1050 5000 50  0001 C CNN
-	1    1050 5000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1050 5000 1050 4950
-Wire Wire Line
-	1050 4950 2900 4950
-Text Notes 1000 4850 0    50   ~ 0
-I2C Address: 0x2C
 NoConn ~ 4550 2000
 NoConn ~ 4550 2100
 NoConn ~ 4550 2300
@@ -1052,7 +1024,7 @@ U 1 1 5EE081BC
 P 8550 3150
 F 0 "TP5" H 8608 3268 50  0000 L CNN
 F 1 "T_EDP" H 8608 3177 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 8750 3150 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8750 3150 50  0001 C CNN
 F 3 "~" H 8750 3150 50  0001 C CNN
 	1    8550 3150
 	1    0    0    -1  
@@ -1062,123 +1034,17 @@ Wire Wire Line
 Wire Wire Line
 	8550 3200 8550 3150
 $Comp
-L Device:R_Small R129
-U 1 1 5D9F4EBD
-P 2050 5100
-F 0 "R129" V 1950 5100 50  0000 C CNN
-F 1 "0" V 2050 5100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2050 5100 50  0001 C CNN
-F 3 "~" H 2050 5100 50  0001 C CNN
-F 4 "Vishay Dale" H 2050 5100 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 2050 5100 50  0001 C CNN "Manufacturer_No"
-	1    2050 5100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1950 5100 1850 5100
-Wire Wire Line
-	2150 5100 2200 5100
-$Comp
-L Device:R_Small R130
-U 1 1 5DA0B272
-P 2050 5200
-F 0 "R130" V 2150 5200 50  0000 C CNN
-F 1 "0" V 2050 5200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2050 5200 50  0001 C CNN
-F 3 "~" H 2050 5200 50  0001 C CNN
-F 4 "Vishay Dale" H 2050 5200 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 2050 5200 50  0001 C CNN "Manufacturer_No"
-	1    2050 5200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1950 5200 1850 5200
-$Comp
-L Device:R_Small R131
-U 1 1 5DA1E94B
-P 2200 4800
-F 0 "R131" V 2300 4600 50  0000 C CNN
-F 1 "4.7k" V 2300 4800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2200 4800 50  0001 C CNN
-F 3 "~" H 2200 4800 50  0001 C CNN
-F 4 "Yageo" H 2200 4800 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-074K7L" H 2200 4800 50  0001 C CNN "Manufacturer_No"
-	1    2200 4800
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R132
-U 1 1 5DA1EC52
-P 2350 4800
-F 0 "R132" V 2250 4600 50  0000 C CNN
-F 1 "4.7k" V 2250 4800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2350 4800 50  0001 C CNN
-F 3 "~" H 2350 4800 50  0001 C CNN
-F 4 "Yageo" H 2350 4800 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-074K7L" H 2350 4800 50  0001 C CNN "Manufacturer_No"
-	1    2350 4800
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2550 4200 2700 4200
-Wire Wire Line
-	2700 4200 2700 4800
-Wire Wire Line
-	2700 4800 2900 4800
-$Comp
 L reform2:SN65DSI86ZQER U10
 U 1 1 5D1D2542
 P 3600 3600
 F 0 "U10" H 3050 5400 50  0000 C CNN
-F 1 "SN65DSI86ZQER" H 3300 1400 50  0000 C CNN
+F 1 "SN65DSI86IPAPQ1" H 3300 1400 50  0000 C CNN
 F 2 "Package_QFP:HTQFP-64-1EP_10x10mm_P0.5mm_EP8x8mm" H 3050 950 50  0001 L BNN
-F 3 "" H 3600 3600 50  0001 L BNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn65dsi86-q1.pdf" H 3600 3600 50  0001 L BNN
 F 4 "Dual-Channel MIPI® DSI to Embedded DisplayPort™ _eDP _ Bridge 64-BGA MICROSTAR JUNIOR -40 to 85" H 1500 1100 50  0001 L BNN "Field4"
 F 5 "Texas Instruments" H 3600 3600 50  0001 C CNN "Manufacturer"
 F 6 "SN65DSI86ZQER" H 3600 3600 50  0001 C CNN "Manufacturer_No"
 	1    3600 3600
-	1    0    0    -1  
-$EndComp
-NoConn ~ 2900 4550
-NoConn ~ 2900 4450
-NoConn ~ 2900 4350
-NoConn ~ 2900 4250
-Wire Wire Line
-	2350 4900 2350 5200
-Wire Wire Line
-	2150 5200 2350 5200
-Connection ~ 2350 5200
-Wire Wire Line
-	2350 5200 2900 5200
-Wire Wire Line
-	2200 4900 2200 5100
-Connection ~ 2200 5100
-Wire Wire Line
-	2200 5100 2900 5100
-Wire Wire Line
-	2200 4550 2200 4700
-Wire Wire Line
-	2350 4600 2350 4700
-$Comp
-L power:+1V8 #PWR075
-U 1 1 5DA70B88
-P 2200 4550
-F 0 "#PWR075" H 2200 4400 50  0001 C CNN
-F 1 "+1V8" H 2215 4723 50  0000 C CNN
-F 2 "" H 2200 4550 50  0001 C CNN
-F 3 "" H 2200 4550 50  0001 C CNN
-	1    2200 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+1V8 #PWR076
-U 1 1 5DA71177
-P 2350 4600
-F 0 "#PWR076" H 2350 4450 50  0001 C CNN
-F 1 "+1V8" H 2365 4773 50  0000 C CNN
-F 2 "" H 2350 4600 50  0001 C CNN
-F 3 "" H 2350 4600 50  0001 C CNN
-	1    2350 4600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1198,4 +1064,190 @@ Text Label 4600 3200 0    50   ~ 0
 EDAUXN
 Text Label 4600 3300 0    50   ~ 0
 EDAUXP
+$Comp
+L Connector:TestPoint TP9
+U 1 1 63739BED
+P 2500 4100
+F 0 "TP9" H 2558 4218 50  0000 L CNN
+F 1 "T_EGPIO4" H 2558 4127 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2700 4100 50  0001 C CNN
+F 3 "~" H 2700 4100 50  0001 C CNN
+	1    2500 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V8 #PWR076
+U 1 1 5DA71177
+P 1900 4500
+F 0 "#PWR076" H 1900 4350 50  0001 C CNN
+F 1 "+1V8" H 1915 4673 50  0000 C CNN
+F 2 "" H 1900 4500 50  0001 C CNN
+F 3 "" H 1900 4500 50  0001 C CNN
+	1    1900 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V8 #PWR075
+U 1 1 5DA70B88
+P 1750 4450
+F 0 "#PWR075" H 1750 4300 50  0001 C CNN
+F 1 "+1V8" H 1765 4623 50  0000 C CNN
+F 2 "" H 1750 4450 50  0001 C CNN
+F 3 "" H 1750 4450 50  0001 C CNN
+	1    1750 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 4500 1900 4600
+Wire Wire Line
+	1750 4450 1750 4600
+Wire Wire Line
+	1750 5100 2900 5100
+Connection ~ 1750 5100
+Wire Wire Line
+	1750 4800 1750 5100
+Wire Wire Line
+	1900 5200 2900 5200
+Connection ~ 1900 5200
+Wire Wire Line
+	1700 5200 1900 5200
+Wire Wire Line
+	1900 4800 1900 5200
+$Comp
+L Device:R_Small R132
+U 1 1 5DA1EC52
+P 1900 4700
+F 0 "R132" V 1800 4500 50  0000 C CNN
+F 1 "4.7k" V 1800 4700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1900 4700 50  0001 C CNN
+F 3 "~" H 1900 4700 50  0001 C CNN
+F 4 "Yageo" H 1900 4700 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-074K7L" H 1900 4700 50  0001 C CNN "Manufacturer_No"
+	1    1900 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R131
+U 1 1 5DA1E94B
+P 1750 4700
+F 0 "R131" V 1850 4500 50  0000 C CNN
+F 1 "4.7k" V 1850 4700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1750 4700 50  0001 C CNN
+F 3 "~" H 1750 4700 50  0001 C CNN
+F 4 "Yageo" H 1750 4700 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-074K7L" H 1750 4700 50  0001 C CNN "Manufacturer_No"
+	1    1750 4700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1500 5200 1400 5200
+$Comp
+L Device:R_Small R130
+U 1 1 5DA0B272
+P 1600 5200
+F 0 "R130" V 1700 5200 50  0000 C CNN
+F 1 "0" V 1600 5200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1600 5200 50  0001 C CNN
+F 3 "~" H 1600 5200 50  0001 C CNN
+F 4 "Vishay Dale" H 1600 5200 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 1600 5200 50  0001 C CNN "Manufacturer_No"
+	1    1600 5200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 5100 1750 5100
+Wire Wire Line
+	1500 5100 1400 5100
+$Comp
+L Device:R_Small R129
+U 1 1 5D9F4EBD
+P 1600 5100
+F 0 "R129" V 1500 5100 50  0000 C CNN
+F 1 "0" V 1600 5100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1600 5100 50  0001 C CNN
+F 3 "~" H 1600 5100 50  0001 C CNN
+F 4 "Vishay Dale" H 1600 5100 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 1600 5100 50  0001 C CNN "Manufacturer_No"
+	1    1600 5100
+	0    1    1    0   
+$EndComp
+Text Notes 550  4850 0    50   ~ 0
+I2C Address: 0x2C
+Wire Wire Line
+	600  4950 2900 4950
+Wire Wire Line
+	600  5000 600  4950
+$Comp
+L power:GND #PWR036
+U 1 1 5DAABCBB
+P 600 5000
+F 0 "#PWR036" H 600 4750 50  0001 C CNN
+F 1 "GND" H 605 4827 50  0000 C CNN
+F 2 "" H 600 5000 50  0001 C CNN
+F 3 "" H 600 5000 50  0001 C CNN
+	1    600  5000
+	1    0    0    -1  
+$EndComp
+Text GLabel 1400 5200 0    50   BiDi ~ 0
+EDP_SDA
+Text GLabel 1400 5100 0    50   Input ~ 0
+EDP_SCL
+Wire Wire Line
+	2500 4800 2900 4800
+$Comp
+L Connector:TestPoint TP7
+U 1 1 63756AAB
+P 2350 3850
+F 0 "TP7" H 2408 3968 50  0000 L CNN
+F 1 "T_EGPIO3" H 2408 3877 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2550 3850 50  0001 C CNN
+F 3 "~" H 2550 3850 50  0001 C CNN
+	1    2350 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 63756DDF
+P 2200 3650
+F 0 "TP6" H 2258 3768 50  0000 L CNN
+F 1 "T_EGPIO2" H 2258 3677 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2400 3650 50  0001 C CNN
+F 3 "~" H 2400 3650 50  0001 C CNN
+	1    2200 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 63756FD0
+P 2050 3450
+F 0 "TP4" H 2108 3568 50  0000 L CNN
+F 1 "T_EGPIO1" H 2108 3477 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2250 3450 50  0001 C CNN
+F 3 "~" H 2250 3450 50  0001 C CNN
+	1    2050 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4250 2500 4250
+Wire Wire Line
+	2500 4250 2500 4100
+Wire Wire Line
+	2900 4350 2350 4350
+Wire Wire Line
+	2350 4350 2350 3850
+Wire Wire Line
+	2200 3650 2200 4450
+Wire Wire Line
+	2200 4450 2900 4450
+Wire Wire Line
+	2050 3450 2050 4550
+Wire Wire Line
+	2050 4550 2900 4550
+Wire Wire Line
+	3550 1600 3750 1600
+Wire Wire Line
+	4550 4600 4650 4600
+Wire Wire Line
+	4650 4600 4650 4500
+Connection ~ 4650 4500
 $EndSCHEMATC

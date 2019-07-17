@@ -643,7 +643,6 @@ Wire Wire Line
 	9750 3050 9750 3150
 Wire Wire Line
 	9000 3150 9750 3150
-Connection ~ 9750 3150
 $Comp
 L Device:LED_Small D23
 U 1 1 5D21DAF3
@@ -741,12 +740,6 @@ Wire Wire Line
 	7300 3950 7300 4050
 Wire Wire Line
 	9850 4750 9000 4750
-Text Label 9000 4350 0    50   ~ 0
-M2_SMB_DATA
-Text Label 9000 4250 0    50   ~ 0
-M2_SMB_CLK
-Text Label 9000 4450 0    50   ~ 0
-M2_SMB_ALERTn
 NoConn ~ 9000 4550
 NoConn ~ 9000 4650
 Text Label 9000 4850 0    50   ~ 0
@@ -757,15 +750,12 @@ NoConn ~ 9000 5150
 Wire Wire Line
 	9750 5950 9000 5950
 Wire Wire Line
-	9750 3150 9750 5750
-Wire Wire Line
 	9000 5850 9750 5850
 Connection ~ 9750 5850
 Wire Wire Line
 	9750 5850 9750 5950
 Wire Wire Line
 	9750 5750 9000 5750
-Connection ~ 9750 5750
 Wire Wire Line
 	9750 5750 9750 5850
 NoConn ~ 8200 5650
@@ -956,10 +946,6 @@ NoConn ~ 4150 5100
 NoConn ~ 4150 5000
 NoConn ~ 4150 4900
 NoConn ~ 4150 4800
-Text GLabel 4600 4500 2    50   Input ~ 0
-PCIE_WDISn
-Wire Wire Line
-	4600 4500 4150 4500
 $Comp
 L Device:C_Small C120
 U 1 1 5D6779B0
@@ -1041,14 +1027,6 @@ Wire Wire Line
 Connection ~ 4500 4100
 Wire Wire Line
 	4500 4100 4500 5300
-Text GLabel 2400 5200 0    50   Output ~ 0
-PCIE1_CLKREQn
-Wire Wire Line
-	2850 5200 2400 5200
-Text GLabel 9850 4850 2    50   Output ~ 0
-PCIE2_CLKREQn
-Wire Wire Line
-	9850 4850 9000 4850
 Wire Wire Line
 	3200 1950 3600 1950
 Wire Wire Line
@@ -1132,4 +1110,49 @@ Text Label 7450 4650 0    50   ~ 0
 PCIE2_TXC_N
 Text Label 7450 4750 0    50   ~ 0
 PCIE2_TXC_P
+NoConn ~ 2850 5200
+NoConn ~ 9000 4850
+NoConn ~ 4150 3200
+NoConn ~ 4150 3400
+NoConn ~ 4150 3600
+NoConn ~ 4150 3700
+NoConn ~ 4150 3900
+NoConn ~ 4150 4000
+NoConn ~ 4150 4500
+Connection ~ 9750 5750
+Connection ~ 9750 3150
+Wire Wire Line
+	9750 3150 9750 5750
+Text Label 9000 4450 0    50   ~ 0
+M2_SMB_ALERTn
+Text Label 9000 4250 0    50   ~ 0
+M2_SMB_CLK
+Text Label 9000 4350 0    50   ~ 0
+M2_SMB_DATA
+NoConn ~ 9000 4250
+NoConn ~ 9000 4350
+NoConn ~ 9000 4450
+$Comp
+L power:PWR_FLAG #FLG0107
+U 1 1 64915E59
+P 1900 1950
+F 0 "#FLG0107" H 1900 2025 50  0001 C CNN
+F 1 "PWR_FLAG" V 1900 2077 50  0000 L CNN
+F 2 "" H 1900 1950 50  0001 C CNN
+F 3 "~" H 1900 1950 50  0001 C CNN
+	1    1900 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0108
+U 1 1 6491670E
+P 7050 1800
+F 0 "#FLG0108" H 7050 1875 50  0001 C CNN
+F 1 "PWR_FLAG" H 7050 1973 50  0000 C CNN
+F 2 "" H 7050 1800 50  0001 C CNN
+F 3 "~" H 7050 1800 50  0001 C CNN
+	1    7050 1800
+	-1   0    0    1   
+$EndComp
+Connection ~ 7050 1800
 $EndSCHEMATC
