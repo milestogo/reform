@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 9
+Sheet 6 9
 Title "MNT Reform 2 Internal Display"
 Date "2019-07-18"
 Rev "2.0D-1"
@@ -91,13 +91,13 @@ F 5 "FH12-30S-0.5SH(55)" H 9950 3300 50  0001 C CNN "Manufacturer_No"
 	1    9950 3300
 	1    0    0    -1  
 $EndComp
-Text GLabel 9750 2400 0    50   Input ~ 0
-EDP_TX0_DP
 Text GLabel 9750 2500 0    50   Input ~ 0
+EDP_TX0_DP
+Text GLabel 9750 2400 0    50   Input ~ 0
 EDP_TX0_DN
-Text GLabel 9750 2100 0    50   Input ~ 0
-EDP_TX1_DP
 Text GLabel 9750 2200 0    50   Input ~ 0
+EDP_TX1_DP
+Text GLabel 9750 2100 0    50   Input ~ 0
 EDP_TX1_DN
 Text GLabel 9750 2700 0    50   Input ~ 0
 EDP_AUX_DP
@@ -1019,21 +1019,6 @@ BACKLIGHT_PWM
 Wire Wire Line
 	8150 4100 8200 4100
 $Comp
-L Connector:TestPoint TP5
-U 1 1 5EE081BC
-P 8550 3150
-F 0 "TP5" H 8608 3268 50  0000 L CNN
-F 1 "T_EDP" H 8608 3177 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8750 3150 50  0001 C CNN
-F 3 "~" H 8750 3150 50  0001 C CNN
-	1    8550 3150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9750 3200 8550 3200
-Wire Wire Line
-	8550 3200 8550 3150
-$Comp
 L reform2:SN65DSI86ZQER U10
 U 1 1 5D1D2542
 P 3600 3600
@@ -1308,4 +1293,115 @@ F6 68 45 05 0B AA 68 1D 61 10 2D 83 25 15 A0 1D AD E8 60 C1 CD D1 8A 0C 16 DC 1C
 FE 07 39 BD 85 89 55 AA C4 B1 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+$Comp
+L Connector_Generic:Conn_02x15_Odd_Even J24
+U 1 1 5D455F41
+P 7400 1900
+F 0 "J24" H 7450 2817 50  0000 C CNN
+F 1 "EDP_HEADER" H 7450 2726 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x15_P2.00mm_Vertical" H 7400 1900 50  0001 C CNN
+F 3 "~" H 7400 1900 50  0001 C CNN
+	1    7400 1900
+	1    0    0    -1  
+$EndComp
+Text GLabel 7700 1300 2    50   Input ~ 0
+EDP_TX1_DP
+Text GLabel 7200 1300 0    50   Input ~ 0
+EDP_TX1_DN
+Text GLabel 7200 1500 0    50   Input ~ 0
+EDP_TX0_DP
+Text GLabel 7700 1400 2    50   Input ~ 0
+EDP_TX0_DN
+Text GLabel 7200 1600 0    50   Input ~ 0
+EDP_AUX_DP
+Text GLabel 7700 1600 2    50   Input ~ 0
+EDP_AUX_DN
+Text Label 7700 1700 0    50   ~ 0
+EDP_LCD_VCC
+Text Label 7200 1800 2    50   ~ 0
+EDP_LCD_VCC
+Text Label 7200 1900 2    50   ~ 0
+EDP_LCD_VCC
+Text Label 7700 1900 0    50   ~ 0
+EDP_LCD_VCC
+Text Label 7700 1800 0    50   ~ 0
+EDP_LCD_TEST
+Text Label 7200 2000 2    50   ~ 0
+EDP_HPD
+Text Label 7700 2200 0    50   ~ 0
+EDP_BL_ENABLE
+Text Label 7200 2300 2    50   ~ 0
+EDP_BL_PWM
+Text Label 7700 2400 0    50   ~ 0
+EDP_BL_VCC
+Text Label 7200 2500 2    50   ~ 0
+EDP_BL_VCC
+Text Label 7700 2500 0    50   ~ 0
+EDP_BL_VCC
+Text Label 7200 2600 2    50   ~ 0
+EDP_BL_VCC
+NoConn ~ 7700 2600
+NoConn ~ 7200 2400
+NoConn ~ 7700 2300
+NoConn ~ 7200 1200
+$Comp
+L power:GND #PWR0227
+U 1 1 5D476721
+P 8400 2150
+F 0 "#PWR0227" H 8400 1900 50  0001 C CNN
+F 1 "GND" H 8405 1977 50  0000 C CNN
+F 2 "" H 8400 2150 50  0001 C CNN
+F 3 "" H 8400 2150 50  0001 C CNN
+	1    8400 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 2150 8400 2100
+Wire Wire Line
+	8400 2100 7700 2100
+Wire Wire Line
+	7700 2000 8400 2000
+Wire Wire Line
+	8400 2000 8400 2100
+Connection ~ 8400 2100
+Wire Wire Line
+	8400 2000 8400 1500
+Wire Wire Line
+	8400 1500 7700 1500
+Connection ~ 8400 2000
+Wire Wire Line
+	7700 1200 8400 1200
+Wire Wire Line
+	8400 1200 8400 1500
+Connection ~ 8400 1500
+$Comp
+L power:GND #PWR0228
+U 1 1 5D4966FE
+P 6550 2300
+F 0 "#PWR0228" H 6550 2050 50  0001 C CNN
+F 1 "GND" H 6555 2127 50  0000 C CNN
+F 2 "" H 6550 2300 50  0001 C CNN
+F 3 "" H 6550 2300 50  0001 C CNN
+	1    6550 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 2300 6550 2200
+Wire Wire Line
+	6550 2200 7200 2200
+Wire Wire Line
+	7200 2100 6550 2100
+Wire Wire Line
+	6550 2100 6550 2200
+Connection ~ 6550 2200
+Wire Wire Line
+	7200 1700 6550 1700
+Wire Wire Line
+	6550 1700 6550 2100
+Connection ~ 6550 2100
+Wire Wire Line
+	7200 1400 6550 1400
+Wire Wire Line
+	6550 1400 6550 1700
+Connection ~ 6550 1700
 $EndSCHEMATC
