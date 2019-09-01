@@ -1,4 +1,4 @@
-update=Wed 17 Jul 2019 06:52:46 PM CEST
+update=Sun 11 Aug 2019 11:39:27 PM CEST
 version=1
 last_client=kicad
 [general]
@@ -250,7 +250,7 @@ dPairViaGap=0.25
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=/tmp
+PlotDirectoryName=../
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
