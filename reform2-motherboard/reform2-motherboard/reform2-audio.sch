@@ -4,10 +4,10 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 9
+Sheet 2 9
 Title "Reform 2 Audio"
-Date "2019-07-18"
-Rev "2.0D-1"
+Date "2019-09-24"
+Rev "2.0D-2"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
@@ -1206,4 +1206,6 @@ F6 68 45 05 0B AA 68 1D 61 10 2D 83 25 15 A0 1D AD E8 60 C1 CD D1 8A 0C 16 DC 1C
 FE 07 39 BD 85 89 55 AA C4 B1 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+Text Notes 7950 2900 0    50   ~ 0
+TODO: volume adjust?
 $EndSCHEMATC

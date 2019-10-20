@@ -6,8 +6,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 8 9
 Title "MNT Reform 2 USB"
-Date "2019-07-18"
-Rev "2.0D-1"
+Date "2019-09-24"
+Rev "2.0D-2"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
@@ -15,13 +15,13 @@ Comment3 "License: GPL v3+"
 Comment4 ""
 $EndDescr
 $Comp
-L reform2-motherboard-rescue:Crystal_Small-reform-motherboard-rescue Y1
+L Device:Crystal_GND24_Small Y1
 U 1 1 5D1A9B07
 P 8700 3300
 AR Path="/5D1A9B07" Ref="Y1"  Part="1" 
 AR Path="/5D06A2FD/5D1A9B07" Ref="Y1"  Part="1" 
-F 0 "Y1" H 8700 3400 50  0000 C CNN
-F 1 "24MHz" H 8700 3200 50  0000 C CNN
+F 0 "Y1" H 8500 3550 50  0000 C CNN
+F 1 "24MHz" H 8550 3450 50  0000 C CNN
 F 2 "Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm" H 8700 3300 50  0001 C CNN
 F 3 "https://www.mouser.de/datasheet/2/3/ABM8AIG-783590.pdf" H 8700 3300 50  0001 C CNN
 F 4 "ABM8AIG-24.000MHZ" H 8700 3300 50  0001 C CNN "Manufacturer_No"
@@ -32,16 +32,16 @@ $EndComp
 $Comp
 L reform2-motherboard-rescue:R_Small-reform-motherboard-rescue R41
 U 1 1 5D1A9B0D
-P 8700 3050
+P 8700 3000
 AR Path="/5D1A9B0D" Ref="R41"  Part="1" 
 AR Path="/5D06A2FD/5D1A9B0D" Ref="R41"  Part="1" 
-F 0 "R41" H 8730 3070 50  0000 L CNN
-F 1 "1M" H 8730 3010 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 8700 3050 50  0001 C CNN
-F 3 "" H 8700 3050 50  0001 C CNN
-F 4 "Yageo" H 8700 3050 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-071ML" H 8700 3050 50  0001 C CNN "Manufacturer_No"
-	1    8700 3050
+F 0 "R41" H 8730 3020 50  0000 L CNN
+F 1 "1M" H 8730 2960 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8700 3000 50  0001 C CNN
+F 3 "" H 8700 3000 50  0001 C CNN
+F 4 "Yageo" H 8700 3000 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071ML" H 8700 3000 50  0001 C CNN "Manufacturer_No"
+	1    8700 3000
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -50,8 +50,8 @@ U 1 1 5D1A9B13
 P 9000 3400
 AR Path="/5D1A9B13" Ref="C21"  Part="1" 
 AR Path="/5D06A2FD/5D1A9B13" Ref="C21"  Part="1" 
-F 0 "C21" H 9010 3470 50  0000 L CNN
-F 1 "18pF" H 9010 3320 50  0000 L CNN
+F 0 "C21" H 9050 3450 50  0000 L CNN
+F 1 "18pF" H 9050 3300 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9000 3400 50  0001 C CNN
 F 3 "" H 9000 3400 50  0001 C CNN
 F 4 "Yageo" H 9000 3400 50  0001 C CNN "Manufacturer"
@@ -78,8 +78,8 @@ U 1 1 5D1A9B1F
 P 8400 3400
 AR Path="/5D1A9B1F" Ref="C20"  Part="1" 
 AR Path="/5D06A2FD/5D1A9B1F" Ref="C20"  Part="1" 
-F 0 "C20" H 8410 3470 50  0000 L CNN
-F 1 "18pF" H 8410 3320 50  0000 L CNN
+F 0 "C20" H 8450 3450 50  0000 L CNN
+F 1 "18pF" H 8450 3300 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8400 3400 50  0001 C CNN
 F 3 "" H 8400 3400 50  0001 C CNN
 F 4 "Yageo" H 8400 3400 50  0001 C CNN "Manufacturer"
@@ -107,13 +107,13 @@ Wire Wire Line
 Connection ~ 8400 3300
 Connection ~ 9000 3300
 Wire Wire Line
-	8400 3300 8400 3050
+	8400 3300 8400 3000
 Wire Wire Line
-	8400 3050 8600 3050
+	8400 3000 8600 3000
 Wire Wire Line
-	8800 3050 9000 3050
+	8800 3000 9000 3000
 Wire Wire Line
-	9000 3050 9000 3300
+	9000 3000 9000 3300
 Wire Wire Line
 	8400 3300 8600 3300
 Wire Wire Line
@@ -317,17 +317,10 @@ Wire Wire Line
 	12500 2300 12500 2500
 Connection ~ 12200 2300
 Wire Wire Line
-	12400 2500 12400 2300
-Wire Wire Line
 	12200 2300 12300 2300
-Connection ~ 12400 2300
-Wire Wire Line
-	12400 2300 12500 2300
 Wire Wire Line
 	12300 2500 12300 2300
 Connection ~ 12300 2300
-Wire Wire Line
-	12300 2300 12400 2300
 $Comp
 L power:+3V3 #PWR034
 U 1 1 5D9F6507
@@ -785,7 +778,7 @@ U 1 1 60F17696
 P 3450 8750
 F 0 "J9" H 3558 9031 50  0000 C CNN
 F 1 "USB_INT1" H 3558 8940 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Horizontal" H 3450 8750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 3450 8750 50  0001 C CNN
 F 3 "~" H 3450 8750 50  0001 C CNN
 F 4 "3M" H 3450 8750 50  0001 C CNN "Manufacturer"
 F 5 "951104-7622-AR" H 3450 8750 50  0001 C CNN "Manufacturer_No"
@@ -810,7 +803,7 @@ U 1 1 5DBC25D6
 P 3450 9650
 F 0 "J14" H 3558 9931 50  0000 C CNN
 F 1 "USB_INT2" H 3558 9840 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Horizontal" H 3450 9650 50  0001 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 3450 9650 50  0001 C CNN
 F 3 "~" H 3450 9650 50  0001 C CNN
 F 4 "3M" H 3450 9650 50  0001 C CNN "Manufacturer"
 F 5 "951104-7622-AR" H 3450 9650 50  0001 C CNN "Manufacturer_No"
@@ -1995,31 +1988,18 @@ F 5 "CC0603JPX7R9BB104" H 12650 2400 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Interface_USB:TUSB8041 U?
+L reform2:TUSB8041-Q1 U?
 U 1 1 5D114731
 P 12200 4600
 AR Path="/5D114731" Ref="U?"  Part="1" 
 AR Path="/5D06A2FD/5D114731" Ref="U9"  Part="1" 
 F 0 "U9" H 11300 2600 50  0000 C CNN
 F 1 "TUSB8041" H 11300 2500 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-64-1EP_9x9mm_P0.5mm_EP6x6mm_ThermalVias" H 13400 6600 50  0001 L CNN
+F 2 "Package_QFP:HTQFP-64-1EP_10x10mm_P0.5mm_EP8x8mm_Mask4.4x4.4mm_ThermalVias" H 13400 6600 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tusb8041.pdf" H 11900 4800 50  0001 C CNN
 F 4 "Texas Instruments" H 12200 4600 50  0001 C CNN "Manufacturer"
 F 5 "TUSB8041" H 12200 4600 50  0001 C CNN "Manufacturer_No"
 	1    12200 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C98
-U 1 1 5E0DCBCF
-P 15450 2400
-F 0 "C98" H 15542 2446 50  0000 L CNN
-F 1 "10uF" H 15542 2355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 15450 2400 50  0001 C CNN
-F 3 "~" H 15450 2400 50  0001 C CNN
-F 4 "TDK" H 15450 2400 50  0001 C CNN "Manufacturer"
-F 5 "CGA3E2X8R1E104K080AE" H 15450 2400 50  0001 C CNN "Manufacturer_No"
-	1    15450 2400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2063,7 +2043,6 @@ F 5 "CC0603JPX7R9BB104" H 14250 2400 50  0001 C CNN "Manufacturer_No"
 $EndComp
 Wire Wire Line
 	15450 2300 15050 2300
-Connection ~ 15450 2300
 Connection ~ 13050 2300
 Wire Wire Line
 	13050 2300 12650 2300
@@ -2101,7 +2080,6 @@ Wire Wire Line
 	15450 2600 15450 2500
 Wire Wire Line
 	15450 2500 15050 2500
-Connection ~ 15450 2500
 Connection ~ 13050 2500
 Wire Wire Line
 	13050 2500 12650 2500
@@ -2315,7 +2293,7 @@ Text Label 9850 4100 0    50   ~ 0
 USB_SSTXP
 Text Label 9850 4200 0    50   ~ 0
 USB_SSTXN
-Text Notes 14400 4750 0    50   ~ 0
+Text Notes 14250 4750 0    50   ~ 0
 TODO: terminate unused superspeeds?
 NoConn ~ 13500 4600
 NoConn ~ 13500 4700
@@ -2467,4 +2445,22 @@ F6 68 45 05 0B AA 68 1D 61 10 2D 83 25 15 A0 1D AD E8 60 C1 CD D1 8A 0C 16 DC 1C
 FE 07 39 BD 85 89 55 AA C4 B1 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+Text Notes 14250 4900 0    50   ~ 0
+TODO: clarify upstream USB2/3 connection
+Wire Wire Line
+	8700 3400 8700 3500
+Wire Wire Line
+	8700 3500 8850 3500
+Connection ~ 9000 3500
+Wire Wire Line
+	8700 3200 8700 3150
+Wire Wire Line
+	8700 3150 8850 3150
+Wire Wire Line
+	8850 3150 8850 3500
+Connection ~ 8850 3500
+Wire Wire Line
+	8850 3500 9000 3500
+Wire Wire Line
+	12300 2300 12500 2300
 $EndSCHEMATC

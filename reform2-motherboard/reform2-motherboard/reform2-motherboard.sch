@@ -6,8 +6,8 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 9
 Title "MNT Reform 2"
-Date "2019-07-18"
-Rev "2.0D-1"
+Date "2019-09-24"
+Rev "2.0D-2"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
@@ -161,23 +161,6 @@ Text GLabel 11050 4950 2    50   Output ~ 0
 LPC_UART2_RX
 Text GLabel 8700 7950 0    50   Output ~ 0
 LPC_SS0
-Wire Wire Line
-	11000 11650 10400 11650
-Wire Wire Line
-	11200 11650 11550 11650
-$Comp
-L Device:R_Small R156
-U 1 1 61B3EC18
-P 11100 11650
-F 0 "R156" V 11296 11650 50  0000 C CNN
-F 1 "0" V 11205 11650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 11100 11650 50  0001 C CNN
-F 3 "~" H 11100 11650 50  0001 C CNN
-F 4 "Vishay Dale" H 11100 11650 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 11100 11650 50  0001 C CNN "Manufacturer_No"
-	1    11100 11650
-	0    1    -1   0   
-$EndComp
 NoConn ~ 10400 9450
 Text GLabel 6600 5350 0    50   Output ~ 0
 PCIE_RESETn
@@ -243,7 +226,6 @@ Wire Wire Line
 	8450 10050 8700 10050
 Text GLabel 8450 10050 0    50   Output ~ 0
 USB_RESETn
-NoConn ~ 8700 10750
 NoConn ~ 8700 10550
 $Comp
 L Device:R_Small R113
@@ -744,82 +726,27 @@ F 5 "TE" H 9500 8350 50  0001 C CNN "Manufacturer"
 	1    9500 8350
 	1    0    0    -1  
 $EndComp
-Text Notes 15700 5050 0    50   ~ 0
-NOSTUFF
-Wire Wire Line
-	15650 5050 15650 5650
-Connection ~ 15650 5050
-Wire Wire Line
-	15750 5050 15650 5050
-Wire Wire Line
-	15950 5050 16000 5050
-$Comp
-L Device:R_Small R149
-U 1 1 5F15012C
-P 15850 5050
-F 0 "R149" V 15750 5000 50  0000 L CNN
-F 1 "0" V 15850 5050 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 15850 5050 50  0001 C CNN
-F 3 "~" H 15850 5050 50  0001 C CNN
-F 4 "Vishay Dale" H 15850 5050 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 15850 5050 50  0001 C CNN "Manufacturer_No"
-	1    15850 5050
-	0    1    1    0   
-$EndComp
 Connection ~ 15650 5650
 Wire Wire Line
 	15650 5650 14800 5650
 Wire Wire Line
-	15650 4700 15650 5050
+	15650 5650 16050 5650
 Wire Wire Line
-	15650 5650 16000 5650
-Connection ~ 16500 5850
-Wire Wire Line
-	16500 6050 16500 5850
-Wire Wire Line
-	16500 5750 16500 5850
-Connection ~ 16500 5750
-Wire Wire Line
-	16500 5650 16500 5750
-Connection ~ 16500 5650
-Wire Wire Line
-	16500 5550 16500 5650
-Connection ~ 16500 5550
-Wire Wire Line
-	16500 5450 16500 5550
-Connection ~ 16500 5450
-Wire Wire Line
-	16500 5350 16500 5450
-Connection ~ 16500 5350
-Wire Wire Line
-	16500 5250 16500 5350
-Connection ~ 16500 5250
-Wire Wire Line
-	16500 5150 16500 5250
-Connection ~ 16500 5150
-Wire Wire Line
-	16500 5050 16500 5150
-Connection ~ 16500 5050
-Wire Wire Line
-	16500 4950 16500 5050
+	15950 5950 15950 5750
 $Comp
 L power:GND #PWR0219
 U 1 1 5F0CE58E
-P 16500 6050
-F 0 "#PWR0219" H 16500 5800 50  0001 C CNN
-F 1 "GND" H 16505 5877 50  0000 C CNN
-F 2 "" H 16500 6050 50  0001 C CNN
-F 3 "" H 16500 6050 50  0001 C CNN
-	1    16500 6050
+P 15950 5950
+F 0 "#PWR0219" H 15950 5700 50  0001 C CNN
+F 1 "GND" H 15955 5777 50  0000 C CNN
+F 2 "" H 15950 5950 50  0001 C CNN
+F 3 "" H 15950 5950 50  0001 C CNN
+	1    15950 5950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	15950 4450 15650 4450
 Connection ~ 15950 4450
-Wire Wire Line
-	15950 4950 16000 4950
-Wire Wire Line
-	15950 4450 15950 4950
 Wire Wire Line
 	15050 6050 15050 6000
 $Comp
@@ -858,13 +785,10 @@ F 3 "" H 16300 4450 50  0001 C CNN
 	1    16300 4450
 	1    0    0    -1  
 $EndComp
-NoConn ~ 16000 5850
-NoConn ~ 16000 5750
-NoConn ~ 16000 5450
 Wire Wire Line
-	16000 5550 14800 5550
+	16050 5550 14800 5550
 Wire Wire Line
-	15050 5350 16000 5350
+	15050 5350 16050 5350
 Connection ~ 15050 5350
 Wire Wire Line
 	15050 5800 15050 5350
@@ -872,14 +796,14 @@ Wire Wire Line
 	14800 5350 15050 5350
 Connection ~ 15050 5250
 Wire Wire Line
-	15050 5250 16000 5250
+	15050 5250 16050 5250
 Wire Wire Line
 	15050 5250 14800 5250
 Wire Wire Line
 	15050 4700 15050 5250
 Connection ~ 15350 5150
 Wire Wire Line
-	15350 5150 16000 5150
+	15350 5150 16050 5150
 Wire Wire Line
 	15350 5150 14800 5150
 Wire Wire Line
@@ -888,19 +812,6 @@ Text GLabel 14800 5150 0    50   Input ~ 0
 IMX_JTAG_TDI
 Text GLabel 14800 5250 0    50   Output ~ 0
 IMX_JTAG_TMS
-$Comp
-L Connector_Generic:Conn_02x10_Odd_Even J19
-U 1 1 5EEB8075
-P 16200 5350
-F 0 "J19" H 16250 5967 50  0000 C CNN
-F 1 "JTAG" H 16250 5876 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 16200 5350 50  0001 C CNN
-F 3 "~" H 16200 5350 50  0001 C CNN
-F 4 "Molex" H 16200 5350 50  0001 C CNN "Manufacturer"
-F 5 "87914-2016" H 16200 5350 50  0001 C CNN "Manufacturer_No"
-	1    16200 5350
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+4V #PWR025
 U 1 1 5E9AB42D
@@ -1463,13 +1374,13 @@ Text GLabel 8700 4950 0    60   Output ~ 0
 ETH0_A+
 Text GLabel 8700 4850 0    60   Output ~ 0
 ETH0_A-
-Text GLabel 8700 4350 0    60   Output ~ 0
-ETH0_B+
-Text GLabel 8700 4250 0    60   Output ~ 0
-ETH0_B-
 Text GLabel 8700 4650 0    60   Output ~ 0
-ETH0_C+
+ETH0_B+
 Text GLabel 8700 4550 0    60   Output ~ 0
+ETH0_B-
+Text GLabel 8700 4350 0    60   Output ~ 0
+ETH0_C+
+Text GLabel 8700 4250 0    60   Output ~ 0
 ETH0_C-
 Text GLabel 8700 4050 0    60   Output ~ 0
 ETH0_D+
@@ -1751,4 +1662,44 @@ F 3 "~" H 8700 10650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8700 10650 8500 10650
+Wire Wire Line
+	10400 11650 11550 11650
+Text Notes 6450 5600 0    50   ~ 0
+TODO: route out PCIE_DIS_B?
+Wire Wire Line
+	10400 12450 11400 12450
+Text Notes 11550 12500 0    50   ~ 0
+TODO: PWM header
+Text Notes 10500 10500 0    50   ~ 0
+TODO: boot dips
+Text Notes 5250 9400 0    50   ~ 0
+TODO: check RTC function!
+Wire Wire Line
+	8700 10750 7150 10750
+Text GLabel 7150 10750 0    50   Input ~ 0
+IMX_WAKE
+Wire Wire Line
+	15650 4700 15650 5650
+$Comp
+L Connector:Conn_01x08_Male J19
+U 1 1 5ECAAFCE
+P 16250 5350
+F 0 "J19" H 16222 5324 50  0000 R CNN
+F 1 "JTAG" H 16222 5233 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 16250 5350 50  0001 C CNN
+F 3 "~" H 16250 5350 50  0001 C CNN
+	1    16250 5350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	16050 5750 15950 5750
+Wire Wire Line
+	16050 5050 15950 5050
+Wire Wire Line
+	15950 4450 15950 5050
+Wire Wire Line
+	15950 5750 15950 5450
+Wire Wire Line
+	15950 5450 16050 5450
+Connection ~ 15950 5750
 $EndSCHEMATC

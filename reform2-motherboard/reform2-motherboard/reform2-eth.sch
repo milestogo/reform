@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 9
 Title "MNT Reform 2 Ethernet"
-Date "2019-07-18"
-Rev "2.0D-1"
+Date "2019-09-24"
+Rev "2.0D-2"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
