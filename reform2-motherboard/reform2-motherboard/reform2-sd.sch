@@ -127,8 +127,8 @@ F 0 "C137" H 4792 3196 50  0000 L CNN
 F 1 "10uF" H 4792 3105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4700 3150 50  0001 C CNN
 F 3 "~" H 4700 3150 50  0001 C CNN
-F 4 "KEMET" H 4700 3150 50  0001 C CNN "Manufacturer"
-F 5 "EDH226M050S9GAA" H 4700 3150 50  0001 C CNN "Manufacturer_No"
+F 4 "Murata" H 4700 3150 50  0001 C CNN "Manufacturer"
+F 5 "GRM188R6YA106MA73D" H 4700 3150 50  0001 C CNN "Manufacturer_No"
 	1    4700 3150
 	1    0    0    -1  
 $EndComp
@@ -236,6 +236,8 @@ F 0 "U8" H 4000 2950 50  0000 C CNN
 F 1 "TXS0108EPW" H 4000 2850 50  0000 C CNN
 F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 4000 3200 50  0001 C CNN
 F 3 "www.ti.com/lit/ds/symlink/txs0108e.pdf" H 4000 3850 50  0001 C CNN
+F 4 "Texas Instruments" H 4000 3950 50  0001 C CNN "Manufacturer"
+F 5 "TXS0108EPW" H 4000 3950 50  0001 C CNN "Manufacturer_No"
 	1    4000 3950
 	1    0    0    -1  
 $EndComp
@@ -277,6 +279,8 @@ F 0 "R35" V 2754 3550 50  0000 C CNN
 F 1 "1.5k" V 2845 3550 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 2950 3550 50  0001 C CNN
 F 3 "~" H 2950 3550 50  0001 C CNN
+F 4 "Yageo" H 2950 3550 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071K5L" H 2950 3550 50  0001 C CNN "Manufacturer_No"
 	1    2950 3550
 	0    1    1    0   
 $EndComp
@@ -371,6 +375,8 @@ F 0 "R34" H 2641 1904 50  0000 R CNN
 F 1 "0" H 2641 1995 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 2700 1950 50  0001 C CNN
 F 3 "~" H 2700 1950 50  0001 C CNN
+F 4 "Vishay Dale" H 2700 1950 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 2700 1950 50  0001 C CNN "Manufacturer_No"
 	1    2700 1950
 	-1   0    0    1   
 $EndComp

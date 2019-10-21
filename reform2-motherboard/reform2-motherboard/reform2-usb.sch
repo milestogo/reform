@@ -24,7 +24,7 @@ F 0 "Y1" H 8500 3550 50  0000 C CNN
 F 1 "24MHz" H 8550 3450 50  0000 C CNN
 F 2 "Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm" H 8700 3300 50  0001 C CNN
 F 3 "https://www.mouser.de/datasheet/2/3/ABM8AIG-783590.pdf" H 8700 3300 50  0001 C CNN
-F 4 "ABM8AIG-24.000MHZ" H 8700 3300 50  0001 C CNN "Manufacturer_No"
+F 4 "ABM8AIG-24.000MHz-R40-4-T" H 8700 3300 50  0001 C CNN "Manufacturer_No"
 F 5 "Abracon" H 8700 3300 50  0001 C CNN "Manufacturer"
 	1    8700 3300
 	1    0    0    -1  
@@ -254,8 +254,8 @@ F 0 "C43" H 9992 1846 50  0000 L CNN
 F 1 "10uF" H 9992 1755 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9900 1800 50  0001 C CNN
 F 3 "~" H 9900 1800 50  0001 C CNN
-F 4 "TDK" H 9900 1800 50  0001 C CNN "Manufacturer"
-F 5 "CGA3E2X8R1E104K080AE" H 9900 1800 50  0001 C CNN "Manufacturer_No"
+F 4 "Murata" H 9900 1800 50  0001 C CNN "Manufacturer"
+F 5 "GRM188R6YA106MA73D" H 9900 1800 50  0001 C CNN "Manufacturer_No"
 	1    9900 1800
 	1    0    0    -1  
 $EndComp
@@ -431,7 +431,7 @@ F 1 "USB3_A" H 1507 4426 50  0000 C CNN
 F 2 "Connector_USB:USB3_A_Molex_48393-001" H 1600 3900 50  0001 C CNN
 F 3 "~" H 1600 3900 50  0001 C CNN
 F 4 "Molex" H 1450 3800 50  0001 C CNN "Manufacturer"
-F 5 "48393-001" H 1450 3800 50  0001 C CNN "Manufacturer_No"
+F 5 "48393-0003" H 1450 3800 50  0001 C CNN "Manufacturer_No"
 	1    1450 3800
 	1    0    0    -1  
 $EndComp
@@ -518,7 +518,7 @@ F 1 "USB3_A" H 5057 4426 50  0000 C CNN
 F 2 "Connector_USB:USB3_A_Molex_48393-001" H 5150 3900 50  0001 C CNN
 F 3 "~" H 5150 3900 50  0001 C CNN
 F 4 "Molex" H 5000 3800 50  0001 C CNN "Manufacturer"
-F 5 "48393-001" H 5000 3800 50  0001 C CNN "Manufacturer_No"
+F 5 "48393-0003" H 5000 3800 50  0001 C CNN "Manufacturer_No"
 	1    5000 3800
 	1    0    0    -1  
 $EndComp
@@ -569,7 +569,7 @@ F 1 "TPS2561" H 2300 2276 50  0000 C CNN
 F 2 "Package_SON:VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm_ThermalVias" H 2500 2300 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tps2561.pdf" H 1900 2300 50  0001 C CNN
 F 4 "Texas Instruments" H 2300 1800 50  0001 C CNN "Manufacturer"
-F 5 "TPS2561" H 2300 1800 50  0001 C CNN "Manufacturer_No"
+F 5 "TPS2561DRCR" H 2300 1800 50  0001 C CNN "Manufacturer_No"
 	1    2300 1800
 	1    0    0    -1  
 $EndComp
@@ -582,7 +582,7 @@ F 1 "TPS2561" H 5800 2276 50  0000 C CNN
 F 2 "Package_SON:VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm_ThermalVias" H 6000 2300 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tps2561.pdf" H 5400 2300 50  0001 C CNN
 F 4 "Texas Instruments" H 5800 1800 50  0001 C CNN "Manufacturer"
-F 5 "TPS2561" H 5800 1800 50  0001 C CNN "Manufacturer_No"
+F 5 "TPS2561DRCR" H 5800 1800 50  0001 C CNN "Manufacturer_No"
 	1    5800 1800
 	1    0    0    -1  
 $EndComp
@@ -989,7 +989,7 @@ F 1 "USB3_A" H 5057 6926 50  0000 C CNN
 F 2 "Connector_USB:USB3_A_Molex_48393-001" H 5150 6400 50  0001 C CNN
 F 3 "~" H 5150 6400 50  0001 C CNN
 F 4 "Molex" H 5000 6300 50  0001 C CNN "Manufacturer"
-F 5 "48393-001" H 5000 6300 50  0001 C CNN "Manufacturer_No"
+F 5 "48393-0003" H 5000 6300 50  0001 C CNN "Manufacturer_No"
 	1    5000 6300
 	1    0    0    -1  
 $EndComp
@@ -1994,11 +1994,11 @@ P 12200 4600
 AR Path="/5D114731" Ref="U?"  Part="1" 
 AR Path="/5D06A2FD/5D114731" Ref="U9"  Part="1" 
 F 0 "U9" H 11300 2600 50  0000 C CNN
-F 1 "TUSB8041" H 11300 2500 50  0000 C CNN
+F 1 "TUSB8041IPAPRQ1" H 11300 2500 50  0000 C CNN
 F 2 "Package_QFP:HTQFP-64-1EP_10x10mm_P0.5mm_EP8x8mm_Mask4.4x4.4mm_ThermalVias" H 13400 6600 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tusb8041.pdf" H 11900 4800 50  0001 C CNN
 F 4 "Texas Instruments" H 12200 4600 50  0001 C CNN "Manufacturer"
-F 5 "TUSB8041" H 12200 4600 50  0001 C CNN "Manufacturer_No"
+F 5 "TUSB8041IPAPRQ1" H 12200 4600 50  0001 C CNN "Manufacturer_No"
 	1    12200 4600
 	1    0    0    -1  
 $EndComp
@@ -2158,8 +2158,8 @@ F 0 "C91" H 13142 1896 50  0000 L CNN
 F 1 "10uF" H 13142 1805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 13050 1850 50  0001 C CNN
 F 3 "~" H 13050 1850 50  0001 C CNN
-F 4 "TDK" H 13050 1850 50  0001 C CNN "Manufacturer"
-F 5 "CGA3E2X8R1E104K080AE" H 13050 1850 50  0001 C CNN "Manufacturer_No"
+F 4 "Murata" H 13050 1850 50  0001 C CNN "Manufacturer"
+F 5 "GRM188R6YA106MA73D" H 13050 1850 50  0001 C CNN "Manufacturer_No"
 	1    13050 1850
 	1    0    0    -1  
 $EndComp
@@ -2230,8 +2230,8 @@ F 0 "C63" H 2642 3596 50  0000 L CNN
 F 1 "10uF" H 2642 3505 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2550 3550 50  0001 C CNN
 F 3 "~" H 2550 3550 50  0001 C CNN
-F 4 "TDK" H 2550 3550 50  0001 C CNN "Manufacturer"
-F 5 "CGA3E2X8R1E104K080AE" H 2550 3550 50  0001 C CNN "Manufacturer_No"
+F 4 "Murata" H 2550 3550 50  0001 C CNN "Manufacturer"
+F 5 "GRM188R6YA106MA73D" H 2550 3550 50  0001 C CNN "Manufacturer_No"
 	1    2550 3550
 	1    0    0    -1  
 $EndComp
@@ -2243,8 +2243,8 @@ F 0 "C81" H 6192 3596 50  0000 L CNN
 F 1 "10uF" H 6192 3505 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6100 3550 50  0001 C CNN
 F 3 "~" H 6100 3550 50  0001 C CNN
-F 4 "TDK" H 6100 3550 50  0001 C CNN "Manufacturer"
-F 5 "CGA3E2X8R1E104K080AE" H 6100 3550 50  0001 C CNN "Manufacturer_No"
+F 4 "Murata" H 6100 3550 50  0001 C CNN "Manufacturer"
+F 5 "GRM188R6YA106MA73D" H 6100 3550 50  0001 C CNN "Manufacturer_No"
 	1    6100 3550
 	1    0    0    -1  
 $EndComp
@@ -2256,8 +2256,8 @@ F 0 "C72" H 6142 6096 50  0000 L CNN
 F 1 "10uF" H 6142 6005 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6050 6050 50  0001 C CNN
 F 3 "~" H 6050 6050 50  0001 C CNN
-F 4 "TDK" H 6050 6050 50  0001 C CNN "Manufacturer"
-F 5 "CGA3E2X8R1E104K080AE" H 6050 6050 50  0001 C CNN "Manufacturer_No"
+F 4 "Murata" H 6050 6050 50  0001 C CNN "Manufacturer"
+F 5 "GRM188R6YA106MA73D" H 6050 6050 50  0001 C CNN "Manufacturer_No"
 	1    6050 6050
 	1    0    0    -1  
 $EndComp
@@ -2269,8 +2269,8 @@ F 0 "C69" H 4792 8846 50  0000 L CNN
 F 1 "10uF" H 4792 8755 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4700 8800 50  0001 C CNN
 F 3 "~" H 4700 8800 50  0001 C CNN
-F 4 "TDK" H 4700 8800 50  0001 C CNN "Manufacturer"
-F 5 "CGA3E2X8R1E104K080AE" H 4700 8800 50  0001 C CNN "Manufacturer_No"
+F 4 "Murata" H 4700 8800 50  0001 C CNN "Manufacturer"
+F 5 "GRM188R6YA106MA73D" H 4700 8800 50  0001 C CNN "Manufacturer_No"
 	1    4700 8800
 	1    0    0    -1  
 $EndComp
@@ -2282,8 +2282,8 @@ F 0 "C71" H 4792 9746 50  0000 L CNN
 F 1 "10uF" H 4792 9655 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4700 9700 50  0001 C CNN
 F 3 "~" H 4700 9700 50  0001 C CNN
-F 4 "TDK" H 4700 9700 50  0001 C CNN "Manufacturer"
-F 5 "CGA3E2X8R1E104K080AE" H 4700 9700 50  0001 C CNN "Manufacturer_No"
+F 4 "Murata" H 4700 9700 50  0001 C CNN "Manufacturer"
+F 5 "GRM188R6YA106MA73D" H 4700 9700 50  0001 C CNN "Manufacturer_No"
 	1    4700 9700
 	1    0    0    -1  
 $EndComp

@@ -1101,7 +1101,7 @@ F 1 "SW_Push" H 15350 2094 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2" H 15350 2100 50  0001 C CNN
 F 3 "~" H 15350 2100 50  0001 C CNN
 F 4 "CK" H 15350 1900 50  0001 C CNN "Manufacturer"
-F 5 "KMR2" H 15350 1900 50  0001 C CNN "Manufacturer_No"
+F 5 "KMR223NGULCLFG" H 15350 1900 50  0001 C CNN "Manufacturer_No"
 	1    15350 1900
 	1    0    0    -1  
 $EndComp
@@ -1688,6 +1688,8 @@ F 0 "J19" H 16222 5324 50  0000 R CNN
 F 1 "JTAG" H 16222 5233 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 16250 5350 50  0001 C CNN
 F 3 "~" H 16250 5350 50  0001 C CNN
+F 4 "Wurth" H 16250 5350 50  0001 C CNN "Manufacturer"
+F 5 "87914-0816" H 16250 5350 50  0001 C CNN "Manufacturer_No"
 	1    16250 5350
 	-1   0    0    -1  
 $EndComp
