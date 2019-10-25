@@ -50,13 +50,13 @@ L reform2:CM2020-00TR U22
 U 1 1 5D124B0E
 P 4800 5100
 F 0 "U22" H 4800 6467 50  0000 C CNN
-F 1 "CM2020-00TR" H 4800 6376 50  0000 C CNN
+F 1 "TPD12S521" H 4800 6376 50  0000 C CNN
 F 2 "footprints:TSSOP50P640X120-38N" H 4350 2950 50  0001 L BNN
 F 3 "" H 4800 5100 50  0001 L BNN
 F 4 "CM2020-00TR Series 10.8 V HDMI Transmitter Port Protection and Interface Device" H 3350 3150 50  0001 L BNN "Field6"
 F 5 "ON Semiconductor" H 4450 3050 50  0001 L BNN "Field8"
 F 6 "Texas Instruments" H 4800 5100 50  0001 C CNN "Manufacturer"
-F 7 "CM2020-00TR" H 4800 5100 50  0001 C CNN "Manufacturer_No"
+F 7 "TPD12S521" H 4800 5100 50  0001 C CNN "Manufacturer_No"
 	1    4800 5100
 	1    0    0    -1  
 $EndComp
@@ -652,4 +652,6 @@ F6 68 45 05 0B AA 68 1D 61 10 2D 83 25 15 A0 1D AD E8 60 C1 CD D1 8A 0C 16 DC 1C
 FE 07 39 BD 85 89 55 AA C4 B1 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+Text Notes 4150 3550 0    50   ~ 0
+TODO: double check this substitute
 $EndSCHEMATC

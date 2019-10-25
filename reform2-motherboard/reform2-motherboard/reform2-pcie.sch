@@ -238,9 +238,9 @@ Text GLabel 5050 3700 2    50   Input ~ 0
 PCIE_RESETn
 Wire Wire Line
 	5050 3700 4600 3700
-Text GLabel 2550 5900 2    50   Input ~ 0
+Text GLabel 2400 4300 0    50   Input ~ 0
 PCIE1_CLK_N
-Text GLabel 2550 5800 2    50   Input ~ 0
+Text GLabel 2400 4200 0    50   Input ~ 0
 PCIE1_CLK_P
 $Comp
 L power:+3V3 #PWR047
@@ -587,9 +587,9 @@ F 3 "" H 7300 6250 50  0001 C CNN
 	1    7300 6250
 	1    0    0    -1  
 $EndComp
-Text GLabel 2550 6400 2    50   Input ~ 0
+Text GLabel 2550 6400 2    50   Output ~ 0
 PCIE2_CLK_P
-Text GLabel 2550 6500 2    50   Input ~ 0
+Text GLabel 2550 6500 2    50   Output ~ 0
 PCIE2_CLK_N
 Text GLabel 8200 4450 0    50   Output ~ 0
 PCIE2_RX_P
@@ -1208,7 +1208,7 @@ F6 68 45 05 0B AA 68 1D 61 10 2D 83 25 15 A0 1D AD E8 60 C1 CD D1 8A 0C 16 DC 1C
 FE 07 39 BD 85 89 55 AA C4 B1 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-Text Notes 5100 4150 0    50   ~ 0
+Text Notes 5150 3950 0    50   ~ 0
 TODO: switch/pullup for w_disable 
 Wire Wire Line
 	2400 5600 2750 5600
@@ -1233,7 +1233,7 @@ $Comp
 L Device:R_Small R161
 U 1 1 5EADA1F9
 P 6350 5800
-F 0 "R161" H 6500 5750 50  0000 R CNN
+F 0 "R161" H 6600 5750 50  0000 R CNN
 F 1 "0" H 6450 5850 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 6350 5800 50  0001 C CNN
 F 3 "~" H 6350 5800 50  0001 C CNN
@@ -1251,41 +1251,41 @@ Wire Wire Line
 $Comp
 L Device:R_Small R148
 U 1 1 5EB345B0
-P 2850 4800
-F 0 "R148" H 2791 4754 50  0000 R CNN
-F 1 "0" H 2791 4845 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2850 4800 50  0001 C CNN
-F 3 "~" H 2850 4800 50  0001 C CNN
-F 4 "Vishay Dale" H 2850 4800 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 2850 4800 50  0001 C CNN "Manufacturer_No"
-	1    2850 4800
+P 2850 5350
+F 0 "R148" H 2791 5304 50  0000 R CNN
+F 1 "0" H 2791 5395 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2850 5350 50  0001 C CNN
+F 3 "~" H 2850 5350 50  0001 C CNN
+F 4 "Vishay Dale" H 2850 5350 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 2850 5350 50  0001 C CNN "Manufacturer_No"
+	1    2850 5350
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small R123
 U 1 1 5EB345BA
-P 2750 5150
-F 0 "R123" H 2900 5100 50  0000 R CNN
-F 1 "0" H 2850 5200 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2750 5150 50  0001 C CNN
-F 3 "~" H 2750 5150 50  0001 C CNN
-F 4 "Vishay Dale" H 2750 5150 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 2750 5150 50  0001 C CNN "Manufacturer_No"
-	1    2750 5150
+P 2750 5350
+F 0 "R123" H 3000 5300 50  0000 R CNN
+F 1 "0" H 2850 5400 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2750 5350 50  0001 C CNN
+F 3 "~" H 2750 5350 50  0001 C CNN
+F 4 "Vishay Dale" H 2750 5350 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 2750 5350 50  0001 C CNN "Manufacturer_No"
+	1    2750 5350
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2850 4700 2850 4300
+	2850 5250 2850 4300
 Wire Wire Line
 	2850 4300 3300 4300
 Wire Wire Line
-	2750 4200 2750 5050
+	2750 4200 2750 5250
 Wire Wire Line
 	2750 4200 3300 4200
 Wire Wire Line
-	2750 5250 2750 5600
+	2750 5450 2750 5600
 Wire Wire Line
-	2850 4900 2850 5700
+	2850 5450 2850 5700
 $Comp
 L power:GND #PWR0152
 U 1 1 5EB81F6B
@@ -1524,7 +1524,7 @@ L Device:R_Small R160
 U 1 1 5ED5ADE2
 P 5850 3800
 F 0 "R160" V 5654 3800 50  0000 C CNN
-F 1 "475" V 5745 3800 50  0000 C CNN
+F 1 "1.5k" V 5745 3800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 5850 3800 50  0001 C CNN
 F 3 "~" H 5850 3800 50  0001 C CNN
 F 4 "Yageo" H 5850 3800 50  0001 C CNN "Manufacturer"
@@ -1561,9 +1561,9 @@ F 5 "5V41066PGGI8" H 1950 6000 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 5800 2400 5800
+	2650 5800 2400 5800
 Wire Wire Line
-	2400 5900 2550 5900
+	2400 5900 3000 5900
 Wire Wire Line
 	1150 6900 1150 7100
 Wire Wire Line
@@ -1636,18 +1636,18 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR0233
 U 1 1 5F03C443
-P 3200 5900
-F 0 "#PWR0233" H 3200 5750 50  0001 C CNN
-F 1 "+3V3" H 3215 6073 50  0000 C CNN
-F 2 "" H 3200 5900 50  0001 C CNN
-F 3 "" H 3200 5900 50  0001 C CNN
-	1    3200 5900
+P 3950 6050
+F 0 "#PWR0233" H 3950 5900 50  0001 C CNN
+F 1 "+3V3" H 3965 6223 50  0000 C CNN
+F 2 "" H 3950 6050 50  0001 C CNN
+F 3 "" H 3950 6050 50  0001 C CNN
+	1    3950 6050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3200 5900 3200 6100
+	3950 6050 3950 6100
 Wire Wire Line
-	3200 6100 2400 6100
+	3950 6100 2400 6100
 Wire Wire Line
 	2550 6400 2400 6400
 Wire Wire Line
@@ -1662,4 +1662,88 @@ Wire Wire Line
 	6450 5550 6450 6300
 Text Notes 5300 5550 0    50   ~ 0
 TODO: doublecheck P/N
+Text Label 2750 5200 2    50   ~ 0
+RCLKA_P
+Text Label 2850 5200 0    50   ~ 0
+RCLKA_N
+Text Label 2750 5550 2    50   ~ 0
+CLKA_P
+Text Label 2850 5550 0    50   ~ 0
+CLKA_N
+Text Label 5100 6200 2    50   ~ 0
+CLKC_P
+Text Label 6350 5200 2    50   ~ 0
+RCLKC_P
+Text Label 6450 5200 0    50   ~ 0
+RCLKC_N
+Text Label 5100 6300 2    50   ~ 0
+CLKC_N
+$Comp
+L Device:R_Small R149
+U 1 1 5DBACB3E
+P 2550 4200
+F 0 "R149" H 2800 4150 50  0000 R CNN
+F 1 "0" H 2650 4250 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2550 4200 50  0001 C CNN
+F 3 "~" H 2550 4200 50  0001 C CNN
+F 4 "Vishay Dale" H 2550 4200 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 2550 4200 50  0001 C CNN "Manufacturer_No"
+	1    2550 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R166
+U 1 1 5DBAD03B
+P 2550 4300
+F 0 "R166" H 2491 4254 50  0000 R CNN
+F 1 "0" H 2491 4345 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2550 4300 50  0001 C CNN
+F 3 "~" H 2550 4300 50  0001 C CNN
+F 4 "Vishay Dale" H 2550 4300 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 2550 4300 50  0001 C CNN "Manufacturer_No"
+	1    2550 4300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2650 4200 2750 4200
+Connection ~ 2750 4200
+Wire Wire Line
+	2650 4300 2850 4300
+Connection ~ 2850 4300
+Text Notes 2450 5400 0    50   ~ 0
+NOSTUFF
+Text Notes 2850 5400 0    50   ~ 0
+NOSTUFF
+Wire Wire Line
+	2400 4200 2450 4200
+Wire Wire Line
+	2450 4300 2400 4300
+Text Notes 6600 4900 0    50   ~ 0
+TODO: check if these caps are required and why we don't have them on PCIe1
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5DCDCCD7
+P 2650 5800
+F 0 "TP5" V 2604 5988 50  0000 L CNN
+F 1 "CLKB_P" V 2695 5988 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2850 5800 50  0001 C CNN
+F 3 "~" H 2850 5800 50  0001 C CNN
+	1    2650 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP11
+U 1 1 5DCDCF93
+P 3000 5900
+F 0 "TP11" V 2954 6088 50  0000 L CNN
+F 1 "CLKB_N" V 3045 6088 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3200 5900 50  0001 C CNN
+F 3 "~" H 3200 5900 50  0001 C CNN
+	1    3000 5900
+	0    1    1    0   
+$EndComp
+Text Label 2600 5800 3    50   ~ 0
+CLKB_P
+Text Label 2700 5900 3    50   ~ 0
+CLKB_N
 $EndSCHEMATC

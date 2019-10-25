@@ -686,19 +686,6 @@ Wire Wire Line
 	8700 3650 7750 3650
 Wire Wire Line
 	8700 3550 7750 3550
-$Comp
-L power:+4V #PWR0104
-U 1 1 606EC9C2
-P 7750 2900
-F 0 "#PWR0104" H 7750 2750 50  0001 C CNN
-F 1 "+4V" H 7765 3073 50  0000 C CNN
-F 2 "" H 7750 2900 50  0001 C CNN
-F 3 "" H 7750 2900 50  0001 C CNN
-	1    7750 2900
-	-1   0    0    -1  
-$EndComp
-Text Notes 8050 2600 2    50   ~ 0
-ACTUALLY 5V
 Wire Wire Line
 	7750 2900 7750 3550
 Connection ~ 10850 3650
@@ -812,19 +799,6 @@ Text GLabel 14800 5150 0    50   Input ~ 0
 IMX_JTAG_TDI
 Text GLabel 14800 5250 0    50   Output ~ 0
 IMX_JTAG_TMS
-$Comp
-L power:+4V #PWR025
-U 1 1 5E9AB42D
-P 10850 2900
-F 0 "#PWR025" H 10850 2750 50  0001 C CNN
-F 1 "+4V" H 10865 3073 50  0000 C CNN
-F 2 "" H 10850 2900 50  0001 C CNN
-F 3 "" H 10850 2900 50  0001 C CNN
-	1    10850 2900
-	1    0    0    -1  
-$EndComp
-Text Notes 10550 2600 0    50   ~ 0
-ACTUALLY 5V
 Text GLabel 8700 8350 0    50   Output ~ 0
 LPC_SCK
 Text GLabel 8700 8050 0    50   Output ~ 0
@@ -1350,9 +1324,9 @@ Text GLabel 10400 6450 2    50   Output ~ 0
 PCIE1_CLK_N
 Text GLabel 10400 6350 2    50   Output ~ 0
 PCIE1_CLK_P
-Text GLabel 10400 6750 2    50   Output ~ 0
+Text GLabel 10400 6750 2    50   Input ~ 0
 PCIE2_CLK_N
-Text GLabel 10400 6650 2    50   Output ~ 0
+Text GLabel 10400 6650 2    50   Input ~ 0
 PCIE2_CLK_P
 Text GLabel 10400 7250 2    50   Output ~ 0
 PCIE2_RX_P
@@ -1688,8 +1662,8 @@ F 0 "J19" H 16222 5324 50  0000 R CNN
 F 1 "JTAG" H 16222 5233 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 16250 5350 50  0001 C CNN
 F 3 "~" H 16250 5350 50  0001 C CNN
-F 4 "Wurth" H 16250 5350 50  0001 C CNN "Manufacturer"
-F 5 "87914-0816" H 16250 5350 50  0001 C CNN "Manufacturer_No"
+F 4 "Amphenol FCI" H 16250 5350 50  0001 C CNN "Manufacturer"
+F 5 "79425-408HLF" H 16250 5350 50  0001 C CNN "Manufacturer_No"
 	1    16250 5350
 	-1   0    0    -1  
 $EndComp
@@ -1704,4 +1678,30 @@ Wire Wire Line
 Wire Wire Line
 	15950 5450 16050 5450
 Connection ~ 15950 5750
+$Comp
+L power:+5V #PWR0104
+U 1 1 5EB50931
+P 7750 2900
+F 0 "#PWR0104" H 7750 2750 50  0001 C CNN
+F 1 "+5V" H 7765 3073 50  0000 C CNN
+F 2 "" H 7750 2900 50  0001 C CNN
+F 3 "" H 7750 2900 50  0001 C CNN
+	1    7750 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0242
+U 1 1 5EB50E6D
+P 10850 2900
+F 0 "#PWR0242" H 10850 2750 50  0001 C CNN
+F 1 "+5V" H 10865 3073 50  0000 C CNN
+F 2 "" H 10850 2900 50  0001 C CNN
+F 3 "" H 10850 2900 50  0001 C CNN
+	1    10850 2900
+	1    0    0    -1  
+$EndComp
+Text Notes 11000 6750 0    50   ~ 0
+This is refclk input (PAD_CLK) for PCIe2
+Text Notes 11000 6450 0    50   ~ 0
+This is a i.MX8M internal oscillator output for PCIe1
 $EndSCHEMATC

@@ -4007,10 +4007,6 @@ Text GLabel 14750 6150 2    50   Input ~ 0
 LPC_UART2_RX
 Text GLabel 14750 6050 2    50   Output ~ 0
 LPC_UART2_TX
-Wire Wire Line
-	14000 6150 14500 6150
-Wire Wire Line
-	14000 6050 14500 6050
 NoConn ~ 12100 6750
 $Comp
 L Connector_Generic:Conn_02x08_Odd_Even J22
@@ -4392,7 +4388,7 @@ F 1 "LM2677SX-3.3" H 11000 3526 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:TO-263-7_TabPin8" H 11150 2450 50  0001 L CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2677.pdf" H 11000 3250 50  0001 C CNN
 F 4 "Texas Instruments" H 11000 3250 50  0001 C CNN "Manufacturer"
-F 5 "LM2677SX-3.3" H 11000 3250 50  0001 C CNN "Manufacturer_No"
+F 5 "LM2677S-3.3/NOPB" H 11000 3250 50  0001 C CNN "Manufacturer_No"
 	1    11000 3250
 	1    0    0    -1  
 $EndComp
@@ -4471,18 +4467,6 @@ Wire Wire Line
 Connection ~ 12300 3550
 Wire Wire Line
 	12300 3550 12350 3550
-$Comp
-L power:PWR_FLAG #FLG0117
-U 1 1 5DD69A61
-P 12300 3150
-F 0 "#FLG0117" H 12300 3225 50  0001 C CNN
-F 1 "PWR_FLAG" H 12300 3323 50  0000 C CNN
-F 2 "" H 12300 3150 50  0001 C CNN
-F 3 "~" H 12300 3150 50  0001 C CNN
-	1    12300 3150
-	1    0    0    -1  
-$EndComp
-Connection ~ 12300 3150
 Wire Wire Line
 	12300 3550 12300 5200
 Wire Wire Line
@@ -4714,36 +4698,14 @@ F 3 "" H 10150 3950 50  0001 C CNN
 	1    10150 3950
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small R149
-U 1 1 5E32917F
-P 14600 6050
-F 0 "R149" V 14550 6150 50  0000 C CNN
-F 1 "0" V 14600 6050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 14600 6050 50  0001 C CNN
-F 3 "~" H 14600 6050 50  0001 C CNN
-F 4 "Vishay Dale" H 14600 6050 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 14600 6050 50  0001 C CNN "Manufacturer_No"
-	1    14600 6050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R166
-U 1 1 5E32918B
-P 14600 6150
-F 0 "R166" V 14650 6250 50  0000 C CNN
-F 1 "0" V 14600 6150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 14600 6150 50  0001 C CNN
-F 3 "~" H 14600 6150 50  0001 C CNN
-F 4 "Vishay Dale" H 14600 6150 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 14600 6150 50  0001 C CNN "Manufacturer_No"
-	1    14600 6150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	14750 6050 14700 6050
-Wire Wire Line
-	14700 6150 14750 6150
 Text Notes 7100 1400 2    50   ~ 0
 "decreases gate\nramp time"
+Wire Wire Line
+	14000 6150 14750 6150
+Wire Wire Line
+	14000 6050 14750 6050
+Text Label 14000 7850 0    50   ~ 0
+LPCUD_P
+Text Label 14000 7950 0    50   ~ 0
+LPCUD_N
 $EndSCHEMATC

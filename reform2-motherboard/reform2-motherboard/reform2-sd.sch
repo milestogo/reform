@@ -418,4 +418,6 @@ Wire Wire Line
 Connection ~ 7950 3950
 Text Notes 3700 5300 0    50   ~ 0
 TODO: Footprint check!
+Text Notes 8000 3400 0    50   ~ 0
+TODO: not 1V8?
 $EndSCHEMATC
