@@ -15,7 +15,7 @@ Comment3 "License: GPL v3+"
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Jack-DC J1
+L Connector:Barrel_Jack_Switch J1
 U 1 1 5CC82E0E
 P 1100 1700
 F 0 "J1" H 1157 2025 50  0000 C CNN
@@ -1403,18 +1403,18 @@ $EndComp
 $Comp
 L power:GND #PWR0120
 U 1 1 5D6ADB50
-P 2000 1900
-F 0 "#PWR0120" H 2000 1650 50  0001 C CNN
-F 1 "GND" H 2005 1727 50  0000 C CNN
-F 2 "" H 2000 1900 50  0001 C CNN
-F 3 "" H 2000 1900 50  0001 C CNN
-	1    2000 1900
+P 1650 1900
+F 0 "#PWR0120" H 1650 1650 50  0001 C CNN
+F 1 "GND" H 1655 1727 50  0000 C CNN
+F 2 "" H 1650 1900 50  0001 C CNN
+F 3 "" H 1650 1900 50  0001 C CNN
+	1    1650 1900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1400 1800 2000 1800
+	1400 1800 1650 1800
 Wire Wire Line
-	2000 1800 2000 1900
+	1650 1800 1650 1900
 Text GLabel 8250 4300 2    50   Input ~ 0
 INA_SCL
 Wire Wire Line
@@ -3228,10 +3228,6 @@ Text Label 12100 6950 0    50   ~ 0
 LPC_MOSI0
 Text Label 12100 6850 0    50   ~ 0
 LPC_MISO0
-Text Label 12100 6750 0    50   ~ 0
-LPC_~CTS
-Wire Wire Line
-	12600 6750 12100 6750
 Text Label 12100 6650 0    50   ~ 0
 LPC_~USBCON
 Wire Wire Line
@@ -4007,7 +4003,6 @@ Text GLabel 14750 6150 2    50   Input ~ 0
 LPC_UART2_RX
 Text GLabel 14750 6050 2    50   Output ~ 0
 LPC_UART2_TX
-NoConn ~ 12100 6750
 $Comp
 L Connector_Generic:Conn_02x08_Odd_Even J22
 U 1 1 61E919B8
@@ -4130,7 +4125,6 @@ Wire Wire Line
 	11650 8350 11650 8400
 Text Label 11550 8150 0    50   ~ 0
 LPC_PIO1_31
-NoConn ~ 12600 8050
 Text Label 11550 8250 0    50   ~ 0
 LPC_PIO1_25
 $Comp
@@ -4173,7 +4167,7 @@ U 1 1 63BEA00A
 P 2350 10150
 F 0 "J23" H 2458 10431 50  0000 C CNN
 F 1 "POWERS" H 2458 10340 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2350 10150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 2350 10150 50  0001 C CNN
 F 3 "~" H 2350 10150 50  0001 C CNN
 F 4 "Wurth" H 2350 10150 50  0001 C CNN "Manufacturer"
 F 5 "61300411121" H 2350 10150 50  0001 C CNN "Manufacturer_No"
@@ -4334,8 +4328,6 @@ F 3 "~" H 3200 1200 50  0001 C CNN
 	1    3200 1200
 	1    0    0    -1  
 $EndComp
-Text Notes 10900 6700 0    50   ~ 0
-TODO: add power cycle DIP
 Wire Wire Line
 	15450 6650 15450 6400
 Wire Wire Line
@@ -4708,4 +4700,24 @@ Text Label 14000 7850 0    50   ~ 0
 LPCUD_P
 Text Label 14000 7950 0    50   ~ 0
 LPCUD_N
+Text GLabel 12500 8750 0    50   Output ~ 0
+PCIE1_PWR
+Text Label 12600 8050 2    50   ~ 0
+LPC_PIO0_20
+Text Label 12100 6750 0    50   ~ 0
+LPC_~CTS
+NoConn ~ 12100 6750
+Wire Wire Line
+	12100 6750 12600 6750
+Wire Wire Line
+	12500 8750 12550 8750
+Wire Wire Line
+	12550 8750 12550 8050
+Wire Wire Line
+	12550 8050 12600 8050
+Wire Wire Line
+	1400 1700 1650 1700
+Wire Wire Line
+	1650 1700 1650 1800
+Connection ~ 1650 1800
 $EndSCHEMATC

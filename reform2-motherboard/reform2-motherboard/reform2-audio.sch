@@ -32,8 +32,6 @@ F 10 "SJ-43516-SMT-TR" H 7100 4400 50  0001 C CNN "Manufacturer_No"
 	1    7100 4400
 	-1   0    0    -1  
 $EndComp
-Text Notes 7600 4850 0    50   ~ 0
-TODO: potentially a THT connector
 $Comp
 L reform2:WM8731 U20
 U 1 1 5F093432
@@ -555,8 +553,6 @@ Text GLabel 2800 4050 0    50   Output ~ 0
 DAC_DIN
 Text GLabel 2800 4250 0    50   Input ~ 0
 DAC_BCLK
-Text Notes 6300 5800 0    50   ~ 0
-TODO: chokes?
 Text GLabel 2800 4150 0    50   Input ~ 0
 DAC_RXFS
 Text GLabel 3700 4750 0    50   Input ~ 0

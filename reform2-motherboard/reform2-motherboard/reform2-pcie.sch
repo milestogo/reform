@@ -32,12 +32,12 @@ $EndComp
 $Comp
 L power:+3V3 #PWR043
 U 1 1 5DABFC96
-P 2350 950
-F 0 "#PWR043" H 2350 800 50  0001 C CNN
-F 1 "+3V3" H 2365 1123 50  0000 C CNN
-F 2 "" H 2350 950 50  0001 C CNN
-F 3 "" H 2350 950 50  0001 C CNN
-	1    2350 950 
+P 1150 900
+F 0 "#PWR043" H 1150 750 50  0001 C CNN
+F 1 "+3V3" H 1165 1073 50  0000 C CNN
+F 2 "" H 1150 900 50  0001 C CNN
+F 3 "" H 1150 900 50  0001 C CNN
+	1    1150 900 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -54,7 +54,7 @@ F 5 "BLM18PG221SH1D" H 2350 1100 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2350 950  2350 1000
+	1150 900  1150 950 
 Wire Wire Line
 	2350 1200 2350 1250
 Wire Wire Line
@@ -194,48 +194,33 @@ Wire Wire Line
 $Comp
 L Device:LED_Small D22
 U 1 1 5DB65D52
-P 5600 2600
-F 0 "D22" H 5600 2835 50  0000 C CNN
-F 1 "LED_WLAN1" H 5600 2744 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" V 5600 2600 50  0001 C CNN
-F 3 "~" V 5600 2600 50  0001 C CNN
-F 4 "ROHM" H 5600 2600 50  0001 C CNN "Manufacturer"
-F 5 "SMLEN3WBC8W1" H 5600 2600 50  0001 C CNN "Manufacturer_No"
-	1    5600 2600
+P 5250 2600
+F 0 "D22" H 5250 2835 50  0000 C CNN
+F 1 "LED_WLAN1" H 5250 2744 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 5250 2600 50  0001 C CNN
+F 3 "~" V 5250 2600 50  0001 C CNN
+F 4 "ROHM" H 5250 2600 50  0001 C CNN "Manufacturer"
+F 5 "SMLEN3WBC8W1" H 5250 2600 50  0001 C CNN "Manufacturer_No"
+	1    5250 2600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5500 2600 4600 2600
 $Comp
 L Device:R_Small R67
 U 1 1 5DB66E46
-P 5950 2600
-F 0 "R67" V 5754 2600 50  0000 C CNN
-F 1 "475" V 5845 2600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5950 2600 50  0001 C CNN
-F 3 "~" H 5950 2600 50  0001 C CNN
-F 4 "Yageo" H 5950 2600 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-07475RL" H 5950 2600 50  0001 C CNN "Manufacturer_No"
-	1    5950 2600
+P 5600 2600
+F 0 "R67" V 5404 2600 50  0000 C CNN
+F 1 "475" V 5495 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5600 2600 50  0001 C CNN
+F 3 "~" H 5600 2600 50  0001 C CNN
+F 4 "Yageo" H 5600 2600 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-07475RL" H 5600 2600 50  0001 C CNN "Manufacturer_No"
+	1    5600 2600
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5850 2600 5700 2600
-$Comp
-L power:+3V3 #PWR046
-U 1 1 5DB67DC7
-P 6200 2600
-F 0 "#PWR046" H 6200 2450 50  0001 C CNN
-F 1 "+3V3" H 6215 2773 50  0000 C CNN
-F 2 "" H 6200 2600 50  0001 C CNN
-F 3 "" H 6200 2600 50  0001 C CNN
-	1    6200 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6200 2600 6050 2600
+	5500 2600 5350 2600
 Text GLabel 5050 3700 2    50   Input ~ 0
-PCIE_RESETn
+PCIE1_RESETn
 Wire Wire Line
 	5050 3700 4600 3700
 Text GLabel 2400 4300 0    50   Input ~ 0
@@ -399,7 +384,7 @@ NoConn ~ 9000 4150
 Text Label 9000 4750 0    50   ~ 0
 M2_PERSTn
 Text Notes 10000 4600 0    50   ~ 0
-Pull Up?
+TODO: Pull Up?
 $Comp
 L power:GND #PWR0177
 U 1 1 610897DE
@@ -416,7 +401,7 @@ Wire Wire Line
 Wire Wire Line
 	9200 6150 9200 6250
 Text GLabel 9850 4750 2    50   Input ~ 0
-PCIE_RESETn
+PCIE2_RESETn
 $Comp
 L Device:C_Small C58
 U 1 1 6109426D
@@ -593,11 +578,11 @@ Text GLabel 2550 6500 2    50   Output ~ 0
 PCIE2_CLK_N
 Text GLabel 8200 4450 0    50   Output ~ 0
 PCIE2_RX_P
-Text GLabel 6500 4750 0    50   Input ~ 0
+Text GLabel 6700 4750 0    50   Input ~ 0
 PCIE2_TX_P
 Text GLabel 8200 4350 0    50   Output ~ 0
 PCIE2_RX_N
-Text GLabel 6500 4650 0    50   Input ~ 0
+Text GLabel 6700 4650 0    50   Input ~ 0
 PCIE2_TX_N
 Wire Wire Line
 	9750 1800 9750 2350
@@ -892,40 +877,6 @@ Wire Wire Line
 Connection ~ 7300 4150
 Wire Wire Line
 	7300 4150 7300 4250
-$Comp
-L Device:C_Small C122
-U 1 1 5D313053
-P 7050 4650
-F 0 "C122" V 6821 4650 50  0000 C CNN
-F 1 "0.1uF" V 6912 4650 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7050 4650 50  0001 C CNN
-F 3 "~" H 7050 4650 50  0001 C CNN
-F 4 "Yageo" H 7050 4650 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 7050 4650 50  0001 C CNN "Manufacturer_No"
-	1    7050 4650
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C121
-U 1 1 5D319B59
-P 6750 4750
-F 0 "C121" V 6521 4750 50  0000 C CNN
-F 1 "0.1uF" V 6612 4750 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6750 4750 50  0001 C CNN
-F 3 "~" H 6750 4750 50  0001 C CNN
-F 4 "Yageo" H 6750 4750 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 6750 4750 50  0001 C CNN "Manufacturer_No"
-	1    6750 4750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6500 4750 6650 4750
-Wire Wire Line
-	6500 4650 6950 4650
-Wire Wire Line
-	7150 4650 8200 4650
-Wire Wire Line
-	8200 4750 6850 4750
 Text Notes 9950 2150 0    50   ~ 0
 Thanks to Austin @ ZII for\nlane wrangling info!
 NoConn ~ 3300 2200
@@ -942,77 +893,10 @@ NoConn ~ 4600 4400
 NoConn ~ 4600 4300
 NoConn ~ 4600 4200
 NoConn ~ 4600 4100
-$Comp
-L Device:C_Small C120
-U 1 1 5D6779B0
-P 5650 1700
-F 0 "C120" H 5742 1746 50  0000 L CNN
-F 1 "10uF" H 5742 1655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5650 1700 50  0001 C CNN
-F 3 "~" H 5650 1700 50  0001 C CNN
-F 4 "Murata" H 5650 1700 50  0001 C CNN "Manufacturer"
-F 5 "GRM188R6YA106MA73D" H 5650 1700 50  0001 C CNN "Manufacturer_No"
-	1    5650 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C119
-U 1 1 5D677BF9
-P 5250 1700
-F 0 "C119" H 5342 1746 50  0000 L CNN
-F 1 "0.1uF" H 5342 1655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5250 1700 50  0001 C CNN
-F 3 "~" H 5250 1700 50  0001 C CNN
-F 4 "Yageo" H 5250 1700 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 5250 1700 50  0001 C CNN "Manufacturer_No"
-	1    5250 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+1V5 #PWR0212
-U 1 1 5D678680
-P 6000 1550
-F 0 "#PWR0212" H 6000 1400 50  0001 C CNN
-F 1 "+1V5" H 6015 1723 50  0000 C CNN
-F 2 "" H 6000 1550 50  0001 C CNN
-F 3 "" H 6000 1550 50  0001 C CNN
-	1    6000 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6000 1550 6000 1600
-Wire Wire Line
-	6000 1600 5650 1600
-Connection ~ 5650 1600
-Wire Wire Line
-	5650 1600 5250 1600
-$Comp
-L power:GND #PWR0213
-U 1 1 5D67FFE8
-P 5650 1950
-F 0 "#PWR0213" H 5650 1700 50  0001 C CNN
-F 1 "GND" H 5655 1777 50  0000 C CNN
-F 2 "" H 5650 1950 50  0001 C CNN
-F 3 "" H 5650 1950 50  0001 C CNN
-	1    5650 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5250 1850 5250 1800
-Wire Wire Line
-	5250 1850 5650 1850
-Wire Wire Line
-	5650 1850 5650 1800
-Wire Wire Line
-	5650 1850 5650 1950
-Connection ~ 5650 1850
-Wire Wire Line
-	5250 1600 4950 1600
 Wire Wire Line
 	4950 1600 4950 2400
 Wire Wire Line
 	4950 4600 4600 4600
-Connection ~ 5250 1600
 Wire Wire Line
 	4600 2400 4950 2400
 Connection ~ 4950 2400
@@ -1100,8 +984,6 @@ Connection ~ 9400 1800
 Wire Wire Line
 	9400 1800 9750 1800
 Connection ~ 9400 2000
-Text Notes 6600 2300 0    50   ~ 0
-TODO: symbol/connector pin mismatch
 Text Label 7450 4650 0    50   ~ 0
 PCIE2_TXC_N
 Text Label 7450 4750 0    50   ~ 0
@@ -1208,8 +1090,6 @@ F6 68 45 05 0B AA 68 1D 61 10 2D 83 25 15 A0 1D AD E8 60 C1 CD D1 8A 0C 16 DC 1C
 FE 07 39 BD 85 89 55 AA C4 B1 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-Text Notes 5150 3950 0    50   ~ 0
-TODO: switch/pullup for w_disable 
 Wire Wire Line
 	2400 5600 2750 5600
 Wire Wire Line
@@ -1274,14 +1154,6 @@ F 5 "CRCW06030000Z0EAC" H 2750 5350 50  0001 C CNN "Manufacturer_No"
 	1    2750 5350
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2850 5250 2850 4300
-Wire Wire Line
-	2850 4300 3300 4300
-Wire Wire Line
-	2750 4200 2750 5250
-Wire Wire Line
-	2750 4200 3300 4200
 Wire Wire Line
 	2750 5450 2750 5600
 Wire Wire Line
@@ -1447,17 +1319,6 @@ PCICLKGEN_XI
 Text Label 1050 6100 2    50   ~ 0
 PCICLKGEN_XO
 $Comp
-L power:+3V3 #PWR0230
-U 1 1 5EC2756C
-P 700 5550
-F 0 "#PWR0230" H 700 5400 50  0001 C CNN
-F 1 "+3V3" H 715 5723 50  0000 C CNN
-F 2 "" H 700 5550 50  0001 C CNN
-F 3 "" H 700 5550 50  0001 C CNN
-	1    700  5550
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R37
 U 1 1 5EC38C15
 P 1300 5700
@@ -1528,23 +1389,10 @@ F 1 "1.5k" V 5745 3800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 5850 3800 50  0001 C CNN
 F 3 "~" H 5850 3800 50  0001 C CNN
 F 4 "Yageo" H 5850 3800 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-07475RL" H 5850 3800 50  0001 C CNN "Manufacturer_No"
+F 5 "RC0603FR-071K5L" H 5850 3800 50  0001 C CNN "Manufacturer_No"
 	1    5850 3800
 	0    1    1    0   
 $EndComp
-$Comp
-L power:+3V3 #PWR0231
-U 1 1 5ED5ADED
-P 6100 3800
-F 0 "#PWR0231" H 6100 3650 50  0001 C CNN
-F 1 "+3V3" H 6115 3973 50  0000 C CNN
-F 2 "" H 6100 3800 50  0001 C CNN
-F 3 "" H 6100 3800 50  0001 C CNN
-	1    6100 3800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6100 3800 5950 3800
 Wire Wire Line
 	4600 3800 5750 3800
 $Comp
@@ -1573,8 +1421,6 @@ Wire Wire Line
 Wire Wire Line
 	1400 6200 1450 6200
 Wire Wire Line
-	700  5550 700  5600
-Wire Wire Line
 	700  5600 1450 5600
 $Comp
 L power:GND #PWR0232
@@ -1595,7 +1441,6 @@ Wire Wire Line
 	700  5600 700  5700
 Wire Wire Line
 	700  5700 1200 5700
-Connection ~ 700  5600
 Wire Wire Line
 	700  5800 700  5700
 Wire Wire Line
@@ -1633,21 +1478,6 @@ Wire Wire Line
 	700  6400 700  6650
 Wire Wire Line
 	1450 6400 700  6400
-$Comp
-L power:+3V3 #PWR0233
-U 1 1 5F03C443
-P 3950 6050
-F 0 "#PWR0233" H 3950 5900 50  0001 C CNN
-F 1 "+3V3" H 3965 6223 50  0000 C CNN
-F 2 "" H 3950 6050 50  0001 C CNN
-F 3 "" H 3950 6050 50  0001 C CNN
-	1    3950 6050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3950 6050 3950 6100
-Wire Wire Line
-	3950 6100 2400 6100
 Wire Wire Line
 	2550 6400 2400 6400
 Wire Wire Line
@@ -1660,12 +1490,6 @@ Wire Wire Line
 	2400 6300 6450 6300
 Wire Wire Line
 	6450 5550 6450 6300
-Text Notes 5300 5550 0    50   ~ 0
-TODO: doublecheck P/N
-Text Label 2750 5200 2    50   ~ 0
-RCLKA_P
-Text Label 2850 5200 0    50   ~ 0
-RCLKA_N
 Text Label 2750 5550 2    50   ~ 0
 CLKA_P
 Text Label 2850 5550 0    50   ~ 0
@@ -1705,21 +1529,9 @@ F 5 "CRCW06030000Z0EAC" H 2550 4300 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2650 4200 2750 4200
-Connection ~ 2750 4200
-Wire Wire Line
-	2650 4300 2850 4300
-Connection ~ 2850 4300
-Text Notes 2450 5400 0    50   ~ 0
-NOSTUFF
-Text Notes 2850 5400 0    50   ~ 0
-NOSTUFF
-Wire Wire Line
 	2400 4200 2450 4200
 Wire Wire Line
 	2450 4300 2400 4300
-Text Notes 6600 4900 0    50   ~ 0
-TODO: check if these caps are required and why we don't have them on PCIe1
 $Comp
 L Connector:TestPoint TP5
 U 1 1 5DCDCCD7
@@ -1746,4 +1558,178 @@ Text Label 2600 5800 3    50   ~ 0
 CLKB_P
 Text Label 2700 5900 3    50   ~ 0
 CLKB_N
+Wire Wire Line
+	2650 4200 3300 4200
+Wire Wire Line
+	2650 4300 3300 4300
+Text Label 2850 4300 3    50   ~ 0
+RCLKA_N
+Text Label 2850 4200 1    50   ~ 0
+RCLKA_P
+Wire Wire Line
+	2750 5250 2750 5150
+Wire Wire Line
+	2850 5250 2850 5150
+NoConn ~ 2750 5150
+NoConn ~ 2850 5150
+Wire Notes Line
+	2850 5050 2850 4350
+Wire Notes Line
+	2750 5050 2750 4250
+$Comp
+L Transistor_FET:DMG2301L Q?
+U 1 1 5DC85ECC
+P 1450 1050
+AR Path="/5CC81028/5DC85ECC" Ref="Q?"  Part="1" 
+AR Path="/5D06AC46/5DC85ECC" Ref="Q14"  Part="1" 
+F 0 "Q14" V 1350 950 50  0000 C CNN
+F 1 "PMV50EPEAR" V 1700 1100 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1650 975 50  0001 L CIN
+F 3 "" H 1450 1050 50  0001 L CNN
+F 4 "PMV50EPEAR" H 1450 1050 50  0001 C CNN "Manufacturer_No"
+F 5 "Nexperia" H 1450 1050 50  0001 C CNN "Manufacturer"
+	1    1450 1050
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	1150 950  1250 950 
+Wire Wire Line
+	1650 950  2350 950 
+Wire Wire Line
+	2350 950  2350 1000
+Text GLabel 1450 1400 2    50   Input ~ 0
+PCIE1_PWR
+Wire Wire Line
+	1450 1250 1450 1400
+Wire Wire Line
+	5150 2600 4600 2600
+Wire Wire Line
+	5700 2600 6100 2600
+Wire Wire Line
+	6100 2600 6100 3800
+Wire Wire Line
+	6100 3800 5950 3800
+Text GLabel 5750 1400 0    50   Input ~ 0
+PCIE1_PWR
+Wire Wire Line
+	5650 1600 6100 1600
+Wire Wire Line
+	6100 1000 6100 1600
+Wire Wire Line
+	5450 950  5450 1000
+Wire Wire Line
+	5950 1000 6100 1000
+Wire Wire Line
+	5450 1000 5550 1000
+Wire Wire Line
+	5750 1400 5750 1300
+$Comp
+L Transistor_FET:DMG2301L Q?
+U 1 1 5DD07B17
+P 5750 1100
+AR Path="/5CC81028/5DD07B17" Ref="Q?"  Part="1" 
+AR Path="/5D06AC46/5DD07B17" Ref="Q16"  Part="1" 
+F 0 "Q16" V 5650 1000 50  0000 C CNN
+F 1 "PMV50EPEAR" V 6000 1150 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5950 1025 50  0001 L CIN
+F 3 "" H 5750 1100 50  0001 L CNN
+F 4 "PMV50EPEAR" H 5750 1100 50  0001 C CNN "Manufacturer_No"
+F 5 "Nexperia" H 5750 1100 50  0001 C CNN "Manufacturer"
+	1    5750 1100
+	0    1    -1   0   
+$EndComp
+Connection ~ 5250 1600
+Wire Wire Line
+	5250 1600 4950 1600
+Connection ~ 5650 1850
+Wire Wire Line
+	5650 1850 5650 1950
+Wire Wire Line
+	5650 1850 5650 1800
+Wire Wire Line
+	5250 1850 5650 1850
+Wire Wire Line
+	5250 1850 5250 1800
+$Comp
+L power:GND #PWR0213
+U 1 1 5D67FFE8
+P 5650 1950
+F 0 "#PWR0213" H 5650 1700 50  0001 C CNN
+F 1 "GND" H 5655 1777 50  0000 C CNN
+F 2 "" H 5650 1950 50  0001 C CNN
+F 3 "" H 5650 1950 50  0001 C CNN
+	1    5650 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1600 5250 1600
+Connection ~ 5650 1600
+$Comp
+L power:+1V5 #PWR0212
+U 1 1 5D678680
+P 5450 950
+F 0 "#PWR0212" H 5450 800 50  0001 C CNN
+F 1 "+1V5" H 5465 1123 50  0000 C CNN
+F 2 "" H 5450 950 50  0001 C CNN
+F 3 "" H 5450 950 50  0001 C CNN
+	1    5450 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C119
+U 1 1 5D677BF9
+P 5250 1700
+F 0 "C119" H 5342 1746 50  0000 L CNN
+F 1 "0.1uF" H 5342 1655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5250 1700 50  0001 C CNN
+F 3 "~" H 5250 1700 50  0001 C CNN
+F 4 "Yageo" H 5250 1700 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 5250 1700 50  0001 C CNN "Manufacturer_No"
+	1    5250 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C120
+U 1 1 5D6779B0
+P 5650 1700
+F 0 "C120" H 5742 1746 50  0000 L CNN
+F 1 "10uF" H 5742 1655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5650 1700 50  0001 C CNN
+F 3 "~" H 5650 1700 50  0001 C CNN
+F 4 "Murata" H 5650 1700 50  0001 C CNN "Manufacturer"
+F 5 "GRM188R6YA106MA73D" H 5650 1700 50  0001 C CNN "Manufacturer_No"
+	1    5650 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 650  6300 650 
+Wire Wire Line
+	6300 650  6300 2600
+Wire Wire Line
+	6300 2600 6100 2600
+Connection ~ 6100 2600
+Wire Wire Line
+	4050 650  4050 1250
+Wire Wire Line
+	700  5600 700  1750
+Wire Wire Line
+	700  1750 2350 1750
+Connection ~ 700  5600
+Wire Wire Line
+	5550 6100 5550 4050
+Wire Wire Line
+	5550 4050 6100 4050
+Wire Wire Line
+	6100 4050 6100 3800
+Wire Wire Line
+	2400 6100 5550 6100
+Connection ~ 6100 3800
+Wire Wire Line
+	6700 4750 8200 4750
+Wire Wire Line
+	6700 4650 8200 4650
+Text Notes 6200 4550 0    50   ~ 0
+TX caps are on the SoM
+Text Notes 1950 3000 0    50   ~ 0
+TX caps are on the SoM
 $EndSCHEMATC
