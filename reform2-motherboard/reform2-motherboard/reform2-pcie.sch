@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 9
 Title "MNT Reform 2 PCIe"
-Date "2019-09-24"
+Date "2019-10-28"
 Rev "2.0D-2"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
@@ -1732,4 +1732,29 @@ Text Notes 6200 4550 0    50   ~ 0
 TX caps are on the SoM
 Text Notes 1950 3000 0    50   ~ 0
 TX caps are on the SoM
+$Comp
+L power:GND #PWR0171
+U 1 1 5EC1ACC7
+P 2800 6000
+F 0 "#PWR0171" H 2800 5750 50  0001 C CNN
+F 1 "GND" H 2805 5827 50  0000 C CNN
+F 2 "" H 2800 6000 50  0001 C CNN
+F 3 "" H 2800 6000 50  0001 C CNN
+	1    2800 6000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2800 6000 2400 6000
+$Comp
+L power:PWR_FLAG #FLG0119
+U 1 1 5EC42EB8
+P 6100 1000
+F 0 "#FLG0119" H 6100 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 6100 1250 50  0000 C CNN
+F 2 "" H 6100 1000 50  0001 C CNN
+F 3 "~" H 6100 1000 50  0001 C CNN
+	1    6100 1000
+	1    0    0    -1  
+$EndComp
+Connection ~ 6100 1000
 $EndSCHEMATC

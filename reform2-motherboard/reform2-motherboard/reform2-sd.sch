@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 9
 Title "MNT Reform 2 SD Card"
-Date "2019-09-24"
+Date "2019-10-28"
 Rev "2.0D-2"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
@@ -351,7 +351,7 @@ Wire Wire Line
 	3900 2700 3500 2700
 Connection ~ 3900 2700
 Wire Wire Line
-	3900 2700 3900 3250
+	3900 2700 3900 2850
 $Comp
 L Device:R_Small R34
 U 1 1 5E9353CA
@@ -418,5 +418,30 @@ F 4 "Vishay Dale" H 3900 2550 50  0001 C CNN "Manufacturer"
 F 5 "CRCW06030000Z0EAC" H 3900 2550 50  0001 C CNN "Manufacturer_No"
 	1    3900 2550
 	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0117
+U 1 1 5EC4072D
+P 3900 2850
+F 0 "#FLG0117" H 3900 2925 50  0001 C CNN
+F 1 "PWR_FLAG" V 3900 2978 50  0000 L CNN
+F 2 "" H 3900 2850 50  0001 C CNN
+F 3 "~" H 3900 2850 50  0001 C CNN
+	1    3900 2850
+	0    1    1    0   
+$EndComp
+Connection ~ 3900 2850
+Wire Wire Line
+	3900 2850 3900 3250
+$Comp
+L power:PWR_FLAG #FLG0118
+U 1 1 5EC40BBD
+P 2700 2200
+F 0 "#FLG0118" H 2700 2275 50  0001 C CNN
+F 1 "PWR_FLAG" V 2700 2327 50  0000 L CNN
+F 2 "" H 2700 2200 50  0001 C CNN
+F 3 "~" H 2700 2200 50  0001 C CNN
+	1    2700 2200
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC

@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 9
 Title "MNT Reform 2 External Display"
-Date "2019-09-24"
+Date "2019-10-28"
 Rev "2.0D-2"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"

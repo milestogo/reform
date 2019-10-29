@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 8 9
 Title "MNT Reform 2 USB"
-Date "2019-09-24"
+Date "2019-10-28"
 Rev "2.0D-2"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
@@ -2116,23 +2116,23 @@ Wire Wire Line
 Connection ~ 13050 1950
 Wire Wire Line
 	11300 1750 11300 2300
-Text GLabel 9000 1100 0    50   Input ~ 0
+Text GLabel 8600 1600 0    50   Input ~ 0
 USB_PWR
 $Comp
 L power:+5V #PWR0126
 U 1 1 5DBF4AD4
-P 9200 1000
-F 0 "#PWR0126" H 9200 850 50  0001 C CNN
-F 1 "+5V" H 9215 1173 50  0000 C CNN
-F 2 "" H 9200 1000 50  0001 C CNN
-F 3 "" H 9200 1000 50  0001 C CNN
-	1    9200 1000
+P 8800 1500
+F 0 "#PWR0126" H 8800 1350 50  0001 C CNN
+F 1 "+5V" H 8815 1673 50  0000 C CNN
+F 2 "" H 8800 1500 50  0001 C CNN
+F 3 "" H 8800 1500 50  0001 C CNN
+	1    8800 1500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9200 1000 9200 1100
+	8800 1500 8800 1600
 Wire Wire Line
-	9200 1100 9000 1100
+	8800 1600 8600 1600
 $Comp
 L Device:C_Small C63
 U 1 1 5EEA2B4F
