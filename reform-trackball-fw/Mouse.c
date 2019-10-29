@@ -28,10 +28,11 @@
   this software.
 */
 
-#include <LUFA/Drivers/Peripheral/SPI.h>
 #include <avr/pgmspace.h>
 #include <avr/io.h>
 #include <stdlib.h>
+
+#include "i2cmaster/i2cmaster.h"
 
 #define output_low(port,pin) port &= ~(1<<pin)
 #define output_high(port,pin) port |= (1<<pin)
@@ -92,7 +93,7 @@
 uint8_t adns_init_complete=0;
 volatile int xydat[2];
 
-#include "PWM3360DM_srom_0x04.c"
+//#include "PWM3360DM_srom_0x04.c"
 #include "Mouse.h"
 
 /** Buffer to hold the previously generated Mouse HID report, for comparison purposes inside the HID class driver. */
@@ -119,6 +120,14 @@ USB_ClassInfo_HID_Device_t Mouse_HID_Interface =
 	};
 
 
+void led_error(void) {
+  DDRC = 0b11110100;
+}
+
+void led_ok(void) {
+  DDRC = 0;
+}
+
 
 // FIXME QUESTIONABLE
 int convTwosComp(int b) {
@@ -129,150 +138,64 @@ int convTwosComp(int b) {
   return b;
 }
 
-void adns_com_begin(void) {
-  // pull chip select low
-  output_low(PORTB, 7);
-}
-
-void adns_com_end(void) {
-  // pull chip select high
-  output_high(PORTB, 7);
-}
-
-uint8_t adns_read_reg(uint8_t reg_addr) {
-  adns_com_begin();
-  
-  // send adress of the register, with MSBit = 0 to indicate it's a read
-  SPI_SendByte(reg_addr & 0x7f );
-  _delay_us(100); // tSRAD
-  // read data
-  uint8_t data = SPI_ReceiveByte();
-  
-  _delay_us(1); // tSCLK-NCS for read operation is 120ns
-  adns_com_end();
-  _delay_us(19); //  tSRW/tSRR (=20us) minus tSCLK-NCS
-
-  return data;
-}
-
-void adns_write_reg(uint8_t reg_addr, uint8_t data) {
-  adns_com_begin();
-  
-  //send adress of the register, with MSBit = 1 to indicate it's a write
-  SPI_SendByte(reg_addr | 0x80 );
-  //sent data
-  SPI_SendByte(data);
-  
-  _delay_us(20); // tSCLK-NCS for write operation
-  adns_com_end();
-  _delay_us(100); // tSWW/tSWR (=120us) minus tSCLK-NCS. Could be shortened, but is looks like a safe lower bound 
-}
-
-void adns_upload_firmware(void) {
-  // send the firmware to the chip, cf p.18 of the datasheet
-  //Serial.println("Uploading firmware...");
-
-  //Write 0 to Rest_En bit of Config2 register to disable Rest mode.
-  adns_write_reg(Config2, 0x20);
-  
-  // write 0x1d in SROM_enable reg for initializing
-  adns_write_reg(SROM_Enable, 0x1d); 
-  
-  // wait for more than one frame period
-  Delay_MS(10); // assume that the frame rate is as low as 100fps... even if it should never be that low
-  
-  // write 0x18 to SROM_enable to start SROM download
-  adns_write_reg(SROM_Enable, 0x18); 
-  
-  // write the SROM file (=firmware data) 
-  adns_com_begin();
-  SPI_SendByte(SROM_Load_Burst | 0x80); // write burst destination adress
-  _delay_us(15);
-  
-  // send all bytes of the firmware
-  uint8_t c;
-  for (int i = 0; i < firmware_length; i++) {
-    c = (uint8_t)pgm_read_byte(firmware_data + i);
-    SPI_SendByte(c);
-    _delay_us(15);
-  }
-
-  //Read the SROM_ID register to verify the ID before any other register reads or writes.
-  adns_read_reg(SROM_ID);
-
-  //Write 0x00 to Config2 register for wired mouse or 0x20 for wireless mouse design.
-  adns_write_reg(Config2, 0x00);
-
-  // set initial CPI resolution
-
-  // 0x01: 200
-  // 0x02: 300
-  // 0x31: 5000
-  // 0x77: 12000
-  
-  adns_write_reg(Config1, 0x04);
-  adns_write_reg(Angle_Snap, 0x0);
-  
-  adns_com_end();
-}
-
-void adns_startup(void) {
-  adns_com_end(); // ensure that the serial port is reset
-  adns_com_begin();
-  adns_com_end();
-  adns_write_reg(Power_Up_Reset, 0x5a); // force reset
-  Delay_MS(50); // wait for it to reboot
-  // read registers 0x02 to 0x06 (and discard the data)
-  adns_read_reg(Motion);
-  adns_read_reg(Delta_X_L);
-  adns_read_reg(Delta_X_H);
-  adns_read_reg(Delta_Y_L);
-  adns_read_reg(Delta_Y_H);
-  // upload the firmware
-  adns_upload_firmware();
-  Delay_MS(10);
-  //Serial.println("Optical Chip Initialized");
-
-  adns_init_complete = 1;
-}
-
-
-// SS PB7 output
-// MT PB5 input
-// SC PB1 output
-// MO PB2 output
-// MI PB3 input
-// RS PB6 output
-
 // LM PD0 input pullup
 // RM PD1 input pullup
 
+#define ADDR_SENSOR (0x79<<1)
+
+uint8_t twi_write_reg[1];
+uint8_t twi_write_buf[10];
+uint8_t twi_read_buf[10];
+
 void SetupHardware(void)
 {
-  //#if (ARCH == ARCH_AVR8)
 	/* Disable watchdog if enabled by bootloader/fuses */
 	MCUSR &= ~(1 << WDRF);
 	wdt_disable();
 
-	/* Disable clock division */
+	// Disable clock division
+  // this should yield 8Mhz with internal osc
 	clock_prescale_set(clock_div_1);
 
   DDRD = 0b00000000;
-  DDRB = 0b11000110;
+  //DDRB = 0b11000110;
+  DDRC = 0b00000000;
+  
   output_high(PORTD, 0); // enable input pullup for LMB
   output_high(PORTD, 1); // enable input pullup for RMB
   
-  output_high(PORTB, 6); // disable adns reset
-
+  //output_high(PORTC, 5);
+  
   // no jtag plox
   //MCUCR |=(1<<JTD);
   //MCUCR |=(1<<JTD);
   
-  SPI_Init(SPI_SPEED_FCPU_DIV_2 | SPI_ORDER_MSB_FIRST | SPI_SCK_LEAD_FALLING |
-         SPI_SAMPLE_TRAILING | SPI_MODE_MASTER);
+  //SPI_Init(SPI_SPEED_FCPU_DIV_2 | SPI_ORDER_MSB_FIRST | SPI_SCK_LEAD_FALLING |
+  //       SPI_SAMPLE_TRAILING | SPI_MODE_MASTER);
 
-  adns_startup();
+  i2c_init();
+  
 	USB_Init();
+
+  Delay_MS(1000);
+  led_error();
+  Delay_MS(1000);
+
+  if (!i2c_start(ADDR_SENSOR|I2C_WRITE)) {
+    i2c_write(0x7f);
+    i2c_write(0x0);
+    i2c_stop();  
+
+    led_ok();
+  }
+  if (!i2c_start(ADDR_SENSOR|I2C_WRITE)) {
+    i2c_write(0x05);
+    i2c_write(0x01);
+    i2c_stop();  
+
+    led_ok();
+  }
+  Delay_MS(100);
 }
 
 /** Event handler for the library USB Connection event. */
@@ -327,60 +250,49 @@ bool CALLBACK_HID_Device_CreateHIDReport(USB_ClassInfo_HID_Device_t* const HIDIn
 {
   if (ReportType==HID_REPORT_ITEM_Feature) return false;
   
-	//USB_MouseReport_Data_t* MouseReport = (USB_MouseReport_Data_t*)ReportData;
-	USB_WheelMouseReport_Data_t* MouseReport = (USB_WheelMouseReport_Data_t*)ReportData;
-
   int nx = 0;
   int ny = 0;
 
-  if (adns_init_complete) {
-    //write 0x01 to Motion register and read from it to freeze the motion values and make them available
-    adns_write_reg(Motion, 0x01);
-    adns_read_reg(Motion);
+  i2c_start_wait(ADDR_SENSOR|I2C_WRITE);
+  i2c_write(0x02);
+  i2c_rep_start(ADDR_SENSOR|I2C_READ);
+  uint8_t ret = i2c_readNak();
+  i2c_stop();
+  if (ret & 0xf0) {
+    i2c_start_wait(ADDR_SENSOR|I2C_WRITE);
+    i2c_write(0x03);
+    i2c_rep_start(ADDR_SENSOR|I2C_READ);
+    nx = i2c_readAck();
+    ny = i2c_readNak();
+    i2c_stop();
+  }
+  
+  led_ok();
+  
+	USB_WheelMouseReport_Data_t* MouseReport = (USB_WheelMouseReport_Data_t*)ReportData;
 
-    // x and y are swapped
-    nx = convTwosComp((int)adns_read_reg(Delta_Y_L));
-    ny = convTwosComp((int)adns_read_reg(Delta_X_L));
+  if (!(PIND&(1<<4))) {
+    MouseReport->Button |= 1;
   }
-
-  if (!(PIND&1) && !(PIND&2)) {
-    if (wheelmode==1) {
-      wheelmode=2;
-    }
+  if (!(PIND&(1<<3))) {
+    MouseReport->Button |= 2;
   }
-  else if (!(PIND&1)) {
-    if (wheelmode<2) {
-      MouseReport->Button |= 1;
-    }
-    
-    if (wheelmode==0) {
-      wheelmode=1;
-    }
-    else if (wheelmode==3 && (PIND&2)) {
-      wheelmode=0;
-    }
+  if (!(PIND&(1<<2))) {
+    MouseReport->Button |= 4;
   }
-  else if (!(PIND&2)) {
-    if (wheelmode==0) {
-      MouseReport->Button |= 2;
-    }
-    else if (wheelmode==3) {
-      MouseReport->Button |= 4;
-    }
-  } else {
-    if (wheelmode<2) wheelmode=0;
-    if (wheelmode==2) wheelmode=3;
+  if (!(PIND&(1))) {
+    MouseReport->Button |= 8;
   }
 
-  //if ((nx!=0 || ny!=0) && (wheelmode>0 && wheelmode<3)) wheelmode=0;
   MouseReport->Wheel = 0;
   
-  if (wheelmode<2) {
-    MouseReport->X = nx;
-    MouseReport->Y = ny;
-  } else if (wheelmode>=3) {
+  if (!(PIND&(1<<1))) {
     MouseReport->Wheel = -ny/3;
+    led_error();
   }
+  
+  MouseReport->X = nx;
+  MouseReport->Y = ny;
 
 	*ReportSize = sizeof(USB_WheelMouseReport_Data_t);
 
