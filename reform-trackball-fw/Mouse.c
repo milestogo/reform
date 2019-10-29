@@ -163,6 +163,9 @@ void SetupHardware(void)
   
   output_high(PORTD, 0); // enable input pullup for LMB
   output_high(PORTD, 1); // enable input pullup for RMB
+  output_high(PORTD, 2); // enable input pullup for RMB
+  output_high(PORTD, 3); // enable input pullup for RMB
+  output_high(PORTD, 4); // enable input pullup for RMB
   
   //output_high(PORTC, 5);
   
@@ -287,14 +290,15 @@ bool CALLBACK_HID_Device_CreateHIDReport(USB_ClassInfo_HID_Device_t* const HIDIn
   MouseReport->Wheel = 0;
   
   if (!(PIND&(1<<1))) {
+    // wheel
     MouseReport->Wheel = -ny/3;
     led_error();
+  } else {
+    MouseReport->X = nx;
+    MouseReport->Y = ny;
   }
-  
-  MouseReport->X = nx;
-  MouseReport->Y = ny;
 
-	*ReportSize = sizeof(USB_WheelMouseReport_Data_t);
+  *ReportSize = sizeof(USB_WheelMouseReport_Data_t);
 
   return true;
 }
