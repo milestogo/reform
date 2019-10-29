@@ -284,9 +284,6 @@ bool CALLBACK_HID_Device_CreateHIDReport(USB_ClassInfo_HID_Device_t* const HIDIn
   if (!(PIND&(1<<2))) {
     MouseReport->Button |= 1;
   }
-  //if (!(PIND&(1))) {
-  //  MouseReport->Button |= 8;
-  //}
 
   MouseReport->Wheel = 0;
   
@@ -295,7 +292,7 @@ bool CALLBACK_HID_Device_CreateHIDReport(USB_ClassInfo_HID_Device_t* const HIDIn
     MouseReport->Wheel = -ny;
     led_error();
   } else {
-    MouseReport->X = nx*nx*nx;
+    MouseReport->X = 1.5*(float)(abs(nx)*nx);
     MouseReport->Y = abs(ny)*ny;
   }
 
