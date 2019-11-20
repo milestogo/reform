@@ -178,7 +178,7 @@ void SetupHardware(void)
 
   i2c_init();
   
-	USB_Init();
+  USB_Init();
 
   Delay_MS(1000);
   led_error();
@@ -233,8 +233,6 @@ void EVENT_USB_Device_StartOfFrame(void)
 	HID_Device_MillisecondElapsed(&Mouse_HID_Interface);
 }
 
-char wheelmode = 0;
-
 /** HID class driver callback function for the creation of HID reports to the host.
  *
  *  \param[in]     HIDInterfaceInfo  Pointer to the HID class interface configuration structure being referenced
@@ -253,8 +251,8 @@ bool CALLBACK_HID_Device_CreateHIDReport(USB_ClassInfo_HID_Device_t* const HIDIn
 {
   if (ReportType==HID_REPORT_ITEM_Feature) return false;
   
-  int nx = 0;
-  int ny = 0;
+  int8_t nx = 0;
+  int8_t ny = 0;
 
   i2c_start_wait(ADDR_SENSOR|I2C_WRITE);
   i2c_write(0x02);
@@ -272,7 +270,7 @@ bool CALLBACK_HID_Device_CreateHIDReport(USB_ClassInfo_HID_Device_t* const HIDIn
   
   led_ok();
   
-	USB_WheelMouseReport_Data_t* MouseReport = (USB_WheelMouseReport_Data_t*)ReportData;
+  USB_WheelMouseReport_Data_t* MouseReport = (USB_WheelMouseReport_Data_t*)ReportData;
 
   if (!(PIND&(1<<4))) {
     MouseReport->Button |= 1;
@@ -280,22 +278,22 @@ bool CALLBACK_HID_Device_CreateHIDReport(USB_ClassInfo_HID_Device_t* const HIDIn
   if (!(PIND&(1<<3))) {
     MouseReport->Button |= 2;
   }
-  if (!(PIND&(1<<2))) {
+  if (!(PIND&(1<<1))) {
     MouseReport->Button |= 4;
   }
-  if (!(PIND&(1))) {
-    MouseReport->Button |= 8;
+  if (!(PIND&(1<<2))) {
+    MouseReport->Button |= 1;
   }
 
   MouseReport->Wheel = 0;
   
-  if (!(PIND&(1<<1))) {
+  if (!(PIND&1) || !(PIND&(1<<2))) {
     // wheel
-    MouseReport->Wheel = -ny/3;
+    MouseReport->Wheel = -ny;
     led_error();
   } else {
-    MouseReport->X = nx;
-    MouseReport->Y = ny;
+    MouseReport->X = 1.5*(float)(abs(nx)*nx);
+    MouseReport->Y = abs(ny)*ny;
   }
 
   *ReportSize = sizeof(USB_WheelMouseReport_Data_t);
