@@ -103,10 +103,12 @@ void SetupHardware()
   PORTF = 0b01111111;
   PORTC = 0b11000000;
   
-  
   // disable JTAG
   MCUCR |=(1<<JTD);
   MCUCR |=(1<<JTD);
+
+  iota_gfx_init();
+  iota_gfx_write("Hello.");
 }
 
 /** Event handler for the library USB Connection event. */
@@ -320,6 +322,7 @@ bool CALLBACK_HID_Device_CreateHIDReport(USB_ClassInfo_HID_Device_t* const HIDIn
 {
   USB_KeyboardReport_Data_t* KeyboardReport = (USB_KeyboardReport_Data_t*)ReportData;
   uint8_t metaPressedNow = 0;
+  uint8_t keyPressedNow = 0;
   // how many keys are pressed this round
   uint8_t usedKeyCodes = 0;
 
@@ -370,6 +373,7 @@ bool CALLBACK_HID_Device_CreateHIDReport(USB_ClassInfo_HID_Device_t* const HIDIn
           metaPressedNow = 1;
         } else {
           KeyboardReport->KeyCode[usedKeyCodes++] = keycode;
+          keyPressedNow = keycode;
         }
       }
     }
@@ -385,6 +389,10 @@ bool CALLBACK_HID_Device_CreateHIDReport(USB_ClassInfo_HID_Device_t* const HIDIn
   }
 
   metaPressed = metaPressedNow;
+
+  if (keyPressedNow) {
+    iota_gfx_write_char('!');
+  }
   
   *ReportSize = sizeof(USB_KeyboardReport_Data_t);
   return false;
