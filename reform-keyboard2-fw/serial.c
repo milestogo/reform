@@ -203,15 +203,19 @@ void ser_recv()
 
 void ser_tx_pin_write(uint8_t pin_state)
 {
-  if (pin_state == LOW)
-    *_transmitPortRegister &= ~_transmitBitMask;
-  else
-    *_transmitPortRegister |= _transmitBitMask;
+  if (pin_state == LOW) {
+    //*_transmitPortRegister &= ~_transmitBitMask;
+    PORTB &= ~(1<<7);
+  } else {
+    PORTB |= (1<<7);
+    //*_transmitPortRegister |= _transmitBitMask;
+  }
 }
 
 uint8_t ser_rx_pin_read()
 {
-  return *_receivePortRegister & _receiveBitMask;
+  return (PINE&(1<<6));
+  //return *_receivePortRegister & _receiveBitMask;
 }
 
 //
@@ -431,9 +435,6 @@ void ser_enable_timer0(bool enable)
 
 void ser_flush()
 {
-  if (!ser_is_listening())
-    return;
-
   uint8_t oldSREG = SREG;
   cli();
   _receive_buffer_head = _receive_buffer_tail = 0;
@@ -442,9 +443,6 @@ void ser_flush()
 
 int ser_peek()
 {
-  if (!ser_is_listening())
-    return -1;
-
   // Empty buffer?
   if (_receive_buffer_head == _receive_buffer_tail)
     return -1;
