@@ -120,7 +120,7 @@ void SetupHardware()
   iota_gfx_flush();
 
   ser_init(&PORTE, 6, &PORTB, 7, false);
-  ser_begin(115200);
+  ser_begin(57600);
 }
 
 /** Event handler for the library USB Connection event. */
@@ -390,17 +390,18 @@ bool CALLBACK_HID_Device_CreateHIDReport(USB_ClassInfo_HID_Device_t* const HIDIn
         if (keycode == HID_KEYBOARD_SC_EXSEL) {
           metaPressedNow = 1;
 
-          if (keycode == KEY_0) {
-            remote_turn_off_som();
-          }
-          else if (keycode == KEY_1) {
-            remote_turn_on_som();
-          }
-          
         } else {
           KeyboardReport->KeyCode[usedKeyCodes++] = keycode;
           keyPressedNow = keycode;
         }
+
+        if (keycode == KEY_0) {
+          remote_turn_off_som();
+        }
+        else if (keycode == KEY_1) {
+          remote_turn_on_som();
+        }
+        
       }
     }
 
