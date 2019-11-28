@@ -417,6 +417,10 @@ void matrix_write_char(struct CharacterMatrix *matrix, uint8_t c) {
   matrix_write_char_inner(matrix, c);
 }
 
+void gfx_poke(uint8_t x, uint8_t y, uint8_t c) {
+	display.display[y][x] = c;
+}
+
 void iota_gfx_write_char(uint8_t c) {
   matrix_write_char(&display, c);
 }
