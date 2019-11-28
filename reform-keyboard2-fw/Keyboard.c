@@ -94,7 +94,7 @@ void SetupHardware()
 
   // declare port pins as inputs (0) and outputs (1)
   DDRB  = 0b11110000;
-  DDRD  = 0b11010011;
+  DDRD  = 0b11010000;
   DDRF  = 0b10000000;
   DDRE  = 0b00000000;
   DDRC  = 0b00000000;
@@ -110,7 +110,14 @@ void SetupHardware()
   MCUCR |=(1<<JTD);
 
   iota_gfx_init(true);
-  iota_gfx_write("Hello.");
+
+  gfx_poke(0,0,'R');
+  gfx_poke(1,0,'e');
+  gfx_poke(2,0,'f');
+  gfx_poke(3,0,'o');
+  gfx_poke(4,0,'r');
+  gfx_poke(5,0,'m');
+  iota_gfx_flush();
 
   ser_init(&PORTE, 6, &PORTB, 7, false);
   ser_begin(115200);
@@ -330,6 +337,7 @@ void remote_turn_off_som(void) {
 }
 
 char metaPressed = 0;
+uint8_t lastKeyCodes = 0;
 
 bool CALLBACK_HID_Device_CreateHIDReport(USB_ClassInfo_HID_Device_t* const HIDInterfaceInfo,
                                          uint8_t* const ReportID,
@@ -408,9 +416,11 @@ bool CALLBACK_HID_Device_CreateHIDReport(USB_ClassInfo_HID_Device_t* const HIDIn
 
   metaPressed = metaPressedNow;
 
-  if (keyPressedNow) {
-    //iota_gfx_write_char('!');
-    ser_write('!');
+  if (lastKeyCodes!=usedKeyCodes) {
+    gfx_poke(0,2,usedKeyCodes+'0');
+    iota_gfx_flush();
+    ser_write(usedKeyCodes+'0');
+    lastKeyCodes = usedKeyCodes;
   }
   
   *ReportSize = sizeof(USB_KeyboardReport_Data_t);
