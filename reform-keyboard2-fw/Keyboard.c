@@ -35,6 +35,7 @@
 #include "Config/LUFAConfig.h"
 #include "Keyboard.h"
 #include <avr/io.h>
+#include "ssd1306.h"
 
 /** Buffer to hold the previously generated Keyboard HID report, for comparison purposes inside the HID class driver. */
 static uint8_t PrevKeyboardHIDReportBuffer[sizeof(USB_KeyboardReport_Data_t)];
@@ -92,7 +93,7 @@ void SetupHardware()
 
   // declare port pins as inputs (0) and outputs (1)
   DDRB  = 0b01110000;
-  DDRD  = 0b11010011;
+  DDRD  = 0b11010000;
   DDRF  = 0b10000000;
   DDRE  = 0b00000000;
   DDRC  = 0b00000000;
@@ -107,8 +108,14 @@ void SetupHardware()
   MCUCR |=(1<<JTD);
   MCUCR |=(1<<JTD);
 
-  iota_gfx_init();
-  iota_gfx_write("Hello.");
+  iota_gfx_init(true);
+  gfx_poke(0,0,'R');
+  gfx_poke(1,0,'e');
+  gfx_poke(2,0,'f');
+  gfx_poke(3,0,'o');
+  gfx_poke(4,0,'r');
+  gfx_poke(5,0,'m');
+  iota_gfx_flush();
 }
 
 /** Event handler for the library USB Connection event. */
@@ -313,6 +320,7 @@ const uint8_t matrix[15*6] = {
  */
 
 char metaPressed = 0;
+uint8_t lastKeyCodes = 0;
 
 bool CALLBACK_HID_Device_CreateHIDReport(USB_ClassInfo_HID_Device_t* const HIDInterfaceInfo,
                                          uint8_t* const ReportID,
@@ -390,8 +398,10 @@ bool CALLBACK_HID_Device_CreateHIDReport(USB_ClassInfo_HID_Device_t* const HIDIn
 
   metaPressed = metaPressedNow;
 
-  if (keyPressedNow) {
-    iota_gfx_write_char('!');
+  if (lastKeyCodes!=usedKeyCodes) {
+    gfx_poke(0,2,usedKeyCodes+'0');
+    iota_gfx_flush();
+    lastKeyCodes = usedKeyCodes;
   }
   
   *ReportSize = sizeof(USB_KeyboardReport_Data_t);
