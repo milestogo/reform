@@ -152,12 +152,15 @@ void process_keyboard(char usb_report_mode, USB_KeyboardReport_Data_t* KeyboardR
             keyPressedNow = keycode;
           }
         }
-        if (keycode == KEY_0) {
-          remote_turn_off_som();
-        }
-        else if (keycode == KEY_1) {
-          remote_turn_on_som();
-        }
+
+	if (metaPressed) {
+          if (keycode == KEY_0) {
+            remote_turn_off_som();
+          }
+          else if (keycode == KEY_1) {
+            remote_turn_on_som();
+          }
+	}
       }
     }
 
