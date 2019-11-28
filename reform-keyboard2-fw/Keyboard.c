@@ -35,6 +35,7 @@
 #include "Config/LUFAConfig.h"
 #include "Keyboard.h"
 #include <avr/io.h>
+#include "serial.h"
 
 /** Buffer to hold the previously generated Keyboard HID report, for comparison purposes inside the HID class driver. */
 static uint8_t PrevKeyboardHIDReportBuffer[sizeof(USB_KeyboardReport_Data_t)];
@@ -91,7 +92,7 @@ void SetupHardware()
   USB_Init();
 
   // declare port pins as inputs (0) and outputs (1)
-  DDRB  = 0b01110000;
+  DDRB  = 0b11110000;
   DDRD  = 0b11010001;
   DDRF  = 0b10000000;
   DDRE  = 0b00000000;
@@ -109,6 +110,9 @@ void SetupHardware()
 
   iota_gfx_init();
   iota_gfx_write("Hello.");
+
+  ser_init(PORTE, 6, PORTB, 7, false);
+  ser_begin(115200);
 }
 
 /** Event handler for the library USB Connection event. */
@@ -274,7 +278,7 @@ const uint8_t matrix[15*6] = {
 
 #else
 const uint8_t matrix[15*6] = {
-  KEY_ESCAPE, KEY_F1, KEY_F2, KEY_F3, KEY_F4, KEY_F5, KEY_F6, KEY_F7, KEY_F8, KEY_F9, KEY_F10, KEY_F11, KEY_F12, KEY_DELETE, 0,
+  KEY_ESCAPE, KEY_F1, KEY_F2, KEY_F3, KEY_F4, KEY_F5, KEY_F6, KEY_F7, KEY_F8, KEY_F9, KEY_F10, KEY_F11, KEY_F12, KEY_DELETE, HID_KEYBOARD_SC_EXSEL,
   
   KEY_GRAVE_ACCENT_AND_TILDE, KEY_1, KEY_2, KEY_3, KEY_4, KEY_5, KEY_6, KEY_7, KEY_8, KEY_9, KEY_0, KEY_MINUS_AND_UNDERSCORE, KEY_EQUAL_AND_PLUS, KEY_BACKSPACE, 0,
   
@@ -312,6 +316,14 @@ const uint8_t matrix[15*6] = {
  *  \return Boolean \c true to force the sending of the report, \c false to let the library determine if it needs to be sent
  */
 
+void remote_turn_on_som() {
+  
+}
+
+void remote_turn_off_som() {
+  
+}
+
 char metaPressed = 0;
 
 bool CALLBACK_HID_Device_CreateHIDReport(USB_ClassInfo_HID_Device_t* const HIDInterfaceInfo,
@@ -343,13 +355,6 @@ bool CALLBACK_HID_Device_CreateHIDReport(USB_ClassInfo_HID_Device_t* const HIDIn
       uint16_t keycode = matrix[y*15+x];
       uint8_t  pressed = 0;
 
-      // alternative matrix when fn key is pressed
-#ifndef NEO2
-      if (metaPressed) {
-        //keycode = matrix2[y*15+x];
-      }
-#endif
-
       // column pins are all over the place
       switch (x) {
       case 0:  pressed = !(PIND&(1<<5)); break;
@@ -371,6 +376,14 @@ bool CALLBACK_HID_Device_CreateHIDReport(USB_ClassInfo_HID_Device_t* const HIDIn
       if (pressed) {
         if (keycode == HID_KEYBOARD_SC_EXSEL) {
           metaPressedNow = 1;
+
+          if (keycode == KEY_0) {
+            remote_turn_off_som();
+          }
+          else if (keycode == KEY_1) {
+            remote_turn_on_som();
+          }
+          
         } else {
           KeyboardReport->KeyCode[usedKeyCodes++] = keycode;
           keyPressedNow = keycode;
@@ -391,7 +404,8 @@ bool CALLBACK_HID_Device_CreateHIDReport(USB_ClassInfo_HID_Device_t* const HIDIn
   metaPressed = metaPressedNow;
 
   if (keyPressedNow) {
-    iota_gfx_write_char('!');
+    //iota_gfx_write_char('!');
+    ser_write('!');
   }
   
   *ReportSize = sizeof(USB_KeyboardReport_Data_t);
