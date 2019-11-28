@@ -36,6 +36,7 @@
 #include "Keyboard.h"
 #include <avr/io.h>
 #include "serial.h"
+#include "ssd1306.h"
 
 /** Buffer to hold the previously generated Keyboard HID report, for comparison purposes inside the HID class driver. */
 static uint8_t PrevKeyboardHIDReportBuffer[sizeof(USB_KeyboardReport_Data_t)];
@@ -108,10 +109,10 @@ void SetupHardware()
   MCUCR |=(1<<JTD);
   MCUCR |=(1<<JTD);
 
-  iota_gfx_init();
+  iota_gfx_init(true);
   iota_gfx_write("Hello.");
 
-  ser_init(PORTE, 6, PORTB, 7, false);
+  ser_init(&PORTE, 6, &PORTB, 7, false);
   ser_begin(115200);
 }
 
@@ -316,12 +317,16 @@ const uint8_t matrix[15*6] = {
  *  \return Boolean \c true to force the sending of the report, \c false to let the library determine if it needs to be sent
  */
 
-void remote_turn_on_som() {
-  
+void remote_turn_on_som(void) {
+  ser_write('1');
+  ser_write('p');
+  ser_write('\r');
 }
 
-void remote_turn_off_som() {
-  
+void remote_turn_off_som(void) {
+  ser_write('0');
+  ser_write('p');
+  ser_write('\r');
 }
 
 char metaPressed = 0;
