@@ -1,12 +1,19 @@
 # MNT Reform
 
-This is the main repository for the MNT Reform DIY Open Source Portable Computer.
+This is the main repository for the MNT Reform Open Source Portable Computer.
 
 ## How to Report Issues / Contribute
 
 First, you need an account at source.mntmn.com. If you don't have one, just write to lukas@mntmn.com stating your desired username.
 
 There are several Git repositories that make up Reform. Here is a list of topics to help you decide on which repository to report your problem or contribute code:
+
+## Impressions
+
+![Reform Version 2 Prototype](https://mntre.com/media/reform_v2_images/reform_v2_prototype_top.jpg)
+![Reform Version 2 Motherboard](https://mntre.com/media/reform_v2_images/reform_v2_motherboard.jpg)
+
+* Check out [Finishing Reform](https://mntre.com/media/reform_md/2020-01-18-finishing-reform.html) and related articles
 
 ### reform (this one)
 
@@ -22,7 +29,6 @@ There are several Git repositories that make up Reform. Here is a list of topics
 * Setup script, date/time, keyboard layout
 * Default configuration (networking, Xorg, users, passwords...)
 * SD Card shipped with the device
-* **reformd** (Reform daemon: battery status/gauge, fan control, suspend/wake)
 * [Issue reports go here](https://source.mntmn.com/MNT/reform-system-image/issues)
 
 ### reform-userland
@@ -31,49 +37,21 @@ There are several Git repositories that make up Reform. Here is a list of topics
 * If you have an application or game that doesn't work due to GL problems (check the [Wiki](https://source.mntmn.com/MNT/reform/wiki) first)
 * [Issue reports go here](https://source.mntmn.com/MNT/reform-userland/issues)
 
-### Tested Software / Peripherals
-
-Please check out and contribute to the appropriate pages in the [Reform Wiki](https://source.mntmn.com/MNT/reform/wiki).
-
-## Impressions
-
-![Reform 0.3 Laptop Prototype](pics/reform03-laptop.jpg)
-![Reform 0.4 Motherboard PCB](pics/reform04-motherboardpcb.png)
-![Reform 0.4 Keyboard PCB](pics/reform04-kbdpcb.png)
-
-## More Information
-
-[Reform Wiki](https://source.mntmn.com/MNT/reform/wiki)
-[Reform Website](https://mntmn.com/reform/)
-[Reform Assembly Pictures](https://mntmn.com/media/reform_assembly_images.html)
-
-## Parts List
-
-* [Reform Parts](spreadsheets/production_status.csv)
-* [Motherboard BOM](spreadsheets/motherboard_bom.csv)
-
-## Getting Started
-
-It is not recommended that you do anything with these files yet, and wait until the project has reached beta state.
-
-* More details: http://mntmn.com/reform/
-* 5-minute lightning talk at 34c3: https://media.ccc.de/v/34c3-9257-lightning_talks_day_3#t=3512
-
 ## Made With
 
 * [KiCAD EDA](http://kicad-pcb.org/)
 * Solidworks
 * OpenSCAD
 * LUFA
-* Arduino Tiny Core
 
 ## Authors
 
 * **Lukas F. Hartmann (mntmn)** - *Schematics, PCB*
 * **Ana Dantas** - *Industrial Design*
+* **Greta Melnik** - *Quality & Assembly*
 
 ## License
 
-Copyright 2018 Lukas F. Hartmann & Ana Beatriz Albertini Dantas.
+Copyright 2018-2020 MNT Research GmbH.
 
 This project is licensed under the GPLv3 License - see the [LICENSE.md](LICENSE.md) file for details
