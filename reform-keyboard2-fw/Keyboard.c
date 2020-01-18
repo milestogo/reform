@@ -98,6 +98,56 @@ void remote_turn_off_som(void) {
   ser_write('\r');
 }
 
+char r_inbuf[10];
+
+void gfx_clear() {
+	for (int y=0; y<4; y++) {
+		for (int x=0; x<16; x++) {
+			gfx_poke(x,y,' ');
+		}
+	}
+	iota_gfx_flush();
+}
+
+void remote_get_voltages(void) {
+	gfx_clear();
+
+	for (int i=0; i<8; i++) {
+		ser_write('0'+i);
+		ser_write('v');
+		ser_write('\r');
+
+		memset(r_inbuf,0,10);
+
+		int done = 0;
+		int clock = 0;
+		int x = 0;
+		int y = 0;
+		int j = 0;
+		while (!done) {
+			int chr = -1;
+			while (chr==-1) {
+				chr=ser_read();
+			  clock++;
+			  if (clock>10000) goto timeout;
+			}
+			r_inbuf[j++] = chr;
+			if (j>=8 || chr=='\r' || chr=='\n') {
+				done = 1;
+    		gfx_poke(4*x+0,y,r_inbuf[0]);
+    		gfx_poke(4*x+1,y,r_inbuf[1]);
+    		gfx_poke(4*x+2,y,r_inbuf[2]);
+				x+=4;
+				if (x>=16) {
+					x=0;
+					y++;
+				}
+			}
+		}
+timeout:
+		iota_gfx_flush();
+	}
+}
 
 char metaPressed = 0;
 uint8_t lastKeyCodes = 0;
@@ -146,20 +196,24 @@ void process_keyboard(char usb_report_mode, USB_KeyboardReport_Data_t* KeyboardR
       if (pressed) {
         if (keycode == HID_KEYBOARD_SC_EXSEL) {
           metaPressedNow = 1;
-
-          if (keycode == KEY_0) {
-            remote_turn_off_som();
-          }
-          else if (keycode == KEY_1) {
-            remote_turn_on_som();
-          }
-          
         } else {
           if (usb_report_mode && KeyboardReport) {
             KeyboardReport->KeyCode[usedKeyCodes++] = keycode;
             keyPressedNow = keycode;
           }
         }
+
+				if (metaPressed) {
+          if (keycode == KEY_0) {
+            remote_turn_off_som();
+          }
+          else if (keycode == KEY_1) {
+            remote_turn_on_som();
+          }
+					else if (keycode == KEY_V) {
+						remote_get_voltages();
+					}
+				}
       }
     }
 
@@ -176,8 +230,6 @@ void process_keyboard(char usb_report_mode, USB_KeyboardReport_Data_t* KeyboardR
   metaPressed = metaPressedNow;
 
   if (lastKeyCodes!=usedKeyCodes) {
-    gfx_poke(0,2,usedKeyCodes+'0');
-    iota_gfx_flush();
     lastKeyCodes = usedKeyCodes;
   }
 }
@@ -236,7 +288,7 @@ void SetupHardware()
   iota_gfx_flush();
 
   ser_init(&PORTE, 6, &PORTB, 7, false);
-  ser_begin(115200);
+  ser_begin(57600);
 }
 
 /** Event handler for the library USB Connection event. */
