@@ -40,7 +40,7 @@ There are several Git repositories that make up Reform. Here is a list of topics
 ## Made With
 
 * [KiCAD EDA](http://kicad-pcb.org/)
-* Solidworks
+* Autodesk Fusion
 * OpenSCAD
 * LUFA
 
