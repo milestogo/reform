@@ -1,0 +1,7 @@
+Reference, Quantity, Value, MFR, MFR_NO,Note
+C1 ,1,1uF,Generic,Generic 1uF 0603 5V,
+C2 ,1,0.1uF,Generic,Generic 0.1uF 0603 5V,
+C3 ,1,10uF,Generic,Generic 10uF 0603 5V,
+U1 ,1,PAT9125EL,PixArt Imaging,PAT9125EL,
+J1 ,1,Conn_01x05_Male,NOSTUFF,NOSTUFF,Don’t mount
+R1 ,1,0,NOSTUFF,NOSTUFF,Don’t mount
