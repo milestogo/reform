@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 9
 Title "MNT Reform 2 External Display"
-Date "2019-10-28"
-Rev "2.0D-2"
+Date "2020-02-07"
+Rev "2.0D-3"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
@@ -53,10 +53,8 @@ F 0 "U22" H 4800 6467 50  0000 C CNN
 F 1 "TPD12S521" H 4800 6376 50  0000 C CNN
 F 2 "footprints:TSSOP50P640X120-38N" H 4350 2950 50  0001 L BNN
 F 3 "" H 4800 5100 50  0001 L BNN
-F 4 "CM2020-00TR Series 10.8 V HDMI Transmitter Port Protection and Interface Device" H 3350 3150 50  0001 L BNN "Field6"
-F 5 "ON Semiconductor" H 4450 3050 50  0001 L BNN "Field8"
-F 6 "Texas Instruments" H 4800 5100 50  0001 C CNN "Manufacturer"
-F 7 "TPD12S521" H 4800 5100 50  0001 C CNN "Manufacturer_No"
+F 4 "Texas Instruments" H 4800 5100 50  0001 C CNN "Manufacturer"
+F 5 "TPD12S521" H 4800 5100 50  0001 C CNN "Manufacturer_No"
 	1    4800 5100
 	1    0    0    -1  
 $EndComp

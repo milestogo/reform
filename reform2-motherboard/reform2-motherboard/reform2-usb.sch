@@ -6,8 +6,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 8 9
 Title "MNT Reform 2 USB"
-Date "2019-10-28"
-Rev "2.0D-2"
+Date "2020-02-07"
+Rev "2.0D-3"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
@@ -742,7 +742,7 @@ U 1 1 60F17696
 P 1300 9800
 F 0 "J9" H 1408 10081 50  0000 C CNN
 F 1 "USB_INT1" H 1408 9990 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 1300 9800 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 1300 9800 50  0001 C CNN
 F 3 "~" H 1300 9800 50  0001 C CNN
 F 4 "3M" H 1300 9800 50  0001 C CNN "Manufacturer"
 F 5 "951104-7622-AR" H 1300 9800 50  0001 C CNN "Manufacturer_No"
@@ -767,7 +767,7 @@ U 1 1 5DBC25D6
 P 4550 9800
 F 0 "J14" H 4658 10081 50  0000 C CNN
 F 1 "USB_INT2" H 4658 9990 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 4550 9800 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 4550 9800 50  0001 C CNN
 F 3 "~" H 4550 9800 50  0001 C CNN
 F 4 "3M" H 4550 9800 50  0001 C CNN "Manufacturer"
 F 5 "951104-7622-AR" H 4550 9800 50  0001 C CNN "Manufacturer_No"
@@ -2425,4 +2425,8 @@ NoConn ~ 4750 9050
 NoConn ~ 4750 9150
 Text Notes 1300 8650 0    50   ~ 0
 TODO: consider internal USB3
+Text Notes 15050 1400 0    50   ~ 0
+up to 780mA load!
+Text Notes 8400 4900 0    50   ~ 0
+TODO: hook up SCL/SDA?
 $EndSCHEMATC

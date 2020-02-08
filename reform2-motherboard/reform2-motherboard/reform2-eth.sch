@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 9
 Title "MNT Reform 2 Ethernet"
-Date "2019-10-28"
-Rev "2.0D-2"
+Date "2020-02-07"
+Rev "2.0D-3"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
@@ -24,13 +24,9 @@ F 0 "P1" H 5246 5811 50  0000 L BNN
 F 1 "J0G-0003NL" H 5247 1341 50  0000 L BNN
 F 2 "footprints:PULSE_J0G-0003NL" H 6050 3650 50  0001 L BNN
 F 3 "Conn RJ-45 Integrated Magnetics F 8 POS 2.03mm Solder RA Thru-Hole 17 Terminal 1 Port" H 6050 3650 50  0001 L BNN
-F 4 "Pulse" H 6050 3650 50  0001 L BNN "MF"
-F 5 "Good" H 6050 3650 50  0001 L BNN "Availability"
-F 6 "7.33 USD" H 6050 3650 50  0001 L BNN "Price"
-F 7 "J0G-0003NL" H 6050 3650 50  0001 L BNN "MP"
-F 8 "None" H 6050 3650 50  0001 L BNN "Package"
-F 9 "Pulse" H 6050 3650 50  0001 C CNN "Manufacturer"
-F 10 "J0G-0003NL" H 6050 3650 50  0001 C CNN "Manufacturer_No"
+F 4 "Good" H 6050 3650 50  0001 L BNN "Availability"
+F 5 "Pulse" H 6050 3650 50  0001 C CNN "Manufacturer"
+F 6 "J0G-0003NL" H 6050 3650 50  0001 C CNN "Manufacturer_No"
 	1    6050 3650
 	1    0    0    -1  
 $EndComp

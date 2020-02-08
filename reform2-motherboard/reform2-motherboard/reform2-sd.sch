@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 9
 Title "MNT Reform 2 SD Card"
-Date "2019-10-28"
-Rev "2.0D-2"
+Date "2020-02-07"
+Rev "2.0D-3"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"

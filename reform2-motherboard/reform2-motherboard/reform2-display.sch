@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 9
 Title "MNT Reform 2 Internal Display"
-Date "2019-10-28"
-Rev "2.0D-2"
+Date "2020-02-07"
+Rev "2.0D-3"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
@@ -857,9 +857,8 @@ F 0 "U10" H 3500 5400 50  0000 C CNN
 F 1 "SN65DSI86IPAPQ1" H 3750 1400 50  0000 C CNN
 F 2 "Package_QFP:HTQFP-64-1EP_10x10mm_P0.5mm_EP8x8mm" H 3500 950 50  0001 L BNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn65dsi86-q1.pdf" H 4050 3600 50  0001 L BNN
-F 4 "Dual-Channel MIPI® DSI to Embedded DisplayPort™ _eDP _ Bridge 64-BGA MICROSTAR JUNIOR -40 to 85" H 1950 1100 50  0001 L BNN "Field4"
-F 5 "Texas Instruments" H 4050 3600 50  0001 C CNN "Manufacturer"
-F 6 "SN65DSI86IPAPQ1" H 4050 3600 50  0001 C CNN "Manufacturer_No"
+F 4 "Texas Instruments" H 4050 3600 50  0001 C CNN "Manufacturer"
+F 5 "SN65DSI86IPAPQ1" H 4050 3600 50  0001 C CNN "Manufacturer_No"
 	1    4050 3600
 	1    0    0    -1  
 $EndComp
