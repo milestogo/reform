@@ -27,6 +27,8 @@ F 3 "Conn RJ-45 Integrated Magnetics F 8 POS 2.03mm Solder RA Thru-Hole 17 Termi
 F 4 "Good" H 6050 3650 50  0001 L BNN "Availability"
 F 5 "Pulse" H 6050 3650 50  0001 C CNN "Manufacturer"
 F 6 "J0G-0003NL" H 6050 3650 50  0001 C CNN "Manufacturer_No"
+F 7 "y" H 6050 3650 50  0001 C CNN "Checked"
+F 8 "Mouser" H 6050 3650 50  0001 C CNN "Distributor"
 	1    6050 3650
 	1    0    0    -1  
 $EndComp
@@ -55,6 +57,8 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 4350 2050 50  0001 C CNN
 F 3 "" H 4350 2050 50  0001 C CNN
 F 4 "Yageo" H 4350 2050 50  0001 C CNN "Manufacturer"
 F 5 "CC0603JPX7R9BB104" H 4350 2050 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 4350 2050 50  0001 C CNN "Checked"
+F 7 "Mouser" H 4350 2050 50  0001 C CNN "Distributor"
 	1    4350 2050
 	1    0    0    -1  
 $EndComp
@@ -70,6 +74,8 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 4350 2850 50  0001 C CNN
 F 3 "" H 4350 2850 50  0001 C CNN
 F 4 "Yageo" H 4350 2850 50  0001 C CNN "Manufacturer"
 F 5 "CC0603JPX7R9BB104" H 4350 2850 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 4350 2850 50  0001 C CNN "Checked"
+F 7 "Mouser" H 4350 2850 50  0001 C CNN "Distributor"
 	1    4350 2850
 	1    0    0    -1  
 $EndComp
@@ -85,6 +91,8 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 4350 3650 50  0001 C CNN
 F 3 "" H 4350 3650 50  0001 C CNN
 F 4 "Yageo" H 4350 3650 50  0001 C CNN "Manufacturer"
 F 5 "CC0603JPX7R9BB104" H 4350 3650 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 4350 3650 50  0001 C CNN "Checked"
+F 7 "Mouser" H 4350 3650 50  0001 C CNN "Distributor"
 	1    4350 3650
 	1    0    0    -1  
 $EndComp
@@ -268,6 +276,8 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 2950 5000 50  0001 C CNN
 F 3 "" H 2950 5000 50  0001 C CNN
 F 4 "Yageo" H 2950 5000 50  0001 C CNN "Manufacturer"
 F 5 "CC0603JPX7R9BB104" H 2950 5000 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 2950 5000 50  0001 C CNN "Checked"
+F 7 "Mouser" H 2950 5000 50  0001 C CNN "Distributor"
 	1    2950 5000
 	1    0    0    -1  
 $EndComp
@@ -298,6 +308,8 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 4350 4450 50  0001 C CNN
 F 3 "" H 4350 4450 50  0001 C CNN
 F 4 "Yageo" H 4350 4450 50  0001 C CNN "Manufacturer"
 F 5 "CC0603JPX7R9BB104" H 4350 4450 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 4350 4450 50  0001 C CNN "Checked"
+F 7 "Mouser" H 4350 4450 50  0001 C CNN "Distributor"
 	1    4350 4450
 	1    0    0    -1  
 $EndComp
@@ -311,6 +323,8 @@ F 2 "Resistor_SMD:R_0603_1608Metric" H 4950 5050 50  0001 C CNN
 F 3 "~" H 4950 5050 50  0001 C CNN
 F 4 "Vishay Dale" H 4950 5050 50  0001 C CNN "Manufacturer"
 F 5 "CRCW06030000Z0EAC" H 4950 5050 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 4950 5050 50  0001 C CNN "Distributor"
+F 7 "y" H 4950 5050 50  0001 C CNN "Checked"
 	1    4950 5050
 	0    1    1    0   
 $EndComp
@@ -324,6 +338,8 @@ F 2 "Resistor_SMD:R_0603_1608Metric" H 4950 5250 50  0001 C CNN
 F 3 "~" H 4950 5250 50  0001 C CNN
 F 4 "Vishay Dale" H 4950 5250 50  0001 C CNN "Manufacturer"
 F 5 "CRCW06030000Z0EAC" H 4950 5250 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 4950 5250 50  0001 C CNN "Distributor"
+F 7 "y" H 4950 5250 50  0001 C CNN "Checked"
 	1    4950 5250
 	0    1    1    0   
 $EndComp
@@ -337,6 +353,8 @@ F 2 "Resistor_SMD:R_0603_1608Metric" H 4950 5650 50  0001 C CNN
 F 3 "~" H 4950 5650 50  0001 C CNN
 F 4 "Vishay Dale" H 4950 5650 50  0001 C CNN "Manufacturer"
 F 5 "CRCW06030000Z0EAC" H 4950 5650 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 4950 5650 50  0001 C CNN "Distributor"
+F 7 "y" H 4950 5650 50  0001 C CNN "Checked"
 	1    4950 5650
 	0    1    1    0   
 $EndComp

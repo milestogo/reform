@@ -24,6 +24,8 @@ F 2 "footprints:TE_1775059-1" H 6950 4050 50  0001 C CNN
 F 3 "https://www.te.com/usa-en/product-1775059-1.html" H 6950 4050 50  0001 C CNN
 F 4 "TE" H 6950 4050 50  0001 C CNN "Manufacturer"
 F 5 "1775059-1" H 6950 4050 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 6950 4050 50  0001 C CNN "Checked"
+F 7 "Mouser" H 6950 4050 50  0001 C CNN "Distributor"
 	1    6950 4050
 	1    0    0    1   
 $EndComp
@@ -55,6 +57,8 @@ F 2 "Resistor_SMD:R_0603_1608Metric" H 8300 3850 50  0001 C CNN
 F 3 "~" H 8300 3850 50  0001 C CNN
 F 4 "Yageo" H 8300 3850 50  0001 C CNN "Manufacturer"
 F 5 "RC0603FR-071K5L" H 8300 3850 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 8300 3850 50  0001 C CNN "Checked"
+F 7 "Mouser" H 8300 3850 50  0001 C CNN "Distributor"
 	1    8300 3850
 	1    0    0    -1  
 $EndComp
@@ -116,6 +120,8 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 4700 3150 50  0001 C CNN
 F 3 "~" H 4700 3150 50  0001 C CNN
 F 4 "Murata" H 4700 3150 50  0001 C CNN "Manufacturer"
 F 5 "GRM188R6YA106MA73D" H 4700 3150 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 4700 3150 50  0001 C CNN "Checked"
+F 7 "Mouser" H 4700 3150 50  0001 C CNN "Distributor"
 	1    4700 3150
 	1    0    0    -1  
 $EndComp
@@ -129,6 +135,8 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 5050 3150 50  0001 C CNN
 F 3 "~" H 5050 3150 50  0001 C CNN
 F 4 "Yageo" H 5050 3150 50  0001 C CNN "Manufacturer"
 F 5 "CC0603JPX7R9BB104" H 5050 3150 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 5050 3150 50  0001 C CNN "Checked"
+F 7 "Mouser" H 5050 3150 50  0001 C CNN "Distributor"
 	1    5050 3150
 	1    0    0    -1  
 $EndComp
@@ -225,6 +233,8 @@ F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 4000 3200 50  0001 C CNN
 F 3 "www.ti.com/lit/ds/symlink/txs0108e.pdf" H 4000 3850 50  0001 C CNN
 F 4 "Texas Instruments" H 4000 3950 50  0001 C CNN "Manufacturer"
 F 5 "TXS0108EPW" H 4000 3950 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 4000 3950 50  0001 C CNN "Checked"
+F 7 "Mouser" H 4000 3950 50  0001 C CNN "Distributor"
 	1    4000 3950
 	1    0    0    -1  
 $EndComp
@@ -268,6 +278,8 @@ F 2 "Resistor_SMD:R_0603_1608Metric" H 2950 3550 50  0001 C CNN
 F 3 "~" H 2950 3550 50  0001 C CNN
 F 4 "Yageo" H 2950 3550 50  0001 C CNN "Manufacturer"
 F 5 "RC0603FR-071K5L" H 2950 3550 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 2950 3550 50  0001 C CNN "Checked"
+F 7 "Mouser" H 2950 3550 50  0001 C CNN "Distributor"
 	1    2950 3550
 	0    1    1    0   
 $EndComp
@@ -305,6 +317,8 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 2350 3300 50  0001 C CNN
 F 3 "~" H 2350 3300 50  0001 C CNN
 F 4 "Yageo" H 2350 3300 50  0001 C CNN "Manufacturer"
 F 5 "CC0603JPX7R9BB104" H 2350 3300 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 2350 3300 50  0001 C CNN "Checked"
+F 7 "Mouser" H 2350 3300 50  0001 C CNN "Distributor"
 	1    2350 3300
 	1    0    0    -1  
 $EndComp
@@ -322,6 +336,8 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 3500 2800 50  0001 C CNN
 F 3 "~" H 3500 2800 50  0001 C CNN
 F 4 "Yageo" H 3500 2800 50  0001 C CNN "Manufacturer"
 F 5 "CC0603JPX7R9BB104" H 3500 2800 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 3500 2800 50  0001 C CNN "Checked"
+F 7 "Mouser" H 3500 2800 50  0001 C CNN "Distributor"
 	1    3500 2800
 	1    0    0    -1  
 $EndComp
@@ -362,6 +378,8 @@ F 2 "Resistor_SMD:R_0603_1608Metric" H 2700 1950 50  0001 C CNN
 F 3 "~" H 2700 1950 50  0001 C CNN
 F 4 "Vishay Dale" H 2700 1950 50  0001 C CNN "Manufacturer"
 F 5 "CRCW06030000Z0EAC" H 2700 1950 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 2700 1950 50  0001 C CNN "Distributor"
+F 7 "y" H 2700 1950 50  0001 C CNN "Checked"
 	1    2700 1950
 	-1   0    0    1   
 $EndComp
@@ -416,6 +434,8 @@ F 2 "Resistor_SMD:R_0603_1608Metric" H 3900 2550 50  0001 C CNN
 F 3 "~" H 3900 2550 50  0001 C CNN
 F 4 "Vishay Dale" H 3900 2550 50  0001 C CNN "Manufacturer"
 F 5 "CRCW06030000Z0EAC" H 3900 2550 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 3900 2550 50  0001 C CNN "Distributor"
+F 7 "y" H 3900 2550 50  0001 C CNN "Checked"
 	1    3900 2550
 	-1   0    0    1   
 $EndComp

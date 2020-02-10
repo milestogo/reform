@@ -95,6 +95,8 @@ F 2 "Resistor_SMD:R_0603_1608Metric" H 10900 5350 50  0001 C CNN
 F 3 "~" H 10900 5350 50  0001 C CNN
 F 4 "Vishay Dale" H 10900 5350 50  0001 C CNN "Manufacturer"
 F 5 "CRCW06030000Z0EAC" H 10900 5350 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 10900 5350 50  0001 C CNN "Distributor"
+F 7 "y" H 10900 5350 50  0001 C CNN "Checked"
 	1    10900 5350
 	0    -1   -1   0   
 $EndComp
@@ -112,6 +114,8 @@ F 2 "Resistor_SMD:R_0603_1608Metric" H 10900 5450 50  0001 C CNN
 F 3 "~" H 10900 5450 50  0001 C CNN
 F 4 "Vishay Dale" H 10900 5450 50  0001 C CNN "Manufacturer"
 F 5 "CRCW06030000Z0EAC" H 10900 5450 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 10900 5450 50  0001 C CNN "Distributor"
+F 7 "y" H 10900 5450 50  0001 C CNN "Checked"
 	1    10900 5450
 	0    -1   -1   0   
 $EndComp
@@ -139,6 +143,8 @@ F 2 "Resistor_SMD:R_0603_1608Metric" H 10900 5050 50  0001 C CNN
 F 3 "~" H 10900 5050 50  0001 C CNN
 F 4 "Vishay Dale" H 10900 5050 50  0001 C CNN "Manufacturer"
 F 5 "CRCW06030000Z0EAC" H 10900 5050 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 10900 5050 50  0001 C CNN "Distributor"
+F 7 "y" H 10900 5050 50  0001 C CNN "Checked"
 	1    10900 5050
 	0    -1   -1   0   
 $EndComp
@@ -152,6 +158,8 @@ F 2 "Resistor_SMD:R_0603_1608Metric" H 10900 4950 50  0001 C CNN
 F 3 "~" H 10900 4950 50  0001 C CNN
 F 4 "Vishay Dale" H 10900 4950 50  0001 C CNN "Manufacturer"
 F 5 "CRCW06030000Z0EAC" H 10900 4950 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 10900 4950 50  0001 C CNN "Distributor"
+F 7 "y" H 10900 4950 50  0001 C CNN "Checked"
 	1    10900 4950
 	0    1    1    0   
 $EndComp
@@ -201,6 +209,8 @@ F 0 "TP2" V 7354 5438 50  0000 L CNN
 F 1 "T_OTG" V 7445 5438 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7600 5250 50  0001 C CNN
 F 3 "~" H 7600 5250 50  0001 C CNN
+F 4 "y" H 7400 5250 50  0001 C CNN "Checked"
+F 5 "None" H 7400 5250 50  0001 C CNN "Distributor"
 	1    7400 5250
 	0    -1   -1   0   
 $EndComp
@@ -217,8 +227,10 @@ F 0 "R113" H 5841 10204 50  0000 R CNN
 F 1 "10k" H 5841 10295 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 5900 10250 50  0001 C CNN
 F 3 "~" H 5900 10250 50  0001 C CNN
-F 4 "Vishay Dale" H 5900 10250 50  0001 C CNN "Manufacturer"
-F 5 "CRCW060310K0JNEAC" H 5900 10250 50  0001 C CNN "Manufacturer_No"
+F 4 "Yageo" H 5900 10250 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H 5900 10250 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 5900 10250 50  0001 C CNN "Checked"
+F 7 "Mouser" H 5900 10250 50  0001 C CNN "Distributor"
 	1    5900 10250
 	-1   0    0    1   
 $EndComp
@@ -245,6 +257,8 @@ F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_Omron_A6S-110x_W8.9mm_P2.54mm" H 640
 F 3 "~" H 6400 10450 50  0001 C CNN
 F 4 "Omron" H 6400 10450 50  0001 C CNN "Manufacturer"
 F 5 "A6S-1101-H" H 6400 10450 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 6400 10450 50  0001 C CNN "Checked"
+F 7 "Mouser" H 6400 10450 50  0001 C CNN "Distributor"
 	1    6400 10450
 	1    0    0    -1  
 $EndComp
@@ -252,7 +266,7 @@ Wire Wire Line
 	5900 10450 5900 10350
 NoConn ~ 10400 3950
 Wire Wire Line
-	10700 12150 10400 12150
+	10800 12150 10400 12150
 Wire Wire Line
 	7200 8650 7200 8700
 $Comp
@@ -263,6 +277,8 @@ F 0 "H13" H 15150 10046 50  0000 L CNN
 F 1 "LABEL_CPU" H 15150 9955 50  0000 L CNN
 F 2 "footprints:cpu" H 15050 10000 50  0001 C CNN
 F 3 "~" H 15050 10000 50  0001 C CNN
+F 4 "y" H 15050 10000 50  0001 C CNN "Checked"
+F 5 "None" H 15050 10000 50  0001 C CNN "Distributor"
 	1    15050 10000
 	1    0    0    -1  
 $EndComp
@@ -276,6 +292,8 @@ F 2 "Connector_FFC-FPC:Hirose_FH12-33S-0.5SH_1x33-1MP_P0.50mm_Horizontal" H 3450
 F 3 "~" H 3450 8350 50  0001 C CNN
 F 4 "Hirose" H 3450 8350 50  0001 C CNN "Manufacturer"
 F 5 "FH12-33S-0.5SH(55)" H 3450 8350 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 3450 8350 50  0001 C CNN "Checked"
+F 7 "Mouser" H 3450 8350 50  0001 C CNN "Distributor"
 	1    3450 8350
 	-1   0    0    1   
 $EndComp
@@ -650,6 +668,8 @@ F 2 "footprints:TE_1473149-4" H 9300 11550 50  0001 C CNN
 F 3 "" H 9300 11550 50  0001 C CNN
 F 4 "1717254-1" H 9500 8350 50  0001 C CNN "Manufacturer_No"
 F 5 "TE" H 9500 8350 50  0001 C CNN "Manufacturer"
+F 6 "y" H 9500 8350 50  0001 C CNN "Checked"
+F 7 "Mouser" H 9500 8350 50  0001 C CNN "Distributor"
 	1    9500 8350
 	1    0    0    -1  
 $EndComp
@@ -777,6 +797,8 @@ F 2 "Resistor_SMD:R_0603_1608Metric" H 11750 9350 50  0001 C CNN
 F 3 "~" H 11750 9350 50  0001 C CNN
 F 4 "Vishay Dale" H 11750 9350 50  0001 C CNN "Manufacturer"
 F 5 "CRCW06030000Z0EAC" H 11750 9350 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 11750 9350 50  0001 C CNN "Distributor"
+F 7 "y" H 11750 9350 50  0001 C CNN "Checked"
 	1    11750 9350
 	0    1    1    0   
 $EndComp
@@ -792,6 +814,8 @@ F 0 "TP8" V 11754 4038 50  0000 L CNN
 F 1 "T_PMIC_ON_REQ" V 11845 4038 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 12000 3850 50  0001 C CNN
 F 3 "~" H 12000 3850 50  0001 C CNN
+F 4 "y" H 11800 3850 50  0001 C CNN "Checked"
+F 5 "None" H 11800 3850 50  0001 C CNN "Distributor"
 	1    11800 3850
 	0    1    1    0   
 $EndComp
@@ -818,6 +842,8 @@ F 0 "H3" H 16450 8999 50  0000 L CNN
 F 1 "NGFF-Mount3" H 16450 8908 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 16350 8950 50  0001 C CNN
 F 3 "~" H 16350 8950 50  0001 C CNN
+F 4 "y" H 16350 8950 50  0001 C CNN "Checked"
+F 5 "None" H 16350 8950 50  0001 C CNN "Distributor"
 	1    16350 8950
 	1    0    0    -1  
 $EndComp
@@ -846,6 +872,8 @@ F 0 "H2" H 16450 8299 50  0000 L CNN
 F 1 "NGFF-Mount2" H 16450 8208 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 16350 8250 50  0001 C CNN
 F 3 "~" H 16350 8250 50  0001 C CNN
+F 4 "y" H 16350 8250 50  0001 C CNN "Checked"
+F 5 "None" H 16350 8250 50  0001 C CNN "Distributor"
 	1    16350 8250
 	1    0    0    -1  
 $EndComp
@@ -874,6 +902,8 @@ F 0 "H1" H 16450 7649 50  0000 L CNN
 F 1 "NGFF-Mount1" H 16450 7558 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 16350 7600 50  0001 C CNN
 F 3 "~" H 16350 7600 50  0001 C CNN
+F 4 "y" H 16350 7600 50  0001 C CNN "Checked"
+F 5 "None" H 16350 7600 50  0001 C CNN "Distributor"
 	1    16350 7600
 	1    0    0    -1  
 $EndComp
@@ -904,8 +934,10 @@ F 0 "R119" H 15709 4646 50  0000 L CNN
 F 1 "10k" H 15709 4555 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 15650 4600 50  0001 C CNN
 F 3 "~" H 15650 4600 50  0001 C CNN
-F 4 "Vishay Dale" H 15650 4600 50  0001 C CNN "Manufacturer"
-F 5 "CRCW060310K0JNEAC" H 15650 4600 50  0001 C CNN "Manufacturer_No"
+F 4 "Yageo" H 15650 4600 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H 15650 4600 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 15650 4600 50  0001 C CNN "Checked"
+F 7 "Mouser" H 15650 4600 50  0001 C CNN "Distributor"
 	1    15650 4600
 	1    0    0    -1  
 $EndComp
@@ -917,8 +949,10 @@ F 0 "R120" H 15109 5946 50  0000 L CNN
 F 1 "10k" H 15109 5855 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 15050 5900 50  0001 C CNN
 F 3 "~" H 15050 5900 50  0001 C CNN
-F 4 "Vishay Dale" H 15050 5900 50  0001 C CNN "Manufacturer"
-F 5 "CRCW060310K0JNEAC" H 15050 5900 50  0001 C CNN "Manufacturer_No"
+F 4 "Yageo" H 15050 5900 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H 15050 5900 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 15050 5900 50  0001 C CNN "Checked"
+F 7 "Mouser" H 15050 5900 50  0001 C CNN "Distributor"
 	1    15050 5900
 	1    0    0    -1  
 $EndComp
@@ -930,8 +964,10 @@ F 0 "R118" H 15409 4646 50  0000 L CNN
 F 1 "10k" H 15409 4555 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 15350 4600 50  0001 C CNN
 F 3 "~" H 15350 4600 50  0001 C CNN
-F 4 "Vishay Dale" H 15350 4600 50  0001 C CNN "Manufacturer"
-F 5 "CRCW060310K0JNEAC" H 15350 4600 50  0001 C CNN "Manufacturer_No"
+F 4 "Yageo" H 15350 4600 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H 15350 4600 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 15350 4600 50  0001 C CNN "Checked"
+F 7 "Mouser" H 15350 4600 50  0001 C CNN "Distributor"
 	1    15350 4600
 	1    0    0    -1  
 $EndComp
@@ -943,8 +979,10 @@ F 0 "R117" H 15109 4646 50  0000 L CNN
 F 1 "10k" H 15109 4555 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 15050 4600 50  0001 C CNN
 F 3 "~" H 15050 4600 50  0001 C CNN
-F 4 "Vishay Dale" H 15050 4600 50  0001 C CNN "Manufacturer"
-F 5 "CRCW060310K0JNEAC" H 15050 4600 50  0001 C CNN "Manufacturer_No"
+F 4 "Yageo" H 15050 4600 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H 15050 4600 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 15050 4600 50  0001 C CNN "Checked"
+F 7 "Mouser" H 15050 4600 50  0001 C CNN "Distributor"
 	1    15050 4600
 	1    0    0    -1  
 $EndComp
@@ -970,8 +1008,10 @@ F 0 "R115" H 18359 3096 50  0000 L CNN
 F 1 "10k" H 18359 3005 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 18300 3050 50  0001 C CNN
 F 3 "~" H 18300 3050 50  0001 C CNN
-F 4 "Vishay Dale" H 18300 3050 50  0001 C CNN "Manufacturer"
-F 5 "CRCW060310K0JNEAC" H 18300 3050 50  0001 C CNN "Manufacturer_No"
+F 4 "Yageo" H 18300 3050 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H 18300 3050 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 18300 3050 50  0001 C CNN "Checked"
+F 7 "Mouser" H 18300 3050 50  0001 C CNN "Distributor"
 	1    18300 3050
 	1    0    0    -1  
 $EndComp
@@ -1011,6 +1051,8 @@ F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2" H 18000 3450 50  0001 C CNN
 F 3 "~" H 18000 3450 50  0001 C CNN
 F 4 "CK" H 18000 3250 50  0001 C CNN "Manufacturer"
 F 5 "KMR223NGULCLFG" H 18000 3250 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 18000 3250 50  0001 C CNN "Checked"
+F 7 "Mouser" H 18000 3250 50  0001 C CNN "Distributor"
 	1    18000 3250
 	1    0    0    -1  
 $EndComp
@@ -1051,6 +1093,8 @@ F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 16000 3200 50
 F 3 "~" H 16000 3200 50  0001 C CNN
 F 4 "Wurth" H 16000 3200 50  0001 C CNN "Manufacturer"
 F 5 "61300311121" H 16000 3200 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 16000 3200 50  0001 C CNN "Checked"
+F 7 "Mouser" H 16000 3200 50  0001 C CNN "Distributor"
 	1    16000 3200
 	1    0    0    -1  
 $EndComp
@@ -1060,19 +1104,6 @@ Text GLabel 10400 9850 2    50   Output ~ 0
 IMX_UART1_TX
 Wire Wire Line
 	14950 3300 14850 3300
-Wire Wire Line
-	13900 3400 13900 3300
-$Comp
-L power:GND #PWR052
-U 1 1 5D761203
-P 13900 3400
-F 0 "#PWR052" H 13900 3150 50  0001 C CNN
-F 1 "GND" H 13905 3227 50  0000 C CNN
-F 2 "" H 13900 3400 50  0001 C CNN
-F 3 "" H 13900 3400 50  0001 C CNN
-	1    13900 3400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	15100 3200 14850 3200
 Text GLabel 15100 3200 2    50   Output ~ 0
@@ -1091,6 +1122,8 @@ F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 14650 3200 50
 F 3 "~" H 14650 3200 50  0001 C CNN
 F 4 "Wurth" H 14650 3200 50  0001 C CNN "Manufacturer"
 F 5 "61300311121" H 14650 3200 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 14650 3200 50  0001 C CNN "Checked"
+F 7 "Mouser" H 14650 3200 50  0001 C CNN "Distributor"
 	1    14650 3200
 	1    0    0    -1  
 $EndComp
@@ -1102,17 +1135,17 @@ Text GLabel 8700 13150 0    50   BiDi ~ 0
 HDMI_SDA
 Text GLabel 8700 13250 0    50   Output ~ 0
 HDMI_SCL
-Text GLabel 10400 12250 2    50   Output ~ 0
+Text GLabel 10500 12250 2    50   Output ~ 0
 DAC_MCLK
-Text GLabel 10400 11850 2    50   Output ~ 0
+Text GLabel 10500 11850 2    50   Output ~ 0
 DAC_RXFS
-Text GLabel 10400 11950 2    50   Output ~ 0
+Text GLabel 10500 11950 2    50   Output ~ 0
 DAC_BCLK
-Text GLabel 10400 11750 2    50   Input ~ 0
+Text GLabel 10500 11750 2    50   Input ~ 0
 DAC_DIN
-Text GLabel 10400 12350 2    50   Output ~ 0
+Text GLabel 10500 12350 2    50   Output ~ 0
 DAC_DOUT
-Text GLabel 10400 12050 2    50   Output ~ 0
+Text GLabel 10500 12050 2    50   Output ~ 0
 DAC_TXFS
 Text GLabel 10500 11650 2    50   Output ~ 0
 BACKLIGHT_PWM
@@ -1137,6 +1170,8 @@ F 0 "H8" H 15150 8699 50  0000 L CNN
 F 1 "MountingHole_Pad" H 15150 8608 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 15050 8650 50  0001 C CNN
 F 3 "~" H 15050 8650 50  0001 C CNN
+F 4 "y" H 15050 8650 50  0001 C CNN "Checked"
+F 5 "None" H 15050 8650 50  0001 C CNN "Distributor"
 	1    15050 8650
 	1    0    0    -1  
 $EndComp
@@ -1159,6 +1194,8 @@ F 0 "H7" H 15150 8249 50  0000 L CNN
 F 1 "MountingHole_Pad" H 15150 8158 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 15050 8200 50  0001 C CNN
 F 3 "~" H 15050 8200 50  0001 C CNN
+F 4 "y" H 15050 8200 50  0001 C CNN "Checked"
+F 5 "None" H 15050 8200 50  0001 C CNN "Distributor"
 	1    15050 8200
 	1    0    0    -1  
 $EndComp
@@ -1181,6 +1218,8 @@ F 0 "H6" H 15150 7799 50  0000 L CNN
 F 1 "MountingHole_Pad" H 15150 7708 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 15050 7750 50  0001 C CNN
 F 3 "~" H 15050 7750 50  0001 C CNN
+F 4 "y" H 15050 7750 50  0001 C CNN "Checked"
+F 5 "None" H 15050 7750 50  0001 C CNN "Distributor"
 	1    15050 7750
 	1    0    0    -1  
 $EndComp
@@ -1203,6 +1242,8 @@ F 0 "H5" H 15150 7349 50  0000 L CNN
 F 1 "MountingHole_Pad" H 15150 7258 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 15050 7300 50  0001 C CNN
 F 3 "~" H 15050 7300 50  0001 C CNN
+F 4 "y" H 15050 7300 50  0001 C CNN "Checked"
+F 5 "None" H 15050 7300 50  0001 C CNN "Distributor"
 	1    15050 7300
 	1    0    0    -1  
 $EndComp
@@ -1214,6 +1255,8 @@ F 0 "H12" H 15150 9796 50  0000 L CNN
 F 1 "LABEL_MPCIE2" H 15150 9705 50  0000 L CNN
 F 2 "footprints:nvme" H 15050 9750 50  0001 C CNN
 F 3 "~" H 15050 9750 50  0001 C CNN
+F 4 "y" H 15050 9750 50  0001 C CNN "Checked"
+F 5 "None" H 15050 9750 50  0001 C CNN "Distributor"
 	1    15050 9750
 	1    0    0    -1  
 $EndComp
@@ -1225,6 +1268,8 @@ F 0 "H11" H 15150 9546 50  0000 L CNN
 F 1 "LABEL_MPCIE1" H 15150 9455 50  0000 L CNN
 F 2 "footprints:mpcie" H 15050 9500 50  0001 C CNN
 F 3 "~" H 15050 9500 50  0001 C CNN
+F 4 "y" H 15050 9500 50  0001 C CNN "Checked"
+F 5 "None" H 15050 9500 50  0001 C CNN "Distributor"
 	1    15050 9500
 	1    0    0    -1  
 $EndComp
@@ -1236,6 +1281,8 @@ F 0 "H10" H 15150 9296 50  0000 L CNN
 F 1 "LOGO_REFORM" H 15150 9205 50  0000 L CNN
 F 2 "reform2-motherboard:mntreform" H 15050 9250 50  0001 C CNN
 F 3 "~" H 15050 9250 50  0001 C CNN
+F 4 "y" H 15050 9250 50  0001 C CNN "Checked"
+F 5 "None" H 15050 9250 50  0001 C CNN "Distributor"
 	1    15050 9250
 	1    0    0    -1  
 $EndComp
@@ -1413,7 +1460,9 @@ F 1 "MountingHole_Pad" H 18100 7758 50  0000 L CNN
 F 2 "footprints:WA-SMSI-M2" H 18000 7800 50  0001 C CNN
 F 3 "~" H 18000 7800 50  0001 C CNN
 F 4 "Wurth" H 18000 7800 50  0001 C CNN "Manufacturer"
-F 5 "WA-SMSI-M2" H 18000 7800 50  0001 C CNN "Manufacturer_No"
+F 5 "9774010243" H 18000 7800 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 18000 7800 50  0001 C CNN "Checked"
+F 7 "Mouser" H 18000 7800 50  0001 C CNN "Distributor"
 	1    18000 7800
 	1    0    0    -1  
 $EndComp
@@ -1437,7 +1486,9 @@ F 1 "MountingHole_Pad" H 18100 8758 50  0000 L CNN
 F 2 "footprints:WA-SMSI-M2" H 18000 8800 50  0001 C CNN
 F 3 "~" H 18000 8800 50  0001 C CNN
 F 4 "Wurth" H 18000 8800 50  0001 C CNN "Manufacturer"
-F 5 "WA-SMSI-M2" H 18000 8800 50  0001 C CNN "Manufacturer_No"
+F 5 "9774010243" H 18000 8800 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 18000 8800 50  0001 C CNN "Checked"
+F 7 "Mouser" H 18000 8800 50  0001 C CNN "Distributor"
 	1    18000 8800
 	1    0    0    -1  
 $EndComp
@@ -1461,7 +1512,9 @@ F 1 "MountingHole_Pad" H 18100 9258 50  0000 L CNN
 F 2 "footprints:WA-SMSI-M2" H 18000 9300 50  0001 C CNN
 F 3 "~" H 18000 9300 50  0001 C CNN
 F 4 "Wurth" H 18000 9300 50  0001 C CNN "Manufacturer"
-F 5 "WA-SMSI-M2" H 18000 9300 50  0001 C CNN "Manufacturer_No"
+F 5 "9774010243" H 18000 9300 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 18000 9300 50  0001 C CNN "Checked"
+F 7 "Mouser" H 18000 9300 50  0001 C CNN "Distributor"
 	1    18000 9300
 	1    0    0    -1  
 $EndComp
@@ -1485,7 +1538,9 @@ F 1 "MountingHole_Pad" H 18100 9758 50  0000 L CNN
 F 2 "footprints:WA-SMSI-M2" H 18000 9800 50  0001 C CNN
 F 3 "~" H 18000 9800 50  0001 C CNN
 F 4 "Wurth" H 18000 9800 50  0001 C CNN "Manufacturer"
-F 5 "WA-SMSI-M2" H 18000 9800 50  0001 C CNN "Manufacturer_No"
+F 5 "9774010243" H 18000 9800 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 18000 9800 50  0001 C CNN "Checked"
+F 7 "Mouser" H 18000 9800 50  0001 C CNN "Distributor"
 	1    18000 9800
 	1    0    0    -1  
 $EndComp
@@ -1497,6 +1552,8 @@ F 0 "H4" H 15150 10296 50  0000 L CNN
 F 1 "WEEE" H 15150 10205 50  0000 L CNN
 F 2 "Symbol:WEEE-Logo_4.2x6mm_SilkScreen" H 15050 10250 50  0001 C CNN
 F 3 "~" H 15050 10250 50  0001 C CNN
+F 4 "y" H 15050 10250 50  0001 C CNN "Checked"
+F 5 "None" H 15050 10250 50  0001 C CNN "Distributor"
 	1    15050 10250
 	1    0    0    -1  
 $EndComp
@@ -1508,6 +1565,8 @@ F 0 "TP10" V 8454 10838 50  0000 L CNN
 F 1 "T_M4_NMI" V 8545 10838 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8700 10650 50  0001 C CNN
 F 3 "~" H 8700 10650 50  0001 C CNN
+F 4 "y" H 8500 10650 50  0001 C CNN "Checked"
+F 5 "None" H 8500 10650 50  0001 C CNN "Distributor"
 	1    8500 10650
 	0    -1   -1   0   
 $EndComp
@@ -1515,8 +1574,6 @@ Wire Wire Line
 	8700 10650 8500 10650
 Wire Wire Line
 	10400 11650 10500 11650
-Text Notes 13200 2800 0    50   ~ 0
-Optional fan header
 Wire Wire Line
 	8700 10750 7300 10750
 Text GLabel 7300 10750 0    50   Input ~ 0
@@ -1533,6 +1590,8 @@ F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 16250 5350 50
 F 3 "~" H 16250 5350 50  0001 C CNN
 F 4 "Amphenol FCI" H 16250 5350 50  0001 C CNN "Manufacturer"
 F 5 "79425-408HLF" H 16250 5350 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 16250 5350 50  0001 C CNN "Checked"
+F 7 "Mouser" H 16250 5350 50  0001 C CNN "Distributor"
 	1    16250 5350
 	-1   0    0    -1  
 $EndComp
@@ -1576,45 +1635,17 @@ This is a i.MX8M internal oscillator output for PCIe1
 $Comp
 L Connector:TestPoint TP12
 U 1 1 5DF11BD6
-P 10700 12150
-F 0 "TP12" V 10654 12338 50  0000 L CNN
-F 1 "SAI2_RXC" V 10745 12338 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10900 12150 50  0001 C CNN
-F 3 "~" H 10900 12150 50  0001 C CNN
-	1    10700 12150
+P 10800 12150
+F 0 "TP12" V 10754 12338 50  0000 L CNN
+F 1 "SAI2_RXC" V 10845 12338 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 11000 12150 50  0001 C CNN
+F 3 "~" H 11000 12150 50  0001 C CNN
+F 4 "y" H 10800 12150 50  0001 C CNN "Checked"
+F 5 "None" H 10800 12150 50  0001 C CNN "Distributor"
+	1    10800 12150
 	0    1    1    0   
 $EndComp
-$Comp
-L Connector:Conn_01x03_Male J12
-U 1 1 5DC47CC8
-P 13250 3200
-F 0 "J12" H 13358 3481 50  0000 C CNN
-F 1 "Conn_01x03_Male" H 13358 3390 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 13250 3200 50  0001 C CNN
-F 3 "~" H 13250 3200 50  0001 C CNN
-F 4 "Wurth" H 13250 3200 50  0001 C CNN "Manufacturer"
-F 5 "61300311121" H 13250 3200 50  0001 C CNN "Manufacturer_No"
-	1    13250 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0151
-U 1 1 5DC4824D
-P 13900 3100
-F 0 "#PWR0151" H 13900 2950 50  0001 C CNN
-F 1 "+5V" H 13915 3273 50  0000 C CNN
-F 2 "" H 13900 3100 50  0001 C CNN
-F 3 "" H 13900 3100 50  0001 C CNN
-	1    13900 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13450 3100 13900 3100
-Wire Wire Line
-	13450 3300 13900 3300
-Text GLabel 10400 12450 2    50   Output ~ 0
-IMX_PWM4
-Text GLabel 13450 3200 2    50   Output ~ 0
+Text GLabel 10500 12450 2    50   Output ~ 0
 IMX_PWM4
 Wire Wire Line
 	14950 3400 14950 3300
@@ -1663,6 +1694,8 @@ F 2 "Resistor_SMD:R_0603_1608Metric" H 17750 5350 50  0001 C CNN
 F 3 "~" H 17750 5350 50  0001 C CNN
 F 4 "Yageo" H 17750 5350 50  0001 C CNN "Manufacturer"
 F 5 "RC0603FR-071K5L" H 17750 5350 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 17750 5350 50  0001 C CNN "Checked"
+F 7 "Mouser" H 17750 5350 50  0001 C CNN "Distributor"
 	1    17750 5350
 	0    1    1    0   
 $EndComp
@@ -1678,6 +1711,8 @@ F 2 "Resistor_SMD:R_0603_1608Metric" H 18000 5450 50  0001 C CNN
 F 3 "~" H 18000 5450 50  0001 C CNN
 F 4 "Yageo" H 18000 5450 50  0001 C CNN "Manufacturer"
 F 5 "RC0603FR-071K5L" H 18000 5450 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 18000 5450 50  0001 C CNN "Checked"
+F 7 "Mouser" H 18000 5450 50  0001 C CNN "Distributor"
 	1    18000 5450
 	0    1    1    0   
 $EndComp
@@ -1717,6 +1752,8 @@ F 2 "Resistor_SMD:R_0603_1608Metric" H 18250 5550 50  0001 C CNN
 F 3 "~" H 18250 5550 50  0001 C CNN
 F 4 "Yageo" H 18250 5550 50  0001 C CNN "Manufacturer"
 F 5 "RC0603FR-071K5L" H 18250 5550 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 18250 5550 50  0001 C CNN "Checked"
+F 7 "Mouser" H 18250 5550 50  0001 C CNN "Distributor"
 	1    18250 5550
 	0    1    1    0   
 $EndComp
@@ -1738,6 +1775,8 @@ F 2 "Button_Switch_SMD:SW_DIP_SPSTx04_Slide_Omron_A6S-410x_W8.9mm_P2.54mm" H 189
 F 3 "~" H 18950 5550 50  0001 C CNN
 F 4 "Omron" H 18950 5550 50  0001 C CNN "Manufacturer"
 F 5 "A6S-4101-H" H 18950 5550 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 18950 5550 50  0001 C CNN "Checked"
+F 7 "Mouser" H 18950 5550 50  0001 C CNN "Distributor"
 	1    18950 5550
 	1    0    0    -1  
 $EndComp
@@ -1751,6 +1790,8 @@ F 2 "Resistor_SMD:R_0603_1608Metric" H 18550 5650 50  0001 C CNN
 F 3 "~" H 18550 5650 50  0001 C CNN
 F 4 "Yageo" H 18550 5650 50  0001 C CNN "Manufacturer"
 F 5 "RC0603FR-071K5L" H 18550 5650 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 18550 5650 50  0001 C CNN "Checked"
+F 7 "Mouser" H 18550 5650 50  0001 C CNN "Distributor"
 	1    18550 5650
 	0    -1   -1   0   
 $EndComp
@@ -1822,6 +1863,8 @@ F 2 "Resistor_SMD:R_0603_1608Metric" H 11850 11450 50  0001 C CNN
 F 3 "~" H 11850 11450 50  0001 C CNN
 F 4 "Vishay Dale" H 11850 11450 50  0001 C CNN "Manufacturer"
 F 5 "CRCW06030000Z0EAC" H 11850 11450 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 11850 11450 50  0001 C CNN "Distributor"
+F 7 "y" H 11850 11450 50  0001 C CNN "Checked"
 	1    11850 11450
 	0    1    1    0   
 $EndComp
@@ -1835,6 +1878,8 @@ F 2 "Resistor_SMD:R_0603_1608Metric" H 11850 12750 50  0001 C CNN
 F 3 "~" H 11850 12750 50  0001 C CNN
 F 4 "Vishay Dale" H 11850 12750 50  0001 C CNN "Manufacturer"
 F 5 "CRCW06030000Z0EAC" H 11850 12750 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 11850 12750 50  0001 C CNN "Distributor"
+F 7 "y" H 11850 12750 50  0001 C CNN "Checked"
 	1    11850 12750
 	0    1    1    0   
 $EndComp
@@ -1863,4 +1908,35 @@ Text Notes 11700 11300 0    50   ~ 0
 NOSTUFF!
 Text Notes 11700 12600 0    50   ~ 0
 NOSTUFF!
+Wire Wire Line
+	10500 12450 10400 12450
+Wire Wire Line
+	10500 12250 10400 12250
+Wire Wire Line
+	10400 12350 10500 12350
+Wire Wire Line
+	10500 11750 10400 11750
+Wire Wire Line
+	10400 11850 10500 11850
+Wire Wire Line
+	10500 11950 10400 11950
+Wire Wire Line
+	10400 12050 10500 12050
+Text GLabel 12150 11950 2    50   Input ~ 0
+IMX_PWM4
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5F7E2E35
+P 12050 11950
+F 0 "TP1" V 12004 12138 50  0000 L CNN
+F 1 "IMX_PWM4" V 12095 12138 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 12250 11950 50  0001 C CNN
+F 3 "~" H 12250 11950 50  0001 C CNN
+F 4 "y" H 12050 11950 50  0001 C CNN "Checked"
+F 5 "None" H 12050 11950 50  0001 C CNN "Distributor"
+	1    12050 11950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12150 11950 12050 11950
 $EndSCHEMATC
