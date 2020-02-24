@@ -231,10 +231,6 @@ Text GLabel 5050 3700 2    50   Input ~ 0
 PCIE1_RESETn
 Wire Wire Line
 	5050 3700 4600 3700
-Text GLabel 2400 4300 0    50   Input ~ 0
-PCIE1_CLK_N
-Text GLabel 2400 4200 0    50   Input ~ 0
-PCIE1_CLK_P
 $Comp
 L power:+3V3 #PWR047
 U 1 1 5DB754E3
@@ -587,10 +583,6 @@ F 3 "" H 7300 6250 50  0001 C CNN
 	1    7300 6250
 	1    0    0    -1  
 $EndComp
-Text GLabel 2550 6400 2    50   Output ~ 0
-PCIE2_CLK_P
-Text GLabel 2550 6500 2    50   Output ~ 0
-PCIE2_CLK_N
 Text GLabel 8200 4450 0    50   Output ~ 0
 PCIE2_RX_P
 Text GLabel 6700 4750 0    50   Input ~ 0
@@ -1130,107 +1122,9 @@ FE 07 39 BD 85 89 55 AA C4 B1 00 00 00 00 49 45 4E 44 AE 42 60 82
 EndData
 $EndBitmap
 Wire Wire Line
-	2400 5600 2750 5600
-Wire Wire Line
-	2400 5700 2850 5700
-Wire Wire Line
 	6350 5050 8200 5050
-$Comp
-L Device:R_Small R162
-U 1 1 5EAD96FC
-P 6450 5450
-F 0 "R162" H 6391 5404 50  0000 R CNN
-F 1 "0" H 6391 5495 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6450 5450 50  0001 C CNN
-F 3 "~" H 6450 5450 50  0001 C CNN
-F 4 "Vishay Dale" H 6450 5450 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 6450 5450 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 6450 5450 50  0001 C CNN "Distributor"
-F 7 "y" H 6450 5450 50  0001 C CNN "Checked"
-	1    6450 5450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R161
-U 1 1 5EADA1F9
-P 6350 5800
-F 0 "R161" H 6600 5750 50  0000 R CNN
-F 1 "0" H 6450 5850 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6350 5800 50  0001 C CNN
-F 3 "~" H 6350 5800 50  0001 C CNN
-F 4 "Vishay Dale" H 6350 5800 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 6350 5800 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 6350 5800 50  0001 C CNN "Distributor"
-F 7 "y" H 6350 5800 50  0001 C CNN "Checked"
-	1    6350 5800
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6350 5700 6350 5050
 Wire Wire Line
 	6450 4950 8200 4950
-Wire Wire Line
-	6450 5350 6450 4950
-$Comp
-L Device:R_Small R148
-U 1 1 5EB345B0
-P 2850 5350
-F 0 "R148" H 2791 5304 50  0000 R CNN
-F 1 "0" H 2791 5395 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2850 5350 50  0001 C CNN
-F 3 "~" H 2850 5350 50  0001 C CNN
-F 4 "Vishay Dale" H 2850 5350 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 2850 5350 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 2850 5350 50  0001 C CNN "Distributor"
-F 7 "y" H 2850 5350 50  0001 C CNN "Checked"
-	1    2850 5350
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R123
-U 1 1 5EB345BA
-P 2750 5350
-F 0 "R123" H 3000 5300 50  0000 R CNN
-F 1 "0" H 2850 5400 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2750 5350 50  0001 C CNN
-F 3 "~" H 2750 5350 50  0001 C CNN
-F 4 "Vishay Dale" H 2750 5350 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 2750 5350 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 2750 5350 50  0001 C CNN "Distributor"
-F 7 "y" H 2750 5350 50  0001 C CNN "Checked"
-	1    2750 5350
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2750 5450 2750 5600
-Wire Wire Line
-	2850 5450 2850 5700
-$Comp
-L power:GND #PWR0152
-U 1 1 5EB81F6B
-P 1150 7100
-F 0 "#PWR0152" H 1150 6850 50  0001 C CNN
-F 1 "GND" H 1155 6927 50  0000 C CNN
-F 2 "" H 1150 7100 50  0001 C CNN
-F 3 "" H 1150 7100 50  0001 C CNN
-	1    1150 7100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R36
-U 1 1 5EB8F282
-P 1150 6800
-F 0 "R36" H 1350 6750 50  0000 R CNN
-F 1 "475" H 1350 6850 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1150 6800 50  0001 C CNN
-F 3 "~" H 1150 6800 50  0001 C CNN
-F 4 "Yageo" H 1150 6800 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-07475RL" H 1150 6800 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 1150 6800 50  0001 C CNN "Checked"
-F 7 "Mouser" H 1150 6800 50  0001 C CNN "Distributor"
-	1    1150 6800
-	-1   0    0    1   
-$EndComp
 $Comp
 L Device:Crystal_GND24_Small Y?
 U 1 1 5EBDC9B8
@@ -1371,80 +1265,6 @@ Wire Wire Line
 	4200 7000 4650 7000
 Text Label 4650 7400 0    50   ~ 0
 PCICLKGEN_XO
-Text Label 1050 6000 2    50   ~ 0
-PCICLKGEN_XI
-Text Label 1050 6100 2    50   ~ 0
-PCICLKGEN_XO
-$Comp
-L Device:R_Small R37
-U 1 1 5EC38C15
-P 1300 5700
-F 0 "R37" V 1250 5950 50  0000 R CNN
-F 1 "1.5k" V 1300 5750 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1300 5700 50  0001 C CNN
-F 3 "~" H 1300 5700 50  0001 C CNN
-F 4 "Yageo" H 1300 5700 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-071K5L" H 1300 5700 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 1300 5700 50  0001 C CNN "Checked"
-F 7 "Mouser" H 1300 5700 50  0001 C CNN "Distributor"
-	1    1300 5700
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1400 5700 1450 5700
-$Comp
-L Device:R_Small R38
-U 1 1 5EC58288
-P 1300 5800
-F 0 "R38" V 1250 6050 50  0000 R CNN
-F 1 "1.5k" V 1300 5850 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1300 5800 50  0001 C CNN
-F 3 "~" H 1300 5800 50  0001 C CNN
-F 4 "Yageo" H 1300 5800 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-071K5L" H 1300 5800 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 1300 5800 50  0001 C CNN "Checked"
-F 7 "Mouser" H 1300 5800 50  0001 C CNN "Distributor"
-	1    1300 5800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1400 5800 1450 5800
-$Comp
-L Device:R_Small R39
-U 1 1 5EC8B15D
-P 1300 5900
-F 0 "R39" V 1250 6150 50  0000 R CNN
-F 1 "0" V 1300 5950 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1300 5900 50  0001 C CNN
-F 3 "~" H 1300 5900 50  0001 C CNN
-F 4 "Vishay Dale" H 1300 5900 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 1300 5900 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 1300 5900 50  0001 C CNN "Distributor"
-F 7 "y" H 1300 5900 50  0001 C CNN "Checked"
-	1    1300 5900
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1400 5900 1450 5900
-Wire Wire Line
-	1050 6000 1450 6000
-Wire Wire Line
-	1050 6100 1450 6100
-$Comp
-L Device:R_Small R40
-U 1 1 5EC8ADBB
-P 1300 6200
-F 0 "R40" V 1250 6450 50  0000 R CNN
-F 1 "1.5k" V 1300 6250 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1300 6200 50  0001 C CNN
-F 3 "~" H 1300 6200 50  0001 C CNN
-F 4 "Yageo" H 1300 6200 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-071K5L" H 1300 6200 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 1300 6200 50  0001 C CNN "Checked"
-F 7 "Mouser" H 1300 6200 50  0001 C CNN "Distributor"
-	1    1300 6200
-	0    -1   -1   0   
-$EndComp
 $Comp
 L Device:R_Small R160
 U 1 1 5ED5ADE2
@@ -1462,105 +1282,6 @@ F 7 "Mouser" H 5850 3800 50  0001 C CNN "Distributor"
 $EndComp
 Wire Wire Line
 	4600 3800 5750 3800
-$Comp
-L reform2:IDT5V41066 U23
-U 1 1 5EDCDE6E
-P 1950 6000
-F 0 "U23" H 1925 6715 50  0000 C CNN
-F 1 "IDT5V41066" H 1925 6624 50  0000 C CNN
-F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 1950 6000 50  0001 C CNN
-F 3 "https://www.idt.com/document/dst/5v41066-datasheet" H 1950 6000 50  0001 C CNN
-F 4 "IDT" H 1950 6000 50  0001 C CNN "Manufacturer"
-F 5 "5V41066PGGI8" H 1950 6000 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 1950 6000 50  0001 C CNN "Checked"
-F 7 "Mouser" H 1950 6000 50  0001 C CNN "Distributor"
-	1    1950 6000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1150 6900 1150 7100
-Wire Wire Line
-	1150 6500 1450 6500
-Wire Wire Line
-	1150 6500 1150 6700
-Wire Wire Line
-	1400 6200 1450 6200
-Wire Wire Line
-	700  5600 1450 5600
-$Comp
-L power:GND #PWR0232
-U 1 1 5EF8CAC6
-P 700 6650
-F 0 "#PWR0232" H 700 6400 50  0001 C CNN
-F 1 "GND" H 705 6477 50  0000 C CNN
-F 2 "" H 700 6650 50  0001 C CNN
-F 3 "" H 700 6650 50  0001 C CNN
-	1    700  6650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	700  5900 1200 5900
-Wire Wire Line
-	700  5900 700  6400
-Wire Wire Line
-	700  5600 700  5700
-Wire Wire Line
-	700  5700 1200 5700
-Wire Wire Line
-	700  5800 700  5700
-Wire Wire Line
-	700  5800 850  5800
-Connection ~ 700  5700
-Wire Wire Line
-	1200 6200 850  6200
-Wire Wire Line
-	850  6200 850  5800
-Connection ~ 850  5800
-Wire Wire Line
-	850  5800 1200 5800
-$Comp
-L Device:R_Small R122
-U 1 1 5F0094F5
-P 1300 6300
-F 0 "R122" V 1250 6600 50  0000 R CNN
-F 1 "1.5k" V 1300 6350 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1300 6300 50  0001 C CNN
-F 3 "~" H 1300 6300 50  0001 C CNN
-F 4 "Yageo" H 1300 6300 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-071K5L" H 1300 6300 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 1300 6300 50  0001 C CNN "Checked"
-F 7 "Mouser" H 1300 6300 50  0001 C CNN "Distributor"
-	1    1300 6300
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1450 6300 1400 6300
-Wire Wire Line
-	1200 6300 850  6300
-Wire Wire Line
-	850  6300 850  6200
-Connection ~ 850  6200
-Connection ~ 700  6400
-Wire Wire Line
-	700  6400 700  6650
-Wire Wire Line
-	1450 6400 700  6400
-Wire Wire Line
-	2550 6400 2400 6400
-Wire Wire Line
-	2400 6500 2550 6500
-Wire Wire Line
-	2400 6200 6350 6200
-Wire Wire Line
-	6350 5900 6350 6200
-Wire Wire Line
-	2400 6300 6450 6300
-Wire Wire Line
-	6450 5550 6450 6300
-Text Label 2750 5550 2    50   ~ 0
-CLKA_P
-Text Label 2850 5550 0    50   ~ 0
-CLKA_N
 Text Label 5100 6200 2    50   ~ 0
 CLKC_P
 Text Label 6350 5200 2    50   ~ 0
@@ -1569,48 +1290,6 @@ Text Label 6450 5200 0    50   ~ 0
 RCLKC_N
 Text Label 5100 6300 2    50   ~ 0
 CLKC_N
-$Comp
-L Device:R_Small R149
-U 1 1 5DBACB3E
-P 2550 4200
-F 0 "R149" H 2800 4150 50  0000 R CNN
-F 1 "0" H 2650 4250 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2550 4200 50  0001 C CNN
-F 3 "~" H 2550 4200 50  0001 C CNN
-F 4 "Vishay Dale" H 2550 4200 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 2550 4200 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 2550 4200 50  0001 C CNN "Distributor"
-F 7 "y" H 2550 4200 50  0001 C CNN "Checked"
-	1    2550 4200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R166
-U 1 1 5DBAD03B
-P 2550 4300
-F 0 "R166" H 2491 4254 50  0000 R CNN
-F 1 "0" H 2491 4345 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2550 4300 50  0001 C CNN
-F 3 "~" H 2550 4300 50  0001 C CNN
-F 4 "Vishay Dale" H 2550 4300 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 2550 4300 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 2550 4300 50  0001 C CNN "Distributor"
-F 7 "y" H 2550 4300 50  0001 C CNN "Checked"
-	1    2550 4300
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2400 4200 2450 4200
-Wire Wire Line
-	2450 4300 2400 4300
-Text Label 2600 5800 3    50   ~ 0
-CLKB_P
-Text Label 2700 5900 3    50   ~ 0
-CLKB_N
-Text Label 2850 4300 3    50   ~ 0
-RCLKA_N
-Text Label 2850 4200 1    50   ~ 0
-RCLKA_P
 $Comp
 L Transistor_FET:DMG2301L Q?
 U 1 1 5DC85ECC
@@ -1725,18 +1404,11 @@ Connection ~ 6100 2600
 Wire Wire Line
 	4050 650  4050 1250
 Wire Wire Line
-	700  5600 700  1750
-Wire Wire Line
-	700  1750 2350 1750
-Connection ~ 700  5600
-Wire Wire Line
 	5550 6100 5550 4050
 Wire Wire Line
 	5550 4050 6100 4050
 Wire Wire Line
 	6100 4050 6100 3800
-Wire Wire Line
-	2400 6100 5550 6100
 Connection ~ 6100 3800
 Wire Wire Line
 	6700 4750 8200 4750
@@ -1746,6 +1418,45 @@ Text Notes 6200 4550 0    50   ~ 0
 TX caps are on the SoM
 Text Notes 1950 3000 0    50   ~ 0
 TX caps are on the SoM
+Wire Wire Line
+	6100 1300 6100 1600
+Text GLabel 3150 5800 2    50   Input ~ 0
+PCIE1_XREFCLK_P
+Text GLabel 3150 5900 2    50   Input ~ 0
+PCIE1_XREFCLK_N
+Wire Wire Line
+	700  1750 2350 1750
+$Comp
+L Device:C_Small C152
+U 1 1 5FF730DD
+P 900 5250
+F 0 "C152" H 992 5296 50  0000 L CNN
+F 1 "10nF" H 992 5205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 900 5250 50  0001 C CNN
+F 3 "~" H 900 5250 50  0001 C CNN
+F 4 "y" H 900 5250 50  0001 C CNN "Checked"
+F 5 "Mouser" H 900 5250 50  0001 C CNN "Distributor"
+F 6 "KEMET" H 900 5250 50  0001 C CNN "Manufacturer"
+F 7 "C0603C103K5RAC3190" H 900 5250 50  0001 C CNN "Manufacturer_No"
+	1    900  5250
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2850 5150 2850 4300
+Wire Notes Line
+	2750 5150 2750 4200
+NoConn ~ 2850 5250
+NoConn ~ 2750 5250
+Wire Wire Line
+	2650 4300 3300 4300
+Wire Wire Line
+	2650 4200 3300 4200
+Wire Wire Line
+	2400 5800 3150 5800
+Wire Wire Line
+	2400 5900 3150 5900
+Wire Wire Line
+	2800 6000 2400 6000
 $Comp
 L power:GND #PWR0171
 U 1 1 5EC1ACC7
@@ -1758,25 +1469,344 @@ F 3 "" H 2800 6000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2800 6000 2400 6000
+	2400 6100 3250 6100
+Connection ~ 700  5600
+Text Label 2850 4200 1    50   ~ 0
+RCLKA_P
+Text Label 2850 4300 3    50   ~ 0
+RCLKA_N
+Text Label 2700 5900 3    50   ~ 0
+CLKB_N
+Text Label 2600 5800 3    50   ~ 0
+CLKB_P
 Wire Wire Line
-	6100 1300 6100 1600
-Text GLabel 3150 5800 2    50   Input ~ 0
-PCIE1_XREFCLK_P
-Text GLabel 3150 5900 2    50   Input ~ 0
-PCIE1_XREFCLK_N
+	2450 4300 2400 4300
 Wire Wire Line
-	2400 5900 3150 5900
+	2400 4200 2450 4200
+$Comp
+L Device:R_Small R166
+U 1 1 5DBAD03B
+P 2550 4300
+F 0 "R166" H 2491 4254 50  0000 R CNN
+F 1 "0" H 2491 4345 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2550 4300 50  0001 C CNN
+F 3 "~" H 2550 4300 50  0001 C CNN
+F 4 "Vishay Dale" H 2550 4300 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 2550 4300 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 2550 4300 50  0001 C CNN "Distributor"
+F 7 "y" H 2550 4300 50  0001 C CNN "Checked"
+	1    2550 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R149
+U 1 1 5DBACB3E
+P 2550 4200
+F 0 "R149" H 2800 4150 50  0000 R CNN
+F 1 "0" H 2650 4250 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2550 4200 50  0001 C CNN
+F 3 "~" H 2550 4200 50  0001 C CNN
+F 4 "Vishay Dale" H 2550 4200 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 2550 4200 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 2550 4200 50  0001 C CNN "Distributor"
+F 7 "y" H 2550 4200 50  0001 C CNN "Checked"
+	1    2550 4200
+	0    -1   -1   0   
+$EndComp
+Text Label 2850 5550 0    50   ~ 0
+CLKA_N
+Text Label 2750 5550 2    50   ~ 0
+CLKA_P
 Wire Wire Line
-	2400 5800 3150 5800
+	2400 6300 6450 6300
 Wire Wire Line
-	2650 4200 3300 4200
+	2400 6200 6350 6200
 Wire Wire Line
-	2650 4300 3300 4300
-NoConn ~ 2750 5250
-NoConn ~ 2850 5250
-Wire Notes Line
-	2750 5150 2750 4200
-Wire Notes Line
-	2850 5150 2850 4300
+	2400 6500 2550 6500
+Wire Wire Line
+	2550 6400 2400 6400
+Wire Wire Line
+	1450 6400 700  6400
+Wire Wire Line
+	700  6400 700  6650
+Connection ~ 700  6400
+Connection ~ 850  6200
+Wire Wire Line
+	850  6300 850  6200
+Wire Wire Line
+	1200 6300 850  6300
+Wire Wire Line
+	1450 6300 1400 6300
+$Comp
+L Device:R_Small R122
+U 1 1 5F0094F5
+P 1300 6300
+F 0 "R122" V 1250 6600 50  0000 R CNN
+F 1 "1.5k" V 1300 6350 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1300 6300 50  0001 C CNN
+F 3 "~" H 1300 6300 50  0001 C CNN
+F 4 "Yageo" H 1300 6300 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071K5L" H 1300 6300 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 1300 6300 50  0001 C CNN "Checked"
+F 7 "Mouser" H 1300 6300 50  0001 C CNN "Distributor"
+	1    1300 6300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	850  5800 1200 5800
+Connection ~ 850  5800
+Wire Wire Line
+	850  6200 850  5800
+Wire Wire Line
+	1200 6200 850  6200
+Connection ~ 700  5700
+Wire Wire Line
+	700  5800 850  5800
+Wire Wire Line
+	700  5800 700  5700
+Wire Wire Line
+	700  5700 1200 5700
+Wire Wire Line
+	700  5600 700  5700
+Wire Wire Line
+	700  5900 700  6400
+Wire Wire Line
+	700  5900 1200 5900
+$Comp
+L power:GND #PWR0232
+U 1 1 5EF8CAC6
+P 700 6650
+F 0 "#PWR0232" H 700 6400 50  0001 C CNN
+F 1 "GND" H 705 6477 50  0000 C CNN
+F 2 "" H 700 6650 50  0001 C CNN
+F 3 "" H 700 6650 50  0001 C CNN
+	1    700  6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  5600 1450 5600
+Wire Wire Line
+	1400 6200 1450 6200
+Wire Wire Line
+	1150 6500 1150 6700
+Wire Wire Line
+	1150 6500 1450 6500
+Wire Wire Line
+	1150 6900 1150 7100
+$Comp
+L reform2:IDT5V41066 U23
+U 1 1 5EDCDE6E
+P 1950 6000
+F 0 "U23" H 1925 6715 50  0000 C CNN
+F 1 "IDT5V41066" H 1925 6624 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 1950 6000 50  0001 C CNN
+F 3 "https://www.idt.com/document/dst/5v41066-datasheet" H 1950 6000 50  0001 C CNN
+F 4 "IDT" H 1950 6000 50  0001 C CNN "Manufacturer"
+F 5 "5V41066PGGI8" H 1950 6000 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 1950 6000 50  0001 C CNN "Checked"
+F 7 "Mouser" H 1950 6000 50  0001 C CNN "Distributor"
+	1    1950 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R40
+U 1 1 5EC8ADBB
+P 1300 6200
+F 0 "R40" V 1250 6450 50  0000 R CNN
+F 1 "1.5k" V 1300 6250 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1300 6200 50  0001 C CNN
+F 3 "~" H 1300 6200 50  0001 C CNN
+F 4 "Yageo" H 1300 6200 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071K5L" H 1300 6200 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 1300 6200 50  0001 C CNN "Checked"
+F 7 "Mouser" H 1300 6200 50  0001 C CNN "Distributor"
+	1    1300 6200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1050 6100 1450 6100
+Wire Wire Line
+	1050 6000 1450 6000
+Wire Wire Line
+	1400 5900 1450 5900
+$Comp
+L Device:R_Small R39
+U 1 1 5EC8B15D
+P 1300 5900
+F 0 "R39" V 1250 6150 50  0000 R CNN
+F 1 "0" V 1300 5950 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1300 5900 50  0001 C CNN
+F 3 "~" H 1300 5900 50  0001 C CNN
+F 4 "Vishay Dale" H 1300 5900 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 1300 5900 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 1300 5900 50  0001 C CNN "Distributor"
+F 7 "y" H 1300 5900 50  0001 C CNN "Checked"
+	1    1300 5900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1400 5800 1450 5800
+$Comp
+L Device:R_Small R38
+U 1 1 5EC58288
+P 1300 5800
+F 0 "R38" V 1250 6050 50  0000 R CNN
+F 1 "1.5k" V 1300 5850 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1300 5800 50  0001 C CNN
+F 3 "~" H 1300 5800 50  0001 C CNN
+F 4 "Yageo" H 1300 5800 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071K5L" H 1300 5800 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 1300 5800 50  0001 C CNN "Checked"
+F 7 "Mouser" H 1300 5800 50  0001 C CNN "Distributor"
+	1    1300 5800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1400 5700 1450 5700
+$Comp
+L Device:R_Small R37
+U 1 1 5EC38C15
+P 1300 5700
+F 0 "R37" V 1250 5950 50  0000 R CNN
+F 1 "1.5k" V 1300 5750 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1300 5700 50  0001 C CNN
+F 3 "~" H 1300 5700 50  0001 C CNN
+F 4 "Yageo" H 1300 5700 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071K5L" H 1300 5700 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 1300 5700 50  0001 C CNN "Checked"
+F 7 "Mouser" H 1300 5700 50  0001 C CNN "Distributor"
+	1    1300 5700
+	0    -1   -1   0   
+$EndComp
+Text Label 1050 6100 2    50   ~ 0
+PCICLKGEN_XO
+Text Label 1050 6000 2    50   ~ 0
+PCICLKGEN_XI
+$Comp
+L Device:R_Small R36
+U 1 1 5EB8F282
+P 1150 6800
+F 0 "R36" H 1350 6750 50  0000 R CNN
+F 1 "475" H 1350 6850 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1150 6800 50  0001 C CNN
+F 3 "~" H 1150 6800 50  0001 C CNN
+F 4 "Yageo" H 1150 6800 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-07475RL" H 1150 6800 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 1150 6800 50  0001 C CNN "Checked"
+F 7 "Mouser" H 1150 6800 50  0001 C CNN "Distributor"
+	1    1150 6800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0152
+U 1 1 5EB81F6B
+P 1150 7100
+F 0 "#PWR0152" H 1150 6850 50  0001 C CNN
+F 1 "GND" H 1155 6927 50  0000 C CNN
+F 2 "" H 1150 7100 50  0001 C CNN
+F 3 "" H 1150 7100 50  0001 C CNN
+	1    1150 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 5450 2850 5700
+Wire Wire Line
+	2750 5450 2750 5600
+$Comp
+L Device:R_Small R123
+U 1 1 5EB345BA
+P 2750 5350
+F 0 "R123" H 3000 5300 50  0000 R CNN
+F 1 "0" H 2850 5400 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2750 5350 50  0001 C CNN
+F 3 "~" H 2750 5350 50  0001 C CNN
+F 4 "Vishay Dale" H 2750 5350 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 2750 5350 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 2750 5350 50  0001 C CNN "Distributor"
+F 7 "y" H 2750 5350 50  0001 C CNN "Checked"
+	1    2750 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R148
+U 1 1 5EB345B0
+P 2850 5350
+F 0 "R148" H 2791 5304 50  0000 R CNN
+F 1 "0" H 2791 5395 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2850 5350 50  0001 C CNN
+F 3 "~" H 2850 5350 50  0001 C CNN
+F 4 "Vishay Dale" H 2850 5350 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 2850 5350 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 2850 5350 50  0001 C CNN "Distributor"
+F 7 "y" H 2850 5350 50  0001 C CNN "Checked"
+	1    2850 5350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2400 5700 2850 5700
+Wire Wire Line
+	2400 5600 2750 5600
+Text GLabel 2550 6500 2    50   Output ~ 0
+PCIE2_CLK_N
+Text GLabel 2550 6400 2    50   Output ~ 0
+PCIE2_CLK_P
+Text GLabel 2400 4200 0    50   Input ~ 0
+PCIE1_CLK_P
+Text GLabel 2400 4300 0    50   Input ~ 0
+PCIE1_CLK_N
+Wire Wire Line
+	700  5100 900  5100
+Wire Wire Line
+	900  5100 900  5150
+Wire Wire Line
+	700  1750 700  5100
+Connection ~ 700  5100
+Wire Wire Line
+	700  5100 700  5600
+$Comp
+L power:GND #PWR0182
+U 1 1 5FFC2ED4
+P 900 5350
+F 0 "#PWR0182" H 900 5100 50  0001 C CNN
+F 1 "GND" H 905 5177 50  0000 C CNN
+F 2 "" H 900 5350 50  0001 C CNN
+F 3 "" H 900 5350 50  0001 C CNN
+	1    900  5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C153
+U 1 1 5FFC31B6
+P 3250 6500
+F 0 "C153" H 3342 6546 50  0000 L CNN
+F 1 "10nF" H 3342 6455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3250 6500 50  0001 C CNN
+F 3 "~" H 3250 6500 50  0001 C CNN
+F 4 "y" H 3250 6500 50  0001 C CNN "Checked"
+F 5 "Mouser" H 3250 6500 50  0001 C CNN "Distributor"
+F 6 "KEMET" H 3250 6500 50  0001 C CNN "Manufacturer"
+F 7 "C0603C103K5RAC3190" H 3250 6500 50  0001 C CNN "Manufacturer_No"
+	1    3250 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 6400 3250 6100
+Connection ~ 3250 6100
+Wire Wire Line
+	3250 6100 5550 6100
+$Comp
+L power:GND #PWR0215
+U 1 1 5FFD76F1
+P 3250 6600
+F 0 "#PWR0215" H 3250 6350 50  0001 C CNN
+F 1 "GND" H 3255 6427 50  0000 C CNN
+F 2 "" H 3250 6600 50  0001 C CNN
+F 3 "" H 3250 6600 50  0001 C CNN
+	1    3250 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 4950 6450 6300
+Wire Wire Line
+	6350 5050 6350 6200
 $EndSCHEMATC

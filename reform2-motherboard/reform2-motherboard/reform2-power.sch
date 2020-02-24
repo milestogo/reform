@@ -2816,7 +2816,7 @@ Wire Wire Line
 	12550 8050 12050 8050
 Wire Wire Line
 	12050 8150 12550 8150
-Text Label 11350 4200 0    50   ~ 0
+Text Label 11350 4400 0    50   ~ 0
 LPC_RXDc
 Text Label 11350 4300 0    50   ~ 0
 LPC_TXDc
@@ -2836,7 +2836,6 @@ Wire Wire Line
 	12000 8450 12550 8450
 Wire Wire Line
 	12050 8350 12550 8350
-NoConn ~ 12050 8350
 NoConn ~ 12050 7950
 Wire Wire Line
 	10950 8550 11000 8550
@@ -3025,10 +3024,10 @@ F 7 "y" H 6650 3100 50  0001 C CNN "Checked"
 	1    6650 3100
 	-1   0    0    1   
 $EndComp
-Text GLabel 15450 7150 2    50   Output ~ 0
+Text GLabel 15550 7150 2    50   Output ~ 0
 IMX_WAKE
 Wire Wire Line
-	13950 7150 15450 7150
+	13950 7150 15550 7150
 $Comp
 L Device:R_Small R163
 U 1 1 5E10A59D
@@ -3211,7 +3210,7 @@ Wire Wire Line
 	6650 3200 6650 3550
 Text Label 7350 4950 0    50   ~ 0
 LPC_VCC
-Text Label 11350 4400 0    50   ~ 0
+Text Label 11350 4200 0    50   ~ 0
 LPC_VCC
 Text Label 10950 8550 2    50   ~ 0
 LPC_VCC
@@ -4274,10 +4273,10 @@ Text GLabel 2150 6850 0    50   Output ~ 0
 CHG_STAT2
 Wire Wire Line
 	2300 6850 2150 6850
-Text Label 2050 6400 2    50   ~ 0
+Text Label 1900 6400 2    50   ~ 0
 CHG_INTVCC
 Wire Wire Line
-	2050 6400 2300 6400
+	2200 6400 2300 6400
 Text Label 3450 4100 0    50   ~ 0
 CHG_INTVCC
 Wire Wire Line
@@ -5132,9 +5131,9 @@ Wire Wire Line
 Wire Wire Line
 	3600 9600 3500 9600
 Text GLabel 2150 10050 0    50   BiDi ~ 0
-HDMI_SDA
+DAC_SDA
 Text GLabel 2150 9950 0    50   Output ~ 0
-HDMI_SCL
+DAC_SCL
 Wire Wire Line
 	2150 9950 2250 9950
 Wire Wire Line
@@ -5248,7 +5247,7 @@ Wire Wire Line
 Wire Wire Line
 	2200 10350 2250 10350
 Text Notes 1850 9450 0    50   ~ 0
-I2C lines pulled up\nby SYS 3v3 power\nnear HDMI port
+I2C lines pulled up\nby SYS 3v3 power\nnear DAC
 Text Notes 950  9450 0    50   ~ 0
 Powered by \nmain batteries\nin standby
 Text Notes 3000 9150 0    50   ~ 0
@@ -5821,4 +5820,29 @@ Wire Wire Line
 	4600 5750 4600 5950
 Text Notes 4600 5350 2    50   ~ 0
 VFBMAX = 2.75*(1+(100/10))\n= 30.25V
+$Comp
+L Device:R_Small R193
+U 1 1 600AB2D1
+P 2100 6400
+F 0 "R193" V 2050 6600 50  0000 R CNN
+F 1 "0" V 2100 6400 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2100 6400 50  0001 C CNN
+F 3 "~" H 2100 6400 50  0001 C CNN
+F 4 "Mouser" H 2100 6400 50  0001 C CNN "Distributor"
+F 5 "y" H 2100 6400 50  0001 C CNN "Checked"
+F 6 "Vishay Dale" H 2100 6400 50  0001 C CNN "Manufacturer"
+F 7 "CRCW06030000Z0EAC" H 2100 6400 50  0001 C CNN "Manufacturer_No"
+	1    2100 6400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1900 6400 2000 6400
+Text Notes 14550 6450 0    50   ~ 0
+EN_5V!
+Text Notes 14550 6550 0    50   ~ 0
+EN_3V3!
+Text Notes 14550 6650 0    50   ~ 0
+EN_1V2!
+Text Label 10950 8350 2    50   ~ 0
+LPC_MOSI1a
 $EndSCHEMATC

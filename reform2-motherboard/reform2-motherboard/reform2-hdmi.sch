@@ -420,7 +420,7 @@ $EndComp
 Wire Wire Line
 	6650 3900 6650 4100
 Wire Wire Line
-	6650 4100 5900 4100
+	6650 4100 6150 4100
 $Comp
 L Device:C_Small C29
 U 1 1 5D156EA0
@@ -497,11 +497,11 @@ L Device:R_Small R46
 U 1 1 5D16CD31
 P 9000 4950
 F 0 "R46" V 8804 4950 50  0000 C CNN
-F 1 "47k" V 8895 4950 50  0000 C CNN
+F 1 "100k" V 8895 4950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9000 4950 50  0001 C CNN
 F 3 "~" H 9000 4950 50  0001 C CNN
 F 4 "Vishay Dale" H 9000 4950 50  0001 C CNN "Manufacturer"
-F 5 "CRCW060347K0FKEAC" H 9000 4950 50  0001 C CNN "Manufacturer_No"
+F 5 "CRCW0603100KJNEAC" H 9000 4950 50  0001 C CNN "Manufacturer_No"
 F 6 "Mouser" H 9000 4950 50  0001 C CNN "Distributor"
 F 7 "y" H 9000 4950 50  0001 C CNN "Checked"
 	1    9000 4950
@@ -552,21 +552,6 @@ F 3 "" H 8750 5300 50  0001 C CNN
 	1    8750 5300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small R47
-U 1 1 5D1829B9
-P 9000 5350
-F 0 "R47" V 8804 5350 50  0000 C CNN
-F 1 "47k" V 8895 5350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9000 5350 50  0001 C CNN
-F 3 "~" H 9000 5350 50  0001 C CNN
-F 4 "Vishay Dale" H 9000 5350 50  0001 C CNN "Manufacturer"
-F 5 "CRCW060347K0FKEAC" H 9000 5350 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 9000 5350 50  0001 C CNN "Distributor"
-F 7 "y" H 9000 5350 50  0001 C CNN "Checked"
-	1    9000 5350
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	9100 5350 9150 5350
 Wire Wire Line
@@ -585,21 +570,6 @@ F 2 "" H 8750 5700 50  0001 C CNN
 F 3 "" H 8750 5700 50  0001 C CNN
 	1    8750 5700
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R48
-U 1 1 5D185434
-P 9000 5750
-F 0 "R48" V 8804 5750 50  0000 C CNN
-F 1 "47k" V 8895 5750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9000 5750 50  0001 C CNN
-F 3 "~" H 9000 5750 50  0001 C CNN
-F 4 "Vishay Dale" H 9000 5750 50  0001 C CNN "Manufacturer"
-F 5 "CRCW060347K0FKEAC" H 9000 5750 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 9000 5750 50  0001 C CNN "Distributor"
-F 7 "y" H 9000 5750 50  0001 C CNN "Checked"
-	1    9000 5750
-	0    1    1    0   
 $EndComp
 Wire Wire Line
 	9100 5750 9150 5750
@@ -674,4 +644,55 @@ F6 68 45 05 0B AA 68 1D 61 10 2D 83 25 15 A0 1D AD E8 60 C1 CD D1 8A 0C 16 DC 1C
 FE 07 39 BD 85 89 55 AA C4 B1 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+$Comp
+L Device:R_Small R48
+U 1 1 5D185434
+P 9000 5750
+F 0 "R48" V 8804 5750 50  0000 C CNN
+F 1 "47k" V 8895 5750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9000 5750 50  0001 C CNN
+F 3 "~" H 9000 5750 50  0001 C CNN
+F 4 "Vishay Dale" H 9000 5750 50  0001 C CNN "Manufacturer"
+F 5 "CRCW060347K0FKEAC" H 9000 5750 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 9000 5750 50  0001 C CNN "Distributor"
+F 7 "y" H 9000 5750 50  0001 C CNN "Checked"
+	1    9000 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R47
+U 1 1 5D1829B9
+P 9000 5350
+F 0 "R47" V 8804 5350 50  0000 C CNN
+F 1 "47k" V 8895 5350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9000 5350 50  0001 C CNN
+F 3 "~" H 9000 5350 50  0001 C CNN
+F 4 "Vishay Dale" H 9000 5350 50  0001 C CNN "Manufacturer"
+F 5 "CRCW060347K0FKEAC" H 9000 5350 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 9000 5350 50  0001 C CNN "Distributor"
+F 7 "y" H 9000 5350 50  0001 C CNN "Checked"
+	1    9000 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R161
+U 1 1 5FF563B3
+P 6050 4100
+F 0 "R161" V 6100 3950 50  0000 C CNN
+F 1 "10k" V 6100 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6050 4100 50  0001 C CNN
+F 3 "~" H 6050 4100 50  0001 C CNN
+F 4 "y" H 6050 4100 50  0001 C CNN "Checked"
+F 5 "Mouser" H 6050 4100 50  0001 C CNN "Distributor"
+F 6 "Yageo" H 6050 4100 50  0001 C CNN "Manufacturer"
+F 7 "RC0603FR-0710KL" H 6050 4100 50  0001 C CNN "Manufacturer_No"
+	1    6050 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 4100 5900 4100
+Text Notes 6550 4900 0    50   ~ 0
+TODO: Test. Datasheet says 1.7k
+Text Notes 8600 6150 0    50   ~ 0
+TODO: CEC not implemented
 $EndSCHEMATC
