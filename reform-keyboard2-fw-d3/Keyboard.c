@@ -35,7 +35,7 @@
 #include "Config/LUFAConfig.h"
 #include "Keyboard.h"
 #include <avr/io.h>
-#include "serial.h"
+#include "LUFA/Drivers/Peripheral/Serial.h"
 #include "ssd1306.h"
 #include "scancodes.h"
 
@@ -99,7 +99,7 @@ void gfx_clear(void) {
 
 void empty_serial(void) {
 	int clock = 0;
-  while (ser_read()>0 && clock<1000) {
+  while (Serial_ReceiveByte()>0 && clock<1000) {
 		// flush serial
 		clock++;
 	}
@@ -115,7 +115,7 @@ void remote_receive_string(void) {
 		int chr = -1;
 		clock = 0;
 		while (chr==-1) {
-			chr = ser_read();
+      chr=Serial_ReceiveByte();
 			clock++;
 			Delay_MS(1);
 			if (clock>500) goto timeout;
@@ -147,9 +147,9 @@ void remote_turn_on_som(void) {
 	term_x = 0;
 	term_y = 0;
 
-  ser_write('1');
-  ser_write('p');
-  ser_write('\r');
+  Serial_SendByte('1');
+  Serial_SendByte('p');
+  Serial_SendByte('\r');
 	Delay_MS(1);
   remote_receive_string();
 }
@@ -161,9 +161,9 @@ void remote_turn_off_som(void) {
 	term_x = 0;
 	term_y = 0;
 
-  ser_write('0');
-  ser_write('p');
-  ser_write('\r');
+  Serial_SendByte('0');
+  Serial_SendByte('p');
+  Serial_SendByte('\r');
 	Delay_MS(1);
   remote_receive_string();
 }
@@ -176,9 +176,9 @@ void remote_get_voltages(void) {
 	term_y = 0;
 
 	for (int i=0; i<8; i++) {
-		ser_write('0'+i);
-		ser_write('v');
-		ser_write('\r');
+		Serial_SendByte('0'+i);
+		Serial_SendByte('v');
+		Serial_SendByte('\r');
 		Delay_MS(1);
     remote_receive_string();
 	}
@@ -186,13 +186,13 @@ void remote_get_voltages(void) {
 
 void remote_get_status(void) {
 	gfx_clear();
-	empty_serial();
+	Serial_SendByte();
 	
 	term_x = 0;
 	term_y = 0;
 
-	ser_write('s');
-	ser_write('\r');
+	Serial_SendByte('s');
+	Serial_SendByte('\r');
 	Delay_MS(1);
 	remote_receive_string();
 }
@@ -205,9 +205,9 @@ void remote_get_cells(void) {
 	term_y = 0;
 
 	for (int i=0; i<8; i++) {
-		ser_write('0'+i);
-		ser_write('c');
-		ser_write('\r');
+		Serial_SendByte('0'+i);
+		Serial_SendByte('c');
+		Serial_SendByte('\r');
 		Delay_MS(1);
 		remote_receive_string();
   }
@@ -220,18 +220,18 @@ void remote_get_sys_voltage(void) {
 	term_x = 0;
 	term_y = 0;
 
-	ser_write('V');
-	ser_write('\r');
+	Serial_SendByte('V');
+	Serial_SendByte('\r');
 	Delay_MS(1);
 	remote_receive_string();
 	
-  ser_write('a');
-	ser_write('\r');
+  Serial_SendByte('a');
+	Serial_SendByte('\r');
 	Delay_MS(1);
 	remote_receive_string();
 
-  ser_write('C');
-	ser_write('\r');
+  Serial_SendByte('C');
+	Serial_SendByte('\r');
 	Delay_MS(1);
 	remote_receive_string();
 }
@@ -246,19 +246,23 @@ void kbd_brightness_init() {
   TCCR0B = /*(1 << 3) |*/ (1 << 0) | (0 << 1) | 1;
 
   // initial brightness
-  OCR0A = 6;
+  OCR0A = 2;
 }
 
 void kbd_brightness_inc() {
   pwmval+=2;
   if (pwmval>=10) pwmval = 10;
   OCR0A = pwmval;
+  gfx_poke(9,2,'+');
+  iota_gfx_flush();
 }
 
 void kbd_brightness_dec() {
   pwmval-=2;
   if (pwmval<0) pwmval = 0;
   OCR0A = pwmval;
+  gfx_poke(9,2,'-');
+  iota_gfx_flush();
 }
 
 char metaPressed = 0;
@@ -313,7 +317,7 @@ void process_keyboard(char usb_report_mode, USB_KeyboardReport_Data_t* KeyboardR
         } else {
           if (usb_report_mode && KeyboardReport && !metaPressed) {
             KeyboardReport->KeyCode[usedKeyCodes++] = keycode;
-          }
+            }
         }
 
         if (metaPressed && lastMetaKey!=keycode) {
@@ -418,12 +422,17 @@ void SetupHardware()
   gfx_poke(15,1,'M');
   iota_gfx_flush();
 
-  ser_init(&PORTE, 6, &PORTB, 7, false);
-  ser_begin(57600);
+  Serial_Init(57600, false);
+  gfx_poke(5,2,'+');
+  iota_gfx_flush();
 
   kbd_brightness_init();
+  gfx_poke(6,2,'+');
+  iota_gfx_flush();
   
   USB_Init();
+  gfx_poke(7,2,'+');
+  iota_gfx_flush();
 }
 
 /** Event handler for the library USB Connection event. */
