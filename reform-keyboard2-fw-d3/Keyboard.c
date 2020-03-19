@@ -186,7 +186,7 @@ void remote_get_voltages(void) {
 
 void remote_get_status(void) {
 	gfx_clear();
-	Serial_SendByte();
+	empty_serial();
 	
 	term_x = 0;
 	term_y = 0;
