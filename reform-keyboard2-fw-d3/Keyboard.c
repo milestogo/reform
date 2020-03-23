@@ -111,7 +111,7 @@ int term_y = 0;
 
 char response[64];
 
-void remote_receive_string(void) {
+int remote_receive_string(int print) {
 	char done = 0;
 	int32_t clock = 0;
   int res_x = 0;
@@ -128,14 +128,16 @@ void remote_receive_string(void) {
     int poke_chr = chr;
     if (chr=='\n') poke_chr=' ';
     if (chr!='\r') {
-      gfx_poke(term_x,term_y,poke_chr);
-      gfx_poke(term_x+1,term_y,' ');
-      term_x++;
-      if (term_x>=20) {
-        term_x=0;
-        term_y++;
-        if (term_y>=3) {
-          term_y=0;
+      if (print) {
+        gfx_poke(term_x,term_y,poke_chr);
+        gfx_poke(term_x+1,term_y,' ');
+        term_x++;
+        if (term_x>=20) {
+          term_x=0;
+          term_y++;
+          if (term_y>=3) {
+            term_y=0;
+          }
         }
       }
       if (res_x<63) {
@@ -146,9 +148,12 @@ void remote_receive_string(void) {
 		if (chr=='\r') done = 1;
 	}
 timeout:
-  if (!done) gfx_poke(20,0,'T');
+  if (!done && print) gfx_poke(20,0,'T');
 	empty_serial();
-  iota_gfx_flush();
+  if (print) {
+    iota_gfx_flush();
+  }
+  return done;
 }
 
 void anim_hello(void) {
@@ -220,7 +225,7 @@ void remote_get_voltages(void) {
 		Serial_SendByte('v');
 		Serial_SendByte('\r');
 		Delay_MS(1);
-    remote_receive_string();
+    remote_receive_string(0);
 
     voltages[i] = ((float)atoi(response))/1000.0;
     if (voltages[i]<0 || voltages[i]>=5) voltages[i]=0;
@@ -229,7 +234,9 @@ void remote_get_voltages(void) {
 
   //plot voltages
   float percentage = ((sum_volts-23.0)/5.0)*100.0;
+  if (percentage<0) percentage = 0;
   char str[32];
+  gfx_clear();
   
   sprintf(str,"[] %.1f  [] %.1f",voltages[0],voltages[4]);
   insert_bat_icon(str,0,voltages[0]);
@@ -266,7 +273,7 @@ void remote_get_status(void) {
 	Serial_SendByte('s');
 	Serial_SendByte('\r');
 	Delay_MS(1);
-	remote_receive_string();
+	remote_receive_string(1);
 }
 
 void remote_get_cells(void) {
@@ -281,7 +288,7 @@ void remote_get_cells(void) {
 		Serial_SendByte('c');
 		Serial_SendByte('\r');
 		Delay_MS(1);
-		remote_receive_string();
+		remote_receive_string(1);
   }
 }
 
@@ -295,17 +302,17 @@ void remote_get_sys_voltage(void) {
 	Serial_SendByte('V');
 	Serial_SendByte('\r');
 	Delay_MS(1);
-	remote_receive_string();
+	remote_receive_string(1);
 	
   Serial_SendByte('a');
 	Serial_SendByte('\r');
 	Delay_MS(1);
-	remote_receive_string();
+	remote_receive_string(1);
 
   Serial_SendByte('C');
 	Serial_SendByte('\r');
 	Delay_MS(1);
-	remote_receive_string();
+	remote_receive_string(1);
 }
 
 int oledbrt=0;

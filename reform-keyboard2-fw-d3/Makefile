@@ -21,7 +21,7 @@ TARGET       = Keyboard
 SRC          = $(TARGET).c Descriptors.c i2c.c ssd1306.c $(LUFA_SRC_USB) $(LUFA_SRC_USBCLASS)
 LUFA_PATH    = ./lufa-master/LUFA
 CC_FLAGS     = -DUSE_LUFA_CONFIG_HEADER $(REFORM_KBD_OPTIONS) -IConfig/
-LD_FLAGS     =
+LD_FLAGS     = -Wl,-u,vfprintf -lprintf_flt
 
 # Default target
 all:
