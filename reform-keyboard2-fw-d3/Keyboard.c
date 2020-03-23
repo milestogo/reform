@@ -95,7 +95,6 @@ void gfx_clear(void) {
       gfx_poke(x,y,' ');
     }
   }
-  iota_gfx_flush();
 }
 
 void empty_serial(void) {
