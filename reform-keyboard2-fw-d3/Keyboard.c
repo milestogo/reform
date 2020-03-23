@@ -123,7 +123,7 @@ int remote_receive_string(int print) {
     while (chr==-1 || chr==0) {
       chr=Serial_ReceiveByte();
       clock++;
-      if (clock>1000000) goto timeout;
+      if (clock>100000) goto timeout;
     }
     int poke_chr = chr;
     if (chr=='\n') poke_chr=' ';
@@ -212,7 +212,6 @@ void insert_bat_icon(char* str, int x, float v) {
 }
 
 void remote_get_voltages(void) {
-  gfx_clear();
   empty_serial();
   
   term_x = 0;
@@ -236,6 +235,11 @@ void remote_get_voltages(void) {
   float sum_volts = 0;
 
   for (int i=0; i<8; i++) {
+    // progress anim
+    gfx_poke(0,0,32*4+((2*i)%10));
+    gfx_poke(1,0,32*4+1+((2*i)%10));
+    iota_gfx_flush();
+    
     Serial_SendByte('0'+i);
     Serial_SendByte('v');
     Serial_SendByte('\r');
@@ -248,34 +252,30 @@ void remote_get_voltages(void) {
   }
 
   //plot voltages
+  gfx_clear();
   float percentage = ((sum_volts-23.0)/5.0)*100.0;
   if (percentage<0) percentage = 0;
   char str[32];
-  gfx_clear();
   
   sprintf(str,"[] %.1f  [] %.1f",voltages[0],voltages[4]);
   insert_bat_icon(str,0,voltages[0]);
   insert_bat_icon(str,8,voltages[4]);
   gfx_poke_str(0,0,str);
-  iota_gfx_flush();
   
   sprintf(str,"[] %.1f  [] %.1f  %d%%",voltages[1],voltages[5],(int)percentage);
   insert_bat_icon(str,0,voltages[1]);
   insert_bat_icon(str,8,voltages[5]);
   gfx_poke_str(0,1,str);
-  iota_gfx_flush();
   
   sprintf(str,"[] %.1f  [] %.1f  %.2fA",voltages[2],voltages[6],bat_amps);
   insert_bat_icon(str,0,voltages[2]);
   insert_bat_icon(str,8,voltages[6]);
   gfx_poke_str(0,2,str);
-  iota_gfx_flush();
   
   sprintf(str,"[] %.1f  [] %.1f  %.1fV",voltages[3],voltages[7],bat_volts);
   insert_bat_icon(str,0,voltages[3]);
   insert_bat_icon(str,8,voltages[7]);
   gfx_poke_str(0,3,str);
-  iota_gfx_flush();
 }
 
 void remote_get_status(void) {
