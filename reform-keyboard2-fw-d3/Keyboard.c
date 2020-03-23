@@ -38,6 +38,7 @@
 #include "LUFA/Drivers/Peripheral/Serial.h"
 #include "ssd1306.h"
 #include "scancodes.h"
+#include <stdlib.h>
 
 /** Buffer to hold the previously generated Keyboard HID report, for comparison purposes inside the HID class driver. */
 static uint8_t PrevKeyboardHIDReportBuffer[sizeof(USB_KeyboardReport_Data_t)];
@@ -108,9 +109,14 @@ void empty_serial(void) {
 int term_x = 0;
 int term_y = 0;
 
+char response[64];
+
 void remote_receive_string(void) {
 	char done = 0;
 	int32_t clock = 0;
+  int res_x = 0;
+  response[0] = 0;
+  
 	while (!done) {
 		int16_t chr = -1;
 		clock = 0;
@@ -131,6 +137,10 @@ void remote_receive_string(void) {
         if (term_y>=3) {
           term_y=0;
         }
+      }
+      if (res_x<63) {
+        response[res_x++] = chr;
+        response[res_x] = 0;
       }
     }
 		if (chr=='\r') done = 1;
@@ -161,6 +171,8 @@ void anim_hello(void) {
 }
 
 void anim_goodbye(void) {
+  gfx_clear();
+  iota_gfx_on();
   for (int y=0; y<3; y++) {
     for (int x=0; x<12; x++) {
       gfx_poke(x+4,y+1,(5+y)*32+x);
@@ -172,40 +184,26 @@ void anim_goodbye(void) {
       iota_gfx_flush();
     }
   }
-  gfx_clear();
   iota_gfx_off();
 }
 
-void remote_turn_on_som(void) {
-	gfx_clear();
-	empty_serial();
+float voltages[8];
 
-	term_x = 0;
-	term_y = 0;
-
-  Serial_SendByte('1');
-  Serial_SendByte('p');
-  Serial_SendByte('\r');
-	Delay_MS(1);
-	empty_serial();
-  //remote_receive_string();
-  anim_hello();
-  kbd_brightness_init();
-}
-
-void remote_turn_off_som(void) {
-  anim_goodbye();
-	empty_serial();
-
-	term_x = 0;
-	term_y = 0;
-
-  Serial_SendByte('0');
-  Serial_SendByte('p');
-  Serial_SendByte('\r');
-	Delay_MS(1);
-	empty_serial();
-  //remote_receive_string();
+void insert_bat_icon(char* str, int x, float v) {
+  char icon = 0;
+  if (v>=3.3) {
+    icon = 8;
+  } else if (v>=3.1) {
+    icon = 6;
+  } else if (v>=3.0) {
+    icon = 4;
+  } else if (v>=2.9) {
+    icon = 2;
+  } else {
+    icon = 0;
+  }
+  str[x]   = 4*32+icon;
+  str[x+1] = 4*32+icon+1;
 }
 
 void remote_get_voltages(void) {
@@ -215,13 +213,46 @@ void remote_get_voltages(void) {
 	term_x = 0;
 	term_y = 0;
 
+  float sum_volts = 0;
+
 	for (int i=0; i<8; i++) {
 		Serial_SendByte('0'+i);
 		Serial_SendByte('v');
 		Serial_SendByte('\r');
 		Delay_MS(1);
     remote_receive_string();
+
+    voltages[i] = ((float)atoi(response))/1000.0;
+    sum_volts += voltages[i];
 	}
+
+  //plot voltages
+  float percentage = ((sum_volts-23.0)/5.0)*100.0;
+  char str[32];
+  
+  sprintf(str,"[] %.1f  [] %.1f",voltages[0],voltages[4]);
+  insert_bat_icon(str,0,voltages[0]);
+  insert_bat_icon(str,8,voltages[4]);
+  gfx_poke_str(0,0,str);
+  iota_gfx_flush();
+  
+  sprintf(str,"[] %.1f  [] %.1f  %d%%",voltages[1],voltages[5],(int)percentage);
+  insert_bat_icon(str,0,voltages[1]);
+  insert_bat_icon(str,8,voltages[5]);
+  gfx_poke_str(0,1,str);
+  iota_gfx_flush();
+  
+  sprintf(str,"[] %.1f  [] %.1f",voltages[2],voltages[6]);
+  insert_bat_icon(str,0,voltages[2]);
+  insert_bat_icon(str,8,voltages[6]);
+  gfx_poke_str(0,2,str);
+  iota_gfx_flush();
+  
+  sprintf(str,"[] %.1f  [] %.1f",voltages[3],voltages[7]);
+  insert_bat_icon(str,0,voltages[3]);
+  insert_bat_icon(str,8,voltages[7]);
+  gfx_poke_str(0,3,str);
+  iota_gfx_flush();
 }
 
 void remote_get_status(void) {
@@ -276,17 +307,29 @@ void remote_get_sys_voltage(void) {
 	remote_receive_string();
 }
 
-int16_t pwmval = 10;
+int oledbrt=0;
+void oled_brightness_inc(void) {
+  oledbrt+=10;
+  if (oledbrt>=0xff) oledbrt = 0xff;
+  iota_gfx_contrast(oledbrt);
+}
+void oled_brightness_dec(void) {
+  oledbrt-=10;
+  if (oledbrt<0) oledbrt = 0;
+  iota_gfx_contrast(oledbrt);
+}
+
+int16_t pwmval = 8;
 
 void kbd_brightness_init(void) {
+  // initial brightness
+  OCR0A = pwmval;
+  
   // clear/set, WGM1:0 set (Phase correct PWM)
   TCCR0A = (1 << 7) | (0 << 6) | (0<<1) | 1;
 
   // 3=WGM02, (cs02 2:0 -> clock/256 = 100)
   TCCR0B = /*(1 << 3) |*/ (1 << 0) | (0 << 1) | 1;
-
-  // initial brightness
-  OCR0A = pwmval;
 }
 
 void kbd_brightness_inc(void) {
@@ -305,18 +348,37 @@ void kbd_brightness_dec(void) {
   iota_gfx_flush();
 }
 
-int oledbrt=0;
-void oled_brightness_inc(void) {
-  oledbrt+=10;
-  if (oledbrt>=0xff) oledbrt = 0xff;
-  iota_gfx_contrast(oledbrt);
-}
-void oled_brightness_dec(void) {
-  oledbrt-=10;
-  if (oledbrt<0) oledbrt = 0;
-  iota_gfx_contrast(oledbrt);
+void remote_turn_on_som(void) {
+	gfx_clear();
+	empty_serial();
+
+	term_x = 0;
+	term_y = 0;
+
+  Serial_SendByte('1');
+  Serial_SendByte('p');
+  Serial_SendByte('\r');
+	Delay_MS(1);
+	empty_serial();
+  //remote_receive_string();
+  anim_hello();
+  kbd_brightness_init();
 }
 
+void remote_turn_off_som(void) {
+  anim_goodbye();
+	empty_serial();
+
+	term_x = 0;
+	term_y = 0;
+
+  Serial_SendByte('0');
+  Serial_SendByte('p');
+  Serial_SendByte('\r');
+	Delay_MS(1);
+	empty_serial();
+  //remote_receive_string();
+}
 
 
 char metaPressed = 0;

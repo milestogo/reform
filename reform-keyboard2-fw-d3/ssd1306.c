@@ -135,7 +135,6 @@ done:
   return success;
 }
 
-static int sy=0;
 bool iota_gfx_off(void) {
   bool success = false;
 
@@ -196,6 +195,14 @@ void matrix_write_char(struct CharacterMatrix *matrix, uint8_t c) {
 
 void gfx_poke(uint8_t x, uint8_t y, uint8_t c) {
 	display.display[y][x] = c;
+}
+
+void gfx_poke_str(uint8_t x, uint8_t y, char* str) {
+  int len = strlen(str);
+  if (len>21) len = 21;
+  for (int xx=x; xx<x+len && xx<21; xx++) {
+    display.display[y][xx] = (uint8_t)str[xx-x];
+  }
 }
 
 void iota_gfx_write_char(uint8_t c) {
