@@ -4,13 +4,6 @@
 #include <avr/pgmspace.h>
 #include "gfx/font.c"
 
-// 'last_flush' is declared as uint16_t,
-// so this must be less than 65535 
-#define ScreenOffInterval 60000 /* milliseconds */
-static uint16_t last_flush;
-
-static bool force_dirty = true;
-
 // Write command sequence.
 // Returns true on success.
 static inline bool _send_cmd1(uint8_t cmd) {
@@ -253,7 +246,6 @@ void iota_gfx_clear_screen(void) {
 }
 
 void matrix_render(struct CharacterMatrix *matrix) {
-  //last_flush = timer_read();
   iota_gfx_on();
 
   // Move to the home position
@@ -287,21 +279,4 @@ done:
 
 void iota_gfx_flush(void) {
   matrix_render(&display);
-}
-
-__attribute__ ((weak))
-void iota_gfx_task_user(void) {
-}
-
-void iota_gfx_task(void) {
-  iota_gfx_task_user();
-
-  if (display.dirty|| force_dirty) {
-    iota_gfx_flush();
-    force_dirty = false;
-  }
-
-  //if (timer_elapsed(last_flush) > ScreenOffInterval) {
-  //  iota_gfx_off();
-  //}
 }
