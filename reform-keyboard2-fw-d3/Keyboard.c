@@ -276,6 +276,7 @@ void remote_get_voltages(void) {
   insert_bat_icon(str,0,voltages[3]);
   insert_bat_icon(str,8,voltages[7]);
   gfx_poke_str(0,3,str);
+  iota_gfx_flush();
 }
 
 void remote_get_status(void) {
