@@ -90,20 +90,20 @@ const uint8_t matrix[15*6] = {
 char r_inbuf[10];
 
 void gfx_clear(void) {
-	for (int y=0; y<4; y++) {
-		for (int x=0; x<21; x++) {
-			gfx_poke(x,y,' ');
-		}
-	}
-	iota_gfx_flush();
+  for (int y=0; y<4; y++) {
+    for (int x=0; x<21; x++) {
+      gfx_poke(x,y,' ');
+    }
+  }
+  iota_gfx_flush();
 }
 
 void empty_serial(void) {
-	int clock = 0;
+  int clock = 0;
   while (Serial_ReceiveByte()>=0 && clock<1000) {
-		// flush serial
-		clock++;
-	}
+    // flush serial
+    clock++;
+  }
 }
 
 int term_x = 0;
@@ -112,19 +112,19 @@ int term_y = 0;
 char response[64];
 
 int remote_receive_string(int print) {
-	char done = 0;
-	int32_t clock = 0;
+  char done = 0;
+  int32_t clock = 0;
   int res_x = 0;
   response[0] = 0;
   
-	while (!done) {
-		int16_t chr = -1;
-		clock = 0;
-		while (chr==-1 || chr==0) {
+  while (!done) {
+    int16_t chr = -1;
+    clock = 0;
+    while (chr==-1 || chr==0) {
       chr=Serial_ReceiveByte();
-			clock++;
-			if (clock>1000000) goto timeout;
-		}
+      clock++;
+      if (clock>1000000) goto timeout;
+    }
     int poke_chr = chr;
     if (chr=='\n') poke_chr=' ';
     if (chr!='\r') {
@@ -145,11 +145,11 @@ int remote_receive_string(int print) {
         response[res_x] = 0;
       }
     }
-		if (chr=='\r') done = 1;
-	}
+    if (chr=='\r') done = 1;
+  }
 timeout:
   if (!done && print) gfx_poke(20,0,'T');
-	empty_serial();
+  empty_serial();
   if (print) {
     iota_gfx_flush();
   }
@@ -212,25 +212,40 @@ void insert_bat_icon(char* str, int x, float v) {
 }
 
 void remote_get_voltages(void) {
-	gfx_clear();
-	empty_serial();
-	
-	term_x = 0;
-	term_y = 0;
+  gfx_clear();
+  empty_serial();
+  
+  term_x = 0;
+  term_y = 0;
+
+  float bat_volts = 0;
+  float bat_amps = 0;
+  
+  Serial_SendByte('V');
+  Serial_SendByte('\r');
+  Delay_MS(1);
+  remote_receive_string(0);
+  bat_volts = ((float)atoi(response))/1000.0;
+
+  Serial_SendByte('a');
+  Serial_SendByte('\r');
+  Delay_MS(1);
+  remote_receive_string(0);
+  bat_amps = ((float)atoi(response))/1000.0;
 
   float sum_volts = 0;
 
-	for (int i=0; i<8; i++) {
-		Serial_SendByte('0'+i);
-		Serial_SendByte('v');
-		Serial_SendByte('\r');
-		Delay_MS(1);
+  for (int i=0; i<8; i++) {
+    Serial_SendByte('0'+i);
+    Serial_SendByte('v');
+    Serial_SendByte('\r');
+    Delay_MS(1);
     remote_receive_string(0);
 
     voltages[i] = ((float)atoi(response))/1000.0;
     if (voltages[i]<0 || voltages[i]>=5) voltages[i]=0;
     sum_volts += voltages[i];
-	}
+  }
 
   //plot voltages
   float percentage = ((sum_volts-23.0)/5.0)*100.0;
@@ -250,13 +265,13 @@ void remote_get_voltages(void) {
   gfx_poke_str(0,1,str);
   iota_gfx_flush();
   
-  sprintf(str,"[] %.1f  [] %.1f",voltages[2],voltages[6]);
+  sprintf(str,"[] %.1f  [] %.1f  %.2fA",voltages[2],voltages[6],bat_amps);
   insert_bat_icon(str,0,voltages[2]);
   insert_bat_icon(str,8,voltages[6]);
   gfx_poke_str(0,2,str);
   iota_gfx_flush();
   
-  sprintf(str,"[] %.1f  [] %.1f",voltages[3],voltages[7]);
+  sprintf(str,"[] %.1f  [] %.1f  %.1fV",voltages[3],voltages[7],bat_volts);
   insert_bat_icon(str,0,voltages[3]);
   insert_bat_icon(str,8,voltages[7]);
   gfx_poke_str(0,3,str);
@@ -264,55 +279,55 @@ void remote_get_voltages(void) {
 }
 
 void remote_get_status(void) {
-	gfx_clear();
-	empty_serial();
-	
-	term_x = 0;
-	term_y = 0;
+  gfx_clear();
+  empty_serial();
+  
+  term_x = 0;
+  term_y = 0;
 
-	Serial_SendByte('s');
-	Serial_SendByte('\r');
-	Delay_MS(1);
-	remote_receive_string(1);
+  Serial_SendByte('s');
+  Serial_SendByte('\r');
+  Delay_MS(1);
+  remote_receive_string(1);
 }
 
 void remote_get_cells(void) {
-	gfx_clear();
-	empty_serial();
-	
-	term_x = 0;
-	term_y = 0;
+  gfx_clear();
+  empty_serial();
+  
+  term_x = 0;
+  term_y = 0;
 
-	for (int i=0; i<8; i++) {
-		Serial_SendByte('0'+i);
-		Serial_SendByte('c');
-		Serial_SendByte('\r');
-		Delay_MS(1);
-		remote_receive_string(1);
+  for (int i=0; i<8; i++) {
+    Serial_SendByte('0'+i);
+    Serial_SendByte('c');
+    Serial_SendByte('\r');
+    Delay_MS(1);
+    remote_receive_string(1);
   }
 }
 
 void remote_get_sys_voltage(void) {
-	gfx_clear();
-	empty_serial();
-	
-	term_x = 0;
-	term_y = 0;
+  gfx_clear();
+  empty_serial();
+  
+  term_x = 0;
+  term_y = 0;
 
-	Serial_SendByte('V');
-	Serial_SendByte('\r');
-	Delay_MS(1);
-	remote_receive_string(1);
-	
+  Serial_SendByte('V');
+  Serial_SendByte('\r');
+  Delay_MS(1);
+  remote_receive_string(1);
+  
   Serial_SendByte('a');
-	Serial_SendByte('\r');
-	Delay_MS(1);
-	remote_receive_string(1);
+  Serial_SendByte('\r');
+  Delay_MS(1);
+  remote_receive_string(1);
 
   Serial_SendByte('C');
-	Serial_SendByte('\r');
-	Delay_MS(1);
-	remote_receive_string(1);
+  Serial_SendByte('\r');
+  Delay_MS(1);
+  remote_receive_string(1);
 }
 
 int oledbrt=0;
@@ -357,17 +372,17 @@ void kbd_brightness_dec(void) {
 }
 
 void remote_turn_on_som(void) {
-	gfx_clear();
-	empty_serial();
+  gfx_clear();
+  empty_serial();
 
-	term_x = 0;
-	term_y = 0;
+  term_x = 0;
+  term_y = 0;
 
   Serial_SendByte('1');
   Serial_SendByte('p');
   Serial_SendByte('\r');
-	Delay_MS(1);
-	empty_serial();
+  Delay_MS(1);
+  empty_serial();
   //remote_receive_string();
   anim_hello();
   kbd_brightness_init();
@@ -375,16 +390,16 @@ void remote_turn_on_som(void) {
 
 void remote_turn_off_som(void) {
   anim_goodbye();
-	empty_serial();
+  empty_serial();
 
-	term_x = 0;
-	term_y = 0;
+  term_x = 0;
+  term_y = 0;
 
   Serial_SendByte('0');
   Serial_SendByte('p');
   Serial_SendByte('\r');
-	Delay_MS(1);
-	empty_serial();
+  Delay_MS(1);
+  empty_serial();
   //remote_receive_string();
 }
 
