@@ -99,7 +99,7 @@ void gfx_clear(void) {
 
 void empty_serial(void) {
 	int clock = 0;
-  while (Serial_ReceiveByte()>0 && clock<1000) {
+  while (Serial_ReceiveByte()>=0 && clock<1000) {
 		// flush serial
 		clock++;
 	}
@@ -109,35 +109,71 @@ int term_x = 0;
 int term_y = 0;
 
 void remote_receive_string(void) {
-	int done = 0;
-	int clock = 0;
+	char done = 0;
+	int32_t clock = 0;
 	while (!done) {
-		int chr = -1;
+		int16_t chr = -1;
 		clock = 0;
-		while (chr==-1) {
+		while (chr==-1 || chr==0) {
       chr=Serial_ReceiveByte();
 			clock++;
-			Delay_MS(1);
-			if (clock>500) goto timeout;
+			if (clock>1000000) goto timeout;
 		}
     int poke_chr = chr;
-    if (chr=='\r') poke_chr=' ';
-		gfx_poke(term_x,term_y,poke_chr);
-		gfx_poke(term_x+1,term_y,' ');
-		iota_gfx_flush();
-		term_x++;
-		if (term_x>=20) {
-			term_x=0;
-			term_y++;
-			if (term_y>=3) {
-				term_y=0;
-			}
-		}
+    if (chr=='\n') poke_chr=' ';
+    if (chr!='\r') {
+      gfx_poke(term_x,term_y,poke_chr);
+      gfx_poke(term_x+1,term_y,' ');
+      term_x++;
+      if (term_x>=20) {
+        term_x=0;
+        term_y++;
+        if (term_y>=3) {
+          term_y=0;
+        }
+      }
+    }
 		if (chr=='\r') done = 1;
 	}
 timeout:
   if (!done) gfx_poke(20,0,'T');
 	empty_serial();
+  iota_gfx_flush();
+}
+
+void anim_hello(void) {
+  gfx_clear();
+  iota_gfx_on();
+  for (int y=0; y<3; y++) {
+    for (int x=0; x<12; x++) {
+      gfx_poke(x+4,y+1,(5+y)*32+x);
+      iota_gfx_flush();
+    }
+  }
+  for (int y=0; y<0xff; y++) {
+    iota_gfx_contrast(y);
+    Delay_MS(2);
+  }
+  for (int y=0; y<0xff; y++) {
+    iota_gfx_contrast(0xff-y);
+    Delay_MS(2);
+  }
+}
+
+void anim_goodbye(void) {
+  for (int y=0; y<3; y++) {
+    for (int x=0; x<12; x++) {
+      gfx_poke(x+4,y+1,(5+y)*32+x);
+    }
+  }
+  for (int y=0; y<3; y++) {
+    for (int x=0; x<12; x++) {
+      gfx_poke(x+4,y+1,' ');
+      iota_gfx_flush();
+    }
+  }
+  gfx_clear();
+  iota_gfx_off();
 }
 
 void remote_turn_on_som(void) {
@@ -151,11 +187,14 @@ void remote_turn_on_som(void) {
   Serial_SendByte('p');
   Serial_SendByte('\r');
 	Delay_MS(1);
-  remote_receive_string();
+	empty_serial();
+  //remote_receive_string();
+  anim_hello();
+  kbd_brightness_init();
 }
 
 void remote_turn_off_som(void) {
-	gfx_clear();
+  anim_goodbye();
 	empty_serial();
 
 	term_x = 0;
@@ -165,7 +204,8 @@ void remote_turn_off_som(void) {
   Serial_SendByte('p');
   Serial_SendByte('\r');
 	Delay_MS(1);
-  remote_receive_string();
+	empty_serial();
+  //remote_receive_string();
 }
 
 void remote_get_voltages(void) {
@@ -236,9 +276,9 @@ void remote_get_sys_voltage(void) {
 	remote_receive_string();
 }
 
-int16_t pwmval = 2;
+int16_t pwmval = 10;
 
-void kbd_brightness_init() {
+void kbd_brightness_init(void) {
   // clear/set, WGM1:0 set (Phase correct PWM)
   TCCR0A = (1 << 7) | (0 << 6) | (0<<1) | 1;
 
@@ -246,24 +286,38 @@ void kbd_brightness_init() {
   TCCR0B = /*(1 << 3) |*/ (1 << 0) | (0 << 1) | 1;
 
   // initial brightness
-  OCR0A = 2;
+  OCR0A = pwmval;
 }
 
-void kbd_brightness_inc() {
+void kbd_brightness_inc(void) {
   pwmval+=2;
   if (pwmval>=10) pwmval = 10;
   OCR0A = pwmval;
-  gfx_poke(9,2,'+');
+  gfx_poke(0,4,'0'+pwmval/2);
   iota_gfx_flush();
 }
 
-void kbd_brightness_dec() {
+void kbd_brightness_dec(void) {
   pwmval-=2;
   if (pwmval<0) pwmval = 0;
   OCR0A = pwmval;
-  gfx_poke(9,2,'-');
+  gfx_poke(0,4,'0'+pwmval/2);
   iota_gfx_flush();
 }
+
+int oledbrt=0;
+void oled_brightness_inc(void) {
+  oledbrt+=10;
+  if (oledbrt>=0xff) oledbrt = 0xff;
+  iota_gfx_contrast(oledbrt);
+}
+void oled_brightness_dec(void) {
+  oledbrt-=10;
+  if (oledbrt<0) oledbrt = 0;
+  iota_gfx_contrast(oledbrt);
+}
+
+
 
 char metaPressed = 0;
 uint8_t lastMetaKey = 0;
@@ -317,43 +371,49 @@ void process_keyboard(char usb_report_mode, USB_KeyboardReport_Data_t* KeyboardR
         } else {
           if (usb_report_mode && KeyboardReport && !metaPressed) {
             KeyboardReport->KeyCode[usedKeyCodes++] = keycode;
-            }
-        }
+          }
 
-        if (metaPressed && lastMetaKey!=keycode) {
-          if (keycode == KEY_0) {
-            remote_turn_off_som();
-          }
-          else if (keycode == KEY_1) {
-            remote_turn_on_som();
-          }
-					else if (keycode == KEY_V) {
-						remote_get_voltages();
-					}
-					else if (keycode == KEY_C) {
-						remote_get_cells();
-					}
-					else if (keycode == KEY_S) {
-						remote_get_status();
-					}
-					else if (keycode == KEY_Y) {
-						remote_get_sys_voltage();
-					}
-					else if (keycode == KEY_2) {
-						iota_gfx_off();
-					}
-					else if (keycode == KEY_3) {
-						iota_gfx_on();
-          }
-          else if (keycode == KEY_F1) {
-            kbd_brightness_dec();
-          }
-          else if (keycode == KEY_F2) {
-            kbd_brightness_inc();
-          }
+          if (metaPressed && lastMetaKey!=keycode) {
+            if (keycode == KEY_0) {
+              remote_turn_off_som();
+            }
+            else if (keycode == KEY_1) {
+              remote_turn_on_som();
+            }
+            else if (keycode == KEY_V) {
+              remote_get_voltages();
+            }
+            else if (keycode == KEY_C) {
+              remote_get_cells();
+            }
+            else if (keycode == KEY_S) {
+              remote_get_status();
+            }
+            else if (keycode == KEY_Y) {
+              remote_get_sys_voltage();
+            }
+            else if (keycode == KEY_2) {
+              iota_gfx_off();
+            }
+            else if (keycode == KEY_3) {
+              iota_gfx_on();
+            }
+            else if (keycode == KEY_F1) {
+              kbd_brightness_dec();
+            }
+            else if (keycode == KEY_F2) {
+              kbd_brightness_inc();
+            }
+            else if (keycode == KEY_F3) {
+              oled_brightness_dec();
+            }
+            else if (keycode == KEY_F4) {
+              oled_brightness_inc();
+            }
           
-          lastMetaKey = keycode;
-				}
+            lastMetaKey = keycode;
+          }
+        }
       }
     }
 
@@ -414,25 +474,11 @@ void SetupHardware()
 
   iota_gfx_init(false);
 
-  gfx_poke(5,1,'R');
-  gfx_poke(7,1,'E');
-  gfx_poke(9,1,'F');
-  gfx_poke(11,1,'O');
-  gfx_poke(13,1,'R');
-  gfx_poke(15,1,'M');
-  iota_gfx_flush();
-
-  Serial_Init(57600, false);
-  gfx_poke(5,2,'+');
-  iota_gfx_flush();
-
-  kbd_brightness_init();
-  gfx_poke(6,2,'+');
-  iota_gfx_flush();
+  anim_hello();
   
+  Serial_Init(57600, false);
+  kbd_brightness_init();  
   USB_Init();
-  gfx_poke(7,2,'+');
-  iota_gfx_flush();
 }
 
 /** Event handler for the library USB Connection event. */
