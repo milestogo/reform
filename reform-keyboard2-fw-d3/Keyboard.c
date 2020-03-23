@@ -223,6 +223,7 @@ void remote_get_voltages(void) {
     remote_receive_string();
 
     voltages[i] = ((float)atoi(response))/1000.0;
+    if (voltages[i]<0 || voltages[i]>=5) voltages[i]=0;
     sum_volts += voltages[i];
 	}
 
