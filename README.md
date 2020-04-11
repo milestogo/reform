@@ -1,79 +1,39 @@
 # MNT Reform
 
-This is the main repository for the MNT Reform DIY Open Source Portable Computer.
+This is the main repository for the MNT Reform open source laptop.
 
-## How to Report Issues / Contribute
-
-First, you need an account at source.mntmn.com. If you don't have one, just write to lukas@mntmn.com stating your desired username.
-
-There are several Git repositories that make up Reform. Here is a list of topics to help you decide on which repository to report your problem or contribute code:
-
-### reform (this one)
-
-* Mechanical parts (case, keyboard, trackball, display, power supply)
-* Electronics
-* Firmware
-* [Issue reports go here](https://source.mntmn.com/MNT/reform/issues)
-
-### reform-system-image
-
-* Kernel (missing drivers...)
-* U-Boot (early startup, booting)
-* Setup script, date/time, keyboard layout
-* Default configuration (networking, Xorg, users, passwords...)
-* SD Card shipped with the device
-* **reformd** (Reform daemon: battery status/gauge, fan control, suspend/wake)
-* [Issue reports go here](https://source.mntmn.com/MNT/reform-system-image/issues)
-
-### reform-userland
-
-* Graphics/OpenGL libraries (mesa/etnaviv, drm, Xorg, wayland...)
-* If you have an application or game that doesn't work due to GL problems (check the [Wiki](https://source.mntmn.com/MNT/reform/wiki) first)
-* [Issue reports go here](https://source.mntmn.com/MNT/reform-userland/issues)
-
-### Tested Software / Peripherals
-
-Please check out and contribute to the appropriate pages in the [Reform Wiki](https://source.mntmn.com/MNT/reform/wiki).
+For details, check out [Finishing Reform](https://mntre.com/media/reform_md/2020-01-18-finishing-reform.html) and related articles.
 
 ## Impressions
 
-![Reform 0.3 Laptop Prototype](pics/reform03-laptop.jpg)
-![Reform 0.4 Motherboard PCB](pics/reform04-motherboardpcb.png)
-![Reform 0.4 Keyboard PCB](pics/reform04-kbdpcb.png)
+![Reform Version 2 Prototype](https://mntre.com/media/reform_v2_images/reform_v2_prototype_top.jpg)
+![Reform Version 2 Motherboard](https://mntre.com/media/reform_v2_images/reform_v2_motherboard.jpg)
 
-## More Information
+## License
 
-[Reform Wiki](https://source.mntmn.com/MNT/reform/wiki)
-[Reform Website](https://mntmn.com/reform/)
-[Reform Assembly Pictures](https://mntmn.com/media/reform_assembly_images.html)
+Copyright 2018-2020 MNT Research GmbH.
 
-## Parts List
+The following licenses are used in the project, unless specified differently in a particular subfolder:
 
-* [Reform Parts](spreadsheets/production_status.csv)
-* [Motherboard BOM](spreadsheets/motherboard_bom.csv)
+- Schematics, PCBs: [CERN-OHL-S v2](https://www.ohwr.org/project/cernohl/wikis/uploads/002d0b7d5066e6b3829168730237bddb/cern_ohl_s_v2.txt)
+- Other documentation, artwork, photos and drawings that are not trademarks (see below): [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode)
+- Software, firmware: Various. [GPL 3.0](https://www.gnu.org/licenses/gpl-3.0.en.html) if not specified otherwise in the file/subdirectory.
 
-## Getting Started
-
-It is not recommended that you do anything with these files yet, and wait until the project has reached beta state.
-
-* More details: http://mntmn.com/reform/
-* 5-minute lightning talk at 34c3: https://media.ccc.de/v/34c3-9257-lightning_talks_day_3#t=3512
+The "MNT" and "MNT REFORM" logos are trademarks of MNT Research GmbH. You may not use these in derived works. The reason for this is that we cannot be responsible for regulatory issues with derived boards and we cannot support them. If someone sees an MNT brand on a product, it has to be clear that it comes from MNT Research and not from a third party.
 
 ## Made With
 
 * [KiCAD EDA](http://kicad-pcb.org/)
-* Solidworks
-* OpenSCAD
-* LUFA
-* Arduino Tiny Core
+* [OpenSCAD](https://www.openscad.org/)
+* [LUFA](http://www.fourwalledcubicle.com/LUFA.php)
+* Autodesk Fusion (Case parts)
 
-## Authors
+## MNT Reform Team
 
 * **Lukas F. Hartmann (mntmn)** - *Schematics, PCB*
 * **Ana Dantas** - *Industrial Design*
+* **Greta Melnik** - *Quality & Assembly, Sleeve*
 
-## License
+## Credits and Contributions
 
-Copyright 2018 Lukas F. Hartmann & Ana Beatriz Albertini Dantas.
-
-This project is licensed under the GPLv3 License - see the [LICENSE.md](LICENSE.md) file for details
+* [fully automated technologies](https://fully.automated.ee/) - *inrush limiter circuit*

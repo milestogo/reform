@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name reform-trackball)(type Legacy)(uri ${KIPRJMOD}/reform-trackball.lib)(options "")(descr ""))
-)

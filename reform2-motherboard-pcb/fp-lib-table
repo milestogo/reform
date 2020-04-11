@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name footprints)(type KiCad)(uri ${KIPRJMOD}/footprints)(options "")(descr ""))
+  (lib (name reform2-motherboard)(type KiCad)(uri ${KIPRJMOD}/footprints/reform2-motherboard.pretty)(options "")(descr ""))
+)

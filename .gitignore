@@ -1,7 +1,7 @@
 *.bak
 *-bak
-*.dcm
 *.bck
+*.dcm
 attic
 obj
 build
@@ -14,3 +14,7 @@ build
 *.sym
 *.gcode
 _autosave*
+.DS_Store
+a.out
+bin
+
