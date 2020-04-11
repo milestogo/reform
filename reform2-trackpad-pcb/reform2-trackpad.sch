@@ -1,17 +1,16 @@
 EESchema Schematic File Version 4
-LIBS:reform2-trackpad-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Reform 2 Trackpad"
-Date "2020-02-24"
-Rev "D-3"
+Title "MNT Reform 2 Trackpad"
+Date "2020-04-12"
+Rev "2.0D-4"
 Comp "MNT Research GmbH"
-Comment1 "License: GPLv3+ https://www.gnu.org/licenses/gpl-3.0.en.html"
-Comment2 "Copyright 2020 Lukas F. Hartmann / MNT Research GmbH"
-Comment3 "https://mntmn.com/reform"
+Comment1 "https://mntre.com"
+Comment2 "Engineer: Lukas F. Hartmann"
+Comment3 "License: CERN-OHL-S 2.0"
 Comment4 ""
 $EndDescr
 $Comp
