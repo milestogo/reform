@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.1.2+dfsg1-1)
+(kicad_pcb (version 20171130) (host pcbnew 5.1.5+dfsg1-2+b1)
 
   (general
     (thickness 1.6)
@@ -12545,7 +12545,7 @@
     (arrow2b (pts (xy 280.9 143.8) (xy 279.773496 144.386421)))
   )
   (gr_line (start 5 31.24) (end 5.5 30.74) (layer Edge.Cuts) (width 0.15))
-  (gr_text "MNT REFORM KEYBOARD\n2.0D-3   2020-03-05\nMNTRE.COM" (at 240.75 25) (layer F.SilkS)
+  (gr_text "MNT REFORM KEYBOARD\n2.0D-4   2020-04-12\nMNTRE.COM\nLICENSE: CERN-OHL-S 2.0" (at 240.7 25.2) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15) italic) (justify right))
   )
   (dimension 14.22 (width 0.15) (layer Dwgs.User)
@@ -20076,12 +20076,6 @@
         (xy 61.377 20.8355) (xy 61.397 20.8355) (xy 61.397 21.0895) (xy 61.377 21.0895) (xy 61.377 21.1095)
         (xy 61.123 21.1095) (xy 61.123 21.0895) (xy 61.103 21.0895) (xy 61.103 20.8355) (xy 61.123 20.8355)
         (xy 61.123 20.8155) (xy 61.377 20.8155)
-      )
-    )
-    (filled_polygon
-      (pts
-        (xy 60.14 20.67675) (xy 60.298748 20.835498) (xy 60.14 20.835498) (xy 60.14 20.888422) (xy 59.781578 20.53)
-        (xy 60.137029 20.53)
       )
     )
   )

@@ -1,17 +1,16 @@
 EESchema Schematic File Version 4
-LIBS:reform2-keyboard-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
+Title "MNT Reform 2 Keyboard"
+Date "2020-04-12"
+Rev "2.0D-4"
+Comp "Copyright 2017-2020 MNT Research GmbH"
+Comment1 "https://mntre.com"
+Comment2 "Engineer: Lukas F. Hartmann"
+Comment3 "License: CERN-OHL-S 2.0"
 Comment4 ""
 $EndDescr
 $Comp

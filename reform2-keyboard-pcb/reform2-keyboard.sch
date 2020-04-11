@@ -1,17 +1,16 @@
 EESchema Schematic File Version 4
-LIBS:reform2-keyboard-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 3
-Title "Reform Keyboard"
-Date "2019-05-29"
-Rev "0.6"
-Comp "MNT Research GmbH"
-Comment1 "License: GPLv3+ https://www.gnu.org/licenses/gpl-3.0.en.html"
-Comment2 "Copyright 2017,2018,2019 Lukas F. Hartmann / mntmn"
-Comment3 "https://mntre.com/reform"
+Title "MNT Reform 2 Keyboard"
+Date "2020-04-12"
+Rev "2.0D-4"
+Comp "Copyright 2017-2020 MNT Research GmbH"
+Comment1 "https://mntre.com"
+Comment2 "Engineer: Lukas F. Hartmann"
+Comment3 "License: CERN-OHL-S 2.0"
 Comment4 ""
 $EndDescr
 $Comp
