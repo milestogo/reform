@@ -92,6 +92,8 @@ void SetupHardware()
   /* Hardware Initialization */
   USB_Init();
 
+  ADCSRA = 0;
+
   DDRB  = 0b00111111;
   DDRD  = 0b00000000;
   DDRF  = 0b10000000;
