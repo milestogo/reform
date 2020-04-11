@@ -16,4 +16,5 @@ build
 _autosave*
 .DS_Store
 a.out
+bin
 
