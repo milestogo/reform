@@ -41,15 +41,15 @@ $EndComp
 $Comp
 L Connector:Conn_01x04_Male J1
 U 1 1 5B5F1753
-P 1700 2950
-F 0 "J1" H 1450 2950 50  0000 C CNN
-F 1 "Conn_USB" H 1450 2850 50  0000 C CNN
-F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 1700 2950 50  0001 C CNN
-F 3 "~" H 1700 2950 50  0001 C CNN
-F 4 "Wurth" H 1700 2950 50  0001 C CNN "Manufacturer"
-F 5 "61300411121" H 1700 2950 50  0001 C CNN "Manufacturer_No"
-	1    1700 2950
-	1    0    0    -1  
+P 1700 3050
+F 0 "J1" H 1450 3050 50  0000 C CNN
+F 1 "Conn_USB" H 1450 2950 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 1700 3050 50  0001 C CNN
+F 3 "~" H 1700 3050 50  0001 C CNN
+F 4 "JST" H 1700 3050 50  0001 C CNN "Manufacturer"
+F 5 "B4B-PH-K-S(LF)(SN)" H 1700 3050 50  0001 C CNN "Manufacturer_No"
+	1    1700 3050
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0103
@@ -120,28 +120,6 @@ F 1 "Mounting_Hole" H 2250 5405 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 2150 5450 50  0001 C CNN
 F 3 "" H 2150 5450 50  0001 C CNN
 	1    2150 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad MK7
-U 1 1 5B5F3DB3
-P 2150 5700
-F 0 "MK7" H 2250 5746 50  0000 L CNN
-F 1 "Mounting_Hole" H 2250 5655 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 2150 5700 50  0001 C CNN
-F 3 "" H 2150 5700 50  0001 C CNN
-	1    2150 5700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad MK8
-U 1 1 5B5F3DB9
-P 2150 5950
-F 0 "MK8" H 2250 5996 50  0000 L CNN
-F 1 "Mounting_Hole" H 2250 5905 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 2150 5950 50  0001 C CNN
-F 3 "" H 2150 5950 50  0001 C CNN
-	1    2150 5950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -369,7 +347,7 @@ U 1 1 5B61922F
 P 2650 4650
 F 0 "MK13" H 2750 4696 50  0000 L CNN
 F 1 "LOGO" H 2750 4605 50  0000 L CNN
-F 2 "reform2-motherboard:mntreform" H 2650 4650 50  0001 C CNN
+F 2 "footprints:mnt-minilogo" H 2650 4650 50  0001 C CNN
 F 3 "" H 2650 4650 50  0001 C CNN
 	1    2650 4650
 	1    0    0    -1  
@@ -377,13 +355,15 @@ $EndComp
 $Comp
 L Connector:Conn_01x06_Female J2
 U 1 1 5D3375CD
-P 6650 2500
-F 0 "J2" V 6850 2550 50  0000 R CNN
-F 1 "Conn_01x06_Female" V 6750 2900 50  0000 R CNN
-F 2 "Connector_FFC-FPC:Molex_200528-0060_1x06-1MP_P1.00mm_Horizontal" H 6650 2500 50  0001 C CNN
-F 3 "~" H 6650 2500 50  0001 C CNN
-	1    6650 2500
-	0    -1   1    0   
+P 6750 2500
+F 0 "J2" V 6950 2550 50  0000 R CNN
+F 1 "Conn_01x06_Female" V 6850 2900 50  0000 R CNN
+F 2 "Connector_FFC-FPC:Hirose_FH12-6S-0.5SH_1x06-1MP_P0.50mm_Horizontal" H 6750 2500 50  0001 C CNN
+F 3 "~" H 6750 2500 50  0001 C CNN
+F 4 "Hirose" H 6750 2500 50  0001 C CNN "Manufacturer"
+F 5 "FH12-6S-0.5SH(55)" H 6750 2500 50  0001 C CNN "Manufacturer_No"
+	1    6750 2500
+	0    1    1    0   
 $EndComp
 $Comp
 L power:+3V3 #PWR0104
@@ -503,7 +483,7 @@ F 1 "SW_RST" H 3500 1744 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2" H 3500 1750 50  0001 C CNN
 F 3 "~" H 3500 1750 50  0001 C CNN
 F 4 "CK" H 3500 1550 50  0001 C CNN "Manufacturer"
-F 5 "KMR223NGULCLFG" H 3500 1550 50  0001 C CNN "Manufacturer_No"
+F 5 "KMR221GLFS" H 3500 1550 50  0001 C CNN "Manufacturer_No"
 	1    3500 1550
 	1    0    0    -1  
 $EndComp
@@ -612,19 +592,7 @@ F 3 "" H 1950 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2150 6050 1950 6050
-Wire Wire Line
-	1950 6050 1950 6150
-Wire Wire Line
-	1950 6050 1950 5800
-Wire Wire Line
-	1950 5800 2150 5800
-Connection ~ 1950 6050
-Wire Wire Line
 	2150 5550 1950 5550
-Wire Wire Line
-	1950 5550 1950 5800
-Connection ~ 1950 5800
 Wire Wire Line
 	1950 5550 1950 5300
 Wire Wire Line
@@ -638,6 +606,8 @@ F 0 "R8" V 2350 2950 50  0000 C CNN
 F 1 "22" V 2250 2950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 2250 2950 50  0001 C CNN
 F 3 "~" H 2250 2950 50  0001 C CNN
+F 4 "Yageo" H 2250 2950 50  0001 C CNN "Manufacturer"
+F 5 "RT0603DRD0722RL" H 2250 2950 50  0001 C CNN "Manufacturer_No"
 	1    2250 2950
 	0    -1   -1   0   
 $EndComp
@@ -649,6 +619,8 @@ F 0 "R9" V 2350 3050 50  0000 C CNN
 F 1 "22" V 2250 3050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 2250 3050 50  0001 C CNN
 F 3 "~" H 2250 3050 50  0001 C CNN
+F 4 "Yageo" H 2250 3050 50  0001 C CNN "Manufacturer"
+F 5 "RT0603DRD0722RL" H 2250 3050 50  0001 C CNN "Manufacturer_No"
 	1    2250 3050
 	0    1    1    0   
 $EndComp
@@ -748,4 +720,17 @@ Wire Wire Line
 	6850 2200 6850 2300
 Text GLabel 6450 2200 1    60   Input ~ 0
 RDY
+$Comp
+L Mechanical:MountingHole MK1
+U 1 1 5E5BAC8A
+P 3150 4650
+F 0 "MK1" H 3250 4696 50  0000 L CNN
+F 1 "WEEE" H 3250 4605 50  0000 L CNN
+F 2 "Symbol:WEEE-Logo_4.2x6mm_SilkScreen" H 3150 4650 50  0001 C CNN
+F 3 "" H 3150 4650 50  0001 C CNN
+	1    3150 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 5550 1950 6150
 $EndSCHEMATC

@@ -23,7 +23,7 @@ Group {
                           Appearance {
                             material 
                             Material {
-                              diffuseColor 0.098039217 0.098039217 0.098039217
+                              diffuseColor 0 0 0
                               shininess 1
 
                             }
@@ -777,7 +777,7 @@ Group {
                           Appearance {
                             material 
                             Material {
-
+                                      diffuseColor 0.2 0.2 0.2
                             }
 
                           }
@@ -1756,8 +1756,8 @@ Group {
                           Appearance {
                             material 
                             Material {
-                              emissiveColor 0.098039217 0.098039217 0.098039217
-
+                              diffuseColor 0 0 0
+                              shininess 1
                             }
 
                           }
@@ -2461,11 +2461,9 @@ Group {
                           Appearance {
                             material 
                             Material {
-                              diffuseColor 0.098039217 0.098039217 0.098039217
+                              diffuseColor 0 0 0
                               shininess 1
-
                             }
-
                           }
                           geometry 
                           IndexedLineSet {
@@ -13418,8 +13416,8 @@ Group {
                           Appearance {
                             material 
                             Material {
-                              emissiveColor 0.098039217 0.098039217 0.098039217
-
+                              diffuseColor 0 0 0
+                              shininess 1
                             }
 
                           }

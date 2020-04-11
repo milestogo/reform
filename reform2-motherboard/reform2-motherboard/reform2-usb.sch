@@ -2599,4 +2599,6 @@ Text Notes 15050 1400 0    50   ~ 0
 up to 780mA load!
 Text Notes 8400 4900 0    50   ~ 0
 TODO: hook up SCL/SDA?
+Text Notes 15000 1200 0    50   ~ 0
+FIXME: this goes nowhere
 $EndSCHEMATC

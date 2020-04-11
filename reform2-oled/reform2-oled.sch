@@ -66,15 +66,15 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J1
 U 1 1 5D0C1E6C
-P 5850 3400
-F 0 "J1" H 5850 3700 50  0000 C CNN
-F 1 "AUX" H 5850 3000 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Horizontal" H 5850 3400 50  0001 C CNN
-F 3 "" H 5850 3400 50  0001 C CNN
-F 4 "Wurth" H 5850 3400 50  0001 C CNN "Manufacturer"
-F 5 "61300411121" H 5850 3400 50  0001 C CNN "Manufacturer_No"
-	1    5850 3400
-	1    0    0    -1  
+P 5850 3500
+F 0 "J1" H 5850 3800 50  0000 C CNN
+F 1 "AUX" H 5850 3100 50  0000 C CNN
+F 2 "Connector_FFC-FPC:Molex_200528-0040_1x04-1MP_P1.00mm_Horizontal" H 5850 3500 50  0001 C CNN
+F 3 "" H 5850 3500 50  0001 C CNN
+F 4 "Molex" H 5850 3500 50  0001 C CNN "Manufacturer"
+F 5 "200528-0040" H 5850 3500 50  0001 C CNN "Manufacturer_No"
+	1    5850 3500
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR05
@@ -89,17 +89,6 @@ F 3 "" H 5200 3600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5200 3600 5650 3600
-$Comp
-L SSD1306_OLED-0.91-128x32:SSD1306 U1
-U 1 1 5EAB622B
-P 3350 3350
-F 0 "U1" V 3297 4028 60  0000 L CNN
-F 1 "SSD1306" V 3403 4028 60  0000 L CNN
-F 2 "KiCad-SSD1306_OLED-0:SSD1306_OLED-0.91-128x32" H 3350 3350 60  0001 C CNN
-F 3 "" H 3350 3350 60  0001 C CNN
-	1    3350 3350
-	0    1    1    0   
-$EndComp
 $Comp
 L Device:C_Small C5
 U 1 1 5DC7F0C4
@@ -146,7 +135,7 @@ F 3 "" H 2700 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3350 2850 2700 2850
+	3350 2850 2900 2850
 Wire Wire Line
 	2700 2850 2700 2750
 $Comp
@@ -178,7 +167,7 @@ F 1 "330k" V 2950 4200 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3050 4250 50  0001 C CNN
 F 3 "" H 3050 4250 50  0001 C CNN
 F 4 "Yageo" H 3050 4250 50  0001 C CNN "Manufacturer"
-F 5 "AF0603JR-0710KL" H 3050 4250 50  0001 C CNN "Manufacturer_No"
+F 5 "AF0603FR-07330KL" H 3050 4250 50  0001 C CNN "Manufacturer_No"
 	1    3050 4250
 	0    1    1    0   
 $EndComp
@@ -193,7 +182,7 @@ F 1 "10uF" H 2760 4370 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2750 4450 50  0001 C CNN
 F 3 "" H 2750 4450 50  0001 C CNN
 F 4 "Taiyo Yuden" H 2750 4450 50  0001 C CNN "Manufacturer"
-F 5 "UMK107BJ105KA-T" H 2750 4450 50  0001 C CNN "Manufacturer_No"
+F 5 "LMK107BBJ106KALT" H 2750 4450 50  0001 C CNN "Manufacturer_No"
 	1    2750 4450
 	0    1    -1   0   
 $EndComp
@@ -208,7 +197,7 @@ F 1 "10uF" H 3010 4570 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3000 4650 50  0001 C CNN
 F 3 "" H 3000 4650 50  0001 C CNN
 F 4 "Taiyo Yuden" H 3000 4650 50  0001 C CNN "Manufacturer"
-F 5 "UMK107BJ105KA-T" H 3000 4650 50  0001 C CNN "Manufacturer_No"
+F 5 "LMK107BBJ106KALT" H 3000 4650 50  0001 C CNN "Manufacturer_No"
 	1    3000 4650
 	0    1    -1   0   
 $EndComp
@@ -289,21 +278,8 @@ Connection ~ 2200 3250
 Wire Wire Line
 	2350 3450 2200 3450
 Connection ~ 2200 3450
-Wire Wire Line
-	2200 3450 2200 4250
 Text Notes 2600 1750 0    60   ~ 0
 Based on Adafruit 931
-$Comp
-L Connector:TestPoint TP1
-U 1 1 5DC4FB56
-P 3350 3650
-F 0 "TP1" V 3400 3950 50  0000 C CNN
-F 1 "TP_RES" V 3300 3950 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3550 3650 50  0001 C CNN
-F 3 "~" H 3550 3650 50  0001 C CNN
-	1    3350 3650
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5DC67359
@@ -318,6 +294,64 @@ $EndComp
 Connection ~ 5450 3300
 Wire Wire Line
 	5450 3300 5650 3300
-Text Notes 4450 2700 0    50   ~ 0
-TODO: reset RC circuit\nTODO: I2C resistor option
+Text Notes 1500 3700 0    50   ~ 0
+Reset RC circuit
+$Comp
+L SSD1306_OLED-0.91-128x32:SSD1306 U1
+U 1 1 5EAB622B
+P 3350 3350
+F 0 "U1" V 3297 4028 60  0000 L CNN
+F 1 "SSD1306" V 3403 4028 60  0000 L CNN
+F 2 "KiCad-SSD1306_OLED-0:SSD1306_OLED-0.91-128x32" H 3350 3350 60  0001 C CNN
+F 3 "" H 3350 3350 60  0001 C CNN
+	1    3350 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 5E7CCF56
+P 2450 3650
+F 0 "C7" H 2460 3720 50  0000 L CNN
+F 1 "1uF" H 2460 3570 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2450 3650 50  0001 C CNN
+F 3 "" H 2450 3650 50  0001 C CNN
+F 4 "Taiyo Yuden" H 2450 3650 50  0001 C CNN "Manufacturer"
+F 5 "UMK107BJ105KA-T" H 2450 3650 50  0001 C CNN "Manufacturer_No"
+	1    2450 3650
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5E7D0D47
+P 2900 3050
+F 0 "R2" V 2800 3000 50  0000 L CNN
+F 1 "4.7k" V 3000 2950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2900 3050 50  0001 C CNN
+F 3 "" H 2900 3050 50  0001 C CNN
+F 4 "Yageo" H 2900 3050 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-074K7L" H 2900 3050 50  0001 C CNN "Manufacturer_No"
+	1    2900 3050
+	-1   0    0    1   
+$EndComp
+Text Notes 4750 3000 0    60   ~ 0
+Same side FFC mirrors the pins!
+Wire Wire Line
+	2200 3450 2200 3650
+Wire Wire Line
+	2900 2950 2900 2850
+Connection ~ 2900 2850
+Wire Wire Line
+	2900 2850 2700 2850
+Wire Wire Line
+	2900 3150 2900 3650
+Connection ~ 2900 3650
+Wire Wire Line
+	2900 3650 3350 3650
+Wire Wire Line
+	2550 3650 2900 3650
+Wire Wire Line
+	2350 3650 2200 3650
+Connection ~ 2200 3650
+Wire Wire Line
+	2200 3650 2200 4250
 $EndSCHEMATC

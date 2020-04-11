@@ -232,11 +232,6 @@ const unsigned char font[] PROGMEM = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 };
 
-
-//static uint16_t last_battery_update;
-//static uint32_t vbat;
-//#define BatteryUpdateInterval 10000 /* milliseconds */
-
 // 'last_flush' is declared as uint16_t,
 // so this must be less than 65535 
 #define ScreenOffInterval 60000 /* milliseconds */
@@ -300,7 +295,7 @@ static void clear_display(void) {
 
   // Clear all of the display bits (there can be random noise
   // in the RAM on startup)
-  send_cmd3(PageAddr, 0, (DisplayHeight / 8) - 1);
+  send_cmd3(PageAddr, 0, MatrixRows - 1);
   send_cmd3(ColumnAddr, 0, DisplayWidth - 1);
 
   if (i2c_start_write(SSD1306_ADDRESS)) {
@@ -333,7 +328,8 @@ bool iota_gfx_init(bool rotate) {
   send_cmd2(SetDisplayOffset, 0);
 
   send_cmd1(SetStartLine | 0x0);
-  send_cmd2(SetChargePump, 0x14 /* Enable */);
+  send_cmd2(SetChargePump, 0x14); // enable, internal vcc
+  
   send_cmd2(SetMemoryMode, 0 /* horizontal addressing */);
 
   if (rotate) {
@@ -348,7 +344,7 @@ bool iota_gfx_init(bool rotate) {
 
   send_cmd2(SetComPins, 0x2);
   send_cmd2(SetContrast, 0x8f);
-  send_cmd2(SetPreCharge, 0xf1);
+  send_cmd2(SetPreCharge, 0xf1); // internal vcc
   send_cmd2(SetVComDetect, 0x40);
   send_cmd1(DisplayAllOnResume);
   send_cmd1(NormalDisplay);
@@ -379,7 +375,7 @@ done:
 
 bool iota_gfx_on(void) {
   bool success = false;
-
+  
   send_cmd1(DisplayOn);
   success = true;
 

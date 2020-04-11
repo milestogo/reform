@@ -7,12 +7,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Reform Trackball"
-Date "2018-11-11"
-Rev "1"
-Comp "MNT Media and Technology UG"
+Title "Reform 2 Trackball"
+Date "2020-02-24"
+Rev "D-3"
+Comp "MNT Research GmbH"
 Comment1 "License: GPLv3+ https://www.gnu.org/licenses/gpl-3.0.en.html"
-Comment2 "Copyright 2017,2018 Lukas F. Hartmann / mntmn"
+Comment2 "Copyright 2017-2020 Lukas F. Hartmann / MNT Research GmbH"
 Comment3 "https://mntmn.com/reform"
 Comment4 ""
 $EndDescr
@@ -57,15 +57,15 @@ $EndComp
 $Comp
 L Connector:Conn_01x04_Male J1
 U 1 1 5B5F1753
-P 1700 2950
-F 0 "J1" H 1450 2950 50  0000 C CNN
-F 1 "Conn_USB" H 1450 2850 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.00mm" H 1700 2950 50  0001 C CNN
-F 3 "~" H 1700 2950 50  0001 C CNN
-F 4 "Wurth" H 1700 2950 50  0001 C CNN "Manufacturer"
-F 5 "61300411121" H 1700 2950 50  0001 C CNN "Manufacturer_No"
-	1    1700 2950
-	1    0    0    -1  
+P 1700 3050
+F 0 "J1" H 1450 3050 50  0000 C CNN
+F 1 "Conn_USB" H 1450 2950 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 1700 3050 50  0001 C CNN
+F 3 "~" H 1700 3050 50  0001 C CNN
+F 4 "JST" H 1700 3050 50  0001 C CNN "Manufacturer"
+F 5 "B4B-PH-K-S(LF)(SN)" H 1700 3050 50  0001 C CNN "Manufacturer_No"
+	1    1700 3050
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0103
@@ -94,22 +94,11 @@ Wire Wire Line
 	4700 1900 4700 2050
 Connection ~ 4600 1900
 Wire Wire Line
-	6850 1900 6850 2300
-Text GLabel 6550 2300 1    60   Input ~ 0
+	6400 1800 6800 1800
+Text GLabel 6800 1900 0    60   Input ~ 0
 MT
-$Comp
-L power:GND #PWR03
-U 1 1 5B5DCF8B
-P 6450 1900
-F 0 "#PWR03" H 6450 1650 50  0001 C CNN
-F 1 "GND" H 6455 1727 50  0000 C CNN
-F 2 "" H 6450 1900 50  0001 C CNN
-F 3 "" H 6450 1900 50  0001 C CNN
-	1    6450 1900
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
-	6450 1900 6450 2300
+	6400 2300 6800 2300
 Wire Wire Line
 	5500 2550 5300 2550
 Wire Wire Line
@@ -247,8 +236,8 @@ F 0 "C4" H 3642 3446 50  0000 L CNN
 F 1 "1uF" H 3642 3355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3550 3400 50  0001 C CNN
 F 3 "~" H 3550 3400 50  0001 C CNN
-F 4 "Taiyo Yuden" H 3550 3400 50  0001 C CNN "Manufacturer"
-F 5 "UMK107BJ105KA-T" H 3550 3400 50  0001 C CNN "Manufacturer_No"
+F 4 "TDK" H 3550 3400 50  0001 C CNN "Manufacturer"
+F 5 "C1608X8L1C105K080AC" H 3550 3400 50  0001 C CNN "Manufacturer_No"
 	1    3550 3400
 	1    0    0    -1  
 $EndComp
@@ -441,30 +430,21 @@ F 3 "" H 2650 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x05_Female J2
+L Connector:Conn_01x06_Female J2
 U 1 1 5D3375CD
-P 6650 2500
-F 0 "J2" V 6850 2550 50  0000 R CNN
-F 1 "Conn_01x05_Female" V 6750 2900 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 6650 2500 50  0001 C CNN
-F 3 "~" H 6650 2500 50  0001 C CNN
-	1    6650 2500
-	0    -1   1    0   
-$EndComp
-$Comp
-L power:+3V3 #PWR0104
-U 1 1 5D33DEC6
-P 6850 1900
-F 0 "#PWR0104" H 6850 1750 50  0001 C CNN
-F 1 "+3V3" H 6865 2073 50  0000 C CNN
-F 2 "" H 6850 1900 50  0001 C CNN
-F 3 "" H 6850 1900 50  0001 C CNN
-	1    6850 1900
+P 7000 2000
+F 0 "J2" V 7200 2050 50  0000 R CNN
+F 1 "Conn_01x06_Female" V 7100 2400 50  0000 R CNN
+F 2 "Connector_FFC-FPC:Hirose_FH12-6S-0.5SH_1x06-1MP_P0.50mm_Horizontal" H 7000 2000 50  0001 C CNN
+F 3 "~" H 7000 2000 50  0001 C CNN
+F 4 "Hirose" H 7000 2000 50  0001 C CNN "Manufacturer"
+F 5 "FH12-6S-0.5SH(55)" H 7000 2000 50  0001 C CNN "Manufacturer_No"
+	1    7000 2000
 	1    0    0    -1  
 $EndComp
-Text GLabel 6650 2300 1    60   Input ~ 0
+Text GLabel 6800 2000 0    60   Input ~ 0
 SDA
-Text GLabel 6750 2300 1    60   Input ~ 0
+Text GLabel 6800 2100 0    60   Input ~ 0
 SCL
 Text GLabel 5500 2450 2    60   Input ~ 0
 SDA
@@ -485,6 +465,8 @@ F 0 "SW5" H 9798 3721 50  0000 L CNN
 F 1 "Choc" H 9798 3630 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 9600 3600 50  0001 C CNN
 F 3 "" H 9600 3600 50  0000 C CNN
+F 4 "Kailh" H 9600 3600 50  0001 C CNN "Manufacturer"
+F 5 "CPG135001D02" H 9600 3600 50  0001 C CNN "Manufacturer_No"
 	1    9600 3600
 	1    0    0    -1  
 $EndComp
@@ -496,6 +478,8 @@ F 0 "SW4" H 9248 3821 50  0000 L CNN
 F 1 "Choc" H 9248 3730 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 9050 3700 50  0001 C CNN
 F 3 "" H 9050 3700 50  0000 C CNN
+F 4 "Kailh" H 9050 3700 50  0001 C CNN "Manufacturer"
+F 5 "CPG135001D02" H 9050 3700 50  0001 C CNN "Manufacturer_No"
 	1    9050 3700
 	1    0    0    -1  
 $EndComp
@@ -507,6 +491,8 @@ F 0 "SW3" H 8698 3921 50  0000 L CNN
 F 1 "Choc" H 8698 3830 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 8500 3800 50  0001 C CNN
 F 3 "" H 8500 3800 50  0000 C CNN
+F 4 "Kailh" H 8500 3800 50  0001 C CNN "Manufacturer"
+F 5 "CPG135001D02" H 8500 3800 50  0001 C CNN "Manufacturer_No"
 	1    8500 3800
 	1    0    0    -1  
 $EndComp
@@ -518,6 +504,8 @@ F 0 "SW2" H 8148 4021 50  0000 L CNN
 F 1 "Choc" H 8148 3930 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 7950 3900 50  0001 C CNN
 F 3 "" H 7950 3900 50  0000 C CNN
+F 4 "Kailh" H 7950 3900 50  0001 C CNN "Manufacturer"
+F 5 "CPG135001D02" H 7950 3900 50  0001 C CNN "Manufacturer_No"
 	1    7950 3900
 	1    0    0    -1  
 $EndComp
@@ -529,6 +517,8 @@ F 0 "SW1" H 7598 4121 50  0000 L CNN
 F 1 "Choc" H 7598 4030 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 7400 4000 50  0001 C CNN
 F 3 "" H 7400 4000 50  0000 C CNN
+F 4 "Kailh" H 7400 4000 50  0001 C CNN "Manufacturer"
+F 5 "CPG135001D02" H 7400 4000 50  0001 C CNN "Manufacturer_No"
 	1    7400 4000
 	1    0    0    -1  
 $EndComp
@@ -637,8 +627,8 @@ F 0 "D5" H 6750 5485 50  0000 C CNN
 F 1 "LED_Small" H 6750 5394 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" V 6750 5250 50  0001 C CNN
 F 3 "~" V 6750 5250 50  0001 C CNN
-F 4 "ROHM" H 6750 5250 50  0001 C CNN "Manufacturer"
-F 5 "SMLEN3WBC8W1" H 6750 5250 50  0001 C CNN "Manufacturer_No"
+F 4 "OSRAM" H 6750 5250 50  0001 C CNN "Manufacturer"
+F 5 "LW Q38E-Q2OO-3K5L" H 6750 5250 50  0001 C CNN "Manufacturer_No"
 	1    6750 5250
 	1    0    0    -1  
 $EndComp
@@ -678,8 +668,8 @@ F 0 "D4" H 6500 5585 50  0000 C CNN
 F 1 "LED_Small" H 6500 5494 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" V 6500 5350 50  0001 C CNN
 F 3 "~" V 6500 5350 50  0001 C CNN
-F 4 "ROHM" H 6500 5350 50  0001 C CNN "Manufacturer"
-F 5 "SMLEN3WBC8W1" H 6500 5350 50  0001 C CNN "Manufacturer_No"
+F 4 "OSRAM" H 6500 5350 50  0001 C CNN "Manufacturer"
+F 5 "LW Q38E-Q2OO-3K5L" H 6500 5350 50  0001 C CNN "Manufacturer_No"
 	1    6500 5350
 	1    0    0    -1  
 $EndComp
@@ -691,8 +681,8 @@ F 0 "D3" H 6250 5685 50  0000 C CNN
 F 1 "LED_Small" H 6250 5594 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" V 6250 5450 50  0001 C CNN
 F 3 "~" V 6250 5450 50  0001 C CNN
-F 4 "ROHM" H 6250 5450 50  0001 C CNN "Manufacturer"
-F 5 "SMLEN3WBC8W1" H 6250 5450 50  0001 C CNN "Manufacturer_No"
+F 4 "OSRAM" H 6250 5450 50  0001 C CNN "Manufacturer"
+F 5 "LW Q38E-Q2OO-3K5L" H 6250 5450 50  0001 C CNN "Manufacturer_No"
 	1    6250 5450
 	1    0    0    -1  
 $EndComp
@@ -704,8 +694,8 @@ F 0 "D2" H 6000 5785 50  0000 C CNN
 F 1 "LED_Small" H 6000 5694 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" V 6000 5550 50  0001 C CNN
 F 3 "~" V 6000 5550 50  0001 C CNN
-F 4 "ROHM" H 6000 5550 50  0001 C CNN "Manufacturer"
-F 5 "SMLEN3WBC8W1" H 6000 5550 50  0001 C CNN "Manufacturer_No"
+F 4 "OSRAM" H 6000 5550 50  0001 C CNN "Manufacturer"
+F 5 "LW Q38E-Q2OO-3K5L" H 6000 5550 50  0001 C CNN "Manufacturer_No"
 	1    6000 5550
 	1    0    0    -1  
 $EndComp
@@ -717,8 +707,8 @@ F 0 "D1" H 5750 5885 50  0000 C CNN
 F 1 "LED_Small" H 5750 5794 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" V 5750 5650 50  0001 C CNN
 F 3 "~" V 5750 5650 50  0001 C CNN
-F 4 "ROHM" H 5750 5650 50  0001 C CNN "Manufacturer"
-F 5 "SMLEN3WBC8W1" H 5750 5650 50  0001 C CNN "Manufacturer_No"
+F 4 "OSRAM" H 5750 5650 50  0001 C CNN "Manufacturer"
+F 5 "LW Q38E-Q2OO-3K5L" H 5750 5650 50  0001 C CNN "Manufacturer_No"
 	1    5750 5650
 	1    0    0    -1  
 $EndComp
@@ -774,8 +764,8 @@ F 0 "SW6" H 3500 1835 50  0000 C CNN
 F 1 "SW_RST" H 3500 1744 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2" H 3500 1750 50  0001 C CNN
 F 3 "~" H 3500 1750 50  0001 C CNN
-F 4 "CK" H 3500 1550 50  0001 C CNN "Manufacturer"
-F 5 "KMR223NGULCLFG" H 3500 1550 50  0001 C CNN "Manufacturer_No"
+F 4 "C&K" H 3500 1550 50  0001 C CNN "Manufacturer"
+F 5 "KMR221GLFS" H 3500 1550 50  0001 C CNN "Manufacturer_No"
 	1    3500 1550
 	1    0    0    -1  
 $EndComp
@@ -1003,6 +993,8 @@ F 0 "R8" V 2350 2950 50  0000 C CNN
 F 1 "22" V 2250 2950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 2250 2950 50  0001 C CNN
 F 3 "~" H 2250 2950 50  0001 C CNN
+F 4 "Yageo" H 2250 2950 50  0001 C CNN "Manufacturer"
+F 5 "RT0603DRD0722RL" H 2250 2950 50  0001 C CNN "Manufacturer_No"
 	1    2250 2950
 	0    -1   -1   0   
 $EndComp
@@ -1014,6 +1006,8 @@ F 0 "R9" V 2350 3050 50  0000 C CNN
 F 1 "22" V 2250 3050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 2250 3050 50  0001 C CNN
 F 3 "~" H 2250 3050 50  0001 C CNN
+F 4 "Yageo" H 2250 3050 50  0001 C CNN "Manufacturer"
+F 5 "RT0603DRD0722RL" H 2250 3050 50  0001 C CNN "Manufacturer_No"
 	1    2250 3050
 	0    1    1    0   
 $EndComp
@@ -1101,4 +1095,29 @@ Wire Wire Line
 	4600 5250 4600 4850
 Wire Wire Line
 	4500 4850 4500 5050
+NoConn ~ 6800 2200
+$Comp
+L power:+3V3 #PWR0104
+U 1 1 5D33DEC6
+P 6400 2300
+F 0 "#PWR0104" H 6400 2150 50  0001 C CNN
+F 1 "+3V3" H 6415 2473 50  0000 C CNN
+F 2 "" H 6400 2300 50  0001 C CNN
+F 3 "" H 6400 2300 50  0001 C CNN
+	1    6400 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5B5DCF8B
+P 6400 1800
+F 0 "#PWR03" H 6400 1550 50  0001 C CNN
+F 1 "GND" H 6405 1627 50  0000 C CNN
+F 2 "" H 6400 1800 50  0001 C CNN
+F 3 "" H 6400 1800 50  0001 C CNN
+	1    6400 1800
+	0    1    1    0   
+$EndComp
+Text Notes 6400 2950 0    60   ~ 0
+Attention! This\npinout is mirrored\nin respect to the \ntrackball sensor\nfor mechanical\nalignment!
 $EndSCHEMATC

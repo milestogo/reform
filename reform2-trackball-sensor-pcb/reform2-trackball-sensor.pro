@@ -1,4 +1,4 @@
-update=Thu 04 Jul 2019 05:50:15 PM CEST
+update=Wed 26 Feb 2020 03:17:57 PM CET
 version=1
 last_client=kicad
 [general]
@@ -17,7 +17,7 @@ version=1
 PageLayoutDescrFile=
 LastNetListRead=
 CopperLayerCount=2
-BoardThickness=0.2
+BoardThickness=1
 AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
@@ -238,7 +238,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=PWR
-Clearance=0.25
+Clearance=0.2
 TrackWidth=0.4
 ViaDiameter=0.8
 ViaDrill=0.4

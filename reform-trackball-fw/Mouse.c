@@ -292,8 +292,8 @@ bool CALLBACK_HID_Device_CreateHIDReport(USB_ClassInfo_HID_Device_t* const HIDIn
     MouseReport->Wheel = -ny;
     led_error();
   } else {
-    MouseReport->X = 1.5*(float)(abs(nx)*nx);
-    MouseReport->Y = abs(ny)*ny;
+    MouseReport->X = 2*abs(nx)*nx;
+    MouseReport->Y = 2*abs(ny)*ny;
   }
 
   *ReportSize = sizeof(USB_WheelMouseReport_Data_t);

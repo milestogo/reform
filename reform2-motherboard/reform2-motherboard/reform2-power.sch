@@ -5845,4 +5845,6 @@ Text Notes 14550 6650 0    50   ~ 0
 EN_1V2!
 Text Label 10950 8350 2    50   ~ 0
 LPC_MOSI1a
+Text Notes 10900 950  0    50   ~ 0
+missing FB!\nsolution: LMR16006YQ3
 $EndSCHEMATC
