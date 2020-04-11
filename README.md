@@ -1,48 +1,31 @@
 # MNT Reform
 
-This is the main repository for the MNT Reform Open Source Portable Computer.
+This is the main repository for the MNT Reform open source laptop.
 
-## How to Report Issues / Contribute
-
-First, you need an account at source.mntmn.com. If you don't have one, just write to lukas@mntmn.com stating your desired username.
-
-There are several Git repositories that make up Reform. Here is a list of topics to help you decide on which repository to report your problem or contribute code:
+For details, check out [Finishing Reform](https://mntre.com/media/reform_md/2020-01-18-finishing-reform.html) and related articles.
 
 ## Impressions
 
 ![Reform Version 2 Prototype](https://mntre.com/media/reform_v2_images/reform_v2_prototype_top.jpg)
 ![Reform Version 2 Motherboard](https://mntre.com/media/reform_v2_images/reform_v2_motherboard.jpg)
 
-* Check out [Finishing Reform](https://mntre.com/media/reform_md/2020-01-18-finishing-reform.html) and related articles
+## License
 
-### reform (this one)
+Copyright 2018-2020 MNT Research GmbH.
 
-* Mechanical parts (case, keyboard, trackball, display, power supply)
-* Electronics
-* Firmware
-* [Issue reports go here](https://source.mntmn.com/MNT/reform/issues)
+The following licenses are used in the project, unless specified differently in a particular subfolder:
 
-### reform-system-image
-
-* Kernel (missing drivers...)
-* U-Boot (early startup, booting)
-* Setup script, date/time, keyboard layout
-* Default configuration (networking, Xorg, users, passwords...)
-* SD Card shipped with the device
-* [Issue reports go here](https://source.mntmn.com/MNT/reform-system-image/issues)
-
-### reform-userland
-
-* Graphics/OpenGL libraries (mesa/etnaviv, drm, Xorg, wayland...)
-* If you have an application or game that doesn't work due to GL problems (check the [Wiki](https://source.mntmn.com/MNT/reform/wiki) first)
-* [Issue reports go here](https://source.mntmn.com/MNT/reform-userland/issues)
+- Schematics (*.sch and associated files): [CERN-OHL-S v2](https://www.ohwr.org/project/cernohl/wikis/uploads/002d0b7d5066e6b3829168730237bddb/cern_ohl_s_v2.txt)
+- PCB Artwork (*.kicad_pcb and Gerber files): [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode)
+- Firmware: Various, [GPL 3.0](https://www.gnu.org/licenses/gpl-3.0.en.html) if not specified in the file/subdirectory.
+- The "MNT" and "MNT REFORM" logos are trademarks of MNT Research GmbH. You may not use these on derived works.
 
 ## Made With
 
 * [KiCAD EDA](http://kicad-pcb.org/)
-* Autodesk Fusion
-* OpenSCAD
-* LUFA
+* [OpenSCAD](https://www.openscad.org/)
+* [LUFA](http://www.fourwalledcubicle.com/LUFA.php)
+* Autodesk Fusion (Case parts)
 
 ## Authors
 
@@ -50,8 +33,6 @@ There are several Git repositories that make up Reform. Here is a list of topics
 * **Ana Dantas** - *Industrial Design*
 * **Greta Melnik** - *Quality & Assembly*
 
-## License
+## Credits and Contributions
 
-Copyright 2018-2020 MNT Research GmbH.
-
-This project is licensed under the GPLv3 License - see the [LICENSE.md](LICENSE.md) file for details
+* [fully automated technologies](https://fully.automated.ee/) - *inrush limiter circuit*
