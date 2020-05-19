@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 9 9
 Title "MNT Reform 2 Power System"
-Date "2020-04-11"
+Date "2020-05-19"
 Rev "2.0D-4"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
@@ -57,7 +57,7 @@ F 7 "Mouser" H 6900 4500 50  0001 C CNN "Distributor"
 	1    0    0    1   
 $EndComp
 Text Notes 4950 1750 0    50   ~ 0
-main system power\nconverters, enabled\nby LPC
+Main system power\nconverters, enabled\nby LPC
 $Comp
 L Battery_Management:LTC6803-4 U4
 U 1 1 5CEF5F44
@@ -150,11 +150,11 @@ L Device:R_Small R31
 U 1 1 5D03E837
 P 9400 9200
 F 0 "R31" V 9600 9200 50  0000 C CNN
-F 1 "33" V 9500 9200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9400 9200 50  0001 C CNN
+F 1 "4.7" V 9500 9200 50  0000 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric" H 9400 9200 50  0001 C CNN
 F 3 "~" H 9400 9200 50  0001 C CNN
-F 4 "Vishay Dale" H 9400 9200 50  0001 C CNN "Manufacturer"
-F 5 "CRCW060333R0FKEAC" H 9400 9200 50  0001 C CNN "Manufacturer_No"
+F 4 "TE Connectivity" H 9400 9200 50  0001 C CNN "Manufacturer"
+F 5 "35224R7JT" H 9400 9200 50  0001 C CNN "Manufacturer_No"
 F 6 "Mouser" H 9400 9200 50  0001 C CNN "Distributor"
 F 7 "y" H 9400 9200 50  0001 C CNN "Checked"
 	1    9400 9200
@@ -257,11 +257,11 @@ L Device:R_Small R25
 U 1 1 5D090C92
 P 9400 5900
 F 0 "R25" V 9600 5900 50  0000 C CNN
-F 1 "33" V 9500 5900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9400 5900 50  0001 C CNN
+F 1 "4.7" V 9500 5900 50  0000 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric" H 9400 5900 50  0001 C CNN
 F 3 "~" H 9400 5900 50  0001 C CNN
-F 4 "Vishay Dale" H 9400 5900 50  0001 C CNN "Manufacturer"
-F 5 "CRCW060333R0FKEAC" H 9400 5900 50  0001 C CNN "Manufacturer_No"
+F 4 "TE Connectivity" H 9400 5900 50  0001 C CNN "Manufacturer"
+F 5 "35224R7JT" H 9400 5900 50  0001 C CNN "Manufacturer_No"
 F 6 "Mouser" H 9400 5900 50  0001 C CNN "Distributor"
 F 7 "y" H 9400 5900 50  0001 C CNN "Checked"
 	1    9400 5900
@@ -393,11 +393,11 @@ L Device:R_Small R30
 U 1 1 5D0A6A25
 P 9400 8650
 F 0 "R30" V 9600 8650 50  0000 C CNN
-F 1 "33" V 9500 8650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9400 8650 50  0001 C CNN
+F 1 "4.7" V 9500 8650 50  0000 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric" H 9400 8650 50  0001 C CNN
 F 3 "~" H 9400 8650 50  0001 C CNN
-F 4 "Vishay Dale" H 9400 8650 50  0001 C CNN "Manufacturer"
-F 5 "CRCW060333R0FKEAC" H 9400 8650 50  0001 C CNN "Manufacturer_No"
+F 4 "TE Connectivity" H 9400 8650 50  0001 C CNN "Manufacturer"
+F 5 "35224R7JT" H 9400 8650 50  0001 C CNN "Manufacturer_No"
 F 6 "Mouser" H 9400 8650 50  0001 C CNN "Distributor"
 F 7 "y" H 9400 8650 50  0001 C CNN "Checked"
 	1    9400 8650
@@ -500,11 +500,11 @@ L Device:R_Small R29
 U 1 1 5D0B0696
 P 9400 8100
 F 0 "R29" V 9600 8100 50  0000 C CNN
-F 1 "33" V 9500 8100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9400 8100 50  0001 C CNN
+F 1 "4.7" V 9500 8100 50  0000 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric" H 9400 8100 50  0001 C CNN
 F 3 "~" H 9400 8100 50  0001 C CNN
-F 4 "Vishay Dale" H 9400 8100 50  0001 C CNN "Manufacturer"
-F 5 "CRCW060333R0FKEAC" H 9400 8100 50  0001 C CNN "Manufacturer_No"
+F 4 "TE Connectivity" H 9400 8100 50  0001 C CNN "Manufacturer"
+F 5 "35224R7JT" H 9400 8100 50  0001 C CNN "Manufacturer_No"
 F 6 "Mouser" H 9400 8100 50  0001 C CNN "Distributor"
 F 7 "y" H 9400 8100 50  0001 C CNN "Checked"
 	1    9400 8100
@@ -607,11 +607,11 @@ L Device:R_Small R28
 U 1 1 5D0B855B
 P 9400 7550
 F 0 "R28" V 9600 7550 50  0000 C CNN
-F 1 "33" V 9500 7550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9400 7550 50  0001 C CNN
+F 1 "4.7" V 9500 7550 50  0000 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric" H 9400 7550 50  0001 C CNN
 F 3 "~" H 9400 7550 50  0001 C CNN
-F 4 "Vishay Dale" H 9400 7550 50  0001 C CNN "Manufacturer"
-F 5 "CRCW060333R0FKEAC" H 9400 7550 50  0001 C CNN "Manufacturer_No"
+F 4 "TE Connectivity" H 9400 7550 50  0001 C CNN "Manufacturer"
+F 5 "35224R7JT" H 9400 7550 50  0001 C CNN "Manufacturer_No"
 F 6 "Mouser" H 9400 7550 50  0001 C CNN "Distributor"
 F 7 "y" H 9400 7550 50  0001 C CNN "Checked"
 	1    9400 7550
@@ -714,11 +714,11 @@ L Device:R_Small R27
 U 1 1 5D0C30A2
 P 9400 7000
 F 0 "R27" V 9600 7000 50  0000 C CNN
-F 1 "33" V 9500 7000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9400 7000 50  0001 C CNN
+F 1 "4.7" V 9500 7000 50  0000 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric" H 9400 7000 50  0001 C CNN
 F 3 "~" H 9400 7000 50  0001 C CNN
-F 4 "Vishay Dale" H 9400 7000 50  0001 C CNN "Manufacturer"
-F 5 "CRCW060333R0FKEAC" H 9400 7000 50  0001 C CNN "Manufacturer_No"
+F 4 "TE Connectivity" H 9400 7000 50  0001 C CNN "Manufacturer"
+F 5 "35224R7JT" H 9400 7000 50  0001 C CNN "Manufacturer_No"
 F 6 "Mouser" H 9400 7000 50  0001 C CNN "Distributor"
 F 7 "y" H 9400 7000 50  0001 C CNN "Checked"
 	1    9400 7000
@@ -821,11 +821,11 @@ L Device:R_Small R26
 U 1 1 5D0F86A7
 P 9400 6450
 F 0 "R26" V 9600 6450 50  0000 C CNN
-F 1 "33" V 9500 6450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9400 6450 50  0001 C CNN
+F 1 "4.7" V 9500 6450 50  0000 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric" H 9400 6450 50  0001 C CNN
 F 3 "~" H 9400 6450 50  0001 C CNN
-F 4 "Vishay Dale" H 9400 6450 50  0001 C CNN "Manufacturer"
-F 5 "CRCW060333R0FKEAC" H 9400 6450 50  0001 C CNN "Manufacturer_No"
+F 4 "TE Connectivity" H 9400 6450 50  0001 C CNN "Manufacturer"
+F 5 "35224R7JT" H 9400 6450 50  0001 C CNN "Manufacturer_No"
 F 6 "Mouser" H 9400 6450 50  0001 C CNN "Distributor"
 F 7 "y" H 9400 6450 50  0001 C CNN "Checked"
 	1    9400 6450
@@ -974,11 +974,11 @@ L Device:R_Small R32
 U 1 1 5D1C471A
 P 9400 9750
 F 0 "R32" V 9600 9750 50  0000 C CNN
-F 1 "33" V 9500 9750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9400 9750 50  0001 C CNN
+F 1 "4.7" V 9500 9750 50  0000 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric" H 9400 9750 50  0001 C CNN
 F 3 "~" H 9400 9750 50  0001 C CNN
-F 4 "Vishay Dale" H 9400 9750 50  0001 C CNN "Manufacturer"
-F 5 "CRCW060333R0FKEAC" H 9400 9750 50  0001 C CNN "Manufacturer_No"
+F 4 "TE Connectivity" H 9400 9750 50  0001 C CNN "Manufacturer"
+F 5 "35224R7JT" H 9400 9750 50  0001 C CNN "Manufacturer_No"
 F 6 "Mouser" H 9400 9750 50  0001 C CNN "Distributor"
 F 7 "y" H 9400 9750 50  0001 C CNN "Checked"
 	1    9400 9750
@@ -1704,89 +1704,89 @@ Wire Wire Line
 $Comp
 L Device:Crystal_GND24_Small Y?
 U 1 1 5E225E59
-P 14500 8900
+P 14300 8900
 AR Path="/5E225E59" Ref="Y?"  Part="1" 
 AR Path="/5D06A2FD/5E225E59" Ref="Y?"  Part="1" 
 AR Path="/5CC81028/5E225E59" Ref="Y2"  Part="1" 
-F 0 "Y2" H 14400 9150 50  0000 C CNN
-F 1 "12MHz" H 14650 9150 50  0000 C CNN
-F 2 "Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm" H 14500 8900 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/3/ABM8AIG-783590.pdf" H 14500 8900 50  0001 C CNN
-F 4 "Abracon" H 14500 8900 50  0001 C CNN "Manufacturer"
-F 5 "ABM8AIG-12.000MHz-2-T" H 14500 8900 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 14500 8900 50  0001 C CNN "Checked"
-F 7 "Mouser" H 14500 8900 50  0001 C CNN "Distributor"
-	1    14500 8900
+F 0 "Y2" H 14200 9150 50  0000 C CNN
+F 1 "12MHz" H 14450 9150 50  0000 C CNN
+F 2 "Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm" H 14300 8900 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/3/ABM8AIG-783590.pdf" H 14300 8900 50  0001 C CNN
+F 4 "Abracon" H 14300 8900 50  0001 C CNN "Manufacturer"
+F 5 "ABM8AIG-12.000MHz-2-T" H 14300 8900 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 14300 8900 50  0001 C CNN "Checked"
+F 7 "Mouser" H 14300 8900 50  0001 C CNN "Distributor"
+	1    14300 8900
 	1    0    0    -1  
 $EndComp
 $Comp
 L reform2-motherboard-rescue:C_Small-reform-motherboard-rescue C?
 U 1 1 5E225E65
-P 14800 9000
+P 14600 9000
 AR Path="/5E225E65" Ref="C?"  Part="1" 
 AR Path="/5D06A2FD/5E225E65" Ref="C?"  Part="1" 
 AR Path="/5CC81028/5E225E65" Ref="C51"  Part="1" 
-F 0 "C51" H 14850 9050 50  0000 L CNN
-F 1 "18pF" H 14850 8900 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 14800 9000 50  0001 C CNN
-F 3 "" H 14800 9000 50  0001 C CNN
-F 4 "Yageo" H 14800 9000 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JRNPO9BN180" H 14800 9000 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 14800 9000 50  0001 C CNN "Checked"
-F 7 "Mouser" H 14800 9000 50  0001 C CNN "Distributor"
-	1    14800 9000
+F 0 "C51" H 14650 9050 50  0000 L CNN
+F 1 "18pF" H 14650 8900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 14600 9000 50  0001 C CNN
+F 3 "" H 14600 9000 50  0001 C CNN
+F 4 "Yageo" H 14600 9000 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JRNPO9BN180" H 14600 9000 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 14600 9000 50  0001 C CNN "Checked"
+F 7 "Mouser" H 14600 9000 50  0001 C CNN "Distributor"
+	1    14600 9000
 	1    0    0    -1  
 $EndComp
 $Comp
 L reform2-motherboard-rescue:GND-reform-motherboard-rescue #PWR?
 U 1 1 5E225E6B
-P 14800 9100
+P 14600 9100
 AR Path="/5E225E6B" Ref="#PWR?"  Part="1" 
 AR Path="/5D06A2FD/5E225E6B" Ref="#PWR?"  Part="1" 
 AR Path="/5CC81028/5E225E6B" Ref="#PWR0114"  Part="1" 
-F 0 "#PWR0114" H 14800 8850 50  0001 C CNN
-F 1 "GND" H 14800 8950 50  0000 C CNN
-F 2 "" H 14800 9100 50  0001 C CNN
-F 3 "" H 14800 9100 50  0001 C CNN
-	1    14800 9100
+F 0 "#PWR0114" H 14600 8850 50  0001 C CNN
+F 1 "GND" H 14600 8950 50  0000 C CNN
+F 2 "" H 14600 9100 50  0001 C CNN
+F 3 "" H 14600 9100 50  0001 C CNN
+	1    14600 9100
 	1    0    0    -1  
 $EndComp
 $Comp
 L reform2-motherboard-rescue:C_Small-reform-motherboard-rescue C?
 U 1 1 5E225E71
-P 14200 9000
+P 14000 9000
 AR Path="/5E225E71" Ref="C?"  Part="1" 
 AR Path="/5D06A2FD/5E225E71" Ref="C?"  Part="1" 
 AR Path="/5CC81028/5E225E71" Ref="C48"  Part="1" 
-F 0 "C48" H 14250 9050 50  0000 L CNN
-F 1 "18pF" H 14250 8900 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 14200 9000 50  0001 C CNN
-F 3 "" H 14200 9000 50  0001 C CNN
-F 4 "Yageo" H 14200 9000 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JRNPO9BN180" H 14200 9000 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 14200 9000 50  0001 C CNN "Checked"
-F 7 "Mouser" H 14200 9000 50  0001 C CNN "Distributor"
-	1    14200 9000
+F 0 "C48" H 14050 9050 50  0000 L CNN
+F 1 "18pF" H 14050 8900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 14000 9000 50  0001 C CNN
+F 3 "" H 14000 9000 50  0001 C CNN
+F 4 "Yageo" H 14000 9000 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JRNPO9BN180" H 14000 9000 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 14000 9000 50  0001 C CNN "Checked"
+F 7 "Mouser" H 14000 9000 50  0001 C CNN "Distributor"
+	1    14000 9000
 	1    0    0    -1  
 $EndComp
 $Comp
 L reform2-motherboard-rescue:GND-reform-motherboard-rescue #PWR?
 U 1 1 5E225E77
-P 14200 9100
+P 14000 9100
 AR Path="/5E225E77" Ref="#PWR?"  Part="1" 
 AR Path="/5D06A2FD/5E225E77" Ref="#PWR?"  Part="1" 
 AR Path="/5CC81028/5E225E77" Ref="#PWR0115"  Part="1" 
-F 0 "#PWR0115" H 14200 8850 50  0001 C CNN
-F 1 "GND" H 14200 8950 50  0000 C CNN
-F 2 "" H 14200 9100 50  0001 C CNN
-F 3 "" H 14200 9100 50  0001 C CNN
-	1    14200 9100
+F 0 "#PWR0115" H 14000 8850 50  0001 C CNN
+F 1 "GND" H 14000 8950 50  0000 C CNN
+F 2 "" H 14000 9100 50  0001 C CNN
+F 3 "" H 14000 9100 50  0001 C CNN
+	1    14000 9100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14600 8900 14800 8900
+	14400 8900 14600 8900
 Wire Wire Line
-	14200 8900 14400 8900
+	14000 8900 14200 8900
 $Comp
 L Switch:SW_Push SW2
 U 1 1 5E8EBB68
@@ -1823,7 +1823,7 @@ Text GLabel 15550 6950 2    50   Output ~ 0
 BMON_SDI
 Text GLabel 15550 6850 2    50   Input ~ 0
 BMON_SDO
-Text GLabel 15600 7050 2    50   Output ~ 0
+Text GLabel 15550 7050 2    50   Output ~ 0
 BMON_CS
 $Comp
 L MCU_NXP_LPC:LPC11U24FBD48-301 U18
@@ -1874,15 +1874,15 @@ Wire Wire Line
 	15300 8450 15300 8500
 Connection ~ 15300 8450
 Wire Wire Line
-	14200 8900 14200 8550
+	14000 8900 14000 8550
 Wire Wire Line
-	14200 8550 13950 8550
-Connection ~ 14200 8900
+	14000 8550 13950 8550
+Connection ~ 14000 8900
 Wire Wire Line
-	13950 8450 14800 8450
+	13950 8450 14600 8450
 Wire Wire Line
-	14800 8450 14800 8900
-Connection ~ 14800 8900
+	14600 8450 14600 8900
+Connection ~ 14600 8900
 $Comp
 L power:GND #PWR0132
 U 1 1 5F31499B
@@ -2089,77 +2089,77 @@ LPC_MISO1b
 $Comp
 L Device:R_Small R73
 U 1 1 5FEFD1B6
-P 15000 6750
-F 0 "R73" V 14950 6850 50  0000 C CNN
-F 1 "0" V 15000 6750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 15000 6750 50  0001 C CNN
-F 3 "~" H 15000 6750 50  0001 C CNN
-F 4 "Vishay Dale" H 15000 6750 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 15000 6750 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 15000 6750 50  0001 C CNN "Distributor"
-F 7 "y" H 15000 6750 50  0001 C CNN "Checked"
-	1    15000 6750
+P 15100 6750
+F 0 "R73" V 15050 6850 50  0000 C CNN
+F 1 "0" V 15100 6750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 15100 6750 50  0001 C CNN
+F 3 "~" H 15100 6750 50  0001 C CNN
+F 4 "Vishay Dale" H 15100 6750 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 15100 6750 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 15100 6750 50  0001 C CNN "Distributor"
+F 7 "y" H 15100 6750 50  0001 C CNN "Checked"
+	1    15100 6750
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small R74
 U 1 1 5FEFD58C
-P 15000 6850
-F 0 "R74" V 15050 6950 50  0000 C CNN
-F 1 "0" V 15000 6850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 15000 6850 50  0001 C CNN
-F 3 "~" H 15000 6850 50  0001 C CNN
-F 4 "Vishay Dale" H 15000 6850 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 15000 6850 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 15000 6850 50  0001 C CNN "Distributor"
-F 7 "y" H 15000 6850 50  0001 C CNN "Checked"
-	1    15000 6850
+P 15100 6850
+F 0 "R74" V 15150 6950 50  0000 C CNN
+F 1 "0" V 15100 6850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 15100 6850 50  0001 C CNN
+F 3 "~" H 15100 6850 50  0001 C CNN
+F 4 "Vishay Dale" H 15100 6850 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 15100 6850 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 15100 6850 50  0001 C CNN "Distributor"
+F 7 "y" H 15100 6850 50  0001 C CNN "Checked"
+	1    15100 6850
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small R75
 U 1 1 5FEFD6BC
-P 15000 6950
-F 0 "R75" V 15050 7050 50  0000 C CNN
-F 1 "0" V 15000 6950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 15000 6950 50  0001 C CNN
-F 3 "~" H 15000 6950 50  0001 C CNN
-F 4 "Vishay Dale" H 15000 6950 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 15000 6950 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 15000 6950 50  0001 C CNN "Distributor"
-F 7 "y" H 15000 6950 50  0001 C CNN "Checked"
-	1    15000 6950
+P 15100 6950
+F 0 "R75" V 15150 7050 50  0000 C CNN
+F 1 "0" V 15100 6950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 15100 6950 50  0001 C CNN
+F 3 "~" H 15100 6950 50  0001 C CNN
+F 4 "Vishay Dale" H 15100 6950 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 15100 6950 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 15100 6950 50  0001 C CNN "Distributor"
+F 7 "y" H 15100 6950 50  0001 C CNN "Checked"
+	1    15100 6950
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small R76
 U 1 1 5FEFDBB8
-P 15000 7050
-F 0 "R76" V 15050 7150 50  0000 C CNN
-F 1 "0" V 15000 7050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 15000 7050 50  0001 C CNN
-F 3 "~" H 15000 7050 50  0001 C CNN
-F 4 "Vishay Dale" H 15000 7050 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 15000 7050 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 15000 7050 50  0001 C CNN "Distributor"
-F 7 "y" H 15000 7050 50  0001 C CNN "Checked"
-	1    15000 7050
+P 15100 7050
+F 0 "R76" V 15150 7150 50  0000 C CNN
+F 1 "0" V 15100 7050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 15100 7050 50  0001 C CNN
+F 3 "~" H 15100 7050 50  0001 C CNN
+F 4 "Vishay Dale" H 15100 7050 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 15100 7050 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 15100 7050 50  0001 C CNN "Distributor"
+F 7 "y" H 15100 7050 50  0001 C CNN "Checked"
+	1    15100 7050
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	15100 6750 15550 6750
+	15200 6750 15550 6750
 Wire Wire Line
-	15100 6850 15400 6850
+	15200 6850 15400 6850
 Wire Wire Line
-	15100 7050 15600 7050
+	15200 7050 15550 7050
 Wire Wire Line
-	13950 7050 14900 7050
+	13950 7050 15000 7050
 Wire Wire Line
-	13950 6950 14900 6950
+	13950 6950 15000 6950
 Wire Wire Line
-	13950 6850 14900 6850
+	13950 6850 15000 6850
 Wire Wire Line
-	13950 6750 14900 6750
+	13950 6750 15000 6750
 Text Label 12050 7350 0    50   ~ 0
 LPC_TDI
 Text Label 12050 7450 0    50   ~ 0
@@ -2204,8 +2204,6 @@ Wire Wire Line
 	13950 7450 14050 7450
 Text Label 14050 7550 0    50   ~ 0
 LPC_SCLKc
-Wire Wire Line
-	14050 7550 13950 7550
 Text Label 14050 7650 0    50   ~ 0
 LPC_SCK0b
 Wire Wire Line
@@ -2606,6 +2604,7 @@ F 4 "Vishay Dale" H 15000 8350 50  0001 C CNN "Manufacturer"
 F 5 "CRCW06030000Z0EAC" H 15000 8350 50  0001 C CNN "Manufacturer_No"
 F 6 "Mouser" H 15000 8350 50  0001 C CNN "Distributor"
 F 7 "y" H 15000 8350 50  0001 C CNN "Checked"
+F 8 "y" H 15000 8350 50  0001 C CNN "DNP"
 	1    15000 8350
 	-1   0    0    1   
 $EndComp
@@ -2733,13 +2732,10 @@ Wire Wire Line
 	14050 6550 13950 6550
 Text Label 14050 7250 0    50   ~ 0
 LPC_PIO1_25
-Wire Wire Line
-	14050 7250 13950 7250
 Text Label 14050 7750 0    50   ~ 0
 LPC_PIO1_31
 Wire Wire Line
 	14050 7750 13950 7750
-NoConn ~ 14050 7550
 $Comp
 L power:GND #PWR0198
 U 1 1 62834406
@@ -2777,7 +2773,6 @@ Wire Wire Line
 	12000 8450 12550 8450
 Wire Wire Line
 	12050 8350 12550 8350
-NoConn ~ 12050 7950
 Wire Wire Line
 	10950 8550 11000 8550
 Wire Wire Line
@@ -2786,8 +2781,6 @@ Wire Wire Line
 	11600 8550 11600 8600
 Text Label 11500 8350 0    50   ~ 0
 LPC_PIO1_31
-Text Label 11500 8450 0    50   ~ 0
-LPC_PIO1_25
 $Comp
 L Connector:Conn_01x04_Male J23
 U 1 1 63BEA00A
@@ -2840,25 +2833,25 @@ Wire Wire Line
 Wire Wire Line
 	15400 6850 15550 6850
 Wire Wire Line
-	15100 6950 15550 6950
+	15200 6950 15550 6950
 Wire Wire Line
 	11500 3200 11900 3200
 Wire Wire Line
 	11300 3200 11500 3200
 Wire Wire Line
-	14500 9000 14500 9100
+	14300 9000 14300 9100
 Wire Wire Line
-	14500 9100 14650 9100
-Connection ~ 14800 9100
+	14300 9100 14450 9100
+Connection ~ 14600 9100
 Wire Wire Line
-	14500 8800 14500 8750
+	14300 8800 14300 8750
 Wire Wire Line
-	14500 8750 14650 8750
+	14300 8750 14450 8750
 Wire Wire Line
-	14650 8750 14650 9100
-Connection ~ 14650 9100
+	14450 8750 14450 9100
+Connection ~ 14450 9100
 Wire Wire Line
-	14650 9100 14800 9100
+	14450 9100 14600 9100
 $Comp
 L Switch:SW_DIP_x01 SW?
 U 1 1 5DE51B0E
@@ -3182,13 +3175,13 @@ L Regulator_Switching:LM2841X U14
 U 1 1 5E4AA1C5
 P 11350 1650
 F 0 "U14" H 11350 2017 50  0000 C CNN
-F 1 "LM2841X" H 11350 1926 50  0000 C CNN
+F 1 "LMR16006YQ3" H 11350 1926 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 11375 1400 50  0001 L CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2842-q1.pdf" H 11250 1750 50  0001 C CNN
+F 3 "" H 11250 1750 50  0001 C CNN
 F 4 "y" H 11350 1650 50  0001 C CNN "Checked"
 F 5 "Mouser" H 11350 1650 50  0001 C CNN "Distributor"
 F 6 "Texas Instruments" H 11350 1650 50  0001 C CNN "Manufacturer"
-F 7 "LM2841XMK-ADJL/NOPB" H 11350 1650 50  0001 C CNN "Manufacturer_No"
+F 7 "LMR16006YQ3" H 11350 1650 50  0001 C CNN "Manufacturer_No"
 	1    11350 1650
 	1    0    0    -1  
 $EndComp
@@ -3342,7 +3335,7 @@ up to 70mA consumed \nby DSI bridge
 Text Notes 11600 2900 0    50   ~ 0
 up to 40mA consumed \nby DSI bridge and\nSD card level shifter
 Text Notes 14650 2900 0    50   ~ 0
-up to 1A (peak)\n2x375mA normal \nfrom 2x mPCIe
+up to 1A (peak)\n375mA normal \nfrom mPCIe
 $Comp
 L Regulator_Switching:TLV62568DBV U13
 U 1 1 5E2F9CC0
@@ -3847,8 +3840,6 @@ $EndComp
 Wire Wire Line
 	1300 4300 2300 4300
 Wire Wire Line
-	2300 5800 1300 5800
-Wire Wire Line
 	1300 5800 1300 4300
 Connection ~ 1300 4300
 Wire Wire Line
@@ -3915,16 +3906,16 @@ $EndComp
 $Comp
 L power:GND #PWR05
 U 1 1 6011B55A
-P 2850 8050
-F 0 "#PWR05" H 2850 7800 50  0001 C CNN
-F 1 "GND" H 2855 7877 50  0000 C CNN
-F 2 "" H 2850 8050 50  0001 C CNN
-F 3 "" H 2850 8050 50  0001 C CNN
-	1    2850 8050
+P 2850 8200
+F 0 "#PWR05" H 2850 7950 50  0001 C CNN
+F 1 "GND" H 2855 8027 50  0000 C CNN
+F 2 "" H 2850 8200 50  0001 C CNN
+F 3 "" H 2850 8200 50  0001 C CNN
+	1    2850 8200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2850 8050 2850 7900
+	2850 8200 2850 7900
 Wire Wire Line
 	2750 7650 2750 7900
 Wire Wire Line
@@ -4005,13 +3996,13 @@ L Device:R_Small R175
 U 1 1 60649005
 P 4400 5950
 F 0 "R175" V 4300 5950 50  0000 C CNN
-F 1 "0" V 4400 5950 50  0000 C CNN
+F 1 "100" V 4500 5950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4400 5950 50  0001 C CNN
 F 3 "~" H 4400 5950 50  0001 C CNN
 F 4 "Mouser" H 4400 5950 50  0001 C CNN "Distributor"
 F 5 "y" H 4400 5950 50  0001 C CNN "Checked"
 F 6 "Vishay Dale" H 4400 5950 50  0001 C CNN "Manufacturer"
-F 7 "CRCW06030000Z0EAC" H 4400 5950 50  0001 C CNN "Manufacturer_No"
+F 7 "CRCW0603100RFKEAC" H 4400 5950 50  0001 C CNN "Manufacturer_No"
 	1    4400 5950
 	0    1    1    0   
 $EndComp
@@ -4019,8 +4010,8 @@ $Comp
 L Device:R_Small R176
 U 1 1 606492EA
 P 4400 6250
-F 0 "R176" V 4204 6250 50  0000 C CNN
-F 1 "100" V 4295 6250 50  0000 C CNN
+F 0 "R176" V 4300 6250 50  0000 C CNN
+F 1 "100" V 4500 6250 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4400 6250 50  0001 C CNN
 F 3 "~" H 4400 6250 50  0001 C CNN
 F 4 "Mouser" H 4400 6250 50  0001 C CNN "Distributor"
@@ -4031,9 +4022,9 @@ F 7 "CRCW0603100RFKEAC" H 4400 6250 50  0001 C CNN "Manufacturer_No"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3350 5950 3900 5950
+	3350 5950 3950 5950
 Wire Wire Line
-	4300 6250 3900 6250
+	4300 6250 3950 6250
 Wire Wire Line
 	3350 6700 3600 6700
 Wire Wire Line
@@ -4064,16 +4055,16 @@ Connection ~ 4600 5950
 $Comp
 L Device:C_Small C31
 U 1 1 60C0C1E8
-P 3900 6100
-F 0 "C31" H 3808 6054 50  0000 R CNN
-F 1 "0.33uF" H 3808 6145 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3900 6100 50  0001 C CNN
-F 3 "~" H 3900 6100 50  0001 C CNN
-F 4 "y" H 3900 6100 50  0001 C CNN "Checked"
-F 5 "TDK" H 3900 6100 50  0001 C CNN "Manufacturer"
-F 6 "C1608X7R1H334K080AC" H 3900 6100 50  0001 C CNN "Manufacturer_No"
-F 7 "Mouser" H 3900 6100 50  0001 C CNN "Distributor"
-	1    3900 6100
+P 3950 6100
+F 0 "C31" H 3858 6054 50  0000 R CNN
+F 1 "0.33uF" H 3858 6145 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3950 6100 50  0001 C CNN
+F 3 "~" H 3950 6100 50  0001 C CNN
+F 4 "y" H 3950 6100 50  0001 C CNN "Checked"
+F 5 "TDK" H 3950 6100 50  0001 C CNN "Manufacturer"
+F 6 "C1608X7R1H334K080AC" H 3950 6100 50  0001 C CNN "Manufacturer_No"
+F 7 "Mouser" H 3950 6100 50  0001 C CNN "Distributor"
+	1    3950 6100
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -4081,13 +4072,13 @@ Wire Wire Line
 Wire Wire Line
 	4500 6250 4600 6250
 Wire Wire Line
-	3900 6000 3900 5950
-Connection ~ 3900 5950
+	3950 6000 3950 5950
+Connection ~ 3950 5950
 Wire Wire Line
-	3900 6200 3900 6250
-Connection ~ 3900 6250
+	3950 6200 3950 6250
+Connection ~ 3950 6250
 Wire Wire Line
-	3900 6250 3350 6250
+	3950 6250 3350 6250
 $Comp
 L Device:C_Small C32
 U 1 1 60ED0FFF
@@ -4190,22 +4181,16 @@ Wire Wire Line
 $Comp
 L power:GND #PWR01
 U 1 1 615964AC
-P 1300 6250
-F 0 "#PWR01" H 1300 6000 50  0001 C CNN
-F 1 "GND" H 1305 6077 50  0000 C CNN
-F 2 "" H 1300 6250 50  0001 C CNN
-F 3 "" H 1300 6250 50  0001 C CNN
-	1    1300 6250
+P 1300 6150
+F 0 "#PWR01" H 1300 5900 50  0001 C CNN
+F 1 "GND" H 1305 5977 50  0000 C CNN
+F 2 "" H 1300 6150 50  0001 C CNN
+F 3 "" H 1300 6150 50  0001 C CNN
+	1    1300 6150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1300 6250 1300 6150
-Text Notes 1100 6400 1    50   ~ 0
+Text Notes 1100 6300 1    50   ~ 0
 oscillator freq\ncontrol. 100k = 250kHz
-Text GLabel 2100 6100 0    50   Input ~ 0
-CHG_SHDN
-Wire Wire Line
-	2100 6100 2300 6100
 Text GLabel 2150 6700 0    50   Output ~ 0
 CHG_STAT1
 Wire Wire Line
@@ -4214,10 +4199,8 @@ Text GLabel 2150 6850 0    50   Output ~ 0
 CHG_STAT2
 Wire Wire Line
 	2300 6850 2150 6850
-Text Label 1900 6400 2    50   ~ 0
+Text Label 1850 6400 2    50   ~ 0
 CHG_INTVCC
-Wire Wire Line
-	2200 6400 2300 6400
 Text Label 3450 4100 0    50   ~ 0
 CHG_INTVCC
 Wire Wire Line
@@ -4402,61 +4385,50 @@ Wire Wire Line
 $Comp
 L Device:R_Small R53
 U 1 1 6229022C
-P 2050 7650
-F 0 "R53" H 1991 7604 50  0000 R CNN
-F 1 "100k" H 1991 7695 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2050 7650 50  0001 C CNN
-F 3 "~" H 2050 7650 50  0001 C CNN
-F 4 "y" H 2050 7650 50  0001 C CNN "Checked"
-F 5 "Mouser" H 2050 7650 50  0001 C CNN "Distributor"
-F 6 "Vishay Dale" H 2050 7650 50  0001 C CNN "Manufacturer"
-F 7 "CRCW0603100KJNEAC" H 2050 7650 50  0001 C CNN "Manufacturer_No"
-	1    2050 7650
+P 2050 7300
+F 0 "R53" H 1991 7254 50  0000 R CNN
+F 1 "330" H 1991 7345 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2050 7300 50  0001 C CNN
+F 3 "~" H 2050 7300 50  0001 C CNN
+F 4 "y" H 2050 7300 50  0001 C CNN "Checked"
+F 5 "Mouser" H 2050 7300 50  0001 C CNN "Distributor"
+F 6 "Yageo" H 2050 7300 50  0001 C CNN "Manufacturer"
+F 7 "RC0603FR-07330RL" H 2050 7300 50  0001 C CNN "Manufacturer_No"
+	1    2050 7300
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	2300 7150 2050 7150
-$Comp
-L power:GND #PWR0175
-U 1 1 6230A3C6
-P 2050 7850
-F 0 "#PWR0175" H 2050 7600 50  0001 C CNN
-F 1 "GND" H 2055 7677 50  0000 C CNN
-F 2 "" H 2050 7850 50  0001 C CNN
-F 3 "" H 2050 7850 50  0001 C CNN
-	1    2050 7850
-	1    0    0    -1  
-$EndComp
-Text Notes 2200 8300 2    50   ~ 0
-charge current\nlimit control
+Text Notes 2100 7950 2    50   ~ 0
+charge current\nlimit control\n(toggles no charge\n/no limit)
 $Comp
 L Device:R_Small R8
 U 1 1 62483A5A
-P 3450 8200
-F 0 "R8" H 3391 8154 50  0000 R CNN
-F 1 "100k" H 3391 8245 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3450 8200 50  0001 C CNN
-F 3 "~" H 3450 8200 50  0001 C CNN
-F 4 "y" H 3450 8200 50  0001 C CNN "Checked"
-F 5 "Mouser" H 3450 8200 50  0001 C CNN "Distributor"
-F 6 "Vishay Dale" H 3450 8200 50  0001 C CNN "Manufacturer"
-F 7 "CRCW0603100KJNEAC" H 3450 8200 50  0001 C CNN "Manufacturer_No"
-	1    3450 8200
+P 3450 8050
+F 0 "R8" H 3391 8004 50  0000 R CNN
+F 1 "100k" H 3391 8095 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3450 8050 50  0001 C CNN
+F 3 "~" H 3450 8050 50  0001 C CNN
+F 4 "y" H 3450 8050 50  0001 C CNN "Checked"
+F 5 "Mouser" H 3450 8050 50  0001 C CNN "Distributor"
+F 6 "Vishay Dale" H 3450 8050 50  0001 C CNN "Manufacturer"
+F 7 "CRCW0603100KJNEAC" H 3450 8050 50  0001 C CNN "Manufacturer_No"
+	1    3450 8050
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0188
 U 1 1 62483DD4
-P 3450 8350
-F 0 "#PWR0188" H 3450 8100 50  0001 C CNN
-F 1 "GND" H 3455 8177 50  0000 C CNN
-F 2 "" H 3450 8350 50  0001 C CNN
-F 3 "" H 3450 8350 50  0001 C CNN
-	1    3450 8350
+P 3450 8200
+F 0 "#PWR0188" H 3450 7950 50  0001 C CNN
+F 1 "GND" H 3455 8027 50  0000 C CNN
+F 2 "" H 3450 8200 50  0001 C CNN
+F 3 "" H 3450 8200 50  0001 C CNN
+	1    3450 8200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3450 8350 3450 8300
+	3450 8200 3450 8150
 $Comp
 L Device:C_Small C44
 U 1 1 6257D170
@@ -4532,7 +4504,7 @@ Wire Wire Line
 	4600 2450 4600 1400
 Connection ~ 4600 2450
 Text Notes 4650 2500 0    50   ~ 0
-battery system\nVOUT
+Battery system\nVOUT
 Wire Wire Line
 	6400 4700 6400 5400
 Text Notes 6450 4100 2    50   ~ 0
@@ -4542,7 +4514,7 @@ Wire Wire Line
 Text Label 4700 1400 0    50   ~ 0
 30V_GATE
 Text Notes 9650 1350 0    50   ~ 0
-TODO: fixme UVLO calc!
+TODO: check UVLO calc!
 Text Notes 1800 5400 2    50   ~ 0
 Csensb
 $Comp
@@ -4572,6 +4544,7 @@ F 4 "Yageo" H 3550 7250 50  0001 C CNN "Manufacturer"
 F 5 "CC0603JPX7R9BB104" H 3550 7250 50  0001 C CNN "Manufacturer_No"
 F 6 "y" H 3550 7250 50  0001 C CNN "Checked"
 F 7 "Mouser" H 3550 7250 50  0001 C CNN "Distributor"
+F 8 "y" H 3550 7250 50  0001 C CNN "DNP"
 	1    3550 7250
 	-1   0    0    1   
 $EndComp
@@ -4594,7 +4567,7 @@ $EndComp
 Wire Wire Line
 	3550 7500 3550 7350
 Text Notes 3750 7500 2    50   ~ 0
-DNP!
+NOSTUFF
 Wire Wire Line
 	3450 4900 3450 5050
 Connection ~ 3450 5050
@@ -4645,7 +4618,7 @@ F 7 "Mouser" H 1850 5050 50  0001 C CNN "Distributor"
 	1    1850 5050
 	0    1    1    0   
 $EndComp
-Text Notes 5450 5350 0    50   ~ 0
+Text Notes 4700 4850 0    50   ~ 0
 These values are\ncargoculted from the\nmanual and should\nbe verified with a VNA
 Wire Wire Line
 	3350 7900 3250 7900
@@ -4661,8 +4634,6 @@ Wire Wire Line
 Wire Wire Line
 	4250 4000 4250 4150
 Connection ~ 3450 4000
-Wire Wire Line
-	2050 7750 2050 7850
 Wire Wire Line
 	3350 5500 3600 5500
 $Comp
@@ -4954,9 +4925,9 @@ Connection ~ 4800 3000
 Wire Wire Line
 	4800 3000 4800 2950
 Wire Wire Line
-	3450 5650 3450 8100
+	3450 5650 3450 7950
 Wire Wire Line
-	2050 7150 2050 7550
+	2050 7150 2050 7200
 Wire Wire Line
 	3350 4450 3750 4450
 Connection ~ 3750 4450
@@ -5013,7 +4984,6 @@ F 7 "y" H 14500 3050 50  0001 C CNN "Checked"
 	1    14500 3050
 	0    -1   -1   0   
 $EndComp
-NoConn ~ 12050 6550
 Wire Wire Line
 	11350 4200 11150 4200
 Wire Wire Line
@@ -5191,7 +5161,7 @@ Text Notes 1850 9450 0    50   ~ 0
 I2C lines pulled up\nby SYS 3v3 power\nnear DAC
 Text Notes 950  9450 0    50   ~ 0
 Powered by \nmain batteries\nin standby
-Text Notes 3000 9150 0    50   ~ 0
+Text Notes 3000 9250 0    50   ~ 0
 Powered by coin\ncell when batteries\nremoved
 $Comp
 L Device:R_Small R188
@@ -5285,10 +5255,6 @@ $EndComp
 Connection ~ 15500 1600
 Wire Wire Line
 	15800 1600 15500 1600
-Text GLabel 11500 6950 0    50   Input ~ 0
-CHG_SHDN
-Text Notes 12550 5300 0    50   ~ 0
-TODO: connect chgstat 1+2 to LPC?\n
 $Comp
 L power:PWR_FLAG #FLG0115
 U 1 1 6A8CF7AB
@@ -5313,25 +5279,8 @@ F 3 "~" H 4600 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4600 1000
-$Comp
-L Device:R_Small R190
-U 1 1 6A95DC80
-P 11650 6950
-F 0 "R190" V 11700 7050 50  0000 C CNN
-F 1 "0" V 11650 6950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 11650 6950 50  0001 C CNN
-F 3 "~" H 11650 6950 50  0001 C CNN
-F 4 "Vishay Dale" H 11650 6950 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 11650 6950 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 11650 6950 50  0001 C CNN "Distributor"
-F 7 "y" H 11650 6950 50  0001 C CNN "Checked"
-	1    11650 6950
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	11750 6950 12550 6950
-Wire Wire Line
-	11550 6950 11500 6950
 Text Label 9850 4050 0    50   ~ 0
 CHG_INTVCC
 Wire Wire Line
@@ -5424,10 +5373,6 @@ Wire Wire Line
 Connection ~ 5800 3100
 Wire Wire Line
 	5800 3100 5800 3150
-Text Notes 4100 6250 2    50   ~ 0
-DNP!
-Text Notes 4600 5700 2    50   ~ 0
-opt: 100
 Wire Wire Line
 	1900 4000 2300 4000
 Wire Wire Line
@@ -5565,7 +5510,7 @@ Connection ~ 2900 1400
 Wire Wire Line
 	2900 1400 2900 1350
 Text Notes 3050 1500 0    50   ~ 0
-inrush current\nlimiter, thx zoé
+inrush current\nlimiter, thanks zoé
 Wire Wire Line
 	2900 1650 2900 1600
 Wire Wire Line
@@ -5640,8 +5585,6 @@ Wire Wire Line
 Wire Wire Line
 	2100 2150 2100 2200
 Wire Wire Line
-	1300 2150 1300 4300
-Wire Wire Line
 	2100 2150 1300 2150
 $Comp
 L Device:R_Small R49
@@ -5714,8 +5657,6 @@ F 7 "Mouser" H 2050 750 50  0001 C CNN "Distributor"
 	1    2050 750 
 	0    -1   -1   0   
 $EndComp
-Text Notes 6100 10350 0    50   ~ 0
-Battery cable: Molex 45130-1003 (30cm, 10pos, 2rows)
 $Comp
 L Connector_Generic:Conn_01x05 J13
 U 1 1 5F00ED51
@@ -5753,7 +5694,7 @@ Wire Notes Line
 Wire Notes Line
 	4650 7000 4650 6950
 Wire Wire Line
-	3900 5950 4300 5950
+	3950 5950 4300 5950
 Wire Wire Line
 	4050 5750 4600 5750
 Connection ~ 4600 5750
@@ -5764,20 +5705,20 @@ VFBMAX = 2.75*(1+(100/10))\n= 30.25V
 $Comp
 L Device:R_Small R193
 U 1 1 600AB2D1
-P 2100 6400
-F 0 "R193" V 2050 6600 50  0000 R CNN
-F 1 "0" V 2100 6400 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2100 6400 50  0001 C CNN
-F 3 "~" H 2100 6400 50  0001 C CNN
-F 4 "Mouser" H 2100 6400 50  0001 C CNN "Distributor"
-F 5 "y" H 2100 6400 50  0001 C CNN "Checked"
-F 6 "Vishay Dale" H 2100 6400 50  0001 C CNN "Manufacturer"
-F 7 "CRCW06030000Z0EAC" H 2100 6400 50  0001 C CNN "Manufacturer_No"
-	1    2100 6400
+P 2000 6400
+F 0 "R193" V 1950 6700 50  0000 R CNN
+F 1 "0" V 2000 6400 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2000 6400 50  0001 C CNN
+F 3 "~" H 2000 6400 50  0001 C CNN
+F 4 "Mouser" H 2000 6400 50  0001 C CNN "Distributor"
+F 5 "y" H 2000 6400 50  0001 C CNN "Checked"
+F 6 "Vishay Dale" H 2000 6400 50  0001 C CNN "Manufacturer"
+F 7 "CRCW06030000Z0EAC" H 2000 6400 50  0001 C CNN "Manufacturer_No"
+	1    2000 6400
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1900 6400 2000 6400
+	1850 6400 1900 6400
 Text Notes 14550 6450 0    50   ~ 0
 EN_5V!
 Text Notes 14550 6550 0    50   ~ 0
@@ -5786,12 +5727,115 @@ Text Notes 14550 6650 0    50   ~ 0
 EN_1V2!
 Text Label 10950 8350 2    50   ~ 0
 LPC_MOSI1a
-Text Notes 10900 950  0    50   ~ 0
-TODO: missing FB!\nsolution: LMR16006YQ3
-Text Notes 2200 8500 2    50   ~ 0
-TODO: wire this to a LPC GPIO\nor better a current sink DAC
-Text Notes 9650 7100 0    50   ~ 0
-TODO: less ohms\nmore watts\nfor bypass Rs
-Text Notes 1150 6850 2    50   ~ 0
-TODO: CHG_SHDN\nworks differently\nthan expected
+Text Notes 11500 6850 0    50   ~ 0
+NOSTUFF
+$Comp
+L Device:R_Small R?
+U 1 1 5ECB231A
+P 2150 6250
+AR Path="/5ECB231A" Ref="R?"  Part="1" 
+AR Path="/5CC81028/5ECB231A" Ref="R162"  Part="1" 
+F 0 "R162" V 2050 6300 50  0000 C CNN
+F 1 "10k" V 2250 6250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2150 6250 50  0001 C CNN
+F 3 "~" H 2150 6250 50  0001 C CNN
+F 4 "Yageo" H 2150 6250 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H 2150 6250 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 2150 6250 50  0001 C CNN "Checked"
+F 7 "Mouser" H 2150 6250 50  0001 C CNN "Distributor"
+	1    2150 6250
+	1    0    0    -1  
+$EndComp
+Text Label 15200 9500 0    50   ~ 0
+LPC_UVBUS
+$Comp
+L Device:R_Small R195
+U 1 1 5F171F6D
+P 15200 9250
+F 0 "R195" H 15259 9296 50  0000 L CNN
+F 1 "1.5k" H 15259 9205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 15200 9250 50  0001 C CNN
+F 3 "~" H 15200 9250 50  0001 C CNN
+F 4 "Yageo" H 15200 9250 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071K5L" H 15200 9250 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 15200 9250 50  0001 C CNN "Checked"
+F 7 "Mouser" H 15200 9250 50  0001 C CNN "Distributor"
+	1    15200 9250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15200 9500 15200 9350
+Text Label 15200 9000 0    50   ~ 0
+LPC_VCC
+Wire Wire Line
+	15200 9000 15200 9150
+Text GLabel 1950 7500 0    50   Input ~ 0
+CHG_RNG
+Wire Wire Line
+	1950 7500 2050 7500
+Wire Wire Line
+	2050 7400 2050 7500
+Text GLabel 15550 7250 2    50   Output ~ 0
+CHG_RNG
+Wire Wire Line
+	13950 7250 15550 7250
+Wire Wire Line
+	1300 2150 1300 4300
+Text Label 11500 8450 0    50   ~ 0
+LPC_SCLKa
+$Comp
+L Device:R_Small R194
+U 1 1 60AC940D
+P 15100 7550
+F 0 "R194" V 15150 7650 50  0000 C CNN
+F 1 "0" V 15100 7550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 15100 7550 50  0001 C CNN
+F 3 "~" H 15100 7550 50  0001 C CNN
+F 4 "Vishay Dale" H 15100 7550 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 15100 7550 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 15100 7550 50  0001 C CNN "Distributor"
+F 7 "y" H 15100 7550 50  0001 C CNN "Checked"
+	1    15100 7550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13950 7550 15000 7550
+Wire Wire Line
+	15550 7550 15200 7550
+Text GLabel 15550 7550 2    50   Output ~ 0
+IMX_RESETn
+Text Notes -1050 6600 0    50   ~ 0
+FIXME: confirm\ntemperature stress\nof balancing Rs
+Wire Wire Line
+	1300 5800 2300 5800
+Wire Wire Line
+	2100 6400 2150 6400
+Wire Wire Line
+	2150 6100 2150 6150
+Wire Wire Line
+	2150 6100 2300 6100
+Wire Wire Line
+	2150 6350 2150 6400
+Connection ~ 2150 6400
+Wire Wire Line
+	2150 6400 2300 6400
+NoConn ~ 11500 6950
+Wire Wire Line
+	11550 6950 11500 6950
+$Comp
+L Device:R_Small R190
+U 1 1 6A95DC80
+P 11650 6950
+F 0 "R190" V 11700 7050 50  0000 C CNN
+F 1 "0" V 11650 6950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 11650 6950 50  0001 C CNN
+F 3 "~" H 11650 6950 50  0001 C CNN
+F 4 "Vishay Dale" H 11650 6950 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 11650 6950 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 11650 6950 50  0001 C CNN "Distributor"
+F 7 "y" H 11650 6950 50  0001 C CNN "Checked"
+F 8 "y" H 11650 6950 50  0001 C CNN "DNP"
+	1    11650 6950
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

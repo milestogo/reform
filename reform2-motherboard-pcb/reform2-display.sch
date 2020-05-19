@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 9
 Title "MNT Reform 2 Internal Display"
-Date "2020-04-11"
+Date "2020-05-19"
 Rev "2.0D-4"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
@@ -866,48 +866,10 @@ Wire Wire Line
 Connection ~ 8950 4350
 Wire Wire Line
 	9300 4150 9600 4150
-$Comp
-L Device:R_Small R133
-U 1 1 5EDE1689
-P 9300 3550
-F 0 "R133" V 9400 3550 50  0000 C CNN
-F 1 "0" V 9300 3550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9300 3550 50  0001 C CNN
-F 3 "~" H 9300 3550 50  0001 C CNN
-F 4 "Vishay Dale" H 9300 3550 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 9300 3550 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 9300 3550 50  0001 C CNN "Distributor"
-F 7 "y" H 9300 3550 50  0001 C CNN "Checked"
-	1    9300 3550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9400 3550 10100 3550
-$Comp
-L Device:R_Small R134
-U 1 1 5EDF03FF
-P 9300 3450
-F 0 "R134" V 9200 3400 50  0000 C CNN
-F 1 "0" V 9300 3450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9300 3450 50  0001 C CNN
-F 3 "~" H 9300 3450 50  0001 C CNN
-F 4 "Vishay Dale" H 9300 3450 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 9300 3450 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 9300 3450 50  0001 C CNN "Distributor"
-F 7 "y" H 9300 3450 50  0001 C CNN "Checked"
-	1    9300 3450
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10100 3450 9400 3450
 Text GLabel 9100 3450 0    50   Input ~ 0
 BACKLIGHT_EN
-Wire Wire Line
-	9100 3450 9200 3450
 Text GLabel 9100 3550 0    50   Input ~ 0
 BACKLIGHT_PWM
-Wire Wire Line
-	9100 3550 9200 3550
 $Comp
 L reform2:SN65DSI86ZQER U10
 U 1 1 5D1D2542
@@ -950,6 +912,7 @@ F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3150 4100 50  0001 C CNN
 F 3 "~" H 3150 4100 50  0001 C CNN
 F 4 "y" H 2950 4100 50  0001 C CNN "Checked"
 F 5 "None" H 2950 4100 50  0001 C CNN "Distributor"
+F 6 "y" H 2950 4100 50  0001 C CNN "DNP"
 	1    2950 4100
 	1    0    0    -1  
 $EndComp
@@ -1090,6 +1053,7 @@ F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3000 3850 50  0001 C CNN
 F 3 "~" H 3000 3850 50  0001 C CNN
 F 4 "y" H 2800 3850 50  0001 C CNN "Checked"
 F 5 "None" H 2800 3850 50  0001 C CNN "Distributor"
+F 6 "y" H 2800 3850 50  0001 C CNN "DNP"
 	1    2800 3850
 	1    0    0    -1  
 $EndComp
@@ -1103,6 +1067,7 @@ F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2850 3650 50  0001 C CNN
 F 3 "~" H 2850 3650 50  0001 C CNN
 F 4 "y" H 2650 3650 50  0001 C CNN "Checked"
 F 5 "None" H 2650 3650 50  0001 C CNN "Distributor"
+F 6 "y" H 2650 3650 50  0001 C CNN "DNP"
 	1    2650 3650
 	1    0    0    -1  
 $EndComp
@@ -1116,6 +1081,7 @@ F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2700 3450 50  0001 C CNN
 F 3 "~" H 2700 3450 50  0001 C CNN
 F 4 "y" H 2500 3450 50  0001 C CNN "Checked"
 F 5 "None" H 2500 3450 50  0001 C CNN "Distributor"
+F 6 "y" H 2500 3450 50  0001 C CNN "DNP"
 	1    2500 3450
 	1    0    0    -1  
 $EndComp
@@ -1258,4 +1224,8 @@ works well with PWM period 10000
 NoConn ~ 9500 2050
 NoConn ~ 9000 2050
 NoConn ~ 9500 1950
+Wire Wire Line
+	9100 3550 10100 3550
+Wire Wire Line
+	9100 3450 10100 3450
 $EndSCHEMATC

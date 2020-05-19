@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 9
 Title "MNT Reform 2 External Display"
-Date "2020-04-11"
+Date "2020-05-19"
 Rev "2.0D-4"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
@@ -419,7 +419,7 @@ $EndComp
 Wire Wire Line
 	6650 3900 6650 4100
 Wire Wire Line
-	6650 4100 6150 4100
+	6650 4100 6550 4100
 $Comp
 L Device:C_Small C29
 U 1 1 5D156EA0
@@ -516,7 +516,7 @@ $Comp
 L Device:C_Small C27
 U 1 1 5D171FA3
 P 6000 4500
-F 0 "C27" V 5771 4500 50  0000 C CNN
+F 0 "C27" V 5850 4700 50  0000 C CNN
 F 1 "0.1uF" V 5862 4500 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6000 4500 50  0001 C CNN
 F 3 "~" H 6000 4500 50  0001 C CNN
@@ -578,7 +578,7 @@ Wire Wire Line
 	8750 5750 8750 5700
 NoConn ~ 7650 3200
 Wire Wire Line
-	5900 5700 7450 5700
+	5900 5700 6700 5700
 Wire Wire Line
 	7450 5700 7450 2700
 Wire Wire Line
@@ -618,22 +618,101 @@ $EndComp
 $Comp
 L Device:R_Small R161
 U 1 1 5FF563B3
-P 6050 4100
-F 0 "R161" V 6100 3950 50  0000 C CNN
-F 1 "10k" V 6100 4250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6050 4100 50  0001 C CNN
-F 3 "~" H 6050 4100 50  0001 C CNN
-F 4 "y" H 6050 4100 50  0001 C CNN "Checked"
-F 5 "Mouser" H 6050 4100 50  0001 C CNN "Distributor"
-F 6 "Yageo" H 6050 4100 50  0001 C CNN "Manufacturer"
-F 7 "RC0603FR-0710KL" H 6050 4100 50  0001 C CNN "Manufacturer_No"
-	1    6050 4100
+P 6450 4100
+F 0 "R161" V 6500 3950 50  0000 C CNN
+F 1 "10k" V 6500 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6450 4100 50  0001 C CNN
+F 3 "~" H 6450 4100 50  0001 C CNN
+F 4 "y" H 6450 4100 50  0001 C CNN "Checked"
+F 5 "Mouser" H 6450 4100 50  0001 C CNN "Distributor"
+F 6 "Yageo" H 6450 4100 50  0001 C CNN "Manufacturer"
+F 7 "RC0603FR-0710KL" H 6450 4100 50  0001 C CNN "Manufacturer_No"
+	1    6450 4100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5950 4100 5900 4100
+	6350 4100 6000 4100
 Text Notes 6550 4900 0    50   ~ 0
 TODO: Test. Datasheet says 1.7k
-Text Notes 8600 6150 0    50   ~ 0
-TODO: CEC not implemented
+$Comp
+L power:PWR_FLAG #FLG0120
+U 1 1 5EEAD7AD
+P 6000 4100
+F 0 "#FLG0120" H 6000 4175 50  0001 C CNN
+F 1 "PWR_FLAG" H 6000 4250 50  0000 C CNN
+F 2 "" H 6000 4100 50  0001 C CNN
+F 3 "~" H 6000 4100 50  0001 C CNN
+	1    6000 4100
+	-1   0    0    1   
+$EndComp
+Connection ~ 6000 4100
+Wire Wire Line
+	6000 4100 5900 4100
+$Comp
+L power:+3V3 #PWR0239
+U 1 1 5EEB135F
+P 6700 5350
+F 0 "#PWR0239" H 6700 5200 50  0001 C CNN
+F 1 "+3V3" H 6715 5523 50  0000 C CNN
+F 2 "" H 6700 5350 50  0001 C CNN
+F 3 "" H 6700 5350 50  0001 C CNN
+	1    6700 5350
+	1    0    0    -1  
+$EndComp
+Text GLabel 9150 6100 2    50   BiDi ~ 0
+HDMI_CEC
+$Comp
+L power:+3V3 #PWR0246
+U 1 1 5EEB1BBD
+P 8750 6050
+F 0 "#PWR0246" H 8750 5900 50  0001 C CNN
+F 1 "+3V3" H 8765 6223 50  0000 C CNN
+F 2 "" H 8750 6050 50  0001 C CNN
+F 3 "" H 8750 6050 50  0001 C CNN
+	1    8750 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 6100 9150 6100
+Wire Wire Line
+	8900 6100 8750 6100
+Wire Wire Line
+	8750 6100 8750 6050
+$Comp
+L Device:R_Small R197
+U 1 1 5EEB1BCE
+P 9000 6100
+F 0 "R197" V 8804 6100 50  0000 C CNN
+F 1 "47k" V 8895 6100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9000 6100 50  0001 C CNN
+F 3 "~" H 9000 6100 50  0001 C CNN
+F 4 "Vishay Dale" H 9000 6100 50  0001 C CNN "Manufacturer"
+F 5 "CRCW060347K0FKEAC" H 9000 6100 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 9000 6100 50  0001 C CNN "Distributor"
+F 7 "y" H 9000 6100 50  0001 C CNN "Checked"
+	1    9000 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R192
+U 1 1 5EEB5B3A
+P 6700 5550
+F 0 "R192" H 6759 5596 50  0000 L CNN
+F 1 "27k" H 6759 5505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6700 5550 50  0001 C CNN
+F 3 "~" H 6700 5550 50  0001 C CNN
+F 4 "Bourns" H 6700 5550 50  0001 C CNN "Manufacturer"
+F 5 "CR0603-FX-2702ELF" H 6700 5550 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 6700 5550 50  0001 C CNN "Checked"
+F 7 "Mouser" H 6700 5550 50  0001 C CNN "Distributor"
+	1    6700 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 5450 6700 5350
+Wire Wire Line
+	6700 5650 6700 5700
+Connection ~ 6700 5700
+Wire Wire Line
+	6700 5700 7450 5700
 $EndSCHEMATC

@@ -5,7 +5,7 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 9
 Title "MNT Reform 2"
-Date "2020-04-11"
+Date "2020-05-19"
 Rev "2.0D-4"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
@@ -145,6 +145,7 @@ F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7600 5250 50  0001 C CNN
 F 3 "~" H 7600 5250 50  0001 C CNN
 F 4 "y" H 7400 5250 50  0001 C CNN "Checked"
 F 5 "None" H 7400 5250 50  0001 C CNN "Distributor"
+F 6 "y" H 7400 5250 50  0001 C CNN "DNP"
 	1    7400 5250
 	0    -1   -1   0   
 $EndComp
@@ -211,6 +212,7 @@ F 2 "footprints:cpu" H 15050 10000 50  0001 C CNN
 F 3 "~" H 15050 10000 50  0001 C CNN
 F 4 "y" H 15050 10000 50  0001 C CNN "Checked"
 F 5 "None" H 15050 10000 50  0001 C CNN "Distributor"
+F 6 "y" H 15050 10000 50  0001 C CNN "DNP"
 	1    15050 10000
 	1    0    0    -1  
 $EndComp
@@ -738,6 +740,7 @@ F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 12000 3850 50  0001 C CNN
 F 3 "~" H 12000 3850 50  0001 C CNN
 F 4 "y" H 11800 3850 50  0001 C CNN "Checked"
 F 5 "None" H 11800 3850 50  0001 C CNN "Distributor"
+F 6 "y" H 11800 3850 50  0001 C CNN "DNP"
 	1    11800 3850
 	0    1    1    0   
 $EndComp
@@ -766,6 +769,7 @@ F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 16300 8650 50  0001 C CNN
 F 3 "~" H 16300 8650 50  0001 C CNN
 F 4 "y" H 16300 8650 50  0001 C CNN "Checked"
 F 5 "None" H 16300 8650 50  0001 C CNN "Distributor"
+F 6 "y" H 16300 8650 50  0001 C CNN "DNP"
 	1    16300 8650
 	1    0    0    -1  
 $EndComp
@@ -796,6 +800,7 @@ F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 16300 7950 50  0001 C CNN
 F 3 "~" H 16300 7950 50  0001 C CNN
 F 4 "y" H 16300 7950 50  0001 C CNN "Checked"
 F 5 "None" H 16300 7950 50  0001 C CNN "Distributor"
+F 6 "y" H 16300 7950 50  0001 C CNN "DNP"
 	1    16300 7950
 	1    0    0    -1  
 $EndComp
@@ -826,6 +831,7 @@ F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 16300 7300 50  0001 C CNN
 F 3 "~" H 16300 7300 50  0001 C CNN
 F 4 "y" H 16300 7300 50  0001 C CNN "Checked"
 F 5 "None" H 16300 7300 50  0001 C CNN "Distributor"
+F 6 "y" H 16300 7300 50  0001 C CNN "DNP"
 	1    16300 7300
 	1    0    0    -1  
 $EndComp
@@ -860,6 +866,7 @@ F 4 "Yageo" H 15650 4600 50  0001 C CNN "Manufacturer"
 F 5 "RC0603FR-0710KL" H 15650 4600 50  0001 C CNN "Manufacturer_No"
 F 6 "y" H 15650 4600 50  0001 C CNN "Checked"
 F 7 "Mouser" H 15650 4600 50  0001 C CNN "Distributor"
+F 8 "y" H 15650 4600 50  0001 C CNN "DNP"
 	1    15650 4600
 	1    0    0    -1  
 $EndComp
@@ -890,6 +897,7 @@ F 4 "Yageo" H 15350 4600 50  0001 C CNN "Manufacturer"
 F 5 "RC0603FR-0710KL" H 15350 4600 50  0001 C CNN "Manufacturer_No"
 F 6 "y" H 15350 4600 50  0001 C CNN "Checked"
 F 7 "Mouser" H 15350 4600 50  0001 C CNN "Distributor"
+F 8 "y" H 15350 4600 50  0001 C CNN "DNP"
 	1    15350 4600
 	1    0    0    -1  
 $EndComp
@@ -905,6 +913,7 @@ F 4 "Yageo" H 15050 4600 50  0001 C CNN "Manufacturer"
 F 5 "RC0603FR-0710KL" H 15050 4600 50  0001 C CNN "Manufacturer_No"
 F 6 "y" H 15050 4600 50  0001 C CNN "Checked"
 F 7 "Mouser" H 15050 4600 50  0001 C CNN "Distributor"
+F 8 "y" H 15050 4600 50  0001 C CNN "DNP"
 	1    15050 4600
 	1    0    0    -1  
 $EndComp
@@ -1094,6 +1103,7 @@ F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 15050 8650 50  0001 C CNN
 F 3 "~" H 15050 8650 50  0001 C CNN
 F 4 "y" H 15050 8650 50  0001 C CNN "Checked"
 F 5 "None" H 15050 8650 50  0001 C CNN "Distributor"
+F 6 "y" H 15050 8650 50  0001 C CNN "DNP"
 	1    15050 8650
 	1    0    0    -1  
 $EndComp
@@ -1118,6 +1128,7 @@ F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 15050 8200 50  0001 C CNN
 F 3 "~" H 15050 8200 50  0001 C CNN
 F 4 "y" H 15050 8200 50  0001 C CNN "Checked"
 F 5 "None" H 15050 8200 50  0001 C CNN "Distributor"
+F 6 "y" H 15050 8200 50  0001 C CNN "DNP"
 	1    15050 8200
 	1    0    0    -1  
 $EndComp
@@ -1142,6 +1153,7 @@ F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 15050 7750 50  0001 C CNN
 F 3 "~" H 15050 7750 50  0001 C CNN
 F 4 "y" H 15050 7750 50  0001 C CNN "Checked"
 F 5 "None" H 15050 7750 50  0001 C CNN "Distributor"
+F 6 "y" H 15050 7750 50  0001 C CNN "DNP"
 	1    15050 7750
 	1    0    0    -1  
 $EndComp
@@ -1166,6 +1178,7 @@ F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 15050 7300 50  0001 C CNN
 F 3 "~" H 15050 7300 50  0001 C CNN
 F 4 "y" H 15050 7300 50  0001 C CNN "Checked"
 F 5 "None" H 15050 7300 50  0001 C CNN "Distributor"
+F 6 "y" H 15050 7300 50  0001 C CNN "DNP"
 	1    15050 7300
 	1    0    0    -1  
 $EndComp
@@ -1179,6 +1192,7 @@ F 2 "footprints:nvme" H 15050 9750 50  0001 C CNN
 F 3 "~" H 15050 9750 50  0001 C CNN
 F 4 "y" H 15050 9750 50  0001 C CNN "Checked"
 F 5 "None" H 15050 9750 50  0001 C CNN "Distributor"
+F 6 "y" H 15050 9750 50  0001 C CNN "DNP"
 	1    15050 9750
 	1    0    0    -1  
 $EndComp
@@ -1192,6 +1206,7 @@ F 2 "footprints:mpcie" H 15050 9500 50  0001 C CNN
 F 3 "~" H 15050 9500 50  0001 C CNN
 F 4 "y" H 15050 9500 50  0001 C CNN "Checked"
 F 5 "None" H 15050 9500 50  0001 C CNN "Distributor"
+F 6 "y" H 15050 9500 50  0001 C CNN "DNP"
 	1    15050 9500
 	1    0    0    -1  
 $EndComp
@@ -1205,6 +1220,7 @@ F 2 "reform2-motherboard:mntreform" H 15050 9250 50  0001 C CNN
 F 3 "~" H 15050 9250 50  0001 C CNN
 F 4 "y" H 15050 9250 50  0001 C CNN "Checked"
 F 5 "None" H 15050 9250 50  0001 C CNN "Distributor"
+F 6 "y" H 15050 9250 50  0001 C CNN "DNP"
 	1    15050 9250
 	1    0    0    -1  
 $EndComp
@@ -1476,6 +1492,7 @@ F 2 "Symbol:WEEE-Logo_4.2x6mm_SilkScreen" H 15050 10250 50  0001 C CNN
 F 3 "~" H 15050 10250 50  0001 C CNN
 F 4 "y" H 15050 10250 50  0001 C CNN "Checked"
 F 5 "None" H 15050 10250 50  0001 C CNN "Distributor"
+F 6 "y" H 15050 10250 50  0001 C CNN "DNP"
 	1    15050 10250
 	1    0    0    -1  
 $EndComp
@@ -1489,6 +1506,7 @@ F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8700 10650 50  0001 C CNN
 F 3 "~" H 8700 10650 50  0001 C CNN
 F 4 "y" H 8500 10650 50  0001 C CNN "Checked"
 F 5 "None" H 8500 10650 50  0001 C CNN "Distributor"
+F 6 "y" H 8500 10650 50  0001 C CNN "DNP"
 	1    8500 10650
 	0    -1   -1   0   
 $EndComp
@@ -1564,6 +1582,7 @@ F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 11000 12150 50  0001 C CNN
 F 3 "~" H 11000 12150 50  0001 C CNN
 F 4 "y" H 10800 12150 50  0001 C CNN "Checked"
 F 5 "None" H 10800 12150 50  0001 C CNN "Distributor"
+F 6 "y" H 10800 12150 50  0001 C CNN "DNP"
 	1    10800 12150
 	0    1    1    0   
 $EndComp
@@ -1767,50 +1786,6 @@ Text GLabel 7300 10550 0    50   Input ~ 0
 IMX_RTC_IRQ
 Wire Wire Line
 	8700 10550 7300 10550
-Text GLabel 11950 12750 2    50   Input ~ 0
-PCIE1_XREFCLK_P
-Text GLabel 11950 11450 2    50   Input ~ 0
-PCIE1_XREFCLK_N
-Wire Wire Line
-	10400 12750 11750 12750
-Wire Wire Line
-	10400 11450 11750 11450
-$Comp
-L Device:R_Small R191
-U 1 1 5E410610
-P 11850 11450
-F 0 "R191" V 11750 11450 50  0000 C CNN
-F 1 "0" V 11850 11450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 11850 11450 50  0001 C CNN
-F 3 "~" H 11850 11450 50  0001 C CNN
-F 4 "Vishay Dale" H 11850 11450 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 11850 11450 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 11850 11450 50  0001 C CNN "Distributor"
-F 7 "y" H 11850 11450 50  0001 C CNN "Checked"
-	1    11850 11450
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R192
-U 1 1 5E410B4B
-P 11850 12750
-F 0 "R192" V 11750 12750 50  0000 C CNN
-F 1 "0" V 11850 12750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 11850 12750 50  0001 C CNN
-F 3 "~" H 11850 12750 50  0001 C CNN
-F 4 "Vishay Dale" H 11850 12750 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 11850 12750 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 11850 12750 50  0001 C CNN "Distributor"
-F 7 "y" H 11850 12750 50  0001 C CNN "Checked"
-	1    11850 12750
-	0    1    1    0   
-$EndComp
-Text Notes 12800 11500 0    50   ~ 0
-This is where Boundary\nprovides a patched-on\ntwisted pair for the missing\npcie0 refclock input (optional)\n
-Text GLabel 6600 5450 0    50   Output ~ 0
-PCIE1_DISn
-Wire Wire Line
-	8700 5450 6600 5450
 Wire Wire Line
 	18200 3250 18300 3250
 Wire Wire Line
@@ -1818,18 +1793,10 @@ Wire Wire Line
 Connection ~ 18300 3250
 Wire Wire Line
 	18300 3250 18750 3250
-Text Label 11000 11450 0    50   ~ 0
-PCIE1_XRCLK_N
-Text Label 11000 12750 0    50   ~ 0
-PCIE1_XRCLK_P
 Wire Wire Line
 	6600 5350 8700 5350
 Wire Wire Line
 	10400 4650 11200 4650
-Text Notes 11700 11300 0    50   ~ 0
-NOSTUFF!
-Text Notes 11700 12600 0    50   ~ 0
-NOSTUFF!
 Wire Wire Line
 	10500 12450 10400 12450
 Wire Wire Line
@@ -1856,6 +1823,7 @@ F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 12250 11950 50  0001 C CNN
 F 3 "~" H 12250 11950 50  0001 C CNN
 F 4 "y" H 12050 11950 50  0001 C CNN "Checked"
 F 5 "None" H 12050 11950 50  0001 C CNN "Distributor"
+F 6 "y" H 12050 11950 50  0001 C CNN "DNP"
 	1    12050 11950
 	0    -1   -1   0   
 $EndComp
@@ -1869,4 +1837,21 @@ Wire Wire Line
 	8700 8950 7500 8950
 Wire Wire Line
 	7500 8850 8700 8850
+NoConn ~ 10400 11450
+NoConn ~ 10400 12750
+$Comp
+L Mechanical:MountingHole H9
+U 1 1 5EC23958
+P 15050 10500
+F 0 "H9" H 15150 10546 50  0000 L CNN
+F 1 "OSHWA_DE17" H 15150 10455 50  0000 L CNN
+F 2 "footprints:oshwa-de17" H 15050 10500 50  0001 C CNN
+F 3 "~" H 15050 10500 50  0001 C CNN
+F 4 "y" H 15050 10500 50  0001 C CNN "Checked"
+F 5 "None" H 15050 10500 50  0001 C CNN "Distributor"
+F 6 "y" H 15050 10500 50  0001 C CNN "DNP"
+	1    15050 10500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8700 5450
 $EndSCHEMATC

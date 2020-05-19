@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 8 9
 Title "MNT Reform 2 USB"
-Date "2020-04-11"
+Date "2020-05-19"
 Rev "2.0D-4"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
@@ -298,17 +298,6 @@ USB_PWR
 Wire Wire Line
 	9600 1600 9900 1600
 Connection ~ 9900 1600
-$Comp
-L power:+1V1 #PWR035
-U 1 1 5D9F2CBF
-P 15450 1750
-F 0 "#PWR035" H 15450 1600 50  0001 C CNN
-F 1 "+1V1" H 15465 1923 50  0000 C CNN
-F 2 "" H 15450 1750 50  0001 C CNN
-F 3 "" H 15450 1750 50  0001 C CNN
-	1    15450 1750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	11800 2300 11900 2300
 Wire Wire Line
@@ -632,8 +621,6 @@ F 7 "Mouser" H 13050 1300 50  0001 C CNN "Distributor"
 $EndComp
 Wire Wire Line
 	13050 1400 13050 1750
-Wire Wire Line
-	15450 1750 15450 1800
 Wire Wire Line
 	13050 1150 13050 1200
 Wire Wire Line
@@ -1020,66 +1007,6 @@ F 7 "Mouser" H 5000 6300 50  0001 C CNN "Distributor"
 $EndComp
 Text GLabel 7050 5900 2    50   Input ~ 0
 USB_PWR
-$Comp
-L Device:R_Small R89
-U 1 1 5DA29AEA
-P 3000 1900
-F 0 "R89" V 2900 1900 50  0000 C CNN
-F 1 "0" V 3000 1900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3000 1900 50  0001 C CNN
-F 3 "~" H 3000 1900 50  0001 C CNN
-F 4 "Vishay Dale" H 3000 1900 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 3000 1900 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 3000 1900 50  0001 C CNN "Distributor"
-F 7 "y" H 3000 1900 50  0001 C CNN "Checked"
-	1    3000 1900
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R88
-U 1 1 5DA2A4B1
-P 3000 1600
-F 0 "R88" V 2900 1600 50  0000 C CNN
-F 1 "0" V 3000 1600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3000 1600 50  0001 C CNN
-F 3 "~" H 3000 1600 50  0001 C CNN
-F 4 "Vishay Dale" H 3000 1600 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 3000 1600 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 3000 1600 50  0001 C CNN "Distributor"
-F 7 "y" H 3000 1600 50  0001 C CNN "Checked"
-	1    3000 1600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R100
-U 1 1 5DA2A6C7
-P 6500 1600
-F 0 "R100" V 6400 1600 50  0000 C CNN
-F 1 "0" V 6500 1600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6500 1600 50  0001 C CNN
-F 3 "~" H 6500 1600 50  0001 C CNN
-F 4 "Vishay Dale" H 6500 1600 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 6500 1600 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 6500 1600 50  0001 C CNN "Distributor"
-F 7 "y" H 6500 1600 50  0001 C CNN "Checked"
-	1    6500 1600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R101
-U 1 1 5DA2AAEE
-P 6500 1900
-F 0 "R101" V 6400 1900 50  0000 C CNN
-F 1 "0" V 6500 1900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6500 1900 50  0001 C CNN
-F 3 "~" H 6500 1900 50  0001 C CNN
-F 4 "Vishay Dale" H 6500 1900 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 6500 1900 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 6500 1900 50  0001 C CNN "Distributor"
-F 7 "y" H 6500 1900 50  0001 C CNN "Checked"
-	1    6500 1900
-	0    -1   -1   0   
-$EndComp
 Text GLabel 13500 3500 2    50   Input ~ 0
 USB3_1_OVERCURn
 Text GLabel 13500 4400 2    50   Input ~ 0
@@ -1088,9 +1015,9 @@ Text GLabel 13500 5300 2    50   Input ~ 0
 USB3_3_OVERCURn
 Text GLabel 13500 6200 2    50   Input ~ 0
 USB3_4_OVERCURn
-Text GLabel 3100 1900 2    50   Output ~ 0
+Text GLabel 2900 1900 2    50   Output ~ 0
 USB3_1_OVERCURn
-Text GLabel 3100 1600 2    50   Output ~ 0
+Text GLabel 2900 1600 2    50   Output ~ 0
 USB3_2_OVERCURn
 Text GLabel 2100 6700 2    50   Output ~ 0
 USB3_3_OVERCURn
@@ -1148,10 +1075,6 @@ Wire Wire Line
 	5900 2450 5700 2450
 Wire Wire Line
 	5700 2450 5700 2400
-Wire Wire Line
-	1450 1800 1700 1800
-Wire Wire Line
-	1700 1900 1450 1900
 $Comp
 L Device:C_Small C66
 U 1 1 5DA7850D
@@ -1265,9 +1188,9 @@ Wire Wire Line
 Connection ~ 1550 6200
 Wire Wire Line
 	1550 6200 1800 6200
-Text GLabel 6600 1900 2    50   Output ~ 0
+Text GLabel 6400 1900 2    50   Output ~ 0
 USB3_3_OVERCURn
-Text GLabel 6600 1600 2    50   Output ~ 0
+Text GLabel 6400 1600 2    50   Output ~ 0
 USB3_4_OVERCURn
 $Comp
 L Device:C_Small C73
@@ -1311,10 +1234,6 @@ Wire Wire Line
 Wire Wire Line
 	10300 5200 10900 5200
 Wire Wire Line
-	5200 1800 4800 1800
-Wire Wire Line
-	4800 1900 5200 1900
-Wire Wire Line
 	4900 2200 4900 1600
 Connection ~ 4900 1600
 Wire Wire Line
@@ -1322,74 +1241,6 @@ Wire Wire Line
 Wire Wire Line
 	4900 2450 4900 2400
 Connection ~ 5700 2450
-$Comp
-L Device:R_Small R82
-U 1 1 5DC331BA
-P 1350 1800
-F 0 "R82" V 1250 1800 50  0000 C CNN
-F 1 "0" V 1350 1800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1350 1800 50  0001 C CNN
-F 3 "~" H 1350 1800 50  0001 C CNN
-F 4 "Vishay Dale" H 1350 1800 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 1350 1800 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 1350 1800 50  0001 C CNN "Distributor"
-F 7 "y" H 1350 1800 50  0001 C CNN "Checked"
-	1    1350 1800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1250 1800 1200 1800
-$Comp
-L Device:R_Small R83
-U 1 1 5DC3CB0C
-P 1350 1900
-F 0 "R83" V 1250 1900 50  0000 C CNN
-F 1 "0" V 1350 1900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1350 1900 50  0001 C CNN
-F 3 "~" H 1350 1900 50  0001 C CNN
-F 4 "Vishay Dale" H 1350 1900 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 1350 1900 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 1350 1900 50  0001 C CNN "Distributor"
-F 7 "y" H 1350 1900 50  0001 C CNN "Checked"
-	1    1350 1900
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1250 1900 1200 1900
-$Comp
-L Device:R_Small R94
-U 1 1 5DC58706
-P 4700 1800
-F 0 "R94" V 4600 1800 50  0000 C CNN
-F 1 "0" V 4700 1800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4700 1800 50  0001 C CNN
-F 3 "~" H 4700 1800 50  0001 C CNN
-F 4 "Vishay Dale" H 4700 1800 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 4700 1800 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 4700 1800 50  0001 C CNN "Distributor"
-F 7 "y" H 4700 1800 50  0001 C CNN "Checked"
-	1    4700 1800
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R95
-U 1 1 5DC58710
-P 4700 1900
-F 0 "R95" V 4600 1900 50  0000 C CNN
-F 1 "0" V 4700 1900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4700 1900 50  0001 C CNN
-F 3 "~" H 4700 1900 50  0001 C CNN
-F 4 "Vishay Dale" H 4700 1900 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 4700 1900 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 4700 1900 50  0001 C CNN "Distributor"
-F 7 "y" H 4700 1900 50  0001 C CNN "Checked"
-	1    4700 1900
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4600 1800 4550 1800
-Wire Wire Line
-	4550 1900 4600 1900
 $Comp
 L Device:R_Small R98
 U 1 1 5DC767AD
@@ -2540,6 +2391,25 @@ Text Notes 15050 1400 0    50   ~ 0
 up to 780mA load!
 Text Notes 8400 4900 0    50   ~ 0
 TODO: hook up SCL/SDA?
-Text Notes 15000 1200 0    50   ~ 0
-FIXME: this goes nowhere
+$Comp
+L power:+1V2 #PWR0216
+U 1 1 5ECB605D
+P 15450 1700
+F 0 "#PWR0216" H 15450 1550 50  0001 C CNN
+F 1 "+1V2" H 15465 1873 50  0000 C CNN
+F 2 "" H 15450 1700 50  0001 C CNN
+F 3 "" H 15450 1700 50  0001 C CNN
+	1    15450 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15450 1700 15450 1800
+Wire Wire Line
+	4550 1800 5200 1800
+Wire Wire Line
+	4550 1900 5200 1900
+Wire Wire Line
+	1200 1800 1700 1800
+Wire Wire Line
+	1200 1900 1700 1900
 $EndSCHEMATC
