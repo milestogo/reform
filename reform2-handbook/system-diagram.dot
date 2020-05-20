@@ -1,0 +1,331 @@
+digraph G {
+  newrank=true;
+  overlap=false;
+  splines=ortho;
+
+  node [shape=box color=transparent fontname="Inter" width=1];
+  edge [arrowsize="0.5"];
+  rankdir=TB;
+
+  fontname="Inter";
+  label=<<font point-size='24'> <br/>MNT Reform 2.0D-4 System Diagram<br/> </font>>;
+  labelloc="t";
+
+  rtc  [label="Realtime\nClock" color=black];
+  rtcbat  [label="Coin Cell"];
+  
+  subgraph cluster_som {
+    fontname="Inter";
+    color=lightgrey;
+    label=<<br/><b>System on Module</b>>;
+    labelloc="t";
+    margin="25.0";
+    
+    style=filled;
+    
+    subgraph cluster_soc {
+      fontname="Inter";
+      color=white;
+      label=<<br/>System on Chip (i.MX8M)>;
+      labelloc="t";
+      margin="25.0";
+      
+      dsi  [label="MIPI DSI"];
+      hdmi  [label="HDMI"];
+      sai  [label="SAI"];
+      i2c0  [label="I2C 1"];
+      
+      usb0  [label="USB3 Root 1"];
+      usb1  [label="USB3 Root 2"];
+
+      ddrc [label="DDRC"];
+
+      sd1  [label="MMC/SD1"];
+      sd2  [label="MMC/SD2"];
+      
+      uart1 [label="UART 2"];
+      pcie0  [label="PCIe 1"];
+      pcie1  [label="PCIe 2"];
+      uart0 [label="UART 1"];
+      
+      //uart2 [label="UART 3"];
+      
+      pwm [label="PWM"];
+      
+      ethmac  [label="ETH MAC"];
+
+      cpu0 [label="Cortex-A53"];
+      cpu1 [label="Cortex-M4F"];
+      gpu [label="GPU GC7000L"];
+      
+      i2c1  [label="I2C 2"];
+      spi1 [label="SPI"];
+    }
+
+    ram [label="LPDDR4\nRAM 4GB" color=black];
+    emmc [label="eMMC\n~8GB" color=black];
+    
+    ethphy  [label="ETH PHY" color=black];
+    
+    s5v  [label="5V Input"];
+  }
+  
+  hub  [label="USB Hub" color=black];
+  
+  adac  [label="DAC WM8960" color=black];
+  dsi2edp  [label="DSI to eDP\nConverter" color=black];
+
+  subgraph cluster_headers {
+    fontname="Inter"
+    labelloc="b";
+    margin="25.0";
+    color=lightgrey;
+    style=filled;
+    label=<<b>Internal Ports</b><br/> >;
+
+    iuart0  [label="UART1"];
+    iuart1  [label="UART2\nConsole"];
+
+    iusb0 [label="IUSB1"];
+    iusb1 [label="IUSB2"];
+
+    impcie [label="mPCIe Slot"];
+    im2 [label="M.2 Slot\nKey M"];
+  }
+  
+  subgraph cluster_power {
+    fontname="Inter"
+    label=<<b>Power</b><br/> >;
+    labelloc="b";
+    color=lightgrey;
+    style=filled;
+    margin="25.0";
+    
+    subgraph cluster_system_control {
+      fontname="Inter"
+      label="System Control\n ";
+      labelloc="b";
+      color=white;
+      style=filled;
+      margin="25.0";
+      
+      lpc  [label="MCU LPC11U24" color=black width=3];
+      ina  [label="Current &\nVoltage Monitor" color=black];
+      
+      ltc  [label="Buck/Boost\nDC-DC and Charger" color=black];
+
+      mon  [label="Cell Monitor\nBalancer" color=black];
+      
+      lspi  [label="SPI" shape=diamond style=filled color=lightgrey];
+      li2c  [label="I2C" shape=diamond style=filled color=lightgrey];
+    
+      cells [label="8x LiFePO4 18650 Batteries" shape=rectangle];
+      supply [label="24V Power Supply\nfrom Barrel Jack" shape=rectangle];
+    
+      enabchg [label="Charge On" shape=diamond style=filled color=lightgrey];
+      enab5v [label="On" shape=diamond style=filled color=lightgrey];
+      enab3v3 [label="On" shape=diamond style=filled color=lightgrey];
+    }
+
+    subgraph cluster_power_rails {
+      fontname="Inter"
+      label="Power Rails\n ";
+      color=white;
+      style=filled;
+      margin="25.0";
+      
+      r28v  [label="~28V" shape=diamond style=filled color=lightgrey];
+      stby [label="3V3 Standby" color=black];
+      r5v  [label="5V" width=1.1 color=black];
+      r3v3 [label="3V3" color=black];
+      
+      r1v2 [label="1V2" width=0.5 color=black];
+      r1v5 [label="1V5" width=0.5 color=black];
+      r1v8 [label="1V8" width=0.5 color=black];
+    }
+  }
+
+  subgraph cluster_ports {
+    fontname="Inter"
+    label=<<b>External Ports</b><br/> >;
+    labelloc="b";
+    margin="25.0";
+    color=lightgrey;
+    style=filled;
+    
+    pusb3  [label="USB3 Port 3"];
+    pusb2  [label="USB3 Port 2"];
+    pusb1  [label="USB3 Port 1"];
+
+    pbarrel [label="Barrel Jack"];
+    
+    phdmi  [label="HDMI Port"];
+    psdcard  [label="SD Card Slot"];
+    peth [label="1G Ethernet Port"];
+
+    paudio  [label="Headphone &\nMic Jack"];
+  }
+  lshift  [label="Level Shifter"];
+  
+  //refclk  [label="PCIe Clock Generator"];
+  
+  
+  subgraph cluster_hmi {
+    fontname="Inter"
+    color=lightgrey;
+    style=filled;
+    label=<<b>Human Machine Interface</b><br/> >;
+    labelloc="b";
+    margin="25.0";
+    
+    subgraph cluster_screen {
+      fontname="Inter"
+      color=white;
+      style=filled;
+      label="Screen Assembly\n ";
+      margin="25.0";
+
+      panel  [label="12.5\" 1920x1080\nIPS Panel"];
+      backlight  [label="Backlight"];
+      speakers  [label="Stereo\nSpeakers"];
+    }
+    
+    subgraph cluster_trackball {
+      fontname="Inter"
+      color=white;
+      style=filled;
+      label="Trackball\n ";
+      margin="25.0";
+      
+      tmcu  [label="MCU Atmega32U2" color=black width=3];
+      tsens  [label="Motion Sensor"];
+      
+      ti2c  [label="I2C" shape=diamond style=filled color=lightgrey];
+      tgpio  [label="GPIO" shape=diamond style=filled color=lightgrey];
+      
+      tkeys  [label="5 Buttons"];
+    }
+
+    subgraph cluster_keyboard {
+      fontname="Inter"
+      color=white;
+      style=filled;
+      label="Keyboard\n ";
+      margin="25.0";
+      
+      kmcu  [label="MCU Atmega32U4" color=black width=3];
+
+      oled [label="OLED Display 128x32"];
+      
+      ki2c  [label="I2C" shape=diamond style=filled color=lightgrey];
+      kuart  [label="UART" shape=diamond style=filled color=lightgrey];
+      kgpio  [label="GPIO" shape=diamond style=filled color=lightgrey];
+      kkeys  [label="Key Matrix"];
+    }
+  }
+
+  { rank=same; ddrc, cpu0, cpu1, gpu }
+  
+  { rank=same; kmcu, tmcu, lpc, panel }
+
+  { rank=same; ltc, mon, ina }
+  { rank=same; enab5v, enab3v3, cells, supply }
+  
+  { rank=same; iusb0, iusb1, iuart0, iuart1, impcie, im2, paudio}
+    
+  { rank=same; usb0, usb1, ethphy, rtc, i2c1 }
+  { rank=same; adac, dsi2edp }
+
+  { rank=same; spi1, i2c0, pwm }
+
+  { rank=same; hdmi, ethmac, emmc }
+  { rank=same; peth, hub, pusb3 }
+  
+  { rank=same; phdmi, psdcard, pbarrel }
+  
+  
+  // power signals
+  
+  lpc -> lspi -> mon  [arrowhead=none];
+  lpc -> li2c -> ina  [arrowhead=none];
+  lpc -> enabchg -> ltc;
+  
+  mon -> cells [arrowhead=none];
+  ina -> cells [arrowhead=none];
+  
+  ltc -> cells [arrowhead=none,color=red];
+  supply -> ltc [arrowhead=none,color=red];
+
+  lpc -> enab5v -> r5v;
+  lpc -> enab3v3 -> r3v3;
+
+  // power
+  
+  r28v -> r5v   [color=red];
+  r28v -> r3v3  [color=red];
+  r28v -> stby  [color=red];
+  r5v -> r1v2   [color=red];
+  r5v -> r1v5   [color=red];
+  r3v3 -> r1v8  [color=red];
+  ltc -> r28v   [color=red];
+  cells -> r28v [color=invis];
+
+  rtcbat -> rtc [arrowhead=none,color=red];
+  
+  stby -> lpc [color=red,constraint=false];
+  stby -> kmcu [color=red,constraint=false];
+
+  // soc/som signals, external ports
+  usb1 -> hub [arrowhead=none];
+  hub -> pusb1 [arrowhead=none];
+  hub -> pusb2 [arrowhead=none];
+  usb0 -> pusb3 [arrowhead=none];
+  hdmi -> phdmi [arrowhead=none];
+
+  sd2 -> lshift -> psdcard  [arrowhead=none];
+  ethmac -> ethphy -> peth [arrowhead=none];
+  sai -> adac  [arrowhead=none];
+  
+  ddrc -> ram [arrowhead=none];
+  sd1 -> emmc [arrowhead=none];
+
+  r5v -> s5v [color=red constraint=false];
+
+  // internal ports
+  pcie0 -> impcie [arrowhead=none];
+  pcie1 -> im2 [arrowhead=none];
+  uart0 -> iuart0 [arrowhead=none];
+  uart1 -> iuart1 [arrowhead=none];
+  hub -> iusb1 [arrowhead=none];
+  hub -> iusb0 [arrowhead=none];
+
+  iusb0 -> kmcu [arrowhead=none];
+  iusb1 -> tmcu [arrowhead=none];
+
+  // trackball internal signals
+
+  tmcu -> ti2c -> tsens [arrowhead=none];
+  tmcu -> tgpio -> tkeys [arrowhead=none];
+
+  // keyboard internal signals
+  
+  kmcu -> ki2c -> oled [arrowhead=none];
+  kmcu -> kgpio -> kkeys [arrowhead=none];
+  kmcu -> kuart -> lpc [arrowhead=none];
+  
+  i2c1 -> rtc [arrowhead=none];
+  i2c0 -> adac [arrowhead=none];
+
+  // uart2 -> lpc;
+  spi1 -> lpc [arrowhead=none,constraint=false];
+
+  // screen assembly
+  
+  dsi -> dsi2edp;
+  dsi2edp -> panel;
+  panel -> backlight [arrowhead=none];
+  pwm -> backlight [constraint=false];
+
+  adac -> speakers [arrowhead=none,style=dotted];
+  adac -> paudio [arrowhead=none,style=dotted,constraint=false];
+}
