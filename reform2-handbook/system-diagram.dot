@@ -109,7 +109,7 @@ digraph G {
       style=filled;
       margin="25.0";
       
-      lpc  [label="MCU LPC11U24" color=black width=3];
+      lpc  [label="MCU LPC11U24" color=black width=4];
       ina  [label="Current &\nVoltage Monitor" color=black];
       
       ltc  [label="Buck/Boost\nDC-DC and Charger" color=black];

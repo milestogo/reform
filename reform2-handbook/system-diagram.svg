@@ -388,13 +388,13 @@
 <!-- lpc -->
 <g id="node36" class="node">
 <title>lpc</title>
-<polygon fill="none" stroke="black" points="1839.5,-795 1623.5,-795 1623.5,-759 1839.5,-759 1839.5,-795"/>
+<polygon fill="none" stroke="black" points="1875.5,-795 1587.5,-795 1587.5,-759 1875.5,-759 1875.5,-795"/>
 <text text-anchor="middle" x="1731.5" y="-773.3" font-family="Inter" font-size="14.00">MCU LPC11U24</text>
 </g>
 <!-- spi1&#45;&gt;lpc -->
 <g id="edge59" class="edge">
 <title>spi1&#45;&gt;lpc</title>
-<path fill="none" stroke="black" d="M282.5,-1035.99C282.5,-987 282.5,-855 282.5,-855 282.5,-855 1642,-855 1642,-855 1642,-855 1642,-818.13 1642,-795.09"/>
+<path fill="none" stroke="black" d="M282.5,-1035.99C282.5,-987 282.5,-855 282.5,-855 282.5,-855 1624,-855 1624,-855 1624,-855 1624,-818.13 1624,-795.09"/>
 </g>
 <!-- peth -->
 <g id="node60" class="node">
@@ -547,8 +547,8 @@
 <!-- lpc&#45;&gt;enabchg -->
 <g id="edge5" class="edge">
 <title>lpc&#45;&gt;enabchg</title>
-<path fill="none" stroke="black" d="M1635.94,-758.96C1635.94,-737.34 1635.94,-704 1635.94,-704 1635.94,-704 1631.6,-704 1631.6,-704"/>
-<polygon fill="black" stroke="black" points="1631.6,-702.25 1626.6,-704 1631.6,-705.75 1631.6,-702.25"/>
+<path fill="none" stroke="black" d="M1606.94,-758.96C1606.94,-758.96 1606.94,-713.31 1606.94,-713.31"/>
+<polygon fill="black" stroke="black" points="1608.69,-713.31 1606.94,-708.31 1605.19,-713.31 1608.69,-713.31"/>
 </g>
 <!-- enab5v -->
 <g id="node45" class="node">
@@ -559,8 +559,8 @@
 <!-- lpc&#45;&gt;enab5v -->
 <g id="edge11" class="edge">
 <title>lpc&#45;&gt;enab5v</title>
-<path fill="none" stroke="black" d="M1839.75,-771C1863.13,-771 1881,-771 1881,-771 1881,-771 1881,-442.3 1881,-442.3"/>
-<polygon fill="black" stroke="black" points="1882.75,-442.3 1881,-437.3 1879.25,-442.3 1882.75,-442.3"/>
+<path fill="none" stroke="black" d="M1868,-758.68C1868,-758.68 1868,-448.9 1868,-448.9"/>
+<polygon fill="black" stroke="black" points="1869.75,-448.9 1868,-443.9 1866.25,-448.9 1869.75,-448.9"/>
 </g>
 <!-- enab3v3 -->
 <g id="node46" class="node">
@@ -571,8 +571,8 @@
 <!-- lpc&#45;&gt;enab3v3 -->
 <g id="edge13" class="edge">
 <title>lpc&#45;&gt;enab3v3</title>
-<path fill="none" stroke="black" d="M1839.56,-783C1896.84,-783 1955.5,-783 1955.5,-783 1955.5,-783 1955.5,-450.14 1955.5,-450.14"/>
-<polygon fill="black" stroke="black" points="1957.25,-450.14 1955.5,-445.14 1953.75,-450.14 1957.25,-450.14"/>
+<path fill="none" stroke="black" d="M1875.58,-777C1919.06,-777 1955.5,-777 1955.5,-777 1955.5,-777 1955.5,-450.32 1955.5,-450.32"/>
+<polygon fill="black" stroke="black" points="1957.25,-450.32 1955.5,-445.32 1953.75,-450.32 1957.25,-450.32"/>
 </g>
 <!-- ina -->
 <g id="node37" class="node">
@@ -713,8 +713,8 @@
 <!-- stby&#45;&gt;lpc -->
 <g id="edge24" class="edge">
 <title>stby&#45;&gt;lpc</title>
-<path fill="none" stroke="red" d="M1664.29,-228C1586.44,-228 1449,-228 1449,-228 1449,-228 1449,-768 1449,-768 1449,-768 1618.49,-768 1618.49,-768"/>
-<polygon fill="red" stroke="red" points="1618.49,-769.75 1623.49,-768 1618.49,-766.25 1618.49,-769.75"/>
+<path fill="none" stroke="red" d="M1664.29,-228C1586.44,-228 1449,-228 1449,-228 1449,-228 1449,-768 1449,-768 1449,-768 1582.35,-768 1582.35,-768"/>
+<polygon fill="red" stroke="red" points="1582.35,-769.75 1587.35,-768 1582.35,-766.25 1582.35,-769.75"/>
 </g>
 <!-- stby&#45;&gt;kmcu -->
 <g id="edge25" class="edge">
@@ -877,7 +877,7 @@
 <!-- kuart&#45;&gt;lpc -->
 <g id="edge56" class="edge">
 <title>kuart&#45;&gt;lpc</title>
-<path fill="none" stroke="black" d="M1294.75,-709.38C1294.75,-727.62 1294.75,-786 1294.75,-786 1294.75,-786 1493.92,-786 1623.26,-786"/>
+<path fill="none" stroke="black" d="M1294.75,-709.38C1294.75,-727.62 1294.75,-786 1294.75,-786 1294.75,-786 1460.07,-786 1587.28,-786"/>
 </g>
 <!-- kkeys -->
 <g id="node76" class="node">
