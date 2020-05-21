@@ -3,17 +3,16 @@ digraph G {
   overlap=false;
   splines=ortho;
 
-  node [shape=box color=transparent fontname="Inter" width=1];
+  node [shape=box color=transparent fontname="Inter" width=1 target="_top"];
   edge [arrowsize="0.5"];
-  rankdir=TB;
-
+  rankdir=TB; 
   fontname="Inter";
   label=<<font point-size='24'> <br/>MNT Reform 2.0D-4 System Diagram<br/> </font>>;
   labelloc="t";
 
-  rtc  [label="Realtime\nClock" color=black];
+  rtc  [label="Realtime\nClock" color=black href="system.html#rtc"];
   rtcbat  [label="Coin Cell"];
-  
+   
   subgraph cluster_som {
     fontname="Inter";
     color=lightgrey;
@@ -30,36 +29,36 @@ digraph G {
       labelloc="t";
       margin="25.0";
       
-      dsi  [label="MIPI DSI"];
-      hdmi  [label="HDMI"];
-      sai  [label="SAI"];
-      i2c0  [label="I2C 1"];
+      dsi  [label="MIPI DSI" href="system.html#mipi-dsi"];
+      hdmi  [label="HDMI" href="system.html#hdmi"];
+      sai  [label="SAI" href="system.html#sai"];
+      i2c0  [label="I2C 1" href="system.html#i2c"];
       
-      usb0  [label="USB3 Root 1"];
-      usb1  [label="USB3 Root 2"];
+      usb0  [label="USB3 Root 1" href="system.html#usb3"];
+      usb1  [label="USB3 Root 2" href="system.html#usb3"];
 
-      ddrc [label="DDRC"];
+      ddrc [label="DDRC" href="system.html#ddrc"];
 
-      sd1  [label="MMC/SD1"];
-      sd2  [label="MMC/SD2"];
+      sd1  [label="MMC/SD1" href="system.html#mmc"];
+      sd2  [label="MMC/SD2" href="system.html#mmc"];
       
-      uart1 [label="UART 2"];
-      pcie0  [label="PCIe 1"];
-      pcie1  [label="PCIe 2"];
-      uart0 [label="UART 1"];
+      uart1 [label="UART 2" href="system.html#uart"];
+      pcie0  [label="PCIe 1" href="system.html#pcie"];
+      pcie1  [label="PCIe 2" href="system.html#pcie"];
+      uart0 [label="UART 1" href="system.html#uart"];
       
       //uart2 [label="UART 3"];
       
-      pwm [label="PWM"];
+      pwm [label="PWM" href="system.html#pwm"];
       
       ethmac  [label="ETH MAC"];
 
-      cpu0 [label="Cortex-A53"];
-      cpu1 [label="Cortex-M4F"];
-      gpu [label="GPU GC7000L"];
+      cpu0 [label="Cortex-A53" href="system.html#cortex-a53"];
+      cpu1 [label="Cortex-M4F" href="system.html#cortex-m4f"];
+      gpu [label="GPU GC7000L" href="system.html#gpu"];
       
-      i2c1  [label="I2C 2"];
-      spi1 [label="SPI"];
+      i2c1  [label="I2C 2" href="system.html#i2c"];
+      spi1 [label="SPI" href="system.html#spi"];
     }
 
     ram [label="LPDDR4\nRAM 4GB" color=black];
@@ -70,10 +69,10 @@ digraph G {
     s5v  [label="5V Input"];
   }
   
-  hub  [label="USB Hub" color=black];
+  hub  [label="USB Hub" color=black href="system.html#usb-hub"];
   
-  adac  [label="DAC WM8960" color=black];
-  dsi2edp  [label="DSI to eDP\nConverter" color=black];
+  adac  [label="DAC WM8960" color=black href="system.html#dac"];
+  dsi2edp  [label="DSI to eDP\nConverter" color=black href="system.html#dsi2edp"];
 
   subgraph cluster_headers {
     fontname="Inter"
@@ -326,6 +325,6 @@ digraph G {
   panel -> backlight [arrowhead=none];
   pwm -> backlight [constraint=false];
 
-  adac -> speakers [arrowhead=none,style=dotted];
-  adac -> paudio [arrowhead=none,style=dotted,constraint=false];
+  adac -> speakers [arrowhead=none,style=dashed];
+  adac -> paudio [arrowhead=none,style=dashed,constraint=false];
 }

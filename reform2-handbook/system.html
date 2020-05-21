@@ -1,0 +1,157 @@
+<h1 id="reform-20d-4-electronic-system-components">Reform 2.0D-4 Electronic System Components</h1>
+
+<iframe src="system-diagram.svg" width="75%" height="100%"></iframe>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+body {
+  font-family: 'Inter', sans-serif;
+  margin-left: 77%;
+}
+iframe {
+  position: fixed;
+  left: 0;
+  top: 0;
+  border: 0;
+}
+:target {
+  background-color: #ffa;
+}
+</style>
+
+<h2 id="system-on-module-boundary-devices-nitrogen8msom">System-on-Module: Boundary Devices Nitrogen8M_SOM</h2>
+
+<p>The default SOM of Reform.</p>
+
+<ul>
+  <li><a href="https://boundarydevices.com/product/nitrogen8m-som/">Website</a></li>
+  <li><a href="https://boundarydevices.com/download/36053/">Schematic</a></li>
+  <li>Mating Connector: SO-DIMM 200, Part Number: <a href="https://www.te.com/global-en/product-1717254-1.html">TE 1717254-1</a></li>
+</ul>
+
+<h3 id="system-on-chip-nxp-imx8m">System-on-Chip: NXP i.MX8M</h3>
+
+<p>The default SOC of Reform.</p>
+
+<ul>
+  <li><a href="https://www.nxp.com/docs/en/data-sheet/IMX8MDQLQCEC.pdf">Data Sheet</a></li>
+  <li><a href="https://www.nxp.com/webapp/Download?colCode=IMX8MDQLQRM">Reference Manual</a></li>
+</ul>
+
+<h4 id="cortex-a53">Cortex-A53</h4>
+
+<p>The four main 64-bit ARM cores of the default SOC of Reform.</p>
+
+<ul>
+  <li>Reference Manual: <a href="http://docs-api-peg.northeurope.cloudapp.azure.com/assets/ddi0500/g/DDI0500G_cortex_a53_trm.pdf">PDF</a></li>
+</ul>
+
+<h4 id="cortex-m4f">Cortex-M4F</h4>
+
+<p>The additional 32-bit ARM CPU core of the default SOC of Reform.</p>
+
+<ul>
+  <li>Reference Manual: <a href="http://infocenter.arm.com/help/topic/com.arm.doc.ddi0439b/DDI0439B_cortex_m4_r0p0_trm.pdf">PDF</a></li>
+</ul>
+
+<h4 id="gpu">Verisilicon Vivante GC7000L GPU</h4>
+
+<p>The GPU in the i.MX8M SOM. Official documentation is not public, but most of its functionality has been reverse engineered by the etnaviv project.</p>
+
+<ul>
+  <li>TODO: Spec/Capabilities</li>
+  <li>Documentation: See main i.MX8M Manual for integration in SOC</li>
+  <li><a href="https://github.com/torvalds/linux/tree/master/drivers/gpu/drm/etnaviv">Driver (Kernel Part)</a></li>
+  <li><a href="https://cgit.freedesktop.org/mesa/mesa/tree/src/gallium/drivers/etnaviv">Driver (Mesa Part)</a></li>
+</ul>
+
+<h4 id="mipi-dsi">MIPI DSI</h4>
+
+<p>i.MX8M has a MIPI DSI block by Northwest Logic and a DSI PHY by Mixel. Both have open source drivers in the Linux kernel. Reform accepts MIPI DSI signal on the motherboard header J24. The DSI to eDP Converter converts the signal to eDP to drive the display panel.</p>
+
+<ul>
+  <li>TODO: kernel sources</li>
+</ul>
+
+<h4 id="sai">SAI</h4>
+
+<p>i.MX8M has multiple SAI ports for digital audio.</p>
+
+<ul>
+  <li>TODO: kernel sources</li>
+</ul>
+
+<h4 id="i2c">I2C</h4>
+
+<ul>
+  <li>TODO: kernel sources</li>
+</ul>
+
+<h4 id="spi">SPI</h4>
+
+<ul>
+  <li>TODO: kernel sources</li>
+</ul>
+
+<h4 id="pwm">PWM</h4>
+
+<ul>
+  <li>TODO: kernel sources</li>
+</ul>
+
+<h4 id="pcie">PCIe</h4>
+
+<ul>
+  <li>TODO: kernel sources</li>
+</ul>
+
+<h4 id="uart">UART</h4>
+
+<ul>
+  <li>TODO: kernel sources</li>
+</ul>
+
+<h4 id="hdmi">HDMI</h4>
+
+<ul>
+  <li>TODO: kernel sources</li>
+</ul>
+
+<h4 id="usb3">USB3</h4>
+
+<ul>
+  <li>TODO: kernel sources</li>
+</ul>
+
+<h4 id="eth-mac">ETH MAC</h4>
+
+<ul>
+  <li>TODO: kernel sources</li>
+</ul>
+
+<h4 id="mmc">MMC/SD</h4>
+
+<ul>
+  <li>TODO: kernel sources</li>
+</ul>
+
+<h4 id="ddrc">DDRC</h4>
+
+<p>The DDRC connects the physical LPDDR4 RAM chip to the blocks inside of the SOC, including CPU and GPU.</p>
+
+<h3 id="eth-phy">ETH PHY</h3>
+
+<p>The PHY part of the Ethernet interface is on the SOM. It is an Atheros AR8035 chip.</p>
+
+<ul>
+  <li>TODO: kernel sources</li>
+</ul>
+
+<h2 id="usb-hub">USB Hub</h2>
+
+<p>Reform has a TI TUSB8041 USB Hub chip.</p>
+
+<ul>
+  <li><a href="https://www.ti.com/product/TUSB8041">Website</a></li>
+  <li><a href="https://www.ti.com/lit/ds/symlink/tusb8041.pdf?&amp;ts=1590007407171">Datasheet</a></li>
+</ul>
+

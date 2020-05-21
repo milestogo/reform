@@ -22,6 +22,12 @@
 <polygon fill="white" stroke="white" points="221.5,-1011 221.5,-1356.8 1063.5,-1356.8 1063.5,-1011 221.5,-1011"/>
 <text text-anchor="start" x="558" y="-1326.6" font-family="Inter" font-size="14.00">System on Chip (i.MX8M)</text>
 </g>
+<g id="clust7" class="cluster">
+<title>cluster_ports</title>
+<polygon fill="lightgrey" stroke="lightgrey" points="1411.5,-854 1411.5,-1170 1799.5,-1170 1799.5,-854 1411.5,-854"/>
+<text text-anchor="start" x="1557" y="-875.8" font-family="Inter" font-weight="bold" font-size="14.00">External Ports</text>
+<text text-anchor="start" x="1603.5" y="-861.8" font-family="Inter" font-size="14.00"> </text>
+</g>
 <g id="clust3" class="cluster">
 <title>cluster_headers</title>
 <polygon fill="lightgrey" stroke="lightgrey" points="662.5,-854 662.5,-978 1252.5,-978 1252.5,-854 662.5,-854"/>
@@ -45,12 +51,6 @@
 <polygon fill="white" stroke="white" points="1639.5,-69 1639.5,-337 1981.5,-337 1981.5,-69 1639.5,-69"/>
 <text text-anchor="middle" x="1810.5" y="-91.8" font-family="Inter" font-size="14.00">Power Rails</text>
 <text text-anchor="middle" x="1810.5" y="-76.8" font-family="Inter" font-size="14.00"> </text>
-</g>
-<g id="clust7" class="cluster">
-<title>cluster_ports</title>
-<polygon fill="lightgrey" stroke="lightgrey" points="1411.5,-854 1411.5,-1170 1799.5,-1170 1799.5,-854 1411.5,-854"/>
-<text text-anchor="start" x="1557" y="-875.8" font-family="Inter" font-weight="bold" font-size="14.00">External Ports</text>
-<text text-anchor="start" x="1603.5" y="-861.8" font-family="Inter" font-size="14.00"> </text>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_hmi</title>
@@ -79,9 +79,12 @@
 <!-- rtc -->
 <g id="node1" class="node">
 <title>rtc</title>
+<g id="a_node1"><a xlink:href="system.html#rtc" xlink:title="Realtime\nClock" target="_top">
 <polygon fill="none" stroke="black" points="74.5,-1146 0.5,-1146 0.5,-1108 74.5,-1108 74.5,-1146"/>
 <text text-anchor="middle" x="37.5" y="-1130.8" font-family="Inter" font-size="14.00">Realtime</text>
 <text text-anchor="middle" x="37.5" y="-1115.8" font-family="Inter" font-size="14.00">Clock</text>
+</a>
+</g>
 </g>
 <!-- rtcbat -->
 <g id="node2" class="node">
@@ -97,15 +100,21 @@
 <!-- dsi -->
 <g id="node3" class="node">
 <title>dsi</title>
+<g id="a_node3"><a xlink:href="system.html#mipi-dsi" xlink:title="MIPI DSI" target="_top">
 <polygon fill="none" stroke="transparent" points="498.5,-1072 426.5,-1072 426.5,-1036 498.5,-1036 498.5,-1072"/>
 <text text-anchor="middle" x="462.5" y="-1050.3" font-family="Inter" font-size="14.00">MIPI DSI</text>
+</a>
+</g>
 </g>
 <!-- dsi2edp -->
 <g id="node29" class="node">
 <title>dsi2edp</title>
+<g id="a_node29"><a xlink:href="system.html#dsi2edp" xlink:title="DSI to eDP\nConverter" target="_top">
 <polygon fill="none" stroke="black" points="506,-953 419,-953 419,-915 506,-915 506,-953"/>
 <text text-anchor="middle" x="462.5" y="-937.8" font-family="Inter" font-size="14.00">DSI to eDP</text>
 <text text-anchor="middle" x="462.5" y="-922.8" font-family="Inter" font-size="14.00">Converter</text>
+</a>
+</g>
 </g>
 <!-- dsi&#45;&gt;dsi2edp -->
 <g id="edge60" class="edge">
@@ -116,8 +125,11 @@
 <!-- hdmi -->
 <g id="node4" class="node">
 <title>hdmi</title>
+<g id="a_node4"><a xlink:href="system.html#hdmi" xlink:title="HDMI" target="_top">
 <polygon fill="none" stroke="transparent" points="1038.5,-1219 966.5,-1219 966.5,-1183 1038.5,-1183 1038.5,-1219"/>
 <text text-anchor="middle" x="1002.5" y="-1197.3" font-family="Inter" font-size="14.00">HDMI</text>
+</a>
+</g>
 </g>
 <!-- phdmi -->
 <g id="node58" class="node">
@@ -133,14 +145,20 @@
 <!-- sai -->
 <g id="node5" class="node">
 <title>sai</title>
+<g id="a_node5"><a xlink:href="system.html#sai" xlink:title="SAI" target="_top">
 <polygon fill="none" stroke="transparent" points="588.5,-1072 516.5,-1072 516.5,-1036 588.5,-1036 588.5,-1072"/>
 <text text-anchor="middle" x="552.5" y="-1050.3" font-family="Inter" font-size="14.00">SAI</text>
+</a>
+</g>
 </g>
 <!-- adac -->
 <g id="node28" class="node">
 <title>adac</title>
+<g id="a_node28"><a xlink:href="system.html#dac" xlink:title="DAC WM8960" target="_top">
 <polygon fill="none" stroke="black" points="637.5,-952 525.5,-952 525.5,-916 637.5,-916 637.5,-952"/>
 <text text-anchor="middle" x="581.5" y="-930.3" font-family="Inter" font-size="14.00">DAC WM8960</text>
+</a>
+</g>
 </g>
 <!-- sai&#45;&gt;adac -->
 <g id="edge35" class="edge">
@@ -150,8 +168,11 @@
 <!-- i2c0 -->
 <g id="node6" class="node">
 <title>i2c0</title>
+<g id="a_node6"><a xlink:href="system.html#i2c" xlink:title="I2C 1" target="_top">
 <polygon fill="none" stroke="transparent" points="678.5,-1072 606.5,-1072 606.5,-1036 678.5,-1036 678.5,-1072"/>
 <text text-anchor="middle" x="642.5" y="-1050.3" font-family="Inter" font-size="14.00">I2C 1</text>
+</a>
+</g>
 </g>
 <!-- i2c0&#45;&gt;adac -->
 <g id="edge58" class="edge">
@@ -161,8 +182,11 @@
 <!-- usb0 -->
 <g id="node7" class="node">
 <title>usb0</title>
+<g id="a_node7"><a xlink:href="system.html#usb3" xlink:title="USB3 Root 1" target="_top">
 <polygon fill="none" stroke="transparent" points="1038.5,-1145 940.5,-1145 940.5,-1109 1038.5,-1109 1038.5,-1145"/>
 <text text-anchor="middle" x="989.5" y="-1123.3" font-family="Inter" font-size="14.00">USB3 Root 1</text>
+</a>
+</g>
 </g>
 <!-- pusb3 -->
 <g id="node54" class="node">
@@ -178,14 +202,20 @@
 <!-- usb1 -->
 <g id="node8" class="node">
 <title>usb1</title>
+<g id="a_node8"><a xlink:href="system.html#usb3" xlink:title="USB3 Root 2" target="_top">
 <polygon fill="none" stroke="transparent" points="922,-1145 821,-1145 821,-1109 922,-1109 922,-1145"/>
 <text text-anchor="middle" x="871.5" y="-1123.3" font-family="Inter" font-size="14.00">USB3 Root 2</text>
+</a>
+</g>
 </g>
 <!-- hub -->
 <g id="node27" class="node">
 <title>hub</title>
+<g id="a_node27"><a xlink:href="system.html#usb-hub" xlink:title="USB Hub" target="_top">
 <polygon fill="none" stroke="black" points="1386,-1072 1309,-1072 1309,-1036 1386,-1036 1386,-1072"/>
 <text text-anchor="middle" x="1347.5" y="-1050.3" font-family="Inter" font-size="14.00">USB Hub</text>
+</a>
+</g>
 </g>
 <!-- usb1&#45;&gt;hub -->
 <g id="edge26" class="edge">
@@ -195,8 +225,11 @@
 <!-- ddrc -->
 <g id="node9" class="node">
 <title>ddrc</title>
+<g id="a_node9"><a xlink:href="system.html#ddrc" xlink:title="DDRC" target="_top">
 <polygon fill="none" stroke="transparent" points="833.5,-1292 761.5,-1292 761.5,-1256 833.5,-1256 833.5,-1292"/>
 <text text-anchor="middle" x="797.5" y="-1270.3" font-family="Inter" font-size="14.00">DDRC</text>
+</a>
+</g>
 </g>
 <!-- ram -->
 <g id="node23" class="node">
@@ -213,8 +246,11 @@
 <!-- sd1 -->
 <g id="node10" class="node">
 <title>sd1</title>
+<g id="a_node10"><a xlink:href="system.html#mmc" xlink:title="MMC/SD1" target="_top">
 <polygon fill="none" stroke="transparent" points="935,-1292 852,-1292 852,-1256 935,-1256 935,-1292"/>
 <text text-anchor="middle" x="893.5" y="-1270.3" font-family="Inter" font-size="14.00">MMC/SD1</text>
+</a>
+</g>
 </g>
 <!-- emmc -->
 <g id="node24" class="node">
@@ -231,8 +267,11 @@
 <!-- sd2 -->
 <g id="node11" class="node">
 <title>sd2</title>
+<g id="a_node11"><a xlink:href="system.html#mmc" xlink:title="MMC/SD2" target="_top">
 <polygon fill="none" stroke="transparent" points="1038,-1292 953,-1292 953,-1256 1038,-1256 1038,-1292"/>
 <text text-anchor="middle" x="995.5" y="-1270.3" font-family="Inter" font-size="14.00">MMC/SD2</text>
+</a>
+</g>
 </g>
 <!-- lshift -->
 <g id="node62" class="node">
@@ -248,8 +287,11 @@
 <!-- uart1 -->
 <g id="node12" class="node">
 <title>uart1</title>
+<g id="a_node12"><a xlink:href="system.html#uart" xlink:title="UART 2" target="_top">
 <polygon fill="none" stroke="transparent" points="948.5,-1072 876.5,-1072 876.5,-1036 948.5,-1036 948.5,-1072"/>
 <text text-anchor="middle" x="912.5" y="-1050.3" font-family="Inter" font-size="14.00">UART 2</text>
+</a>
+</g>
 </g>
 <!-- iuart1 -->
 <g id="node31" class="node">
@@ -266,8 +308,11 @@
 <!-- pcie0 -->
 <g id="node13" class="node">
 <title>pcie0</title>
+<g id="a_node13"><a xlink:href="system.html#pcie" xlink:title="PCIe 1" target="_top">
 <polygon fill="none" stroke="transparent" points="858.5,-1072 786.5,-1072 786.5,-1036 858.5,-1036 858.5,-1072"/>
 <text text-anchor="middle" x="822.5" y="-1050.3" font-family="Inter" font-size="14.00">PCIe 1</text>
+</a>
+</g>
 </g>
 <!-- impcie -->
 <g id="node34" class="node">
@@ -283,8 +328,11 @@
 <!-- pcie1 -->
 <g id="node14" class="node">
 <title>pcie1</title>
+<g id="a_node14"><a xlink:href="system.html#pcie" xlink:title="PCIe 2" target="_top">
 <polygon fill="none" stroke="transparent" points="768.5,-1072 696.5,-1072 696.5,-1036 768.5,-1036 768.5,-1072"/>
 <text text-anchor="middle" x="732.5" y="-1050.3" font-family="Inter" font-size="14.00">PCIe 2</text>
+</a>
+</g>
 </g>
 <!-- im2 -->
 <g id="node35" class="node">
@@ -301,8 +349,11 @@
 <!-- uart0 -->
 <g id="node15" class="node">
 <title>uart0</title>
+<g id="a_node15"><a xlink:href="system.html#uart" xlink:title="UART 1" target="_top">
 <polygon fill="none" stroke="transparent" points="1038.5,-1072 966.5,-1072 966.5,-1036 1038.5,-1036 1038.5,-1072"/>
 <text text-anchor="middle" x="1002.5" y="-1050.3" font-family="Inter" font-size="14.00">UART 1</text>
+</a>
+</g>
 </g>
 <!-- iuart0 -->
 <g id="node30" class="node">
@@ -318,8 +369,11 @@
 <!-- pwm -->
 <g id="node16" class="node">
 <title>pwm</title>
+<g id="a_node16"><a xlink:href="system.html#pwm" xlink:title="PWM" target="_top">
 <polygon fill="none" stroke="transparent" points="408.5,-1072 336.5,-1072 336.5,-1036 408.5,-1036 408.5,-1072"/>
 <text text-anchor="middle" x="372.5" y="-1050.3" font-family="Inter" font-size="14.00">PWM</text>
+</a>
+</g>
 </g>
 <!-- backlight -->
 <g id="node64" class="node">
@@ -353,26 +407,38 @@
 <!-- cpu0 -->
 <g id="node18" class="node">
 <title>cpu0</title>
+<g id="a_node18"><a xlink:href="system.html#cortex-a53" xlink:title="Cortex&#45;A53" target="_top">
 <polygon fill="none" stroke="transparent" points="724.5,-1292 628.5,-1292 628.5,-1256 724.5,-1256 724.5,-1292"/>
 <text text-anchor="middle" x="676.5" y="-1270.3" font-family="Inter" font-size="14.00">Cortex&#45;A53</text>
+</a>
+</g>
 </g>
 <!-- cpu1 -->
 <g id="node19" class="node">
 <title>cpu1</title>
+<g id="a_node19"><a xlink:href="system.html#cortex-m4f" xlink:title="Cortex&#45;M4F" target="_top">
 <polygon fill="none" stroke="transparent" points="572,-1292 473,-1292 473,-1256 572,-1256 572,-1292"/>
 <text text-anchor="middle" x="522.5" y="-1270.3" font-family="Inter" font-size="14.00">Cortex&#45;M4F</text>
+</a>
+</g>
 </g>
 <!-- gpu -->
 <g id="node20" class="node">
 <title>gpu</title>
+<g id="a_node20"><a xlink:href="system.html#gpu" xlink:title="GPU GC7000L" target="_top">
 <polygon fill="none" stroke="transparent" points="379.5,-1292 265.5,-1292 265.5,-1256 379.5,-1256 379.5,-1292"/>
 <text text-anchor="middle" x="322.5" y="-1270.3" font-family="Inter" font-size="14.00">GPU GC7000L</text>
+</a>
+</g>
 </g>
 <!-- i2c1 -->
 <g id="node21" class="node">
 <title>i2c1</title>
+<g id="a_node21"><a xlink:href="system.html#i2c" xlink:title="I2C 2" target="_top">
 <polygon fill="none" stroke="transparent" points="318.5,-1145 246.5,-1145 246.5,-1109 318.5,-1109 318.5,-1145"/>
 <text text-anchor="middle" x="282.5" y="-1123.3" font-family="Inter" font-size="14.00">I2C 2</text>
+</a>
+</g>
 </g>
 <!-- i2c1&#45;&gt;rtc -->
 <g id="edge57" class="edge">
@@ -382,8 +448,11 @@
 <!-- spi1 -->
 <g id="node22" class="node">
 <title>spi1</title>
+<g id="a_node22"><a xlink:href="system.html#spi" xlink:title="SPI" target="_top">
 <polygon fill="none" stroke="transparent" points="318.5,-1072 246.5,-1072 246.5,-1036 318.5,-1036 318.5,-1072"/>
 <text text-anchor="middle" x="282.5" y="-1050.3" font-family="Inter" font-size="14.00">SPI</text>
+</a>
+</g>
 </g>
 <!-- lpc -->
 <g id="node36" class="node">
@@ -467,7 +536,7 @@
 <!-- adac&#45;&gt;paudio -->
 <g id="edge65" class="edge">
 <title>adac&#45;&gt;paudio</title>
-<path fill="none" stroke="black" stroke-dasharray="1,5" d="M627.17,-952.13C627.17,-962.31 627.17,-973 627.17,-973 627.17,-973 1486.5,-973 1486.5,-973 1486.5,-973 1486.5,-962.94 1486.5,-953.04"/>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M627.17,-952.13C627.17,-962.31 627.17,-973 627.17,-973 627.17,-973 1486.5,-973 1486.5,-973 1486.5,-973 1486.5,-962.94 1486.5,-953.04"/>
 </g>
 <!-- speakers -->
 <g id="node65" class="node">
@@ -479,7 +548,7 @@
 <!-- adac&#45;&gt;speakers -->
 <g id="edge64" class="edge">
 <title>adac&#45;&gt;speakers</title>
-<path fill="none" stroke="black" stroke-dasharray="1,5" d="M599.75,-915.99C599.75,-886.19 599.75,-826.87 599.75,-796.27"/>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M599.75,-915.99C599.75,-886.19 599.75,-826.87 599.75,-796.27"/>
 </g>
 <!-- panel -->
 <g id="node63" class="node">
