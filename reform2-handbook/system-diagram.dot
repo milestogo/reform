@@ -11,7 +11,7 @@ digraph G {
   labelloc="t";
 
   rtc  [label="Realtime\nClock" color=black href="system.html#rtc"];
-  rtcbat  [label="Coin Cell"];
+  rtcbat  [label="Coin Cell" href="system.html#rtc"];
    
   subgraph cluster_som {
     fontname="Inter";
@@ -51,7 +51,7 @@ digraph G {
       
       pwm [label="PWM" href="system.html#pwm"];
       
-      ethmac  [label="ETH MAC"];
+      ethmac  [label="ETH MAC" href="system.html#eth-mac"];
 
       cpu0 [label="Cortex-A53" href="system.html#cortex-a53"];
       cpu1 [label="Cortex-M4F" href="system.html#cortex-m4f"];
@@ -61,10 +61,10 @@ digraph G {
       spi1 [label="SPI" href="system.html#spi"];
     }
 
-    ram [label="LPDDR4\nRAM 4GB" color=black];
-    emmc [label="eMMC\n~8GB" color=black];
+    ram [label="LPDDR4\nRAM 4GB" color=black href="system.html#ddrc"];
+    emmc [label="eMMC\n~8GB" color=black href="system.html#mmc"];
     
-    ethphy  [label="ETH PHY" color=black];
+    ethphy  [label="ETH PHY" color=black href="system.html#eth-phy"];
     
     s5v  [label="5V Input"];
   }
@@ -82,14 +82,14 @@ digraph G {
     style=filled;
     label=<<b>Internal Ports</b><br/> >;
 
-    iuart0  [label="UART1"];
-    iuart1  [label="UART2\nConsole"];
+    iuart0  [label="UART1" href="system.html#uart"];
+    iuart1  [label="UART2\nConsole" href="system.html#uart"];
 
-    iusb0 [label="IUSB1"];
-    iusb1 [label="IUSB2"];
+    iusb0 [label="IUSB1" href="system.html#usb3"];
+    iusb1 [label="IUSB2" href="system.html#usb3"];
 
-    impcie [label="mPCIe Slot"];
-    im2 [label="M.2 Slot\nKey M"];
+    impcie [label="mPCIe Slot" href="system.html#pcie"];
+    im2 [label="M.2 Slot\nKey M" href="system.html#pcie"];
   }
   
   subgraph cluster_power {
@@ -108,18 +108,18 @@ digraph G {
       style=filled;
       margin="25.0";
       
-      lpc  [label="MCU LPC11U24" color=black width=4];
-      ina  [label="Current &\nVoltage Monitor" color=black];
+      lpc  [label="MCU LPC11U24" color=black width=4 href="system.html#lpc"];
+      ina  [label="Current &\nVoltage Monitor" color=black href="system.html#ina"];
       
-      ltc  [label="Buck/Boost\nDC-DC and Charger" color=black];
+      ltc  [label="Buck/Boost\nDC-DC and Charger" color=black href="system.html#ltc4020"];
 
-      mon  [label="Cell Monitor\nBalancer" color=black];
+      mon  [label="Cell Monitor\nBalancer" color=black href="system.html#balancer"];
       
-      lspi  [label="SPI" shape=diamond style=filled color=lightgrey];
-      li2c  [label="I2C" shape=diamond style=filled color=lightgrey];
+      lspi  [label="SPI" shape=diamond style=filled color=lightgrey href="system.html#spi"];
+      li2c  [label="I2C" shape=diamond style=filled color=lightgrey href="system.html#i2c"];
     
-      cells [label="8x LiFePO4 18650 Batteries" shape=rectangle];
-      supply [label="24V Power Supply\nfrom Barrel Jack" shape=rectangle];
+      cells [label="8x LiFePO4 18650 Batteries" shape=rectangle href="system.html#cells"];
+      supply [label="24V Power Supply\nfrom Barrel Jack" shape=rectangle href="system.html#barreljack"];
     
       enabchg [label="Charge On" shape=diamond style=filled color=lightgrey];
       enab5v [label="On" shape=diamond style=filled color=lightgrey];
@@ -134,13 +134,13 @@ digraph G {
       margin="25.0";
       
       r28v  [label="~28V" shape=diamond style=filled color=lightgrey];
-      stby [label="3V3 Standby" color=black];
-      r5v  [label="5V" width=1.1 color=black];
-      r3v3 [label="3V3" color=black];
+      stby [label="3V3 Standby" color=black href="system.html#standby"];
+      r5v  [label="5V" width=1.1 color=black href="system.html#r5v"];
+      r3v3 [label="3V3" color=black href="system.html#r3v3"];
       
-      r1v2 [label="1V2" width=0.5 color=black];
-      r1v5 [label="1V5" width=0.5 color=black];
-      r1v8 [label="1V8" width=0.5 color=black];
+      r1v2 [label="1V2" width=0.5 color=black href="system.html#r1v2"];
+      r1v5 [label="1V5" width=0.5 color=black href="system.html#r1v5"];
+      r1v8 [label="1V8" width=0.5 color=black href="system.html#r1v8"];
     }
   }
 
@@ -152,19 +152,19 @@ digraph G {
     color=lightgrey;
     style=filled;
     
-    pusb3  [label="USB3 Port 3"];
-    pusb2  [label="USB3 Port 2"];
-    pusb1  [label="USB3 Port 1"];
+    pusb3  [label="USB3 Port 3" href="system.html#usb3"];
+    pusb2  [label="USB3 Port 2" href="system.html#usb3"];
+    pusb1  [label="USB3 Port 1" href="system.html#usb3"];
 
-    pbarrel [label="Barrel Jack"];
+    pbarrel [label="Barrel Jack" href="system.html#barreljack"];
     
-    phdmi  [label="HDMI Port"];
-    psdcard  [label="SD Card Slot"];
-    peth [label="1G Ethernet Port"];
+    phdmi  [label="HDMI Port" href="system.html#hdmi"];
+    psdcard  [label="SD Card Slot" href="system.html#mmc"];
+    peth [label="1G Ethernet Port" href="system.html#eth-mac"];
 
-    paudio  [label="Headphone &\nMic Jack"];
+    paudio  [label="Headphone &\nMic Jack" href="system.html#audiojack"];
   }
-  lshift  [label="Level Shifter"];
+  lshift  [label="Level Shifter" href="system.html#mmc"];
   
   //refclk  [label="PCIe Clock Generator"];
   
@@ -184,9 +184,9 @@ digraph G {
       label="Screen Assembly\n ";
       margin="25.0";
 
-      panel  [label="12.5\" 1920x1080\nIPS Panel"];
-      backlight  [label="Backlight"];
-      speakers  [label="Stereo\nSpeakers"];
+      panel  [label="12.5\" 1920x1080\nIPS Panel" href="system.html#panel"];
+      backlight  [label="Backlight" href="system.html#panel"];
+      speakers  [label="Stereo\nSpeakers" href="system.html#speakers"];
     }
     
     subgraph cluster_trackball {
@@ -196,13 +196,13 @@ digraph G {
       label="Trackball\n ";
       margin="25.0";
       
-      tmcu  [label="MCU Atmega32U2" color=black width=3];
-      tsens  [label="Motion Sensor"];
+      tmcu  [label="MCU Atmega32U2" color=black width=3 href="system.html#tbctrl"];
+      tsens  [label="Motion Sensor" href="system.html#tbsensor"];
       
-      ti2c  [label="I2C" shape=diamond style=filled color=lightgrey];
+      ti2c  [label="I2C" shape=diamond style=filled color=lightgrey href="system.html#i2c"];
       tgpio  [label="GPIO" shape=diamond style=filled color=lightgrey];
       
-      tkeys  [label="5 Buttons"];
+      tkeys  [label="5 Buttons" href="system.html#kbkeys"];
     }
 
     subgraph cluster_keyboard {
@@ -212,14 +212,14 @@ digraph G {
       label="Keyboard\n ";
       margin="25.0";
       
-      kmcu  [label="MCU Atmega32U4" color=black width=3];
+      kmcu  [label="MCU Atmega32U4" color=black width=3 href="system.html#kbctrl"];
 
-      oled [label="OLED Display 128x32"];
+      oled [label="OLED Display 128x32" href="system.html#oled"];
       
-      ki2c  [label="I2C" shape=diamond style=filled color=lightgrey];
-      kuart  [label="UART" shape=diamond style=filled color=lightgrey];
+      ki2c  [label="I2C" shape=diamond style=filled color=lightgrey href="system.html#i2c"];
+      kuart  [label="UART" shape=diamond style=filled color=lightgrey  href="system.html#kbctrl"];
       kgpio  [label="GPIO" shape=diamond style=filled color=lightgrey];
-      kkeys  [label="Key Matrix"];
+      kkeys  [label="Key Matrix" href="system.html#kbkeys"];
     }
   }
 
