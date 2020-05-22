@@ -1,0 +1,358 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "MNT Reform 2 Keyboard OLED"
+Date "2020-04-12"
+Rev "2.0D-4"
+Comp "MNT Research GmbH"
+Comment1 "https://mntre.com"
+Comment2 "Engineer: Lukas F. Hartmann"
+Comment3 "License: CERN-OHL-S 2.0"
+Comment4 ""
+$EndDescr
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5CFAB6F9
+P 3550 5850
+F 0 "H1" H 3650 5899 50  0000 L CNN
+F 1 "MH1" H 3650 5808 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 3550 5850 50  0001 C CNN
+F 3 "~" H 3550 5850 50  0001 C CNN
+	1    3550 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5CFABDD2
+P 3900 5850
+F 0 "H2" H 4000 5899 50  0000 L CNN
+F 1 "MH2" H 4000 5808 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 3900 5850 50  0001 C CNN
+F 3 "~" H 3900 5850 50  0001 C CNN
+	1    3900 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5CFB0132
+P 3550 6050
+F 0 "#PWR03" H 3550 5800 50  0001 C CNN
+F 1 "GND" H 3550 5900 50  0000 C CNN
+F 2 "" H 3550 6050 50  0001 C CNN
+F 3 "" H 3550 6050 50  0001 C CNN
+	1    3550 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 6050 3550 5950
+Wire Wire Line
+	3550 5950 3900 5950
+Connection ~ 3550 5950
+$Comp
+L Mechanical:MountingHole GFX1
+U 1 1 5CFBB66E
+P 5150 5800
+F 0 "GFX1" H 5250 5846 50  0000 L CNN
+F 1 "MNT" H 5250 5755 50  0000 L CNN
+F 2 "reform2:mntreform" H 5150 5800 50  0001 C CNN
+F 3 "~" H 5150 5800 50  0001 C CNN
+	1    5150 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5D0C1E6C
+P 5850 3500
+F 0 "J1" H 5850 3800 50  0000 C CNN
+F 1 "AUX" H 5850 3100 50  0000 C CNN
+F 2 "Connector_FFC-FPC:Molex_200528-0040_1x04-1MP_P1.00mm_Horizontal" H 5850 3500 50  0001 C CNN
+F 3 "" H 5850 3500 50  0001 C CNN
+F 4 "Molex" H 5850 3500 50  0001 C CNN "Manufacturer"
+F 5 "200528-0040" H 5850 3500 50  0001 C CNN "Manufacturer_No"
+	1    5850 3500
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5D0C1E81
+P 5200 3600
+F 0 "#PWR05" H 5200 3350 50  0001 C CNN
+F 1 "GND" H 5200 3450 50  0000 C CNN
+F 2 "" H 5200 3600 50  0001 C CNN
+F 3 "" H 5200 3600 50  0001 C CNN
+	1    5200 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 3600 5650 3600
+$Comp
+L Device:C_Small C5
+U 1 1 5DC7F0C4
+P 3100 2150
+F 0 "C5" H 3110 2220 50  0000 L CNN
+F 1 "1uF" H 3110 2070 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3100 2150 50  0001 C CNN
+F 3 "" H 3100 2150 50  0001 C CNN
+F 4 "Taiyo Yuden" H 3100 2150 50  0001 C CNN "Manufacturer"
+F 5 "UMK107BJ105KA-T" H 3100 2150 50  0001 C CNN "Manufacturer_No"
+	1    3100 2150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2050 3350 2050
+Wire Wire Line
+	3100 2250 3350 2250
+$Comp
+L Device:C_Small C6
+U 1 1 5DC82D60
+P 3100 2550
+F 0 "C6" H 3110 2620 50  0000 L CNN
+F 1 "1uF" H 3110 2470 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3100 2550 50  0001 C CNN
+F 3 "" H 3100 2550 50  0001 C CNN
+F 4 "Taiyo Yuden" H 3100 2550 50  0001 C CNN "Manufacturer"
+F 5 "UMK107BJ105KA-T" H 3100 2550 50  0001 C CNN "Manufacturer_No"
+	1    3100 2550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2450 3350 2450
+Wire Wire Line
+	3100 2650 3350 2650
+$Comp
+L power:+3V3 #PWR02
+U 1 1 5DC84E30
+P 2700 2750
+F 0 "#PWR02" H 2700 2600 50  0001 C CNN
+F 1 "+3V3" H 2715 2923 50  0000 C CNN
+F 2 "" H 2700 2750 50  0001 C CNN
+F 3 "" H 2700 2750 50  0001 C CNN
+	1    2700 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 2850 2900 2850
+Wire Wire Line
+	2700 2850 2700 2750
+$Comp
+L power:GND #PWR01
+U 1 1 5DC86F36
+P 2200 4850
+F 0 "#PWR01" H 2200 4600 50  0001 C CNN
+F 1 "GND" H 2200 4700 50  0000 C CNN
+F 2 "" H 2200 4850 50  0001 C CNN
+F 3 "" H 2200 4850 50  0001 C CNN
+	1    2200 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3250 2200 3250
+Wire Wire Line
+	2200 3250 2200 3450
+Wire Wire Line
+	2700 2850 2700 3450
+Wire Wire Line
+	2700 3450 3350 3450
+Connection ~ 2700 2850
+$Comp
+L Device:R_Small R1
+U 1 1 5DC8A9C1
+P 3050 4250
+F 0 "R1" V 3150 4250 50  0000 L CNN
+F 1 "330k" V 2950 4200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3050 4250 50  0001 C CNN
+F 3 "" H 3050 4250 50  0001 C CNN
+F 4 "Yageo" H 3050 4250 50  0001 C CNN "Manufacturer"
+F 5 "AF0603FR-07330KL" H 3050 4250 50  0001 C CNN "Manufacturer_No"
+	1    3050 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3150 4250 3350 4250
+$Comp
+L Device:C_Small C3
+U 1 1 5DC8CE4C
+P 2750 4450
+F 0 "C3" H 2760 4520 50  0000 L CNN
+F 1 "10uF" H 2760 4370 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2750 4450 50  0001 C CNN
+F 3 "" H 2750 4450 50  0001 C CNN
+F 4 "Taiyo Yuden" H 2750 4450 50  0001 C CNN "Manufacturer"
+F 5 "LMK107BBJ106KALT" H 2750 4450 50  0001 C CNN "Manufacturer_No"
+	1    2750 4450
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2850 4450 3350 4450
+$Comp
+L Device:C_Small C4
+U 1 1 5DC8F872
+P 3000 4650
+F 0 "C4" H 3010 4720 50  0000 L CNN
+F 1 "10uF" H 3010 4570 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3000 4650 50  0001 C CNN
+F 3 "" H 3000 4650 50  0001 C CNN
+F 4 "Taiyo Yuden" H 3000 4650 50  0001 C CNN "Manufacturer"
+F 5 "LMK107BBJ106KALT" H 3000 4650 50  0001 C CNN "Manufacturer_No"
+	1    3000 4650
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	3100 4650 3350 4650
+Wire Wire Line
+	2900 4650 2200 4650
+Connection ~ 2200 4650
+Wire Wire Line
+	2200 4650 2200 4850
+Wire Wire Line
+	2650 4450 2200 4450
+Connection ~ 2200 4450
+Wire Wire Line
+	2200 4450 2200 4650
+Wire Wire Line
+	2950 4250 2200 4250
+Connection ~ 2200 4250
+Wire Wire Line
+	2200 4250 2200 4450
+Text GLabel 3350 3850 0    60   Input ~ 0
+DISP_SCL
+Text GLabel 3350 4050 0    60   Input ~ 0
+DISP_SDA
+Text GLabel 5650 3500 0    60   Input ~ 0
+DISP_SCL
+Text GLabel 5650 3400 0    60   Input ~ 0
+DISP_SDA
+$Comp
+L power:+3V3 #PWR04
+U 1 1 5DC9A968
+P 5200 3300
+F 0 "#PWR04" H 5200 3150 50  0001 C CNN
+F 1 "+3V3" V 5215 3428 50  0000 L CNN
+F 2 "" H 5200 3300 50  0001 C CNN
+F 3 "" H 5200 3300 50  0001 C CNN
+	1    5200 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 3300 5450 3300
+$Comp
+L Device:C_Small C1
+U 1 1 5DCAC522
+P 2450 2850
+F 0 "C1" H 2460 2920 50  0000 L CNN
+F 1 "1uF" H 2460 2770 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2450 2850 50  0001 C CNN
+F 3 "" H 2450 2850 50  0001 C CNN
+F 4 "Taiyo Yuden" H 2450 2850 50  0001 C CNN "Manufacturer"
+F 5 "UMK107BJ105KA-T" H 2450 2850 50  0001 C CNN "Manufacturer_No"
+	1    2450 2850
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5DCACDA3
+P 2450 3450
+F 0 "C2" H 2460 3520 50  0000 L CNN
+F 1 "1uF" H 2460 3370 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2450 3450 50  0001 C CNN
+F 3 "" H 2450 3450 50  0001 C CNN
+F 4 "Taiyo Yuden" H 2450 3450 50  0001 C CNN "Manufacturer"
+F 5 "UMK107BJ105KA-T" H 2450 3450 50  0001 C CNN "Manufacturer_No"
+	1    2450 3450
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2550 3450 2700 3450
+Connection ~ 2700 3450
+Wire Wire Line
+	2700 2850 2550 2850
+Wire Wire Line
+	2350 2850 2200 2850
+Wire Wire Line
+	2200 2850 2200 3250
+Connection ~ 2200 3250
+Wire Wire Line
+	2350 3450 2200 3450
+Connection ~ 2200 3450
+Text Notes 2600 1750 0    60   ~ 0
+Based on Adafruit 931
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5DC67359
+P 5450 3300
+F 0 "#FLG0101" H 5450 3375 50  0001 C CNN
+F 1 "PWR_FLAG" H 5450 3473 50  0000 C CNN
+F 2 "" H 5450 3300 50  0001 C CNN
+F 3 "~" H 5450 3300 50  0001 C CNN
+	1    5450 3300
+	1    0    0    -1  
+$EndComp
+Connection ~ 5450 3300
+Wire Wire Line
+	5450 3300 5650 3300
+Text Notes 1500 3700 0    50   ~ 0
+Reset RC circuit
+$Comp
+L SSD1306_OLED-0.91-128x32:SSD1306 U1
+U 1 1 5EAB622B
+P 3350 3350
+F 0 "U1" V 3297 4028 60  0000 L CNN
+F 1 "SSD1306" V 3403 4028 60  0000 L CNN
+F 2 "KiCad-SSD1306_OLED-0:SSD1306_OLED-0.91-128x32" H 3350 3350 60  0001 C CNN
+F 3 "" H 3350 3350 60  0001 C CNN
+	1    3350 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 5E7CCF56
+P 2450 3650
+F 0 "C7" H 2460 3720 50  0000 L CNN
+F 1 "1uF" H 2460 3570 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2450 3650 50  0001 C CNN
+F 3 "" H 2450 3650 50  0001 C CNN
+F 4 "Taiyo Yuden" H 2450 3650 50  0001 C CNN "Manufacturer"
+F 5 "UMK107BJ105KA-T" H 2450 3650 50  0001 C CNN "Manufacturer_No"
+	1    2450 3650
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5E7D0D47
+P 2900 3050
+F 0 "R2" V 2800 3000 50  0000 L CNN
+F 1 "4.7k" V 3000 2950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2900 3050 50  0001 C CNN
+F 3 "" H 2900 3050 50  0001 C CNN
+F 4 "Yageo" H 2900 3050 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-074K7L" H 2900 3050 50  0001 C CNN "Manufacturer_No"
+	1    2900 3050
+	-1   0    0    1   
+$EndComp
+Text Notes 4750 3000 0    60   ~ 0
+Same side FFC mirrors the pins!
+Wire Wire Line
+	2200 3450 2200 3650
+Wire Wire Line
+	2900 2950 2900 2850
+Connection ~ 2900 2850
+Wire Wire Line
+	2900 2850 2700 2850
+Wire Wire Line
+	2900 3150 2900 3650
+Connection ~ 2900 3650
+Wire Wire Line
+	2900 3650 3350 3650
+Wire Wire Line
+	2550 3650 2900 3650
+Wire Wire Line
+	2350 3650 2200 3650
+Connection ~ 2200 3650
+Wire Wire Line
+	2200 3650 2200 4250
+Text Notes 6650 3500 0    60   ~ 0
+TODO: Flip SDA/SCL?!
+$EndSCHEMATC

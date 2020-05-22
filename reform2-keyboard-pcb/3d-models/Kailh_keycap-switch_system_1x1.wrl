@@ -6510,7 +6510,7 @@ Group {
                                   Appearance {
                                     material 
                                     Material {
-                                      diffuseColor 0.627451 0.627451 0.627451
+                                      diffuseColor 0.2 0.2 0.2
 
                                     }
 

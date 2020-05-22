@@ -1,0 +1,5 @@
+Reference, Quantity, Value, Footprint, Datasheet, Manufacturer, Manufacturer_No
+H1 H2 H3 H4 H5 H6 H7 H8 ,8,"MountingHole","MountingHole:MountingHole_2.2mm_M2","~"
+H9 ,1,"LOGO","footprints:mnt-minilogo","~"
+J1 ,1,"Conn_01x05_Female","Connector_Molex:Molex_Pico-Lock_504050-0591_1x05-1MP_P1.50mm_Horizontal","~","Molex","504050-0591"
+U2 U3 U4 U1 ,4,"KEYSTONE_54","reform2-batterypack:Keystone54","","Keystone","54"

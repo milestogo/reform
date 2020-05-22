@@ -1,0 +1,4711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/mntmn/code/reform/reform2-keyboard-pcb/reform2-keyboard.sch</source>
+    <date>Thu 09 Apr 2020 12:53:00 PM CEST</date>
+    <tool>Eeschema 5.1.5+dfsg1-2+b1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Reform Keyboard</title>
+        <company>MNT Research GmbH</company>
+        <rev>0.6</rev>
+        <date>2019-05-29</date>
+        <source>reform2-keyboard.sch</source>
+        <comment number="1" value="License: GPLv3+ https://www.gnu.org/licenses/gpl-3.0.en.html"/>
+        <comment number="2" value="Copyright 2017,2018,2019 Lukas F. Hartmann / mntmn"/>
+        <comment number="3" value="https://mntre.com/reform"/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Reform KBD MCU/" tstamps="/5A2069AE/">
+      <title_block>
+        <title>Reform Keyboard</title>
+        <company>MNT Research GmbH</company>
+        <rev>0.6</rev>
+        <date>2019-05-29</date>
+        <source>reform-kbd-mcu.sch</source>
+        <comment number="1" value="License: GPLv3+ https://www.gnu.org/licenses/gpl-3.0.en.html"/>
+        <comment number="2" value="Copyright 2017,2018,2019 Lukas F. Hartmann / mntmn"/>
+        <comment number="3" value="https://mntre.com/reform"/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/Reform KBD Backlight/" tstamps="/5E649921/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>reform2-keyboard-backlight.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="SW1">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D7DFA</tstamp>
+    </comp>
+    <comp ref="SW7">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D7E8E</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D7FFC</tstamp>
+    </comp>
+    <comp ref="D7">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D80D3</tstamp>
+    </comp>
+    <comp ref="SW13">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D872C</tstamp>
+    </comp>
+    <comp ref="SW19">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D8732</tstamp>
+    </comp>
+    <comp ref="D13">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D873A</tstamp>
+    </comp>
+    <comp ref="D19">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D8740</tstamp>
+    </comp>
+    <comp ref="SW25">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D8B3E</tstamp>
+    </comp>
+    <comp ref="SW31">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D8B44</tstamp>
+    </comp>
+    <comp ref="D25">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D8B4C</tstamp>
+    </comp>
+    <comp ref="D31">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D8B52</tstamp>
+    </comp>
+    <comp ref="SW37">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D8B58</tstamp>
+    </comp>
+    <comp ref="SW43">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D8B5E</tstamp>
+    </comp>
+    <comp ref="D37">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D8B66</tstamp>
+    </comp>
+    <comp ref="D43">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D8B6C</tstamp>
+    </comp>
+    <comp ref="SW49">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D96D7</tstamp>
+    </comp>
+    <comp ref="SW55">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D96DD</tstamp>
+    </comp>
+    <comp ref="D49">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D96E5</tstamp>
+    </comp>
+    <comp ref="D55">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D96EB</tstamp>
+    </comp>
+    <comp ref="SW61">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D96F1</tstamp>
+    </comp>
+    <comp ref="SW67">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D96F7</tstamp>
+    </comp>
+    <comp ref="D61">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D96FF</tstamp>
+    </comp>
+    <comp ref="D67">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D9705</tstamp>
+    </comp>
+    <comp ref="SW73">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D970B</tstamp>
+    </comp>
+    <comp ref="SW78">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D9711</tstamp>
+    </comp>
+    <comp ref="D73">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D9719</tstamp>
+    </comp>
+    <comp ref="D78">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594D971F</tstamp>
+    </comp>
+    <comp ref="SW8">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DAC25</tstamp>
+    </comp>
+    <comp ref="SW14">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DAC2B</tstamp>
+    </comp>
+    <comp ref="D8">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DAC33</tstamp>
+    </comp>
+    <comp ref="D14">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DAC39</tstamp>
+    </comp>
+    <comp ref="SW20">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DAC3F</tstamp>
+    </comp>
+    <comp ref="SW26">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DAC45</tstamp>
+    </comp>
+    <comp ref="D20">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DAC4C</tstamp>
+    </comp>
+    <comp ref="D26">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DAC52</tstamp>
+    </comp>
+    <comp ref="SW32">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DAC58</tstamp>
+    </comp>
+    <comp ref="SW38">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DAC5E</tstamp>
+    </comp>
+    <comp ref="D32">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DAC65</tstamp>
+    </comp>
+    <comp ref="D38">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DAC6B</tstamp>
+    </comp>
+    <comp ref="SW44">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DAC71</tstamp>
+    </comp>
+    <comp ref="SW50">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DAC77</tstamp>
+    </comp>
+    <comp ref="D44">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DAC7E</tstamp>
+    </comp>
+    <comp ref="D50">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DAC84</tstamp>
+    </comp>
+    <comp ref="SW56">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DAC8A</tstamp>
+    </comp>
+    <comp ref="SW62">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DAC90</tstamp>
+    </comp>
+    <comp ref="D56">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DAC97</tstamp>
+    </comp>
+    <comp ref="D62">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DAC9D</tstamp>
+    </comp>
+    <comp ref="SW68">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DACA3</tstamp>
+    </comp>
+    <comp ref="SW74">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DACA9</tstamp>
+    </comp>
+    <comp ref="D68">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DACB0</tstamp>
+    </comp>
+    <comp ref="D74">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DACB6</tstamp>
+    </comp>
+    <comp ref="SW79">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DACBC</tstamp>
+    </comp>
+    <comp ref="D79">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DACC9</tstamp>
+    </comp>
+    <comp ref="SW9">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBB03</tstamp>
+    </comp>
+    <comp ref="SW15">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBB09</tstamp>
+    </comp>
+    <comp ref="D9">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBB11</tstamp>
+    </comp>
+    <comp ref="D15">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBB17</tstamp>
+    </comp>
+    <comp ref="SW21">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBB1D</tstamp>
+    </comp>
+    <comp ref="SW27">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBB23</tstamp>
+    </comp>
+    <comp ref="D21">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBB2A</tstamp>
+    </comp>
+    <comp ref="D27">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBB30</tstamp>
+    </comp>
+    <comp ref="SW33">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBB36</tstamp>
+    </comp>
+    <comp ref="SW39">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBB3C</tstamp>
+    </comp>
+    <comp ref="D33">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBB43</tstamp>
+    </comp>
+    <comp ref="D39">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBB49</tstamp>
+    </comp>
+    <comp ref="SW45">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBB4F</tstamp>
+    </comp>
+    <comp ref="SW51">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBB55</tstamp>
+    </comp>
+    <comp ref="D45">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBB5C</tstamp>
+    </comp>
+    <comp ref="D51">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBB62</tstamp>
+    </comp>
+    <comp ref="SW57">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBB68</tstamp>
+    </comp>
+    <comp ref="SW63">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBB6E</tstamp>
+    </comp>
+    <comp ref="D57">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBB75</tstamp>
+    </comp>
+    <comp ref="D63">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBB7B</tstamp>
+    </comp>
+    <comp ref="SW69">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBB81</tstamp>
+    </comp>
+    <comp ref="SW75">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBB87</tstamp>
+    </comp>
+    <comp ref="D69">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBB8E</tstamp>
+    </comp>
+    <comp ref="D75">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBB94</tstamp>
+    </comp>
+    <comp ref="SW80">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBB9A</tstamp>
+    </comp>
+    <comp ref="SW4">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBBA0</tstamp>
+    </comp>
+    <comp ref="D80">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBBA7</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DBBAD</tstamp>
+    </comp>
+    <comp ref="SW10">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCA61</tstamp>
+    </comp>
+    <comp ref="SW16">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCA67</tstamp>
+    </comp>
+    <comp ref="D10">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCA6F</tstamp>
+    </comp>
+    <comp ref="D16">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCA75</tstamp>
+    </comp>
+    <comp ref="SW22">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCA7B</tstamp>
+    </comp>
+    <comp ref="SW28">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCA81</tstamp>
+    </comp>
+    <comp ref="D22">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCA88</tstamp>
+    </comp>
+    <comp ref="D28">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCA8E</tstamp>
+    </comp>
+    <comp ref="SW34">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCA94</tstamp>
+    </comp>
+    <comp ref="SW40">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCA9A</tstamp>
+    </comp>
+    <comp ref="D34">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCAA1</tstamp>
+    </comp>
+    <comp ref="D40">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCAA7</tstamp>
+    </comp>
+    <comp ref="SW46">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCAAD</tstamp>
+    </comp>
+    <comp ref="SW52">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCAB3</tstamp>
+    </comp>
+    <comp ref="D46">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCABA</tstamp>
+    </comp>
+    <comp ref="D52">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCAC0</tstamp>
+    </comp>
+    <comp ref="SW58">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCAC6</tstamp>
+    </comp>
+    <comp ref="SW64">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCACC</tstamp>
+    </comp>
+    <comp ref="D58">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCAD3</tstamp>
+    </comp>
+    <comp ref="D64">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCAD9</tstamp>
+    </comp>
+    <comp ref="SW70">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCADF</tstamp>
+    </comp>
+    <comp ref="SW76">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCAE5</tstamp>
+    </comp>
+    <comp ref="D70">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCAEC</tstamp>
+    </comp>
+    <comp ref="D76">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCAF2</tstamp>
+    </comp>
+    <comp ref="SW81">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCAF8</tstamp>
+    </comp>
+    <comp ref="D81">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCB05</tstamp>
+    </comp>
+    <comp ref="SW5">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCB17</tstamp>
+    </comp>
+    <comp ref="SW11">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCB1D</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCB25</tstamp>
+    </comp>
+    <comp ref="D11">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCB2B</tstamp>
+    </comp>
+    <comp ref="SW17">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCB31</tstamp>
+    </comp>
+    <comp ref="SW23">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCB37</tstamp>
+    </comp>
+    <comp ref="D17">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCB3E</tstamp>
+    </comp>
+    <comp ref="D23">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCB44</tstamp>
+    </comp>
+    <comp ref="SW29">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCB4A</tstamp>
+    </comp>
+    <comp ref="SW35">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCB50</tstamp>
+    </comp>
+    <comp ref="D29">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCB57</tstamp>
+    </comp>
+    <comp ref="D35">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCB5D</tstamp>
+    </comp>
+    <comp ref="SW41">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCB63</tstamp>
+    </comp>
+    <comp ref="SW47">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCB69</tstamp>
+    </comp>
+    <comp ref="D41">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCB70</tstamp>
+    </comp>
+    <comp ref="D47">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCB76</tstamp>
+    </comp>
+    <comp ref="SW53">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCB7C</tstamp>
+    </comp>
+    <comp ref="SW59">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCB82</tstamp>
+    </comp>
+    <comp ref="D53">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCB89</tstamp>
+    </comp>
+    <comp ref="D59">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCB8F</tstamp>
+    </comp>
+    <comp ref="SW65">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCB95</tstamp>
+    </comp>
+    <comp ref="SW71">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCB9B</tstamp>
+    </comp>
+    <comp ref="D65">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCBA2</tstamp>
+    </comp>
+    <comp ref="D71">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCBA8</tstamp>
+    </comp>
+    <comp ref="SW77">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCBAE</tstamp>
+    </comp>
+    <comp ref="D77">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DCBBB</tstamp>
+    </comp>
+    <comp ref="SW82">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DD691</tstamp>
+    </comp>
+    <comp ref="SW6">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DD697</tstamp>
+    </comp>
+    <comp ref="D82">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DD69F</tstamp>
+    </comp>
+    <comp ref="D6">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DD6A5</tstamp>
+    </comp>
+    <comp ref="SW12">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DD6AB</tstamp>
+    </comp>
+    <comp ref="SW18">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DD6B1</tstamp>
+    </comp>
+    <comp ref="D12">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DD6B8</tstamp>
+    </comp>
+    <comp ref="D18">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DD6BE</tstamp>
+    </comp>
+    <comp ref="SW24">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DD6C4</tstamp>
+    </comp>
+    <comp ref="SW30">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DD6CA</tstamp>
+    </comp>
+    <comp ref="D24">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DD6D1</tstamp>
+    </comp>
+    <comp ref="D30">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DD6D7</tstamp>
+    </comp>
+    <comp ref="SW36">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DD6DD</tstamp>
+    </comp>
+    <comp ref="SW42">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DD6E3</tstamp>
+    </comp>
+    <comp ref="D36">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DD6EA</tstamp>
+    </comp>
+    <comp ref="D42">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DD6F0</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DACCF</tstamp>
+    </comp>
+    <comp ref="SW3">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594DACC2</tstamp>
+    </comp>
+    <comp ref="SW2">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594EABB7</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594EABBD</tstamp>
+    </comp>
+    <comp ref="SW48">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A664C9C</tstamp>
+    </comp>
+    <comp ref="D48">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A664CA2</tstamp>
+    </comp>
+    <comp ref="SW54">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A664F6B</tstamp>
+    </comp>
+    <comp ref="D54">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A664F71</tstamp>
+    </comp>
+    <comp ref="SW60">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CC405D4</tstamp>
+    </comp>
+    <comp ref="SW66">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CC405DA</tstamp>
+    </comp>
+    <comp ref="D60">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CC405E0</tstamp>
+    </comp>
+    <comp ref="D66">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CC405E6</tstamp>
+    </comp>
+    <comp ref="SW72">
+      <value>Choc</value>
+      <footprint>keyswitches:PG1350</footprint>
+      <fields>
+        <field name="Manufacturer">Kailh</field>
+        <field name="Manufacturer_No">Choc</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="Choc" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D01FA9B</tstamp>
+    </comp>
+    <comp ref="D72">
+      <value>MMDL914T1G</value>
+      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Manufacturer">ON</field>
+        <field name="Manufacturer_No">MMDL914T1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D01FAA5</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>18pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Manufacturer_No">CC0603JRNPO9BN180</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5A2073AA</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>18pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Manufacturer_No">CC0603JRNPO9BN180</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5A2073F7</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">TDK</field>
+        <field name="Manufacturer_No">C1608X8L1C105K080AC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5A20764E</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>22</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Vishay Dale</field>
+        <field name="Manufacturer_No">CRCW06030000Z0EAC</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5A213EDF</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>22</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Vishay Dale</field>
+        <field name="Manufacturer_No">CRCW06030000Z0EAC</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5A213F64</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">TDK</field>
+        <field name="Manufacturer_No">C1608X8L1C105K080AC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5A2148C0</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Manufacturer_No">CC0603JPX7R9BB104</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5A214A09</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Manufacturer_No">AF0603JR-0710KL</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5A21443A</tstamp>
+    </comp>
+    <comp ref="Y1">
+      <value>16MHz</value>
+      <footprint>Crystals:Crystal_SMD_3225-4pin_3.2x2.5mm_HandSoldering</footprint>
+      <fields>
+        <field name="Manufacturer">Abracon</field>
+        <field name="Manufacturer_No">ABM8AIG-16.000MHz-4-T</field>
+      </fields>
+      <libsource lib="Device" part="Crystal_GND24" description="Four pin crystal, GND on pins 2 and 4"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5A6378F6</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>ATMEGA32U4-AU</value>
+      <footprint>Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm</footprint>
+      <fields>
+        <field name="Manufacturer">Microchip</field>
+        <field name="Manufacturer_No">ATMEGA32U4-AU</field>
+      </fields>
+      <libsource lib="MCU_Microchip_ATmega" part="ATmega32U4-AU" description="16MHz, 32kB Flash, 2.5kB SRAM, 1kB EEPROM, USB 2.0, TQFP-44"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5A21306C</tstamp>
+    </comp>
+    <comp ref="SW83">
+      <value>RESET</value>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">C&amp;K</field>
+        <field name="Manufacturer_No">KMR221GLFS</field>
+      </fields>
+      <libsource lib="Switch" part="SW_SPST" description="Single Pole Single Throw (SPST) switch"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5CF3DA9E</tstamp>
+    </comp>
+    <comp ref="SW84">
+      <value>SW_DIP_x01</value>
+      <footprint>Button_Switch_SMD:SW_DIP_SPSTx01_Slide_Omron_A6S-110x_W8.9mm_P2.54mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Omron</field>
+        <field name="Manufacturer_No">A6S-1101-H</field>
+      </fields>
+      <libsource lib="Switch" part="SW_DIP_x01" description="1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5CF54073</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Vishay Dale</field>
+        <field name="Manufacturer_No">CRCW06030000Z0EAC</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5CF5B5C6</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>UART</value>
+      <footprint>Connector_JST:JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal</footprint>
+      <fields>
+        <field name="Manufacturer">JST</field>
+        <field name="Manufacturer_No">S4B-PH-SM4-TB(LF)(SN)</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5CF60438</tstamp>
+    </comp>
+    <comp ref="H1">
+      <value>MH1</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2_Pad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5CFAB6F9</tstamp>
+    </comp>
+    <comp ref="H2">
+      <value>MH2</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2_Pad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5CFABDD2</tstamp>
+    </comp>
+    <comp ref="H3">
+      <value>MH3</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2_Pad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5CFAC2C0</tstamp>
+    </comp>
+    <comp ref="H4">
+      <value>MH4</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2_Pad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5CFAC2CA</tstamp>
+    </comp>
+    <comp ref="GFX1">
+      <value>MNT</value>
+      <footprint>reform2-keyboard:mntreform</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5CFBB66E</tstamp>
+    </comp>
+    <comp ref="GFX2">
+      <value>MNT</value>
+      <footprint>reform2-keyboard:mntreform</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5CFBBDCD</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>AUX</value>
+      <footprint>Connector_FFC-FPC:Molex_200528-0040_1x04-1MP_P1.00mm_Horizontal</footprint>
+      <fields>
+        <field name="Manufacturer">Molex</field>
+        <field name="Manufacturer_No">200528-0040</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5D0C1E6C</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>USB</value>
+      <footprint>Connector_JST:JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal</footprint>
+      <fields>
+        <field name="Manufacturer">JST</field>
+        <field name="Manufacturer_No">S4B-PH-SM4-TB(LF)(SN)</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5A213B3D</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Manufacturer_No">CC0603JPX7R9BB104</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5DC43CAF</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Vishay Dale</field>
+        <field name="Manufacturer_No">CRCW06034K70FKEAC</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5DCCE912</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Vishay Dale</field>
+        <field name="Manufacturer_No">CRCW06034K70FKEAC</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5DCD0C98</tstamp>
+    </comp>
+    <comp ref="H5">
+      <value>MH5</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2_Pad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5DC7F0C0</tstamp>
+    </comp>
+    <comp ref="H6">
+      <value>MH6</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2_Pad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5DC7F6F1</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>USB_C_Receptacle_USB2.0</value>
+      <footprint>Connector_USB:USB_C_Receptacle_Amphenol_12401610E4-2A</footprint>
+      <datasheet>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</datasheet>
+      <fields>
+        <field name="Manufacturer">Amphenol</field>
+        <field name="Manufacturer_No">12401610E4#2A</field>
+      </fields>
+      <libsource lib="Connector" part="USB_C_Receptacle_USB2.0" description="USB 2.0-only Type-C Receptacle connector"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5E62B709</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>5.1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Manufacturer_No">AC0603FR-135K1L</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5E63CB6C</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>5.1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Manufacturer_No">AC0603FR-135K1L</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Reform KBD MCU/" tstamps="/5A2069AE/"/>
+      <tstamp>5E63CE03</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>TPS61185</value>
+      <footprint>Package_DFN_QFN:VQFN-24-1EP_4x4mm_P0.5mm_EP2.45x2.45mm</footprint>
+      <fields>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Manufacturer_No">TPS61185</field>
+      </fields>
+      <libsource lib="mntcomp-keyboard" part="TPS61185" description=""/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E662D83</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">TDK</field>
+        <field name="Manufacturer_No">C1608X8L1C105K080AC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E667666</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">TDK</field>
+        <field name="Manufacturer_No">C1608X8L1C105K080AC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E667FBE</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>1M</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Panasonic</field>
+        <field name="Manufacturer_No">ERJ-3EKF1004V</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E669890</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>4.7uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Taiyo Yuden</field>
+        <field name="Manufacturer_No">JMK107BB7475KA-T</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E669E84</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>54.9K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Manufacturer_No">RC0603FR-0754K9L</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E66A76D</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>715K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Vishay Dale</field>
+        <field name="Manufacturer_No">CRCW0603715KFKEA</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E66C2F0</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>604K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Vishay Dale</field>
+        <field name="Manufacturer_No">CRCW0603604KFKEA</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E66E9AD</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>62K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Vishay Dale</field>
+        <field name="Manufacturer_No">CRCW060362K0FKEAC</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E66F341</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>4.7uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Taiyo Yuden</field>
+        <field name="Manufacturer_No">JMK107BB7475KA-T</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6768BB</tstamp>
+    </comp>
+    <comp ref="D83">
+      <value>B250-13-F</value>
+      <footprint>Diode_SMD:D_SMB_Handsoldering</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Diodes</field>
+        <field name="Manufacturer_No">B250-13-F</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky_Small" description="Schottky diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6811A0</tstamp>
+    </comp>
+    <comp ref="D84">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E684560</tstamp>
+    </comp>
+    <comp ref="D85">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E685BEF</tstamp>
+    </comp>
+    <comp ref="D86">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E686F92</tstamp>
+    </comp>
+    <comp ref="D87">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E686F9C</tstamp>
+    </comp>
+    <comp ref="D88">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6885DE</tstamp>
+    </comp>
+    <comp ref="D89">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6885E8</tstamp>
+    </comp>
+    <comp ref="D90">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6885F2</tstamp>
+    </comp>
+    <comp ref="D91">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6885FC</tstamp>
+    </comp>
+    <comp ref="D94">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E69361F</tstamp>
+    </comp>
+    <comp ref="D95">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E69362B</tstamp>
+    </comp>
+    <comp ref="D96">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E693635</tstamp>
+    </comp>
+    <comp ref="D97">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E69363F</tstamp>
+    </comp>
+    <comp ref="D98">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E693649</tstamp>
+    </comp>
+    <comp ref="D99">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E693653</tstamp>
+    </comp>
+    <comp ref="D100">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E69365D</tstamp>
+    </comp>
+    <comp ref="D101">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E693667</tstamp>
+    </comp>
+    <comp ref="D104">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E699D32</tstamp>
+    </comp>
+    <comp ref="D105">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E699D3D</tstamp>
+    </comp>
+    <comp ref="D106">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E699D47</tstamp>
+    </comp>
+    <comp ref="D107">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E699D51</tstamp>
+    </comp>
+    <comp ref="D108">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E699D5B</tstamp>
+    </comp>
+    <comp ref="D109">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E699D65</tstamp>
+    </comp>
+    <comp ref="D110">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E699D6F</tstamp>
+    </comp>
+    <comp ref="D111">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E699D79</tstamp>
+    </comp>
+    <comp ref="D114">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E69CEE1</tstamp>
+    </comp>
+    <comp ref="D115">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E69CEEC</tstamp>
+    </comp>
+    <comp ref="D116">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E69CEF6</tstamp>
+    </comp>
+    <comp ref="D117">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E69CF00</tstamp>
+    </comp>
+    <comp ref="D118">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E69CF0A</tstamp>
+    </comp>
+    <comp ref="D119">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E69CF14</tstamp>
+    </comp>
+    <comp ref="D120">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E69CF1E</tstamp>
+    </comp>
+    <comp ref="D121">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E69CF28</tstamp>
+    </comp>
+    <comp ref="D124">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E69CF33</tstamp>
+    </comp>
+    <comp ref="D125">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E69CF3E</tstamp>
+    </comp>
+    <comp ref="D126">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E69CF48</tstamp>
+    </comp>
+    <comp ref="D127">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E69CF52</tstamp>
+    </comp>
+    <comp ref="D128">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E69CF5C</tstamp>
+    </comp>
+    <comp ref="D129">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E69CF66</tstamp>
+    </comp>
+    <comp ref="D130">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E69CF70</tstamp>
+    </comp>
+    <comp ref="D131">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E69CF7A</tstamp>
+    </comp>
+    <comp ref="D134">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6A3974</tstamp>
+    </comp>
+    <comp ref="D135">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6A397F</tstamp>
+    </comp>
+    <comp ref="D136">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6A3989</tstamp>
+    </comp>
+    <comp ref="D137">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6A3993</tstamp>
+    </comp>
+    <comp ref="D138">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6A399D</tstamp>
+    </comp>
+    <comp ref="D139">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6A39A7</tstamp>
+    </comp>
+    <comp ref="D140">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6A39B1</tstamp>
+    </comp>
+    <comp ref="D141">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6A39BB</tstamp>
+    </comp>
+    <comp ref="D144">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6A39C6</tstamp>
+    </comp>
+    <comp ref="D145">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6A39D1</tstamp>
+    </comp>
+    <comp ref="D146">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6A39DB</tstamp>
+    </comp>
+    <comp ref="D147">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6A39E5</tstamp>
+    </comp>
+    <comp ref="D148">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6A39EF</tstamp>
+    </comp>
+    <comp ref="D149">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6A39F9</tstamp>
+    </comp>
+    <comp ref="D150">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6A3A03</tstamp>
+    </comp>
+    <comp ref="D151">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6A3A0D</tstamp>
+    </comp>
+    <comp ref="D154">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6A3A18</tstamp>
+    </comp>
+    <comp ref="D155">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6A3A23</tstamp>
+    </comp>
+    <comp ref="D156">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6A3A2D</tstamp>
+    </comp>
+    <comp ref="D157">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6A3A37</tstamp>
+    </comp>
+    <comp ref="D158">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6A3A41</tstamp>
+    </comp>
+    <comp ref="D159">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6A3A4B</tstamp>
+    </comp>
+    <comp ref="D160">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6A3A55</tstamp>
+    </comp>
+    <comp ref="D161">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6A3A5F</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Vishay Dale</field>
+        <field name="Manufacturer_No">CRCW06030000Z0EAC</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E6D9FEB</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>10uH</value>
+      <footprint>reform2-keyboard:IND_SRP4020TA-150M</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Bourns</field>
+        <field name="Manufacturer_No">SRP4020TA-100M</field>
+      </fields>
+      <libsource lib="Device" part="L_Small" description="Inductor, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E66393B</tstamp>
+    </comp>
+    <comp ref="D92">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E819D05</tstamp>
+    </comp>
+    <comp ref="D93">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E819D0F</tstamp>
+    </comp>
+    <comp ref="D102">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E819D19</tstamp>
+    </comp>
+    <comp ref="D103">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E819D23</tstamp>
+    </comp>
+    <comp ref="D112">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E819D2D</tstamp>
+    </comp>
+    <comp ref="D113">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E819D37</tstamp>
+    </comp>
+    <comp ref="D122">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E819D41</tstamp>
+    </comp>
+    <comp ref="D123">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E819D4B</tstamp>
+    </comp>
+    <comp ref="D132">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E819D55</tstamp>
+    </comp>
+    <comp ref="D133">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E819D5F</tstamp>
+    </comp>
+    <comp ref="D142">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E819D69</tstamp>
+    </comp>
+    <comp ref="D143">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E819D73</tstamp>
+    </comp>
+    <comp ref="D152">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E819D7D</tstamp>
+    </comp>
+    <comp ref="D153">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E819D87</tstamp>
+    </comp>
+    <comp ref="D162">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E819D91</tstamp>
+    </comp>
+    <comp ref="D163">
+      <value>WLED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">OSRAM</field>
+        <field name="Manufacturer_No">LW Q38E-Q2OO-3K5L</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/Reform KBD Backlight/" tstamps="/5E649921/"/>
+      <tstamp>5E819D9B</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="USB_C_Receptacle_USB2.0">
+      <description>USB 2.0-only Type-C Receptacle connector</description>
+      <docs>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</docs>
+      <footprints>
+        <fp>USB*C*Receptacle*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB_C_Receptacle_USB2.0</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="GND" type="power_in"/>
+        <pin num="A4" name="VBUS" type="power_in"/>
+        <pin num="A5" name="CC1" type="BiDi"/>
+        <pin num="A6" name="D+" type="BiDi"/>
+        <pin num="A7" name="D-" type="BiDi"/>
+        <pin num="A8" name="SBU1" type="BiDi"/>
+        <pin num="A9" name="VBUS" type="passive"/>
+        <pin num="A12" name="GND" type="passive"/>
+        <pin num="B1" name="GND" type="passive"/>
+        <pin num="B4" name="VBUS" type="passive"/>
+        <pin num="B5" name="CC2" type="BiDi"/>
+        <pin num="B6" name="D+" type="BiDi"/>
+        <pin num="B7" name="D-" type="BiDi"/>
+        <pin num="B8" name="SBU2" type="BiDi"/>
+        <pin num="B9" name="VBUS" type="passive"/>
+        <pin num="B12" name="GND" type="passive"/>
+        <pin num="S1" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Crystal_GND24">
+      <description>Four pin crystal, GND on pins 2 and 4</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal_GND24</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky_Small">
+      <description>Schottky diode, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Small">
+      <description>Diode, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED_Small">
+      <description>Light emitting diode, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L_Small">
+      <description>Inductor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small">
+      <description>Resistor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU_Microchip_ATmega" part="ATmega16U4-AU">
+      <aliases>
+        <alias>ATmega16U4RC-AU</alias>
+        <alias>ATmega32U4-AU</alias>
+        <alias>ATmega32U4RC-AU</alias>
+      </aliases>
+      <description>16MHz, 16kB Flash, 1.25kB SRAM, 512B EEPROM, USB 2.0, TQFP-44</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf</docs>
+      <footprints>
+        <fp>TQFP*10x10mm*P0.8mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ATmega16U4-AU</field>
+        <field name="Footprint">Package_QFP:TQFP-44_10x10mm_P0.8mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PE6" type="3state"/>
+        <pin num="2" name="UVCC" type="power_in"/>
+        <pin num="3" name="D-" type="BiDi"/>
+        <pin num="4" name="D+" type="BiDi"/>
+        <pin num="5" name="UGND" type="passive"/>
+        <pin num="6" name="UCAP" type="passive"/>
+        <pin num="7" name="VBUS" type="input"/>
+        <pin num="8" name="PB0" type="3state"/>
+        <pin num="9" name="PB1" type="3state"/>
+        <pin num="10" name="PB2" type="3state"/>
+        <pin num="11" name="PB3" type="3state"/>
+        <pin num="12" name="PB7" type="3state"/>
+        <pin num="13" name="~RESET" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+        <pin num="15" name="GND" type="power_in"/>
+        <pin num="16" name="XTAL2" type="output"/>
+        <pin num="17" name="XTAL1" type="input"/>
+        <pin num="18" name="PD0" type="3state"/>
+        <pin num="19" name="PD1" type="3state"/>
+        <pin num="20" name="PD2" type="3state"/>
+        <pin num="21" name="PD3" type="3state"/>
+        <pin num="22" name="PD5" type="3state"/>
+        <pin num="23" name="GND" type="passive"/>
+        <pin num="24" name="AVCC" type="power_in"/>
+        <pin num="25" name="PD4" type="3state"/>
+        <pin num="26" name="PD6" type="3state"/>
+        <pin num="27" name="PD7" type="3state"/>
+        <pin num="28" name="PB4" type="3state"/>
+        <pin num="29" name="PB5" type="3state"/>
+        <pin num="30" name="PB6" type="3state"/>
+        <pin num="31" name="PC6" type="3state"/>
+        <pin num="32" name="PC7" type="3state"/>
+        <pin num="33" name="~HWB~/PE2" type="3state"/>
+        <pin num="34" name="VCC" type="passive"/>
+        <pin num="35" name="GND" type="passive"/>
+        <pin num="36" name="PF7" type="3state"/>
+        <pin num="37" name="PF6" type="3state"/>
+        <pin num="38" name="PF5" type="3state"/>
+        <pin num="39" name="PF4" type="3state"/>
+        <pin num="40" name="PF1" type="3state"/>
+        <pin num="41" name="PF0" type="3state"/>
+        <pin num="42" name="AREF" type="passive"/>
+        <pin num="43" name="GND" type="passive"/>
+        <pin num="44" name="AVCC" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+      </fields>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole_Pad">
+      <description>Mounting Hole with connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*Pad*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole_Pad</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_DIP_x01">
+      <description>1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SW?DIP?x1*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_DIP_x01</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_SPST">
+      <description>Single Pole Single Throw (SPST) switch</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_SPST</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="mntcomp-keyboard" part="Choc">
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">Choc</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="mntcomp-keyboard" part="TPS61185">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS61185</field>
+      </fields>
+      <pins>
+        <pin num="1" name="EN" type="input"/>
+        <pin num="2" name="FSW" type="input"/>
+        <pin num="3" name="FPWMO" type="input"/>
+        <pin num="4" name="NC" type="NotConnected"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="PWMIN" type="input"/>
+        <pin num="7" name="IFB8" type="input"/>
+        <pin num="8" name="IFB7" type="input"/>
+        <pin num="9" name="IFB6" type="input"/>
+        <pin num="10" name="IFB5" type="input"/>
+        <pin num="11" name="ISET" type="input"/>
+        <pin num="12" name="IFB4" type="input"/>
+        <pin num="13" name="IFB3" type="input"/>
+        <pin num="14" name="IFB2" type="input"/>
+        <pin num="15" name="IFB1" type="input"/>
+        <pin num="16" name="OVP" type="input"/>
+        <pin num="17" name="PGND2" type="power_in"/>
+        <pin num="18" name="PGND1" type="power_in"/>
+        <pin num="19" name="SW2" type="input"/>
+        <pin num="20" name="SW1" type="input"/>
+        <pin num="21" name="FAULT" type="output"/>
+        <pin num="22" name="MODE" type="input"/>
+        <pin num="23" name="VIN" type="power_in"/>
+        <pin num="24" name="VDD" type="power_in"/>
+        <pin num="25" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/library/Connector.lib</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>/usr/share/kicad/library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="MCU_Microchip_ATmega">
+      <uri>/usr/share/kicad/library/MCU_Microchip_ATmega.lib</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>/usr/share/kicad/library/Mechanical.lib</uri>
+    </library>
+    <library logical="Switch">
+      <uri>/usr/share/kicad/library/Switch.lib</uri>
+    </library>
+    <library logical="mntcomp-keyboard">
+      <uri>/home/mntmn/code/reform/reform2-keyboard-pcb/mntcomp-keyboard.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="ROW1">
+      <node ref="D1" pin="1"/>
+      <node ref="D78" pin="1"/>
+      <node ref="D73" pin="1"/>
+      <node ref="D31" pin="1"/>
+      <node ref="D25" pin="1"/>
+      <node ref="D19" pin="1"/>
+      <node ref="D13" pin="1"/>
+      <node ref="D7" pin="1"/>
+      <node ref="D67" pin="1"/>
+      <node ref="D61" pin="1"/>
+      <node ref="D55" pin="1"/>
+      <node ref="D43" pin="1"/>
+      <node ref="D37" pin="1"/>
+      <node ref="D49" pin="1"/>
+      <node ref="U1" pin="30"/>
+    </net>
+    <net code="2" name="Net-(D60-Pad2)">
+      <node ref="D60" pin="2"/>
+      <node ref="SW60" pin="2"/>
+    </net>
+    <net code="3" name="Net-(D66-Pad2)">
+      <node ref="D66" pin="2"/>
+      <node ref="SW66" pin="2"/>
+    </net>
+    <net code="4" name="COL13">
+      <node ref="SW74" pin="1"/>
+      <node ref="SW75" pin="1"/>
+      <node ref="SW73" pin="1"/>
+      <node ref="SW76" pin="1"/>
+      <node ref="U1" pin="37"/>
+      <node ref="SW77" pin="1"/>
+    </net>
+    <net code="5" name="COL14">
+      <node ref="SW81" pin="1"/>
+      <node ref="SW80" pin="1"/>
+      <node ref="SW78" pin="1"/>
+      <node ref="SW82" pin="1"/>
+      <node ref="U1" pin="31"/>
+      <node ref="SW79" pin="1"/>
+    </net>
+    <net code="6" name="Net-(D72-Pad2)">
+      <node ref="D72" pin="2"/>
+      <node ref="SW72" pin="2"/>
+    </net>
+    <net code="7" name="ROW4">
+      <node ref="D34" pin="1"/>
+      <node ref="D10" pin="1"/>
+      <node ref="D16" pin="1"/>
+      <node ref="D22" pin="1"/>
+      <node ref="D28" pin="1"/>
+      <node ref="D4" pin="1"/>
+      <node ref="D40" pin="1"/>
+      <node ref="D46" pin="1"/>
+      <node ref="U1" pin="27"/>
+      <node ref="D52" pin="1"/>
+      <node ref="D58" pin="1"/>
+      <node ref="D64" pin="1"/>
+      <node ref="D70" pin="1"/>
+      <node ref="D76" pin="1"/>
+      <node ref="D81" pin="1"/>
+    </net>
+    <net code="8" name="Net-(D1-Pad2)">
+      <node ref="SW1" pin="2"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="9" name="Net-(D45-Pad2)">
+      <node ref="SW45" pin="2"/>
+      <node ref="D45" pin="2"/>
+    </net>
+    <net code="10" name="Net-(D21-Pad2)">
+      <node ref="SW21" pin="2"/>
+      <node ref="D21" pin="2"/>
+    </net>
+    <net code="11" name="Net-(D27-Pad2)">
+      <node ref="SW27" pin="2"/>
+      <node ref="D27" pin="2"/>
+    </net>
+    <net code="12" name="Net-(D33-Pad2)">
+      <node ref="D33" pin="2"/>
+      <node ref="SW33" pin="2"/>
+    </net>
+    <net code="13" name="Net-(D39-Pad2)">
+      <node ref="D39" pin="2"/>
+      <node ref="SW39" pin="2"/>
+    </net>
+    <net code="14" name="Net-(D51-Pad2)">
+      <node ref="SW51" pin="2"/>
+      <node ref="D51" pin="2"/>
+    </net>
+    <net code="15" name="Net-(D57-Pad2)">
+      <node ref="D57" pin="2"/>
+      <node ref="SW57" pin="2"/>
+    </net>
+    <net code="16" name="Net-(D63-Pad2)">
+      <node ref="D63" pin="2"/>
+      <node ref="SW63" pin="2"/>
+    </net>
+    <net code="17" name="Net-(D68-Pad2)">
+      <node ref="SW68" pin="2"/>
+      <node ref="D68" pin="2"/>
+    </net>
+    <net code="18" name="Net-(D74-Pad2)">
+      <node ref="SW74" pin="2"/>
+      <node ref="D74" pin="2"/>
+    </net>
+    <net code="19" name="Net-(D79-Pad2)">
+      <node ref="D79" pin="2"/>
+      <node ref="SW79" pin="2"/>
+    </net>
+    <net code="20" name="Net-(D9-Pad2)">
+      <node ref="SW9" pin="2"/>
+      <node ref="D9" pin="2"/>
+    </net>
+    <net code="21" name="Net-(D15-Pad2)">
+      <node ref="SW15" pin="2"/>
+      <node ref="D15" pin="2"/>
+    </net>
+    <net code="22" name="Net-(D34-Pad2)">
+      <node ref="D34" pin="2"/>
+      <node ref="SW34" pin="2"/>
+    </net>
+    <net code="23" name="Net-(D16-Pad2)">
+      <node ref="SW16" pin="2"/>
+      <node ref="D16" pin="2"/>
+    </net>
+    <net code="24" name="Net-(D22-Pad2)">
+      <node ref="D22" pin="2"/>
+      <node ref="SW22" pin="2"/>
+    </net>
+    <net code="25" name="Net-(D28-Pad2)">
+      <node ref="D28" pin="2"/>
+      <node ref="SW28" pin="2"/>
+    </net>
+    <net code="26" name="Net-(D10-Pad2)">
+      <node ref="SW10" pin="2"/>
+      <node ref="D10" pin="2"/>
+    </net>
+    <net code="27" name="Net-(D40-Pad2)">
+      <node ref="SW40" pin="2"/>
+      <node ref="D40" pin="2"/>
+    </net>
+    <net code="28" name="Net-(D46-Pad2)">
+      <node ref="SW46" pin="2"/>
+      <node ref="D46" pin="2"/>
+    </net>
+    <net code="29" name="Net-(D52-Pad2)">
+      <node ref="SW52" pin="2"/>
+      <node ref="D52" pin="2"/>
+    </net>
+    <net code="30" name="Net-(D80-Pad2)">
+      <node ref="SW80" pin="2"/>
+      <node ref="D80" pin="2"/>
+    </net>
+    <net code="31" name="Net-(D69-Pad2)">
+      <node ref="SW69" pin="2"/>
+      <node ref="D69" pin="2"/>
+    </net>
+    <net code="32" name="Net-(D75-Pad2)">
+      <node ref="SW75" pin="2"/>
+      <node ref="D75" pin="2"/>
+    </net>
+    <net code="33" name="Net-(D4-Pad2)">
+      <node ref="D4" pin="2"/>
+      <node ref="SW4" pin="2"/>
+    </net>
+    <net code="34" name="Net-(D37-Pad2)">
+      <node ref="SW37" pin="2"/>
+      <node ref="D37" pin="2"/>
+    </net>
+    <net code="35" name="Net-(D43-Pad2)">
+      <node ref="SW43" pin="2"/>
+      <node ref="D43" pin="2"/>
+    </net>
+    <net code="36" name="Net-(D49-Pad2)">
+      <node ref="SW49" pin="2"/>
+      <node ref="D49" pin="2"/>
+    </net>
+    <net code="37" name="COL10">
+      <node ref="SW56" pin="1"/>
+      <node ref="SW55" pin="1"/>
+      <node ref="U1" pin="40"/>
+      <node ref="SW57" pin="1"/>
+      <node ref="SW60" pin="1"/>
+      <node ref="SW58" pin="1"/>
+      <node ref="SW59" pin="1"/>
+    </net>
+    <net code="38" name="Net-(D55-Pad2)">
+      <node ref="SW55" pin="2"/>
+      <node ref="D55" pin="2"/>
+    </net>
+    <net code="39" name="Net-(D31-Pad2)">
+      <node ref="SW31" pin="2"/>
+      <node ref="D31" pin="2"/>
+    </net>
+    <net code="40" name="Net-(D61-Pad2)">
+      <node ref="SW61" pin="2"/>
+      <node ref="D61" pin="2"/>
+    </net>
+    <net code="41" name="Net-(D67-Pad2)">
+      <node ref="SW67" pin="2"/>
+      <node ref="D67" pin="2"/>
+    </net>
+    <net code="42" name="Net-(D19-Pad2)">
+      <node ref="D19" pin="2"/>
+      <node ref="SW19" pin="2"/>
+    </net>
+    <net code="43" name="Net-(D7-Pad2)">
+      <node ref="SW7" pin="2"/>
+      <node ref="D7" pin="2"/>
+    </net>
+    <net code="44" name="Net-(D13-Pad2)">
+      <node ref="D13" pin="2"/>
+      <node ref="SW13" pin="2"/>
+    </net>
+    <net code="45" name="Net-(D25-Pad2)">
+      <node ref="D25" pin="2"/>
+      <node ref="SW25" pin="2"/>
+    </net>
+    <net code="46" name="Net-(D32-Pad2)">
+      <node ref="SW32" pin="2"/>
+      <node ref="D32" pin="2"/>
+    </net>
+    <net code="47" name="Net-(D38-Pad2)">
+      <node ref="SW38" pin="2"/>
+      <node ref="D38" pin="2"/>
+    </net>
+    <net code="48" name="Net-(D44-Pad2)">
+      <node ref="D44" pin="2"/>
+      <node ref="SW44" pin="2"/>
+    </net>
+    <net code="49" name="Net-(D50-Pad2)">
+      <node ref="SW50" pin="2"/>
+      <node ref="D50" pin="2"/>
+    </net>
+    <net code="50" name="Net-(D56-Pad2)">
+      <node ref="SW56" pin="2"/>
+      <node ref="D56" pin="2"/>
+    </net>
+    <net code="51" name="Net-(D62-Pad2)">
+      <node ref="SW62" pin="2"/>
+      <node ref="D62" pin="2"/>
+    </net>
+    <net code="52" name="Net-(D73-Pad2)">
+      <node ref="D73" pin="2"/>
+      <node ref="SW73" pin="2"/>
+    </net>
+    <net code="53" name="Net-(D78-Pad2)">
+      <node ref="D78" pin="2"/>
+      <node ref="SW78" pin="2"/>
+    </net>
+    <net code="54" name="Net-(D8-Pad2)">
+      <node ref="SW8" pin="2"/>
+      <node ref="D8" pin="2"/>
+    </net>
+    <net code="55" name="Net-(D14-Pad2)">
+      <node ref="SW14" pin="2"/>
+      <node ref="D14" pin="2"/>
+    </net>
+    <net code="56" name="COL12">
+      <node ref="SW67" pin="1"/>
+      <node ref="SW69" pin="1"/>
+      <node ref="SW68" pin="1"/>
+      <node ref="SW70" pin="1"/>
+      <node ref="SW72" pin="1"/>
+      <node ref="SW71" pin="1"/>
+      <node ref="U1" pin="38"/>
+    </net>
+    <net code="57" name="Net-(D20-Pad2)">
+      <node ref="D20" pin="2"/>
+      <node ref="SW20" pin="2"/>
+    </net>
+    <net code="58" name="Net-(D26-Pad2)">
+      <node ref="SW26" pin="2"/>
+      <node ref="D26" pin="2"/>
+    </net>
+    <net code="59" name="COL2">
+      <node ref="SW10" pin="1"/>
+      <node ref="SW11" pin="1"/>
+      <node ref="U1" pin="36"/>
+      <node ref="SW12" pin="1"/>
+      <node ref="SW9" pin="1"/>
+      <node ref="SW7" pin="1"/>
+      <node ref="SW8" pin="1"/>
+    </net>
+    <net code="60" name="COL3">
+      <node ref="SW14" pin="1"/>
+      <node ref="SW13" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="SW15" pin="1"/>
+      <node ref="SW17" pin="1"/>
+      <node ref="SW18" pin="1"/>
+      <node ref="SW16" pin="1"/>
+    </net>
+    <net code="61" name="COL4">
+      <node ref="SW21" pin="1"/>
+      <node ref="SW24" pin="1"/>
+      <node ref="U1" pin="32"/>
+      <node ref="SW20" pin="1"/>
+      <node ref="SW19" pin="1"/>
+      <node ref="SW23" pin="1"/>
+      <node ref="SW22" pin="1"/>
+    </net>
+    <net code="62" name="COL5">
+      <node ref="SW29" pin="1"/>
+      <node ref="SW30" pin="1"/>
+      <node ref="U1" pin="11"/>
+      <node ref="SW25" pin="1"/>
+      <node ref="SW27" pin="1"/>
+      <node ref="SW28" pin="1"/>
+      <node ref="SW26" pin="1"/>
+    </net>
+    <net code="63" name="COL6">
+      <node ref="SW36" pin="1"/>
+      <node ref="SW32" pin="1"/>
+      <node ref="U1" pin="10"/>
+      <node ref="SW35" pin="1"/>
+      <node ref="SW33" pin="1"/>
+      <node ref="SW34" pin="1"/>
+      <node ref="SW31" pin="1"/>
+    </net>
+    <net code="64" name="COL7">
+      <node ref="U1" pin="9"/>
+      <node ref="SW38" pin="1"/>
+      <node ref="SW37" pin="1"/>
+      <node ref="SW39" pin="1"/>
+      <node ref="SW41" pin="1"/>
+      <node ref="SW42" pin="1"/>
+      <node ref="SW40" pin="1"/>
+    </net>
+    <net code="65" name="COL8">
+      <node ref="SW43" pin="1"/>
+      <node ref="SW45" pin="1"/>
+      <node ref="SW47" pin="1"/>
+      <node ref="SW44" pin="1"/>
+      <node ref="SW48" pin="1"/>
+      <node ref="U1" pin="8"/>
+      <node ref="SW46" pin="1"/>
+    </net>
+    <net code="66" name="COL9">
+      <node ref="SW52" pin="1"/>
+      <node ref="SW53" pin="1"/>
+      <node ref="SW50" pin="1"/>
+      <node ref="U1" pin="41"/>
+      <node ref="SW49" pin="1"/>
+      <node ref="SW51" pin="1"/>
+      <node ref="SW54" pin="1"/>
+    </net>
+    <net code="67" name="COL11">
+      <node ref="SW64" pin="1"/>
+      <node ref="SW65" pin="1"/>
+      <node ref="SW66" pin="1"/>
+      <node ref="SW62" pin="1"/>
+      <node ref="SW63" pin="1"/>
+      <node ref="U1" pin="39"/>
+      <node ref="SW61" pin="1"/>
+    </net>
+    <net code="68" name="ROW6">
+      <node ref="D24" pin="1"/>
+      <node ref="U1" pin="25"/>
+      <node ref="D60" pin="1"/>
+      <node ref="D66" pin="1"/>
+      <node ref="D48" pin="1"/>
+      <node ref="D12" pin="1"/>
+      <node ref="D54" pin="1"/>
+      <node ref="D30" pin="1"/>
+      <node ref="D36" pin="1"/>
+      <node ref="D42" pin="1"/>
+      <node ref="D6" pin="1"/>
+      <node ref="D18" pin="1"/>
+      <node ref="D72" pin="1"/>
+    </net>
+    <net code="69" name="Net-(D48-Pad2)">
+      <node ref="SW48" pin="2"/>
+      <node ref="D48" pin="2"/>
+    </net>
+    <net code="70" name="Net-(D54-Pad2)">
+      <node ref="D54" pin="2"/>
+      <node ref="SW54" pin="2"/>
+    </net>
+    <net code="71" name="Net-(D3-Pad2)">
+      <node ref="SW3" pin="2"/>
+      <node ref="D3" pin="2"/>
+    </net>
+    <net code="72" name="Net-(D30-Pad2)">
+      <node ref="D30" pin="2"/>
+      <node ref="SW30" pin="2"/>
+    </net>
+    <net code="73" name="Net-(D36-Pad2)">
+      <node ref="SW36" pin="2"/>
+      <node ref="D36" pin="2"/>
+    </net>
+    <net code="74" name="Net-(D42-Pad2)">
+      <node ref="SW42" pin="2"/>
+      <node ref="D42" pin="2"/>
+    </net>
+    <net code="75" name="COL1">
+      <node ref="SW6" pin="1"/>
+      <node ref="SW4" pin="1"/>
+      <node ref="SW5" pin="1"/>
+      <node ref="SW2" pin="1"/>
+      <node ref="SW3" pin="1"/>
+      <node ref="U1" pin="22"/>
+      <node ref="SW1" pin="1"/>
+    </net>
+    <net code="76" name="Net-(D2-Pad2)">
+      <node ref="SW2" pin="2"/>
+      <node ref="D2" pin="2"/>
+    </net>
+    <net code="77" name="ROW2">
+      <node ref="U1" pin="29"/>
+      <node ref="D8" pin="1"/>
+      <node ref="D62" pin="1"/>
+      <node ref="D56" pin="1"/>
+      <node ref="D50" pin="1"/>
+      <node ref="D38" pin="1"/>
+      <node ref="D32" pin="1"/>
+      <node ref="D74" pin="1"/>
+      <node ref="D44" pin="1"/>
+      <node ref="D68" pin="1"/>
+      <node ref="D79" pin="1"/>
+      <node ref="D2" pin="1"/>
+      <node ref="D26" pin="1"/>
+      <node ref="D20" pin="1"/>
+      <node ref="D14" pin="1"/>
+    </net>
+    <net code="78" name="ROW3">
+      <node ref="U1" pin="28"/>
+      <node ref="D21" pin="1"/>
+      <node ref="D9" pin="1"/>
+      <node ref="D15" pin="1"/>
+      <node ref="D3" pin="1"/>
+      <node ref="D69" pin="1"/>
+      <node ref="D75" pin="1"/>
+      <node ref="D63" pin="1"/>
+      <node ref="D80" pin="1"/>
+      <node ref="D39" pin="1"/>
+      <node ref="D45" pin="1"/>
+      <node ref="D33" pin="1"/>
+      <node ref="D51" pin="1"/>
+      <node ref="D27" pin="1"/>
+      <node ref="D57" pin="1"/>
+    </net>
+    <net code="79" name="ROW5">
+      <node ref="D41" pin="1"/>
+      <node ref="D65" pin="1"/>
+      <node ref="D71" pin="1"/>
+      <node ref="D47" pin="1"/>
+      <node ref="D59" pin="1"/>
+      <node ref="D53" pin="1"/>
+      <node ref="D82" pin="1"/>
+      <node ref="D5" pin="1"/>
+      <node ref="D11" pin="1"/>
+      <node ref="D17" pin="1"/>
+      <node ref="D23" pin="1"/>
+      <node ref="D29" pin="1"/>
+      <node ref="D35" pin="1"/>
+      <node ref="D77" pin="1"/>
+      <node ref="U1" pin="26"/>
+    </net>
+    <net code="80" name="Net-(D17-Pad2)">
+      <node ref="D17" pin="2"/>
+      <node ref="SW17" pin="2"/>
+    </net>
+    <net code="81" name="Net-(D5-Pad2)">
+      <node ref="SW5" pin="2"/>
+      <node ref="D5" pin="2"/>
+    </net>
+    <net code="82" name="Net-(D11-Pad2)">
+      <node ref="D11" pin="2"/>
+      <node ref="SW11" pin="2"/>
+    </net>
+    <net code="83" name="Net-(D23-Pad2)">
+      <node ref="D23" pin="2"/>
+      <node ref="SW23" pin="2"/>
+    </net>
+    <net code="84" name="Net-(D29-Pad2)">
+      <node ref="D29" pin="2"/>
+      <node ref="SW29" pin="2"/>
+    </net>
+    <net code="85" name="Net-(D35-Pad2)">
+      <node ref="D35" pin="2"/>
+      <node ref="SW35" pin="2"/>
+    </net>
+    <net code="86" name="Net-(D24-Pad2)">
+      <node ref="SW24" pin="2"/>
+      <node ref="D24" pin="2"/>
+    </net>
+    <net code="87" name="Net-(D58-Pad2)">
+      <node ref="D58" pin="2"/>
+      <node ref="SW58" pin="2"/>
+    </net>
+    <net code="88" name="Net-(D64-Pad2)">
+      <node ref="D64" pin="2"/>
+      <node ref="SW64" pin="2"/>
+    </net>
+    <net code="89" name="Net-(D70-Pad2)">
+      <node ref="D70" pin="2"/>
+      <node ref="SW70" pin="2"/>
+    </net>
+    <net code="90" name="Net-(D76-Pad2)">
+      <node ref="D76" pin="2"/>
+      <node ref="SW76" pin="2"/>
+    </net>
+    <net code="91" name="Net-(D81-Pad2)">
+      <node ref="SW81" pin="2"/>
+      <node ref="D81" pin="2"/>
+    </net>
+    <net code="92" name="Net-(D12-Pad2)">
+      <node ref="D12" pin="2"/>
+      <node ref="SW12" pin="2"/>
+    </net>
+    <net code="93" name="Net-(D77-Pad2)">
+      <node ref="SW77" pin="2"/>
+      <node ref="D77" pin="2"/>
+    </net>
+    <net code="94" name="Net-(D82-Pad2)">
+      <node ref="SW82" pin="2"/>
+      <node ref="D82" pin="2"/>
+    </net>
+    <net code="95" name="Net-(D6-Pad2)">
+      <node ref="SW6" pin="2"/>
+      <node ref="D6" pin="2"/>
+    </net>
+    <net code="96" name="Net-(D18-Pad2)">
+      <node ref="D18" pin="2"/>
+      <node ref="SW18" pin="2"/>
+    </net>
+    <net code="97" name="Net-(D41-Pad2)">
+      <node ref="D41" pin="2"/>
+      <node ref="SW41" pin="2"/>
+    </net>
+    <net code="98" name="Net-(D47-Pad2)">
+      <node ref="SW47" pin="2"/>
+      <node ref="D47" pin="2"/>
+    </net>
+    <net code="99" name="Net-(D53-Pad2)">
+      <node ref="D53" pin="2"/>
+      <node ref="SW53" pin="2"/>
+    </net>
+    <net code="100" name="Net-(D59-Pad2)">
+      <node ref="D59" pin="2"/>
+      <node ref="SW59" pin="2"/>
+    </net>
+    <net code="101" name="Net-(D71-Pad2)">
+      <node ref="D71" pin="2"/>
+      <node ref="SW71" pin="2"/>
+    </net>
+    <net code="102" name="Net-(D65-Pad2)">
+      <node ref="D65" pin="2"/>
+      <node ref="SW65" pin="2"/>
+    </net>
+    <net code="103" name="GND">
+      <node ref="SW83" pin="2"/>
+      <node ref="Y1" pin="4"/>
+      <node ref="U1" pin="15"/>
+      <node ref="J4" pin="A1"/>
+      <node ref="J4" pin="A12"/>
+      <node ref="H6" pin="1"/>
+      <node ref="J4" pin="B1"/>
+      <node ref="U1" pin="35"/>
+      <node ref="H5" pin="1"/>
+      <node ref="U1" pin="23"/>
+      <node ref="R13" pin="1"/>
+      <node ref="R12" pin="2"/>
+      <node ref="R14" pin="2"/>
+      <node ref="J4" pin="B12"/>
+      <node ref="C10" pin="2"/>
+      <node ref="J2" pin="4"/>
+      <node ref="U1" pin="43"/>
+      <node ref="U1" pin="5"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="Y1" pin="2"/>
+      <node ref="SW84" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="J3" pin="4"/>
+      <node ref="H4" pin="1"/>
+      <node ref="H3" pin="1"/>
+      <node ref="H2" pin="1"/>
+      <node ref="H1" pin="1"/>
+      <node ref="J1" pin="4"/>
+      <node ref="C9" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="U2" pin="17"/>
+      <node ref="U2" pin="5"/>
+      <node ref="U2" pin="22"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="R8" pin="2"/>
+      <node ref="R7" pin="2"/>
+      <node ref="J4" pin="S1"/>
+      <node ref="U2" pin="25"/>
+      <node ref="U2" pin="18"/>
+      <node ref="R10" pin="2"/>
+    </net>
+    <net code="104" name="+5V">
+      <node ref="C7" pin="1"/>
+      <node ref="U2" pin="23"/>
+      <node ref="C8" pin="1"/>
+      <node ref="U1" pin="2"/>
+      <node ref="R9" pin="1"/>
+      <node ref="L1" pin="1"/>
+      <node ref="U1" pin="7"/>
+      <node ref="C4" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="J4" pin="B9"/>
+      <node ref="J4" pin="B4"/>
+      <node ref="J4" pin="A4"/>
+      <node ref="J4" pin="A9"/>
+    </net>
+    <net code="105" name="DISP_SDA">
+      <node ref="U1" pin="19"/>
+      <node ref="R5" pin="2"/>
+      <node ref="J3" pin="3"/>
+    </net>
+    <net code="106" name="DISP_SCL">
+      <node ref="J3" pin="2"/>
+      <node ref="R6" pin="2"/>
+      <node ref="U1" pin="18"/>
+    </net>
+    <net code="107" name="D+">
+      <node ref="J4" pin="A6"/>
+      <node ref="J4" pin="B6"/>
+      <node ref="R1" pin="2"/>
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="108" name="D-">
+      <node ref="J4" pin="B7"/>
+      <node ref="J4" pin="A7"/>
+      <node ref="J1" pin="2"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="109" name="Net-(J4-PadB8)">
+      <node ref="J4" pin="B8"/>
+    </net>
+    <net code="110" name="Net-(J4-PadB5)">
+      <node ref="J4" pin="B5"/>
+      <node ref="R14" pin="1"/>
+    </net>
+    <net code="111" name="Net-(J4-PadA5)">
+      <node ref="R13" pin="2"/>
+      <node ref="J4" pin="A5"/>
+    </net>
+    <net code="112" name="Net-(J4-PadA8)">
+      <node ref="J4" pin="A8"/>
+    </net>
+    <net code="113" name="+3V3">
+      <node ref="C6" pin="1"/>
+      <node ref="J3" pin="1"/>
+      <node ref="U1" pin="14"/>
+      <node ref="C5" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="U1" pin="44"/>
+      <node ref="R4" pin="2"/>
+      <node ref="J2" pin="1"/>
+      <node ref="U1" pin="24"/>
+      <node ref="U1" pin="34"/>
+      <node ref="R5" pin="1"/>
+      <node ref="R6" pin="1"/>
+    </net>
+    <net code="114" name="RESET">
+      <node ref="R3" pin="2"/>
+      <node ref="SW83" pin="1"/>
+      <node ref="U1" pin="13"/>
+    </net>
+    <net code="115" name="Net-(C3-Pad1)">
+      <node ref="U1" pin="6"/>
+      <node ref="C3" pin="1"/>
+    </net>
+    <net code="116" name="/Reform KBD MCU/UD-">
+      <node ref="R2" pin="1"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="117" name="Net-(R4-Pad1)">
+      <node ref="R4" pin="1"/>
+      <node ref="U1" pin="42"/>
+    </net>
+    <net code="118" name="/Reform KBD MCU/UD+">
+      <node ref="U1" pin="4"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="119" name="Net-(C1-Pad1)">
+      <node ref="C1" pin="1"/>
+      <node ref="U1" pin="17"/>
+      <node ref="Y1" pin="1"/>
+    </net>
+    <net code="120" name="Net-(C2-Pad1)">
+      <node ref="U1" pin="16"/>
+      <node ref="C2" pin="1"/>
+      <node ref="Y1" pin="3"/>
+    </net>
+    <net code="121" name="PWM">
+      <node ref="U2" pin="6"/>
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="122" name="PROG">
+      <node ref="U1" pin="33"/>
+      <node ref="SW84" pin="1"/>
+    </net>
+    <net code="123" name="UART_TX">
+      <node ref="U1" pin="21"/>
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="124" name="UART_RX">
+      <node ref="J2" pin="2"/>
+      <node ref="U1" pin="20"/>
+    </net>
+    <net code="125" name="Net-(D140-Pad1)">
+      <node ref="D140" pin="1"/>
+      <node ref="D141" pin="2"/>
+    </net>
+    <net code="126" name="Net-(D144-Pad1)">
+      <node ref="D144" pin="1"/>
+      <node ref="D145" pin="2"/>
+    </net>
+    <net code="127" name="Net-(D145-Pad1)">
+      <node ref="D145" pin="1"/>
+      <node ref="D146" pin="2"/>
+    </net>
+    <net code="128" name="Net-(D146-Pad1)">
+      <node ref="D146" pin="1"/>
+      <node ref="D147" pin="2"/>
+    </net>
+    <net code="129" name="Net-(D147-Pad1)">
+      <node ref="D148" pin="2"/>
+      <node ref="D147" pin="1"/>
+    </net>
+    <net code="130" name="Net-(D141-Pad1)">
+      <node ref="D141" pin="1"/>
+      <node ref="D142" pin="2"/>
+    </net>
+    <net code="131" name="Net-(D139-Pad1)">
+      <node ref="D140" pin="2"/>
+      <node ref="D139" pin="1"/>
+    </net>
+    <net code="132" name="Net-(D138-Pad1)">
+      <node ref="D139" pin="2"/>
+      <node ref="D138" pin="1"/>
+    </net>
+    <net code="133" name="Net-(D137-Pad1)">
+      <node ref="D138" pin="2"/>
+      <node ref="D137" pin="1"/>
+    </net>
+    <net code="134" name="Net-(D136-Pad1)">
+      <node ref="D137" pin="2"/>
+      <node ref="D136" pin="1"/>
+    </net>
+    <net code="135" name="Net-(D135-Pad1)">
+      <node ref="D136" pin="2"/>
+      <node ref="D135" pin="1"/>
+    </net>
+    <net code="136" name="Net-(D158-Pad1)">
+      <node ref="D159" pin="2"/>
+      <node ref="D158" pin="1"/>
+    </net>
+    <net code="137" name="Net-(D159-Pad1)">
+      <node ref="D160" pin="2"/>
+      <node ref="D159" pin="1"/>
+    </net>
+    <net code="138" name="Net-(D157-Pad1)">
+      <node ref="D157" pin="1"/>
+      <node ref="D158" pin="2"/>
+    </net>
+    <net code="139" name="Net-(D156-Pad1)">
+      <node ref="D157" pin="2"/>
+      <node ref="D156" pin="1"/>
+    </net>
+    <net code="140" name="Net-(D155-Pad1)">
+      <node ref="D156" pin="2"/>
+      <node ref="D155" pin="1"/>
+    </net>
+    <net code="141" name="Net-(D154-Pad1)">
+      <node ref="D155" pin="2"/>
+      <node ref="D154" pin="1"/>
+    </net>
+    <net code="142" name="Net-(D148-Pad1)">
+      <node ref="D148" pin="1"/>
+      <node ref="D149" pin="2"/>
+    </net>
+    <net code="143" name="Net-(D150-Pad1)">
+      <node ref="D151" pin="2"/>
+      <node ref="D150" pin="1"/>
+    </net>
+    <net code="144" name="Net-(D151-Pad1)">
+      <node ref="D151" pin="1"/>
+      <node ref="D152" pin="2"/>
+    </net>
+    <net code="145" name="Net-(D149-Pad1)">
+      <node ref="D150" pin="2"/>
+      <node ref="D149" pin="1"/>
+    </net>
+    <net code="146" name="Net-(D115-Pad1)">
+      <node ref="D116" pin="2"/>
+      <node ref="D115" pin="1"/>
+    </net>
+    <net code="147" name="Net-(D120-Pad1)">
+      <node ref="D120" pin="1"/>
+      <node ref="D121" pin="2"/>
+    </net>
+    <net code="148" name="Net-(D121-Pad1)">
+      <node ref="D121" pin="1"/>
+      <node ref="D122" pin="2"/>
+    </net>
+    <net code="149" name="Net-(D119-Pad1)">
+      <node ref="D120" pin="2"/>
+      <node ref="D119" pin="1"/>
+    </net>
+    <net code="150" name="Net-(D118-Pad1)">
+      <node ref="D119" pin="2"/>
+      <node ref="D118" pin="1"/>
+    </net>
+    <net code="151" name="Net-(D117-Pad1)">
+      <node ref="D117" pin="1"/>
+      <node ref="D118" pin="2"/>
+    </net>
+    <net code="152" name="Net-(D116-Pad1)">
+      <node ref="D116" pin="1"/>
+      <node ref="D117" pin="2"/>
+    </net>
+    <net code="153" name="Net-(D124-Pad1)">
+      <node ref="D124" pin="1"/>
+      <node ref="D125" pin="2"/>
+    </net>
+    <net code="154" name="Net-(D114-Pad1)">
+      <node ref="D115" pin="2"/>
+      <node ref="D114" pin="1"/>
+    </net>
+    <net code="155" name="Net-(D110-Pad1)">
+      <node ref="D110" pin="1"/>
+      <node ref="D111" pin="2"/>
+    </net>
+    <net code="156" name="Net-(D111-Pad1)">
+      <node ref="D112" pin="2"/>
+      <node ref="D111" pin="1"/>
+    </net>
+    <net code="157" name="Net-(D109-Pad1)">
+      <node ref="D109" pin="1"/>
+      <node ref="D110" pin="2"/>
+    </net>
+    <net code="158" name="Net-(D127-Pad1)">
+      <node ref="D128" pin="2"/>
+      <node ref="D127" pin="1"/>
+    </net>
+    <net code="159" name="Net-(D134-Pad1)">
+      <node ref="D135" pin="2"/>
+      <node ref="D134" pin="1"/>
+    </net>
+    <net code="160" name="Net-(D130-Pad1)">
+      <node ref="D130" pin="1"/>
+      <node ref="D131" pin="2"/>
+    </net>
+    <net code="161" name="Net-(D131-Pad1)">
+      <node ref="D132" pin="2"/>
+      <node ref="D131" pin="1"/>
+    </net>
+    <net code="162" name="Net-(D129-Pad1)">
+      <node ref="D130" pin="2"/>
+      <node ref="D129" pin="1"/>
+    </net>
+    <net code="163" name="Net-(D128-Pad1)">
+      <node ref="D128" pin="1"/>
+      <node ref="D129" pin="2"/>
+    </net>
+    <net code="164" name="Net-(D126-Pad1)">
+      <node ref="D126" pin="1"/>
+      <node ref="D127" pin="2"/>
+    </net>
+    <net code="165" name="Net-(D125-Pad1)">
+      <node ref="D125" pin="1"/>
+      <node ref="D126" pin="2"/>
+    </net>
+    <net code="166" name="Net-(D101-Pad1)">
+      <node ref="D101" pin="1"/>
+      <node ref="D102" pin="2"/>
+    </net>
+    <net code="167" name="Net-(D122-Pad1)">
+      <node ref="D122" pin="1"/>
+      <node ref="D123" pin="2"/>
+    </net>
+    <net code="168" name="Net-(D112-Pad1)">
+      <node ref="D112" pin="1"/>
+      <node ref="D113" pin="2"/>
+    </net>
+    <net code="169" name="Net-(D113-Pad1)">
+      <node ref="U2" pin="13"/>
+      <node ref="D113" pin="1"/>
+    </net>
+    <net code="170" name="Net-(D102-Pad1)">
+      <node ref="D103" pin="2"/>
+      <node ref="D102" pin="1"/>
+    </net>
+    <net code="171" name="Net-(D103-Pad1)">
+      <node ref="U2" pin="14"/>
+      <node ref="D103" pin="1"/>
+    </net>
+    <net code="172" name="Net-(D132-Pad1)">
+      <node ref="D133" pin="2"/>
+      <node ref="D132" pin="1"/>
+    </net>
+    <net code="173" name="Net-(D92-Pad1)">
+      <node ref="D92" pin="1"/>
+      <node ref="D93" pin="2"/>
+    </net>
+    <net code="174" name="Net-(D91-Pad1)">
+      <node ref="D91" pin="1"/>
+      <node ref="D92" pin="2"/>
+    </net>
+    <net code="175" name="Net-(D153-Pad1)">
+      <node ref="D153" pin="1"/>
+      <node ref="U2" pin="8"/>
+    </net>
+    <net code="176" name="Net-(D162-Pad1)">
+      <node ref="D163" pin="2"/>
+      <node ref="D162" pin="1"/>
+    </net>
+    <net code="177" name="Net-(D163-Pad1)">
+      <node ref="D163" pin="1"/>
+      <node ref="U2" pin="7"/>
+    </net>
+    <net code="178" name="Net-(D161-Pad1)">
+      <node ref="D162" pin="2"/>
+      <node ref="D161" pin="1"/>
+    </net>
+    <net code="179" name="Net-(D152-Pad1)">
+      <node ref="D153" pin="2"/>
+      <node ref="D152" pin="1"/>
+    </net>
+    <net code="180" name="Net-(D142-Pad1)">
+      <node ref="D142" pin="1"/>
+      <node ref="D143" pin="2"/>
+    </net>
+    <net code="181" name="Net-(D143-Pad1)">
+      <node ref="D143" pin="1"/>
+      <node ref="U2" pin="9"/>
+    </net>
+    <net code="182" name="Net-(D133-Pad1)">
+      <node ref="D133" pin="1"/>
+      <node ref="U2" pin="10"/>
+    </net>
+    <net code="183" name="Net-(D123-Pad1)">
+      <node ref="U2" pin="12"/>
+      <node ref="D123" pin="1"/>
+    </net>
+    <net code="184" name="Net-(D160-Pad1)">
+      <node ref="D161" pin="2"/>
+      <node ref="D160" pin="1"/>
+    </net>
+    <net code="185" name="Net-(R9-Pad2)">
+      <node ref="U2" pin="1"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="186" name="Net-(C9-Pad1)">
+      <node ref="U2" pin="24"/>
+      <node ref="C9" pin="1"/>
+    </net>
+    <net code="187" name="Net-(C10-Pad1)">
+      <node ref="D94" pin="2"/>
+      <node ref="D104" pin="2"/>
+      <node ref="D144" pin="2"/>
+      <node ref="C10" pin="1"/>
+      <node ref="D124" pin="2"/>
+      <node ref="D84" pin="2"/>
+      <node ref="D83" pin="1"/>
+      <node ref="D154" pin="2"/>
+      <node ref="D134" pin="2"/>
+      <node ref="D114" pin="2"/>
+      <node ref="R11" pin="1"/>
+    </net>
+    <net code="188" name="Net-(U2-Pad4)">
+      <node ref="U2" pin="4"/>
+    </net>
+    <net code="189" name="Net-(U2-Pad21)">
+      <node ref="U2" pin="21"/>
+    </net>
+    <net code="190" name="Net-(R10-Pad1)">
+      <node ref="U2" pin="3"/>
+      <node ref="R10" pin="1"/>
+    </net>
+    <net code="191" name="Net-(R11-Pad2)">
+      <node ref="R12" pin="1"/>
+      <node ref="R11" pin="2"/>
+      <node ref="U2" pin="16"/>
+    </net>
+    <net code="192" name="Net-(D93-Pad1)">
+      <node ref="U2" pin="15"/>
+      <node ref="D93" pin="1"/>
+    </net>
+    <net code="193" name="Net-(R7-Pad1)">
+      <node ref="R7" pin="1"/>
+      <node ref="U2" pin="11"/>
+    </net>
+    <net code="194" name="Net-(D83-Pad2)">
+      <node ref="D83" pin="2"/>
+      <node ref="U2" pin="19"/>
+      <node ref="U2" pin="20"/>
+      <node ref="L1" pin="2"/>
+    </net>
+    <net code="195" name="Net-(D96-Pad1)">
+      <node ref="D96" pin="1"/>
+      <node ref="D97" pin="2"/>
+    </net>
+    <net code="196" name="Net-(D97-Pad1)">
+      <node ref="D98" pin="2"/>
+      <node ref="D97" pin="1"/>
+    </net>
+    <net code="197" name="Net-(D95-Pad1)">
+      <node ref="D95" pin="1"/>
+      <node ref="D96" pin="2"/>
+    </net>
+    <net code="198" name="Net-(D94-Pad1)">
+      <node ref="D94" pin="1"/>
+      <node ref="D95" pin="2"/>
+    </net>
+    <net code="199" name="Net-(D98-Pad1)">
+      <node ref="D98" pin="1"/>
+      <node ref="D99" pin="2"/>
+    </net>
+    <net code="200" name="Net-(D90-Pad1)">
+      <node ref="D90" pin="1"/>
+      <node ref="D91" pin="2"/>
+    </net>
+    <net code="201" name="Net-(D89-Pad1)">
+      <node ref="D90" pin="2"/>
+      <node ref="D89" pin="1"/>
+    </net>
+    <net code="202" name="Net-(D88-Pad1)">
+      <node ref="D89" pin="2"/>
+      <node ref="D88" pin="1"/>
+    </net>
+    <net code="203" name="Net-(D87-Pad1)">
+      <node ref="D87" pin="1"/>
+      <node ref="D88" pin="2"/>
+    </net>
+    <net code="204" name="Net-(D86-Pad1)">
+      <node ref="D87" pin="2"/>
+      <node ref="D86" pin="1"/>
+    </net>
+    <net code="205" name="Net-(D108-Pad1)">
+      <node ref="D109" pin="2"/>
+      <node ref="D108" pin="1"/>
+    </net>
+    <net code="206" name="Net-(D107-Pad1)">
+      <node ref="D108" pin="2"/>
+      <node ref="D107" pin="1"/>
+    </net>
+    <net code="207" name="Net-(D106-Pad1)">
+      <node ref="D107" pin="2"/>
+      <node ref="D106" pin="1"/>
+    </net>
+    <net code="208" name="Net-(D105-Pad1)">
+      <node ref="D105" pin="1"/>
+      <node ref="D106" pin="2"/>
+    </net>
+    <net code="209" name="Net-(D104-Pad1)">
+      <node ref="D104" pin="1"/>
+      <node ref="D105" pin="2"/>
+    </net>
+    <net code="210" name="Net-(D100-Pad1)">
+      <node ref="D100" pin="1"/>
+      <node ref="D101" pin="2"/>
+    </net>
+    <net code="211" name="Net-(D100-Pad2)">
+      <node ref="D99" pin="1"/>
+      <node ref="D100" pin="2"/>
+    </net>
+    <net code="212" name="Net-(R8-Pad1)">
+      <node ref="U2" pin="2"/>
+      <node ref="R8" pin="1"/>
+    </net>
+    <net code="213" name="Net-(D85-Pad1)">
+      <node ref="D85" pin="1"/>
+      <node ref="D86" pin="2"/>
+    </net>
+    <net code="214" name="Net-(D84-Pad1)">
+      <node ref="D84" pin="1"/>
+      <node ref="D85" pin="2"/>
+    </net>
+  </nets>
+</export>

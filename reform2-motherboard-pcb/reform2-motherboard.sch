@@ -1,0 +1,1872 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 1 9
+Title "MNT Reform 2"
+Date "2020-04-11"
+Rev "2.0D-4"
+Comp "MNT Research GmbH"
+Comment1 "https://mntre.com"
+Comment2 "Engineer: Lukas F. Hartmann"
+Comment3 "License: CERN-OHL-S 2.0"
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	10400 5350 10800 5350
+Wire Wire Line
+	11050 5350 11000 5350
+Text GLabel 11050 5350 2    50   Output ~ 0
+EDP_RESETn
+$Comp
+L Device:R_Small R159
+U 1 1 63FE6619
+P 10900 5350
+F 0 "R159" V 11000 5350 50  0000 C CNN
+F 1 "0" V 10900 5350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10900 5350 50  0001 C CNN
+F 3 "~" H 10900 5350 50  0001 C CNN
+F 4 "Vishay Dale" H 10900 5350 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 10900 5350 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 10900 5350 50  0001 C CNN "Distributor"
+F 7 "y" H 10900 5350 50  0001 C CNN "Checked"
+	1    10900 5350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10400 5450 10800 5450
+Wire Wire Line
+	11050 5450 11000 5450
+$Comp
+L Device:R_Small R158
+U 1 1 636E4DF1
+P 10900 5450
+F 0 "R158" V 10800 5450 50  0000 C CNN
+F 1 "0" V 10900 5450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10900 5450 50  0001 C CNN
+F 3 "~" H 10900 5450 50  0001 C CNN
+F 4 "Vishay Dale" H 10900 5450 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 10900 5450 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 10900 5450 50  0001 C CNN "Distributor"
+F 7 "y" H 10900 5450 50  0001 C CNN "Checked"
+	1    10900 5450
+	0    -1   -1   0   
+$EndComp
+Text GLabel 11050 5450 2    50   Output ~ 0
+EDP_IRQ
+Text GLabel 8700 7250 0    50   Input ~ 0
+IMX_JTAG_TDI
+NoConn ~ 10400 5250
+NoConn ~ 10400 5150
+Wire Wire Line
+	11000 5050 11050 5050
+Wire Wire Line
+	11000 4950 11050 4950
+Wire Wire Line
+	10400 4950 10800 4950
+Wire Wire Line
+	10800 5050 10400 5050
+$Comp
+L Device:R_Small R155
+U 1 1 61C5240B
+P 10900 5050
+F 0 "R155" V 10800 5050 50  0000 C CNN
+F 1 "0" V 10900 5050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10900 5050 50  0001 C CNN
+F 3 "~" H 10900 5050 50  0001 C CNN
+F 4 "Vishay Dale" H 10900 5050 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 10900 5050 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 10900 5050 50  0001 C CNN "Distributor"
+F 7 "y" H 10900 5050 50  0001 C CNN "Checked"
+	1    10900 5050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R154
+U 1 1 61C521BA
+P 10900 4950
+F 0 "R154" V 10800 4950 50  0000 C CNN
+F 1 "0" V 10900 4950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10900 4950 50  0001 C CNN
+F 3 "~" H 10900 4950 50  0001 C CNN
+F 4 "Vishay Dale" H 10900 4950 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 10900 4950 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 10900 4950 50  0001 C CNN "Distributor"
+F 7 "y" H 10900 4950 50  0001 C CNN "Checked"
+	1    10900 4950
+	0    1    1    0   
+$EndComp
+Text GLabel 11050 5050 2    50   Output ~ 0
+LPC_UART2_TX
+Text GLabel 11050 4950 2    50   Output ~ 0
+LPC_UART2_RX
+Text GLabel 8700 7950 0    50   Output ~ 0
+LPC_SS0
+NoConn ~ 10400 9450
+Text GLabel 6600 5350 0    50   Output ~ 0
+PCIE1_RESETn
+Text Notes 15250 4750 0    50   ~ 0
+NOSTUFF
+Text Notes 14850 4750 0    50   ~ 0
+NOSTUFF
+Text Notes 15600 4750 0    50   ~ 0
+NOSTUFF
+Wire Wire Line
+	7500 7550 8700 7550
+Connection ~ 7500 7550
+Wire Wire Line
+	7500 7350 7500 7550
+Wire Wire Line
+	7400 7350 7500 7350
+Wire Wire Line
+	7500 7650 7400 7650
+Connection ~ 7500 7650
+Wire Wire Line
+	7500 7750 7500 7650
+Wire Wire Line
+	7400 7750 7500 7750
+Wire Wire Line
+	7400 7550 7500 7550
+Wire Wire Line
+	8700 7650 7500 7650
+NoConn ~ 10400 5550
+NoConn ~ 10400 4850
+NoConn ~ 8700 7750
+Wire Wire Line
+	7400 5250 8700 5250
+$Comp
+L Connector:TestPoint TP2
+U 1 1 61A56E27
+P 7400 5250
+F 0 "TP2" V 7354 5438 50  0000 L CNN
+F 1 "T_OTG" V 7445 5438 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7600 5250 50  0001 C CNN
+F 3 "~" H 7600 5250 50  0001 C CNN
+F 4 "y" H 7400 5250 50  0001 C CNN "Checked"
+F 5 "None" H 7400 5250 50  0001 C CNN "Distributor"
+	1    7400 5250
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 8700 10150
+Wire Wire Line
+	8450 10050 8700 10050
+Text GLabel 8450 10050 0    50   Output ~ 0
+USB_RESETn
+$Comp
+L Device:R_Small R113
+U 1 1 5E2AEC8A
+P 5900 10250
+F 0 "R113" H 5841 10204 50  0000 R CNN
+F 1 "10k" H 5841 10295 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5900 10250 50  0001 C CNN
+F 3 "~" H 5900 10250 50  0001 C CNN
+F 4 "Yageo" H 5900 10250 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H 5900 10250 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 5900 10250 50  0001 C CNN "Checked"
+F 7 "Mouser" H 5900 10250 50  0001 C CNN "Distributor"
+	1    5900 10250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR051
+U 1 1 5E2F5AF5
+P 5900 10150
+F 0 "#PWR051" H 5900 10000 50  0001 C CNN
+F 1 "+3V3" H 5915 10323 50  0000 C CNN
+F 2 "" H 5900 10150 50  0001 C CNN
+F 3 "" H 5900 10150 50  0001 C CNN
+	1    5900 10150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 10450 5900 10450
+$Comp
+L Switch:SW_DIP_x01 SW3
+U 1 1 5E29784D
+P 6400 10450
+F 0 "SW3" H 6400 10717 50  0000 C CNN
+F 1 "SW_DIP_x01" H 6400 10626 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_Omron_A6S-110x_W8.9mm_P2.54mm" H 6400 10450 50  0001 C CNN
+F 3 "~" H 6400 10450 50  0001 C CNN
+F 4 "Omron" H 6400 10450 50  0001 C CNN "Manufacturer"
+F 5 "A6S-1101-H" H 6400 10450 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 6400 10450 50  0001 C CNN "Checked"
+F 7 "Mouser" H 6400 10450 50  0001 C CNN "Distributor"
+	1    6400 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 10450 5900 10350
+NoConn ~ 10400 3950
+Wire Wire Line
+	10800 12150 10400 12150
+$Comp
+L Mechanical:MountingHole H13
+U 1 1 616FBC04
+P 15050 10000
+F 0 "H13" H 15150 10046 50  0000 L CNN
+F 1 "LABEL_CPU" H 15150 9955 50  0000 L CNN
+F 2 "footprints:cpu" H 15050 10000 50  0001 C CNN
+F 3 "~" H 15050 10000 50  0001 C CNN
+F 4 "y" H 15050 10000 50  0001 C CNN "Checked"
+F 5 "None" H 15050 10000 50  0001 C CNN "Distributor"
+	1    15050 10000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x33 J15
+U 1 1 613584E8
+P 3450 8350
+F 0 "J15" H 3368 6525 50  0000 C CNN
+F 1 "Conn_01x33" H 3368 6616 50  0000 C CNN
+F 2 "Connector_FFC-FPC:Hirose_FH12-33S-0.5SH_1x33-1MP_P0.50mm_Horizontal" H 3450 8350 50  0001 C CNN
+F 3 "~" H 3450 8350 50  0001 C CNN
+F 4 "Hirose" H 3450 8350 50  0001 C CNN "Manufacturer"
+F 5 "FH12-33S-0.5SH(55)" H 3450 8350 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 3450 8350 50  0001 C CNN "Checked"
+F 7 "Mouser" H 3450 8350 50  0001 C CNN "Distributor"
+	1    3450 8350
+	-1   0    0    1   
+$EndComp
+NoConn ~ 3650 9450
+NoConn ~ 3650 9550
+NoConn ~ 3650 9650
+NoConn ~ 3650 9750
+NoConn ~ 3650 6950
+NoConn ~ 3650 6850
+NoConn ~ 3650 6750
+NoConn ~ 3650 7250
+NoConn ~ 3650 7150
+Connection ~ 3800 7350
+Wire Wire Line
+	3800 7050 3800 7350
+Wire Wire Line
+	3650 7050 3800 7050
+Connection ~ 3800 7650
+Wire Wire Line
+	3800 7350 3800 7650
+Wire Wire Line
+	3650 7350 3800 7350
+Connection ~ 3800 7950
+Wire Wire Line
+	3800 7650 3800 7950
+Wire Wire Line
+	3650 7650 3800 7650
+Connection ~ 3800 8250
+Wire Wire Line
+	3800 7950 3800 8250
+Wire Wire Line
+	3650 7950 3800 7950
+Connection ~ 3800 8550
+Wire Wire Line
+	3800 8250 3800 8550
+Wire Wire Line
+	3650 8250 3800 8250
+Connection ~ 3800 8850
+Wire Wire Line
+	3800 8550 3800 8850
+Wire Wire Line
+	3650 8550 3800 8550
+Connection ~ 3800 9850
+Wire Wire Line
+	3800 8850 3800 9850
+Wire Wire Line
+	3650 8850 3800 8850
+NoConn ~ 3650 8950
+NoConn ~ 3650 9050
+NoConn ~ 3650 9150
+NoConn ~ 3650 9250
+NoConn ~ 3650 9350
+Connection ~ 3800 9950
+Wire Wire Line
+	3800 9850 3800 9950
+Wire Wire Line
+	3650 9850 3800 9850
+Wire Wire Line
+	3800 9950 3650 9950
+Wire Wire Line
+	3800 10050 3800 9950
+$Comp
+L power:GND #PWR02
+U 1 1 613E21E1
+P 3800 10050
+F 0 "#PWR02" H 3800 9800 50  0001 C CNN
+F 1 "GND" H 3805 9877 50  0000 C CNN
+F 2 "" H 3800 10050 50  0001 C CNN
+F 3 "" H 3800 10050 50  0001 C CNN
+	1    3800 10050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 8750 3850 8750
+Wire Wire Line
+	3850 8650 3650 8650
+Wire Wire Line
+	3650 8450 3850 8450
+Wire Wire Line
+	3850 8350 3650 8350
+Wire Wire Line
+	3650 8150 3850 8150
+Wire Wire Line
+	3850 8050 3650 8050
+Wire Wire Line
+	3650 7850 3850 7850
+Wire Wire Line
+	3850 7750 3650 7750
+Text GLabel 3850 8650 2    50   Output ~ 0
+DSI_D3_P
+Text GLabel 3850 8750 2    50   Output ~ 0
+DSI_D3_N
+Text GLabel 3850 8350 2    50   Output ~ 0
+DSI_D2_P
+Text GLabel 3850 8450 2    50   Output ~ 0
+DSI_D2_N
+Wire Wire Line
+	3850 7550 3650 7550
+Wire Wire Line
+	3850 7450 3650 7450
+Text GLabel 3850 7450 2    50   Output ~ 0
+DSI_D0_P
+NoConn ~ 8700 10250
+NoConn ~ 8700 10350
+NoConn ~ 8700 10850
+NoConn ~ 8700 10950
+NoConn ~ 8700 11050
+NoConn ~ 8700 11150
+NoConn ~ 8700 11250
+NoConn ~ 8700 11350
+NoConn ~ 8700 11450
+NoConn ~ 8700 12950
+NoConn ~ 8700 12850
+NoConn ~ 10400 13450
+NoConn ~ 10400 13350
+NoConn ~ 10400 13250
+NoConn ~ 10400 13150
+NoConn ~ 10400 13050
+NoConn ~ 10400 12950
+NoConn ~ 10400 12850
+NoConn ~ 10400 12650
+NoConn ~ 10400 12550
+NoConn ~ 8700 5150
+NoConn ~ 10400 7550
+NoConn ~ 10400 7650
+NoConn ~ 10400 7750
+NoConn ~ 10400 7850
+NoConn ~ 10400 7950
+NoConn ~ 10400 8050
+NoConn ~ 10400 8250
+NoConn ~ 10400 11550
+NoConn ~ 10400 11350
+NoConn ~ 10400 11250
+NoConn ~ 10400 11150
+NoConn ~ 10400 10950
+NoConn ~ 10400 10850
+NoConn ~ 10400 10750
+NoConn ~ 10400 10650
+NoConn ~ 10400 10550
+NoConn ~ 10400 10250
+NoConn ~ 10400 10050
+NoConn ~ 10400 9950
+NoConn ~ 8700 6950
+NoConn ~ 8700 6850
+NoConn ~ 8700 6650
+NoConn ~ 8700 6550
+NoConn ~ 8700 6350
+NoConn ~ 8700 6250
+NoConn ~ 8700 6050
+NoConn ~ 8700 5950
+NoConn ~ 8700 5750
+NoConn ~ 8700 5650
+Wire Wire Line
+	8700 10450 6700 10450
+Connection ~ 11300 5950
+Wire Wire Line
+	11300 5650 11300 5950
+Wire Wire Line
+	10400 5650 11300 5650
+Connection ~ 11300 6250
+Wire Wire Line
+	11300 5950 11300 6250
+Wire Wire Line
+	10400 5950 11300 5950
+Wire Wire Line
+	11300 6550 11300 6850
+Connection ~ 11300 6550
+Wire Wire Line
+	10400 6550 11300 6550
+Wire Wire Line
+	11300 6850 11300 7150
+Connection ~ 11300 6850
+Wire Wire Line
+	10400 6850 11300 6850
+Connection ~ 11300 7150
+Wire Wire Line
+	11300 6250 11300 6550
+Wire Wire Line
+	10400 6250 11300 6250
+Connection ~ 11300 7450
+Wire Wire Line
+	11300 7150 11300 7450
+Wire Wire Line
+	10400 7150 11300 7150
+Connection ~ 11300 8150
+Wire Wire Line
+	11300 7450 11300 8150
+Wire Wire Line
+	10400 7450 11300 7450
+Connection ~ 11300 8350
+Wire Wire Line
+	11300 8150 11300 8350
+Wire Wire Line
+	10400 8150 11300 8150
+Connection ~ 11300 8650
+Wire Wire Line
+	11300 8350 11300 8650
+Wire Wire Line
+	10400 8350 11300 8350
+Connection ~ 11300 8950
+Wire Wire Line
+	11300 8650 11300 8950
+Wire Wire Line
+	10400 8650 11300 8650
+Connection ~ 11300 9250
+Wire Wire Line
+	11300 8950 11300 9250
+Wire Wire Line
+	10400 8950 11300 8950
+Wire Wire Line
+	11300 9250 10400 9250
+Wire Wire Line
+	11300 13650 11300 9250
+$Comp
+L power:GND #PWR0197
+U 1 1 609542A0
+P 11300 13650
+F 0 "#PWR0197" H 11300 13400 50  0001 C CNN
+F 1 "GND" H 11305 13477 50  0000 C CNN
+F 2 "" H 11300 13650 50  0001 C CNN
+F 3 "" H 11300 13650 50  0001 C CNN
+	1    11300 13650
+	1    0    0    -1  
+$EndComp
+Connection ~ 7750 4150
+Wire Wire Line
+	7750 3850 7750 4150
+Wire Wire Line
+	8700 3850 7750 3850
+Connection ~ 7750 4450
+Wire Wire Line
+	7750 4150 7750 4450
+Wire Wire Line
+	8700 4150 7750 4150
+Connection ~ 7750 4750
+Wire Wire Line
+	7750 4450 7750 4750
+Wire Wire Line
+	8700 4450 7750 4450
+Connection ~ 7750 5050
+Wire Wire Line
+	7750 4750 7750 5050
+Wire Wire Line
+	8700 4750 7750 4750
+Connection ~ 7750 5550
+Wire Wire Line
+	7750 5050 7750 5550
+Wire Wire Line
+	8700 5050 7750 5050
+Connection ~ 7750 5850
+Wire Wire Line
+	7750 5550 7750 5850
+Wire Wire Line
+	8700 5550 7750 5550
+Wire Wire Line
+	7750 6150 7750 6450
+Connection ~ 7750 6150
+Wire Wire Line
+	8700 6150 7750 6150
+Connection ~ 7750 6450
+Wire Wire Line
+	7750 5850 7750 6150
+Wire Wire Line
+	8700 5850 7750 5850
+Connection ~ 7750 6750
+Wire Wire Line
+	7750 6450 8700 6450
+Wire Wire Line
+	7750 6750 7750 6450
+Wire Wire Line
+	8700 6750 7750 6750
+Connection ~ 7750 7050
+Wire Wire Line
+	7750 6750 7750 7050
+Connection ~ 7750 8250
+Wire Wire Line
+	7750 7050 7750 8250
+Wire Wire Line
+	8700 7050 7750 7050
+Connection ~ 7750 8450
+Wire Wire Line
+	7750 8250 7750 8450
+Wire Wire Line
+	8700 8250 7750 8250
+Connection ~ 7750 9050
+Wire Wire Line
+	7750 8450 7750 9050
+Wire Wire Line
+	8700 8450 7750 8450
+Connection ~ 7750 9350
+Wire Wire Line
+	7750 9050 8700 9050
+Wire Wire Line
+	7750 9350 7750 9050
+Wire Wire Line
+	8700 9350 7750 9350
+Connection ~ 7750 9650
+Wire Wire Line
+	7750 9350 7750 9650
+Connection ~ 7750 9950
+Wire Wire Line
+	7750 9650 7750 9950
+Wire Wire Line
+	8700 9650 7750 9650
+Connection ~ 7750 11550
+Wire Wire Line
+	7750 9950 7750 11550
+Wire Wire Line
+	8700 9950 7750 9950
+Connection ~ 7750 11850
+Wire Wire Line
+	7750 11550 7750 11850
+Wire Wire Line
+	8700 11550 7750 11550
+Connection ~ 7750 12150
+Wire Wire Line
+	7750 11850 7750 12150
+Wire Wire Line
+	8700 11850 7750 11850
+Connection ~ 7750 12450
+Wire Wire Line
+	7750 12150 7750 12450
+Wire Wire Line
+	8700 12150 7750 12150
+Connection ~ 7750 12750
+Wire Wire Line
+	7750 12450 7750 12750
+Wire Wire Line
+	8700 12450 7750 12450
+Connection ~ 7750 13050
+Wire Wire Line
+	7750 12750 8700 12750
+Wire Wire Line
+	7750 13050 7750 12750
+Wire Wire Line
+	7750 13050 8700 13050
+Wire Wire Line
+	7750 13650 7750 13050
+Connection ~ 7750 3650
+Wire Wire Line
+	7750 3750 7750 3650
+Wire Wire Line
+	8700 3750 7750 3750
+Connection ~ 7750 3550
+Wire Wire Line
+	7750 3650 7750 3550
+Wire Wire Line
+	8700 3650 7750 3650
+Wire Wire Line
+	8700 3550 7750 3550
+Wire Wire Line
+	7750 2900 7750 3550
+Connection ~ 10850 3650
+Wire Wire Line
+	10850 3750 10850 3650
+Wire Wire Line
+	10400 3750 10850 3750
+Connection ~ 10850 3550
+Wire Wire Line
+	10850 3650 10850 3550
+Wire Wire Line
+	10400 3650 10850 3650
+Wire Wire Line
+	10400 3550 10850 3550
+$Comp
+L reform2:Nitrogen8M U1
+U 1 1 60678A3C
+P 9500 8350
+F 0 "U1" H 9550 13417 50  0000 C CNN
+F 1 "Nitrogen8M" H 9550 13326 50  0000 C CNN
+F 2 "footprints:TE_1473149-4" H 9300 11550 50  0001 C CNN
+F 3 "" H 9300 11550 50  0001 C CNN
+F 4 "1717254-1" H 9500 8350 50  0001 C CNN "Manufacturer_No"
+F 5 "TE" H 9500 8350 50  0001 C CNN "Manufacturer"
+F 6 "y" H 9500 8350 50  0001 C CNN "Checked"
+F 7 "Mouser" H 9500 8350 50  0001 C CNN "Distributor"
+	1    9500 8350
+	1    0    0    -1  
+$EndComp
+Connection ~ 15650 5650
+Wire Wire Line
+	15650 5650 14800 5650
+Wire Wire Line
+	15650 5650 16050 5650
+Wire Wire Line
+	15950 5950 15950 5750
+$Comp
+L power:GND #PWR0219
+U 1 1 5F0CE58E
+P 15950 5950
+F 0 "#PWR0219" H 15950 5700 50  0001 C CNN
+F 1 "GND" H 15955 5777 50  0000 C CNN
+F 2 "" H 15950 5950 50  0001 C CNN
+F 3 "" H 15950 5950 50  0001 C CNN
+	1    15950 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15950 4450 15650 4450
+Connection ~ 15950 4450
+Wire Wire Line
+	15050 6050 15050 6000
+$Comp
+L power:GND #PWR0218
+U 1 1 5F0856B7
+P 15050 6050
+F 0 "#PWR0218" H 15050 5800 50  0001 C CNN
+F 1 "GND" H 15055 5877 50  0000 C CNN
+F 2 "" H 15050 6050 50  0001 C CNN
+F 3 "" H 15050 6050 50  0001 C CNN
+	1    15050 6050
+	1    0    0    -1  
+$EndComp
+Connection ~ 15350 4450
+Wire Wire Line
+	15050 4450 15050 4500
+Wire Wire Line
+	15350 4450 15050 4450
+Connection ~ 15650 4450
+Wire Wire Line
+	15350 4450 15350 4500
+Wire Wire Line
+	15650 4450 15350 4450
+Wire Wire Line
+	15650 4450 15650 4500
+Wire Wire Line
+	16300 4450 15950 4450
+$Comp
+L power:+3V3 #PWR0103
+U 1 1 5F0466BE
+P 16300 4450
+F 0 "#PWR0103" H 16300 4300 50  0001 C CNN
+F 1 "+3V3" H 16315 4623 50  0000 C CNN
+F 2 "" H 16300 4450 50  0001 C CNN
+F 3 "" H 16300 4450 50  0001 C CNN
+	1    16300 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16050 5550 14800 5550
+Wire Wire Line
+	15050 5350 16050 5350
+Connection ~ 15050 5350
+Wire Wire Line
+	15050 5800 15050 5350
+Wire Wire Line
+	14800 5350 15050 5350
+Connection ~ 15050 5250
+Wire Wire Line
+	15050 5250 16050 5250
+Wire Wire Line
+	15050 5250 14800 5250
+Wire Wire Line
+	15050 4700 15050 5250
+Connection ~ 15350 5150
+Wire Wire Line
+	15350 5150 16050 5150
+Wire Wire Line
+	15350 5150 14800 5150
+Wire Wire Line
+	15350 4700 15350 5150
+Text GLabel 14800 5150 0    50   Input ~ 0
+IMX_JTAG_TDI
+Text GLabel 14800 5250 0    50   Output ~ 0
+IMX_JTAG_TMS
+Text GLabel 8700 8350 0    50   Output ~ 0
+LPC_SCK
+Text GLabel 8700 8050 0    50   Output ~ 0
+LPC_MOSI
+Text GLabel 8700 8150 0    50   Input ~ 0
+LPC_MISO
+Text GLabel 7400 7350 0    60   Output ~ 0
+ETH0_LED_LINK2
+Text GLabel 10400 9550 2    50   Output ~ 0
+IMX_UART2_RX
+Text GLabel 10400 9650 2    50   Output ~ 0
+IMX_UART2_TX
+Wire Wire Line
+	7400 7450 8700 7450
+Wire Wire Line
+	11650 9350 10400 9350
+Wire Wire Line
+	11850 9350 11900 9350
+$Comp
+L Device:R_Small R111
+U 1 1 5DC1E478
+P 11750 9350
+F 0 "R111" V 11650 9350 50  0000 C CNN
+F 1 "0" V 11750 9350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 11750 9350 50  0001 C CNN
+F 3 "~" H 11750 9350 50  0001 C CNN
+F 4 "Vishay Dale" H 11750 9350 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 11750 9350 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 11750 9350 50  0001 C CNN "Distributor"
+F 7 "y" H 11750 9350 50  0001 C CNN "Checked"
+	1    11750 9350
+	0    1    1    0   
+$EndComp
+Text GLabel 11900 9350 2    50   Input ~ 0
+USB_PWR
+Wire Wire Line
+	11800 3850 10400 3850
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5DBAB563
+P 11800 3850
+F 0 "TP8" V 11754 4038 50  0000 L CNN
+F 1 "T_PMIC_ON_REQ" V 11845 4038 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 12000 3850 50  0001 C CNN
+F 3 "~" H 12000 3850 50  0001 C CNN
+F 4 "y" H 11800 3850 50  0001 C CNN "Checked"
+F 5 "None" H 11800 3850 50  0001 C CNN "Distributor"
+	1    11800 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10850 2900 10850 3550
+$Comp
+L power:GND #PWR0102
+U 1 1 5D2EE257
+P 7750 13650
+F 0 "#PWR0102" H 7750 13400 50  0001 C CNN
+F 1 "GND" H 7755 13477 50  0000 C CNN
+F 2 "" H 7750 13650 50  0001 C CNN
+F 3 "" H 7750 13650 50  0001 C CNN
+	1    7750 13650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5D2FFAE8
+P 16300 8650
+AR Path="/5D06AC46/5D2FFAE8" Ref="H?"  Part="1" 
+AR Path="/5D2FFAE8" Ref="H3"  Part="1" 
+F 0 "H3" H 16400 8699 50  0000 L CNN
+F 1 "NGFF-Mount3" H 16400 8608 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 16300 8650 50  0001 C CNN
+F 3 "~" H 16300 8650 50  0001 C CNN
+F 4 "y" H 16300 8650 50  0001 C CNN "Checked"
+F 5 "None" H 16300 8650 50  0001 C CNN "Distributor"
+	1    16300 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D2FFADE
+P 16300 8900
+AR Path="/5D06AC46/5D2FFADE" Ref="#PWR?"  Part="1" 
+AR Path="/5D2FFADE" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 16300 8650 50  0001 C CNN
+F 1 "GND" H 16305 8727 50  0000 C CNN
+F 2 "" H 16300 8900 50  0001 C CNN
+F 3 "" H 16300 8900 50  0001 C CNN
+	1    16300 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16300 8900 16300 8750
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5D2FBEE7
+P 16300 7950
+AR Path="/5D06AC46/5D2FBEE7" Ref="H?"  Part="1" 
+AR Path="/5D2FBEE7" Ref="H2"  Part="1" 
+F 0 "H2" H 16400 7999 50  0000 L CNN
+F 1 "NGFF-Mount2" H 16400 7908 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 16300 7950 50  0001 C CNN
+F 3 "~" H 16300 7950 50  0001 C CNN
+F 4 "y" H 16300 7950 50  0001 C CNN "Checked"
+F 5 "None" H 16300 7950 50  0001 C CNN "Distributor"
+	1    16300 7950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D2FBEDD
+P 16300 8200
+AR Path="/5D06AC46/5D2FBEDD" Ref="#PWR?"  Part="1" 
+AR Path="/5D2FBEDD" Ref="#PWR0100"  Part="1" 
+F 0 "#PWR0100" H 16300 7950 50  0001 C CNN
+F 1 "GND" H 16305 8027 50  0000 C CNN
+F 2 "" H 16300 8200 50  0001 C CNN
+F 3 "" H 16300 8200 50  0001 C CNN
+	1    16300 8200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16300 8200 16300 8050
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5D2F00CF
+P 16300 7300
+AR Path="/5D06AC46/5D2F00CF" Ref="H?"  Part="1" 
+AR Path="/5D2F00CF" Ref="H1"  Part="1" 
+F 0 "H1" H 16400 7349 50  0000 L CNN
+F 1 "NGFF-Mount1" H 16400 7258 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 16300 7300 50  0001 C CNN
+F 3 "~" H 16300 7300 50  0001 C CNN
+F 4 "y" H 16300 7300 50  0001 C CNN "Checked"
+F 5 "None" H 16300 7300 50  0001 C CNN "Distributor"
+	1    16300 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D2F00D5
+P 16300 7550
+AR Path="/5D06AC46/5D2F00D5" Ref="#PWR?"  Part="1" 
+AR Path="/5D2F00D5" Ref="#PWR099"  Part="1" 
+F 0 "#PWR099" H 16300 7300 50  0001 C CNN
+F 1 "GND" H 16305 7377 50  0000 C CNN
+F 2 "" H 16300 7550 50  0001 C CNN
+F 3 "" H 16300 7550 50  0001 C CNN
+	1    16300 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16300 7550 16300 7400
+Text GLabel 8700 7850 0    50   Input ~ 0
+IMX_RESETn
+Text GLabel 18750 3250 2    50   Output ~ 0
+IMX_RESETn
+$Comp
+L Device:R_Small R119
+U 1 1 5E530F1F
+P 15650 4600
+F 0 "R119" H 15709 4646 50  0000 L CNN
+F 1 "10k" H 15709 4555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 15650 4600 50  0001 C CNN
+F 3 "~" H 15650 4600 50  0001 C CNN
+F 4 "Yageo" H 15650 4600 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H 15650 4600 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 15650 4600 50  0001 C CNN "Checked"
+F 7 "Mouser" H 15650 4600 50  0001 C CNN "Distributor"
+	1    15650 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R120
+U 1 1 5E4B7E2C
+P 15050 5900
+F 0 "R120" H 15109 5946 50  0000 L CNN
+F 1 "100k" H 15109 5855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 15050 5900 50  0001 C CNN
+F 3 "~" H 15050 5900 50  0001 C CNN
+F 4 "Vishay Dale" H 15050 5900 50  0001 C CNN "Manufacturer"
+F 5 "CRCW0603100KJNEAC" H 15050 5900 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 15050 5900 50  0001 C CNN "Checked"
+F 7 "Mouser" H 15050 5900 50  0001 C CNN "Distributor"
+	1    15050 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R118
+U 1 1 5E49FD3D
+P 15350 4600
+F 0 "R118" H 15409 4646 50  0000 L CNN
+F 1 "10k" H 15409 4555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 15350 4600 50  0001 C CNN
+F 3 "~" H 15350 4600 50  0001 C CNN
+F 4 "Yageo" H 15350 4600 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H 15350 4600 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 15350 4600 50  0001 C CNN "Checked"
+F 7 "Mouser" H 15350 4600 50  0001 C CNN "Distributor"
+	1    15350 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R117
+U 1 1 5E4884F3
+P 15050 4600
+F 0 "R117" H 15109 4646 50  0000 L CNN
+F 1 "10k" H 15109 4555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 15050 4600 50  0001 C CNN
+F 3 "~" H 15050 4600 50  0001 C CNN
+F 4 "Yageo" H 15050 4600 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H 15050 4600 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 15050 4600 50  0001 C CNN "Checked"
+F 7 "Mouser" H 15050 4600 50  0001 C CNN "Distributor"
+	1    15050 4600
+	1    0    0    -1  
+$EndComp
+Text GLabel 7400 7550 0    50   Input ~ 0
+IMX_JTAG_RSTn
+Text GLabel 8700 7150 0    50   Input ~ 0
+IMX_JTAG_TCK
+Text GLabel 8700 7350 0    50   Input ~ 0
+IMX_JTAG_TMS
+Text GLabel 7400 7750 0    50   Output ~ 0
+IMX_JTAG_TDO
+Text GLabel 14800 5650 0    50   Output ~ 0
+IMX_JTAG_RSTn
+Text GLabel 14800 5350 0    50   Output ~ 0
+IMX_JTAG_TCK
+Text GLabel 14800 5550 0    50   Output ~ 0
+IMX_JTAG_TDO
+$Comp
+L Device:R_Small R115
+U 1 1 5DC1194C
+P 18300 3050
+F 0 "R115" H 18359 3096 50  0000 L CNN
+F 1 "10k" H 18359 3005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 18300 3050 50  0001 C CNN
+F 3 "~" H 18300 3050 50  0001 C CNN
+F 4 "Yageo" H 18300 3050 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H 18300 3050 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 18300 3050 50  0001 C CNN "Checked"
+F 7 "Mouser" H 18300 3050 50  0001 C CNN "Distributor"
+	1    18300 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR059
+U 1 1 5DC110DB
+P 18300 2950
+F 0 "#PWR059" H 18300 2800 50  0001 C CNN
+F 1 "+3V3" H 18450 3000 50  0000 C CNN
+F 2 "" H 18300 2950 50  0001 C CNN
+F 3 "" H 18300 2950 50  0001 C CNN
+	1    18300 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17750 3250 17800 3250
+$Comp
+L power:GND #PWR054
+U 1 1 5DBFED7E
+P 17750 3250
+F 0 "#PWR054" H 17750 3000 50  0001 C CNN
+F 1 "GND" V 17755 3122 50  0000 R CNN
+F 2 "" H 17750 3250 50  0001 C CNN
+F 3 "" H 17750 3250 50  0001 C CNN
+	1    17750 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5DBC8BEC
+P 18000 3250
+AR Path="/5CC81028/5DBC8BEC" Ref="SW?"  Part="1" 
+AR Path="/5DBC8BEC" Ref="SW6"  Part="1" 
+F 0 "SW6" H 18000 3535 50  0000 C CNN
+F 1 "SW_Push" H 18000 3444 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2" H 18000 3450 50  0001 C CNN
+F 3 "~" H 18000 3450 50  0001 C CNN
+F 4 "CK" H 18000 3250 50  0001 C CNN "Manufacturer"
+F 5 "KMR223NGULCLFG" H 18000 3250 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 18000 3250 50  0001 C CNN "Checked"
+F 7 "Mouser" H 18000 3250 50  0001 C CNN "Distributor"
+	1    18000 3250
+	1    0    0    -1  
+$EndComp
+Text GLabel 7500 8550 0    50   Output ~ 0
+DAC_SCL
+Text GLabel 7500 8650 0    50   BiDi ~ 0
+DAC_SDA
+Wire Wire Line
+	16300 3300 16200 3300
+Wire Wire Line
+	16300 3400 16300 3300
+$Comp
+L power:GND #PWR061
+U 1 1 5D81C2CD
+P 16300 3400
+F 0 "#PWR061" H 16300 3150 50  0001 C CNN
+F 1 "GND" H 16305 3227 50  0000 C CNN
+F 2 "" H 16300 3400 50  0001 C CNN
+F 3 "" H 16300 3400 50  0001 C CNN
+	1    16300 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16450 3200 16200 3200
+Text GLabel 16450 3200 2    50   Output ~ 0
+IMX_UART2_RX
+Wire Wire Line
+	16450 3100 16200 3100
+Text GLabel 16450 3100 2    50   Input ~ 0
+IMX_UART2_TX
+$Comp
+L Connector:Conn_01x03_Male J20
+U 1 1 5D81C2BF
+P 16000 3200
+F 0 "J20" H 16108 3481 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 16108 3390 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 16000 3200 50  0001 C CNN
+F 3 "~" H 16000 3200 50  0001 C CNN
+F 4 "Wurth" H 16000 3200 50  0001 C CNN "Manufacturer"
+F 5 "61300311121" H 16000 3200 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 16000 3200 50  0001 C CNN "Checked"
+F 7 "Mouser" H 16000 3200 50  0001 C CNN "Distributor"
+	1    16000 3200
+	1    0    0    -1  
+$EndComp
+Text GLabel 10400 9750 2    50   Input ~ 0
+IMX_UART1_RX
+Text GLabel 10400 9850 2    50   Output ~ 0
+IMX_UART1_TX
+Wire Wire Line
+	14950 3300 14850 3300
+Wire Wire Line
+	15100 3200 14850 3200
+Text GLabel 15100 3200 2    50   Output ~ 0
+IMX_UART1_RX
+Wire Wire Line
+	15100 3100 14850 3100
+Text GLabel 15100 3100 2    50   Input ~ 0
+IMX_UART1_TX
+$Comp
+L Connector:Conn_01x03_Male J18
+U 1 1 5D742FCD
+P 14650 3200
+F 0 "J18" H 14758 3481 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 14758 3390 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 14650 3200 50  0001 C CNN
+F 3 "~" H 14650 3200 50  0001 C CNN
+F 4 "Wurth" H 14650 3200 50  0001 C CNN "Manufacturer"
+F 5 "61300311121" H 14650 3200 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 14650 3200 50  0001 C CNN "Checked"
+F 7 "Mouser" H 14650 3200 50  0001 C CNN "Distributor"
+	1    14650 3200
+	1    0    0    -1  
+$EndComp
+Text GLabel 8700 13350 0    50   BiDi ~ 0
+HDMI_CEC
+Text GLabel 8700 13450 0    50   Output ~ 0
+HDMI_HPD
+Text GLabel 8700 13150 0    50   BiDi ~ 0
+HDMI_SDA
+Text GLabel 8700 13250 0    50   Output ~ 0
+HDMI_SCL
+Text GLabel 10500 12250 2    50   Output ~ 0
+DAC_MCLK
+Text GLabel 10500 11850 2    50   Output ~ 0
+DAC_RXFS
+Text GLabel 10500 11950 2    50   Output ~ 0
+DAC_BCLK
+Text GLabel 10500 11750 2    50   Input ~ 0
+DAC_DIN
+Text GLabel 10500 12350 2    50   Output ~ 0
+DAC_DOUT
+Text GLabel 10500 12050 2    50   Output ~ 0
+DAC_TXFS
+Text GLabel 10500 11650 2    50   Output ~ 0
+BACKLIGHT_PWM
+Text GLabel 8700 8750 0    50   Output ~ 0
+BACKLIGHT_EN
+$Comp
+L power:GND #PWR0186
+U 1 1 5DBF561F
+P 15050 8750
+F 0 "#PWR0186" H 15050 8500 50  0001 C CNN
+F 1 "GND" H 15055 8577 50  0000 C CNN
+F 2 "" H 15050 8750 50  0001 C CNN
+F 3 "" H 15050 8750 50  0001 C CNN
+	1    15050 8750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H8
+U 1 1 5DBF5615
+P 15050 8650
+F 0 "H8" H 15150 8699 50  0000 L CNN
+F 1 "MountingHole_Pad" H 15150 8608 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 15050 8650 50  0001 C CNN
+F 3 "~" H 15050 8650 50  0001 C CNN
+F 4 "y" H 15050 8650 50  0001 C CNN "Checked"
+F 5 "None" H 15050 8650 50  0001 C CNN "Distributor"
+	1    15050 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0185
+U 1 1 5DBF560B
+P 15050 8300
+F 0 "#PWR0185" H 15050 8050 50  0001 C CNN
+F 1 "GND" H 15055 8127 50  0000 C CNN
+F 2 "" H 15050 8300 50  0001 C CNN
+F 3 "" H 15050 8300 50  0001 C CNN
+	1    15050 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H7
+U 1 1 5DBF5601
+P 15050 8200
+F 0 "H7" H 15150 8249 50  0000 L CNN
+F 1 "MountingHole_Pad" H 15150 8158 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 15050 8200 50  0001 C CNN
+F 3 "~" H 15050 8200 50  0001 C CNN
+F 4 "y" H 15050 8200 50  0001 C CNN "Checked"
+F 5 "None" H 15050 8200 50  0001 C CNN "Distributor"
+	1    15050 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0184
+U 1 1 5DBE65CB
+P 15050 7850
+F 0 "#PWR0184" H 15050 7600 50  0001 C CNN
+F 1 "GND" H 15055 7677 50  0000 C CNN
+F 2 "" H 15050 7850 50  0001 C CNN
+F 3 "" H 15050 7850 50  0001 C CNN
+	1    15050 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H6
+U 1 1 5DBE65C1
+P 15050 7750
+F 0 "H6" H 15150 7799 50  0000 L CNN
+F 1 "MountingHole_Pad" H 15150 7708 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 15050 7750 50  0001 C CNN
+F 3 "~" H 15050 7750 50  0001 C CNN
+F 4 "y" H 15050 7750 50  0001 C CNN "Checked"
+F 5 "None" H 15050 7750 50  0001 C CNN "Distributor"
+	1    15050 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0183
+U 1 1 5DBC9030
+P 15050 7400
+F 0 "#PWR0183" H 15050 7150 50  0001 C CNN
+F 1 "GND" H 15055 7227 50  0000 C CNN
+F 2 "" H 15050 7400 50  0001 C CNN
+F 3 "" H 15050 7400 50  0001 C CNN
+	1    15050 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H5
+U 1 1 5DBC8BC3
+P 15050 7300
+F 0 "H5" H 15150 7349 50  0000 L CNN
+F 1 "MountingHole_Pad" H 15150 7258 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 15050 7300 50  0001 C CNN
+F 3 "~" H 15050 7300 50  0001 C CNN
+F 4 "y" H 15050 7300 50  0001 C CNN "Checked"
+F 5 "None" H 15050 7300 50  0001 C CNN "Distributor"
+	1    15050 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H12
+U 1 1 611177F8
+P 15050 9750
+F 0 "H12" H 15150 9796 50  0000 L CNN
+F 1 "LABEL_MPCIE2" H 15150 9705 50  0000 L CNN
+F 2 "footprints:nvme" H 15050 9750 50  0001 C CNN
+F 3 "~" H 15050 9750 50  0001 C CNN
+F 4 "y" H 15050 9750 50  0001 C CNN "Checked"
+F 5 "None" H 15050 9750 50  0001 C CNN "Distributor"
+	1    15050 9750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H11
+U 1 1 611164C9
+P 15050 9500
+F 0 "H11" H 15150 9546 50  0000 L CNN
+F 1 "LABEL_MPCIE1" H 15150 9455 50  0000 L CNN
+F 2 "footprints:mpcie" H 15050 9500 50  0001 C CNN
+F 3 "~" H 15050 9500 50  0001 C CNN
+F 4 "y" H 15050 9500 50  0001 C CNN "Checked"
+F 5 "None" H 15050 9500 50  0001 C CNN "Distributor"
+	1    15050 9500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H10
+U 1 1 61115EAF
+P 15050 9250
+F 0 "H10" H 15150 9296 50  0000 L CNN
+F 1 "LOGO_REFORM" H 15150 9205 50  0000 L CNN
+F 2 "reform2-motherboard:mntreform" H 15050 9250 50  0001 C CNN
+F 3 "~" H 15050 9250 50  0001 C CNN
+F 4 "y" H 15050 9250 50  0001 C CNN "Checked"
+F 5 "None" H 15050 9250 50  0001 C CNN "Distributor"
+	1    15050 9250
+	1    0    0    -1  
+$EndComp
+Text GLabel 8700 9450 0    50   Input ~ 0
+USB2_RX_P
+Text GLabel 8700 9550 0    50   Input ~ 0
+USB2_RX_N
+Text GLabel 8700 9850 0    50   Output ~ 0
+USB2_DP
+Text GLabel 8700 9750 0    50   Output ~ 0
+USB2_DN
+Text GLabel 8700 9150 0    50   Output ~ 0
+USB2_TX_P
+Text GLabel 8700 9250 0    50   Output ~ 0
+USB2_TX_N
+Text GLabel 7500 8950 0    50   BiDi ~ 0
+EDP_SDA
+Text GLabel 7500 8850 0    50   Output ~ 0
+EDP_SCL
+Text GLabel 10400 6450 2    50   Output ~ 0
+PCIE1_CLK_N
+Text GLabel 10400 6350 2    50   Output ~ 0
+PCIE1_CLK_P
+Text GLabel 10400 6750 2    50   Input ~ 0
+PCIE2_CLK_N
+Text GLabel 10400 6650 2    50   Input ~ 0
+PCIE2_CLK_P
+Text GLabel 10400 7250 2    50   Output ~ 0
+PCIE2_RX_P
+Text GLabel 10400 6950 2    50   Output ~ 0
+PCIE2_TX_P
+Text GLabel 10400 7350 2    50   Output ~ 0
+PCIE2_RX_N
+Text GLabel 10400 7050 2    50   Output ~ 0
+PCIE2_TX_N
+Text GLabel 10400 6050 2    50   Output ~ 0
+PCIE1_RX_P
+Text GLabel 10400 5750 2    50   Output ~ 0
+PCIE1_TX_P
+Text GLabel 10400 6150 2    50   Output ~ 0
+PCIE1_RX_N
+Text GLabel 10400 5850 2    50   Output ~ 0
+PCIE1_TX_N
+Text GLabel 8700 4950 0    60   Output ~ 0
+ETH0_A+
+Text GLabel 8700 4850 0    60   Output ~ 0
+ETH0_A-
+Text GLabel 8700 4650 0    60   Output ~ 0
+ETH0_B+
+Text GLabel 8700 4550 0    60   Output ~ 0
+ETH0_B-
+Text GLabel 8700 4350 0    60   Output ~ 0
+ETH0_C+
+Text GLabel 8700 4250 0    60   Output ~ 0
+ETH0_C-
+Text GLabel 8700 4050 0    60   Output ~ 0
+ETH0_D+
+Text GLabel 8700 3950 0    60   Output ~ 0
+ETH0_D-
+Text GLabel 7400 7450 0    60   Output ~ 0
+ETH0_LED_RX
+Text GLabel 7400 7650 0    60   Output ~ 0
+ETH0_LED_LINK1
+$Sheet
+S 15050 13750 500  150 
+U 5D1F6C04
+F0 "Reform 2 Audio" 50
+F1 "reform2-audio.sch" 50
+$EndSheet
+Text GLabel 10400 9150 2    50   Input ~ 0
+USB1_RX_P
+Text GLabel 10400 9050 2    50   Input ~ 0
+USB1_RX_N
+Text GLabel 10400 8550 2    50   Output ~ 0
+USB1_DP
+Text GLabel 10400 8450 2    50   Output ~ 0
+USB1_DN
+Text GLabel 10400 8850 2    50   Output ~ 0
+USB1_TX_P
+Text GLabel 10400 8750 2    50   Output ~ 0
+USB1_TX_N
+$Sheet
+S 15050 13350 500  150 
+U 5D0D8363
+F0 "Reform 2 HDMI" 50
+F1 "reform2-hdmi.sch" 50
+$EndSheet
+$Sheet
+S 15050 12950 500  150 
+U 5D0CA3EB
+F0 "Reform 2 SD Card" 50
+F1 "reform2-sd.sch" 50
+$EndSheet
+$Sheet
+S 15050 12550 500  150 
+U 5D06AC46
+F0 "Reform 2 PCIe" 50
+F1 "reform2-pcie.sch" 50
+$EndSheet
+$Sheet
+S 15050 12150 500  150 
+U 5D06A7B6
+F0 "Reform 2 Display" 50
+F1 "reform2-display.sch" 50
+$EndSheet
+$Sheet
+S 15050 11750 500  150 
+U 5D06A32E
+F0 "Reform 2 Ethernet" 50
+F1 "reform2-eth.sch" 50
+$EndSheet
+$Sheet
+S 15050 11350 500  150 
+U 5D06A2FD
+F0 "Reform 2 USB" 50
+F1 "reform2-usb.sch" 50
+$EndSheet
+$Sheet
+S 15050 10950 500  150 
+U 5CC81028
+F0 "Reform 2 Power" 50
+F1 "reform2-power.sch" 50
+$EndSheet
+Text GLabel 10400 4750 2    50   Input ~ 0
+SD2_CD
+Text GLabel 10400 4550 2    50   Output ~ 0
+SD2_CLK
+Text GLabel 10400 4450 2    50   Output ~ 0
+SD2_CMD
+Text GLabel 10400 4350 2    50   BiDi ~ 0
+SD2_DATA3
+Text GLabel 10400 4250 2    50   BiDi ~ 0
+SD2_DATA2
+Text GLabel 10400 4150 2    50   BiDi ~ 0
+SD2_DATA1
+Text GLabel 10400 4050 2    50   BiDi ~ 0
+SD2_DATA0
+Text GLabel 8700 12250 0    50   Output ~ 0
+HDMI_D1-
+Text GLabel 8700 12350 0    50   Output ~ 0
+HDMI_D1+
+Text GLabel 8700 12550 0    50   Output ~ 0
+HDMI_D2-
+Text GLabel 8700 12650 0    50   Output ~ 0
+HDMI_D2+
+Text GLabel 8700 11650 0    50   Output ~ 0
+HDMI_CLK-
+Text GLabel 8700 11750 0    50   Output ~ 0
+HDMI_CLK+
+Text GLabel 8700 11950 0    50   Output ~ 0
+HDMI_D0-
+Text GLabel 8700 12050 0    50   Output ~ 0
+HDMI_D0+
+Text Notes 9250 3100 0    50   ~ 0
+TE 1717254-1
+Text Notes 9200 3200 0    50   ~ 0
+or TE 1473005-1
+$Comp
+L power:GND #PWR0214
+U 1 1 5D3B2B49
+P 17400 7400
+F 0 "#PWR0214" H 17400 7150 50  0001 C CNN
+F 1 "GND" H 17405 7227 50  0000 C CNN
+F 2 "" H 17400 7400 50  0001 C CNN
+F 3 "" H 17400 7400 50  0001 C CNN
+	1    17400 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H22
+U 1 1 5D3B2B53
+P 17400 7300
+F 0 "H22" H 17500 7349 50  0000 L CNN
+F 1 "MountingHole_Pad" H 17500 7258 50  0000 L CNN
+F 2 "footprints:WA-SMSI-M2" H 17400 7300 50  0001 C CNN
+F 3 "~" H 17400 7300 50  0001 C CNN
+F 4 "Wurth" H 17400 7300 50  0001 C CNN "Manufacturer"
+F 5 "9774010243" H 17400 7300 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 17400 7300 50  0001 C CNN "Checked"
+F 7 "Mouser" H 17400 7300 50  0001 C CNN "Distributor"
+	1    17400 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0223
+U 1 1 5D3BCEF3
+P 17400 7900
+F 0 "#PWR0223" H 17400 7650 50  0001 C CNN
+F 1 "GND" H 17405 7727 50  0000 C CNN
+F 2 "" H 17400 7900 50  0001 C CNN
+F 3 "" H 17400 7900 50  0001 C CNN
+	1    17400 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H24
+U 1 1 5D3BCEFD
+P 17400 7800
+F 0 "H24" H 17500 7849 50  0000 L CNN
+F 1 "MountingHole_Pad" H 17500 7758 50  0000 L CNN
+F 2 "footprints:WA-SMSI-M2" H 17400 7800 50  0001 C CNN
+F 3 "~" H 17400 7800 50  0001 C CNN
+F 4 "Wurth" H 17400 7800 50  0001 C CNN "Manufacturer"
+F 5 "9774010243" H 17400 7800 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 17400 7800 50  0001 C CNN "Checked"
+F 7 "Mouser" H 17400 7800 50  0001 C CNN "Distributor"
+	1    17400 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0224
+U 1 1 5D3BCF07
+P 17400 8400
+F 0 "#PWR0224" H 17400 8150 50  0001 C CNN
+F 1 "GND" H 17405 8227 50  0000 C CNN
+F 2 "" H 17400 8400 50  0001 C CNN
+F 3 "" H 17400 8400 50  0001 C CNN
+	1    17400 8400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H25
+U 1 1 5D3BCF11
+P 17400 8300
+F 0 "H25" H 17500 8349 50  0000 L CNN
+F 1 "MountingHole_Pad" H 17500 8258 50  0000 L CNN
+F 2 "footprints:WA-SMSI-M2" H 17400 8300 50  0001 C CNN
+F 3 "~" H 17400 8300 50  0001 C CNN
+F 4 "Wurth" H 17400 8300 50  0001 C CNN "Manufacturer"
+F 5 "9774010243" H 17400 8300 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 17400 8300 50  0001 C CNN "Checked"
+F 7 "Mouser" H 17400 8300 50  0001 C CNN "Distributor"
+	1    17400 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0226
+U 1 1 5D3D2015
+P 17400 8900
+F 0 "#PWR0226" H 17400 8650 50  0001 C CNN
+F 1 "GND" H 17405 8727 50  0000 C CNN
+F 2 "" H 17400 8900 50  0001 C CNN
+F 3 "" H 17400 8900 50  0001 C CNN
+	1    17400 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H27
+U 1 1 5D3D201F
+P 17400 8800
+F 0 "H27" H 17500 8849 50  0000 L CNN
+F 1 "MountingHole_Pad" H 17500 8758 50  0000 L CNN
+F 2 "footprints:WA-SMSI-M2" H 17400 8800 50  0001 C CNN
+F 3 "~" H 17400 8800 50  0001 C CNN
+F 4 "Wurth" H 17400 8800 50  0001 C CNN "Manufacturer"
+F 5 "9774010243" H 17400 8800 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 17400 8800 50  0001 C CNN "Checked"
+F 7 "Mouser" H 17400 8800 50  0001 C CNN "Distributor"
+	1    17400 8800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5D3EF97D
+P 15050 10250
+F 0 "H4" H 15150 10296 50  0000 L CNN
+F 1 "WEEE" H 15150 10205 50  0000 L CNN
+F 2 "Symbol:WEEE-Logo_4.2x6mm_SilkScreen" H 15050 10250 50  0001 C CNN
+F 3 "~" H 15050 10250 50  0001 C CNN
+F 4 "y" H 15050 10250 50  0001 C CNN "Checked"
+F 5 "None" H 15050 10250 50  0001 C CNN "Distributor"
+	1    15050 10250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP10
+U 1 1 5D40C483
+P 8500 10650
+F 0 "TP10" V 8454 10838 50  0000 L CNN
+F 1 "T_M4_NMI" V 8545 10838 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8700 10650 50  0001 C CNN
+F 3 "~" H 8700 10650 50  0001 C CNN
+F 4 "y" H 8500 10650 50  0001 C CNN "Checked"
+F 5 "None" H 8500 10650 50  0001 C CNN "Distributor"
+	1    8500 10650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8700 10650 8500 10650
+Wire Wire Line
+	10400 11650 10500 11650
+Wire Wire Line
+	8700 10750 7300 10750
+Text GLabel 7300 10750 0    50   Input ~ 0
+IMX_WAKE
+Wire Wire Line
+	15650 4700 15650 5650
+$Comp
+L Connector:Conn_01x08_Male J19
+U 1 1 5ECAAFCE
+P 16250 5350
+F 0 "J19" H 16222 5324 50  0000 R CNN
+F 1 "JTAG" H 16222 5233 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 16250 5350 50  0001 C CNN
+F 3 "~" H 16250 5350 50  0001 C CNN
+F 4 "Amphenol FCI" H 16250 5350 50  0001 C CNN "Manufacturer"
+F 5 "79425-408HLF" H 16250 5350 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 16250 5350 50  0001 C CNN "Checked"
+F 7 "Mouser" H 16250 5350 50  0001 C CNN "Distributor"
+	1    16250 5350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	16050 5750 15950 5750
+Wire Wire Line
+	16050 5050 15950 5050
+Wire Wire Line
+	15950 4450 15950 5050
+Wire Wire Line
+	15950 5750 15950 5450
+Wire Wire Line
+	15950 5450 16050 5450
+Connection ~ 15950 5750
+$Comp
+L power:+5V #PWR0104
+U 1 1 5EB50931
+P 7750 2900
+F 0 "#PWR0104" H 7750 2750 50  0001 C CNN
+F 1 "+5V" H 7765 3073 50  0000 C CNN
+F 2 "" H 7750 2900 50  0001 C CNN
+F 3 "" H 7750 2900 50  0001 C CNN
+	1    7750 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0242
+U 1 1 5EB50E6D
+P 10850 2900
+F 0 "#PWR0242" H 10850 2750 50  0001 C CNN
+F 1 "+5V" H 10865 3073 50  0000 C CNN
+F 2 "" H 10850 2900 50  0001 C CNN
+F 3 "" H 10850 2900 50  0001 C CNN
+	1    10850 2900
+	1    0    0    -1  
+$EndComp
+Text Notes 11000 6750 0    50   ~ 0
+This is refclk input (PAD_CLK) for PCIe2
+Text Notes 11000 6450 0    50   ~ 0
+This is a i.MX8M internal oscillator output for PCIe1
+$Comp
+L Connector:TestPoint TP12
+U 1 1 5DF11BD6
+P 10800 12150
+F 0 "TP12" V 10754 12338 50  0000 L CNN
+F 1 "SAI2_RXC" V 10845 12338 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 11000 12150 50  0001 C CNN
+F 3 "~" H 11000 12150 50  0001 C CNN
+F 4 "y" H 10800 12150 50  0001 C CNN "Checked"
+F 5 "None" H 10800 12150 50  0001 C CNN "Distributor"
+	1    10800 12150
+	0    1    1    0   
+$EndComp
+Text GLabel 10500 12450 2    50   Output ~ 0
+IMX_PWM4
+Wire Wire Line
+	14950 3400 14950 3300
+$Comp
+L power:GND #PWR0225
+U 1 1 5DC7338A
+P 14950 3400
+F 0 "#PWR0225" H 14950 3150 50  0001 C CNN
+F 1 "GND" H 14955 3227 50  0000 C CNN
+F 2 "" H 14950 3400 50  0001 C CNN
+F 3 "" H 14950 3400 50  0001 C CNN
+	1    14950 3400
+	1    0    0    -1  
+$EndComp
+Text Notes 14900 2800 0    50   ~ 0
+Boot UART
+Text Notes 16200 2800 0    50   ~ 0
+AUX UART
+Text GLabel 11200 4650 2    50   Output ~ 0
+PCIE2_RESETn
+Wire Wire Line
+	10600 11050 10400 11050
+Text GLabel 10600 10150 2    50   Input ~ 0
+BOOTCFG_10
+Wire Wire Line
+	10600 10150 10400 10150
+Wire Wire Line
+	10600 10350 10400 10350
+Text GLabel 10600 10450 2    50   Input ~ 0
+BOOTCFG_13
+Wire Wire Line
+	10600 10450 10400 10450
+Text GLabel 10600 10350 2    50   Input ~ 0
+BOOTCFG_12
+Text GLabel 19250 5550 2    50   Input ~ 0
+BOOTCFG_12
+Text GLabel 19250 5450 2    50   Input ~ 0
+BOOTCFG_13
+$Comp
+L Device:R_Small R169
+U 1 1 5E2C5325
+P 17750 5350
+F 0 "R169" V 17650 5350 50  0000 C CNN
+F 1 "1.5k" V 17750 5350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 17750 5350 50  0001 C CNN
+F 3 "~" H 17750 5350 50  0001 C CNN
+F 4 "Yageo" H 17750 5350 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071K5L" H 17750 5350 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 17750 5350 50  0001 C CNN "Checked"
+F 7 "Mouser" H 17750 5350 50  0001 C CNN "Distributor"
+	1    17750 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18650 5350 17850 5350
+$Comp
+L Device:R_Small R170
+U 1 1 5E2D1326
+P 18000 5450
+F 0 "R170" V 17800 5450 50  0000 C CNN
+F 1 "1.5k" V 18000 5450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 18000 5450 50  0001 C CNN
+F 3 "~" H 18000 5450 50  0001 C CNN
+F 4 "Yageo" H 18000 5450 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071K5L" H 18000 5450 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 18000 5450 50  0001 C CNN "Checked"
+F 7 "Mouser" H 18000 5450 50  0001 C CNN "Distributor"
+	1    18000 5450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18650 5450 18100 5450
+$Comp
+L power:+3V3 #PWR03
+U 1 1 5E2F4B9C
+P 17500 5250
+F 0 "#PWR03" H 17500 5100 50  0001 C CNN
+F 1 "+3V3" H 17515 5423 50  0000 C CNN
+F 2 "" H 17500 5250 50  0001 C CNN
+F 3 "" H 17500 5250 50  0001 C CNN
+	1    17500 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17500 5250 17500 5350
+Wire Wire Line
+	17500 5350 17650 5350
+Wire Wire Line
+	17500 5450 17500 5350
+Connection ~ 17500 5350
+Text Notes 19850 5500 0    50   ~ 0
+01: SD
+Text Notes 19850 5600 0    50   ~ 0
+10: eMMC
+Text GLabel 19250 5650 2    50   Input ~ 0
+BOOTCFG_10
+$Comp
+L Device:R_Small R171
+U 1 1 5E31432E
+P 18250 5550
+F 0 "R171" V 18450 5550 50  0000 C CNN
+F 1 "1.5k" V 18250 5550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 18250 5550 50  0001 C CNN
+F 3 "~" H 18250 5550 50  0001 C CNN
+F 4 "Yageo" H 18250 5550 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071K5L" H 18250 5550 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 18250 5550 50  0001 C CNN "Checked"
+F 7 "Mouser" H 18250 5550 50  0001 C CNN "Distributor"
+	1    18250 5550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18650 5550 18350 5550
+Text Notes 19850 5700 0    50   ~ 0
+0: eSDHC1  1: eSDHC2
+Text GLabel 19250 5350 2    50   Input ~ 0
+BOOTCFG_4
+Text Notes 19850 5400 0    50   ~ 0
+0: 1-bit 1: 4-bit
+$Comp
+L Switch:SW_DIP_x04 SW5
+U 1 1 5E3779C3
+P 18950 5550
+F 0 "SW5" H 18950 6017 50  0000 C CNN
+F 1 "SW_DIP_x04" H 18950 5926 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx04_Slide_Omron_A6S-410x_W8.9mm_P2.54mm" H 18950 5550 50  0001 C CNN
+F 3 "~" H 18950 5550 50  0001 C CNN
+F 4 "Omron" H 18950 5550 50  0001 C CNN "Manufacturer"
+F 5 "A6S-4101-H" H 18950 5550 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 18950 5550 50  0001 C CNN "Checked"
+F 7 "Mouser" H 18950 5550 50  0001 C CNN "Distributor"
+	1    18950 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R168
+U 1 1 5E437433
+P 18550 5650
+F 0 "R168" V 18450 5650 50  0000 C CNN
+F 1 "1.5k" V 18550 5650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 18550 5650 50  0001 C CNN
+F 3 "~" H 18550 5650 50  0001 C CNN
+F 4 "Yageo" H 18550 5650 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071K5L" H 18550 5650 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 18550 5650 50  0001 C CNN "Checked"
+F 7 "Mouser" H 18550 5650 50  0001 C CNN "Distributor"
+	1    18550 5650
+	0    -1   -1   0   
+$EndComp
+Connection ~ 17500 5450
+Wire Wire Line
+	17500 5450 17900 5450
+Wire Wire Line
+	17500 5550 18150 5550
+Connection ~ 17500 5550
+Wire Wire Line
+	17500 5550 17500 5450
+Wire Wire Line
+	18450 5650 17500 5650
+Wire Notes Line
+	19800 5600 20550 5600
+Wire Notes Line
+	19800 5700 20550 5700
+Wire Wire Line
+	17500 5550 17500 5650
+Text GLabel 3850 8150 2    50   Output ~ 0
+DSI_CLK_N
+Text GLabel 3850 8050 2    50   Output ~ 0
+DSI_CLK_P
+Text GLabel 3850 7850 2    50   Output ~ 0
+DSI_D1_N
+Text GLabel 3850 7750 2    50   Output ~ 0
+DSI_D1_P
+Text GLabel 3850 7550 2    50   Output ~ 0
+DSI_D0_N
+Text Notes 10500 10100 0    50   ~ 0
+BOOTCFG_9
+Text Notes 10500 10300 0    50   ~ 0
+BOOTCFG_11
+Text Notes 10500 10600 0    50   ~ 0
+BOOTCFG_14
+Text Notes 10500 10700 0    50   ~ 0
+BOOTCFG_15
+Text Notes 10500 10800 0    50   ~ 0
+BOOTCFG_1
+Text Notes 10500 11400 0    50   ~ 0
+BOOTCFG_7
+Wire Notes Line
+	10550 10850 10550 11300
+Text GLabel 10600 11050 2    50   Input ~ 0
+BOOTCFG_4
+Text Notes 10500 12800 0    50   ~ 0
+BOOTCFG_0
+Text Notes 10500 12900 0    50   ~ 0
+BOOTCFG_8
+Text GLabel 7300 10550 0    50   Input ~ 0
+IMX_RTC_IRQ
+Wire Wire Line
+	8700 10550 7300 10550
+Text GLabel 11950 12750 2    50   Input ~ 0
+PCIE1_XREFCLK_P
+Text GLabel 11950 11450 2    50   Input ~ 0
+PCIE1_XREFCLK_N
+Wire Wire Line
+	10400 12750 11750 12750
+Wire Wire Line
+	10400 11450 11750 11450
+$Comp
+L Device:R_Small R191
+U 1 1 5E410610
+P 11850 11450
+F 0 "R191" V 11750 11450 50  0000 C CNN
+F 1 "0" V 11850 11450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 11850 11450 50  0001 C CNN
+F 3 "~" H 11850 11450 50  0001 C CNN
+F 4 "Vishay Dale" H 11850 11450 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 11850 11450 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 11850 11450 50  0001 C CNN "Distributor"
+F 7 "y" H 11850 11450 50  0001 C CNN "Checked"
+	1    11850 11450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R192
+U 1 1 5E410B4B
+P 11850 12750
+F 0 "R192" V 11750 12750 50  0000 C CNN
+F 1 "0" V 11850 12750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 11850 12750 50  0001 C CNN
+F 3 "~" H 11850 12750 50  0001 C CNN
+F 4 "Vishay Dale" H 11850 12750 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 11850 12750 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 11850 12750 50  0001 C CNN "Distributor"
+F 7 "y" H 11850 12750 50  0001 C CNN "Checked"
+	1    11850 12750
+	0    1    1    0   
+$EndComp
+Text Notes 12800 11500 0    50   ~ 0
+This is where Boundary\nprovides a patched-on\ntwisted pair for the missing\npcie0 refclock input (optional)\n
+Text GLabel 6600 5450 0    50   Output ~ 0
+PCIE1_DISn
+Wire Wire Line
+	8700 5450 6600 5450
+Wire Wire Line
+	18200 3250 18300 3250
+Wire Wire Line
+	18300 3150 18300 3250
+Connection ~ 18300 3250
+Wire Wire Line
+	18300 3250 18750 3250
+Text Label 11000 11450 0    50   ~ 0
+PCIE1_XRCLK_N
+Text Label 11000 12750 0    50   ~ 0
+PCIE1_XRCLK_P
+Wire Wire Line
+	6600 5350 8700 5350
+Wire Wire Line
+	10400 4650 11200 4650
+Text Notes 11700 11300 0    50   ~ 0
+NOSTUFF!
+Text Notes 11700 12600 0    50   ~ 0
+NOSTUFF!
+Wire Wire Line
+	10500 12450 10400 12450
+Wire Wire Line
+	10500 12250 10400 12250
+Wire Wire Line
+	10400 12350 10500 12350
+Wire Wire Line
+	10500 11750 10400 11750
+Wire Wire Line
+	10400 11850 10500 11850
+Wire Wire Line
+	10500 11950 10400 11950
+Wire Wire Line
+	10400 12050 10500 12050
+Text GLabel 12150 11950 2    50   Input ~ 0
+IMX_PWM4
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5F7E2E35
+P 12050 11950
+F 0 "TP1" V 12004 12138 50  0000 L CNN
+F 1 "IMX_PWM4" V 12095 12138 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 12250 11950 50  0001 C CNN
+F 3 "~" H 12250 11950 50  0001 C CNN
+F 4 "y" H 12050 11950 50  0001 C CNN "Checked"
+F 5 "None" H 12050 11950 50  0001 C CNN "Distributor"
+	1    12050 11950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12150 11950 12050 11950
+Wire Wire Line
+	7500 8650 8700 8650
+Wire Wire Line
+	7500 8550 8700 8550
+Wire Wire Line
+	8700 8950 7500 8950
+Wire Wire Line
+	7500 8850 8700 8850
+$EndSCHEMATC
