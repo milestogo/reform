@@ -7,6 +7,7 @@ function build {
   
   sed -i 's/width="[^"]*"/width="100%"/' system-diagram.svg
   sed -i 's/height="[^"]*"//' system-diagram.svg
+  sed -i 's/"Inter"/"Inter,Roboto,Helvetica,Helvetica Neue,Open Sans,Arial,sans-serif"/g' system-diagram.svg 
 }
 
 build
