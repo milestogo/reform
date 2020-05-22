@@ -2,7 +2,7 @@
 
 <iframe src="system-diagram.svg" width="75%" height="100%"></iframe>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('inter.css');
 body {
   font-family: 'Inter', sans-serif;
   margin-left: 77%;
