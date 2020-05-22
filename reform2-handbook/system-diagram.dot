@@ -3,14 +3,14 @@ digraph G {
   overlap=false;
   splines=ortho;
 
-  node [shape=box color=transparent fontname="Inter" width=1 target="_top"];
+  node [shape=box fillcolor=white style=filled fontname="Inter" width=1 target="_top"];
   edge [arrowsize="0.5"];
   rankdir=TB; 
   fontname="Inter";
   label=<<font point-size='24'> <br/>MNT Reform 2.0D-4 System Diagram<br/> </font>>;
   labelloc="t";
 
-  rtc  [label="Realtime\nClock" color=black href="system.html#rtc"];
+  rtc  [label="Realtime\nClock" href="system.html#rtc"];
   rtcbat  [label="Coin Cell" href="system.html#rtc"];
    
   subgraph cluster_som {
@@ -61,18 +61,18 @@ digraph G {
       spi1 [label="SPI" href="system.html#spi"];
     }
 
-    ram [label="LPDDR4\nRAM 4GB" color=black href="system.html#ddrc"];
-    emmc [label="eMMC\n~8GB" color=black href="system.html#mmc"];
+    ram [label="LPDDR4\nRAM 4GB" href="system.html#ddrc"];
+    emmc [label="eMMC\n~8GB" href="system.html#mmc"];
     
-    ethphy  [label="ETH PHY" color=black href="system.html#eth-phy"];
+    ethphy  [label="ETH PHY" href="system.html#eth-phy"];
     
     s5v  [label="5V Input"];
   }
   
-  hub  [label="USB Hub" color=black href="system.html#usb-hub"];
+  hub  [label="USB Hub" href="system.html#usb-hub"];
   
-  adac  [label="DAC WM8960" color=black href="system.html#dac"];
-  dsi2edp  [label="DSI to eDP\nConverter" color=black href="system.html#dsi2edp"];
+  adac  [label="DAC WM8960" href="system.html#dac"];
+  dsi2edp  [label="DSI to eDP\nConverter" href="system.html#dsi2edp"];
 
   subgraph cluster_headers {
     fontname="Inter"
@@ -108,22 +108,22 @@ digraph G {
       style=filled;
       margin="25.0";
       
-      lpc  [label="MCU LPC11U24" color=black width=4 href="system.html#lpc"];
-      ina  [label="Current &\nVoltage Monitor" color=black href="system.html#ina"];
+      lpc  [label="MCU LPC11U24" width=4 href="system.html#lpc"];
+      ina  [label="Current &\nVoltage Monitor" href="system.html#ina"];
       
-      ltc  [label="Buck/Boost\nDC-DC and Charger" color=black href="system.html#ltc4020"];
+      ltc  [label="Buck/Boost\nDC-DC and Charger" href="system.html#ltc4020"];
 
-      mon  [label="Cell Monitor\nBalancer" color=black href="system.html#balancer"];
+      mon  [label="Cell Monitor\nBalancer" href="system.html#balancer"];
       
-      lspi  [label="SPI" shape=diamond style=filled color=lightgrey href="system.html#spi"];
-      li2c  [label="I2C" shape=diamond style=filled color=lightgrey href="system.html#i2c"];
+      lspi  [label="SPI" shape=diamond fillcolor=lightgrey href="system.html#spi"];
+      li2c  [label="I2C" shape=diamond fillcolor=lightgrey href="system.html#i2c"];
     
       cells [label="8x LiFePO4 18650 Batteries" shape=rectangle href="system.html#cells"];
       supply [label="24V Power Supply\nfrom Barrel Jack" shape=rectangle href="system.html#barreljack"];
     
-      enabchg [label="Charge On" shape=diamond style=filled color=lightgrey href="system.html#lpc"];
-      enab5v [label="On" shape=diamond style=filled color=lightgrey href="system.html#lpc"];
-      enab3v3 [label="On" shape=diamond style=filled color=lightgrey href="system.html#lpc"];
+      enabchg [label="Charge On" shape=diamond fillcolor=lightgrey href="system.html#lpc"];
+      enab5v [label="On" shape=diamond fillcolor=lightgrey href="system.html#lpc"];
+      enab3v3 [label="On" shape=diamond fillcolor=lightgrey href="system.html#lpc"];
     }
 
     subgraph cluster_power_rails {
@@ -133,14 +133,14 @@ digraph G {
       style=filled;
       margin="25.0";
       
-      r28v  [label="~28V" shape=diamond style=filled color=lightgrey];
-      stby [label="3V3 Standby" color=black href="system.html#standby"];
-      r5v  [label="5V" width=1.1 color=black href="system.html#r5v"];
-      r3v3 [label="3V3" color=black href="system.html#r3v3"];
+      r28v  [label="~28V" shape=diamond fillcolor=lightgrey];
+      stby [label="3V3 Standby" href="system.html#standby"];
+      r5v  [label="5V" width=1.1 href="system.html#r5v"];
+      r3v3 [label="3V3" href="system.html#r3v3"];
       
-      r1v2 [label="1V2" width=0.5 color=black href="system.html#r1v2"];
-      r1v5 [label="1V5" width=0.5 color=black href="system.html#r1v5"];
-      r1v8 [label="1V8" width=0.5 color=black href="system.html#r1v8"];
+      r1v2 [label="1V2" width=0.5 href="system.html#r1v2"];
+      r1v5 [label="1V5" width=0.5 href="system.html#r1v5"];
+      r1v8 [label="1V8" width=0.5 href="system.html#r1v8"];
     }
   }
 
@@ -196,12 +196,11 @@ digraph G {
       label="Trackball\n ";
       margin="25.0";
       
-      tmcu  [label="MCU Atmega32U2" color=black width=3 href="system.html#tbctrl"];
+      tmcu  [label="MCU Atmega32U2" width=3 href="system.html#tbctrl"];
       tsens  [label="Motion Sensor" href="system.html#tbsensor"];
       
-      ti2c  [label="I2C" shape=diamond style=filled color=lightgrey href="system.html#i2c"];
-      tgpio  [label="GPIO" shape=diamond style=filled color=lightgrey href="system.html#tbctrl"];
-      
+      ti2c  [label="I2C" shape=diamond fillcolor=lightgrey href="system.html#i2c"];
+      tgpio  [label="GPIO" shape=diamond fillcolor=lightgrey href="system.html#tbctrl"];      
       tkeys  [label="5 Buttons" href="system.html#kbkeys"];
     }
 
@@ -212,13 +211,13 @@ digraph G {
       label="Keyboard\n ";
       margin="25.0";
       
-      kmcu  [label="MCU Atmega32U4" color=black width=3 href="system.html#kbctrl"];
+      kmcu  [label="MCU Atmega32U4" width=3 href="system.html#kbctrl"];
 
       oled [label="OLED Display 128x32" href="system.html#oled"];
       
-      ki2c  [label="I2C" shape=diamond style=filled color=lightgrey href="system.html#i2c"];
-      kuart  [label="UART" shape=diamond style=filled color=lightgrey href="system.html#kbctrl"];
-      kgpio  [label="GPIO" shape=diamond style=filled color=lightgrey href="system.html#kbctrl"];
+      ki2c  [label="I2C" shape=diamond fillcolor=lightgrey href="system.html#i2c"];
+      kuart  [label="UART" shape=diamond fillcolor=lightgrey href="system.html#kbctrl"];
+      kgpio  [label="GPIO" shape=diamond fillcolor=lightgrey href="system.html#kbctrl"];
       kkeys  [label="Key Matrix" href="system.html#kbkeys"];
     }
   }
