@@ -22,6 +22,8 @@ This is an interactive block diagram of the MNT Reform open hardware laptop. Cli
 
 For general information, visit the [MNT Reform Website](https://mntre.com/reform).
 
+- [Motherboard PCB Explorer](https://mntre.com/reform2-ibom/reform2-motherboard/ibom.html)
+
 ## System-on-Module: Boundary Devices Nitrogen8M_SOM
 
 The default SOM of Reform.
@@ -274,7 +276,8 @@ The barrel jack accepts DC voltage in the range of 7V to 32V. The default power 
 
 - Model: Microchip/Atmel Atmega32U4
 - [Datasheet](http://ww1.microchip.com/downloads/en/devicedoc/atmel-7766-8-bit-avr-atmega16u4-32u4_datasheet.pdf)
-- [Firmware](https://source.mntmn.com/MNT/reform/src/branch/master/reform2-keyboard-fw)
+- [Keyboard Firmware](https://source.mntmn.com/MNT/reform/src/branch/master/reform2-keyboard-fw)
+- [Keyboard PCB Explorer](https://mntre.com/reform2-ibom/reform2-keyboard/ibom.html)
 
 The following shortcuts are available indepdently of the main processor in Reform, even when the system is powered off. Acting like a primitive terminal, most shortcuts trigger a command string to be sent over the keyboard's UART to the [LPC](#lpc). The LPC then responds with characters to display on the [OLED](#oled).
 
@@ -301,7 +304,7 @@ The keyboard and trackball modules both use the same type of switch.
 
 The trackball has custom keycaps designed by MNT Research and 3D printed in an SLA process.
 
-- [Trackball 3D Printed Parts](https://source.mntmn.com/MNT/reform/src/branch/master/reform2-3d-printed-parts/reform2-stl)
+- [Trackball 3D Printed Parts](https://github.com/mntmn/reform/tree/master/reform2-3d-printed-parts/reform2-stl)
 
 ## Keyboard OLED {#oled}
 
@@ -317,16 +320,19 @@ The display is currently used to show the results of [Circle commands given via 
 - [Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/doc7799.pdf)
 - [Firmware](https://source.mntmn.com/MNT/reform/src/branch/master/reform2-trackball-fw)
 - [Trackball 3D Printed Parts](https://source.mntmn.com/MNT/reform/src/branch/master/reform2-3d-printed-parts/reform2-stl)
+- [Trackball PCB Explorer](https://mntre.com/reform2-ibom/reform2-trackball/ibom.html)
 
 ## Trackball Sensor {#tbsensor}
 
 - Model: Pixart PAT9125EL
 - [Datasheet](https://www.codico.com/shop/media/datasheets/PixArt_PAT9125EL_InfoBrief.pdf)
+- [Trackball Sensor PCB Explorer](https://mntre.com/reform2-ibom/reform2-trackball-sensor/ibom.html)
 
 ## Trackpad Controller {#tpcrtl}
 
 - Model: Microchip/Atmel Atmega32U2
 - [Firmware](https://source.mntmn.com/MNT/reform/src/branch/master/reform2-trackpad-fw)
+- [Trackpad PCB Explorer](https://mntre.com/reform2-ibom/reform2-trackpad/ibom.html)
 
 ## Trackpad Sensor {#tpsensor}
 

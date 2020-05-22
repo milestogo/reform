@@ -1,3 +1,4 @@
+<!DOCTYPE html><html lang="en"><meta charset="UTF-8">
 <h1 id="mnt-reform-20d-4-electronic-system-components">MNT Reform 2.0D-4 Electronic System Components</h1>
 
 <iframe src="system-diagram.svg" width="75%" height="100%"></iframe>
@@ -21,6 +22,10 @@ iframe {
 <p>This is an interactive block diagram of the MNT Reform open hardware laptop. Click on a  label in the diagram to jump to the corresponding bit of information.</p>
 
 <p>For general information, visit the <a href="https://mntre.com/reform">MNT Reform Website</a>.</p>
+
+<ul>
+  <li><a href="https://mntre.com/reform2-ibom/reform2-motherboard/ibom.html">Motherboard PCB Explorer</a></li>
+</ul>
 
 <h2 id="system-on-module-boundary-devices-nitrogen8msom">System-on-Module: Boundary Devices Nitrogen8M_SOM</h2>
 
@@ -345,7 +350,8 @@ iframe {
 <ul>
   <li>Model: Microchip/Atmel Atmega32U4</li>
   <li><a href="http://ww1.microchip.com/downloads/en/devicedoc/atmel-7766-8-bit-avr-atmega16u4-32u4_datasheet.pdf">Datasheet</a></li>
-  <li><a href="https://source.mntmn.com/MNT/reform/src/branch/master/reform2-keyboard-fw">Firmware</a></li>
+  <li><a href="https://source.mntmn.com/MNT/reform/src/branch/master/reform2-keyboard-fw">Keyboard Firmware</a></li>
+  <li><a href="https://mntre.com/reform2-ibom/reform2-keyboard/ibom.html">Keyboard PCB Explorer</a></li>
 </ul>
 
 <p>The following shortcuts are available indepdently of the main processor in Reform, even when the system is powered off. Acting like a primitive terminal, most shortcuts trigger a command string to be sent over the keyboard’s UART to the <a href="#lpc">LPC</a>. The LPC then responds with characters to display on the <a href="#oled">OLED</a>.</p>
@@ -378,7 +384,7 @@ iframe {
 <p>The trackball has custom keycaps designed by MNT Research and 3D printed in an SLA process.</p>
 
 <ul>
-  <li><a href="https://source.mntmn.com/MNT/reform/src/branch/master/reform2-3d-printed-parts/reform2-stl">Trackball 3D Printed Parts</a></li>
+  <li><a href="https://github.com/mntmn/reform/tree/master/reform2-3d-printed-parts/reform2-stl">Trackball 3D Printed Parts</a></li>
 </ul>
 
 <h2 id="oled">Keyboard OLED</h2>
@@ -398,6 +404,7 @@ iframe {
   <li><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/doc7799.pdf">Datasheet</a></li>
   <li><a href="https://source.mntmn.com/MNT/reform/src/branch/master/reform2-trackball-fw">Firmware</a></li>
   <li><a href="https://source.mntmn.com/MNT/reform/src/branch/master/reform2-3d-printed-parts/reform2-stl">Trackball 3D Printed Parts</a></li>
+  <li><a href="https://mntre.com/reform2-ibom/reform2-trackball/ibom.html">Trackball PCB Explorer</a></li>
 </ul>
 
 <h2 id="tbsensor">Trackball Sensor</h2>
@@ -405,6 +412,7 @@ iframe {
 <ul>
   <li>Model: Pixart PAT9125EL</li>
   <li><a href="https://www.codico.com/shop/media/datasheets/PixArt_PAT9125EL_InfoBrief.pdf">Datasheet</a></li>
+  <li><a href="https://mntre.com/reform2-ibom/reform2-trackball-sensor/ibom.html">Trackball Sensor PCB Explorer</a></li>
 </ul>
 
 <h2 id="tpcrtl">Trackpad Controller</h2>
@@ -412,6 +420,7 @@ iframe {
 <ul>
   <li>Model: Microchip/Atmel Atmega32U2</li>
   <li><a href="https://source.mntmn.com/MNT/reform/src/branch/master/reform2-trackpad-fw">Firmware</a></li>
+  <li><a href="https://mntre.com/reform2-ibom/reform2-trackpad/ibom.html">Trackpad PCB Explorer</a></li>
 </ul>
 
 <h2 id="tpsensor">Trackpad Sensor</h2>
@@ -469,3 +478,4 @@ iframe {
   <li><a href="https://enerprof.de/akkus/akkus-lifepo4/akkuzellen-lifepo4/akkuzellen-lifepo4-18650/32/enerpower-18650-lifepo4-3-2v-1800-mah?c=26">ENERpower</a></li>
   <li><a href="https://www.18650batterystore.com/Lithium-Werks-p/lithiumwerks-apr18650m1b.htm">Lithium Werks</a></li>
 </ul>
+</html>
