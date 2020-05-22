@@ -1,4 +1,4 @@
-<h1 id="reform-20d-4-electronic-system-components">Reform 2.0D-4 Electronic System Components</h1>
+<h1 id="mnt-reform-20d-4-electronic-system-components">MNT Reform 2.0D-4 Electronic System Components</h1>
 
 <iframe src="system-diagram.svg" width="75%" height="100%"></iframe>
 <style>
@@ -18,6 +18,10 @@ iframe {
 }
 </style>
 
+<p>This is an interactive block diagram of the MNT Reform open hardware laptop. Click on a  label in the diagram to jump to the corresponding bit of information.</p>
+
+<p>For general information, visit the <a href="https://mntre.com/reform">MNT Reform Website</a>.</p>
+
 <h2 id="system-on-module-boundary-devices-nitrogen8msom">System-on-Module: Boundary Devices Nitrogen8M_SOM</h2>
 
 <p>The default SOM of Reform.</p>
@@ -36,10 +40,6 @@ iframe {
   <li><a href="https://www.nxp.com/docs/en/data-sheet/IMX8MDQLQCEC.pdf">Data Sheet</a></li>
   <li><a href="https://www.nxp.com/webapp/Download?colCode=IMX8MDQLQRM">Reference Manual</a></li>
 </ul>
-
-<p>Some interesting core drivers:
-- drivers/clk/imx/clk-imx8mq.c
--</p>
 
 <h4 id="cortex-a53">Cortex-A53</h4>
 
@@ -161,7 +161,7 @@ iframe {
 <ul>
   <li>The first controller connects to an eMMC flash disk on the SOM (usually 8GB in size).</li>
   <li>
-    <p>The second controller connects to the SD card slot on the motherboard via a level shifter.</p>
+    <p>The second controller connects to the SD card slot on the motherboard via a level shifter. The level shifter converts between the SoC’s 1.8V and the SD card’s 3.3V signal levels.</p>
   </li>
   <li><a href="https://github.com/torvalds/linux/tree/master/drivers/mmc/host/sdhci-esdhc-imx.c">Driver</a></li>
 </ul>
@@ -186,6 +186,10 @@ iframe {
 
 <p>The PHY part of the Ethernet interface is a chip on the SOM. The default SOM has an Atheros AR8035 PHY, which is driven in Linux by a generic PHY driver.</p>
 
+<ul>
+  <li><a href="https://media.digikey.com/pdf/data%20sheets/csr%20pdfs/ar8035_ds_(atheros)_mar2011.pdf">Datasheet</a></li>
+</ul>
+
 <h2 id="usb-hub">USB Hub</h2>
 
 <p>Reform has a TI TUSB8041 USB Hub chip with four downstream ports, two of which lead to external USB3.0 connectors.</p>
@@ -195,3 +199,273 @@ iframe {
   <li><a href="https://www.ti.com/lit/ds/symlink/tusb8041.pdf?&amp;ts=1590007407171">Datasheet</a></li>
 </ul>
 
+<h2 id="rtc">Battery-Backed Realtime Clock</h2>
+
+<p>The Reform motherboard has a NXP PCF8523T realtime clock chip that is backed by a 3.3V lithium coin cell when the system is unpowered. It is accessed by the SoC via <a href="#i2c">I²C</a>.</p>
+
+<ul>
+  <li><a href="https://www.nxp.com/docs/en/data-sheet/PCF8523.pdf">RTC Datasheet</a></li>
+  <li>Coin cell standard: CR1220</li>
+</ul>
+
+<h2 id="dsi2edp">DSI to eDP Converter</h2>
+
+<p>The Reform motherboard has a TI SN65DSI86 (variant SN65DSI86IPAPQ1) chip that converts <a href="#dsi">MIPI-DSI</a> signals to eDP signals that the built-in <a href="#panel">display panel</a> can understand. The DSI output on the default SOM is available on a flat cable connector. A short, 30 pin FPC cable goes from the SOM into the motherboard’s MIPI-DSI input connector directly below the SOM. The DSI signals are routed from there to the SN65DSI86 chip.</p>
+
+<p>The eDP signals are available on the 2x15 pin, 2mm DuPont header J24. Normally, a cable is plugged into this header, routed through the right-hand screen hinge and it’s IPEX connector side plugged into the display panel.</p>
+
+<ul>
+  <li>Input DSI lanes: 4 + Clock</li>
+  <li>Output eDP lanes: 2 + AUX</li>
+  <li>Color depth: 8 bit per color channel (24 bit per pixel)</li>
+  <li>Standard Resolution: 1920x1080 @ 60 FPS</li>
+  <li><a href="https://www.ti.com/lit/ds/symlink/sn65dsi86-q1.pdf?&amp;ts=1590150753809">SN65DSI86 Datasheet</a></li>
+</ul>
+
+<h2 id="dac">Audio DAC/ADC</h2>
+
+<p>The Audio DAC/ADC converts between the <a href="#sai">digital SAI audio signals</a> and the signals on the <a href="#audiojack">audio jack</a> and the <a href="#speakers">speakers</a>. It can drive both speakers and headphones with independent volumes.</p>
+
+<ul>
+  <li>Model: Cirrus/Wolfson WM8960</li>
+  <li><a href="https://statics.cirrus.com/pubs/proDatasheet/WM8960_v4.4.pdf">Datasheet</a></li>
+</ul>
+
+<h2 id="audiojack">TRRS 3.5mm Audio Jack</h2>
+
+<p>The 3.5mm audio jack, also called a TRRS jack (Tip/Ring/Ring/Sleeve) can be used to connect headphones, an external power amplifier or a headset with integrated microphone.</p>
+
+<p>The audio jack uses the CTIA standard to define which signals are located on which contacts on the plug:</p>
+
+<ul>
+  <li>Tip: Left Speaker</li>
+  <li>First Ring: Right Speaker</li>
+  <li>Second Ring: Microphone</li>
+  <li>Sleeve: Ground</li>
+</ul>
+
+<h2 id="lpc">System Controller</h2>
+
+<p>Except for extreme undervoltage conditions (battery cells below 2.5V), the LPC is always running a C program that implements a state machine which watches over the battery cells and controls their charging and discharging/balancing.</p>
+
+<p>In addition, the LPC can toggle the main power rails in the system on and off via GPIOs going to the relevant voltage converters and load switches.</p>
+
+<p>The LPC can be directly controlled by <a href="#kbctrl">Circle commands given via the keyboard</a>.</p>
+
+<p>Model: NXP LPC11U24</p>
+
+<ul>
+  <li><a href="https://www.nxp.com/docs/en/data-sheet/LPC11U2X.pdf">Datasheet</a></li>
+  <li><a href="https://source.mntmn.com/MNT/reform/src/branch/master/reform2-lpc-fw/src/boards/reform2">Firmware</a></li>
+</ul>
+
+<h2 id="balancer">Cell Monitor/Balancer</h2>
+
+<ul>
+  <li>Model: Analog/Linear LTC6803-4</li>
+  <li><a href="https://www.analog.com/media/en/technical-documentation/data-sheets/680324fa.pdf">Datasheet</a></li>
+</ul>
+
+<h2 id="ina">Battery Voltage/Current Monitor</h2>
+
+<ul>
+  <li>Model: Texas Instruments INA260</li>
+  <li><a href="http://www.ti.com/lit/ds/symlink/ina260.pdf?&amp;ts=1590151953117">Datasheet</a></li>
+</ul>
+
+<h2 id="ltc4020">Buck-Boost DC-DC/Charger</h2>
+
+<ul>
+  <li>Model: Analog/Linear LTC4020</li>
+  <li><a href="https://www.analog.com/media/en/technical-documentation/data-sheets/4020fd.pdf">Datasheet</a></li>
+</ul>
+
+<h2 id="barreljack">Barrel Jack (Wall Power)</h2>
+
+<p>The barrel jack accepts DC voltage in the range of 7V to 32V. The default power supply shipped with MNT Reform is specified at 24V / 2A.</p>
+
+<ul>
+  <li>Receptacle: Switchcraft RAPC712X</li>
+  <li>Inner diameter: 2.5mm</li>
+  <li>Outer diameter: 5.5mm</li>
+  <li>Poles: Positive on inner pole, negative on outer barrel.</li>
+</ul>
+
+<h2 id="r5v">5V Power Rail</h2>
+
+<ul>
+  <li>Type: Buck</li>
+  <li>Model: Texas Instruments LM2677SX-5</li>
+  <li><a href="http://www.ti.com/lit/ds/symlink/lm2677.pdf?&amp;ts=1590152214783">Datasheet</a></li>
+  <li>Max Current: 5A</li>
+</ul>
+
+<h2 id="r3v3">3V3 Power Rail</h2>
+
+<ul>
+  <li>Model: Texas Instruments LM2677SX-3.3</li>
+  <li><a href="http://www.ti.com/lit/ds/symlink/lm2677.pdf?&amp;ts=1590152214783">Datasheet</a></li>
+  <li>Max Current: 5A</li>
+</ul>
+
+<h2 id="standby">3V3 Standby Power Rail</h2>
+
+<ul>
+  <li>Type: Buck</li>
+  <li>Model: Texas Instruments LMR16006YQ3</li>
+  <li><a href="http://www.ti.com/lit/gpn/lmr16006y-q1">Datasheet</a></li>
+</ul>
+
+<h2 id="r1v8">1V8 Power Rail</h2>
+
+<ul>
+  <li>Type: LDO</li>
+  <li>Model: Texas Instruments TLV1117-18</li>
+  <li><a href="http://www.ti.com/lit/ds/symlink/tlv1117.pdf?&amp;ts=1590152118151">Datasheet</a></li>
+</ul>
+
+<h2 id="r1v5">1V5 Power Rail</h2>
+
+<ul>
+  <li>Type: Buck</li>
+  <li>Model: Texas Instruments TLV62568DBV</li>
+  <li><a href="http://www.ti.com/lit/ds/symlink/tlv62568.pdf?&amp;ts=1590152066123">Datasheet</a></li>
+</ul>
+
+<h2 id="r1v2">1V2 Power Rail</h2>
+
+<ul>
+  <li>Type: Buck</li>
+  <li>Model: Texas Instruments TLV62568DBV</li>
+  <li><a href="http://www.ti.com/lit/ds/symlink/tlv62568.pdf?&amp;ts=1590152066123">Datasheet</a></li>
+</ul>
+
+<h2 id="kbctrl">Keyboard Controller</h2>
+
+<ul>
+  <li>Model: Microchip/Atmel Atmega32U4</li>
+  <li><a href="http://ww1.microchip.com/downloads/en/devicedoc/atmel-7766-8-bit-avr-atmega16u4-32u4_datasheet.pdf">Datasheet</a></li>
+  <li><a href="https://source.mntmn.com/MNT/reform/src/branch/master/reform2-keyboard-fw">Firmware</a></li>
+</ul>
+
+<p>The following shortcuts are available indepdently of the main processor in Reform, even when the system is powered off. Acting like a primitive terminal, most shortcuts trigger a command string to be sent over the keyboard’s UART to the <a href="#lpc">LPC</a>. The LPC then responds with characters to display on the <a href="#oled">OLED</a>.</p>
+
+<p>In the 2.0D-3/D-4 development version:</p>
+
+<ul>
+  <li><em>Circle + 1:</em> Turn on the main system (powers up 5V, 3V3 and PCIe rails)</li>
+  <li><em>Circle + 0:</em> Turn off the main system (powers down 5V, 3V3 and PCIe rails)</li>
+  <li><em>Circle + 2:</em> Turn off the OLED display (turned back on by any other command)</li>
+  <li><em>Circle + F1:</em> Decrease keyboard backlight brightness</li>
+  <li><em>Circle + F2:</em> Increase keyboard backlight brightness</li>
+  <li><em>Circle + V:</em> Show voltages of all cells, total voltage and Amps going in or out of batteries plus charge percentage estimation.</li>
+  <li><em>Circle + Y:</em> Show voltage and amps as measured by the <a href="#ina">INA260</a> voltage/current monitor.</li>
+  <li><em>Circle + S:</em> Display LPC status (idle/charging, overvoltage/balancing, undervoltage)</li>
+</ul>
+
+<p>Keep in mind that <em>Circle + 0</em> powers off the system immediately, so save your work and make sure it is synced to disk before powering off. For example, use the <code>sync</code> or <code>shutdown</code> commands.</p>
+
+<h2 id="kbkeys">Keyboard and Trackball Keys</h2>
+
+<p>The keyboard and trackball modules both use the same type of switch.</p>
+
+<ul>
+  <li>Standard Keyswitch Model: Kailh PG1350 Low Profile Choc Brown.</li>
+  <li><a href="https://www.kailhswitch.com/uploads/201915927/CPG135001D02-1_Choc_Burnt_Orange.pdf">PG1350 Datasheet</a></li>
+  <li>Keyboard Keycaps: Kailh Black Low Profile / Choc Keycap 1.5U and 1U.</li>
+</ul>
+
+<p>The trackball has custom keycaps designed by MNT Research and 3D printed in an SLA process.</p>
+
+<ul>
+  <li><a href="https://source.mntmn.com/MNT/reform/src/branch/master/reform2-3d-printed-parts/reform2-stl">Trackball 3D Printed Parts</a></li>
+</ul>
+
+<h2 id="oled">Keyboard OLED</h2>
+
+<p>The OLED display sits on its own little PCB on top of the keyboard, and is powered and controlled by the <a href="#kbctrl">keyboard’s MCU</a> independently from the computer’s main processor.</p>
+
+<p>The display is currently used to show the results of <a href="#kbctrl">Circle commands given via the keyboard</a>.</p>
+
+<ul>
+  <li>Model: Generic SSD1306 128x32 Pixel OLED, Monochrome, I²C Interface</li>
+</ul>
+
+<h2 id="tbctrl">Trackball Controller</h2>
+
+<ul>
+  <li>Model: Microchip/Atmel Atmega32U2</li>
+  <li><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/doc7799.pdf">Datasheet</a></li>
+  <li><a href="https://source.mntmn.com/MNT/reform/src/branch/master/reform2-trackball-fw">Firmware</a></li>
+  <li><a href="https://source.mntmn.com/MNT/reform/src/branch/master/reform2-3d-printed-parts/reform2-stl">Trackball 3D Printed Parts</a></li>
+</ul>
+
+<h2 id="tbsensor">Trackball Sensor</h2>
+
+<ul>
+  <li>Model: Pixart PAT9125EL</li>
+  <li><a href="https://www.codico.com/shop/media/datasheets/PixArt_PAT9125EL_InfoBrief.pdf">Datasheet</a></li>
+</ul>
+
+<h2 id="tpcrtl">Trackpad Controller</h2>
+
+<ul>
+  <li>Model: Microchip/Atmel Atmega32U2</li>
+  <li><a href="https://source.mntmn.com/MNT/reform/src/branch/master/reform2-trackpad-fw">Firmware</a></li>
+</ul>
+
+<h2 id="tpsensor">Trackpad Sensor</h2>
+
+<ul>
+  <li>Model: Azoteq TPS65-201A-S</li>
+  <li><a href="https://www.mouser.de/datasheet/2/42/proxsense_i2c_trackpad_datasheet-1626845.pdf">Datasheet</a></li>
+</ul>
+
+<h2 id="panel">Display Panel</h2>
+
+<p>The display panel is connected to two main types of signals via a single IPEX connector:</p>
+
+<ul>
+  <li>eDP (embedded DisplayPort), via the <a href="#dsi2edp">MIPI-DSI to eDP converter</a></li>
+  <li>
+    <p><a href="#pwm">PWM</a> to set the LED backlight’s brightness. The brightness is set via the duty cycle of the PWM signal, while the frequency is set at a fixed value (default: 10KHz).</p>
+  </li>
+  <li>Model: Innolux N125HCE-GN1</li>
+  <li><a href="http://www.panelook.com/N125HCE-GN1_Innolux_12.5_LCM_overview_28140.html">Panelook Information</a></li>
+</ul>
+
+<h2 id="speakers">Speakers</h2>
+
+<p>Reform uses 2x 8 Ohm, 1 Watt mobile speakers mounted below the <a href="#panel">display panel</a>. They are powered by the <a href="#dac">Audio DAC</a>.</p>
+
+<ul>
+  <li>Model: PUI AS01808AO-3-R</li>
+  <li><a href="http://www.puiaudio.com/pdf/AS01808AO-3-R.pdf">Datasheet</a></li>
+</ul>
+
+<h2 id="cells">Battery Cells</h2>
+
+<p>Reform uses 8 battery cells with LiFePO4 (Lithium Iron Phosphate) chemistry.</p>
+
+<h3 id="important-warnings-of-potential-fire-and-injury-hazards">Important Warnings of Potential Fire and Injury Hazards</h3>
+
+<ul>
+  <li><em>Do not use batteries of any other chemistry in MNT Reform!</em></li>
+  <li><em>Double check polarity of battery cells and make sure they are the right way around!</em></li>
+  <li>
+    <p><em>The cells are connected in series, resulting in a 28.8V total voltage with high current capability. If shorted, traces can easily be burned and sparks could ignite nearby material.</em> - <em>Do not use metal tools or open wires inside of MNT Reform!</em></p>
+  </li>
+  <li>Chemistry: LiFePO4</li>
+  <li>Form Factor: 18650</li>
+  <li>Voltage: 3.2V</li>
+  <li>Cell Charge Voltage: 3.6V</li>
+  <li>Configuration: Series (28.8V)</li>
+</ul>
+
+<h3 id="examples-of-compatible-cells">Examples of compatible cells</h3>
+
+<ul>
+  <li><a href="https://www.batteryspace.com/lifepo4-18650-rechargeable-cell-3-2v-1500-mah-8-4a-rate-4-32wh-ul-listed-un38-3-passed-ndgr.aspx">Battery Space</a></li>
+  <li><a href="https://enerprof.de/akkus/akkus-lifepo4/akkuzellen-lifepo4/akkuzellen-lifepo4-18650/32/enerpower-18650-lifepo4-3-2v-1800-mah?c=26">ENERpower</a></li>
+  <li><a href="https://www.18650batterystore.com/Lithium-Werks-p/lithiumwerks-apr18650m1b.htm">Lithium Werks</a></li>
+</ul>
