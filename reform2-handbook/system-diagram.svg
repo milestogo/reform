@@ -688,8 +688,11 @@
 <!-- enabchg -->
 <g id="node44" class="node">
 <title>enabchg</title>
+<g id="a_node44"><a xlink:href="system.html#lpc" xlink:title="Charge On" target="_top">
 <polygon fill="lightgrey" stroke="lightgrey" points="1545.5,-722 1464.73,-704 1545.5,-686 1626.27,-704 1545.5,-722"/>
 <text text-anchor="middle" x="1545.5" y="-700.3" font-family="Inter,Roboto,Helvetica,Helvetica Neue,Open Sans,Arial,sans-serif" font-size="14.00">Charge On</text>
+</a>
+</g>
 </g>
 <!-- lpc&#45;&gt;enabchg -->
 <g id="edge5" class="edge">
@@ -700,8 +703,11 @@
 <!-- enab5v -->
 <g id="node45" class="node">
 <title>enab5v</title>
+<g id="a_node45"><a xlink:href="system.html#lpc" xlink:title="On" target="_top">
 <polygon fill="lightgrey" stroke="lightgrey" points="1865.5,-445 1829.5,-427 1865.5,-409 1901.5,-427 1865.5,-445"/>
 <text text-anchor="middle" x="1865.5" y="-423.3" font-family="Inter,Roboto,Helvetica,Helvetica Neue,Open Sans,Arial,sans-serif" font-size="14.00">On</text>
+</a>
+</g>
 </g>
 <!-- lpc&#45;&gt;enab5v -->
 <g id="edge11" class="edge">
@@ -712,8 +718,11 @@
 <!-- enab3v3 -->
 <g id="node46" class="node">
 <title>enab3v3</title>
+<g id="a_node46"><a xlink:href="system.html#lpc" xlink:title="On" target="_top">
 <polygon fill="lightgrey" stroke="lightgrey" points="1955.5,-445 1919.5,-427 1955.5,-409 1991.5,-427 1955.5,-445"/>
 <text text-anchor="middle" x="1955.5" y="-423.3" font-family="Inter,Roboto,Helvetica,Helvetica Neue,Open Sans,Arial,sans-serif" font-size="14.00">On</text>
+</a>
+</g>
 </g>
 <!-- lpc&#45;&gt;enab3v3 -->
 <g id="edge13" class="edge">
@@ -989,8 +998,11 @@
 <!-- tgpio -->
 <g id="node69" class="node">
 <title>tgpio</title>
+<g id="a_node69"><a xlink:href="system.html#tbctrl" xlink:title="GPIO" target="_top">
 <polygon fill="lightgrey" stroke="lightgrey" points="883.5,-722 837.58,-704 883.5,-686 929.42,-704 883.5,-722"/>
 <text text-anchor="middle" x="883.5" y="-700.3" font-family="Inter,Roboto,Helvetica,Helvetica Neue,Open Sans,Arial,sans-serif" font-size="14.00">GPIO</text>
+</a>
+</g>
 </g>
 <!-- tmcu&#45;&gt;tgpio -->
 <g id="edge49" class="edge">
@@ -1056,8 +1068,11 @@
 <!-- kgpio -->
 <g id="node75" class="node">
 <title>kgpio</title>
+<g id="a_node75"><a xlink:href="system.html#kbctrl" xlink:title="GPIO" target="_top">
 <polygon fill="lightgrey" stroke="lightgrey" points="1143.5,-722 1097.58,-704 1143.5,-686 1189.42,-704 1143.5,-722"/>
 <text text-anchor="middle" x="1143.5" y="-700.3" font-family="Inter,Roboto,Helvetica,Helvetica Neue,Open Sans,Arial,sans-serif" font-size="14.00">GPIO</text>
+</a>
+</g>
 </g>
 <!-- kmcu&#45;&gt;kgpio -->
 <g id="edge53" class="edge">

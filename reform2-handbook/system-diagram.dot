@@ -121,9 +121,9 @@ digraph G {
       cells [label="8x LiFePO4 18650 Batteries" shape=rectangle href="system.html#cells"];
       supply [label="24V Power Supply\nfrom Barrel Jack" shape=rectangle href="system.html#barreljack"];
     
-      enabchg [label="Charge On" shape=diamond style=filled color=lightgrey];
-      enab5v [label="On" shape=diamond style=filled color=lightgrey];
-      enab3v3 [label="On" shape=diamond style=filled color=lightgrey];
+      enabchg [label="Charge On" shape=diamond style=filled color=lightgrey href="system.html#lpc"];
+      enab5v [label="On" shape=diamond style=filled color=lightgrey href="system.html#lpc"];
+      enab3v3 [label="On" shape=diamond style=filled color=lightgrey href="system.html#lpc"];
     }
 
     subgraph cluster_power_rails {
@@ -200,7 +200,7 @@ digraph G {
       tsens  [label="Motion Sensor" href="system.html#tbsensor"];
       
       ti2c  [label="I2C" shape=diamond style=filled color=lightgrey href="system.html#i2c"];
-      tgpio  [label="GPIO" shape=diamond style=filled color=lightgrey];
+      tgpio  [label="GPIO" shape=diamond style=filled color=lightgrey href="system.html#tbctrl"];
       
       tkeys  [label="5 Buttons" href="system.html#kbkeys"];
     }
@@ -217,8 +217,8 @@ digraph G {
       oled [label="OLED Display 128x32" href="system.html#oled"];
       
       ki2c  [label="I2C" shape=diamond style=filled color=lightgrey href="system.html#i2c"];
-      kuart  [label="UART" shape=diamond style=filled color=lightgrey  href="system.html#kbctrl"];
-      kgpio  [label="GPIO" shape=diamond style=filled color=lightgrey];
+      kuart  [label="UART" shape=diamond style=filled color=lightgrey href="system.html#kbctrl"];
+      kgpio  [label="GPIO" shape=diamond style=filled color=lightgrey href="system.html#kbctrl"];
       kkeys  [label="Key Matrix" href="system.html#kbkeys"];
     }
   }
