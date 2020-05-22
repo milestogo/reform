@@ -122,7 +122,7 @@ int remote_receive_string(int print) {
     while (chr==-1 || chr==0) {
       chr=Serial_ReceiveByte();
       clock++;
-      if (clock>100000) goto timeout;
+      if (clock>500000) goto timeout;
     }
     int poke_chr = chr;
     if (chr=='\n') poke_chr=' ';
@@ -256,17 +256,17 @@ void remote_get_voltages(void) {
   if (percentage<0) percentage = 0;
   char str[32];
   
-  sprintf(str,"[] %.1f  [] %.1f",voltages[0],voltages[4]);
+  sprintf(str,"[] %.1f  [] %.1f  %d%%",voltages[0],voltages[4],(int)percentage);
   insert_bat_icon(str,0,voltages[0]);
   insert_bat_icon(str,8,voltages[4]);
   gfx_poke_str(0,0,str);
   
-  sprintf(str,"[] %.1f  [] %.1f  %d%%",voltages[1],voltages[5],(int)percentage);
+  sprintf(str,"[] %.1f  [] %.1f  ",voltages[1],voltages[5]);
   insert_bat_icon(str,0,voltages[1]);
   insert_bat_icon(str,8,voltages[5]);
   gfx_poke_str(0,1,str);
   
-  sprintf(str,"[] %.1f  [] %.1f  %.2fA",voltages[2],voltages[6],bat_amps);
+  sprintf(str,"[] %.1f  [] %.1f  %.2fA",voltages[2],voltages[6],-bat_amps);
   insert_bat_icon(str,0,voltages[2]);
   insert_bat_icon(str,8,voltages[6]);
   gfx_poke_str(0,2,str);
