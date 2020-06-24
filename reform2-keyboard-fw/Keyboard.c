@@ -261,7 +261,7 @@ void remote_get_voltages(void) {
   gfx_clear();
   char str[32];
   
-  sprintf(str,"[] %.1f  [] %.1f  %s",voltages[0],voltages[4],bat_gauge);
+  sprintf(str,"[] %.1f  [] %.1f %s",voltages[0],voltages[4],bat_gauge);
   insert_bat_icon(str,0,voltages[0]);
   insert_bat_icon(str,8,voltages[4]);
   gfx_poke_str(0,0,str);
