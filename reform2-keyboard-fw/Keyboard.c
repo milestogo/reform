@@ -218,6 +218,7 @@ void remote_get_voltages(void) {
 
   float bat_volts = 0;
   float bat_amps = 0;
+  char bat_gauge[5] = {0,0,0,0,0};
   
   Serial_SendByte('V');
   Serial_SendByte('\r');
@@ -230,6 +231,12 @@ void remote_get_voltages(void) {
   Delay_MS(1);
   remote_receive_string(0);
   bat_amps = ((float)atoi(response))/1000.0;
+  
+  Serial_SendByte('g');
+  Serial_SendByte('\r');
+  Delay_MS(1);
+  remote_receive_string(0);
+  strncpy(bat_gauge, response, 4);
 
   float sum_volts = 0;
 
@@ -252,11 +259,9 @@ void remote_get_voltages(void) {
 
   //plot voltages
   gfx_clear();
-  float percentage = ((sum_volts-23.0)/5.0)*100.0;
-  if (percentage<0) percentage = 0;
   char str[32];
   
-  sprintf(str,"[] %.1f  [] %.1f  %d%%",voltages[0],voltages[4],(int)percentage);
+  sprintf(str,"[] %.1f  [] %.1f  %s",voltages[0],voltages[4],bat_gauge);
   insert_bat_icon(str,0,voltages[0]);
   insert_bat_icon(str,8,voltages[4]);
   gfx_poke_str(0,0,str);
