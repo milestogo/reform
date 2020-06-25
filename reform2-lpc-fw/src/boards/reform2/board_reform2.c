@@ -10,6 +10,7 @@
 #include "core/eeprom/eeprom.h"
 #include "core/pmu/pmu.h"
 #include "core/i2c/i2c.h"
+#include "core/ssp0/ssp0.h"
 #include "core/ssp1/ssp1.h"
 #include "core/uart/uart.h"
 
@@ -386,8 +387,14 @@ void boardInit(void)
   
   uartInit(CFG_UART_BAUDRATE);
   i2cInit(I2CMASTER);
+
+  // SPI1 connected to battery monitor (we're master)
   ssp1Init();
   ssp1ClockSlow();
+
+  // SPI0 connected to the main SOM (they're master)
+  ssp0Init();
+  ssp0ClockSlow();
   
   LPC_GPIO->DIR[1] |= (1 << 31);
   LPC_GPIO->DIR[1] |= (1 << 25);
@@ -423,10 +430,6 @@ void handle_commands() {
   // 4   command letter expected
   // 5   syntax error (unexpected character)
   // 6   command letter entered
-
-  // TODO get cell voltage
-  // TODO get charger state
-  // TODO get charger status / mode
   
   if (cmd_state>=ST_EXPECT_DIGIT_0 && cmd_state<=ST_EXPECT_DIGIT_3) {
     // read number or command
@@ -563,6 +566,12 @@ void handle_commands() {
   }
 }
 
+void report_to_spi(void)
+{
+  char report[64];
+  sprintf(report, "(%dmV %dmA)\n", (int)(volts*1000.0), (int)(current*1000.0));
+}
+
 int main(void)
 {
   boardInit();
@@ -646,8 +655,11 @@ int main(void)
         }
       }
     }
-    
+
+    // handle keyboard commands
     handle_commands();
+    // report to SPI0 master
+    report_to_spi();
     cur_second = delayGetSecondsActive();
 
     if (last_second != cur_second) {
