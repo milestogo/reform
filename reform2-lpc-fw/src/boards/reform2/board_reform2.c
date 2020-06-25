@@ -28,7 +28,7 @@
   #include "protocol/protocol.h"
 #endif
 
-//#define REF2_DEBUG 0
+//#define REF2_DEBUG 1
 
 #define INA260_ADDRESS 0x4e
 #define LTC4162F_ADDRESS 0x68
@@ -117,12 +117,13 @@ uint8_t calc_pec(uint8_t d, uint8_t pec) {
   return pec;
 }
 
-
+// main charger state machine
 enum state_t {
               ST_CHARGE,
               ST_OVERVOLTED,
               ST_UNDERVOLTED,
-              ST_MISSING
+              ST_MISSING,
+              ST_FULLY_CHARGED
 };
 
 // charging state machine
@@ -132,15 +133,21 @@ int charge_current = 1;
 uint32_t cur_second = 0;
 uint32_t last_second = 0;
 
-float ampSecs = 10*3600.0;
+// 1.8A x 3600 seconds/hour
+#define MAX_CAPACITY (1.8)*3600.0
+float capacity_max_ampsecs =  MAX_CAPACITY;
+float capacity_accu_ampsecs = MAX_CAPACITY;
+float capacity_min_ampsecs = 430*3.6; // TODO save this in flash after learning
 float volts = 0;
 float current = 0;
 unsigned long lastTime = 0;
 char uartBuffer[255] = {0};
 float cells_v[8] = {0,0,0,0,0,0,0,0};
 int num_undervolted_cells = 0;
+int num_undervolted_critical_cells = 0;
 int num_overvolted_cells = 0;
 int num_missing_cells = 0;
+uint8_t reached_full_charge = 0;
 uint16_t discharge_bits = 0;
 uint16_t overvoltage_bits = 0;
 uint16_t undervoltage_bits = 0;
@@ -149,8 +156,10 @@ uint8_t spir[64];
 
 #define OVERVOLTAGE_START_VALUE 3.61
 #define OVERVOLTAGE_STOP_VALUE 3.55
-#define UNDERVOLTAGE_VALUE 2.6
+#define UNDERVOLTAGE_VALUE 2.55
+#define UNDERVOLTAGE_CRITICAL_VALUE 2.4
 #define MISSING_VALUE 5
+#define FULLY_CHARGED_VOLTAGE (3.5*8.0)
 
 void measure_cell_voltages_and_control_discharge() {
   // delay is measured in "ticks", which are basically ms?
@@ -171,7 +180,8 @@ void measure_cell_voltages_and_control_discharge() {
     // we're in normal charge mode, so remove charge current limit
     LPC_GPIO->SET[1] |= (1 << 25);
   } else {
-    // we're discharging (balancing), so limit charge current
+    // we're discharging (balancing), or full charged,
+    // so limit charge current
     // also don't charge if we have missing cells
     LPC_GPIO->CLR[1] |= (1 << 25);
   }
@@ -221,6 +231,7 @@ void measure_cell_voltages_and_control_discharge() {
   num_missing_cells = 0;
   num_undervolted_cells = 0;
   num_overvolted_cells = 0;
+  num_undervolted_critical_cells = 0;
 
   missing_bits = 0;
   undervoltage_bits = 0;
@@ -238,6 +249,10 @@ void measure_cell_voltages_and_control_discharge() {
     else if (cells_v[i] < UNDERVOLTAGE_VALUE) {
       undervoltage_bits |= (1<<i);
       num_undervolted_cells++;
+      
+      if (cells_v[i] < UNDERVOLTAGE_CRITICAL_VALUE) {
+        num_undervolted_critical_cells++;
+      }
     }
   }
   
@@ -285,7 +300,7 @@ void measure_and_accumulate_current() {
       lastTime = thisTime;
       
       // decrease estimated battery capacity
-      ampSecs -= current*(secondsPassed);
+      capacity_accu_ampsecs -= current*(secondsPassed);
     }
   } else {
     // timer uninitialized or timer wrap
@@ -293,7 +308,7 @@ void measure_and_accumulate_current() {
   }
 
 #ifdef REF2_DEBUG
-  sprintf(uartBuffer,"\033[H\033[2JINA Ah: %f V: %f A: %f\r\n",ampSecs/3600,volts,current);
+  sprintf(uartBuffer,"\033[H\033[2JINA Ah: %f V: %f A: %f\r\n",capacity_accu_ampsecs/3600,volts,current);
   uartSend((uint8_t *)uartBuffer, strlen(uartBuffer));
 #endif
 }
@@ -311,17 +326,19 @@ void configure_charger(int charge_current) {
 }
 
 void turn_som_power_on(void) {
+  LPC_GPIO->CLR[1] = (1 << 28); // hold in reset
   LPC_GPIO->SET[1] = (1 << 16); // 3v3, high = on
-  // FIXME this turns 1v5 off :/
-  LPC_GPIO->SET[0] = (1 << 20); // PCIe, low = on
+  LPC_GPIO->SET[0] = (1 << 20); // PCIe, high = on
   LPC_GPIO->SET[1] = (1 << 15); // 5v, high = on
   LPC_GPIO->SET[1] = (1 << 19); // 1v2, high = on
+  LPC_GPIO->SET[1] = (1 << 28); // release reset
 }
 
 void turn_som_power_off(void) {
+  LPC_GPIO->CLR[1] = (1 << 28); // hold in reset
   LPC_GPIO->CLR[1] = (1 << 19); // 1v2, high = on
   LPC_GPIO->CLR[1] = (1 << 15); // 5v, high = on
-  LPC_GPIO->CLR[0] = (1 << 20); // PCIe, low = on
+  LPC_GPIO->CLR[0] = (1 << 20); // PCIe, high = on
   LPC_GPIO->CLR[1] = (1 << 16); // 3v3, high = on
 
   // FIXME experiment: temp. disable charger to reset its timers
@@ -375,14 +392,20 @@ void boardInit(void)
   // 1V2 regulator on/off
   LPC_GPIO->DIR[1] |= (1 << 19);
   // PCIe 1 power supply transistor
-  LPC_GPIO->DIR[0] |= (1 << 20);  
+  LPC_GPIO->DIR[0] |= (1 << 20);
+
+  // IMX Wake
+  LPC_GPIO->DIR[1] |= (1 << 24);
+  // IMX Reset
+  LPC_GPIO->DIR[1] |= (1 << 28);
+  
   // RNG/SS pin of LTC4020: control/limit charge current
   LPC_GPIO->DIR[1] |= (1 << 25);
 
   // start with low charge current
   LPC_GPIO->CLR[1] |= (1 << 25);
   
-  turn_som_power_on();
+  turn_som_power_off();
   
   uartInit(CFG_UART_BAUDRATE);
   i2cInit(I2CMASTER);
@@ -395,7 +418,7 @@ void boardInit(void)
   // SPI chip select
   LPC_GPIO->DIR[1] |= (1 << 23);
   LPC_GPIO->SET[1] =  (1 << 23); // active low
-  
+
 #ifdef REF2_DEBUG
   sprintf(uartBuffer, "\r\nMNT Reform 2.0 MCU initialized.\r\n");
   uartSend((uint8_t*)uartBuffer, strlen(uartBuffer));
@@ -517,8 +540,10 @@ void handle_commands() {
           sprintf(uartBuffer,"undervolt [%d]\r",cycles_in_state);
         } else if (state == ST_MISSING) {
           sprintf(uartBuffer,"cell missing [%d]\r",cycles_in_state);
-        } else if (state == ST_MISSING) {
-          sprintf(uartBuffer,"unknown [%d]\r",cycles_in_state);
+        } else if (state == ST_FULLY_CHARGED) {
+          sprintf(uartBuffer,"fully charged [%d]\r",cycles_in_state);
+        } else {
+          sprintf(uartBuffer,"unknown %d [%d]\r",state,cycles_in_state);
         }
         uartSend((uint8_t*)uartBuffer, strlen(uartBuffer));
       }
@@ -539,12 +564,34 @@ void handle_commands() {
         uartSend((uint8_t*)uartBuffer, strlen(uartBuffer));
       }
       else if (remote_cmd == 'C') {
-        // set/get battery capacity (mAh)
-        if (cmd_number>0) {
-          ampSecs = ((float)cmd_number)*3.6;
-        }
-        sprintf(uartBuffer,"%d\r\n",(int)(ampSecs/3.6));
+        // get battery capacity (mAh)
+        sprintf(uartBuffer,"%d/%d/%d\r\n",
+                (int)(capacity_accu_ampsecs/3.6),
+                (int)(capacity_min_ampsecs/3.6),
+                (int)(capacity_max_ampsecs/3.6));
         uartSend((uint8_t*)uartBuffer, strlen(uartBuffer));
+      }
+      else if (remote_cmd == 'g') {
+        // get fuel gauge (percent)
+        if (reached_full_charge > 0) {
+          int percentage = 0;
+          if (capacity_accu_ampsecs <= capacity_min_ampsecs) {
+            percentage = 0;
+          } else if (capacity_accu_ampsecs >= capacity_max_ampsecs) {
+            percentage = 100;
+          } else {
+            percentage = (int)(100.0*((float)capacity_accu_ampsecs - (float)capacity_min_ampsecs) / (float)capacity_max_ampsecs);
+          }
+          
+          sprintf(uartBuffer,"%d%%\r\n", percentage);
+          uartSend((uint8_t*)uartBuffer, strlen(uartBuffer));
+        } else {
+          // if we never reached full charge,
+          // we don't really know where we are.
+          
+          sprintf(uartBuffer,"? %%\r\n");
+          uartSend((uint8_t*)uartBuffer, strlen(uartBuffer));
+        }
       }
       else if (remote_cmd == 'e') {
         // toggle serial echo
@@ -604,9 +651,18 @@ int main(void)
         // some cool-off time
         if (num_missing_cells > 0) {
           state = ST_MISSING;
+          // if cells were unplugged, we don't know the capacity anymore.
+          reached_full_charge = 0;
           cycles_in_state = 0;
         }
         else if (num_undervolted_cells > 0) {
+          // when transitioning to undervoltage, we assume we reached the bottom
+          // of usable capacity, so record it
+          // but only if we reached top charge once, or our counter will
+          // be off.
+          if (reached_full_charge > 0) {
+            capacity_min_ampsecs = capacity_accu_ampsecs;
+          }
           state = ST_UNDERVOLTED;
           cycles_in_state = 0;
         }
@@ -614,13 +670,25 @@ int main(void)
           state = ST_OVERVOLTED;
           cycles_in_state = 0;
         }
+        else if (volts >= FULLY_CHARGED_VOLTAGE) {
+          // when transitioning to fully charged, we assume that we're at max capacity
+          capacity_accu_ampsecs = capacity_max_ampsecs;
+          state = ST_FULLY_CHARGED;
+          reached_full_charge = 1;
+          cycles_in_state = 0;
+        }
       }
     }
     else if (state == ST_UNDERVOLTED) {
       // TODO: issue alert -- switch off system if critical
       reset_discharge_bits();
-      turn_som_power_off();
 
+      // TODO: find safe heuristic. here we turn off if half
+      // of the cells are undervolted.
+      if (num_undervolted_critical_cells > 0 || num_undervolted_cells > 3) {
+        turn_som_power_off();
+      }
+      
       if (cycles_in_state > 5) {
         state = ST_CHARGE;
         cycles_in_state = 0;
@@ -641,6 +709,16 @@ int main(void)
       
       if (cycles_in_state > 5) {
         if (num_missing_cells < 1) {
+          state = ST_CHARGE;
+          cycles_in_state = 0;
+        }
+      }
+    }
+    else if (state == ST_FULLY_CHARGED) {
+      // fully charged. resume charging once we're 0.2mV
+      // below fully charged state
+      if (cycles_in_state > 5) {
+        if (volts < (FULLY_CHARGED_VOLTAGE - 0.2)) {
           state = ST_CHARGE;
           cycles_in_state = 0;
         }
