@@ -566,10 +566,14 @@ void handle_commands() {
   }
 }
 
+#define REPORT_MAX 63
 void report_to_spi(void)
 {
-  char report[64];
-  sprintf(report, "(%dmV %dmA)\n", (int)(volts*1000.0), (int)(current*1000.0));
+  char report[REPORT_MAX+1];
+  snprintf(report, REPORT_MAX, "(%dmV %dmA)\n", (int)(volts*1000.0), (int)(current*1000.0));
+
+  report[63] = 0;
+  ssp0Send((uint8_t*)report, strlen(report));
 }
 
 int main(void)
