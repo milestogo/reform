@@ -302,7 +302,7 @@ extern "C" {
     #define CFG_SSP_SCK1_1_20           (20)
 
     // Select the appropriate pin locations here
-    #define CFG_SSP_SCK0_LOCATION       (CFG_SSP_SCK0_1_29)
+    #define CFG_SSP_SCK0_LOCATION       (CFG_SSP_SCK0_0_10)
     #define CFG_SSP_MISO1_LOCATION      (CFG_SSP_MISO1_1_21)
     #define CFG_SSP_MOSI1_LOCATION      (CFG_SSP_MOSI1_1_22)
     #define CFG_SSP_SCK1_LOCATION       (CFG_SSP_SCK1_1_20)

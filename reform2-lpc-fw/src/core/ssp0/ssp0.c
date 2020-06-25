@@ -143,8 +143,8 @@ void ssp0Init(void)
     Dummy = LPC_SSP0->DR;
   }  
   
-  /* Enable device and set it to master mode, no loopback */
-  LPC_SSP0->CR1 = SSP0_CR1_SSE_ENABLED | SSP0_CR1_MS_MASTER | SSP0_CR1_LBM_NORMAL;
+  /* Enable device and set it to slave mode, no loopback */
+  LPC_SSP0->CR1 = SSP0_CR1_SSE_ENABLED | SSP0_CR1_MS_SLAVE | SSP0_CR1_LBM_NORMAL;
 }
 
 /**************************************************************************/
