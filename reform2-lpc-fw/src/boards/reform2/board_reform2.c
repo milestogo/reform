@@ -662,14 +662,15 @@ int main(void)
 
     // handle keyboard commands
     handle_commands();
-    // report to SPI0 master
-    report_to_spi();
     cur_second = delayGetSecondsActive();
 
     if (last_second != cur_second) {
       if (cur_second-last_second<10) {
         // prevent rollovers
         cycles_in_state += cur_second-last_second;
+
+        // report to SPI0 master
+        report_to_spi();
       }
       last_second = cur_second;
     }
