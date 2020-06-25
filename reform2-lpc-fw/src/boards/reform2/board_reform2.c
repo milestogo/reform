@@ -139,6 +139,7 @@ uint32_t last_second = 0;
 float capacity_max_ampsecs =  MAX_CAPACITY;
 float capacity_accu_ampsecs = MAX_CAPACITY;
 float capacity_min_ampsecs = 430*3.6; // TODO save this in flash after learning
+int capacity_percentage = 0;
 float volts = 0;
 float current = 0;
 unsigned long lastTime = 0;
@@ -323,9 +324,6 @@ uint16_t status_alerts;
 float chg_vin;
 float chg_vbat;
 
-void configure_charger(int charge_current) {
-}
-
 void turn_som_power_on(void) {
   LPC_GPIO->CLR[1] = (1 << 28); // hold in reset
   LPC_GPIO->SET[1] = (1 << 16); // 3v3, high = on
@@ -341,9 +339,6 @@ void turn_som_power_off(void) {
   LPC_GPIO->CLR[1] = (1 << 15); // 5v, high = on
   LPC_GPIO->CLR[0] = (1 << 20); // PCIe, high = on
   LPC_GPIO->CLR[1] = (1 << 16); // 3v3, high = on
-
-  // FIXME experiment: temp. disable charger to reset its timers
-  configure_charger(0);
 }
 
 void brownout_setup(void) {
@@ -577,16 +572,7 @@ void handle_commands() {
       else if (remote_cmd == 'g') {
         // get fuel gauge (percent)
         if (reached_full_charge > 0) {
-          int percentage = 0;
-          if (capacity_accu_ampsecs <= capacity_min_ampsecs) {
-            percentage = 0;
-          } else if (capacity_accu_ampsecs >= capacity_max_ampsecs) {
-            percentage = 100;
-          } else {
-            percentage = (int)(100.0*((float)capacity_accu_ampsecs - (float)capacity_min_ampsecs) / (float)capacity_max_ampsecs);
-          }
-          
-          sprintf(uartBuffer,"%d%%\r\n", percentage);
+          sprintf(uartBuffer,"%d%%\r\n", capacity_percentage);
           uartSend((uint8_t*)uartBuffer, strlen(uartBuffer));
         } else {
           // if we never reached full charge,
@@ -613,11 +599,27 @@ void handle_commands() {
   }
 }
 
+void calculate_capacity_percentage()
+{
+  if (capacity_accu_ampsecs <= capacity_min_ampsecs) {
+    capacity_percentage = 0;
+  } else if (capacity_accu_ampsecs >= capacity_max_ampsecs) {
+    capacity_percentage = 100;
+  } else {
+    capacity_percentage = (int)(100.0*((float)capacity_accu_ampsecs - (float)capacity_min_ampsecs) / (float)capacity_max_ampsecs);
+  }
+}
+
 #define REPORT_MAX 63
 void report_to_spi(void)
 {
   char report[REPORT_MAX+1];
-  snprintf(report, REPORT_MAX, "(%dmV %dmA)\n", (int)(volts*1000.0), (int)(current*1000.0));
+  int percentage = capacity_percentage;
+  if (!reached_full_charge) {
+    percentage = -1;
+  }
+  
+  snprintf(report, REPORT_MAX, "(%dmV %dmA %d%%)\n", (int)(volts*1000.0), (int)(current*1000.0), percentage);
 
   report[63] = 0;
   ssp0Send((uint8_t*)report, strlen(report));
@@ -656,10 +658,9 @@ int main(void)
 
     measure_and_accumulate_current();
     measure_cell_voltages_and_control_discharge();
+    calculate_capacity_percentage();
 
     if (state == ST_CHARGE) {
-      //configure_charger(charge_current);
-      
       if (cycles_in_state > 5) {
         // some cool-off time
         if (num_missing_cells > 0) {
