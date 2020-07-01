@@ -22,11 +22,11 @@
 volatile uint32_t I2CMasterState = I2CSTATE_IDLE;
 volatile uint32_t I2CSlaveState = I2CSTATE_IDLE;
 
-volatile uint8_t I2CMasterBuffer[I2C_BUFSIZE];    // Master Mode
-volatile uint8_t I2CSlaveBuffer[I2C_BUFSIZE];     // Master Mode
+volatile uint8_t i2c_write_buf[I2C_BUFSIZE];    // Master Mode
+volatile uint8_t i2c_read_buf[I2C_BUFSIZE];     // Master Mode
 
-volatile uint32_t I2CReadLength;
-volatile uint32_t I2CWriteLength;
+volatile uint32_t i2c_read_len;
+volatile uint32_t i2c_write_len;
 
 volatile uint32_t I2CRdIndex;
 volatile uint32_t I2CWrIndex;
@@ -58,7 +58,7 @@ void I2C_IRQHandler(void)
                  * (we always start with a write after START+SLA)
                  */
                 I2CWrIndex = 0;
-                LPC_I2C->DAT = I2CMasterBuffer[I2CWrIndex++];
+                LPC_I2C->DAT = i2c_write_buf[I2CWrIndex++];
                 LPC_I2C->CONCLR = (I2CONCLR_SIC | I2CONCLR_STAC);
                 I2CMasterState = I2CSTATE_PENDING;
                 break;
@@ -71,7 +71,7 @@ void I2C_IRQHandler(void)
                  */
                 I2CRdIndex = 0;
                 /* Send SLA with R bit set, */
-                LPC_I2C->DAT = I2CMasterBuffer[I2CWrIndex++];
+                LPC_I2C->DAT = i2c_write_buf[I2CWrIndex++];
                 LPC_I2C->CONCLR = (I2CONCLR_SIC | I2CONCLR_STAC);
         break;
 
@@ -80,7 +80,7 @@ void I2C_IRQHandler(void)
                  * SLA+W has been transmitted; ACK has been received.
                  * We now start writing bytes.
                  */
-                LPC_I2C->DAT = I2CMasterBuffer[I2CWrIndex++];
+                LPC_I2C->DAT = i2c_write_buf[I2CWrIndex++];
                 LPC_I2C->CONCLR = I2CONCLR_SIC;
                 break;
 
@@ -101,14 +101,14 @@ void I2C_IRQHandler(void)
                  * Continue sending more bytes as long as there are bytes to send
                  * and after this check if a read transaction should follow.
                  */
-                if ( I2CWrIndex < I2CWriteLength )
+                if ( I2CWrIndex < i2c_write_len )
                 {
                         /* Keep writing as long as bytes avail */
-                        LPC_I2C->DAT = I2CMasterBuffer[I2CWrIndex++];
+                        LPC_I2C->DAT = i2c_write_buf[I2CWrIndex++];
                 }
                 else
                 {
-                        if ( I2CReadLength != 0 )
+                        if ( i2c_read_len != 0 )
                         {
                                 /* Send a Repeated START to initialize a read transaction */
                                 /* (handled in state 0x10)                                */
@@ -153,7 +153,7 @@ void I2C_IRQHandler(void)
                  * Since a NOT ACK is sent after reading the last byte,
                  * we need to prepare a NOT ACK in case we only read 1 byte.
                  */
-                if ( I2CReadLength == 1 )
+                if ( i2c_read_len == 1 )
                 {
                         /* last (and only) byte: send a NACK after data is received */
                         LPC_I2C->CONCLR = I2CONCLR_AAC;
@@ -183,8 +183,8 @@ void I2C_IRQHandler(void)
                  * Read the byte and check for more bytes to read.
                  * Send a NOT ACK after the last byte is received
                  */
-                I2CSlaveBuffer[I2CRdIndex++] = LPC_I2C->DAT;
-                if ( I2CRdIndex < (I2CReadLength-1) )
+                i2c_read_buf[I2CRdIndex++] = LPC_I2C->DAT;
+                if ( I2CRdIndex < (i2c_read_len-1) )
                 {
                         /* lmore bytes to follow: send an ACK after data is received */
                         LPC_I2C->CONSET = I2CONSET_AA;
@@ -204,7 +204,7 @@ void I2C_IRQHandler(void)
                  * Generate a STOP condition and flag the I2CEngine that the
                  * transaction is finished.
                  */
-                I2CSlaveBuffer[I2CRdIndex++] = LPC_I2C->DAT;
+                i2c_read_buf[I2CRdIndex++] = LPC_I2C->DAT;
                 I2CMasterState = I2CSTATE_ACK;
                 LPC_I2C->CONSET = I2CONSET_STO;        /* Set Stop flag */
                 LPC_I2C->CONCLR = I2CONCLR_SIC;        /* Clear SI flag */
@@ -373,9 +373,9 @@ bool i2cCheckAddress( uint8_t addr )
   uint32_t i2cState;
 
   // Send the addr byte and check for ACK
-  I2CWriteLength = 1;
-  I2CReadLength = 0;
-  I2CMasterBuffer[0] = addr;
+  i2c_write_len = 1;
+  i2c_read_len = 0;
+  i2c_write_buf[0] = addr;
   i2cState = i2cEngine();
 
   // Check if we got an ACK

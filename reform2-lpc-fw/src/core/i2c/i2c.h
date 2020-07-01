@@ -115,9 +115,9 @@ extern "C" {
 
 #define ASSERT_I2C_STATUS(sts)                ASSERT_I2C_STATUS_MESSAGE(sts, NULL)
 
-extern volatile uint8_t I2CMasterBuffer[I2C_BUFSIZE];    // Master Mode
-extern volatile uint8_t I2CSlaveBuffer[I2C_BUFSIZE];     // Master Mode
-extern volatile uint32_t I2CReadLength, I2CWriteLength;
+extern volatile uint8_t i2c_write_buf[I2C_BUFSIZE];
+extern volatile uint8_t i2c_read_buf[I2C_BUFSIZE];
+extern volatile uint32_t i2c_read_len, i2c_write_len;
 
 extern void     I2C_IRQHandler( void );
 extern uint32_t i2cInit( uint32_t I2cMode );

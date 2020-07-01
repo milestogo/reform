@@ -749,7 +749,8 @@ int main(void)
         cycles_in_state += cur_second-last_second;
 
         // report to SPI0 controller
-        report_to_spi();
+        // TODO: not yet functional
+        // report_to_spi();
       }
       last_second = cur_second;
     }
