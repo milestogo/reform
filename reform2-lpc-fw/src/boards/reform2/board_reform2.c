@@ -43,17 +43,17 @@
 #define ST_SYNTAX_ERROR   5
 #define ST_EXPECT_RETURN  6
 
-extern volatile uint8_t   I2CMasterBuffer[I2C_BUFSIZE];
-extern volatile uint8_t   I2CSlaveBuffer[I2C_BUFSIZE];
-extern volatile uint32_t  I2CReadLength, I2CWriteLength;
+extern volatile uint8_t   i2c_write_buf[I2C_BUFSIZE];
+extern volatile uint8_t   i2c_read_buf[I2C_BUFSIZE];
+extern volatile uint32_t  i2c_read_len, i2c_write_len;
 
 err_t i2c_write8(uint8_t i2c_addr, uint8_t reg, uint8_t value)
 {
-  I2CWriteLength = 3;
-  I2CReadLength = 0;
-  I2CMasterBuffer[0] = i2c_addr << 1;
-  I2CMasterBuffer[1] = reg;
-  I2CMasterBuffer[2] = value;
+  i2c_write_len = 3;
+  i2c_read_len = 0;
+  i2c_write_buf[0] = i2c_addr << 1;
+  i2c_write_buf[1] = reg;
+  i2c_write_buf[2] = value;
   i2cEngine();
 
   return ERROR_NONE;
@@ -61,38 +61,38 @@ err_t i2c_write8(uint8_t i2c_addr, uint8_t reg, uint8_t value)
 
 int16_t i2c_read16_le(uint8_t i2c_addr, uint8_t reg)
 {
-  I2CWriteLength = 2;
-  I2CReadLength = 2;
-  I2CMasterBuffer[0] = i2c_addr << 1;
-  I2CMasterBuffer[1] = reg;
-  I2CMasterBuffer[2] = (i2c_addr << 1) | I2C_READ;
+  i2c_write_len = 2;
+  i2c_read_len = 2;
+  i2c_write_buf[0] = i2c_addr << 1;
+  i2c_write_buf[1] = reg;
+  i2c_write_buf[2] = (i2c_addr << 1) | I2C_READ;
   i2cEngine();
 
-  int16_t value = (I2CSlaveBuffer[0] << 8) | I2CSlaveBuffer[1];
+  int16_t value = (i2c_read_buf[0] << 8) | i2c_read_buf[1];
   return value;
 }
 
 int16_t i2c_read16_be(uint8_t i2c_addr, uint8_t reg)
 {
-  I2CWriteLength = 2;
-  I2CReadLength = 2;
-  I2CMasterBuffer[0] = i2c_addr << 1;
-  I2CMasterBuffer[1] = reg;
-  I2CMasterBuffer[2] = (i2c_addr << 1) | I2C_READ;
+  i2c_write_len = 2;
+  i2c_read_len = 2;
+  i2c_write_buf[0] = i2c_addr << 1;
+  i2c_write_buf[1] = reg;
+  i2c_write_buf[2] = (i2c_addr << 1) | I2C_READ;
   i2cEngine();
 
-  int16_t value = (I2CSlaveBuffer[1] << 8) | I2CSlaveBuffer[0];
+  int16_t value = (i2c_read_buf[1] << 8) | i2c_read_buf[0];
   return value;
 }
 
 err_t i2c_write16_be(uint8_t i2c_addr, uint8_t reg, uint16_t value)
 {
-  I2CWriteLength = 4;
-  I2CReadLength = 0;
-  I2CMasterBuffer[0] = i2c_addr << 1;
-  I2CMasterBuffer[1] = reg;
-  I2CMasterBuffer[2] = value&0xff;
-  I2CMasterBuffer[3] = value>>8;
+  i2c_write_len = 4;
+  i2c_read_len = 0;
+  i2c_write_buf[0] = i2c_addr << 1;
+  i2c_write_buf[1] = reg;
+  i2c_write_buf[2] = value&0xff;
+  i2c_write_buf[3] = value>>8;
   i2cEngine();
 
   return ERROR_NONE;
@@ -406,11 +406,11 @@ void boardInit(void)
   uartInit(CFG_UART_BAUDRATE);
   i2cInit(I2CMASTER);
 
-  // SPI1 connected to battery monitor (we're master)
+  // SPI1 connected to battery monitor (we're controller)
   ssp1Init();
   ssp1ClockSlow();
 
-  // SPI0 connected to the main SOM (they're master)
+  // SPI0 connected to the main SOM (they're controller)
   ssp0Init();
   ssp0ClockSlow();
   
@@ -748,7 +748,7 @@ int main(void)
         // prevent rollovers
         cycles_in_state += cur_second-last_second;
 
-        // report to SPI0 master
+        // report to SPI0 controller
         report_to_spi();
       }
       last_second = cur_second;
