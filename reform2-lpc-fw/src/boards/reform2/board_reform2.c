@@ -734,6 +734,10 @@ int main(void)
           state = ST_CHARGE;
           cycles_in_state = 0;
         }
+        else if (num_overvolted_cells > 0) {
+          state = ST_OVERVOLTED;
+          cycles_in_state = 0;
+        }
       }
     }
     else if (state == ST_FULLY_CHARGED) {
@@ -742,6 +746,10 @@ int main(void)
       if (cycles_in_state > 5) {
         if (volts < (FULLY_CHARGED_VOLTAGE - 0.2)) {
           state = ST_CHARGE;
+          cycles_in_state = 0;
+        }
+        else if (num_overvolted_cells > 0) {
+          state = ST_OVERVOLTED;
           cycles_in_state = 0;
         }
       }
