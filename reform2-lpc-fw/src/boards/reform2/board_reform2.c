@@ -712,10 +712,18 @@ int main(void)
       discharge_overvolted_cells();
 
       // discharge
-      if (cycles_in_state > 10 && (num_overvolted_cells==0 || num_undervolted_cells>0)) {
+      if (cycles_in_state > 5 && (num_overvolted_cells==0 || num_undervolted_cells>0)) {
         reset_discharge_bits();
-        state = ST_CHARGE;
         cycles_in_state = 0;
+
+        if (volts >= FULLY_CHARGED_VOLTAGE) {
+          // when transitioning to fully charged, we assume that we're at max capacity
+          capacity_accu_ampsecs = capacity_max_ampsecs;
+          state = ST_FULLY_CHARGED;
+          reached_full_charge = 1;
+        } else {
+          state = ST_CHARGE;
+        }
       }
     }
     else if (state == ST_MISSING) {
