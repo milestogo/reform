@@ -83,6 +83,8 @@ const uint8_t matrix[15*6] = {
   HID_KEYBOARD_SC_EXSEL, HID_KEYBOARD_SC_LEFT_GUI, HID_KEYBOARD_SC_LEFT_CONTROL, KEY_SPACE, HID_KEYBOARD_SC_LEFT_ALT, HID_KEYBOARD_SC_RIGHT_ALT, KEY_SPACE, HID_KEYBOARD_SC_PAGE_UP, HID_KEYBOARD_SC_PAGE_DOWN, HID_KEYBOARD_SC_LEFT_ARROW, HID_KEYBOARD_SC_DOWN_ARROW, HID_KEYBOARD_SC_RIGHT_ARROW,  0,0,0
 };
 
+uint8_t matrix_debounce[15*6];
+
 // f8 = sleep
 // 49 = mute
 // 84 = scroll lock
@@ -411,6 +413,7 @@ void remote_turn_off_som(void) {
 
 char metaPressed = 0;
 uint8_t lastMetaKey = 0;
+#define DEBOUNCE_CYCLES 5
 
 void process_keyboard(char usb_report_mode, USB_KeyboardReport_Data_t* KeyboardReport) {
   uint8_t metaPressedNow = 0;
@@ -430,9 +433,13 @@ void process_keyboard(char usb_report_mode, USB_KeyboardReport_Data_t* KeyboardR
     case 5: output_low(PORTD, 4); break;
     }
 
-    // check input COLs
+    // wait for signal to stabilize
+    _delay_us(10);
+
+     // check input COLs
     for (int x=0; x<14; x++) {
-      uint16_t keycode = matrix[y*15+x];
+      uint16_t loc = y*15+x;
+      uint16_t keycode = matrix[loc];
       uint8_t  pressed = 0;
 
       // column pins are all over the place
@@ -453,13 +460,19 @@ void process_keyboard(char usb_report_mode, USB_KeyboardReport_Data_t* KeyboardR
       case 13: pressed = !(PINC&(1<<6)); break;
       }
 
-      if (pressed) {
+      if (pressed || matrix_debounce[loc] > 0) {
+        if (matrix_debounce[loc] > 0) {
+          matrix_debounce[loc]--;
+        } else if (pressed) {
+          matrix_debounce[loc] = DEBOUNCE_CYCLES;
+        }
         totalPressed++;
-        
+
         if (keycode == HID_KEYBOARD_SC_EXSEL) {
           metaPressedNow = 1;
         } else {
-          if (usb_report_mode && KeyboardReport && !metaPressed) {
+          // 6 keys is a hard limit in the HID descriptor :/
+          if (usb_report_mode && KeyboardReport && !metaPressed && usedKeyCodes<6) {
             KeyboardReport->KeyCode[usedKeyCodes++] = keycode;
           }
 
