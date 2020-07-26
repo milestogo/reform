@@ -297,12 +297,8 @@ bool CALLBACK_HID_Device_CreateHIDReport(USB_ClassInfo_HID_Device_t* const HIDIn
       // touchdown because they often have skips
       if (touched_time > 4) {
         if (wheeling) {
-          if (dy>127)  dy = 127;
-          if (dy<-127) dy = -127;
-
           dy/=5;
           if (dy>0 && dy<1) dy=1;
-
           MouseReport->Wheel = -dy;
         } else {
           // normal movement
