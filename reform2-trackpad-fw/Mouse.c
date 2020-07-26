@@ -90,9 +90,6 @@
 #define Raw_Data_Burst  0x64
 #define LiftCutoff_Tune2  0x65
 
-uint8_t adns_init_complete=0;
-volatile int xydat[2];
-
 #include "Mouse.h"
 
 /** Buffer to hold the previously generated Mouse HID report, for comparison purposes inside the HID class driver. */
@@ -117,25 +114,6 @@ USB_ClassInfo_HID_Device_t Mouse_HID_Interface =
 				.PrevReportINBufferSize       = sizeof(PrevMouseHIDReportBuffer),
 			},
 	};
-
-
-void led_error(void) {
-  DDRC = 0b11110100;
-}
-
-void led_ok(void) {
-  DDRC = 0;
-}
-
-
-// FIXME QUESTIONABLE
-int convTwosComp(int b) {
-  //Convert from 2's complement
-  if (b & 0x80) {
-    b = -1 * ((b ^ 0xff) + 1);
-  }
-  return b;
-}
 
 // LM PD0 input pullup
 // RM PD1 input pullup
@@ -222,16 +200,15 @@ uint8_t addr1 = 0x00;
 uint8_t addr2 = 0x11;
 uint8_t buf[80];
 int16_t lastx = 0, lasty = 0;
-uint8_t ignore_next = 1;
-int pressed_time = 0;
-int moved_while_pressed = 0;
-int pressed_button = 0;
 unsigned int cycle = 0;
-unsigned int clicked_in_cycle = 0;
 int wheeling = 0;
+int touched_time = 0;
+int last_num_fingers = 0;
+int start_num_fingers = 0;
+int report_lift = 0;
 
-#define MOVE_THRS 3
 #define PRESS_TIME 6
+#define MOTION_CLIP 80
 
 /** HID class driver callback function for the creation of HID reports to the host.
  *
@@ -250,12 +227,23 @@ bool CALLBACK_HID_Device_CreateHIDReport(USB_ClassInfo_HID_Device_t* const HIDIn
                                          uint16_t* const ReportSize)
 {
   if (ReportType==HID_REPORT_ITEM_Feature) return false;
-  
-  int8_t nx = 0;
-  int8_t ny = 0;
 
+  USB_WheelMouseReport_Data_t* MouseReport = (USB_WheelMouseReport_Data_t*)ReportData;
+
+  MouseReport->Button = 0;
+  MouseReport->Wheel = 0;
+  MouseReport->X = 0;
+  MouseReport->Y = 0;
+
+  // sensor ready?
   uint8_t rdy = PINB&(1<<5);
   if (!rdy) {
+    if (report_lift) {
+      // we still have to end a short click event
+      report_lift = 0;
+      *ReportSize = sizeof(USB_WheelMouseReport_Data_t);
+      return true;
+    }
     return false;
   }
 
@@ -269,94 +257,84 @@ bool CALLBACK_HID_Device_CreateHIDReport(USB_ClassInfo_HID_Device_t* const HIDIn
   }
   buf[8] = i2c_readNak();
   i2c_stop();
-  
-  USB_WheelMouseReport_Data_t* MouseReport = (USB_WheelMouseReport_Data_t*)ReportData;
-  
-  MouseReport->Wheel = 0;
-  MouseReport->X = 0;
-  MouseReport->Y = 0;
 
-  if (buf[0]) {
-    int16_t xpos = ((uint16_t)buf[5]<<8)|((uint16_t)buf[6]);
-    int16_t ypos = ((uint16_t)buf[7]<<8)|((uint16_t)buf[8]);
-      
-    pressed_time++;
-      
-    float dx = xpos-lastx;
-    float dy = ypos-lasty;
-      
-    if (!wheeling) {
-      if (!pressed_button && buf[0]==1) {
-        pressed_button = 1;
-      }
-        
-      if (buf[0]==2 && pressed_button==1) {
-        MouseReport->Button |= 1;
-        pressed_button = 2;
-      }
+  int num_fingers = buf[0];
+
+  // absolute x and y coordinates are signed 16-bit integers 
+  int16_t xpos = ((uint16_t)buf[5]<<8)|((uint16_t)buf[6]);
+  int16_t ypos = ((uint16_t)buf[7]<<8)|((uint16_t)buf[8]);
+
+  // convert to relative deltas as float
+  float dx = (float)(xpos-lastx);
+  float dy = (float)(ypos-lasty);
+  lastx = xpos;
+  lasty = ypos;
+
+  // touched?
+  if (num_fingers) {
+    touched_time++;
+    wheeling = 0;
+
+    if (start_num_fingers < num_fingers) {
+      start_num_fingers = num_fingers;
     }
-        
-    if (!pressed_button && buf[0]==3) {
+
+    if (start_num_fingers == 2) {
+      // left mouse button
+      MouseReport->Button |= 1;
+      touched_time++;
+    } else if (start_num_fingers == 3) {
+      // wheel
+      wheeling = 1;
+    } else if (start_num_fingers == 4) {
+      // right mouse button
       MouseReport->Button |= 2;
-      pressed_button = 3;
-      wheeling = 0;
     }
-      
-    if (!ignore_next) {
-      if (dx>MOVE_THRS || dx<-MOVE_THRS || dy>MOVE_THRS || dy<-MOVE_THRS) {
-        moved_while_pressed = 1;
-      }
-        
-      if (buf[0]==2 && !pressed_button) {
-        if (dy>127)  dy = 127;
-        if (dy<-127) dy = -127;
-          
-        dy/=5;
-        if (dy>0 && dy<1) dy=1;
-        
-        MouseReport->Wheel = -dy;
-        wheeling = 1;
-      } else if (!wheeling) {
-        dx=dx*1.6;
-        dy=dy*1.2;
-          
-        if (dx<100 && dx>=-100 && dy<100 && dy>=-100) {
-          MouseReport->X = dx;
-          MouseReport->Y = dy;
+
+    // skip dramatic values
+    if (dx<MOTION_CLIP && dx>=-MOTION_CLIP && dy<MOTION_CLIP && dy>=-MOTION_CLIP) {
+      // skip the first motion reading(s) immediately after
+      // touchdown because they often have skips
+      if (touched_time > 4) {
+        if (wheeling) {
+          if (dy>127)  dy = 127;
+          if (dy<-127) dy = -127;
+
+          dy/=5;
+          if (dy>0 && dy<1) dy=1;
+
+          MouseReport->Wheel = -dy;
+        } else {
+          // normal movement
+          MouseReport->X = dx*1.5;
+          MouseReport->Y = dy*1.2;
         }
       }
     }
-    ignore_next = 0;
-    lastx = xpos;
-    lasty = ypos;
   } else {
-    ignore_next = 1;
-      
-    if (!wheeling && pressed_button==1 && pressed_time>0 && pressed_time<PRESS_TIME && !moved_while_pressed) {
-      // fixme click
-      MouseReport->Button = 1;
-      clicked_in_cycle = cycle;
+    // no (more) touches
+
+    if (start_num_fingers == 1 && touched_time > 0 && touched_time <= PRESS_TIME) {
+      // tapped for a short time with 1 finger? left click
+      MouseReport->Button |= 1;
+    } else if (start_num_fingers == 3 && touched_time > 0 && touched_time <= PRESS_TIME) {
+      // tapped for a short time with 3 fingers? middle click
+      MouseReport->Button |= 4;
     }
-    if (pressed_button==2) {
-      MouseReport->Button &= ~1;
-    }
-    if (pressed_button==3) {
-      MouseReport->Button &= ~2;
-    }
-      
-    pressed_time = 0;
-    pressed_button = 0;
-    moved_while_pressed = 0;
-    wheeling = 0;
+    touched_time = 0;
+    start_num_fingers = 0;
+    report_lift = 1;
   }
-  
+
+  last_num_fingers = num_fingers;
+
   // end cycle
   i2c_start_wait(ADDR_SENSOR|I2C_WRITE);
   i2c_write(0xee);
   i2c_write(0xee);
   i2c_write(0xff);
   i2c_stop();
-  
+
   *ReportSize = sizeof(USB_WheelMouseReport_Data_t);
 
   return true;
