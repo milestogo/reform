@@ -902,7 +902,7 @@ L Device:C_Small C156
 U 1 1 5ECFC1B6
 P 6700 3650
 F 0 "C156" V 6650 3500 50  0000 C CNN
-F 1 "0.1uF" V 6800 3650 50  0000 C CNN
+F 1 "47uF" V 6800 3650 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6700 3650 50  0001 C CNN
 F 3 "~" H 6700 3650 50  0001 C CNN
 F 4 "Yageo" H 6700 3650 50  0001 C CNN "Manufacturer"
@@ -917,13 +917,13 @@ L Device:R_Small R149
 U 1 1 5ECFC6D0
 P 6850 3750
 F 0 "R149" H 6909 3796 50  0000 L CNN
-F 1 "10k" H 6909 3705 50  0000 L CNN
+F 1 "DNP" H 6909 3705 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 6850 3750 50  0001 C CNN
 F 3 "~" H 6850 3750 50  0001 C CNN
 F 4 "Yageo" H 6850 3750 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-0710KL" H 6850 3750 50  0001 C CNN "Manufacturer_No"
+F 5 "" H 6850 3750 50  0001 C CNN "Manufacturer_No"
 F 6 "Mouser" H 6850 3750 50  0001 C CNN "Distributor"
-F 7 "y" H 6850 3750 50  0001 C CNN "Checked"
+F 7 "n" H 6850 3750 50  0001 C CNN "Checked"
 	1    6850 3750
 	1    0    0    -1  
 $EndComp
@@ -936,7 +936,7 @@ L Device:C_Small C158
 U 1 1 5ED166DD
 P 6700 4150
 F 0 "C158" V 6650 4000 50  0000 C CNN
-F 1 "0.1uF" V 6800 4150 50  0000 C CNN
+F 1 "47uF" V 6800 4150 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6700 4150 50  0001 C CNN
 F 3 "~" H 6700 4150 50  0001 C CNN
 F 4 "Yageo" H 6700 4150 50  0001 C CNN "Manufacturer"
@@ -951,13 +951,13 @@ L Device:R_Small R191
 U 1 1 5ED166EB
 P 6850 4250
 F 0 "R191" H 6909 4296 50  0000 L CNN
-F 1 "10k" H 6909 4205 50  0000 L CNN
+F 1 "DNP" H 6909 4205 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 6850 4250 50  0001 C CNN
 F 3 "~" H 6850 4250 50  0001 C CNN
 F 4 "Yageo" H 6850 4250 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-0710KL" H 6850 4250 50  0001 C CNN "Manufacturer_No"
+F 5 "" H 6850 4250 50  0001 C CNN "Manufacturer_No"
 F 6 "Mouser" H 6850 4250 50  0001 C CNN "Distributor"
-F 7 "y" H 6850 4250 50  0001 C CNN "Checked"
+F 7 "n" H 6850 4250 50  0001 C CNN "Checked"
 	1    6850 4250
 	1    0    0    -1  
 $EndComp
@@ -1128,4 +1128,8 @@ $EndComp
 Connection ~ 5000 2400
 Wire Wire Line
 	5000 2400 4650 2400
+Text Notes 8400 4600 0    50   ~ 0
+TODO: 10k R is useless because speaker\nis 8 Ohm in parallel. 0.1uF should be more\nlike 100uF (47uF works in tests)
+Text Notes 2500 4750 0    50   ~ 0
+TODO: actually test 5v
 $EndSCHEMATC
