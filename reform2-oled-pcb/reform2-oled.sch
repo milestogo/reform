@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "MNT Reform 2 Keyboard OLED"
-Date "2020-04-12"
+Date "2020-04-19"
 Rev "2.0D-4"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
@@ -221,9 +221,9 @@ Text GLabel 3350 3850 0    60   Input ~ 0
 DISP_SCL
 Text GLabel 3350 4050 0    60   Input ~ 0
 DISP_SDA
-Text GLabel 5650 3500 0    60   Input ~ 0
-DISP_SCL
 Text GLabel 5650 3400 0    60   Input ~ 0
+DISP_SCL
+Text GLabel 5650 3500 0    60   Input ~ 0
 DISP_SDA
 $Comp
 L power:+3V3 #PWR04
@@ -303,6 +303,8 @@ F 0 "U1" V 3297 4028 60  0000 L CNN
 F 1 "SSD1306" V 3403 4028 60  0000 L CNN
 F 2 "KiCad-SSD1306_OLED-0:SSD1306_OLED-0.91-128x32" H 3350 3350 60  0001 C CNN
 F 3 "" H 3350 3350 60  0001 C CNN
+F 4 "Enrich Electronics" H 3350 3350 50  0001 C CNN "Manufacturer"
+F 5 "ENH-OB00910003" H 3350 3350 50  0001 C CNN "Manufacturer_No"
 	1    3350 3350
 	0    1    1    0   
 $EndComp
@@ -353,6 +355,4 @@ Wire Wire Line
 Connection ~ 2200 3650
 Wire Wire Line
 	2200 3650 2200 4250
-Text Notes 6650 3500 0    60   ~ 0
-TODO: Flip SDA/SCL?!
 $EndSCHEMATC
