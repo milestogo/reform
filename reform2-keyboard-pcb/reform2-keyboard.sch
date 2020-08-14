@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 3
 Title "MNT Reform 2 Keyboard"
-Date "2020-04-12"
-Rev "2.0D-4"
+Date "2020-07-16"
+Rev "2.0D-5"
 Comp "Copyright 2017-2020 MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
@@ -22,7 +22,7 @@ F 1 "Choc" H 2841 2280 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 2550 2250 50  0001 C CNN
 F 3 "" H 2550 2250 50  0000 C CNN
 F 4 "Kailh" H 2550 2250 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 2550 2250 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 2550 2250 50  0001 C CNN "Manufacturer_No"
 	1    2550 2250
 	1    0    0    -1  
 $EndComp
@@ -35,7 +35,7 @@ F 1 "Choc" H 3691 2280 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 3400 2250 50  0001 C CNN
 F 3 "" H 3400 2250 50  0000 C CNN
 F 4 "Kailh" H 3400 2250 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 3400 2250 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 3400 2250 50  0001 C CNN "Manufacturer_No"
 	1    3400 2250
 	1    0    0    -1  
 $EndComp
@@ -74,7 +74,7 @@ F 1 "Choc" H 4541 2280 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 4250 2250 50  0001 C CNN
 F 3 "" H 4250 2250 50  0000 C CNN
 F 4 "Kailh" H 4250 2250 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 4250 2250 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 4250 2250 50  0001 C CNN "Manufacturer_No"
 	1    4250 2250
 	1    0    0    -1  
 $EndComp
@@ -87,7 +87,7 @@ F 1 "Choc" H 5391 2280 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 5100 2250 50  0001 C CNN
 F 3 "" H 5100 2250 50  0000 C CNN
 F 4 "Kailh" H 5100 2250 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 5100 2250 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 5100 2250 50  0001 C CNN "Manufacturer_No"
 	1    5100 2250
 	1    0    0    -1  
 $EndComp
@@ -126,7 +126,7 @@ F 1 "Choc" H 6241 2280 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 5950 2250 50  0001 C CNN
 F 3 "" H 5950 2250 50  0000 C CNN
 F 4 "Kailh" H 5950 2250 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 5950 2250 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 5950 2250 50  0001 C CNN "Manufacturer_No"
 	1    5950 2250
 	1    0    0    -1  
 $EndComp
@@ -139,7 +139,7 @@ F 1 "Choc" H 7091 2280 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 6800 2250 50  0001 C CNN
 F 3 "" H 6800 2250 50  0000 C CNN
 F 4 "Kailh" H 6800 2250 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 6800 2250 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 6800 2250 50  0001 C CNN "Manufacturer_No"
 	1    6800 2250
 	1    0    0    -1  
 $EndComp
@@ -178,7 +178,7 @@ F 1 "Choc" H 7941 2280 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 7650 2250 50  0001 C CNN
 F 3 "" H 7650 2250 50  0000 C CNN
 F 4 "Kailh" H 7650 2250 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 7650 2250 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 7650 2250 50  0001 C CNN "Manufacturer_No"
 	1    7650 2250
 	1    0    0    -1  
 $EndComp
@@ -191,7 +191,7 @@ F 1 "Choc" H 8791 2280 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 8500 2250 50  0001 C CNN
 F 3 "" H 8500 2250 50  0000 C CNN
 F 4 "Kailh" H 8500 2250 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 8500 2250 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 8500 2250 50  0001 C CNN "Manufacturer_No"
 	1    8500 2250
 	1    0    0    -1  
 $EndComp
@@ -230,7 +230,7 @@ F 1 "Choc" H 9641 2280 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 9350 2250 50  0001 C CNN
 F 3 "" H 9350 2250 50  0000 C CNN
 F 4 "Kailh" H 9350 2250 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 9350 2250 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 9350 2250 50  0001 C CNN "Manufacturer_No"
 	1    9350 2250
 	1    0    0    -1  
 $EndComp
@@ -243,7 +243,7 @@ F 1 "Choc" H 10491 2280 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 10200 2250 50  0001 C CNN
 F 3 "" H 10200 2250 50  0000 C CNN
 F 4 "Kailh" H 10200 2250 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 10200 2250 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 10200 2250 50  0001 C CNN "Manufacturer_No"
 	1    10200 2250
 	1    0    0    -1  
 $EndComp
@@ -282,7 +282,7 @@ F 1 "Choc" H 11341 2280 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 11050 2250 50  0001 C CNN
 F 3 "" H 11050 2250 50  0000 C CNN
 F 4 "Kailh" H 11050 2250 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 11050 2250 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 11050 2250 50  0001 C CNN "Manufacturer_No"
 	1    11050 2250
 	1    0    0    -1  
 $EndComp
@@ -295,7 +295,7 @@ F 1 "Choc" H 12191 2280 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 11900 2250 50  0001 C CNN
 F 3 "" H 11900 2250 50  0000 C CNN
 F 4 "Kailh" H 11900 2250 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 11900 2250 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 11900 2250 50  0001 C CNN "Manufacturer_No"
 	1    11900 2250
 	1    0    0    -1  
 $EndComp
@@ -334,7 +334,7 @@ F 1 "Choc" H 13041 2280 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 12750 2250 50  0001 C CNN
 F 3 "" H 12750 2250 50  0000 C CNN
 F 4 "Kailh" H 12750 2250 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 12750 2250 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 12750 2250 50  0001 C CNN "Manufacturer_No"
 	1    12750 2250
 	1    0    0    -1  
 $EndComp
@@ -347,7 +347,7 @@ F 1 "Choc" H 13891 2280 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 13600 2250 50  0001 C CNN
 F 3 "" H 13600 2250 50  0000 C CNN
 F 4 "Kailh" H 13600 2250 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 13600 2250 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 13600 2250 50  0001 C CNN "Manufacturer_No"
 	1    13600 2250
 	1    0    0    -1  
 $EndComp
@@ -386,7 +386,7 @@ F 1 "Choc" H 3691 3380 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 3400 3350 50  0001 C CNN
 F 3 "" H 3400 3350 50  0000 C CNN
 F 4 "Kailh" H 3400 3350 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 3400 3350 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 3400 3350 50  0001 C CNN "Manufacturer_No"
 	1    3400 3350
 	1    0    0    -1  
 $EndComp
@@ -399,7 +399,7 @@ F 1 "Choc" H 4541 3380 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 4250 3350 50  0001 C CNN
 F 3 "" H 4250 3350 50  0000 C CNN
 F 4 "Kailh" H 4250 3350 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 4250 3350 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 4250 3350 50  0001 C CNN "Manufacturer_No"
 	1    4250 3350
 	1    0    0    -1  
 $EndComp
@@ -438,7 +438,7 @@ F 1 "Choc" H 5391 3380 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 5100 3350 50  0001 C CNN
 F 3 "" H 5100 3350 50  0000 C CNN
 F 4 "Kailh" H 5100 3350 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 5100 3350 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 5100 3350 50  0001 C CNN "Manufacturer_No"
 	1    5100 3350
 	1    0    0    -1  
 $EndComp
@@ -451,7 +451,7 @@ F 1 "Choc" H 6241 3380 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 5950 3350 50  0001 C CNN
 F 3 "" H 5950 3350 50  0000 C CNN
 F 4 "Kailh" H 5950 3350 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 5950 3350 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 5950 3350 50  0001 C CNN "Manufacturer_No"
 	1    5950 3350
 	1    0    0    -1  
 $EndComp
@@ -490,7 +490,7 @@ F 1 "Choc" H 7091 3380 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 6800 3350 50  0001 C CNN
 F 3 "" H 6800 3350 50  0000 C CNN
 F 4 "Kailh" H 6800 3350 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 6800 3350 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 6800 3350 50  0001 C CNN "Manufacturer_No"
 	1    6800 3350
 	1    0    0    -1  
 $EndComp
@@ -503,7 +503,7 @@ F 1 "Choc" H 7941 3380 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 7650 3350 50  0001 C CNN
 F 3 "" H 7650 3350 50  0000 C CNN
 F 4 "Kailh" H 7650 3350 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 7650 3350 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 7650 3350 50  0001 C CNN "Manufacturer_No"
 	1    7650 3350
 	1    0    0    -1  
 $EndComp
@@ -542,7 +542,7 @@ F 1 "Choc" H 8791 3380 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 8500 3350 50  0001 C CNN
 F 3 "" H 8500 3350 50  0000 C CNN
 F 4 "Kailh" H 8500 3350 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 8500 3350 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 8500 3350 50  0001 C CNN "Manufacturer_No"
 	1    8500 3350
 	1    0    0    -1  
 $EndComp
@@ -555,7 +555,7 @@ F 1 "Choc" H 9641 3380 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 9350 3350 50  0001 C CNN
 F 3 "" H 9350 3350 50  0000 C CNN
 F 4 "Kailh" H 9350 3350 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 9350 3350 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 9350 3350 50  0001 C CNN "Manufacturer_No"
 	1    9350 3350
 	1    0    0    -1  
 $EndComp
@@ -594,7 +594,7 @@ F 1 "Choc" H 10491 3380 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 10200 3350 50  0001 C CNN
 F 3 "" H 10200 3350 50  0000 C CNN
 F 4 "Kailh" H 10200 3350 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 10200 3350 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 10200 3350 50  0001 C CNN "Manufacturer_No"
 	1    10200 3350
 	1    0    0    -1  
 $EndComp
@@ -607,7 +607,7 @@ F 1 "Choc" H 11341 3380 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 11050 3350 50  0001 C CNN
 F 3 "" H 11050 3350 50  0000 C CNN
 F 4 "Kailh" H 11050 3350 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 11050 3350 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 11050 3350 50  0001 C CNN "Manufacturer_No"
 	1    11050 3350
 	1    0    0    -1  
 $EndComp
@@ -646,7 +646,7 @@ F 1 "Choc" H 12191 3380 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 11900 3350 50  0001 C CNN
 F 3 "" H 11900 3350 50  0000 C CNN
 F 4 "Kailh" H 11900 3350 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 11900 3350 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 11900 3350 50  0001 C CNN "Manufacturer_No"
 	1    11900 3350
 	1    0    0    -1  
 $EndComp
@@ -659,7 +659,7 @@ F 1 "Choc" H 13041 3380 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 12750 3350 50  0001 C CNN
 F 3 "" H 12750 3350 50  0000 C CNN
 F 4 "Kailh" H 12750 3350 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 12750 3350 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 12750 3350 50  0001 C CNN "Manufacturer_No"
 	1    12750 3350
 	1    0    0    -1  
 $EndComp
@@ -698,7 +698,7 @@ F 1 "Choc" H 13891 3380 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 13600 3350 50  0001 C CNN
 F 3 "" H 13600 3350 50  0000 C CNN
 F 4 "Kailh" H 13600 3350 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 13600 3350 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 13600 3350 50  0001 C CNN "Manufacturer_No"
 	1    13600 3350
 	1    0    0    -1  
 $EndComp
@@ -724,7 +724,7 @@ F 1 "Choc" H 3691 4480 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 3400 4450 50  0001 C CNN
 F 3 "" H 3400 4450 50  0000 C CNN
 F 4 "Kailh" H 3400 4450 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 3400 4450 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 3400 4450 50  0001 C CNN "Manufacturer_No"
 	1    3400 4450
 	1    0    0    -1  
 $EndComp
@@ -737,7 +737,7 @@ F 1 "Choc" H 4541 4480 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 4250 4450 50  0001 C CNN
 F 3 "" H 4250 4450 50  0000 C CNN
 F 4 "Kailh" H 4250 4450 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 4250 4450 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 4250 4450 50  0001 C CNN "Manufacturer_No"
 	1    4250 4450
 	1    0    0    -1  
 $EndComp
@@ -776,7 +776,7 @@ F 1 "Choc" H 5391 4480 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 5100 4450 50  0001 C CNN
 F 3 "" H 5100 4450 50  0000 C CNN
 F 4 "Kailh" H 5100 4450 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 5100 4450 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 5100 4450 50  0001 C CNN "Manufacturer_No"
 	1    5100 4450
 	1    0    0    -1  
 $EndComp
@@ -789,7 +789,7 @@ F 1 "Choc" H 6241 4480 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 5950 4450 50  0001 C CNN
 F 3 "" H 5950 4450 50  0000 C CNN
 F 4 "Kailh" H 5950 4450 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 5950 4450 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 5950 4450 50  0001 C CNN "Manufacturer_No"
 	1    5950 4450
 	1    0    0    -1  
 $EndComp
@@ -828,7 +828,7 @@ F 1 "Choc" H 7091 4480 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 6800 4450 50  0001 C CNN
 F 3 "" H 6800 4450 50  0000 C CNN
 F 4 "Kailh" H 6800 4450 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 6800 4450 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 6800 4450 50  0001 C CNN "Manufacturer_No"
 	1    6800 4450
 	1    0    0    -1  
 $EndComp
@@ -841,7 +841,7 @@ F 1 "Choc" H 7941 4480 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 7650 4450 50  0001 C CNN
 F 3 "" H 7650 4450 50  0000 C CNN
 F 4 "Kailh" H 7650 4450 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 7650 4450 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 7650 4450 50  0001 C CNN "Manufacturer_No"
 	1    7650 4450
 	1    0    0    -1  
 $EndComp
@@ -880,7 +880,7 @@ F 1 "Choc" H 8791 4480 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 8500 4450 50  0001 C CNN
 F 3 "" H 8500 4450 50  0000 C CNN
 F 4 "Kailh" H 8500 4450 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 8500 4450 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 8500 4450 50  0001 C CNN "Manufacturer_No"
 	1    8500 4450
 	1    0    0    -1  
 $EndComp
@@ -893,7 +893,7 @@ F 1 "Choc" H 9641 4480 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 9350 4450 50  0001 C CNN
 F 3 "" H 9350 4450 50  0000 C CNN
 F 4 "Kailh" H 9350 4450 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 9350 4450 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 9350 4450 50  0001 C CNN "Manufacturer_No"
 	1    9350 4450
 	1    0    0    -1  
 $EndComp
@@ -932,7 +932,7 @@ F 1 "Choc" H 10491 4480 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 10200 4450 50  0001 C CNN
 F 3 "" H 10200 4450 50  0000 C CNN
 F 4 "Kailh" H 10200 4450 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 10200 4450 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 10200 4450 50  0001 C CNN "Manufacturer_No"
 	1    10200 4450
 	1    0    0    -1  
 $EndComp
@@ -945,7 +945,7 @@ F 1 "Choc" H 11341 4480 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 11050 4450 50  0001 C CNN
 F 3 "" H 11050 4450 50  0000 C CNN
 F 4 "Kailh" H 11050 4450 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 11050 4450 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 11050 4450 50  0001 C CNN "Manufacturer_No"
 	1    11050 4450
 	1    0    0    -1  
 $EndComp
@@ -984,7 +984,7 @@ F 1 "Choc" H 12191 4480 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 11900 4450 50  0001 C CNN
 F 3 "" H 11900 4450 50  0000 C CNN
 F 4 "Kailh" H 11900 4450 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 11900 4450 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 11900 4450 50  0001 C CNN "Manufacturer_No"
 	1    11900 4450
 	1    0    0    -1  
 $EndComp
@@ -997,7 +997,7 @@ F 1 "Choc" H 13041 4480 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 12750 4450 50  0001 C CNN
 F 3 "" H 12750 4450 50  0000 C CNN
 F 4 "Kailh" H 12750 4450 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 12750 4450 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 12750 4450 50  0001 C CNN "Manufacturer_No"
 	1    12750 4450
 	1    0    0    -1  
 $EndComp
@@ -1036,7 +1036,7 @@ F 1 "Choc" H 13891 4480 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 13600 4450 50  0001 C CNN
 F 3 "" H 13600 4450 50  0000 C CNN
 F 4 "Kailh" H 13600 4450 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 13600 4450 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 13600 4450 50  0001 C CNN "Manufacturer_No"
 	1    13600 4450
 	1    0    0    -1  
 $EndComp
@@ -1049,7 +1049,7 @@ F 1 "Choc" H 2841 5530 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 2550 5500 50  0001 C CNN
 F 3 "" H 2550 5500 50  0000 C CNN
 F 4 "Kailh" H 2550 5500 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 2550 5500 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 2550 5500 50  0001 C CNN "Manufacturer_No"
 	1    2550 5500
 	1    0    0    -1  
 $EndComp
@@ -1088,7 +1088,7 @@ F 1 "Choc" H 3691 5530 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 3400 5500 50  0001 C CNN
 F 3 "" H 3400 5500 50  0000 C CNN
 F 4 "Kailh" H 3400 5500 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 3400 5500 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 3400 5500 50  0001 C CNN "Manufacturer_No"
 	1    3400 5500
 	1    0    0    -1  
 $EndComp
@@ -1101,7 +1101,7 @@ F 1 "Choc" H 4541 5530 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 4250 5500 50  0001 C CNN
 F 3 "" H 4250 5500 50  0000 C CNN
 F 4 "Kailh" H 4250 5500 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 4250 5500 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 4250 5500 50  0001 C CNN "Manufacturer_No"
 	1    4250 5500
 	1    0    0    -1  
 $EndComp
@@ -1140,7 +1140,7 @@ F 1 "Choc" H 5391 5530 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 5100 5500 50  0001 C CNN
 F 3 "" H 5100 5500 50  0000 C CNN
 F 4 "Kailh" H 5100 5500 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 5100 5500 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 5100 5500 50  0001 C CNN "Manufacturer_No"
 	1    5100 5500
 	1    0    0    -1  
 $EndComp
@@ -1153,7 +1153,7 @@ F 1 "Choc" H 6241 5530 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 5950 5500 50  0001 C CNN
 F 3 "" H 5950 5500 50  0000 C CNN
 F 4 "Kailh" H 5950 5500 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 5950 5500 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 5950 5500 50  0001 C CNN "Manufacturer_No"
 	1    5950 5500
 	1    0    0    -1  
 $EndComp
@@ -1192,7 +1192,7 @@ F 1 "Choc" H 7091 5530 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 6800 5500 50  0001 C CNN
 F 3 "" H 6800 5500 50  0000 C CNN
 F 4 "Kailh" H 6800 5500 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 6800 5500 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 6800 5500 50  0001 C CNN "Manufacturer_No"
 	1    6800 5500
 	1    0    0    -1  
 $EndComp
@@ -1205,7 +1205,7 @@ F 1 "Choc" H 7941 5530 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 7650 5500 50  0001 C CNN
 F 3 "" H 7650 5500 50  0000 C CNN
 F 4 "Kailh" H 7650 5500 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 7650 5500 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 7650 5500 50  0001 C CNN "Manufacturer_No"
 	1    7650 5500
 	1    0    0    -1  
 $EndComp
@@ -1244,7 +1244,7 @@ F 1 "Choc" H 8791 5530 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 8500 5500 50  0001 C CNN
 F 3 "" H 8500 5500 50  0000 C CNN
 F 4 "Kailh" H 8500 5500 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 8500 5500 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 8500 5500 50  0001 C CNN "Manufacturer_No"
 	1    8500 5500
 	1    0    0    -1  
 $EndComp
@@ -1257,7 +1257,7 @@ F 1 "Choc" H 9641 5530 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 9350 5500 50  0001 C CNN
 F 3 "" H 9350 5500 50  0000 C CNN
 F 4 "Kailh" H 9350 5500 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 9350 5500 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 9350 5500 50  0001 C CNN "Manufacturer_No"
 	1    9350 5500
 	1    0    0    -1  
 $EndComp
@@ -1296,7 +1296,7 @@ F 1 "Choc" H 10491 5530 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 10200 5500 50  0001 C CNN
 F 3 "" H 10200 5500 50  0000 C CNN
 F 4 "Kailh" H 10200 5500 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 10200 5500 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 10200 5500 50  0001 C CNN "Manufacturer_No"
 	1    10200 5500
 	1    0    0    -1  
 $EndComp
@@ -1309,7 +1309,7 @@ F 1 "Choc" H 11341 5530 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 11050 5500 50  0001 C CNN
 F 3 "" H 11050 5500 50  0000 C CNN
 F 4 "Kailh" H 11050 5500 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 11050 5500 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 11050 5500 50  0001 C CNN "Manufacturer_No"
 	1    11050 5500
 	1    0    0    -1  
 $EndComp
@@ -1348,7 +1348,7 @@ F 1 "Choc" H 12191 5530 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 11900 5500 50  0001 C CNN
 F 3 "" H 11900 5500 50  0000 C CNN
 F 4 "Kailh" H 11900 5500 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 11900 5500 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 11900 5500 50  0001 C CNN "Manufacturer_No"
 	1    11900 5500
 	1    0    0    -1  
 $EndComp
@@ -1361,7 +1361,7 @@ F 1 "Choc" H 13041 5530 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 12750 5500 50  0001 C CNN
 F 3 "" H 12750 5500 50  0000 C CNN
 F 4 "Kailh" H 12750 5500 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 12750 5500 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 12750 5500 50  0001 C CNN "Manufacturer_No"
 	1    12750 5500
 	1    0    0    -1  
 $EndComp
@@ -1400,7 +1400,7 @@ F 1 "Choc" H 13891 5530 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 13600 5500 50  0001 C CNN
 F 3 "" H 13600 5500 50  0000 C CNN
 F 4 "Kailh" H 13600 5500 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 13600 5500 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 13600 5500 50  0001 C CNN "Manufacturer_No"
 	1    13600 5500
 	1    0    0    -1  
 $EndComp
@@ -1426,7 +1426,7 @@ F 1 "Choc" H 2841 6630 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 2550 6600 50  0001 C CNN
 F 3 "" H 2550 6600 50  0000 C CNN
 F 4 "Kailh" H 2550 6600 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 2550 6600 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 2550 6600 50  0001 C CNN "Manufacturer_No"
 	1    2550 6600
 	1    0    0    -1  
 $EndComp
@@ -1439,7 +1439,7 @@ F 1 "Choc" H 3691 6630 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 3400 6600 50  0001 C CNN
 F 3 "" H 3400 6600 50  0000 C CNN
 F 4 "Kailh" H 3400 6600 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 3400 6600 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 3400 6600 50  0001 C CNN "Manufacturer_No"
 	1    3400 6600
 	1    0    0    -1  
 $EndComp
@@ -1478,7 +1478,7 @@ F 1 "Choc" H 4541 6630 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 4250 6600 50  0001 C CNN
 F 3 "" H 4250 6600 50  0000 C CNN
 F 4 "Kailh" H 4250 6600 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 4250 6600 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 4250 6600 50  0001 C CNN "Manufacturer_No"
 	1    4250 6600
 	1    0    0    -1  
 $EndComp
@@ -1491,7 +1491,7 @@ F 1 "Choc" H 5391 6630 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 5100 6600 50  0001 C CNN
 F 3 "" H 5100 6600 50  0000 C CNN
 F 4 "Kailh" H 5100 6600 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 5100 6600 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 5100 6600 50  0001 C CNN "Manufacturer_No"
 	1    5100 6600
 	1    0    0    -1  
 $EndComp
@@ -1530,7 +1530,7 @@ F 1 "Choc" H 6241 6630 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 5950 6600 50  0001 C CNN
 F 3 "" H 5950 6600 50  0000 C CNN
 F 4 "Kailh" H 5950 6600 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 5950 6600 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 5950 6600 50  0001 C CNN "Manufacturer_No"
 	1    5950 6600
 	1    0    0    -1  
 $EndComp
@@ -1543,7 +1543,7 @@ F 1 "Choc" H 7091 6630 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 6800 6600 50  0001 C CNN
 F 3 "" H 6800 6600 50  0000 C CNN
 F 4 "Kailh" H 6800 6600 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 6800 6600 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 6800 6600 50  0001 C CNN "Manufacturer_No"
 	1    6800 6600
 	1    0    0    -1  
 $EndComp
@@ -1582,7 +1582,7 @@ F 1 "Choc" H 7941 6630 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 7650 6600 50  0001 C CNN
 F 3 "" H 7650 6600 50  0000 C CNN
 F 4 "Kailh" H 7650 6600 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 7650 6600 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 7650 6600 50  0001 C CNN "Manufacturer_No"
 	1    7650 6600
 	1    0    0    -1  
 $EndComp
@@ -1595,7 +1595,7 @@ F 1 "Choc" H 8791 6630 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 8500 6600 50  0001 C CNN
 F 3 "" H 8500 6600 50  0000 C CNN
 F 4 "Kailh" H 8500 6600 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 8500 6600 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 8500 6600 50  0001 C CNN "Manufacturer_No"
 	1    8500 6600
 	1    0    0    -1  
 $EndComp
@@ -1634,7 +1634,7 @@ F 1 "Choc" H 9641 6630 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 9350 6600 50  0001 C CNN
 F 3 "" H 9350 6600 50  0000 C CNN
 F 4 "Kailh" H 9350 6600 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 9350 6600 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 9350 6600 50  0001 C CNN "Manufacturer_No"
 	1    9350 6600
 	1    0    0    -1  
 $EndComp
@@ -1647,7 +1647,7 @@ F 1 "Choc" H 10491 6630 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 10200 6600 50  0001 C CNN
 F 3 "" H 10200 6600 50  0000 C CNN
 F 4 "Kailh" H 10200 6600 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 10200 6600 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 10200 6600 50  0001 C CNN "Manufacturer_No"
 	1    10200 6600
 	1    0    0    -1  
 $EndComp
@@ -1686,7 +1686,7 @@ F 1 "Choc" H 11341 6630 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 11050 6600 50  0001 C CNN
 F 3 "" H 11050 6600 50  0000 C CNN
 F 4 "Kailh" H 11050 6600 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 11050 6600 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 11050 6600 50  0001 C CNN "Manufacturer_No"
 	1    11050 6600
 	1    0    0    -1  
 $EndComp
@@ -1699,7 +1699,7 @@ F 1 "Choc" H 12191 6630 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 11900 6600 50  0001 C CNN
 F 3 "" H 11900 6600 50  0000 C CNN
 F 4 "Kailh" H 11900 6600 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 11900 6600 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 11900 6600 50  0001 C CNN "Manufacturer_No"
 	1    11900 6600
 	1    0    0    -1  
 $EndComp
@@ -1738,7 +1738,7 @@ F 1 "Choc" H 13041 6630 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 12750 6600 50  0001 C CNN
 F 3 "" H 12750 6600 50  0000 C CNN
 F 4 "Kailh" H 12750 6600 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 12750 6600 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 12750 6600 50  0001 C CNN "Manufacturer_No"
 	1    12750 6600
 	1    0    0    -1  
 $EndComp
@@ -1764,7 +1764,7 @@ F 1 "Choc" H 13891 6630 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 13600 6600 50  0001 C CNN
 F 3 "" H 13600 6600 50  0000 C CNN
 F 4 "Kailh" H 13600 6600 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 13600 6600 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 13600 6600 50  0001 C CNN "Manufacturer_No"
 	1    13600 6600
 	1    0    0    -1  
 $EndComp
@@ -1777,7 +1777,7 @@ F 1 "Choc" H 2841 7730 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 2550 7700 50  0001 C CNN
 F 3 "" H 2550 7700 50  0000 C CNN
 F 4 "Kailh" H 2550 7700 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 2550 7700 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 2550 7700 50  0001 C CNN "Manufacturer_No"
 	1    2550 7700
 	1    0    0    -1  
 $EndComp
@@ -1816,7 +1816,7 @@ F 1 "Choc" H 3691 7730 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 3400 7700 50  0001 C CNN
 F 3 "" H 3400 7700 50  0000 C CNN
 F 4 "Kailh" H 3400 7700 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 3400 7700 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 3400 7700 50  0001 C CNN "Manufacturer_No"
 	1    3400 7700
 	1    0    0    -1  
 $EndComp
@@ -1829,7 +1829,7 @@ F 1 "Choc" H 4541 7730 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 4250 7700 50  0001 C CNN
 F 3 "" H 4250 7700 50  0000 C CNN
 F 4 "Kailh" H 4250 7700 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 4250 7700 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 4250 7700 50  0001 C CNN "Manufacturer_No"
 	1    4250 7700
 	1    0    0    -1  
 $EndComp
@@ -1868,7 +1868,7 @@ F 1 "Choc" H 5391 7730 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 5100 7700 50  0001 C CNN
 F 3 "" H 5100 7700 50  0000 C CNN
 F 4 "Kailh" H 5100 7700 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 5100 7700 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 5100 7700 50  0001 C CNN "Manufacturer_No"
 	1    5100 7700
 	1    0    0    -1  
 $EndComp
@@ -1881,7 +1881,7 @@ F 1 "Choc" H 6241 7730 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 5950 7700 50  0001 C CNN
 F 3 "" H 5950 7700 50  0000 C CNN
 F 4 "Kailh" H 5950 7700 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 5950 7700 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 5950 7700 50  0001 C CNN "Manufacturer_No"
 	1    5950 7700
 	1    0    0    -1  
 $EndComp
@@ -1920,7 +1920,7 @@ F 1 "Choc" H 7091 7730 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 6800 7700 50  0001 C CNN
 F 3 "" H 6800 7700 50  0000 C CNN
 F 4 "Kailh" H 6800 7700 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 6800 7700 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 6800 7700 50  0001 C CNN "Manufacturer_No"
 	1    6800 7700
 	1    0    0    -1  
 $EndComp
@@ -1933,7 +1933,7 @@ F 1 "Choc" H 7941 7730 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 7650 7700 50  0001 C CNN
 F 3 "" H 7650 7700 50  0000 C CNN
 F 4 "Kailh" H 7650 7700 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 7650 7700 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 7650 7700 50  0001 C CNN "Manufacturer_No"
 	1    7650 7700
 	1    0    0    -1  
 $EndComp
@@ -1985,7 +1985,7 @@ F 1 "Choc" H 2841 4480 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 2550 4450 50  0001 C CNN
 F 3 "" H 2550 4450 50  0000 C CNN
 F 4 "Kailh" H 2550 4450 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 2550 4450 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 2550 4450 50  0001 C CNN "Manufacturer_No"
 	1    2550 4450
 	1    0    0    -1  
 $EndComp
@@ -1998,7 +1998,7 @@ F 1 "Choc" H 2841 3380 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 2550 3350 50  0001 C CNN
 F 3 "" H 2550 3350 50  0000 C CNN
 F 4 "Kailh" H 2550 3350 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 2550 3350 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 2550 3350 50  0001 C CNN "Manufacturer_No"
 	1    2550 3350
 	1    0    0    -1  
 $EndComp
@@ -2070,7 +2070,7 @@ F 1 "Choc" H 8791 7730 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 8500 7700 50  0001 C CNN
 F 3 "" H 8500 7700 50  0000 C CNN
 F 4 "Kailh" H 8500 7700 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 8500 7700 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 8500 7700 50  0001 C CNN "Manufacturer_No"
 	1    8500 7700
 	1    0    0    -1  
 $EndComp
@@ -2096,7 +2096,7 @@ F 1 "Choc" H 9641 7730 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 9350 7700 50  0001 C CNN
 F 3 "" H 9350 7700 50  0000 C CNN
 F 4 "Kailh" H 9350 7700 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 9350 7700 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 9350 7700 50  0001 C CNN "Manufacturer_No"
 	1    9350 7700
 	1    0    0    -1  
 $EndComp
@@ -2545,7 +2545,7 @@ F 1 "Choc" H 10491 7730 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 10200 7700 50  0001 C CNN
 F 3 "" H 10200 7700 50  0000 C CNN
 F 4 "Kailh" H 10200 7700 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 10200 7700 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 10200 7700 50  0001 C CNN "Manufacturer_No"
 	1    10200 7700
 	1    0    0    -1  
 $EndComp
@@ -2558,7 +2558,7 @@ F 1 "Choc" H 11341 7730 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 11050 7700 50  0001 C CNN
 F 3 "" H 11050 7700 50  0000 C CNN
 F 4 "Kailh" H 11050 7700 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 11050 7700 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 11050 7700 50  0001 C CNN "Manufacturer_No"
 	1    11050 7700
 	1    0    0    -1  
 $EndComp
@@ -2874,7 +2874,7 @@ F 1 "Choc" H 12191 7730 50  0000 L CNN
 F 2 "keyswitches:PG1350" H 11900 7700 50  0001 C CNN
 F 3 "" H 11900 7700 50  0000 C CNN
 F 4 "Kailh" H 11900 7700 50  0001 C CNN "Manufacturer"
-F 5 "Choc" H 11900 7700 50  0001 C CNN "Manufacturer_No"
+F 5 "CPG135001D02" H 11900 7700 50  0001 C CNN "Manufacturer_No"
 	1    11900 7700
 	1    0    0    -1  
 $EndComp

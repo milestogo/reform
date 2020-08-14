@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
 Title "MNT Reform 2 Keyboard"
-Date "2020-04-12"
-Rev "2.0D-4"
+Date "2020-07-16"
+Rev "2.0D-5"
 Comp "Copyright 2017-2020 MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
@@ -225,7 +225,7 @@ F 1 "10k" H 3430 2760 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 3400 2800 50  0001 C CNN
 F 3 "" H 3400 2800 50  0001 C CNN
 F 4 "Yageo" H 3400 2800 50  0001 C CNN "Manufacturer"
-F 5 "AF0603JR-0710KL" H 3400 2800 50  0001 C CNN "Manufacturer_No"
+F 5 "RC0603FR-0710KL" H 3400 2800 50  0001 C CNN "Manufacturer_No"
 	1    3400 2800
 	1    0    0    -1  
 $EndComp
@@ -235,7 +235,7 @@ U 1 1 5A6378F6
 P 2350 3550
 F 0 "Y1" H 2475 3750 50  0000 L CNN
 F 1 "16MHz" H 2475 3675 50  0000 L CNN
-F 2 "Crystals:Crystal_SMD_3225-4pin_3.2x2.5mm_HandSoldering" H 2350 3550 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 2350 3550 50  0001 C CNN
 F 3 "" H 2350 3550 50  0001 C CNN
 F 4 "Abracon" H 2350 3550 50  0001 C CNN "Manufacturer"
 F 5 "ABM8AIG-16.000MHz-4-T" H 2350 3550 50  0001 C CNN "Manufacturer_No"
@@ -312,9 +312,11 @@ Wire Wire Line
 Wire Wire Line
 	4100 6450 4100 6550
 $Comp
-L MCU_Microchip_ATmega:ATmega32U4-AU U1
+L reform2-keyboard-rescue:ATmega32U4-AU-MCU_Microchip_ATmega U1
 U 1 1 5A21306C
 P 4200 4650
+AR Path="/5A21306C" Ref="U1"  Part="1" 
+AR Path="/5A2069AE/5A21306C" Ref="U1"  Part="1" 
 F 0 "U1" H 4450 2900 50  0000 C CNN
 F 1 "ATMEGA32U4-AU" H 4700 2800 50  0000 C CNN
 F 2 "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm" H 4200 4650 50  0001 C CIN
@@ -383,8 +385,8 @@ F 0 "SW84" H 1750 2500 50  0000 C CNN
 F 1 "SW_DIP_x01" H 1750 2400 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_Omron_A6S-110x_W8.9mm_P2.54mm" H 1750 2200 50  0001 C CNN
 F 3 "~" H 1750 2200 50  0001 C CNN
-F 4 "Omron" H 1750 2200 50  0001 C CNN "Manufacturer"
-F 5 "A6S-1101-H" H 1750 2200 50  0001 C CNN "Manufacturer_No"
+F 4 "Apem" H 1750 2200 50  0001 C CNN "Manufacturer"
+F 5 "DM01" H 1750 2200 50  0001 C CNN "Manufacturer_No"
 	1    1750 2200
 	1    0    0    -1  
 $EndComp
@@ -768,8 +770,8 @@ F 0 "R5" H 6459 3896 50  0000 L CNN
 F 1 "4.7k" H 6459 3805 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 6400 3850 50  0001 C CNN
 F 3 "~" H 6400 3850 50  0001 C CNN
-F 4 "Vishay Dale" H 6400 3850 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06034K70FKEAC" H 6400 3850 50  0001 C CNN "Manufacturer_No"
+F 4 "Yageo" H 6400 3850 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-074K7L" H 6400 3850 50  0001 C CNN "Manufacturer_No"
 	1    6400 3850
 	1    0    0    -1  
 $EndComp
@@ -781,8 +783,8 @@ F 0 "R6" H 6759 3896 50  0000 L CNN
 F 1 "4.7k" H 6759 3805 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 6700 3850 50  0001 C CNN
 F 3 "~" H 6700 3850 50  0001 C CNN
-F 4 "Vishay Dale" H 6700 3850 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06034K70FKEAC" H 6700 3850 50  0001 C CNN "Manufacturer_No"
+F 4 "Yageo" H 6700 3850 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-074K7L" H 6700 3850 50  0001 C CNN "Manufacturer_No"
 	1    6700 3850
 	1    0    0    -1  
 $EndComp
@@ -861,6 +863,7 @@ F 2 "Connector_USB:USB_C_Receptacle_Amphenol_12401610E4-2A" H 8050 3050 50  0001
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 8050 3050 50  0001 C CNN
 F 4 "12401610E4#2A" H 7900 3050 50  0001 C CNN "Manufacturer_No"
 F 5 "Amphenol" H 7900 3050 50  0001 C CNN "Manufacturer"
+F 6 "DNP" H 7900 3050 50  0001 C CNN "Flags"
 	1    7900 3050
 	1    0    0    -1  
 $EndComp
@@ -923,8 +926,9 @@ F 0 "R13" V 8854 2650 50  0000 C CNN
 F 1 "5.1k" V 8945 2650 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9050 2650 50  0001 C CNN
 F 3 "~" H 9050 2650 50  0001 C CNN
-F 4 "Yageo" H 9050 2650 50  0001 C CNN "Manufacturer"
-F 5 "AC0603FR-135K1L" H 9050 2650 50  0001 C CNN "Manufacturer_No"
+F 4 "Panasonic" H 9050 2650 50  0001 C CNN "Manufacturer"
+F 5 "ERJ-3EKF5101V" H 9050 2650 50  0001 C CNN "Manufacturer_No"
+F 6 "DNP" H 9050 2650 50  0001 C CNN "Flags"
 	1    9050 2650
 	0    1    1    0   
 $EndComp
@@ -936,8 +940,9 @@ F 0 "R14" V 9550 2750 50  0000 C CNN
 F 1 "5.1k" V 9450 2750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9300 2750 50  0001 C CNN
 F 3 "~" H 9300 2750 50  0001 C CNN
-F 4 "Yageo" H 9300 2750 50  0001 C CNN "Manufacturer"
-F 5 "AC0603FR-135K1L" H 9300 2750 50  0001 C CNN "Manufacturer_No"
+F 4 "Panasonic" H 9300 2750 50  0001 C CNN "Manufacturer"
+F 5 "ERJ-3EKF5101V" H 9300 2750 50  0001 C CNN "Manufacturer_No"
+F 6 "DNP" H 9300 2750 50  0001 C CNN "Flags"
 	1    9300 2750
 	0    -1   -1   0   
 $EndComp
@@ -969,4 +974,106 @@ NoConn ~ 8500 3550
 NoConn ~ 8500 3650
 Text Notes 7900 2050 0    60   ~ 0
 Only in standalone Keyboard
+$Comp
+L Regulator_Linear:MCP1700-3302E_SOT23 U3
+U 1 1 5F214B98
+P 9650 3800
+F 0 "U3" H 9650 4042 50  0000 C CNN
+F 1 "MCP1700-3302E_SOT23" H 9650 3951 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9650 4025 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf" H 9650 3800 50  0001 C CNN
+F 4 "Microchip" H 9650 3800 50  0001 C CNN "Manufacturer"
+F 5 "MCP1700T-3302E/TT" H 9650 3800 50  0001 C CNN "Manufacturer_No"
+F 6 "DNP" H 9650 3800 50  0001 C CNN "Flags"
+	1    9650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 5F215B65
+P 9100 3750
+F 0 "#PWR0102" H 9100 3600 50  0001 C CNN
+F 1 "+5V" H 9100 3890 50  0000 C CNN
+F 2 "" H 9100 3750 50  0001 C CNN
+F 3 "" H 9100 3750 50  0001 C CNN
+	1    9100 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 3750 9100 3800
+Wire Wire Line
+	9100 3800 9350 3800
+$Comp
+L power:GND #PWR0103
+U 1 1 5F2187C9
+P 9650 4200
+F 0 "#PWR0103" H 9650 3950 50  0001 C CNN
+F 1 "GND" H 9655 4027 50  0000 C CNN
+F 2 "" H 9650 4200 50  0001 C CNN
+F 3 "" H 9650 4200 50  0001 C CNN
+	1    9650 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0104
+U 1 1 5F21B5B0
+P 10200 3750
+F 0 "#PWR0104" H 10200 3600 50  0001 C CNN
+F 1 "+3V3" H 10215 3923 50  0000 C CNN
+F 2 "" H 10200 3750 50  0001 C CNN
+F 3 "" H 10200 3750 50  0001 C CNN
+	1    10200 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 3750 10200 3800
+Wire Wire Line
+	10200 3800 9950 3800
+$Comp
+L Device:C_Small C11
+U 1 1 5F2226E4
+P 9100 3950
+F 0 "C11" H 9110 4020 50  0000 L CNN
+F 1 "1uF" H 9110 3870 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9100 3950 50  0001 C CNN
+F 3 "" H 9100 3950 50  0001 C CNN
+F 4 "TDK" H 9100 3950 50  0001 C CNN "Manufacturer"
+F 5 "C1608X8L1C105K080AC" H 9100 3950 50  0001 C CNN "Manufacturer_No"
+F 6 "DNP" H 9100 3950 50  0001 C CNN "Flags"
+	1    9100 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C12
+U 1 1 5F223065
+P 10200 3950
+F 0 "C12" H 10210 4020 50  0000 L CNN
+F 1 "1uF" H 10210 3870 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10200 3950 50  0001 C CNN
+F 3 "" H 10200 3950 50  0001 C CNN
+F 4 "TDK" H 10200 3950 50  0001 C CNN "Manufacturer"
+F 5 "C1608X8L1C105K080AC" H 10200 3950 50  0001 C CNN "Manufacturer_No"
+F 6 "DNP" H 10200 3950 50  0001 C CNN "Flags"
+	1    10200 3950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 3850 10200 3800
+Connection ~ 10200 3800
+Wire Wire Line
+	9100 3800 9100 3850
+Connection ~ 9100 3800
+Wire Wire Line
+	9650 4100 9650 4150
+Wire Wire Line
+	9650 4150 9100 4150
+Wire Wire Line
+	9100 4150 9100 4050
+Connection ~ 9650 4150
+Wire Wire Line
+	9650 4150 9650 4200
+Wire Wire Line
+	9650 4150 10200 4150
+Wire Wire Line
+	10200 4150 10200 4050
 $EndSCHEMATC

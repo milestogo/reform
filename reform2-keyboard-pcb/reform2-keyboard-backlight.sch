@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
 Title "MNT Reform 2 Keyboard"
-Date "2020-04-12"
-Rev "2.0D-4"
+Date "2020-07-16"
+Rev "2.0D-5"
 Comp "Copyright 2017-2020 MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
@@ -22,7 +22,7 @@ F 1 "TPS61185" H 4350 4850 60  0000 C CNN
 F 2 "Package_DFN_QFN:VQFN-24-1EP_4x4mm_P0.5mm_EP2.45x2.45mm" H 4350 3700 60  0001 C CNN
 F 3 "" H 4350 3700 60  0001 C CNN
 F 4 "Texas Instruments" H 4350 3700 50  0001 C CNN "Manufacturer"
-F 5 "TPS61185" H 4350 3700 50  0001 C CNN "Manufacturer_No"
+F 5 "TPS61185RGET" H 4350 3700 50  0001 C CNN "Manufacturer_No"
 	1    4350 3700
 	1    0    0    -1  
 $EndComp
@@ -105,8 +105,8 @@ F 0 "R11" H 5759 1896 50  0000 L CNN
 F 1 "1M" H 5759 1805 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 5700 1850 50  0001 C CNN
 F 3 "~" H 5700 1850 50  0001 C CNN
-F 4 "Panasonic" H 5700 1850 50  0001 C CNN "Manufacturer"
-F 5 "ERJ-3EKF1004V" H 5700 1850 50  0001 C CNN "Manufacturer_No"
+F 4 "Yageo" H 5700 1850 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071ML" H 5700 1850 50  0001 C CNN "Manufacturer_No"
 	1    5700 1850
 	1    0    0    -1  
 $EndComp
