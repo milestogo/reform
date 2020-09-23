@@ -42,7 +42,7 @@ $EndComp
 Wire Wire Line
 	3050 2350 3050 2400
 Wire Wire Line
-	3050 2400 3650 2400
+	3050 2400 3400 2400
 $Comp
 L Device:C_Small C143
 U 1 1 5F0981F2
@@ -59,7 +59,7 @@ F 7 "Mouser" H 4150 2500 50  0001 C CNN "Distributor"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4150 2400 4750 2400
+	4150 2400 4500 2400
 Wire Wire Line
 	4750 2650 4150 2650
 Wire Wire Line
@@ -1216,22 +1216,22 @@ Wire Wire Line
 $Comp
 L Device:Ferrite_Bead_Small FB?
 U 1 1 601EEA4C
-P 3750 2400
+P 3500 2400
 AR Path="/5D06AC46/601EEA4C" Ref="FB?"  Part="1" 
 AR Path="/5D1F6C04/601EEA4C" Ref="FB20"  Part="1" 
-F 0 "FB20" V 4000 2350 50  0000 L CNN
-F 1 "100@100MHz 3A" V 3900 2100 50  0000 L CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" V 3680 2400 50  0001 C CNN
-F 3 "~" H 3750 2400 50  0001 C CNN
-F 4 "Murata" H 3750 2400 50  0001 C CNN "Manufacturer"
-F 5 "BLM18KG101TN1D" H 3750 2400 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 3750 2400 50  0001 C CNN "Checked"
-F 7 "Mouser" H 3750 2400 50  0001 C CNN "Distributor"
-	1    3750 2400
+F 0 "FB20" V 3750 2350 50  0000 L CNN
+F 1 "100@100MHz 3A" V 3650 2100 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 3430 2400 50  0001 C CNN
+F 3 "~" H 3500 2400 50  0001 C CNN
+F 4 "Murata" H 3500 2400 50  0001 C CNN "Manufacturer"
+F 5 "BLM18KG101TN1D" H 3500 2400 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 3500 2400 50  0001 C CNN "Checked"
+F 7 "Mouser" H 3500 2400 50  0001 C CNN "Distributor"
+	1    3500 2400
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3850 2400 4150 2400
+	3600 2400 4150 2400
 Connection ~ 4150 2400
 $Comp
 L Device:Ferrite_Bead_Small FB?
@@ -1360,4 +1360,29 @@ Text GLabel 2550 4700 1    50   Input ~ 0
 USB_PWR
 Wire Wire Line
 	2550 4700 2550 4750
+$Comp
+L power:PWR_FLAG #FLG0121
+U 1 1 64A230F2
+P 4500 2400
+F 0 "#FLG0121" H 4500 2475 50  0001 C CNN
+F 1 "PWR_FLAG" H 4500 2573 50  0000 C CNN
+F 2 "" H 4500 2400 50  0001 C CNN
+F 3 "~" H 4500 2400 50  0001 C CNN
+	1    4500 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 4500 2400
+Wire Wire Line
+	4500 2400 4750 2400
+$Comp
+L power:PWR_FLAG #FLG0122
+U 1 1 64A2504B
+P 4400 4400
+F 0 "#FLG0122" H 4400 4475 50  0001 C CNN
+F 1 "PWR_FLAG" H 4400 4573 50  0000 C CNN
+F 2 "" H 4400 4400 50  0001 C CNN
+F 3 "~" H 4400 4400 50  0001 C CNN
+	1    4400 4400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

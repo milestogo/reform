@@ -384,12 +384,8 @@ Text GLabel 5500 6400 2    50   Input ~ 0
 USB2_RX_N
 Text GLabel 5500 6500 2    50   Input ~ 0
 USB2_RX_P
-Wire Wire Line
-	10850 3400 10900 3400
-Text GLabel 10000 3400 0    50   Input ~ 0
+Text GLabel 10200 3400 0    50   Input ~ 0
 USB_RESETn
-Wire Wire Line
-	10000 3400 10650 3400
 Text GLabel 6400 1800 2    50   Output ~ 0
 USB3_3_VBUS
 Text GLabel 6400 1500 2    50   Output ~ 0
@@ -1176,8 +1172,6 @@ Wire Wire Line
 	1200 1800 1700 1800
 Wire Wire Line
 	1200 1900 1700 1900
-Text Notes 9400 3250 0    50   ~ 0
-TODO: RESETn pulldown
 Wire Wire Line
 	4950 8600 5350 8600
 Wire Wire Line
@@ -2388,16 +2382,16 @@ $EndComp
 $Comp
 L Device:R_Small R103
 U 1 1 5D907271
-P 10750 3400
-F 0 "R103" V 10650 3400 50  0000 C CNN
-F 1 "0" V 10750 3400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 10750 3400 50  0001 C CNN
-F 3 "~" H 10750 3400 50  0001 C CNN
-F 4 "Vishay Dale" H 10750 3400 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 10750 3400 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 10750 3400 50  0001 C CNN "Distributor"
-F 7 "y" H 10750 3400 50  0001 C CNN "Checked"
-	1    10750 3400
+P 9850 2800
+F 0 "R103" V 9750 2800 50  0000 C CNN
+F 1 "100k" V 9950 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9850 2800 50  0001 C CNN
+F 3 "~" H 9850 2800 50  0001 C CNN
+F 4 "Vishay Dale" H 9850 2800 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 9850 2800 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 9850 2800 50  0001 C CNN "Distributor"
+F 7 "y" H 9850 2800 50  0001 C CNN "Checked"
+	1    9850 2800
 	0    1    1    0   
 $EndComp
 $Comp
@@ -2776,8 +2770,6 @@ F 7 "Mouser" H 8700 3300 50  0001 C CNN "Distributor"
 	1    8700 3300
 	1    0    0    -1  
 $EndComp
-Text Notes 8400 4900 0    50   ~ 0
-TODO: hook up SCL/SDA?
 Text GLabel 4900 1400 1    50   Input ~ 0
 USB_PWR
 Wire Wire Line
@@ -2897,4 +2889,25 @@ Text GLabel 12900 900  0    50   Input ~ 0
 3V3_PWR_AUX
 Wire Wire Line
 	12900 900  13050 900 
+Wire Wire Line
+	10200 3400 10900 3400
+$Comp
+L power:GND #PWR0124
+U 1 1 64BF7D92
+P 10150 3000
+F 0 "#PWR0124" H 10150 2750 50  0001 C CNN
+F 1 "GND" H 10155 2827 50  0000 C CNN
+F 2 "" H 10150 3000 50  0001 C CNN
+F 3 "" H 10150 3000 50  0001 C CNN
+	1    10150 3000
+	1    0    0    -1  
+$EndComp
+Text GLabel 9700 2800 0    50   Input ~ 0
+USB_RESETn
+Wire Wire Line
+	9700 2800 9750 2800
+Wire Wire Line
+	9950 2800 10150 2800
+Wire Wire Line
+	10150 2800 10150 3000
 $EndSCHEMATC

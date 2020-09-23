@@ -15,7 +15,7 @@ Comment4 ""
 $EndDescr
 Text GLabel 11050 5350 2    50   Output ~ 0
 EDP_RESETn
-Text GLabel 11050 5450 2    50   Output ~ 0
+Text GLabel 11050 5450 2    50   Input ~ 0
 EDP_IRQ
 Text GLabel 8700 7250 0    50   Input ~ 0
 IMX_JTAG_TDI
@@ -1011,7 +1011,7 @@ U 1 1 5D742FCD
 P 14650 3200
 F 0 "J18" H 14758 3481 50  0000 C CNN
 F 1 "Conn_01x03_Male" H 14758 3390 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 14650 3200 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 14650 3200 50  0001 C CNN
 F 3 "~" H 14650 3200 50  0001 C CNN
 F 4 "Wurth" H 14650 3200 50  0001 C CNN "Manufacturer"
 F 5 "61300311121" H 14650 3200 50  0001 C CNN "Manufacturer_No"

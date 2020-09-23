@@ -111,16 +111,9 @@ F 3 "" H 1800 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3800 1600 3900 1600
-Wire Wire Line
 	4500 1600 4500 1800
 Wire Wire Line
 	3800 1600 3800 1800
-Wire Wire Line
-	3900 1800 3900 1600
-Connection ~ 3900 1600
-Wire Wire Line
-	3900 1600 4000 1600
 Wire Wire Line
 	4000 1600 4000 1800
 Connection ~ 4000 1600
@@ -203,7 +196,7 @@ Wire Wire Line
 	5200 3800 5000 3800
 Text GLabel 5950 4000 2    50   Input ~ 0
 EDP_RESETn
-Text GLabel 2950 4800 0    50   Output ~ 0
+Text GLabel 3050 4800 0    50   Output ~ 0
 EDP_IRQ
 NoConn ~ 5000 2000
 NoConn ~ 5000 2100
@@ -985,7 +978,7 @@ EDP_SDA
 Text GLabel 1850 5100 0    50   Input ~ 0
 EDP_SCL
 Wire Wire Line
-	2950 4800 3350 4800
+	3050 4800 3350 4800
 Wire Wire Line
 	4000 1600 4200 1600
 Wire Wire Line
@@ -1237,4 +1230,24 @@ Wire Wire Line
 	9050 3900 9200 3900
 Wire Wire Line
 	9200 3900 9200 4100
+Wire Wire Line
+	3800 1600 3900 1600
+Wire Wire Line
+	3900 1800 3900 1600
+Connection ~ 3900 1600
+Wire Wire Line
+	3900 1600 4000 1600
+$Comp
+L power:PWR_FLAG #FLG0123
+U 1 1 64C4E0F7
+P 4200 1200
+F 0 "#FLG0123" H 4200 1275 50  0001 C CNN
+F 1 "PWR_FLAG" H 4200 1373 50  0000 C CNN
+F 2 "" H 4200 1200 50  0001 C CNN
+F 3 "~" H 4200 1200 50  0001 C CNN
+	1    4200 1200
+	1    0    0    -1  
+$EndComp
+Text Notes 2600 4700 0    50   ~ 0
+opt. hotplug IRQ
 $EndSCHEMATC

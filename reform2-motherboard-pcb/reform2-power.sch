@@ -2110,8 +2110,6 @@ Text Label 12050 7150 0    50   ~ 0
 LPC_MOSI0
 Text Label 12050 7050 0    50   ~ 0
 LPC_MISO0
-Text Label 12050 6850 0    50   ~ 0
-LPC_~USBCON
 Wire Wire Line
 	12550 6850 12050 6850
 Text Label 12050 6450 0    50   ~ 0
@@ -2552,7 +2550,6 @@ Wire Wire Line
 Text Notes 14850 8450 0    50   ~ 0
 NOSTUFF
 NoConn ~ 14950 7850
-NoConn ~ 12050 6850
 Wire Wire Line
 	8200 3000 8250 3000
 Wire Wire Line
@@ -5901,4 +5898,8 @@ Wire Wire Line
 	2250 1150 2250 1300
 Wire Wire Line
 	1400 1300 2250 1300
+Text Label 12050 6850 0    50   ~ 0
+LPC_~USBCON
+Text Label 11500 8350 0    50   ~ 0
+LPC_~USBCON
 $EndSCHEMATC
