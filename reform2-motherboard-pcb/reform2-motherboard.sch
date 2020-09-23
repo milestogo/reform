@@ -13,46 +13,8 @@ Comment2 "Engineer: Lukas F. Hartmann"
 Comment3 "License: CERN-OHL-S 2.0"
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	10400 5350 10800 5350
-Wire Wire Line
-	11050 5350 11000 5350
 Text GLabel 11050 5350 2    50   Output ~ 0
 EDP_RESETn
-$Comp
-L Device:R_Small R159
-U 1 1 63FE6619
-P 10900 5350
-F 0 "R159" V 11000 5350 50  0000 C CNN
-F 1 "0" V 10900 5350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 10900 5350 50  0001 C CNN
-F 3 "~" H 10900 5350 50  0001 C CNN
-F 4 "Vishay Dale" H 10900 5350 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 10900 5350 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 10900 5350 50  0001 C CNN "Distributor"
-F 7 "y" H 10900 5350 50  0001 C CNN "Checked"
-	1    10900 5350
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	10400 5450 10800 5450
-Wire Wire Line
-	11050 5450 11000 5450
-$Comp
-L Device:R_Small R158
-U 1 1 636E4DF1
-P 10900 5450
-F 0 "R158" V 10800 5450 50  0000 C CNN
-F 1 "0" V 10900 5450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 10900 5450 50  0001 C CNN
-F 3 "~" H 10900 5450 50  0001 C CNN
-F 4 "Vishay Dale" H 10900 5450 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 10900 5450 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 10900 5450 50  0001 C CNN "Distributor"
-F 7 "y" H 10900 5450 50  0001 C CNN "Checked"
-	1    10900 5450
-	0    -1   -1   0   
-$EndComp
 Text GLabel 11050 5450 2    50   Output ~ 0
 EDP_IRQ
 Text GLabel 8700 7250 0    50   Input ~ 0
@@ -852,7 +814,7 @@ Wire Wire Line
 	16300 7550 16300 7400
 Text GLabel 8700 7850 0    50   Input ~ 0
 IMX_RESETn
-Text GLabel 18750 3250 2    50   Output ~ 0
+Text GLabel 19350 3200 2    50   Output ~ 0
 IMX_RESETn
 $Comp
 L Device:R_Small R119
@@ -934,57 +896,57 @@ IMX_JTAG_TDO
 $Comp
 L Device:R_Small R115
 U 1 1 5DC1194C
-P 18300 3050
-F 0 "R115" H 18359 3096 50  0000 L CNN
-F 1 "10k" H 18359 3005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 18300 3050 50  0001 C CNN
-F 3 "~" H 18300 3050 50  0001 C CNN
-F 4 "Yageo" H 18300 3050 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-0710KL" H 18300 3050 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 18300 3050 50  0001 C CNN "Checked"
-F 7 "Mouser" H 18300 3050 50  0001 C CNN "Distributor"
-	1    18300 3050
+P 19050 3000
+F 0 "R115" H 19109 3046 50  0000 L CNN
+F 1 "10k" H 19109 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 19050 3000 50  0001 C CNN
+F 3 "~" H 19050 3000 50  0001 C CNN
+F 4 "Yageo" H 19050 3000 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H 19050 3000 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 19050 3000 50  0001 C CNN "Checked"
+F 7 "Mouser" H 19050 3000 50  0001 C CNN "Distributor"
+	1    19050 3000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR059
 U 1 1 5DC110DB
-P 18300 2950
-F 0 "#PWR059" H 18300 2800 50  0001 C CNN
-F 1 "+3V3" H 18450 3000 50  0000 C CNN
-F 2 "" H 18300 2950 50  0001 C CNN
-F 3 "" H 18300 2950 50  0001 C CNN
-	1    18300 2950
+P 19050 2900
+F 0 "#PWR059" H 19050 2750 50  0001 C CNN
+F 1 "+3V3" H 19200 2950 50  0000 C CNN
+F 2 "" H 19050 2900 50  0001 C CNN
+F 3 "" H 19050 2900 50  0001 C CNN
+	1    19050 2900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	17750 3250 17800 3250
+	18500 3200 18550 3200
 $Comp
 L power:GND #PWR054
 U 1 1 5DBFED7E
-P 17750 3250
-F 0 "#PWR054" H 17750 3000 50  0001 C CNN
-F 1 "GND" V 17755 3122 50  0000 R CNN
-F 2 "" H 17750 3250 50  0001 C CNN
-F 3 "" H 17750 3250 50  0001 C CNN
-	1    17750 3250
+P 18500 3200
+F 0 "#PWR054" H 18500 2950 50  0001 C CNN
+F 1 "GND" V 18505 3072 50  0000 R CNN
+F 2 "" H 18500 3200 50  0001 C CNN
+F 3 "" H 18500 3200 50  0001 C CNN
+	1    18500 3200
 	0    1    1    0   
 $EndComp
 $Comp
 L Switch:SW_Push SW?
 U 1 1 5DBC8BEC
-P 18000 3250
+P 18750 3200
 AR Path="/5CC81028/5DBC8BEC" Ref="SW?"  Part="1" 
 AR Path="/5DBC8BEC" Ref="SW6"  Part="1" 
-F 0 "SW6" H 18000 3535 50  0000 C CNN
-F 1 "SW_Push" H 18000 3444 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2" H 18000 3450 50  0001 C CNN
-F 3 "~" H 18000 3450 50  0001 C CNN
-F 4 "C&K" H 18000 3250 50  0001 C CNN "Manufacturer"
-F 5 "KMR221GLFS" H 18000 3250 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 18000 3250 50  0001 C CNN "Checked"
-F 7 "Mouser" H 18000 3250 50  0001 C CNN "Distributor"
-	1    18000 3250
+F 0 "SW6" H 18750 3485 50  0000 C CNN
+F 1 "SW_Push" H 18750 3394 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2" H 18750 3400 50  0001 C CNN
+F 3 "~" H 18750 3400 50  0001 C CNN
+F 4 "C&K" H 18750 3200 50  0001 C CNN "Manufacturer"
+F 5 "KMR221GLFS" H 18750 3200 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 18750 3200 50  0001 C CNN "Checked"
+F 7 "Mouser" H 18750 3200 50  0001 C CNN "Distributor"
+	1    18750 3200
 	1    0    0    -1  
 $EndComp
 Text GLabel 7500 8550 0    50   Output ~ 0
@@ -1787,12 +1749,12 @@ IMX_RTC_IRQ
 Wire Wire Line
 	8700 10550 7300 10550
 Wire Wire Line
-	18200 3250 18300 3250
+	18950 3200 19050 3200
 Wire Wire Line
-	18300 3150 18300 3250
-Connection ~ 18300 3250
+	19050 3100 19050 3200
+Connection ~ 19050 3200
 Wire Wire Line
-	18300 3250 18750 3250
+	19050 3200 19350 3200
 Wire Wire Line
 	6600 5350 8700 5350
 Wire Wire Line
@@ -1854,4 +1816,40 @@ F 6 "y" H 15050 10500 50  0001 C CNN "DNP"
 	1    0    0    -1  
 $EndComp
 NoConn ~ 8700 5450
+Wire Wire Line
+	10400 5350 11050 5350
+Wire Wire Line
+	10400 5450 11050 5450
+Text Notes 11800 2200 0    50   ~ 0
+TODO: which bead values?\nhttps://www.allaboutcircuits.com/technical-articles/choosing-and-using-ferrite-beads/\nhttps://www.we-online.com/catalog/datasheet/74279265.pdf\n\nsamsung CIS21J121NE
+Text Notes 15400 2500 0    50   ~ 0
+TODO: TVS + Rs
+$Comp
+L Mechanical:MountingHole H14
+U 1 1 64382D78
+P 15950 10250
+F 0 "H14" H 16050 10296 50  0000 L CNN
+F 1 "BADGE" H 16050 10205 50  0000 L CNN
+F 2 "footprints:reform2-motherboard-badge" H 15950 10250 50  0001 C CNN
+F 3 "~" H 15950 10250 50  0001 C CNN
+F 4 "y" H 15950 10250 50  0001 C CNN "Checked"
+F 5 "None" H 15950 10250 50  0001 C CNN "Distributor"
+F 6 "y" H 15950 10250 50  0001 C CNN "DNP"
+	1    15950 10250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H15
+U 1 1 64785954
+P 15950 10500
+F 0 "H15" H 16050 10546 50  0000 L CNN
+F 1 "NOTOUCH" H 16050 10455 50  0000 L CNN
+F 2 "Symbol:ESD-Logo_8.9x8mm_SilkScreen" H 15950 10500 50  0001 C CNN
+F 3 "~" H 15950 10500 50  0001 C CNN
+F 4 "y" H 15950 10500 50  0001 C CNN "Checked"
+F 5 "None" H 15950 10500 50  0001 C CNN "Distributor"
+F 6 "y" H 15950 10500 50  0001 C CNN "DNP"
+	1    15950 10500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

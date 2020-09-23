@@ -105,8 +105,8 @@ Wire Wire Line
 	7850 3950 7950 3950
 Wire Wire Line
 	7950 3950 7950 3850
-Text Notes 3400 5200 0    50   ~ 0
-Includes ESD protection on A port
+Text Notes 3600 5200 0    50   ~ 0
+Includes ESD protection
 Text Notes 6600 4900 0    50   ~ 0
 TE 1775059-1
 $Comp
@@ -307,21 +307,6 @@ Wire Wire Line
 Connection ~ 3900 2700
 Wire Wire Line
 	3900 2700 3900 2850
-$Comp
-L Device:R_Small R34
-U 1 1 5E9353CA
-P 2700 1950
-F 0 "R34" H 2641 1904 50  0000 R CNN
-F 1 "0" H 2641 1995 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2700 1950 50  0001 C CNN
-F 3 "~" H 2700 1950 50  0001 C CNN
-F 4 "Vishay Dale" H 2700 1950 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 2700 1950 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 2700 1950 50  0001 C CNN "Distributor"
-F 7 "y" H 2700 1950 50  0001 C CNN "Checked"
-	1    2700 1950
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	2700 1850 2700 1800
 Wire Wire Line
@@ -407,4 +392,21 @@ Wire Wire Line
 	3100 3550 3100 2850
 Wire Wire Line
 	3100 2850 3900 2850
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 60257C6A
+P 2700 1950
+AR Path="/5D06AC46/60257C6A" Ref="FB?"  Part="1" 
+AR Path="/5D0CA3EB/60257C6A" Ref="FB22"  Part="1" 
+F 0 "FB22" H 2800 1996 50  0000 L CNN
+F 1 "100@100MHz 3A" H 2800 1905 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 2630 1950 50  0001 C CNN
+F 3 "~" H 2700 1950 50  0001 C CNN
+F 4 "Murata" H 2700 1950 50  0001 C CNN "Manufacturer"
+F 5 "BLM18KG101TN1D" H 2700 1950 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 2700 1950 50  0001 C CNN "Checked"
+F 7 "Mouser" H 2700 1950 50  0001 C CNN "Distributor"
+	1    2700 1950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

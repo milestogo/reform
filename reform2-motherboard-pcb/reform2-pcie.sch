@@ -1625,7 +1625,7 @@ F 3 "" H 2150 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 1450 1350 0    50   Input ~ 0
-PCIE1_PWR
+PCIE1_PWR_EN
 Wire Wire Line
 	850  900  850  950 
 $Comp
@@ -1829,4 +1829,6 @@ F 3 "" H 6150 6750 50  0001 C CNN
 	1    6150 6750
 	1    0    0    -1  
 $EndComp
+Text Notes 5000 1650 0    50   ~ 0
+Controlled by PCIE1_PWR
 $EndSCHEMATC

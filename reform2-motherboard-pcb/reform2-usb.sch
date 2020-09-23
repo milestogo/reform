@@ -14,57 +14,6 @@ Comment3 "License: CERN-OHL-S 2.0"
 Comment4 ""
 $EndDescr
 $Comp
-L Device:Crystal_GND24_Small Y1
-U 1 1 5D1A9B07
-P 8700 3300
-AR Path="/5D1A9B07" Ref="Y1"  Part="1" 
-AR Path="/5D06A2FD/5D1A9B07" Ref="Y1"  Part="1" 
-F 0 "Y1" H 8500 3550 50  0000 C CNN
-F 1 "24MHz" H 8550 3450 50  0000 C CNN
-F 2 "Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm" H 8700 3300 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/3/ABM8AIG-783590.pdf" H 8700 3300 50  0001 C CNN
-F 4 "ABM8AIG-24.000MHz-R40-4-T" H 8700 3300 50  0001 C CNN "Manufacturer_No"
-F 5 "Abracon" H 8700 3300 50  0001 C CNN "Manufacturer"
-F 6 "y" H 8700 3300 50  0001 C CNN "Checked"
-F 7 "Mouser" H 8700 3300 50  0001 C CNN "Distributor"
-	1    8700 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L reform2-motherboard-rescue:R_Small-reform-motherboard-rescue R41
-U 1 1 5D1A9B0D
-P 8700 3000
-AR Path="/5D1A9B0D" Ref="R41"  Part="1" 
-AR Path="/5D06A2FD/5D1A9B0D" Ref="R41"  Part="1" 
-F 0 "R41" H 8730 3020 50  0000 L CNN
-F 1 "1M" H 8730 2960 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 8700 3000 50  0001 C CNN
-F 3 "" H 8700 3000 50  0001 C CNN
-F 4 "Yageo" H 8700 3000 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-071ML" H 8700 3000 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 8700 3000 50  0001 C CNN "Distributor"
-F 7 "y" H 8700 3000 50  0001 C CNN "Checked"
-	1    8700 3000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L reform2-motherboard-rescue:C_Small-reform-motherboard-rescue C21
-U 1 1 5D1A9B13
-P 9000 3400
-AR Path="/5D1A9B13" Ref="C21"  Part="1" 
-AR Path="/5D06A2FD/5D1A9B13" Ref="C21"  Part="1" 
-F 0 "C21" H 9050 3450 50  0000 L CNN
-F 1 "18pF" H 9050 3300 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9000 3400 50  0001 C CNN
-F 3 "" H 9000 3400 50  0001 C CNN
-F 4 "Yageo" H 9000 3400 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JRNPO9BN180" H 9000 3400 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 9000 3400 50  0001 C CNN "Checked"
-F 7 "Mouser" H 9000 3400 50  0001 C CNN "Distributor"
-	1    9000 3400
-	1    0    0    -1  
-$EndComp
-$Comp
 L reform2-motherboard-rescue:GND-reform-motherboard-rescue #PWR0136
 U 1 1 5D1A9B19
 P 9000 3500
@@ -75,23 +24,6 @@ F 1 "GND" H 9000 3350 50  0000 C CNN
 F 2 "" H 9000 3500 50  0001 C CNN
 F 3 "" H 9000 3500 50  0001 C CNN
 	1    9000 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L reform2-motherboard-rescue:C_Small-reform-motherboard-rescue C20
-U 1 1 5D1A9B1F
-P 8400 3400
-AR Path="/5D1A9B1F" Ref="C20"  Part="1" 
-AR Path="/5D06A2FD/5D1A9B1F" Ref="C20"  Part="1" 
-F 0 "C20" H 8450 3450 50  0000 L CNN
-F 1 "18pF" H 8450 3300 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 8400 3400 50  0001 C CNN
-F 3 "" H 8400 3400 50  0001 C CNN
-F 4 "Yageo" H 8400 3400 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JRNPO9BN180" H 8400 3400 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 8400 3400 50  0001 C CNN "Checked"
-F 7 "Mouser" H 8400 3400 50  0001 C CNN "Distributor"
-	1    8400 3400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -150,36 +82,6 @@ F 3 "" H 12200 6750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	12200 6750 12200 6700
-$Comp
-L Device:R_Small R59
-U 1 1 5D9E4389
-P 9800 5500
-F 0 "R59" H 9859 5546 50  0000 L CNN
-F 1 "4.7k" H 9859 5455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9800 5500 50  0001 C CNN
-F 3 "~" H 9800 5500 50  0001 C CNN
-F 4 "Yageo" H 9800 5500 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-074K7L" H 9800 5500 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 9800 5500 50  0001 C CNN "Checked"
-F 7 "Mouser" H 9800 5500 50  0001 C CNN "Distributor"
-	1    9800 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R58
-U 1 1 5D9E4EC1
-P 9500 5500
-F 0 "R58" H 9559 5546 50  0000 L CNN
-F 1 "4.7k" H 9559 5455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9500 5500 50  0001 C CNN
-F 3 "~" H 9500 5500 50  0001 C CNN
-F 4 "Yageo" H 9500 5500 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-074K7L" H 9500 5500 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 9500 5500 50  0001 C CNN "Checked"
-F 7 "Mouser" H 9500 5500 50  0001 C CNN "Distributor"
-	1    9500 5500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10900 5300 9800 5300
 Wire Wire Line
@@ -214,90 +116,34 @@ Wire Wire Line
 	9800 5600 9800 5700
 Wire Wire Line
 	9800 5400 9800 5300
-$Comp
-L Device:R_Small R61
-U 1 1 5D9E866F
-P 10200 1600
-F 0 "R61" V 10004 1600 50  0000 C CNN
-F 1 "90.9k 1%" V 10095 1600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 10200 1600 50  0001 C CNN
-F 3 "~" H 10200 1600 50  0001 C CNN
-F 4 "Vishay Dale" H 10200 1600 50  0001 C CNN "Manufacturer"
-F 5 "CRCW060390K9FKEAC" H 10200 1600 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 10200 1600 50  0001 C CNN "Checked"
-F 7 "Mouser" H 10200 1600 50  0001 C CNN "Distributor"
-	1    10200 1600
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R62
-U 1 1 5D9E8B2B
-P 10450 1800
-F 0 "R62" H 10509 1846 50  0000 L CNN
-F 1 "10k 1%" H 10509 1755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 10450 1800 50  0001 C CNN
-F 3 "~" H 10450 1800 50  0001 C CNN
-F 4 "Yageo" H 10450 1800 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-0710KL" H 10450 1800 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 10450 1800 50  0001 C CNN "Checked"
-F 7 "Mouser" H 10450 1800 50  0001 C CNN "Distributor"
-	1    10450 1800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	10300 1600 10450 1600
+	10400 1650 10500 1650
 Wire Wire Line
-	10450 1700 10450 1600
+	10500 1750 10500 1650
 $Comp
 L power:GND #PWR032
 U 1 1 5D9E9423
-P 10450 1950
-F 0 "#PWR032" H 10450 1700 50  0001 C CNN
-F 1 "GND" H 10455 1777 50  0000 C CNN
-F 2 "" H 10450 1950 50  0001 C CNN
-F 3 "" H 10450 1950 50  0001 C CNN
-	1    10450 1950
+P 10500 2050
+F 0 "#PWR032" H 10500 1800 50  0001 C CNN
+F 1 "GND" H 10505 1877 50  0000 C CNN
+F 2 "" H 10500 2050 50  0001 C CNN
+F 3 "" H 10500 2050 50  0001 C CNN
+	1    10500 2050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10450 1950 10450 1900
-$Comp
-L Device:C_Small C43
-U 1 1 5D9E9C3A
-P 9900 1800
-F 0 "C43" H 9992 1846 50  0000 L CNN
-F 1 "10uF" H 9992 1755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9900 1800 50  0001 C CNN
-F 3 "~" H 9900 1800 50  0001 C CNN
-F 4 "Murata" H 9900 1800 50  0001 C CNN "Manufacturer"
-F 5 "GRM188R6YA106MA73D" H 9900 1800 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 9900 1800 50  0001 C CNN "Checked"
-F 7 "Mouser" H 9900 1800 50  0001 C CNN "Distributor"
-	1    9900 1800
-	1    0    0    -1  
-$EndComp
+	10500 2050 10500 2000
 Wire Wire Line
-	10100 1600 9900 1600
+	10200 1650 10100 1650
 Wire Wire Line
-	9900 1600 9900 1700
-$Comp
-L power:GND #PWR030
-U 1 1 5D9EA2D0
-P 9900 1950
-F 0 "#PWR030" H 9900 1700 50  0001 C CNN
-F 1 "GND" H 9905 1777 50  0000 C CNN
-F 2 "" H 9900 1950 50  0001 C CNN
-F 3 "" H 9900 1950 50  0001 C CNN
-	1    9900 1950
-	1    0    0    -1  
-$EndComp
+	10100 1650 10100 1750
 Wire Wire Line
-	9900 1950 9900 1900
-Text GLabel 9600 1600 0    50   Input ~ 0
+	10100 2000 10100 1950
+Text GLabel 10000 1650 0    50   Input ~ 0
 USB_PWR
 Wire Wire Line
-	9600 1600 9900 1600
-Connection ~ 9900 1600
+	10000 1650 10100 1650
+Connection ~ 10100 1650
 Wire Wire Line
 	11800 2300 11900 2300
 Wire Wire Line
@@ -327,17 +173,6 @@ Wire Wire Line
 Wire Wire Line
 	12300 2500 12300 2300
 Connection ~ 12300 2300
-$Comp
-L power:+3V3 #PWR034
-U 1 1 5D9F6507
-P 13050 1150
-F 0 "#PWR034" H 13050 1000 50  0001 C CNN
-F 1 "+3V3" H 13065 1323 50  0000 C CNN
-F 2 "" H 13050 1150 50  0001 C CNN
-F 3 "" H 13050 1150 50  0001 C CNN
-	1    13050 1150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	11300 2300 11400 2300
 Wire Wire Line
@@ -367,9 +202,9 @@ Text GLabel 13500 3200 2    50   Output ~ 0
 USB3_1_DP
 Text GLabel 13500 3300 2    50   Output ~ 0
 USB3_1_DN
-Text GLabel 2850 4300 2    50   Input ~ 0
+Text GLabel 3150 4300 2    50   Input ~ 0
 USB3_1_SSTXP
-Text GLabel 2850 4200 2    50   Input ~ 0
+Text GLabel 3150 4200 2    50   Input ~ 0
 USB3_1_SSTXN
 Text GLabel 1950 4000 2    50   Input ~ 0
 USB3_1_SSRXP
@@ -379,82 +214,18 @@ Text GLabel 1950 3700 2    50   Input ~ 0
 USB3_1_DP
 Text GLabel 1950 3600 2    50   Input ~ 0
 USB3_1_DN
-$Comp
-L Device:R_Small R55
-U 1 1 5DA0DCB3
-P 1250 4800
-F 0 "R55" H 1309 4846 50  0000 L CNN
-F 1 "1M" H 1309 4755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1250 4800 50  0001 C CNN
-F 3 "~" H 1250 4800 50  0001 C CNN
-F 4 "Yageo" H 1250 4800 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-071ML" H 1250 4800 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 1250 4800 50  0001 C CNN "Distributor"
-F 7 "y" H 1250 4800 50  0001 C CNN "Checked"
-	1    1250 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:USB3_A J6
-U 1 1 5DA00825
-P 1450 3800
-F 0 "J6" H 1507 4517 50  0000 C CNN
-F 1 "USB3_A" H 1507 4426 50  0000 C CNN
-F 2 "Connector_USB:USB3_A_Molex_48393-001" H 1600 3900 50  0001 C CNN
-F 3 "~" H 1600 3900 50  0001 C CNN
-F 4 "Molex" H 1450 3800 50  0001 C CNN "Manufacturer"
-F 5 "48393-0003" H 1450 3800 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 1450 3800 50  0001 C CNN "Checked"
-F 7 "Mouser" H 1450 3800 50  0001 C CNN "Distributor"
-	1    1450 3800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1250 4700 1250 4600
 Wire Wire Line
 	1250 4900 1250 5050
-$Comp
-L reform2-motherboard-rescue:C_Small-reform-motherboard-rescue C?
-U 1 1 5DA14D06
-P 2250 4200
-AR Path="/5DA14D06" Ref="C?"  Part="1" 
-AR Path="/5D06A2FD/5DA14D06" Ref="C40"  Part="1" 
-F 0 "C40" H 2260 4270 50  0000 L CNN
-F 1 "0.1uF" H 2260 4120 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2250 4200 50  0001 C CNN
-F 3 "" H 2250 4200 50  0001 C CNN
-F 4 "Yageo" H 2250 4200 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 2250 4200 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 2250 4200 50  0001 C CNN "Checked"
-F 7 "Mouser" H 2250 4200 50  0001 C CNN "Distributor"
-	1    2250 4200
-	0    1    1    0   
-$EndComp
-$Comp
-L reform2-motherboard-rescue:C_Small-reform-motherboard-rescue C?
-U 1 1 5DA15148
-P 2500 4300
-AR Path="/5DA15148" Ref="C?"  Part="1" 
-AR Path="/5D06A2FD/5DA15148" Ref="C42"  Part="1" 
-F 0 "C42" H 2510 4370 50  0000 L CNN
-F 1 "0.1uF" H 2510 4220 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2500 4300 50  0001 C CNN
-F 3 "" H 2500 4300 50  0001 C CNN
-F 4 "Yageo" H 2500 4300 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 2500 4300 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 2500 4300 50  0001 C CNN "Checked"
-F 7 "Mouser" H 2500 4300 50  0001 C CNN "Distributor"
-	1    2500 4300
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	2600 4300 2850 4300
+	3100 4300 3150 4300
 Wire Wire Line
-	2850 4200 2350 4200
+	3150 4200 2850 4200
 Wire Wire Line
-	2400 4300 1950 4300
+	2900 4300 1950 4300
 Wire Wire Line
-	2150 4200 1950 4200
+	2650 4200 1950 4200
 Text GLabel 13500 3700 2    50   Output ~ 0
 USB3_2_SSTXP
 Text GLabel 13500 3800 2    50   Output ~ 0
@@ -475,9 +246,9 @@ Text GLabel 13500 5900 2    50   Output ~ 0
 USB3_4_DP
 Text GLabel 13500 6000 2    50   Output ~ 0
 USB3_4_DN
-Text GLabel 6200 4300 2    50   Input ~ 0
+Text GLabel 6750 4300 2    50   Input ~ 0
 USB3_2_SSTXP
-Text GLabel 6200 4200 2    50   Input ~ 0
+Text GLabel 6750 4200 2    50   Input ~ 0
 USB3_2_SSTXN
 Text GLabel 5500 4000 2    50   Input ~ 0
 USB3_2_SSRXP
@@ -487,93 +258,14 @@ Text GLabel 5500 3700 2    50   Input ~ 0
 USB3_2_DP
 Text GLabel 5500 3600 2    50   Input ~ 0
 USB3_2_DN
-$Comp
-L Connector:USB3_A J5
-U 1 1 5DA2390D
-P 5000 3800
-F 0 "J5" H 5057 4517 50  0000 C CNN
-F 1 "USB3_A" H 5057 4426 50  0000 C CNN
-F 2 "Connector_USB:USB3_A_Molex_48393-001" H 5150 3900 50  0001 C CNN
-F 3 "~" H 5150 3900 50  0001 C CNN
-F 4 "Molex" H 5000 3800 50  0001 C CNN "Manufacturer"
-F 5 "48393-0003" H 5000 3800 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 5000 3800 50  0001 C CNN "Checked"
-F 7 "Mouser" H 5000 3800 50  0001 C CNN "Distributor"
-	1    5000 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L reform2-motherboard-rescue:C_Small-reform-motherboard-rescue C?
-U 1 1 5DA23928
-P 5650 4200
-AR Path="/5DA23928" Ref="C?"  Part="1" 
-AR Path="/5D06A2FD/5DA23928" Ref="C39"  Part="1" 
-F 0 "C39" H 5660 4270 50  0000 L CNN
-F 1 "0.1uF" H 5660 4120 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5650 4200 50  0001 C CNN
-F 3 "" H 5650 4200 50  0001 C CNN
-F 4 "Yageo" H 5650 4200 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 5650 4200 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 5650 4200 50  0001 C CNN "Checked"
-F 7 "Mouser" H 5650 4200 50  0001 C CNN "Distributor"
-	1    5650 4200
-	0    1    1    0   
-$EndComp
-$Comp
-L reform2-motherboard-rescue:C_Small-reform-motherboard-rescue C?
-U 1 1 5DA23932
-P 6050 4300
-AR Path="/5DA23932" Ref="C?"  Part="1" 
-AR Path="/5D06A2FD/5DA23932" Ref="C41"  Part="1" 
-F 0 "C41" H 6060 4370 50  0000 L CNN
-F 1 "0.1uF" H 6060 4220 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6050 4300 50  0001 C CNN
-F 3 "" H 6050 4300 50  0001 C CNN
-F 4 "Yageo" H 6050 4300 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 6050 4300 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 6050 4300 50  0001 C CNN "Checked"
-F 7 "Mouser" H 6050 4300 50  0001 C CNN "Distributor"
-	1    6050 4300
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	6150 4300 6200 4300
+	6700 4300 6750 4300
 Wire Wire Line
-	6200 4200 5750 4200
+	6750 4200 6450 4200
 Wire Wire Line
-	5950 4300 5500 4300
+	6500 4300 5500 4300
 Wire Wire Line
-	5550 4200 5500 4200
-$Comp
-L Interface_USB:TPS2561 U15
-U 1 1 5DA289BD
-P 2300 1800
-F 0 "U15" H 2300 2367 50  0000 C CNN
-F 1 "TPS2561" H 2300 2276 50  0000 C CNN
-F 2 "Package_SON:VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm_ThermalVias" H 2500 2300 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tps2561.pdf" H 1900 2300 50  0001 C CNN
-F 4 "Texas Instruments" H 2300 1800 50  0001 C CNN "Manufacturer"
-F 5 "TPS2561DRCR" H 2300 1800 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 2300 1800 50  0001 C CNN "Checked"
-F 7 "Mouser" H 2300 1800 50  0001 C CNN "Distributor"
-	1    2300 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Interface_USB:TPS2561 U16
-U 1 1 5DA34B5D
-P 5800 1800
-F 0 "U16" H 5800 2367 50  0000 C CNN
-F 1 "TPS2561" H 5800 2276 50  0000 C CNN
-F 2 "Package_SON:VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm_ThermalVias" H 6000 2300 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tps2561.pdf" H 5400 2300 50  0001 C CNN
-F 4 "Texas Instruments" H 5800 1800 50  0001 C CNN "Manufacturer"
-F 5 "TPS2561DRCR" H 5800 1800 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 5800 1800 50  0001 C CNN "Checked"
-F 7 "Mouser" H 5800 1800 50  0001 C CNN "Distributor"
-	1    5800 1800
-	1    0    0    -1  
-$EndComp
+	6250 4200 5500 4200
 Wire Wire Line
 	9300 3300 9300 3600
 Wire Wire Line
@@ -583,82 +275,20 @@ Wire Wire Line
 Wire Wire Line
 	8200 3700 10900 3700
 Wire Wire Line
-	10450 1600 10850 1600
+	10500 1650 10850 1650
 Wire Wire Line
-	10850 1600 10850 3200
+	10850 1650 10850 3200
 Wire Wire Line
 	10850 3200 10900 3200
-Connection ~ 10450 1600
-$Comp
-L Device:Ferrite_Bead_Small FB2
-U 1 1 5DA4FAF9
-P 15450 1900
-F 0 "FB2" H 15200 2000 50  0000 L CNN
-F 1 "220@100MHz 1.4A" H 14650 1900 50  0000 L CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" V 15380 1900 50  0001 C CNN
-F 3 "~" H 15450 1900 50  0001 C CNN
-F 4 "Murata" H 15450 1900 50  0001 C CNN "Manufacturer"
-F 5 "BLM18PG221SH1D" H 15450 1900 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 15450 1900 50  0001 C CNN "Checked"
-F 7 "Mouser" H 15450 1900 50  0001 C CNN "Distributor"
-	1    15450 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Ferrite_Bead_Small FB1
-U 1 1 5DA53C5D
-P 13050 1300
-F 0 "FB1" H 13150 1346 50  0000 L CNN
-F 1 "220@100MHz 1.4A" H 13150 1255 50  0000 L CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" V 12980 1300 50  0001 C CNN
-F 3 "~" H 13050 1300 50  0001 C CNN
-F 4 "BLM18PG221SH1D" H 13050 1300 50  0001 C CNN "Manufacturer_No"
-F 5 "Murata" H 13050 1300 50  0001 C CNN "Manufacturer"
-F 6 "y" H 13050 1300 50  0001 C CNN "Checked"
-F 7 "Mouser" H 13050 1300 50  0001 C CNN "Distributor"
-	1    13050 1300
-	1    0    0    -1  
-$EndComp
+Connection ~ 10500 1650
 Wire Wire Line
 	13050 1400 13050 1750
 Wire Wire Line
-	13050 1150 13050 1200
-Wire Wire Line
 	15450 2000 15450 2300
-$Comp
-L Device:R_Small R57
-U 1 1 5DA64888
-P 9500 4650
-F 0 "R57" H 9559 4696 50  0000 L CNN
-F 1 "9.53k" H 9559 4605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9500 4650 50  0001 C CNN
-F 3 "~" H 9500 4650 50  0001 C CNN
-F 4 "Yageo" H 9500 4650 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-079K53L" H 9500 4650 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 9500 4650 50  0001 C CNN "Checked"
-F 7 "Mouser" H 9500 4650 50  0001 C CNN "Distributor"
-	1    9500 4650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10900 4500 9500 4500
 Wire Wire Line
 	9500 4550 9500 4500
-$Comp
-L Device:R_Small R63
-U 1 1 5DA6B593
-P 10500 5750
-F 0 "R63" H 10559 5796 50  0000 L CNN
-F 1 "4.7k" H 10559 5705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 10500 5750 50  0001 C CNN
-F 3 "~" H 10500 5750 50  0001 C CNN
-F 4 "Yageo" H 10500 5750 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-074K7L" H 10500 5750 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 10500 5750 50  0001 C CNN "Checked"
-F 7 "Mouser" H 10500 5750 50  0001 C CNN "Distributor"
-	1    10500 5750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10900 5600 10500 5600
 Wire Wire Line
@@ -689,21 +319,6 @@ F 3 "" H 9500 4800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9500 4800 9500 4750
-$Comp
-L Device:R_Small R60
-U 1 1 5DB86F24
-P 10100 5500
-F 0 "R60" H 10159 5546 50  0000 L CNN
-F 1 "4.7k" H 10159 5455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 10100 5500 50  0001 C CNN
-F 3 "~" H 10100 5500 50  0001 C CNN
-F 4 "Yageo" H 10100 5500 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-074K7L" H 10100 5500 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 10100 5500 50  0001 C CNN "Checked"
-F 7 "Mouser" H 10100 5500 50  0001 C CNN "Distributor"
-	1    10100 5500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10900 5400 10100 5400
 $Comp
@@ -746,17 +361,6 @@ F 3 "" H 2400 2500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2400 2500 2400 2450
-$Comp
-L power:+5V #PWR023
-U 1 1 5DB992A4
-P 1550 1400
-F 0 "#PWR023" H 1550 1250 50  0001 C CNN
-F 1 "+5V" H 1565 1573 50  0000 C CNN
-F 2 "" H 1550 1400 50  0001 C CNN
-F 3 "" H 1550 1400 50  0001 C CNN
-	1    1550 1400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1550 1400 1550 1500
 Wire Wire Line
@@ -768,21 +372,6 @@ Wire Wire Line
 Connection ~ 1550 1500
 Text GLabel 7100 3400 2    50   Input ~ 0
 USB3_2_VBUS
-$Comp
-L Connector:Conn_01x04_Male J9
-U 1 1 60F17696
-P 1300 9800
-F 0 "J9" H 1408 10081 50  0000 C CNN
-F 1 "USB_INT1" H 1408 9990 50  0000 C CNN
-F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 1300 9800 50  0001 C CNN
-F 3 "~" H 1300 9800 50  0001 C CNN
-F 4 "JST" H 1300 9800 50  0001 C CNN "Manufacturer"
-F 5 "B4B-PH-K-S(LF)(SN)" H 1300 9800 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 1300 9800 50  0001 C CNN "Checked"
-F 7 "Digikey" H 1300 9800 50  0001 C CNN "Distributor"
-	1    1300 9800
-	1    0    0    -1  
-$EndComp
 Text GLabel 5500 6700 2    50   Input ~ 0
 USB2_TX_N
 Text GLabel 5500 6800 2    50   Input ~ 0
@@ -795,36 +384,6 @@ Text GLabel 5500 6400 2    50   Input ~ 0
 USB2_RX_N
 Text GLabel 5500 6500 2    50   Input ~ 0
 USB2_RX_P
-$Comp
-L Connector:Conn_01x04_Male J14
-U 1 1 5DBC25D6
-P 4550 9800
-F 0 "J14" H 4658 10081 50  0000 C CNN
-F 1 "USB_INT2" H 4658 9990 50  0000 C CNN
-F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 4550 9800 50  0001 C CNN
-F 3 "~" H 4550 9800 50  0001 C CNN
-F 4 "JST" H 4550 9800 50  0001 C CNN "Manufacturer"
-F 5 "B4B-PH-K-S(LF)(SN)" H 4550 9800 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 4550 9800 50  0001 C CNN "Checked"
-F 7 "Digikey" H 4550 9800 50  0001 C CNN "Distributor"
-	1    4550 9800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R103
-U 1 1 5D907271
-P 10750 3400
-F 0 "R103" V 10650 3400 50  0000 C CNN
-F 1 "0" V 10750 3400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 10750 3400 50  0001 C CNN
-F 3 "~" H 10750 3400 50  0001 C CNN
-F 4 "Vishay Dale" H 10750 3400 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 10750 3400 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 10750 3400 50  0001 C CNN "Distributor"
-F 7 "y" H 10750 3400 50  0001 C CNN "Checked"
-	1    10750 3400
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	10850 3400 10900 3400
 Text GLabel 10000 3400 0    50   Input ~ 0
@@ -835,19 +394,6 @@ Text GLabel 6400 1800 2    50   Output ~ 0
 USB3_3_VBUS
 Text GLabel 6400 1500 2    50   Output ~ 0
 USB3_4_VBUS
-$Comp
-L power:+5V #PWR0193
-U 1 1 5D917009
-P 4900 1400
-F 0 "#PWR0193" H 4900 1250 50  0001 C CNN
-F 1 "+5V" H 4915 1573 50  0000 C CNN
-F 2 "" H 4900 1400 50  0001 C CNN
-F 3 "" H 4900 1400 50  0001 C CNN
-	1    4900 1400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4900 1400 4900 1500
 Wire Wire Line
 	4900 1500 5200 1500
 Wire Wire Line
@@ -876,135 +422,60 @@ F 3 "" H 5900 2550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5900 2400 5900 2450
-Text GLabel 3550 9700 2    50   Input ~ 0
+Text GLabel 3550 9950 2    50   Input ~ 0
 USB3_3_VBUS
-Text GLabel 6800 9700 2    50   Input ~ 0
+Text GLabel 6800 9950 2    50   Input ~ 0
 USB3_4_VBUS
 $Comp
 L power:GND #PWR0195
 U 1 1 5D9342E9
-P 1550 10050
-F 0 "#PWR0195" H 1550 9800 50  0001 C CNN
-F 1 "GND" H 1555 9877 50  0000 C CNN
-F 2 "" H 1550 10050 50  0001 C CNN
-F 3 "" H 1550 10050 50  0001 C CNN
-	1    1550 10050
+P 1550 10300
+F 0 "#PWR0195" H 1550 10050 50  0001 C CNN
+F 1 "GND" H 1555 10127 50  0000 C CNN
+F 2 "" H 1550 10300 50  0001 C CNN
+F 3 "" H 1550 10300 50  0001 C CNN
+	1    1550 10300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1550 10050 1550 10000
+	1550 10300 1550 10250
 Wire Wire Line
-	1550 10000 1500 10000
+	1550 10250 1500 10250
 $Comp
 L power:GND #PWR0196
 U 1 1 5D93843A
-P 4800 10050
-F 0 "#PWR0196" H 4800 9800 50  0001 C CNN
-F 1 "GND" H 4805 9877 50  0000 C CNN
-F 2 "" H 4800 10050 50  0001 C CNN
-F 3 "" H 4800 10050 50  0001 C CNN
-	1    4800 10050
+P 4800 10300
+F 0 "#PWR0196" H 4800 10050 50  0001 C CNN
+F 1 "GND" H 4805 10127 50  0000 C CNN
+F 2 "" H 4800 10300 50  0001 C CNN
+F 3 "" H 4800 10300 50  0001 C CNN
+	1    4800 10300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4800 10050 4800 10000
+	4800 10300 4800 10250
 Wire Wire Line
-	4800 10000 4750 10000
-Text GLabel 1900 9900 2    50   Input ~ 0
+	4800 10250 4750 10250
+Text GLabel 1900 10150 2    50   Input ~ 0
 USB3_3_DP
-Text GLabel 1900 9800 2    50   Input ~ 0
+Text GLabel 1900 10050 2    50   Input ~ 0
 USB3_3_DN
-$Comp
-L Device:R_Small R90
-U 1 1 5D950F53
-P 1650 9900
-F 0 "R90" V 1750 9900 50  0000 C CNN
-F 1 "27" V 1650 9900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1650 9900 50  0001 C CNN
-F 3 "~" H 1650 9900 50  0001 C CNN
-F 4 "Yageo" H 1650 9900 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-0727RL" H 1650 9900 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 1650 9900 50  0001 C CNN "Checked"
-F 7 "Mouser" H 1650 9900 50  0001 C CNN "Distributor"
-	1    1650 9900
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R92
-U 1 1 5D95F31A
-P 1800 9800
-F 0 "R92" V 1900 9800 50  0000 C CNN
-F 1 "27" V 1800 9800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1800 9800 50  0001 C CNN
-F 3 "~" H 1800 9800 50  0001 C CNN
-F 4 "Yageo" H 1800 9800 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-0727RL" H 1800 9800 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 1800 9800 50  0001 C CNN "Checked"
-F 7 "Mouser" H 1800 9800 50  0001 C CNN "Distributor"
-	1    1800 9800
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	1700 9800 1500 9800
+	1700 10050 1500 10050
 Wire Wire Line
-	1500 9900 1550 9900
+	1500 10150 1550 10150
 Wire Wire Line
-	1750 9900 1900 9900
-Text GLabel 5150 9900 2    50   Input ~ 0
+	1750 10150 1900 10150
+Text GLabel 5150 10150 2    50   Input ~ 0
 USB3_4_DP
-Text GLabel 5150 9800 2    50   Input ~ 0
+Text GLabel 5150 10050 2    50   Input ~ 0
 USB3_4_DN
-$Comp
-L Device:R_Small R91
-U 1 1 5D96EEAB
-P 4900 9900
-F 0 "R91" V 5000 9900 50  0000 C CNN
-F 1 "27" V 4900 9900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4900 9900 50  0001 C CNN
-F 3 "~" H 4900 9900 50  0001 C CNN
-F 4 "Yageo" H 4900 9900 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-0727RL" H 4900 9900 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 4900 9900 50  0001 C CNN "Checked"
-F 7 "Mouser" H 4900 9900 50  0001 C CNN "Distributor"
-	1    4900 9900
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R93
-U 1 1 5D96EEB5
-P 5050 9800
-F 0 "R93" V 5150 9800 50  0000 C CNN
-F 1 "27" V 5050 9800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5050 9800 50  0001 C CNN
-F 3 "~" H 5050 9800 50  0001 C CNN
-F 4 "Yageo" H 5050 9800 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-0727RL" H 5050 9800 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 5050 9800 50  0001 C CNN "Checked"
-F 7 "Mouser" H 5050 9800 50  0001 C CNN "Distributor"
-	1    5050 9800
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	4950 9800 4750 9800
+	4950 10050 4750 10050
 Wire Wire Line
-	5000 9900 5150 9900
+	5000 10150 5150 10150
 Wire Wire Line
-	4800 9900 4750 9900
-$Comp
-L Connector:USB3_A J17
-U 1 1 5DA0C9AF
-P 5000 6300
-F 0 "J17" H 5057 7017 50  0000 C CNN
-F 1 "USB3_A" H 5057 6926 50  0000 C CNN
-F 2 "Connector_USB:USB3_A_Molex_48393-001" H 5150 6400 50  0001 C CNN
-F 3 "~" H 5150 6400 50  0001 C CNN
-F 4 "Molex" H 5000 6300 50  0001 C CNN "Manufacturer"
-F 5 "48393-0003" H 5000 6300 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 5000 6300 50  0001 C CNN "Checked"
-F 7 "Mouser" H 5000 6300 50  0001 C CNN "Distributor"
-	1    5000 6300
-	1    0    0    -1  
-$EndComp
+	4800 10150 4750 10150
 Text GLabel 7050 5900 2    50   Input ~ 0
 USB_PWR
 Text GLabel 13500 3500 2    50   Input ~ 0
@@ -1023,21 +494,6 @@ Text GLabel 2100 6700 2    50   Output ~ 0
 USB3_3_OVERCURn
 Text GLabel 2100 6800 2    50   Output ~ 0
 USB3_4_OVERCURn
-$Comp
-L Device:R_Small R87
-U 1 1 5DA34EE4
-P 2900 2200
-F 0 "R87" H 2959 2246 50  0000 L CNN
-F 1 "24.9k" H 2959 2155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2900 2200 50  0001 C CNN
-F 3 "~" H 2900 2200 50  0001 C CNN
-F 4 "Yageo" H 2900 2200 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-0724K9L" H 2900 2200 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 2900 2200 50  0001 C CNN "Checked"
-F 7 "Mouser" H 2900 2200 50  0001 C CNN "Distributor"
-	1    2900 2200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2900 2300 2900 2450
 Wire Wire Line
@@ -1045,21 +501,6 @@ Wire Wire Line
 Connection ~ 2400 2450
 Wire Wire Line
 	2400 2450 2400 2400
-$Comp
-L Device:R_Small R99
-U 1 1 5DA3B1A5
-P 6400 2200
-F 0 "R99" H 6459 2246 50  0000 L CNN
-F 1 "24.9k" H 6459 2155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6400 2200 50  0001 C CNN
-F 3 "~" H 6400 2200 50  0001 C CNN
-F 4 "Yageo" H 6400 2200 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-0724K9L" H 6400 2200 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 6400 2200 50  0001 C CNN "Checked"
-F 7 "Mouser" H 6400 2200 50  0001 C CNN "Distributor"
-	1    6400 2200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6400 2300 6400 2450
 Wire Wire Line
@@ -1075,21 +516,6 @@ Wire Wire Line
 	5900 2450 5700 2450
 Wire Wire Line
 	5700 2450 5700 2400
-$Comp
-L Device:C_Small C66
-U 1 1 5DA7850D
-P 1550 2300
-F 0 "C66" H 1642 2346 50  0000 L CNN
-F 1 "0.1uF" H 1642 2255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1550 2300 50  0001 C CNN
-F 3 "~" H 1550 2300 50  0001 C CNN
-F 4 "Yageo" H 1550 2300 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 1550 2300 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 1550 2300 50  0001 C CNN "Checked"
-F 7 "Mouser" H 1550 2300 50  0001 C CNN "Distributor"
-	1    1550 2300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1550 2200 1550 1600
 Connection ~ 1550 1600
@@ -1102,66 +528,6 @@ Text GLabel 2100 6500 2    50   Output ~ 0
 USB3_1_OVERCURn
 Text GLabel 2100 6600 2    50   Output ~ 0
 USB3_2_OVERCURn
-$Comp
-L Device:R_Small R86
-U 1 1 5DA9C65D
-P 2050 6350
-F 0 "R86" H 1991 6304 50  0000 R CNN
-F 1 "100k" H 1991 6395 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2050 6350 50  0001 C CNN
-F 3 "~" H 2050 6350 50  0001 C CNN
-F 4 "Vishay Dale" H 2050 6350 50  0001 C CNN "Manufacturer"
-F 5 "CRCW0603100KJNEAC" H 2050 6350 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 2050 6350 50  0001 C CNN "Checked"
-F 7 "Mouser" H 2050 6350 50  0001 C CNN "Distributor"
-	1    2050 6350
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R85
-U 1 1 5DAA369B
-P 1800 6500
-F 0 "R85" H 1741 6454 50  0000 R CNN
-F 1 "100k" H 1741 6545 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1800 6500 50  0001 C CNN
-F 3 "~" H 1800 6500 50  0001 C CNN
-F 4 "Vishay Dale" H 1800 6500 50  0001 C CNN "Manufacturer"
-F 5 "CRCW0603100KJNEAC" H 1800 6500 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 1800 6500 50  0001 C CNN "Checked"
-F 7 "Mouser" H 1800 6500 50  0001 C CNN "Distributor"
-	1    1800 6500
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R84
-U 1 1 5DAA3945
-P 1550 6600
-F 0 "R84" H 1491 6554 50  0000 R CNN
-F 1 "100k" H 1491 6645 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1550 6600 50  0001 C CNN
-F 3 "~" H 1550 6600 50  0001 C CNN
-F 4 "Vishay Dale" H 1550 6600 50  0001 C CNN "Manufacturer"
-F 5 "CRCW0603100KJNEAC" H 1550 6600 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 1550 6600 50  0001 C CNN "Checked"
-F 7 "Mouser" H 1550 6600 50  0001 C CNN "Distributor"
-	1    1550 6600
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R81
-U 1 1 5DAA3B52
-P 1300 6700
-F 0 "R81" H 1241 6654 50  0000 R CNN
-F 1 "100k" H 1241 6745 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1300 6700 50  0001 C CNN
-F 3 "~" H 1300 6700 50  0001 C CNN
-F 4 "Vishay Dale" H 1300 6700 50  0001 C CNN "Manufacturer"
-F 5 "CRCW0603100KJNEAC" H 1300 6700 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 1300 6700 50  0001 C CNN "Checked"
-F 7 "Mouser" H 1300 6700 50  0001 C CNN "Distributor"
-	1    1300 6700
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	2050 6450 2050 6500
 Wire Wire Line
@@ -1192,39 +558,9 @@ Text GLabel 6400 1900 2    50   Output ~ 0
 USB3_3_OVERCURn
 Text GLabel 6400 1600 2    50   Output ~ 0
 USB3_4_OVERCURn
-$Comp
-L Device:C_Small C73
-U 1 1 5DAE283C
-P 4900 2300
-F 0 "C73" H 4992 2346 50  0000 L CNN
-F 1 "0.1uF" H 4992 2255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4900 2300 50  0001 C CNN
-F 3 "~" H 4900 2300 50  0001 C CNN
-F 4 "Yageo" H 4900 2300 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 4900 2300 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 4900 2300 50  0001 C CNN "Checked"
-F 7 "Mouser" H 4900 2300 50  0001 C CNN "Distributor"
-	1    4900 2300
-	1    0    0    -1  
-$EndComp
 NoConn ~ 10900 4700
 NoConn ~ 10900 4800
 NoConn ~ 10900 4900
-$Comp
-L Device:R_Small R102
-U 1 1 5DBAC04C
-P 10300 4850
-F 0 "R102" H 10359 4896 50  0000 L CNN
-F 1 "1.5k" H 10359 4805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 10300 4850 50  0001 C CNN
-F 3 "~" H 10300 4850 50  0001 C CNN
-F 4 "Yageo" H 10300 4850 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-071K5L" H 10300 4850 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 10300 4850 50  0001 C CNN "Checked"
-F 7 "Mouser" H 10300 4850 50  0001 C CNN "Distributor"
-	1    10300 4850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10300 4750 10300 2300
 Wire Wire Line
@@ -1241,38 +577,8 @@ Wire Wire Line
 Wire Wire Line
 	4900 2450 4900 2400
 Connection ~ 5700 2450
-$Comp
-L Device:R_Small R98
-U 1 1 5DC767AD
-P 5800 5900
-F 0 "R98" V 5700 5900 50  0000 C CNN
-F 1 "0" V 5800 5900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5800 5900 50  0001 C CNN
-F 3 "~" H 5800 5900 50  0001 C CNN
-F 4 "Vishay Dale" H 5800 5900 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 5800 5900 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 5800 5900 50  0001 C CNN "Distributor"
-F 7 "y" H 5800 5900 50  0001 C CNN "Checked"
-	1    5800 5900
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5500 5900 5600 5900
-$Comp
-L Device:C_Small C70
-U 1 1 5DC98163
-P 2950 3550
-F 0 "C70" H 3042 3596 50  0000 L CNN
-F 1 "0.1uF" H 3042 3505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2950 3550 50  0001 C CNN
-F 3 "~" H 2950 3550 50  0001 C CNN
-F 4 "Yageo" H 2950 3550 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 2950 3550 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 2950 3550 50  0001 C CNN "Checked"
-F 7 "Mouser" H 2950 3550 50  0001 C CNN "Distributor"
-	1    2950 3550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2550 3450 2550 3400
 Connection ~ 2550 3400
@@ -1303,21 +609,6 @@ Wire Wire Line
 Connection ~ 2950 3700
 Wire Wire Line
 	2950 3700 2950 3650
-$Comp
-L Device:C_Small C85
-U 1 1 5DCE0984
-P 6500 3550
-F 0 "C85" H 6592 3596 50  0000 L CNN
-F 1 "0.1uF" H 6592 3505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6500 3550 50  0001 C CNN
-F 3 "~" H 6500 3550 50  0001 C CNN
-F 4 "Yageo" H 6500 3550 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 6500 3550 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 6500 3550 50  0001 C CNN "Checked"
-F 7 "Mouser" H 6500 3550 50  0001 C CNN "Distributor"
-	1    6500 3550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6100 3450 6100 3400
 Connection ~ 6100 3400
@@ -1348,111 +639,66 @@ Wire Wire Line
 Connection ~ 6500 3700
 Wire Wire Line
 	6500 3700 6500 3650
-$Comp
-L Device:C_Small C76
-U 1 1 5DCED684
-P 2950 9850
-F 0 "C76" H 3042 9896 50  0000 L CNN
-F 1 "0.1uF" H 3042 9805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2950 9850 50  0001 C CNN
-F 3 "~" H 2950 9850 50  0001 C CNN
-F 4 "Yageo" H 2950 9850 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 2950 9850 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 2950 9850 50  0001 C CNN "Checked"
-F 7 "Mouser" H 2950 9850 50  0001 C CNN "Distributor"
-	1    2950 9850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	2550 9750 2550 9700
-Connection ~ 2550 9700
+	2550 10000 2550 9950
+Connection ~ 2550 9950
 Wire Wire Line
-	2950 9750 2950 9700
-Connection ~ 2950 9700
+	2950 10000 2950 9950
+Connection ~ 2950 9950
 Wire Wire Line
-	2950 9700 2550 9700
+	2950 9950 2550 9950
 $Comp
 L power:GND #PWR0201
 U 1 1 5DCED695
-P 2950 10050
-F 0 "#PWR0201" H 2950 9800 50  0001 C CNN
-F 1 "GND" H 2955 9877 50  0000 C CNN
-F 2 "" H 2950 10050 50  0001 C CNN
-F 3 "" H 2950 10050 50  0001 C CNN
-	1    2950 10050
+P 2950 10300
+F 0 "#PWR0201" H 2950 10050 50  0001 C CNN
+F 1 "GND" H 2955 10127 50  0000 C CNN
+F 2 "" H 2950 10300 50  0001 C CNN
+F 3 "" H 2950 10300 50  0001 C CNN
+	1    2950 10300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2950 10050 2950 10000
+	2950 10300 2950 10250
 Wire Wire Line
-	2550 9950 2550 10000
+	2550 10200 2550 10250
 Wire Wire Line
-	2550 10000 2950 10000
-Connection ~ 2950 10000
+	2550 10250 2950 10250
+Connection ~ 2950 10250
 Wire Wire Line
-	2950 10000 2950 9950
-$Comp
-L Device:C_Small C77
-U 1 1 5DCFA992
-P 6200 9850
-F 0 "C77" H 6292 9896 50  0000 L CNN
-F 1 "0.1uF" H 6292 9805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6200 9850 50  0001 C CNN
-F 3 "~" H 6200 9850 50  0001 C CNN
-F 4 "Yageo" H 6200 9850 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 6200 9850 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 6200 9850 50  0001 C CNN "Checked"
-F 7 "Mouser" H 6200 9850 50  0001 C CNN "Distributor"
-	1    6200 9850
-	1    0    0    -1  
-$EndComp
+	2950 10250 2950 10200
 Wire Wire Line
-	5800 9750 5800 9700
-Connection ~ 5800 9700
+	5800 10000 5800 9950
+Connection ~ 5800 9950
 Wire Wire Line
-	6200 9750 6200 9700
-Connection ~ 6200 9700
+	6200 10000 6200 9950
+Connection ~ 6200 9950
 Wire Wire Line
-	6200 9700 5800 9700
+	6200 9950 5800 9950
 $Comp
 L power:GND #PWR0202
 U 1 1 5DCFA9A3
-P 6200 10050
-F 0 "#PWR0202" H 6200 9800 50  0001 C CNN
-F 1 "GND" H 6205 9877 50  0000 C CNN
-F 2 "" H 6200 10050 50  0001 C CNN
-F 3 "" H 6200 10050 50  0001 C CNN
-	1    6200 10050
+P 6200 10300
+F 0 "#PWR0202" H 6200 10050 50  0001 C CNN
+F 1 "GND" H 6205 10127 50  0000 C CNN
+F 2 "" H 6200 10300 50  0001 C CNN
+F 3 "" H 6200 10300 50  0001 C CNN
+	1    6200 10300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6200 10050 6200 10000
+	6200 10300 6200 10250
 Wire Wire Line
-	5800 9950 5800 10000
+	5800 10200 5800 10250
 Wire Wire Line
-	5800 10000 6200 10000
-Connection ~ 6200 10000
+	5800 10250 6200 10250
+Connection ~ 6200 10250
 Wire Wire Line
-	6200 10000 6200 9950
+	6200 10250 6200 10200
 Wire Wire Line
-	1500 9700 2550 9700
+	1500 9950 2550 9950
 Wire Wire Line
-	4750 9700 5800 9700
-$Comp
-L Device:C_Small C84
-U 1 1 5DDBD7F0
-P 6450 6050
-F 0 "C84" H 6542 6096 50  0000 L CNN
-F 1 "0.1uF" H 6542 6005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6450 6050 50  0001 C CNN
-F 3 "~" H 6450 6050 50  0001 C CNN
-F 4 "Yageo" H 6450 6050 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 6450 6050 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 6450 6050 50  0001 C CNN "Checked"
-F 7 "Mouser" H 6450 6050 50  0001 C CNN "Distributor"
-	1    6450 6050
-	1    0    0    -1  
-$EndComp
+	4750 9950 5800 9950
 Wire Wire Line
 	6050 5950 6050 5900
 Connection ~ 6050 5900
@@ -1487,9 +733,6 @@ Wire Wire Line
 	1350 4500 1450 4500
 Connection ~ 1450 4500
 Wire Wire Line
-	4900 4500 5000 4500
-Connection ~ 5000 4500
-Wire Wire Line
 	4900 7000 5000 7000
 Connection ~ 5000 7000
 Wire Wire Line
@@ -1512,36 +755,6 @@ F 3 "" H 2350 5250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1450 4500 2350 4500
-$Comp
-L Device:C_Small C67
-U 1 1 5DF1DF02
-P 1550 4800
-F 0 "C67" H 1642 4846 50  0000 L CNN
-F 1 "0.1uF" H 1642 4755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1550 4800 50  0001 C CNN
-F 3 "~" H 1550 4800 50  0001 C CNN
-F 4 "Yageo" H 1550 4800 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 1550 4800 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 1550 4800 50  0001 C CNN "Checked"
-F 7 "Mouser" H 1550 4800 50  0001 C CNN "Distributor"
-	1    1550 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C68
-U 1 1 5DF2D105
-P 1950 4800
-F 0 "C68" H 2042 4846 50  0000 L CNN
-F 1 "2nF" H 2042 4755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1950 4800 50  0001 C CNN
-F 3 "~" H 1950 4800 50  0001 C CNN
-F 4 "Murata" H 1950 4800 50  0001 C CNN "Manufacturer"
-F 5 "GRM1885C1H202JA01D" H 1950 4800 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 1950 4800 50  0001 C CNN "Checked"
-F 7 "Mouser" H 1950 4800 50  0001 C CNN "Distributor"
-	1    1950 4800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1950 4900 1950 5050
 Connection ~ 1950 5050
@@ -1564,21 +777,6 @@ Wire Wire Line
 Wire Wire Line
 	1950 4600 1950 4700
 Connection ~ 1550 4600
-$Comp
-L Device:R_Small R96
-U 1 1 5DF89952
-P 4800 4900
-F 0 "R96" H 4859 4946 50  0000 L CNN
-F 1 "1M" H 4859 4855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4800 4900 50  0001 C CNN
-F 3 "~" H 4800 4900 50  0001 C CNN
-F 4 "Yageo" H 4800 4900 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-071ML" H 4800 4900 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 4800 4900 50  0001 C CNN "Distributor"
-F 7 "y" H 4800 4900 50  0001 C CNN "Checked"
-	1    4800 4900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4800 4800 4800 4700
 Wire Wire Line
@@ -1597,36 +795,6 @@ F 1 "GND" H 5905 5177 50  0000 C CNN
 F 2 "" H 5900 5350 50  0001 C CNN
 F 3 "" H 5900 5350 50  0001 C CNN
 	1    5900 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C74
-U 1 1 5DF8996C
-P 5100 4900
-F 0 "C74" H 5192 4946 50  0000 L CNN
-F 1 "0.1uF" H 5192 4855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5100 4900 50  0001 C CNN
-F 3 "~" H 5100 4900 50  0001 C CNN
-F 4 "Yageo" H 5100 4900 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 5100 4900 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 5100 4900 50  0001 C CNN "Checked"
-F 7 "Mouser" H 5100 4900 50  0001 C CNN "Distributor"
-	1    5100 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C78
-U 1 1 5DF89976
-P 5500 4900
-F 0 "C78" H 5592 4946 50  0000 L CNN
-F 1 "2nF" H 5592 4855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5500 4900 50  0001 C CNN
-F 3 "~" H 5500 4900 50  0001 C CNN
-F 4 "Murata" H 5500 4900 50  0001 C CNN "Manufacturer"
-F 5 "GRM1885C1H202JA01D" H 5500 4900 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 5500 4900 50  0001 C CNN "Checked"
-F 7 "Mouser" H 5500 4900 50  0001 C CNN "Distributor"
-	1    5500 4900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1651,186 +819,64 @@ Wire Wire Line
 Connection ~ 5100 4700
 Wire Wire Line
 	4800 4500 4800 4700
-$Comp
-L Device:R_Small R97
-U 1 1 5DF9BC56
-P 4800 7400
-F 0 "R97" H 4859 7446 50  0000 L CNN
-F 1 "1M" H 4859 7355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4800 7400 50  0001 C CNN
-F 3 "~" H 4800 7400 50  0001 C CNN
-F 4 "Yageo" H 4800 7400 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-071ML" H 4800 7400 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 4800 7400 50  0001 C CNN "Distributor"
-F 7 "y" H 4800 7400 50  0001 C CNN "Checked"
-	1    4800 7400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	4800 7300 4800 7200
+	4800 7250 4800 7150
 Wire Wire Line
-	4800 7500 4800 7650
-Connection ~ 5900 7650
+	4800 7450 4800 7600
+Connection ~ 5900 7600
 Wire Wire Line
-	4800 7650 5100 7650
+	4800 7600 5100 7600
 Wire Wire Line
-	5900 7850 5900 7650
+	5900 7800 5900 7600
 $Comp
 L power:GND #PWR0205
 U 1 1 5DF9BC66
-P 5900 7850
-F 0 "#PWR0205" H 5900 7600 50  0001 C CNN
-F 1 "GND" H 5905 7677 50  0000 C CNN
-F 2 "" H 5900 7850 50  0001 C CNN
-F 3 "" H 5900 7850 50  0001 C CNN
-	1    5900 7850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C75
-U 1 1 5DF9BC70
-P 5100 7400
-F 0 "C75" H 5192 7446 50  0000 L CNN
-F 1 "0.1uF" H 5192 7355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5100 7400 50  0001 C CNN
-F 3 "~" H 5100 7400 50  0001 C CNN
-F 4 "Yageo" H 5100 7400 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 5100 7400 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 5100 7400 50  0001 C CNN "Checked"
-F 7 "Mouser" H 5100 7400 50  0001 C CNN "Distributor"
-	1    5100 7400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C79
-U 1 1 5DF9BC7A
-P 5500 7400
-F 0 "C79" H 5592 7446 50  0000 L CNN
-F 1 "2nF" H 5592 7355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5500 7400 50  0001 C CNN
-F 3 "~" H 5500 7400 50  0001 C CNN
-F 4 "Murata" H 5500 7400 50  0001 C CNN "Manufacturer"
-F 5 "GRM1885C1H202JA01D" H 5500 7400 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 5500 7400 50  0001 C CNN "Checked"
-F 7 "Mouser" H 5500 7400 50  0001 C CNN "Distributor"
-	1    5500 7400
+P 5900 7800
+F 0 "#PWR0205" H 5900 7550 50  0001 C CNN
+F 1 "GND" H 5905 7627 50  0000 C CNN
+F 2 "" H 5900 7800 50  0001 C CNN
+F 3 "" H 5900 7800 50  0001 C CNN
+	1    5900 7800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 7500 5500 7650
-Connection ~ 5500 7650
+	5500 7450 5500 7600
+Connection ~ 5500 7600
 Wire Wire Line
-	5500 7650 5900 7650
+	5500 7600 5900 7600
 Wire Wire Line
-	5100 7500 5100 7650
-Connection ~ 5100 7650
+	5100 7450 5100 7600
+Connection ~ 5100 7600
 Wire Wire Line
-	5100 7650 5500 7650
+	5100 7600 5500 7600
 Wire Wire Line
-	4800 7200 5100 7200
+	4800 7150 5100 7150
 Wire Wire Line
-	5100 7200 5100 7300
-Connection ~ 4800 7200
+	5100 7150 5100 7250
+Connection ~ 4800 7150
 Wire Wire Line
-	5100 7200 5500 7200
+	5100 7150 5500 7150
 Wire Wire Line
-	5500 7200 5500 7300
-Connection ~ 5100 7200
+	5500 7150 5500 7250
+Connection ~ 5100 7150
 Wire Wire Line
-	4800 7000 4800 7200
-Wire Wire Line
-	5000 4500 5900 4500
+	4800 7000 4800 7150
 Wire Wire Line
 	5900 4500 5900 5150
 Wire Wire Line
 	5000 7000 5900 7000
 Wire Wire Line
-	5900 7000 5900 7650
-$Comp
-L Device:Ferrite_Bead_Small FB8
-U 1 1 5E029BC1
-P 6950 5900
-F 0 "FB8" H 7050 5946 50  0000 L CNN
-F 1 "220@100MHz 1.4A" H 7050 5855 50  0000 L CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" V 6880 5900 50  0001 C CNN
-F 3 "~" H 6950 5900 50  0001 C CNN
-F 4 "BLM18PG221SH1D" H 6950 5900 50  0001 C CNN "Manufacturer_No"
-F 5 "Murata" H 6950 5900 50  0001 C CNN "Manufacturer"
-F 6 "y" H 6950 5900 50  0001 C CNN "Checked"
-F 7 "Mouser" H 6950 5900 50  0001 C CNN "Distributor"
-	1    6950 5900
-	0    1    1    0   
-$EndComp
+	5900 7000 5900 7600
 Wire Wire Line
 	6450 5900 6750 5900
-$Comp
-L Device:Ferrite_Bead_Small FB9
-U 1 1 5E03D0A3
-P 7000 3400
-F 0 "FB9" H 7100 3446 50  0000 L CNN
-F 1 "220@100MHz 1.4A" H 7100 3355 50  0000 L CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" V 6930 3400 50  0001 C CNN
-F 3 "~" H 7000 3400 50  0001 C CNN
-F 4 "BLM18PG221SH1D" H 7000 3400 50  0001 C CNN "Manufacturer_No"
-F 5 "Murata" H 7000 3400 50  0001 C CNN "Manufacturer"
-F 6 "y" H 7000 3400 50  0001 C CNN "Checked"
-F 7 "Mouser" H 7000 3400 50  0001 C CNN "Distributor"
-	1    7000 3400
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6500 3400 6800 3400
-$Comp
-L Device:Ferrite_Bead_Small FB5
-U 1 1 5E050034
-P 3600 3400
-F 0 "FB5" H 3700 3446 50  0000 L CNN
-F 1 "220@100MHz 1.4A" H 3700 3355 50  0000 L CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" V 3530 3400 50  0001 C CNN
-F 3 "~" H 3600 3400 50  0001 C CNN
-F 4 "BLM18PG221SH1D" H 3600 3400 50  0001 C CNN "Manufacturer_No"
-F 5 "Murata" H 3600 3400 50  0001 C CNN "Manufacturer"
-F 6 "y" H 3600 3400 50  0001 C CNN "Checked"
-F 7 "Mouser" H 3600 3400 50  0001 C CNN "Distributor"
-	1    3600 3400
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2950 3400 3350 3400
-$Comp
-L Device:Ferrite_Bead_Small FB6
-U 1 1 5E07638B
-P 3450 9700
-F 0 "FB6" H 3550 9746 50  0000 L CNN
-F 1 "220@100MHz 1.4A" H 3550 9655 50  0000 L CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" V 3380 9700 50  0001 C CNN
-F 3 "~" H 3450 9700 50  0001 C CNN
-F 4 "BLM18PG221SH1D" H 3450 9700 50  0001 C CNN "Manufacturer_No"
-F 5 "Murata" H 3450 9700 50  0001 C CNN "Manufacturer"
-F 6 "y" H 3450 9700 50  0001 C CNN "Checked"
-F 7 "Mouser" H 3450 9700 50  0001 C CNN "Distributor"
-	1    3450 9700
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	2950 9700 3350 9700
-$Comp
-L Device:Ferrite_Bead_Small FB7
-U 1 1 5E089963
-P 6700 9700
-F 0 "FB7" H 6800 9746 50  0000 L CNN
-F 1 "220@100MHz 1.4A" H 6800 9655 50  0000 L CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" V 6630 9700 50  0001 C CNN
-F 3 "~" H 6700 9700 50  0001 C CNN
-F 4 "BLM18PG221SH1D" H 6700 9700 50  0001 C CNN "Manufacturer_No"
-F 5 "Murata" H 6700 9700 50  0001 C CNN "Manufacturer"
-F 6 "y" H 6700 9700 50  0001 C CNN "Checked"
-F 7 "Mouser" H 6700 9700 50  0001 C CNN "Distributor"
-	1    6700 9700
-	0    1    1    0   
-$EndComp
+	2950 9950 3350 9950
 Wire Wire Line
-	6200 9700 6600 9700
+	6200 9950 6600 9950
 $Comp
 L power:+3V3 #PWR0206
 U 1 1 5E09FF91
@@ -1845,111 +891,6 @@ $EndComp
 Wire Wire Line
 	1300 6150 1300 6200
 Connection ~ 1300 6200
-$Comp
-L Device:C_Small C94
-U 1 1 5E0C8B1D
-P 13850 2400
-F 0 "C94" H 13942 2446 50  0000 L CNN
-F 1 "0.1uF" H 13942 2355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 13850 2400 50  0001 C CNN
-F 3 "~" H 13850 2400 50  0001 C CNN
-F 4 "Yageo" H 13850 2400 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 13850 2400 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 13850 2400 50  0001 C CNN "Checked"
-F 7 "Mouser" H 13850 2400 50  0001 C CNN "Distributor"
-	1    13850 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C93
-U 1 1 5E0C87CC
-P 13450 2400
-F 0 "C93" H 13542 2446 50  0000 L CNN
-F 1 "0.1uF" H 13542 2355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 13450 2400 50  0001 C CNN
-F 3 "~" H 13450 2400 50  0001 C CNN
-F 4 "Yageo" H 13450 2400 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 13450 2400 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 13450 2400 50  0001 C CNN "Checked"
-F 7 "Mouser" H 13450 2400 50  0001 C CNN "Distributor"
-	1    13450 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C92
-U 1 1 5E0C8464
-P 13050 2400
-F 0 "C92" H 13142 2446 50  0000 L CNN
-F 1 "0.1uF" H 13142 2355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 13050 2400 50  0001 C CNN
-F 3 "~" H 13050 2400 50  0001 C CNN
-F 4 "Yageo" H 13050 2400 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 13050 2400 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 13050 2400 50  0001 C CNN "Checked"
-F 7 "Mouser" H 13050 2400 50  0001 C CNN "Distributor"
-	1    13050 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C90
-U 1 1 5E0C802E
-P 12650 2400
-F 0 "C90" H 12742 2446 50  0000 L CNN
-F 1 "0.1uF" H 12742 2355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 12650 2400 50  0001 C CNN
-F 3 "~" H 12650 2400 50  0001 C CNN
-F 4 "Yageo" H 12650 2400 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 12650 2400 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 12650 2400 50  0001 C CNN "Checked"
-F 7 "Mouser" H 12650 2400 50  0001 C CNN "Distributor"
-	1    12650 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C97
-U 1 1 5E0DCBD9
-P 15050 2400
-F 0 "C97" H 15142 2446 50  0000 L CNN
-F 1 "0.1uF" H 15142 2355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 15050 2400 50  0001 C CNN
-F 3 "~" H 15050 2400 50  0001 C CNN
-F 4 "Yageo" H 15050 2400 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 15050 2400 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 15050 2400 50  0001 C CNN "Checked"
-F 7 "Mouser" H 15050 2400 50  0001 C CNN "Distributor"
-	1    15050 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C96
-U 1 1 5E0DCBE3
-P 14650 2400
-F 0 "C96" H 14742 2446 50  0000 L CNN
-F 1 "0.1uF" H 14742 2355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 14650 2400 50  0001 C CNN
-F 3 "~" H 14650 2400 50  0001 C CNN
-F 4 "Yageo" H 14650 2400 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 14650 2400 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 14650 2400 50  0001 C CNN "Checked"
-F 7 "Mouser" H 14650 2400 50  0001 C CNN "Distributor"
-	1    14650 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C95
-U 1 1 5E0DCBED
-P 14250 2400
-F 0 "C95" H 14342 2446 50  0000 L CNN
-F 1 "0.1uF" H 14342 2355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 14250 2400 50  0001 C CNN
-F 3 "~" H 14250 2400 50  0001 C CNN
-F 4 "Yageo" H 14250 2400 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 14250 2400 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 14250 2400 50  0001 C CNN "Checked"
-F 7 "Mouser" H 14250 2400 50  0001 C CNN "Distributor"
-	1    14250 2400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	15450 2300 15050 2300
 Connection ~ 13050 2300
@@ -2007,81 +948,6 @@ Wire Wire Line
 Connection ~ 15050 2500
 Wire Wire Line
 	15050 2500 14650 2500
-$Comp
-L Device:C_Small C89
-U 1 1 5E17AFEA
-P 12650 1850
-F 0 "C89" H 12742 1896 50  0000 L CNN
-F 1 "0.1uF" H 12742 1805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 12650 1850 50  0001 C CNN
-F 3 "~" H 12650 1850 50  0001 C CNN
-F 4 "Yageo" H 12650 1850 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 12650 1850 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 12650 1850 50  0001 C CNN "Checked"
-F 7 "Mouser" H 12650 1850 50  0001 C CNN "Distributor"
-	1    12650 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C88
-U 1 1 5E17AFF4
-P 12250 1850
-F 0 "C88" H 12342 1896 50  0000 L CNN
-F 1 "0.1uF" H 12342 1805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 12250 1850 50  0001 C CNN
-F 3 "~" H 12250 1850 50  0001 C CNN
-F 4 "Yageo" H 12250 1850 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 12250 1850 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 12250 1850 50  0001 C CNN "Checked"
-F 7 "Mouser" H 12250 1850 50  0001 C CNN "Distributor"
-	1    12250 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C87
-U 1 1 5E17AFFE
-P 11850 1850
-F 0 "C87" H 11942 1896 50  0000 L CNN
-F 1 "0.1uF" H 11942 1805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 11850 1850 50  0001 C CNN
-F 3 "~" H 11850 1850 50  0001 C CNN
-F 4 "Yageo" H 11850 1850 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 11850 1850 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 11850 1850 50  0001 C CNN "Checked"
-F 7 "Mouser" H 11850 1850 50  0001 C CNN "Distributor"
-	1    11850 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C86
-U 1 1 5E17B008
-P 11450 1850
-F 0 "C86" H 11542 1896 50  0000 L CNN
-F 1 "0.1uF" H 11542 1805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 11450 1850 50  0001 C CNN
-F 3 "~" H 11450 1850 50  0001 C CNN
-F 4 "Yageo" H 11450 1850 50  0001 C CNN "Manufacturer"
-F 5 "CC0603JPX7R9BB104" H 11450 1850 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 11450 1850 50  0001 C CNN "Checked"
-F 7 "Mouser" H 11450 1850 50  0001 C CNN "Distributor"
-	1    11450 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C91
-U 1 1 5E17B012
-P 13050 1850
-F 0 "C91" H 13142 1896 50  0000 L CNN
-F 1 "10uF" H 13142 1805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 13050 1850 50  0001 C CNN
-F 3 "~" H 13050 1850 50  0001 C CNN
-F 4 "Murata" H 13050 1850 50  0001 C CNN "Manufacturer"
-F 5 "GRM188R6YA106MA73D" H 13050 1850 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 13050 1850 50  0001 C CNN "Checked"
-F 7 "Mouser" H 13050 1850 50  0001 C CNN "Distributor"
-	1    13050 1850
-	1    0    0    -1  
-$EndComp
 Connection ~ 11850 1750
 Wire Wire Line
 	11850 1750 11450 1750
@@ -2124,100 +990,17 @@ Wire Wire Line
 Connection ~ 13050 1950
 Wire Wire Line
 	11300 1750 11300 2300
-Text GLabel 8600 1600 0    50   Input ~ 0
-USB_PWR
 $Comp
 L power:+5V #PWR0126
 U 1 1 5DBF4AD4
-P 8800 1500
-F 0 "#PWR0126" H 8800 1350 50  0001 C CNN
-F 1 "+5V" H 8815 1673 50  0000 C CNN
-F 2 "" H 8800 1500 50  0001 C CNN
-F 3 "" H 8800 1500 50  0001 C CNN
-	1    8800 1500
+P 4950 8500
+F 0 "#PWR0126" H 4950 8350 50  0001 C CNN
+F 1 "+5V" H 4965 8673 50  0000 C CNN
+F 2 "" H 4950 8500 50  0001 C CNN
+F 3 "" H 4950 8500 50  0001 C CNN
+	1    4950 8500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8800 1500 8800 1600
-Wire Wire Line
-	8800 1600 8600 1600
-$Comp
-L Device:C_Small C63
-U 1 1 5EEA2B4F
-P 2550 3550
-F 0 "C63" H 2642 3596 50  0000 L CNN
-F 1 "10uF" H 2642 3505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2550 3550 50  0001 C CNN
-F 3 "~" H 2550 3550 50  0001 C CNN
-F 4 "Murata" H 2550 3550 50  0001 C CNN "Manufacturer"
-F 5 "GRM188R6YA106MA73D" H 2550 3550 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 2550 3550 50  0001 C CNN "Checked"
-F 7 "Mouser" H 2550 3550 50  0001 C CNN "Distributor"
-	1    2550 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C81
-U 1 1 5EEA2FE2
-P 6100 3550
-F 0 "C81" H 6192 3596 50  0000 L CNN
-F 1 "10uF" H 6192 3505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6100 3550 50  0001 C CNN
-F 3 "~" H 6100 3550 50  0001 C CNN
-F 4 "Murata" H 6100 3550 50  0001 C CNN "Manufacturer"
-F 5 "GRM188R6YA106MA73D" H 6100 3550 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 6100 3550 50  0001 C CNN "Checked"
-F 7 "Mouser" H 6100 3550 50  0001 C CNN "Distributor"
-	1    6100 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C72
-U 1 1 5EEA3522
-P 6050 6050
-F 0 "C72" H 6142 6096 50  0000 L CNN
-F 1 "10uF" H 6142 6005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6050 6050 50  0001 C CNN
-F 3 "~" H 6050 6050 50  0001 C CNN
-F 4 "Murata" H 6050 6050 50  0001 C CNN "Manufacturer"
-F 5 "GRM188R6YA106MA73D" H 6050 6050 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 6050 6050 50  0001 C CNN "Checked"
-F 7 "Mouser" H 6050 6050 50  0001 C CNN "Distributor"
-	1    6050 6050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C69
-U 1 1 5EEA41F9
-P 2550 9850
-F 0 "C69" H 2642 9896 50  0000 L CNN
-F 1 "10uF" H 2642 9805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2550 9850 50  0001 C CNN
-F 3 "~" H 2550 9850 50  0001 C CNN
-F 4 "Murata" H 2550 9850 50  0001 C CNN "Manufacturer"
-F 5 "GRM188R6YA106MA73D" H 2550 9850 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 2550 9850 50  0001 C CNN "Checked"
-F 7 "Mouser" H 2550 9850 50  0001 C CNN "Distributor"
-	1    2550 9850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C71
-U 1 1 5EEA4792
-P 5800 9850
-F 0 "C71" H 5892 9896 50  0000 L CNN
-F 1 "10uF" H 5892 9805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5800 9850 50  0001 C CNN
-F 3 "~" H 5800 9850 50  0001 C CNN
-F 4 "Murata" H 5800 9850 50  0001 C CNN "Manufacturer"
-F 5 "GRM188R6YA106MA73D" H 5800 9850 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 5800 9850 50  0001 C CNN "Checked"
-F 7 "Mouser" H 5800 9850 50  0001 C CNN "Distributor"
-	1    5800 9850
-	1    0    0    -1  
-$EndComp
-Text Notes 6300 7150 0    50   ~ 0
-TODO: consider ESD7016
 Text Label 9850 4100 0    50   ~ 0
 USB_SSTXP
 Text Label 9850 4200 0    50   ~ 0
@@ -2320,23 +1103,6 @@ Wire Wire Line
 	8850 3500 9000 3500
 Wire Wire Line
 	12300 2300 12500 2300
-$Comp
-L reform2:TUSB8041-Q1 U?
-U 1 1 5D114731
-P 12200 4600
-AR Path="/5D114731" Ref="U?"  Part="1" 
-AR Path="/5D06A2FD/5D114731" Ref="U9"  Part="1" 
-F 0 "U9" H 11300 2600 50  0000 C CNN
-F 1 "TUSB8041IPAPRQ1" H 11300 2500 50  0000 C CNN
-F 2 "Package_QFP:HTQFP-64-1EP_10x10mm_P0.5mm_EP8x8mm_Mask4.4x4.4mm_ThermalVias" H 13400 6600 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tusb8041.pdf" H 11900 4800 50  0001 C CNN
-F 4 "Texas Instruments" H 12200 4600 50  0001 C CNN "Manufacturer"
-F 5 "TUSB8041IPAPRQ1" H 12200 4600 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 12200 4600 50  0001 C CNN "Checked"
-F 7 "Mouser" H 12200 4600 50  0001 C CNN "Distributor"
-	1    12200 4600
-	1    0    0    -1  
-$EndComp
 Text GLabel 13500 4600 2    50   Output ~ 0
 USB3_3_SSTXP
 Text GLabel 13500 4700 2    50   Output ~ 0
@@ -2353,21 +1119,21 @@ Text GLabel 13500 5700 2    50   Output ~ 0
 USB3_4_SSRXP
 Text GLabel 13500 5800 2    50   Output ~ 0
 USB3_4_SSRXN
-Text GLabel 4750 8850 2    50   Input ~ 0
+Text GLabel 9450 10200 2    50   Input ~ 0
 USB3_4_SSTXP
-Text GLabel 4750 8950 2    50   Input ~ 0
+Text GLabel 9450 10300 2    50   Input ~ 0
 USB3_4_SSTXN
-Text GLabel 4750 9050 2    50   Input ~ 0
+Text GLabel 9450 10400 2    50   Input ~ 0
 USB3_4_SSRXP
-Text GLabel 4750 9150 2    50   Input ~ 0
+Text GLabel 9450 10500 2    50   Input ~ 0
 USB3_4_SSRXN
-Text GLabel 1500 8850 2    50   Input ~ 0
+Text GLabel 8650 10200 2    50   Input ~ 0
 USB3_3_SSTXP
-Text GLabel 1500 8950 2    50   Input ~ 0
+Text GLabel 8650 10300 2    50   Input ~ 0
 USB3_3_SSTXN
-Text GLabel 1500 9050 2    50   Input ~ 0
+Text GLabel 8650 10400 2    50   Input ~ 0
 USB3_3_SSRXP
-Text GLabel 1500 9150 2    50   Input ~ 0
+Text GLabel 8650 10500 2    50   Input ~ 0
 USB3_3_SSRXN
 Wire Wire Line
 	8950 4200 10900 4200
@@ -2377,20 +1143,18 @@ Text Notes 7850 4100 0    50   ~ 0
 TX & RX caps\nare on the SoM
 Text Notes 6000 6850 0    50   ~ 0
 TX & RX caps\nare on the SoM
-NoConn ~ 1500 8850
-NoConn ~ 1500 8950
-NoConn ~ 1500 9050
-NoConn ~ 1500 9150
-NoConn ~ 4750 8850
-NoConn ~ 4750 8950
-NoConn ~ 4750 9050
-NoConn ~ 4750 9150
-Text Notes 1300 8650 0    50   ~ 0
+NoConn ~ 8650 10200
+NoConn ~ 8650 10300
+NoConn ~ 8650 10400
+NoConn ~ 8650 10500
+NoConn ~ 9450 10200
+NoConn ~ 9450 10300
+NoConn ~ 9450 10400
+NoConn ~ 9450 10500
+Text Notes 8450 10000 0    50   ~ 0
 TODO: consider internal USB3
 Text Notes 15050 1400 0    50   ~ 0
 up to 780mA load!
-Text Notes 8400 4900 0    50   ~ 0
-TODO: hook up SCL/SDA?
 $Comp
 L power:+1V2 #PWR0216
 U 1 1 5ECB605D
@@ -2412,4 +1176,1725 @@ Wire Wire Line
 	1200 1800 1700 1800
 Wire Wire Line
 	1200 1900 1700 1900
+Text Notes 9400 3250 0    50   ~ 0
+TODO: RESETn pulldown
+Wire Wire Line
+	4950 8600 5350 8600
+Wire Wire Line
+	6300 8600 6500 8600
+$Comp
+L power:GND #PWR?
+U 1 1 5F8291D0
+P 6300 9200
+AR Path="/5D06AC46/5F8291D0" Ref="#PWR?"  Part="1" 
+AR Path="/5D06A2FD/5F8291D0" Ref="#PWR046"  Part="1" 
+F 0 "#PWR046" H 6300 8950 50  0001 C CNN
+F 1 "GND" H 6305 9027 50  0000 C CNN
+F 2 "" H 6300 9200 50  0001 C CNN
+F 3 "" H 6300 9200 50  0001 C CNN
+	1    6300 9200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 8650 4950 8600
+Connection ~ 4950 8600
+Connection ~ 5350 8600
+Wire Wire Line
+	5350 8600 5600 8600
+Wire Wire Line
+	5600 8800 5350 8800
+Wire Wire Line
+	6300 9200 4950 9200
+Wire Wire Line
+	4950 9200 4950 8850
+Wire Wire Line
+	6300 9000 6300 9200
+Connection ~ 6300 9200
+Wire Wire Line
+	4950 8500 4950 8600
+Text GLabel 5550 9000 0    50   Input ~ 0
+USB_PWR_EN
+Wire Wire Line
+	5550 9000 5600 9000
+Text GLabel 9650 8200 2    50   Input ~ 0
+USB2_TX_P
+Text GLabel 9650 8300 2    50   Input ~ 0
+USB2_TX_N
+Text GLabel 9650 8700 2    50   Input ~ 0
+USB2_RX_P
+Text GLabel 9650 8800 2    50   Input ~ 0
+USB2_RX_N
+Text GLabel 9650 8400 2    50   Input ~ 0
+USB2_DN
+Text GLabel 9650 8500 2    50   Input ~ 0
+USB2_DP
+Text GLabel 8950 8200 0    50   Input ~ 0
+USB2_TX_P
+Text GLabel 8950 8300 0    50   Input ~ 0
+USB2_TX_N
+Text GLabel 8950 8700 0    50   Input ~ 0
+USB2_RX_P
+Text GLabel 8950 8800 0    50   Input ~ 0
+USB2_RX_N
+Text GLabel 8950 8400 0    50   Input ~ 0
+USB2_DN
+Text GLabel 8950 8500 0    50   Input ~ 0
+USB2_DP
+$Comp
+L power:GND #PWR0247
+U 1 1 5FA0922C
+P 8400 9000
+F 0 "#PWR0247" H 8400 8750 50  0001 C CNN
+F 1 "GND" H 8405 8827 50  0000 C CNN
+F 2 "" H 8400 9000 50  0001 C CNN
+F 3 "" H 8400 9000 50  0001 C CNN
+	1    8400 9000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 8600 8950 8600
+Wire Wire Line
+	8400 8600 8400 9000
+$Comp
+L power:GND #PWR0248
+U 1 1 5FA49E1B
+P 10200 9000
+F 0 "#PWR0248" H 10200 8750 50  0001 C CNN
+F 1 "GND" H 10205 8827 50  0000 C CNN
+F 2 "" H 10200 9000 50  0001 C CNN
+F 3 "" H 10200 9000 50  0001 C CNN
+	1    10200 9000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 8600 10200 9000
+Wire Wire Line
+	10200 8600 9650 8600
+$Comp
+L power:GND #PWR0249
+U 1 1 5FA9CCA8
+P 10600 9000
+F 0 "#PWR0249" H 10600 8750 50  0001 C CNN
+F 1 "GND" H 10605 8827 50  0000 C CNN
+F 2 "" H 10600 9000 50  0001 C CNN
+F 3 "" H 10600 9000 50  0001 C CNN
+	1    10600 9000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 8600 11300 8600
+Wire Wire Line
+	10600 8600 10600 9000
+$Comp
+L power:GND #PWR0250
+U 1 1 5FA9CCB4
+P 12700 9000
+F 0 "#PWR0250" H 12700 8750 50  0001 C CNN
+F 1 "GND" H 12705 8827 50  0000 C CNN
+F 2 "" H 12700 9000 50  0001 C CNN
+F 3 "" H 12700 9000 50  0001 C CNN
+	1    12700 9000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12700 8600 12700 9000
+Wire Wire Line
+	12700 8600 12000 8600
+Text GLabel 12000 8800 2    50   Input ~ 0
+USB3_1_SSRXN
+Text GLabel 11300 8500 0    50   Input ~ 0
+USB3_1_DP
+Text GLabel 12000 8400 2    50   Input ~ 0
+USB3_1_DN
+Text GLabel 12000 8700 2    50   Input ~ 0
+USB3_1_SSRXP
+Text GLabel 11300 8400 0    50   Input ~ 0
+USB3_1_DN
+Text GLabel 12000 8500 2    50   Input ~ 0
+USB3_1_DP
+Text GLabel 11300 8700 0    50   Input ~ 0
+USB3_1_SSRXP
+Text GLabel 11300 8800 0    50   Input ~ 0
+USB3_1_SSRXN
+$Comp
+L power:GND #PWR0251
+U 1 1 5FC025DD
+P 13100 9000
+F 0 "#PWR0251" H 13100 8750 50  0001 C CNN
+F 1 "GND" H 13105 8827 50  0000 C CNN
+F 2 "" H 13100 9000 50  0001 C CNN
+F 3 "" H 13100 9000 50  0001 C CNN
+	1    13100 9000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13100 8600 13800 8600
+Wire Wire Line
+	13100 8600 13100 9000
+$Comp
+L power:GND #PWR0252
+U 1 1 5FC025E9
+P 15200 9000
+F 0 "#PWR0252" H 15200 8750 50  0001 C CNN
+F 1 "GND" H 15205 8827 50  0000 C CNN
+F 2 "" H 15200 9000 50  0001 C CNN
+F 3 "" H 15200 9000 50  0001 C CNN
+	1    15200 9000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15200 8600 15200 9000
+Wire Wire Line
+	15200 8600 14500 8600
+Text GLabel 14500 8700 2    50   Input ~ 0
+USB3_2_SSRXP
+Text GLabel 14500 8800 2    50   Input ~ 0
+USB3_2_SSRXN
+Text GLabel 14500 8500 2    50   Input ~ 0
+USB3_2_DP
+Text GLabel 14500 8400 2    50   Input ~ 0
+USB3_2_DN
+Text GLabel 13800 8400 0    50   Input ~ 0
+USB3_2_DN
+Text GLabel 13800 8500 0    50   Input ~ 0
+USB3_2_DP
+Text GLabel 13800 8700 0    50   Input ~ 0
+USB3_2_SSRXP
+Text GLabel 13800 8800 0    50   Input ~ 0
+USB3_2_SSRXN
+Text Label 5550 4200 0    50   ~ 0
+USB3_2_SSTXCN
+Text Label 5550 4300 0    50   ~ 0
+USB3_2_SSTXCP
+Text Label 2000 4200 0    50   ~ 0
+USB3_1_SSTXCN
+Text Label 2000 4300 0    50   ~ 0
+USB3_1_SSTXCP
+Wire Wire Line
+	5000 4500 5900 4500
+Wire Wire Line
+	4900 4500 5000 4500
+Connection ~ 5000 4500
+Text Label 14500 8300 0    50   ~ 0
+USB3_2_SSTXCN
+Text Label 14500 8200 0    50   ~ 0
+USB3_2_SSTXCP
+Text Label 13800 8200 2    50   ~ 0
+USB3_2_SSTXCP
+Text Label 13800 8300 2    50   ~ 0
+USB3_2_SSTXCN
+Text Label 12000 8300 0    50   ~ 0
+USB3_1_SSTXCN
+Text Label 11300 8300 2    50   ~ 0
+USB3_1_SSTXCN
+Text Label 12000 8200 0    50   ~ 0
+USB3_1_SSTXCP
+Text Label 11300 8200 2    50   ~ 0
+USB3_1_SSTXCP
+Text GLabel 6500 8600 2    50   Output ~ 0
+USB_PWR
+$Comp
+L Connector:USB3_A J5
+U 1 1 5DA2390D
+P 5000 3800
+F 0 "J5" H 5057 4517 50  0000 C CNN
+F 1 "USB3_A" H 5057 4426 50  0000 C CNN
+F 2 "Connector_USB:USB3_A_Molex_48393-001" H 5150 3900 50  0001 C CNN
+F 3 "~" H 5150 3900 50  0001 C CNN
+F 4 "Molex" H 5000 3800 50  0001 C CNN "Manufacturer"
+F 5 "48393-0003" H 5000 3800 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 5000 3800 50  0001 C CNN "Checked"
+F 7 "Mouser" H 5000 3800 50  0001 C CNN "Distributor"
+	1    5000 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L reform2:SP3012-06UTG U26
+U 1 1 5FC025D3
+P 14150 8500
+F 0 "U26" H 14150 9100 50  0000 C CNN
+F 1 "SP3012-06UTG" H 14150 9000 50  0000 C CNN
+F 2 "footprints:SON50P350X135X55-14N" H 13700 9150 50  0001 L BNN
+F 3 "" H 13700 9150 50  0001 L BNN
+F 4 "" H 13700 9150 50  0001 L BNN "Field4"
+F 5 "1.45" H 13700 9150 50  0001 L BNN "Field5"
+F 6 "1.25" H 13700 9150 50  0001 L BNN "Field6"
+F 7 "" H 13700 9150 50  0001 L BNN "Field7"
+F 8 "" H 13700 9150 50  0001 L BNN "Field8"
+F 9 "" H 13700 9150 50  0001 L BNN "Field9"
+F 10 "" H 13700 9150 50  0001 L BNN "Field10"
+F 11 "" H 13700 9150 50  0001 L BNN "Field11"
+F 12 "0.5" H 13700 9150 50  0001 L BNN "Field12"
+F 13 "0.0" H 13700 9150 50  0001 L BNN "Field13"
+F 14 "3.4" H 13700 9150 50  0001 L BNN "Field14"
+F 15 "02/23/17" H 13700 9150 50  0001 L BNN "Field15"
+F 16 "" H 13700 9150 50  0001 L BNN "Field16"
+F 17 "0.55" H 13700 9150 50  0001 L BNN "Field17"
+F 18 "0.25" H 13700 9150 50  0001 L BNN "Field18"
+F 19 "" H 13700 9150 50  0001 L BNN "Field19"
+F 20 "" H 13700 9150 50  0001 L BNN "Field20"
+F 21 "0.35" H 13700 9150 50  0001 L BNN "Field21"
+F 22 "0.55mm" H 13700 9150 50  0001 L BNN "Field22"
+F 23 "0.2" H 13700 9150 50  0001 L BNN "Field23"
+F 24 "" H 13700 9150 50  0001 L BNN "Field24"
+F 25 "14.0" H 13700 9150 50  0001 L BNN "Field25"
+F 26 "" H 13700 9150 50  0001 L BNN "Field26"
+F 27 "" H 13700 9150 50  0001 L BNN "Field27"
+F 28 "0.15" H 13700 9150 50  0001 L BNN "Field28"
+F 29 "" H 13700 9150 50  0001 L BNN "Field29"
+F 30 "0.25" H 13700 9150 50  0001 L BNN "Field30"
+F 31 "" H 13700 9150 50  0001 L BNN "Field31"
+F 32 "" H 13700 9150 50  0001 L BNN "Field32"
+F 33 "3.6" H 13700 9150 50  0001 L BNN "Field33"
+F 34 "0.0" H 13700 9150 50  0001 L BNN "Field34"
+F 35 "" H 13700 9150 50  0001 L BNN "Field35"
+F 36 "" H 13700 9150 50  0001 L BNN "Field36"
+F 37 "" H 13700 9150 50  0001 L BNN "Field37"
+F 38 "IPC 7351B" H 13700 9150 50  0001 L BNN "Field38"
+F 39 "1.35" H 13700 9150 50  0001 L BNN "Field39"
+F 40 "3.5" H 13700 9150 50  0001 L BNN "Field40"
+F 41 "" H 13700 9150 50  0001 L BNN "Field41"
+F 42 "Littelfuse" H 13700 9150 50  0001 L BNN "Field42"
+F 43 "0.3" H 13700 9150 50  0001 L BNN "Field43"
+F 44 "" H 13700 9150 50  0001 L BNN "Field44"
+F 45 "" H 13700 9150 50  0001 L BNN "Field45"
+	1    14150 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L reform2:SP3012-06UTG U25
+U 1 1 5FA9CC92
+P 11650 8500
+F 0 "U25" H 11650 9100 50  0000 C CNN
+F 1 "SP3012-06UTG" H 11650 9000 50  0000 C CNN
+F 2 "footprints:SON50P350X135X55-14N" H 11200 9150 50  0001 L BNN
+F 3 "" H 11200 9150 50  0001 L BNN
+F 4 "" H 11200 9150 50  0001 L BNN "Field4"
+F 5 "1.45" H 11200 9150 50  0001 L BNN "Field5"
+F 6 "1.25" H 11200 9150 50  0001 L BNN "Field6"
+F 7 "" H 11200 9150 50  0001 L BNN "Field7"
+F 8 "" H 11200 9150 50  0001 L BNN "Field8"
+F 9 "" H 11200 9150 50  0001 L BNN "Field9"
+F 10 "" H 11200 9150 50  0001 L BNN "Field10"
+F 11 "" H 11200 9150 50  0001 L BNN "Field11"
+F 12 "0.5" H 11200 9150 50  0001 L BNN "Field12"
+F 13 "0.0" H 11200 9150 50  0001 L BNN "Field13"
+F 14 "3.4" H 11200 9150 50  0001 L BNN "Field14"
+F 15 "02/23/17" H 11200 9150 50  0001 L BNN "Field15"
+F 16 "" H 11200 9150 50  0001 L BNN "Field16"
+F 17 "0.55" H 11200 9150 50  0001 L BNN "Field17"
+F 18 "0.25" H 11200 9150 50  0001 L BNN "Field18"
+F 19 "" H 11200 9150 50  0001 L BNN "Field19"
+F 20 "" H 11200 9150 50  0001 L BNN "Field20"
+F 21 "0.35" H 11200 9150 50  0001 L BNN "Field21"
+F 22 "0.55mm" H 11200 9150 50  0001 L BNN "Field22"
+F 23 "0.2" H 11200 9150 50  0001 L BNN "Field23"
+F 24 "" H 11200 9150 50  0001 L BNN "Field24"
+F 25 "14.0" H 11200 9150 50  0001 L BNN "Field25"
+F 26 "" H 11200 9150 50  0001 L BNN "Field26"
+F 27 "" H 11200 9150 50  0001 L BNN "Field27"
+F 28 "0.15" H 11200 9150 50  0001 L BNN "Field28"
+F 29 "" H 11200 9150 50  0001 L BNN "Field29"
+F 30 "0.25" H 11200 9150 50  0001 L BNN "Field30"
+F 31 "" H 11200 9150 50  0001 L BNN "Field31"
+F 32 "" H 11200 9150 50  0001 L BNN "Field32"
+F 33 "3.6" H 11200 9150 50  0001 L BNN "Field33"
+F 34 "0.0" H 11200 9150 50  0001 L BNN "Field34"
+F 35 "" H 11200 9150 50  0001 L BNN "Field35"
+F 36 "" H 11200 9150 50  0001 L BNN "Field36"
+F 37 "" H 11200 9150 50  0001 L BNN "Field37"
+F 38 "IPC 7351B" H 11200 9150 50  0001 L BNN "Field38"
+F 39 "1.35" H 11200 9150 50  0001 L BNN "Field39"
+F 40 "3.5" H 11200 9150 50  0001 L BNN "Field40"
+F 41 "" H 11200 9150 50  0001 L BNN "Field41"
+F 42 "Littelfuse" H 11200 9150 50  0001 L BNN "Field42"
+F 43 "0.3" H 11200 9150 50  0001 L BNN "Field43"
+F 44 "" H 11200 9150 50  0001 L BNN "Field44"
+F 45 "" H 11200 9150 50  0001 L BNN "Field45"
+	1    11650 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L reform2:SP3012-06UTG U21
+U 1 1 5F95B62A
+P 9300 8500
+F 0 "U21" H 9300 9100 50  0000 C CNN
+F 1 "SP3012-06UTG" H 9300 9000 50  0000 C CNN
+F 2 "footprints:SON50P350X135X55-14N" H 8850 9150 50  0001 L BNN
+F 3 "" H 8850 9150 50  0001 L BNN
+F 4 "" H 8850 9150 50  0001 L BNN "Field4"
+F 5 "1.45" H 8850 9150 50  0001 L BNN "Field5"
+F 6 "1.25" H 8850 9150 50  0001 L BNN "Field6"
+F 7 "" H 8850 9150 50  0001 L BNN "Field7"
+F 8 "" H 8850 9150 50  0001 L BNN "Field8"
+F 9 "" H 8850 9150 50  0001 L BNN "Field9"
+F 10 "" H 8850 9150 50  0001 L BNN "Field10"
+F 11 "" H 8850 9150 50  0001 L BNN "Field11"
+F 12 "0.5" H 8850 9150 50  0001 L BNN "Field12"
+F 13 "0.0" H 8850 9150 50  0001 L BNN "Field13"
+F 14 "3.4" H 8850 9150 50  0001 L BNN "Field14"
+F 15 "02/23/17" H 8850 9150 50  0001 L BNN "Field15"
+F 16 "" H 8850 9150 50  0001 L BNN "Field16"
+F 17 "0.55" H 8850 9150 50  0001 L BNN "Field17"
+F 18 "0.25" H 8850 9150 50  0001 L BNN "Field18"
+F 19 "" H 8850 9150 50  0001 L BNN "Field19"
+F 20 "" H 8850 9150 50  0001 L BNN "Field20"
+F 21 "0.35" H 8850 9150 50  0001 L BNN "Field21"
+F 22 "0.55mm" H 8850 9150 50  0001 L BNN "Field22"
+F 23 "0.2" H 8850 9150 50  0001 L BNN "Field23"
+F 24 "" H 8850 9150 50  0001 L BNN "Field24"
+F 25 "14.0" H 8850 9150 50  0001 L BNN "Field25"
+F 26 "" H 8850 9150 50  0001 L BNN "Field26"
+F 27 "" H 8850 9150 50  0001 L BNN "Field27"
+F 28 "0.15" H 8850 9150 50  0001 L BNN "Field28"
+F 29 "" H 8850 9150 50  0001 L BNN "Field29"
+F 30 "0.25" H 8850 9150 50  0001 L BNN "Field30"
+F 31 "" H 8850 9150 50  0001 L BNN "Field31"
+F 32 "" H 8850 9150 50  0001 L BNN "Field32"
+F 33 "3.6" H 8850 9150 50  0001 L BNN "Field33"
+F 34 "0.0" H 8850 9150 50  0001 L BNN "Field34"
+F 35 "" H 8850 9150 50  0001 L BNN "Field35"
+F 36 "" H 8850 9150 50  0001 L BNN "Field36"
+F 37 "" H 8850 9150 50  0001 L BNN "Field37"
+F 38 "IPC 7351B" H 8850 9150 50  0001 L BNN "Field38"
+F 39 "1.35" H 8850 9150 50  0001 L BNN "Field39"
+F 40 "3.5" H 8850 9150 50  0001 L BNN "Field40"
+F 41 "" H 8850 9150 50  0001 L BNN "Field41"
+F 42 "Littelfuse" H 8850 9150 50  0001 L BNN "Field42"
+F 43 "0.3" H 8850 9150 50  0001 L BNN "Field43"
+F 44 "" H 8850 9150 50  0001 L BNN "Field44"
+F 45 "" H 8850 9150 50  0001 L BNN "Field45"
+	1    9300 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F8291EE
+P 5350 8700
+AR Path="/5D06AC46/5F8291EE" Ref="R?"  Part="1" 
+AR Path="/5D06A2FD/5F8291EE" Ref="R83"  Part="1" 
+F 0 "R83" V 5154 8700 50  0000 C CNN
+F 1 "10k" V 5245 8700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5350 8700 50  0001 C CNN
+F 3 "~" H 5350 8700 50  0001 C CNN
+F 4 "Yageo" H 5350 8700 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H 5350 8700 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 5350 8700 50  0001 C CNN "Checked"
+F 7 "Mouser" H 5350 8700 50  0001 C CNN "Distributor"
+	1    5350 8700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F8291E2
+P 4950 8750
+AR Path="/5D06AC46/5F8291E2" Ref="C?"  Part="1" 
+AR Path="/5D06A2FD/5F8291E2" Ref="C164"  Part="1" 
+F 0 "C164" H 5042 8796 50  0000 L CNN
+F 1 "10uF" H 5042 8705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4950 8750 50  0001 C CNN
+F 3 "~" H 4950 8750 50  0001 C CNN
+F 4 "Murata" H 4950 8750 50  0001 C CNN "Manufacturer"
+F 5 "GRM188R6YA106MA73D" H 4950 8750 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 4950 8750 50  0001 C CNN "Checked"
+F 7 "Mouser" H 4950 8750 50  0001 C CNN "Distributor"
+	1    4950 8750
+	1    0    0    -1  
+$EndComp
+$Comp
+L reform2:AP22815 U?
+U 1 1 5F8291CA
+P 5950 8800
+AR Path="/5D06AC46/5F8291CA" Ref="U?"  Part="1" 
+AR Path="/5D06A2FD/5F8291CA" Ref="U24"  Part="1" 
+F 0 "U24" H 5950 9265 50  0000 C CNN
+F 1 "AP22815" H 5950 9174 50  0000 C CNN
+F 2 "footprints:TSOT-25" H 5950 8500 50  0001 C CNN
+F 3 "" H 5950 8500 50  0001 C CNN
+F 4 "Diodes, Inc." H 5950 8800 50  0001 C CNN "Manufacturer"
+F 5 "AP22815AWT-7" H 5950 8800 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 5950 8800 50  0001 C CNN "Checked"
+F 7 "Mouser" H 5950 8800 50  0001 C CNN "Distributor"
+	1    5950 8800
+	1    0    0    -1  
+$EndComp
+$Comp
+L reform2:TUSB8041-Q1 U?
+U 1 1 5D114731
+P 12200 4600
+AR Path="/5D114731" Ref="U?"  Part="1" 
+AR Path="/5D06A2FD/5D114731" Ref="U9"  Part="1" 
+F 0 "U9" H 11300 2600 50  0000 C CNN
+F 1 "TUSB8041IPAPRQ1" H 11300 2500 50  0000 C CNN
+F 2 "Package_QFP:HTQFP-64-1EP_10x10mm_P0.5mm_EP8x8mm_Mask4.4x4.4mm_ThermalVias" H 13400 6600 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tusb8041.pdf" H 11900 4800 50  0001 C CNN
+F 4 "Texas Instruments" H 12200 4600 50  0001 C CNN "Manufacturer"
+F 5 "TUSB8041IPAPRQ1" H 12200 4600 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 12200 4600 50  0001 C CNN "Checked"
+F 7 "Mouser" H 12200 4600 50  0001 C CNN "Distributor"
+	1    12200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C71
+U 1 1 5EEA4792
+P 5800 10100
+F 0 "C71" H 5892 10146 50  0000 L CNN
+F 1 "10uF" H 5892 10055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5800 10100 50  0001 C CNN
+F 3 "~" H 5800 10100 50  0001 C CNN
+F 4 "Murata" H 5800 10100 50  0001 C CNN "Manufacturer"
+F 5 "GRM188R6YA106MA73D" H 5800 10100 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 5800 10100 50  0001 C CNN "Checked"
+F 7 "Mouser" H 5800 10100 50  0001 C CNN "Distributor"
+	1    5800 10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C69
+U 1 1 5EEA41F9
+P 2550 10100
+F 0 "C69" H 2642 10146 50  0000 L CNN
+F 1 "10uF" H 2642 10055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2550 10100 50  0001 C CNN
+F 3 "~" H 2550 10100 50  0001 C CNN
+F 4 "Murata" H 2550 10100 50  0001 C CNN "Manufacturer"
+F 5 "GRM188R6YA106MA73D" H 2550 10100 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 2550 10100 50  0001 C CNN "Checked"
+F 7 "Mouser" H 2550 10100 50  0001 C CNN "Distributor"
+	1    2550 10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C72
+U 1 1 5EEA3522
+P 6050 6050
+F 0 "C72" H 6142 6096 50  0000 L CNN
+F 1 "10uF" H 6142 6005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6050 6050 50  0001 C CNN
+F 3 "~" H 6050 6050 50  0001 C CNN
+F 4 "Murata" H 6050 6050 50  0001 C CNN "Manufacturer"
+F 5 "GRM188R6YA106MA73D" H 6050 6050 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 6050 6050 50  0001 C CNN "Checked"
+F 7 "Mouser" H 6050 6050 50  0001 C CNN "Distributor"
+	1    6050 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C81
+U 1 1 5EEA2FE2
+P 6100 3550
+F 0 "C81" H 6192 3596 50  0000 L CNN
+F 1 "10uF" H 6192 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6100 3550 50  0001 C CNN
+F 3 "~" H 6100 3550 50  0001 C CNN
+F 4 "Murata" H 6100 3550 50  0001 C CNN "Manufacturer"
+F 5 "GRM188R6YA106MA73D" H 6100 3550 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 6100 3550 50  0001 C CNN "Checked"
+F 7 "Mouser" H 6100 3550 50  0001 C CNN "Distributor"
+	1    6100 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C63
+U 1 1 5EEA2B4F
+P 2550 3550
+F 0 "C63" H 2642 3596 50  0000 L CNN
+F 1 "10uF" H 2642 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2550 3550 50  0001 C CNN
+F 3 "~" H 2550 3550 50  0001 C CNN
+F 4 "Murata" H 2550 3550 50  0001 C CNN "Manufacturer"
+F 5 "GRM188R6YA106MA73D" H 2550 3550 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 2550 3550 50  0001 C CNN "Checked"
+F 7 "Mouser" H 2550 3550 50  0001 C CNN "Distributor"
+	1    2550 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C91
+U 1 1 5E17B012
+P 13050 1850
+F 0 "C91" H 13142 1896 50  0000 L CNN
+F 1 "10uF" H 13142 1805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 13050 1850 50  0001 C CNN
+F 3 "~" H 13050 1850 50  0001 C CNN
+F 4 "Murata" H 13050 1850 50  0001 C CNN "Manufacturer"
+F 5 "GRM188R6YA106MA73D" H 13050 1850 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 13050 1850 50  0001 C CNN "Checked"
+F 7 "Mouser" H 13050 1850 50  0001 C CNN "Distributor"
+	1    13050 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C86
+U 1 1 5E17B008
+P 11450 1850
+F 0 "C86" H 11542 1896 50  0000 L CNN
+F 1 "0.1uF" H 11542 1805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 11450 1850 50  0001 C CNN
+F 3 "~" H 11450 1850 50  0001 C CNN
+F 4 "Yageo" H 11450 1850 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 11450 1850 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 11450 1850 50  0001 C CNN "Checked"
+F 7 "Mouser" H 11450 1850 50  0001 C CNN "Distributor"
+	1    11450 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C87
+U 1 1 5E17AFFE
+P 11850 1850
+F 0 "C87" H 11942 1896 50  0000 L CNN
+F 1 "0.1uF" H 11942 1805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 11850 1850 50  0001 C CNN
+F 3 "~" H 11850 1850 50  0001 C CNN
+F 4 "Yageo" H 11850 1850 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 11850 1850 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 11850 1850 50  0001 C CNN "Checked"
+F 7 "Mouser" H 11850 1850 50  0001 C CNN "Distributor"
+	1    11850 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C88
+U 1 1 5E17AFF4
+P 12250 1850
+F 0 "C88" H 12342 1896 50  0000 L CNN
+F 1 "0.1uF" H 12342 1805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 12250 1850 50  0001 C CNN
+F 3 "~" H 12250 1850 50  0001 C CNN
+F 4 "Yageo" H 12250 1850 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 12250 1850 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 12250 1850 50  0001 C CNN "Checked"
+F 7 "Mouser" H 12250 1850 50  0001 C CNN "Distributor"
+	1    12250 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C89
+U 1 1 5E17AFEA
+P 12650 1850
+F 0 "C89" H 12742 1896 50  0000 L CNN
+F 1 "0.1uF" H 12742 1805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 12650 1850 50  0001 C CNN
+F 3 "~" H 12650 1850 50  0001 C CNN
+F 4 "Yageo" H 12650 1850 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 12650 1850 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 12650 1850 50  0001 C CNN "Checked"
+F 7 "Mouser" H 12650 1850 50  0001 C CNN "Distributor"
+	1    12650 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C95
+U 1 1 5E0DCBED
+P 14250 2400
+F 0 "C95" H 14342 2446 50  0000 L CNN
+F 1 "0.1uF" H 14342 2355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 14250 2400 50  0001 C CNN
+F 3 "~" H 14250 2400 50  0001 C CNN
+F 4 "Yageo" H 14250 2400 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 14250 2400 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 14250 2400 50  0001 C CNN "Checked"
+F 7 "Mouser" H 14250 2400 50  0001 C CNN "Distributor"
+	1    14250 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C96
+U 1 1 5E0DCBE3
+P 14650 2400
+F 0 "C96" H 14742 2446 50  0000 L CNN
+F 1 "0.1uF" H 14742 2355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 14650 2400 50  0001 C CNN
+F 3 "~" H 14650 2400 50  0001 C CNN
+F 4 "Yageo" H 14650 2400 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 14650 2400 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 14650 2400 50  0001 C CNN "Checked"
+F 7 "Mouser" H 14650 2400 50  0001 C CNN "Distributor"
+	1    14650 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C97
+U 1 1 5E0DCBD9
+P 15050 2400
+F 0 "C97" H 15142 2446 50  0000 L CNN
+F 1 "0.1uF" H 15142 2355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 15050 2400 50  0001 C CNN
+F 3 "~" H 15050 2400 50  0001 C CNN
+F 4 "Yageo" H 15050 2400 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 15050 2400 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 15050 2400 50  0001 C CNN "Checked"
+F 7 "Mouser" H 15050 2400 50  0001 C CNN "Distributor"
+	1    15050 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C90
+U 1 1 5E0C802E
+P 12650 2400
+F 0 "C90" H 12742 2446 50  0000 L CNN
+F 1 "0.1uF" H 12742 2355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 12650 2400 50  0001 C CNN
+F 3 "~" H 12650 2400 50  0001 C CNN
+F 4 "Yageo" H 12650 2400 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 12650 2400 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 12650 2400 50  0001 C CNN "Checked"
+F 7 "Mouser" H 12650 2400 50  0001 C CNN "Distributor"
+	1    12650 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C92
+U 1 1 5E0C8464
+P 13050 2400
+F 0 "C92" H 13142 2446 50  0000 L CNN
+F 1 "0.1uF" H 13142 2355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 13050 2400 50  0001 C CNN
+F 3 "~" H 13050 2400 50  0001 C CNN
+F 4 "Yageo" H 13050 2400 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 13050 2400 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 13050 2400 50  0001 C CNN "Checked"
+F 7 "Mouser" H 13050 2400 50  0001 C CNN "Distributor"
+	1    13050 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C93
+U 1 1 5E0C87CC
+P 13450 2400
+F 0 "C93" H 13542 2446 50  0000 L CNN
+F 1 "0.1uF" H 13542 2355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 13450 2400 50  0001 C CNN
+F 3 "~" H 13450 2400 50  0001 C CNN
+F 4 "Yageo" H 13450 2400 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 13450 2400 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 13450 2400 50  0001 C CNN "Checked"
+F 7 "Mouser" H 13450 2400 50  0001 C CNN "Distributor"
+	1    13450 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C94
+U 1 1 5E0C8B1D
+P 13850 2400
+F 0 "C94" H 13942 2446 50  0000 L CNN
+F 1 "0.1uF" H 13942 2355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 13850 2400 50  0001 C CNN
+F 3 "~" H 13850 2400 50  0001 C CNN
+F 4 "Yageo" H 13850 2400 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 13850 2400 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 13850 2400 50  0001 C CNN "Checked"
+F 7 "Mouser" H 13850 2400 50  0001 C CNN "Distributor"
+	1    13850 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB7
+U 1 1 5E089963
+P 6700 9950
+F 0 "FB7" H 6800 9996 50  0000 L CNN
+F 1 "220@100MHz 1.4A" H 6800 9905 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 6630 9950 50  0001 C CNN
+F 3 "~" H 6700 9950 50  0001 C CNN
+F 4 "BLM18PG221SH1D" H 6700 9950 50  0001 C CNN "Manufacturer_No"
+F 5 "Murata" H 6700 9950 50  0001 C CNN "Manufacturer"
+F 6 "y" H 6700 9950 50  0001 C CNN "Checked"
+F 7 "Mouser" H 6700 9950 50  0001 C CNN "Distributor"
+	1    6700 9950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB6
+U 1 1 5E07638B
+P 3450 9950
+F 0 "FB6" H 3550 9996 50  0000 L CNN
+F 1 "220@100MHz 1.4A" H 3550 9905 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 3380 9950 50  0001 C CNN
+F 3 "~" H 3450 9950 50  0001 C CNN
+F 4 "BLM18PG221SH1D" H 3450 9950 50  0001 C CNN "Manufacturer_No"
+F 5 "Murata" H 3450 9950 50  0001 C CNN "Manufacturer"
+F 6 "y" H 3450 9950 50  0001 C CNN "Checked"
+F 7 "Mouser" H 3450 9950 50  0001 C CNN "Distributor"
+	1    3450 9950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB5
+U 1 1 5E050034
+P 3600 3400
+F 0 "FB5" V 3750 3350 50  0000 L CNN
+F 1 "220@100MHz 1.4A" V 3850 3100 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 3530 3400 50  0001 C CNN
+F 3 "~" H 3600 3400 50  0001 C CNN
+F 4 "BLM18PG221SH1D" H 3600 3400 50  0001 C CNN "Manufacturer_No"
+F 5 "Murata" H 3600 3400 50  0001 C CNN "Manufacturer"
+F 6 "y" H 3600 3400 50  0001 C CNN "Checked"
+F 7 "Mouser" H 3600 3400 50  0001 C CNN "Distributor"
+	1    3600 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB9
+U 1 1 5E03D0A3
+P 7000 3400
+F 0 "FB9" V 7150 3350 50  0000 L CNN
+F 1 "220@100MHz 1.4A" V 7250 3250 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 6930 3400 50  0001 C CNN
+F 3 "~" H 7000 3400 50  0001 C CNN
+F 4 "BLM18PG221SH1D" H 7000 3400 50  0001 C CNN "Manufacturer_No"
+F 5 "Murata" H 7000 3400 50  0001 C CNN "Manufacturer"
+F 6 "y" H 7000 3400 50  0001 C CNN "Checked"
+F 7 "Mouser" H 7000 3400 50  0001 C CNN "Distributor"
+	1    7000 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB8
+U 1 1 5E029BC1
+P 6950 5900
+F 0 "FB8" H 7050 5946 50  0000 L CNN
+F 1 "220@100MHz 1.4A" H 7050 5855 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 6880 5900 50  0001 C CNN
+F 3 "~" H 6950 5900 50  0001 C CNN
+F 4 "BLM18PG221SH1D" H 6950 5900 50  0001 C CNN "Manufacturer_No"
+F 5 "Murata" H 6950 5900 50  0001 C CNN "Manufacturer"
+F 6 "y" H 6950 5900 50  0001 C CNN "Checked"
+F 7 "Mouser" H 6950 5900 50  0001 C CNN "Distributor"
+	1    6950 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C79
+U 1 1 5DF9BC7A
+P 5500 7350
+F 0 "C79" H 5592 7396 50  0000 L CNN
+F 1 "2nF" H 5592 7305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5500 7350 50  0001 C CNN
+F 3 "~" H 5500 7350 50  0001 C CNN
+F 4 "Murata" H 5500 7350 50  0001 C CNN "Manufacturer"
+F 5 "GRM1885C1H202JA01D" H 5500 7350 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 5500 7350 50  0001 C CNN "Checked"
+F 7 "Mouser" H 5500 7350 50  0001 C CNN "Distributor"
+	1    5500 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C75
+U 1 1 5DF9BC70
+P 5100 7350
+F 0 "C75" H 5192 7396 50  0000 L CNN
+F 1 "0.1uF" H 5192 7305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5100 7350 50  0001 C CNN
+F 3 "~" H 5100 7350 50  0001 C CNN
+F 4 "Yageo" H 5100 7350 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 5100 7350 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 5100 7350 50  0001 C CNN "Checked"
+F 7 "Mouser" H 5100 7350 50  0001 C CNN "Distributor"
+	1    5100 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R97
+U 1 1 5DF9BC56
+P 4800 7350
+F 0 "R97" H 4859 7396 50  0000 L CNN
+F 1 "1M" H 4859 7305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4800 7350 50  0001 C CNN
+F 3 "~" H 4800 7350 50  0001 C CNN
+F 4 "Yageo" H 4800 7350 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071ML" H 4800 7350 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 4800 7350 50  0001 C CNN "Distributor"
+F 7 "y" H 4800 7350 50  0001 C CNN "Checked"
+	1    4800 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C78
+U 1 1 5DF89976
+P 5500 4900
+F 0 "C78" H 5592 4946 50  0000 L CNN
+F 1 "2nF" H 5592 4855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5500 4900 50  0001 C CNN
+F 3 "~" H 5500 4900 50  0001 C CNN
+F 4 "Murata" H 5500 4900 50  0001 C CNN "Manufacturer"
+F 5 "GRM1885C1H202JA01D" H 5500 4900 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 5500 4900 50  0001 C CNN "Checked"
+F 7 "Mouser" H 5500 4900 50  0001 C CNN "Distributor"
+	1    5500 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C74
+U 1 1 5DF8996C
+P 5100 4900
+F 0 "C74" H 5192 4946 50  0000 L CNN
+F 1 "0.1uF" H 5192 4855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5100 4900 50  0001 C CNN
+F 3 "~" H 5100 4900 50  0001 C CNN
+F 4 "Yageo" H 5100 4900 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 5100 4900 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 5100 4900 50  0001 C CNN "Checked"
+F 7 "Mouser" H 5100 4900 50  0001 C CNN "Distributor"
+	1    5100 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R96
+U 1 1 5DF89952
+P 4800 4900
+F 0 "R96" H 4859 4946 50  0000 L CNN
+F 1 "1M" H 4859 4855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4800 4900 50  0001 C CNN
+F 3 "~" H 4800 4900 50  0001 C CNN
+F 4 "Yageo" H 4800 4900 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071ML" H 4800 4900 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 4800 4900 50  0001 C CNN "Distributor"
+F 7 "y" H 4800 4900 50  0001 C CNN "Checked"
+	1    4800 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C68
+U 1 1 5DF2D105
+P 1950 4800
+F 0 "C68" H 2042 4846 50  0000 L CNN
+F 1 "2nF" H 2042 4755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1950 4800 50  0001 C CNN
+F 3 "~" H 1950 4800 50  0001 C CNN
+F 4 "Murata" H 1950 4800 50  0001 C CNN "Manufacturer"
+F 5 "GRM1885C1H202JA01D" H 1950 4800 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 1950 4800 50  0001 C CNN "Checked"
+F 7 "Mouser" H 1950 4800 50  0001 C CNN "Distributor"
+	1    1950 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C67
+U 1 1 5DF1DF02
+P 1550 4800
+F 0 "C67" H 1642 4846 50  0000 L CNN
+F 1 "0.1uF" H 1642 4755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1550 4800 50  0001 C CNN
+F 3 "~" H 1550 4800 50  0001 C CNN
+F 4 "Yageo" H 1550 4800 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 1550 4800 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 1550 4800 50  0001 C CNN "Checked"
+F 7 "Mouser" H 1550 4800 50  0001 C CNN "Distributor"
+	1    1550 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C84
+U 1 1 5DDBD7F0
+P 6450 6050
+F 0 "C84" H 6542 6096 50  0000 L CNN
+F 1 "0.1uF" H 6542 6005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6450 6050 50  0001 C CNN
+F 3 "~" H 6450 6050 50  0001 C CNN
+F 4 "Yageo" H 6450 6050 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 6450 6050 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 6450 6050 50  0001 C CNN "Checked"
+F 7 "Mouser" H 6450 6050 50  0001 C CNN "Distributor"
+	1    6450 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C77
+U 1 1 5DCFA992
+P 6200 10100
+F 0 "C77" H 6292 10146 50  0000 L CNN
+F 1 "0.1uF" H 6292 10055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6200 10100 50  0001 C CNN
+F 3 "~" H 6200 10100 50  0001 C CNN
+F 4 "Yageo" H 6200 10100 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 6200 10100 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 6200 10100 50  0001 C CNN "Checked"
+F 7 "Mouser" H 6200 10100 50  0001 C CNN "Distributor"
+	1    6200 10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C76
+U 1 1 5DCED684
+P 2950 10100
+F 0 "C76" H 3042 10146 50  0000 L CNN
+F 1 "0.1uF" H 3042 10055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2950 10100 50  0001 C CNN
+F 3 "~" H 2950 10100 50  0001 C CNN
+F 4 "Yageo" H 2950 10100 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 2950 10100 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 2950 10100 50  0001 C CNN "Checked"
+F 7 "Mouser" H 2950 10100 50  0001 C CNN "Distributor"
+	1    2950 10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C85
+U 1 1 5DCE0984
+P 6500 3550
+F 0 "C85" H 6592 3596 50  0000 L CNN
+F 1 "0.1uF" H 6592 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6500 3550 50  0001 C CNN
+F 3 "~" H 6500 3550 50  0001 C CNN
+F 4 "Yageo" H 6500 3550 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 6500 3550 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 6500 3550 50  0001 C CNN "Checked"
+F 7 "Mouser" H 6500 3550 50  0001 C CNN "Distributor"
+	1    6500 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C70
+U 1 1 5DC98163
+P 2950 3550
+F 0 "C70" H 3042 3596 50  0000 L CNN
+F 1 "0.1uF" H 3042 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2950 3550 50  0001 C CNN
+F 3 "~" H 2950 3550 50  0001 C CNN
+F 4 "Yageo" H 2950 3550 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 2950 3550 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 2950 3550 50  0001 C CNN "Checked"
+F 7 "Mouser" H 2950 3550 50  0001 C CNN "Distributor"
+	1    2950 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R98
+U 1 1 5DC767AD
+P 5800 5900
+F 0 "R98" V 5700 5900 50  0000 C CNN
+F 1 "0" V 5800 5900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5800 5900 50  0001 C CNN
+F 3 "~" H 5800 5900 50  0001 C CNN
+F 4 "Vishay Dale" H 5800 5900 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 5800 5900 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 5800 5900 50  0001 C CNN "Distributor"
+F 7 "y" H 5800 5900 50  0001 C CNN "Checked"
+	1    5800 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R102
+U 1 1 5DBAC04C
+P 10300 4850
+F 0 "R102" H 10359 4896 50  0000 L CNN
+F 1 "1.5k" H 10359 4805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10300 4850 50  0001 C CNN
+F 3 "~" H 10300 4850 50  0001 C CNN
+F 4 "Yageo" H 10300 4850 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071K5L" H 10300 4850 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 10300 4850 50  0001 C CNN "Checked"
+F 7 "Mouser" H 10300 4850 50  0001 C CNN "Distributor"
+	1    10300 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C73
+U 1 1 5DAE283C
+P 4900 2300
+F 0 "C73" H 4992 2346 50  0000 L CNN
+F 1 "0.1uF" H 4992 2255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4900 2300 50  0001 C CNN
+F 3 "~" H 4900 2300 50  0001 C CNN
+F 4 "Yageo" H 4900 2300 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 4900 2300 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 4900 2300 50  0001 C CNN "Checked"
+F 7 "Mouser" H 4900 2300 50  0001 C CNN "Distributor"
+	1    4900 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R81
+U 1 1 5DAA3B52
+P 1300 6700
+F 0 "R81" H 1241 6654 50  0000 R CNN
+F 1 "100k" H 1241 6745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1300 6700 50  0001 C CNN
+F 3 "~" H 1300 6700 50  0001 C CNN
+F 4 "Vishay Dale" H 1300 6700 50  0001 C CNN "Manufacturer"
+F 5 "CRCW0603100KJNEAC" H 1300 6700 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 1300 6700 50  0001 C CNN "Checked"
+F 7 "Mouser" H 1300 6700 50  0001 C CNN "Distributor"
+	1    1300 6700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R84
+U 1 1 5DAA3945
+P 1550 6600
+F 0 "R84" H 1491 6554 50  0000 R CNN
+F 1 "100k" H 1491 6645 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1550 6600 50  0001 C CNN
+F 3 "~" H 1550 6600 50  0001 C CNN
+F 4 "Vishay Dale" H 1550 6600 50  0001 C CNN "Manufacturer"
+F 5 "CRCW0603100KJNEAC" H 1550 6600 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 1550 6600 50  0001 C CNN "Checked"
+F 7 "Mouser" H 1550 6600 50  0001 C CNN "Distributor"
+	1    1550 6600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R85
+U 1 1 5DAA369B
+P 1800 6500
+F 0 "R85" H 1741 6454 50  0000 R CNN
+F 1 "100k" H 1741 6545 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1800 6500 50  0001 C CNN
+F 3 "~" H 1800 6500 50  0001 C CNN
+F 4 "Vishay Dale" H 1800 6500 50  0001 C CNN "Manufacturer"
+F 5 "CRCW0603100KJNEAC" H 1800 6500 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 1800 6500 50  0001 C CNN "Checked"
+F 7 "Mouser" H 1800 6500 50  0001 C CNN "Distributor"
+	1    1800 6500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R86
+U 1 1 5DA9C65D
+P 2050 6350
+F 0 "R86" H 1991 6304 50  0000 R CNN
+F 1 "100k" H 1991 6395 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2050 6350 50  0001 C CNN
+F 3 "~" H 2050 6350 50  0001 C CNN
+F 4 "Vishay Dale" H 2050 6350 50  0001 C CNN "Manufacturer"
+F 5 "CRCW0603100KJNEAC" H 2050 6350 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 2050 6350 50  0001 C CNN "Checked"
+F 7 "Mouser" H 2050 6350 50  0001 C CNN "Distributor"
+	1    2050 6350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C66
+U 1 1 5DA7850D
+P 1550 2300
+F 0 "C66" H 1642 2346 50  0000 L CNN
+F 1 "0.1uF" H 1642 2255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1550 2300 50  0001 C CNN
+F 3 "~" H 1550 2300 50  0001 C CNN
+F 4 "Yageo" H 1550 2300 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 1550 2300 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 1550 2300 50  0001 C CNN "Checked"
+F 7 "Mouser" H 1550 2300 50  0001 C CNN "Distributor"
+	1    1550 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R99
+U 1 1 5DA3B1A5
+P 6400 2200
+F 0 "R99" H 6459 2246 50  0000 L CNN
+F 1 "24.9k" H 6459 2155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6400 2200 50  0001 C CNN
+F 3 "~" H 6400 2200 50  0001 C CNN
+F 4 "Yageo" H 6400 2200 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0724K9L" H 6400 2200 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 6400 2200 50  0001 C CNN "Checked"
+F 7 "Mouser" H 6400 2200 50  0001 C CNN "Distributor"
+	1    6400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R87
+U 1 1 5DA34EE4
+P 2900 2200
+F 0 "R87" H 2959 2246 50  0000 L CNN
+F 1 "24.9k" H 2959 2155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2900 2200 50  0001 C CNN
+F 3 "~" H 2900 2200 50  0001 C CNN
+F 4 "Yageo" H 2900 2200 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0724K9L" H 2900 2200 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 2900 2200 50  0001 C CNN "Checked"
+F 7 "Mouser" H 2900 2200 50  0001 C CNN "Distributor"
+	1    2900 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB3_A J17
+U 1 1 5DA0C9AF
+P 5000 6300
+F 0 "J17" H 5057 7017 50  0000 C CNN
+F 1 "USB3_A" H 5057 6926 50  0000 C CNN
+F 2 "Connector_USB:USB3_A_Molex_48393-001" H 5150 6400 50  0001 C CNN
+F 3 "~" H 5150 6400 50  0001 C CNN
+F 4 "Molex" H 5000 6300 50  0001 C CNN "Manufacturer"
+F 5 "48393-0003" H 5000 6300 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 5000 6300 50  0001 C CNN "Checked"
+F 7 "Mouser" H 5000 6300 50  0001 C CNN "Distributor"
+	1    5000 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R93
+U 1 1 5D96EEB5
+P 5050 10050
+F 0 "R93" V 5150 10050 50  0000 C CNN
+F 1 "27" V 5050 10050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5050 10050 50  0001 C CNN
+F 3 "~" H 5050 10050 50  0001 C CNN
+F 4 "Yageo" H 5050 10050 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0727RL" H 5050 10050 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 5050 10050 50  0001 C CNN "Checked"
+F 7 "Mouser" H 5050 10050 50  0001 C CNN "Distributor"
+	1    5050 10050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R91
+U 1 1 5D96EEAB
+P 4900 10150
+F 0 "R91" V 5000 10150 50  0000 C CNN
+F 1 "27" V 4900 10150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4900 10150 50  0001 C CNN
+F 3 "~" H 4900 10150 50  0001 C CNN
+F 4 "Yageo" H 4900 10150 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0727RL" H 4900 10150 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 4900 10150 50  0001 C CNN "Checked"
+F 7 "Mouser" H 4900 10150 50  0001 C CNN "Distributor"
+	1    4900 10150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R92
+U 1 1 5D95F31A
+P 1800 10050
+F 0 "R92" V 1900 10050 50  0000 C CNN
+F 1 "27" V 1800 10050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1800 10050 50  0001 C CNN
+F 3 "~" H 1800 10050 50  0001 C CNN
+F 4 "Yageo" H 1800 10050 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0727RL" H 1800 10050 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 1800 10050 50  0001 C CNN "Checked"
+F 7 "Mouser" H 1800 10050 50  0001 C CNN "Distributor"
+	1    1800 10050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R90
+U 1 1 5D950F53
+P 1650 10150
+F 0 "R90" V 1750 10150 50  0000 C CNN
+F 1 "27" V 1650 10150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1650 10150 50  0001 C CNN
+F 3 "~" H 1650 10150 50  0001 C CNN
+F 4 "Yageo" H 1650 10150 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0727RL" H 1650 10150 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 1650 10150 50  0001 C CNN "Checked"
+F 7 "Mouser" H 1650 10150 50  0001 C CNN "Distributor"
+	1    1650 10150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R103
+U 1 1 5D907271
+P 10750 3400
+F 0 "R103" V 10650 3400 50  0000 C CNN
+F 1 "0" V 10750 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10750 3400 50  0001 C CNN
+F 3 "~" H 10750 3400 50  0001 C CNN
+F 4 "Vishay Dale" H 10750 3400 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 10750 3400 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 10750 3400 50  0001 C CNN "Distributor"
+F 7 "y" H 10750 3400 50  0001 C CNN "Checked"
+	1    10750 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J14
+U 1 1 5DBC25D6
+P 4550 10050
+F 0 "J14" H 4658 10331 50  0000 C CNN
+F 1 "USB_INT2" H 4658 10240 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 4550 10050 50  0001 C CNN
+F 3 "~" H 4550 10050 50  0001 C CNN
+F 4 "JST" H 4550 10050 50  0001 C CNN "Manufacturer"
+F 5 "B4B-PH-K-S(LF)(SN)" H 4550 10050 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 4550 10050 50  0001 C CNN "Checked"
+F 7 "Digikey" H 4550 10050 50  0001 C CNN "Distributor"
+	1    4550 10050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J9
+U 1 1 60F17696
+P 1300 10050
+F 0 "J9" H 1408 10331 50  0000 C CNN
+F 1 "USB_INT1" H 1408 10240 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 1300 10050 50  0001 C CNN
+F 3 "~" H 1300 10050 50  0001 C CNN
+F 4 "JST" H 1300 10050 50  0001 C CNN "Manufacturer"
+F 5 "B4B-PH-K-S(LF)(SN)" H 1300 10050 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 1300 10050 50  0001 C CNN "Checked"
+F 7 "Digikey" H 1300 10050 50  0001 C CNN "Distributor"
+	1    1300 10050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R60
+U 1 1 5DB86F24
+P 10100 5500
+F 0 "R60" H 10159 5546 50  0000 L CNN
+F 1 "4.7k" H 10159 5455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10100 5500 50  0001 C CNN
+F 3 "~" H 10100 5500 50  0001 C CNN
+F 4 "Yageo" H 10100 5500 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-074K7L" H 10100 5500 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 10100 5500 50  0001 C CNN "Checked"
+F 7 "Mouser" H 10100 5500 50  0001 C CNN "Distributor"
+	1    10100 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R63
+U 1 1 5DA6B593
+P 10500 5750
+F 0 "R63" H 10559 5796 50  0000 L CNN
+F 1 "4.7k" H 10559 5705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10500 5750 50  0001 C CNN
+F 3 "~" H 10500 5750 50  0001 C CNN
+F 4 "Yageo" H 10500 5750 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-074K7L" H 10500 5750 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 10500 5750 50  0001 C CNN "Checked"
+F 7 "Mouser" H 10500 5750 50  0001 C CNN "Distributor"
+	1    10500 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R57
+U 1 1 5DA64888
+P 9500 4650
+F 0 "R57" H 9559 4696 50  0000 L CNN
+F 1 "9.53k" H 9559 4605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9500 4650 50  0001 C CNN
+F 3 "~" H 9500 4650 50  0001 C CNN
+F 4 "Yageo" H 9500 4650 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-079K53L" H 9500 4650 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 9500 4650 50  0001 C CNN "Checked"
+F 7 "Mouser" H 9500 4650 50  0001 C CNN "Distributor"
+	1    9500 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB1
+U 1 1 5DA53C5D
+P 13050 1300
+F 0 "FB1" H 13150 1346 50  0000 L CNN
+F 1 "220@100MHz 1.4A" H 13150 1255 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 12980 1300 50  0001 C CNN
+F 3 "~" H 13050 1300 50  0001 C CNN
+F 4 "BLM18PG221SH1D" H 13050 1300 50  0001 C CNN "Manufacturer_No"
+F 5 "Murata" H 13050 1300 50  0001 C CNN "Manufacturer"
+F 6 "y" H 13050 1300 50  0001 C CNN "Checked"
+F 7 "Mouser" H 13050 1300 50  0001 C CNN "Distributor"
+	1    13050 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB2
+U 1 1 5DA4FAF9
+P 15450 1900
+F 0 "FB2" H 15200 2000 50  0000 L CNN
+F 1 "220@100MHz 1.4A" H 14650 1900 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 15380 1900 50  0001 C CNN
+F 3 "~" H 15450 1900 50  0001 C CNN
+F 4 "Murata" H 15450 1900 50  0001 C CNN "Manufacturer"
+F 5 "BLM18PG221SH1D" H 15450 1900 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 15450 1900 50  0001 C CNN "Checked"
+F 7 "Mouser" H 15450 1900 50  0001 C CNN "Distributor"
+	1    15450 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_USB:TPS2561 U16
+U 1 1 5DA34B5D
+P 5800 1800
+F 0 "U16" H 5800 2367 50  0000 C CNN
+F 1 "TPS2561" H 5800 2276 50  0000 C CNN
+F 2 "Package_SON:VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm_ThermalVias" H 6000 2300 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps2561.pdf" H 5400 2300 50  0001 C CNN
+F 4 "Texas Instruments" H 5800 1800 50  0001 C CNN "Manufacturer"
+F 5 "TPS2561DRCR" H 5800 1800 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 5800 1800 50  0001 C CNN "Checked"
+F 7 "Mouser" H 5800 1800 50  0001 C CNN "Distributor"
+	1    5800 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_USB:TPS2561 U15
+U 1 1 5DA289BD
+P 2300 1800
+F 0 "U15" H 2300 2367 50  0000 C CNN
+F 1 "TPS2561" H 2300 2276 50  0000 C CNN
+F 2 "Package_SON:VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm_ThermalVias" H 2500 2300 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps2561.pdf" H 1900 2300 50  0001 C CNN
+F 4 "Texas Instruments" H 2300 1800 50  0001 C CNN "Manufacturer"
+F 5 "TPS2561DRCR" H 2300 1800 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 2300 1800 50  0001 C CNN "Checked"
+F 7 "Mouser" H 2300 1800 50  0001 C CNN "Distributor"
+	1    2300 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L reform2-motherboard-rescue:C_Small-reform-motherboard-rescue C?
+U 1 1 5DA23932
+P 6600 4300
+AR Path="/5DA23932" Ref="C?"  Part="1" 
+AR Path="/5D06A2FD/5DA23932" Ref="C41"  Part="1" 
+F 0 "C41" H 6610 4370 50  0000 L CNN
+F 1 "0.1uF" H 6610 4220 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6600 4300 50  0001 C CNN
+F 3 "" H 6600 4300 50  0001 C CNN
+F 4 "Yageo" H 6600 4300 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 6600 4300 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 6600 4300 50  0001 C CNN "Checked"
+F 7 "Mouser" H 6600 4300 50  0001 C CNN "Distributor"
+	1    6600 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L reform2-motherboard-rescue:C_Small-reform-motherboard-rescue C?
+U 1 1 5DA23928
+P 6350 4200
+AR Path="/5DA23928" Ref="C?"  Part="1" 
+AR Path="/5D06A2FD/5DA23928" Ref="C39"  Part="1" 
+F 0 "C39" H 6360 4270 50  0000 L CNN
+F 1 "0.1uF" H 6360 4120 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6350 4200 50  0001 C CNN
+F 3 "" H 6350 4200 50  0001 C CNN
+F 4 "Yageo" H 6350 4200 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 6350 4200 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 6350 4200 50  0001 C CNN "Checked"
+F 7 "Mouser" H 6350 4200 50  0001 C CNN "Distributor"
+	1    6350 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L reform2-motherboard-rescue:C_Small-reform-motherboard-rescue C?
+U 1 1 5DA15148
+P 3000 4300
+AR Path="/5DA15148" Ref="C?"  Part="1" 
+AR Path="/5D06A2FD/5DA15148" Ref="C42"  Part="1" 
+F 0 "C42" H 3010 4370 50  0000 L CNN
+F 1 "0.1uF" H 3010 4220 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3000 4300 50  0001 C CNN
+F 3 "" H 3000 4300 50  0001 C CNN
+F 4 "Yageo" H 3000 4300 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 3000 4300 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 3000 4300 50  0001 C CNN "Checked"
+F 7 "Mouser" H 3000 4300 50  0001 C CNN "Distributor"
+	1    3000 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L reform2-motherboard-rescue:C_Small-reform-motherboard-rescue C?
+U 1 1 5DA14D06
+P 2750 4200
+AR Path="/5DA14D06" Ref="C?"  Part="1" 
+AR Path="/5D06A2FD/5DA14D06" Ref="C40"  Part="1" 
+F 0 "C40" H 2760 4270 50  0000 L CNN
+F 1 "0.1uF" H 2760 4120 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2750 4200 50  0001 C CNN
+F 3 "" H 2750 4200 50  0001 C CNN
+F 4 "Yageo" H 2750 4200 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 2750 4200 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 2750 4200 50  0001 C CNN "Checked"
+F 7 "Mouser" H 2750 4200 50  0001 C CNN "Distributor"
+	1    2750 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:USB3_A J6
+U 1 1 5DA00825
+P 1450 3800
+F 0 "J6" H 1507 4517 50  0000 C CNN
+F 1 "USB3_A" H 1507 4426 50  0000 C CNN
+F 2 "Connector_USB:USB3_A_Molex_48393-001" H 1600 3900 50  0001 C CNN
+F 3 "~" H 1600 3900 50  0001 C CNN
+F 4 "Molex" H 1450 3800 50  0001 C CNN "Manufacturer"
+F 5 "48393-0003" H 1450 3800 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 1450 3800 50  0001 C CNN "Checked"
+F 7 "Mouser" H 1450 3800 50  0001 C CNN "Distributor"
+	1    1450 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R55
+U 1 1 5DA0DCB3
+P 1250 4800
+F 0 "R55" H 1309 4846 50  0000 L CNN
+F 1 "1M" H 1309 4755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1250 4800 50  0001 C CNN
+F 3 "~" H 1250 4800 50  0001 C CNN
+F 4 "Yageo" H 1250 4800 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071ML" H 1250 4800 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 1250 4800 50  0001 C CNN "Distributor"
+F 7 "y" H 1250 4800 50  0001 C CNN "Checked"
+	1    1250 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C43
+U 1 1 5D9E9C3A
+P 10100 1850
+F 0 "C43" H 10192 1896 50  0000 L CNN
+F 1 "10uF" H 10192 1805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10100 1850 50  0001 C CNN
+F 3 "~" H 10100 1850 50  0001 C CNN
+F 4 "Murata" H 10100 1850 50  0001 C CNN "Manufacturer"
+F 5 "GRM188R6YA106MA73D" H 10100 1850 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 10100 1850 50  0001 C CNN "Checked"
+F 7 "Mouser" H 10100 1850 50  0001 C CNN "Distributor"
+	1    10100 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R62
+U 1 1 5D9E8B2B
+P 10500 1850
+F 0 "R62" H 10559 1896 50  0000 L CNN
+F 1 "10k 1%" H 10559 1805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10500 1850 50  0001 C CNN
+F 3 "~" H 10500 1850 50  0001 C CNN
+F 4 "Yageo" H 10500 1850 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H 10500 1850 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 10500 1850 50  0001 C CNN "Checked"
+F 7 "Mouser" H 10500 1850 50  0001 C CNN "Distributor"
+	1    10500 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R61
+U 1 1 5D9E866F
+P 10300 1650
+F 0 "R61" V 10104 1650 50  0000 C CNN
+F 1 "90.9k 1%" V 10195 1650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10300 1650 50  0001 C CNN
+F 3 "~" H 10300 1650 50  0001 C CNN
+F 4 "Vishay Dale" H 10300 1650 50  0001 C CNN "Manufacturer"
+F 5 "CRCW060390K9FKEAC" H 10300 1650 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 10300 1650 50  0001 C CNN "Checked"
+F 7 "Mouser" H 10300 1650 50  0001 C CNN "Distributor"
+	1    10300 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R58
+U 1 1 5D9E4EC1
+P 9500 5500
+F 0 "R58" H 9559 5546 50  0000 L CNN
+F 1 "4.7k" H 9559 5455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9500 5500 50  0001 C CNN
+F 3 "~" H 9500 5500 50  0001 C CNN
+F 4 "Yageo" H 9500 5500 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-074K7L" H 9500 5500 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 9500 5500 50  0001 C CNN "Checked"
+F 7 "Mouser" H 9500 5500 50  0001 C CNN "Distributor"
+	1    9500 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R59
+U 1 1 5D9E4389
+P 9800 5500
+F 0 "R59" H 9859 5546 50  0000 L CNN
+F 1 "4.7k" H 9859 5455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9800 5500 50  0001 C CNN
+F 3 "~" H 9800 5500 50  0001 C CNN
+F 4 "Yageo" H 9800 5500 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-074K7L" H 9800 5500 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 9800 5500 50  0001 C CNN "Checked"
+F 7 "Mouser" H 9800 5500 50  0001 C CNN "Distributor"
+	1    9800 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L reform2-motherboard-rescue:C_Small-reform-motherboard-rescue C20
+U 1 1 5D1A9B1F
+P 8400 3400
+AR Path="/5D1A9B1F" Ref="C20"  Part="1" 
+AR Path="/5D06A2FD/5D1A9B1F" Ref="C20"  Part="1" 
+F 0 "C20" H 8450 3450 50  0000 L CNN
+F 1 "18pF" H 8450 3300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8400 3400 50  0001 C CNN
+F 3 "" H 8400 3400 50  0001 C CNN
+F 4 "Yageo" H 8400 3400 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JRNPO9BN180" H 8400 3400 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 8400 3400 50  0001 C CNN "Checked"
+F 7 "Mouser" H 8400 3400 50  0001 C CNN "Distributor"
+	1    8400 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L reform2-motherboard-rescue:C_Small-reform-motherboard-rescue C21
+U 1 1 5D1A9B13
+P 9000 3400
+AR Path="/5D1A9B13" Ref="C21"  Part="1" 
+AR Path="/5D06A2FD/5D1A9B13" Ref="C21"  Part="1" 
+F 0 "C21" H 9050 3450 50  0000 L CNN
+F 1 "18pF" H 9050 3300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9000 3400 50  0001 C CNN
+F 3 "" H 9000 3400 50  0001 C CNN
+F 4 "Yageo" H 9000 3400 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JRNPO9BN180" H 9000 3400 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 9000 3400 50  0001 C CNN "Checked"
+F 7 "Mouser" H 9000 3400 50  0001 C CNN "Distributor"
+	1    9000 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L reform2-motherboard-rescue:R_Small-reform-motherboard-rescue R41
+U 1 1 5D1A9B0D
+P 8700 3000
+AR Path="/5D1A9B0D" Ref="R41"  Part="1" 
+AR Path="/5D06A2FD/5D1A9B0D" Ref="R41"  Part="1" 
+F 0 "R41" H 8730 3020 50  0000 L CNN
+F 1 "1M" H 8730 2960 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8700 3000 50  0001 C CNN
+F 3 "" H 8700 3000 50  0001 C CNN
+F 4 "Yageo" H 8700 3000 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071ML" H 8700 3000 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 8700 3000 50  0001 C CNN "Distributor"
+F 7 "y" H 8700 3000 50  0001 C CNN "Checked"
+	1    8700 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Crystal_GND24_Small Y1
+U 1 1 5D1A9B07
+P 8700 3300
+AR Path="/5D1A9B07" Ref="Y1"  Part="1" 
+AR Path="/5D06A2FD/5D1A9B07" Ref="Y1"  Part="1" 
+F 0 "Y1" H 8500 3550 50  0000 C CNN
+F 1 "24MHz" H 8550 3450 50  0000 C CNN
+F 2 "Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm" H 8700 3300 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/3/ABM8AIG-783590.pdf" H 8700 3300 50  0001 C CNN
+F 4 "ABM8AIG-24.000MHz-R40-4-T" H 8700 3300 50  0001 C CNN "Manufacturer_No"
+F 5 "Abracon" H 8700 3300 50  0001 C CNN "Manufacturer"
+F 6 "y" H 8700 3300 50  0001 C CNN "Checked"
+F 7 "Mouser" H 8700 3300 50  0001 C CNN "Distributor"
+	1    8700 3300
+	1    0    0    -1  
+$EndComp
+Text Notes 8400 4900 0    50   ~ 0
+TODO: hook up SCL/SDA?
+Text GLabel 4900 1400 1    50   Input ~ 0
+USB_PWR
+Wire Wire Line
+	4900 1400 4900 1500
+Text GLabel 1550 1400 1    50   Input ~ 0
+USB_PWR
+Wire Wire Line
+	1600 8600 2000 8600
+$Comp
+L power:GND #PWR?
+U 1 1 62BE0C37
+P 2950 9200
+AR Path="/5D06AC46/62BE0C37" Ref="#PWR?"  Part="1" 
+AR Path="/5D06A2FD/62BE0C37" Ref="#PWR09"  Part="1" 
+F 0 "#PWR09" H 2950 8950 50  0001 C CNN
+F 1 "GND" H 2955 9027 50  0000 C CNN
+F 2 "" H 2950 9200 50  0001 C CNN
+F 3 "" H 2950 9200 50  0001 C CNN
+	1    2950 9200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 8650 1600 8600
+Connection ~ 1600 8600
+Connection ~ 2000 8600
+Wire Wire Line
+	2000 8600 2250 8600
+Wire Wire Line
+	2250 8800 2000 8800
+Wire Wire Line
+	2950 9200 1600 9200
+Wire Wire Line
+	1600 9200 1600 8850
+Wire Wire Line
+	2950 9000 2950 9200
+Connection ~ 2950 9200
+Wire Wire Line
+	1600 8500 1600 8600
+Text GLabel 2200 9000 0    50   Input ~ 0
+AUX_PWR_EN
+Wire Wire Line
+	2200 9000 2250 9000
+$Comp
+L Device:R_Small R?
+U 1 1 62BE0C52
+P 2000 8700
+AR Path="/5D06AC46/62BE0C52" Ref="R?"  Part="1" 
+AR Path="/5D06A2FD/62BE0C52" Ref="R2"  Part="1" 
+F 0 "R2" V 1804 8700 50  0000 C CNN
+F 1 "10k" V 1895 8700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2000 8700 50  0001 C CNN
+F 3 "~" H 2000 8700 50  0001 C CNN
+F 4 "Yageo" H 2000 8700 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H 2000 8700 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 2000 8700 50  0001 C CNN "Checked"
+F 7 "Mouser" H 2000 8700 50  0001 C CNN "Distributor"
+	1    2000 8700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 62BE0C60
+P 1600 8750
+AR Path="/5D06AC46/62BE0C60" Ref="C?"  Part="1" 
+AR Path="/5D06A2FD/62BE0C60" Ref="C167"  Part="1" 
+F 0 "C167" H 1692 8796 50  0000 L CNN
+F 1 "10uF" H 1692 8705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1600 8750 50  0001 C CNN
+F 3 "~" H 1600 8750 50  0001 C CNN
+F 4 "Murata" H 1600 8750 50  0001 C CNN "Manufacturer"
+F 5 "GRM188R6YA106MA73D" H 1600 8750 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 1600 8750 50  0001 C CNN "Checked"
+F 7 "Mouser" H 1600 8750 50  0001 C CNN "Distributor"
+	1    1600 8750
+	1    0    0    -1  
+$EndComp
+$Comp
+L reform2:AP22815 U?
+U 1 1 62BE0C6E
+P 2600 8800
+AR Path="/5D06AC46/62BE0C6E" Ref="U?"  Part="1" 
+AR Path="/5D06A2FD/62BE0C6E" Ref="U27"  Part="1" 
+F 0 "U27" H 2600 9265 50  0000 C CNN
+F 1 "AP22815" H 2600 9174 50  0000 C CNN
+F 2 "footprints:TSOT-25" H 2600 8500 50  0001 C CNN
+F 3 "" H 2600 8500 50  0001 C CNN
+F 4 "Diodes, Inc." H 2600 8800 50  0001 C CNN "Manufacturer"
+F 5 "AP22815AWT-7" H 2600 8800 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 2600 8800 50  0001 C CNN "Checked"
+F 7 "Mouser" H 2600 8800 50  0001 C CNN "Distributor"
+	1    2600 8800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR05
+U 1 1 62C15A4F
+P 1600 8500
+F 0 "#PWR05" H 1600 8350 50  0001 C CNN
+F 1 "+3V3" H 1615 8673 50  0000 C CNN
+F 2 "" H 1600 8500 50  0001 C CNN
+F 3 "" H 1600 8500 50  0001 C CNN
+	1    1600 8500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 2000 10100 2000
+Connection ~ 10500 2000
+Wire Wire Line
+	10500 2000 10500 1950
+Wire Wire Line
+	13050 900  13050 1200
+Wire Wire Line
+	2950 8600 3150 8600
+Text GLabel 3150 8600 2    50   Output ~ 0
+3V3_PWR_AUX
+Text GLabel 12900 900  0    50   Input ~ 0
+3V3_PWR_AUX
+Wire Wire Line
+	12900 900  13050 900 
 $EndSCHEMATC
