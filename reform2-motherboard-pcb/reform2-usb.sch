@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 8 9
 Title "MNT Reform 2 USB"
-Date "2020-05-19"
-Rev "2.0D-4"
+Date "2020-09-24"
+Rev "2.0R-1"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
@@ -574,8 +574,6 @@ Wire Wire Line
 	4900 2450 4900 2400
 Connection ~ 5700 2450
 Wire Wire Line
-	5500 5900 5600 5900
-Wire Wire Line
 	2550 3450 2550 3400
 Connection ~ 2550 3400
 Wire Wire Line
@@ -723,8 +721,6 @@ Wire Wire Line
 Connection ~ 6450 6200
 Wire Wire Line
 	6450 6200 6450 6150
-Wire Wire Line
-	5900 5900 6050 5900
 Wire Wire Line
 	1350 4500 1450 4500
 Connection ~ 1450 4500
@@ -1069,20 +1065,6 @@ $EndComp
 Connection ~ 6750 5900
 Wire Wire Line
 	6750 5900 6850 5900
-$Comp
-L power:PWR_FLAG #FLG0114
-U 1 1 649889EB
-P 5600 5900
-F 0 "#FLG0114" H 5600 5975 50  0001 C CNN
-F 1 "PWR_FLAG" H 5600 6073 50  0000 C CNN
-F 2 "" H 5600 5900 50  0001 C CNN
-F 3 "~" H 5600 5900 50  0001 C CNN
-	1    5600 5900
-	1    0    0    -1  
-$EndComp
-Connection ~ 5600 5900
-Wire Wire Line
-	5600 5900 5700 5900
 Wire Wire Line
 	8700 3400 8700 3500
 Wire Wire Line
@@ -1393,10 +1375,10 @@ U 1 1 5DA2390D
 P 5000 3800
 F 0 "J5" H 5057 4517 50  0000 C CNN
 F 1 "USB3_A" H 5057 4426 50  0000 C CNN
-F 2 "Connector_USB:USB3_A_Molex_48393-001" H 5150 3900 50  0001 C CNN
+F 2 "footprints:692121030100" H 5150 3900 50  0001 C CNN
 F 3 "~" H 5150 3900 50  0001 C CNN
-F 4 "Molex" H 5000 3800 50  0001 C CNN "Manufacturer"
-F 5 "48393-0003" H 5000 3800 50  0001 C CNN "Manufacturer_No"
+F 4 "Wuerth" H 5000 3800 50  0001 C CNN "Manufacturer"
+F 5 "692121030100" H 5000 3800 50  0001 C CNN "Manufacturer_No"
 F 6 "y" H 5000 3800 50  0001 C CNN "Checked"
 F 7 "Mouser" H 5000 3800 50  0001 C CNN "Distributor"
 	1    5000 3800
@@ -1452,6 +1434,9 @@ F 42 "Littelfuse" H 13700 9150 50  0001 L BNN "Field42"
 F 43 "0.3" H 13700 9150 50  0001 L BNN "Field43"
 F 44 "" H 13700 9150 50  0001 L BNN "Field44"
 F 45 "" H 13700 9150 50  0001 L BNN "Field45"
+F 46 "Mouser" H 14150 8500 50  0001 C CNN "Distributor"
+F 47 "Littelfuse" H 14150 8500 50  0001 C CNN "Manufacturer"
+F 48 "SP3012-06UTG" H 14150 8500 50  0001 C CNN "Manufacturer_No"
 	1    14150 8500
 	1    0    0    -1  
 $EndComp
@@ -1505,6 +1490,9 @@ F 42 "Littelfuse" H 11200 9150 50  0001 L BNN "Field42"
 F 43 "0.3" H 11200 9150 50  0001 L BNN "Field43"
 F 44 "" H 11200 9150 50  0001 L BNN "Field44"
 F 45 "" H 11200 9150 50  0001 L BNN "Field45"
+F 46 "Mouser" H 11650 8500 50  0001 C CNN "Distributor"
+F 47 "Littelfuse" H 11650 8500 50  0001 C CNN "Manufacturer"
+F 48 "SP3012-06UTG" H 11650 8500 50  0001 C CNN "Manufacturer_No"
 	1    11650 8500
 	1    0    0    -1  
 $EndComp
@@ -1558,6 +1546,9 @@ F 42 "Littelfuse" H 8850 9150 50  0001 L BNN "Field42"
 F 43 "0.3" H 8850 9150 50  0001 L BNN "Field43"
 F 44 "" H 8850 9150 50  0001 L BNN "Field44"
 F 45 "" H 8850 9150 50  0001 L BNN "Field45"
+F 46 "Mouser" H 9300 8500 50  0001 C CNN "Distributor"
+F 47 "Littelfuse" H 9300 8500 50  0001 C CNN "Manufacturer"
+F 48 "SP3012-06UTG" H 9300 8500 50  0001 C CNN "Manufacturer_No"
 	1    9300 8500
 	1    0    0    -1  
 $EndComp
@@ -2155,21 +2146,6 @@ F 7 "Mouser" H 2950 3550 50  0001 C CNN "Distributor"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R98
-U 1 1 5DC767AD
-P 5800 5900
-F 0 "R98" V 5700 5900 50  0000 C CNN
-F 1 "0" V 5800 5900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5800 5900 50  0001 C CNN
-F 3 "~" H 5800 5900 50  0001 C CNN
-F 4 "Vishay Dale" H 5800 5900 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 5800 5900 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 5800 5900 50  0001 C CNN "Distributor"
-F 7 "y" H 5800 5900 50  0001 C CNN "Checked"
-	1    5800 5900
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R_Small R102
 U 1 1 5DBAC04C
 P 10300 4850
@@ -2310,10 +2286,10 @@ U 1 1 5DA0C9AF
 P 5000 6300
 F 0 "J17" H 5057 7017 50  0000 C CNN
 F 1 "USB3_A" H 5057 6926 50  0000 C CNN
-F 2 "Connector_USB:USB3_A_Molex_48393-001" H 5150 6400 50  0001 C CNN
+F 2 "footprints:692121030100" H 5150 6400 50  0001 C CNN
 F 3 "~" H 5150 6400 50  0001 C CNN
-F 4 "Molex" H 5000 6300 50  0001 C CNN "Manufacturer"
-F 5 "48393-0003" H 5000 6300 50  0001 C CNN "Manufacturer_No"
+F 4 "Wuerth" H 5000 6300 50  0001 C CNN "Manufacturer"
+F 5 "692121030100" H 5000 6300 50  0001 C CNN "Manufacturer_No"
 F 6 "y" H 5000 6300 50  0001 C CNN "Checked"
 F 7 "Mouser" H 5000 6300 50  0001 C CNN "Distributor"
 	1    5000 6300
@@ -2388,7 +2364,7 @@ F 1 "100k" V 9950 2800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9850 2800 50  0001 C CNN
 F 3 "~" H 9850 2800 50  0001 C CNN
 F 4 "Vishay Dale" H 9850 2800 50  0001 C CNN "Manufacturer"
-F 5 "CRCW06030000Z0EAC" H 9850 2800 50  0001 C CNN "Manufacturer_No"
+F 5 "CRCW0603100KJNEAC" H 9850 2800 50  0001 C CNN "Manufacturer_No"
 F 6 "Mouser" H 9850 2800 50  0001 C CNN "Distributor"
 F 7 "y" H 9850 2800 50  0001 C CNN "Checked"
 	1    9850 2800
@@ -2603,10 +2579,10 @@ U 1 1 5DA00825
 P 1450 3800
 F 0 "J6" H 1507 4517 50  0000 C CNN
 F 1 "USB3_A" H 1507 4426 50  0000 C CNN
-F 2 "Connector_USB:USB3_A_Molex_48393-001" H 1600 3900 50  0001 C CNN
+F 2 "footprints:692121030100" H 1600 3900 50  0001 C CNN
 F 3 "~" H 1600 3900 50  0001 C CNN
-F 4 "Molex" H 1450 3800 50  0001 C CNN "Manufacturer"
-F 5 "48393-0003" H 1450 3800 50  0001 C CNN "Manufacturer_No"
+F 4 "Wuerth" H 1450 3800 50  0001 C CNN "Manufacturer"
+F 5 "692121030100" H 1450 3800 50  0001 C CNN "Manufacturer_No"
 F 6 "y" H 1450 3800 50  0001 C CNN "Checked"
 F 7 "Mouser" H 1450 3800 50  0001 C CNN "Distributor"
 	1    1450 3800
@@ -2910,4 +2886,8 @@ Wire Wire Line
 	9950 2800 10150 2800
 Wire Wire Line
 	10150 2800 10150 3000
+Wire Wire Line
+	5500 5900 6050 5900
+Text Notes 1500 6050 0    50   ~ 0
+TODO: these reverse leak into AUX_PWR_3V3
 $EndSCHEMATC

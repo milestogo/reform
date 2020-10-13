@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 9
 Title "MNT Reform 2 External Display"
-Date "2020-05-19"
-Rev "2.0D-4"
+Date "2020-09-24"
+Rev "2.0R-1"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
@@ -586,7 +586,7 @@ F 7 "RC0603FR-0710KL" H 6250 4100 50  0001 C CNN "Manufacturer_No"
 $EndComp
 Wire Wire Line
 	6150 4100 6000 4100
-Text Notes 6550 4900 0    50   ~ 0
+Text Notes 7650 4500 0    50   ~ 0
 TODO: Test. Datasheet says 1.7k
 $Comp
 L power:PWR_FLAG #FLG0120
@@ -694,4 +694,6 @@ Connection ~ 6000 3450
 Connection ~ 6850 4500
 Wire Wire Line
 	6850 4500 6700 4500
+Text Notes 7650 4750 0    50   ~ 0
+TODO: LEAK of LV_SUPPLY into USB_PWR\nwhen USB_PWR is off
 $EndSCHEMATC

@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 9
 Title "MNT Reform 2 Internal Display"
-Date "2020-05-19"
-Rev "2.0D-4"
+Date "2020-09-24"
+Rev "2.0R-1"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
@@ -286,7 +286,7 @@ F 1 "1uF" H 2292 1255 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2200 1300 50  0001 C CNN
 F 3 "~" H 2200 1300 50  0001 C CNN
 F 4 "Taiyo Yuden" H 2200 1300 50  0001 C CNN "Manufacturer"
-F 5 "UMK107AB7105KA-T" H 2200 1300 50  0001 C CNN "Manufacturer_No"
+F 5 "UMK107BJ105KA-T" H 2200 1300 50  0001 C CNN "Manufacturer_No"
 F 6 "y" H 2200 1300 50  0001 C CNN "Checked"
 F 7 "Mouser" H 2200 1300 50  0001 C CNN "Distributor"
 	1    2200 1300
@@ -404,7 +404,7 @@ F 1 "1uF" H 5592 4355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5500 4400 50  0001 C CNN
 F 3 "~" H 5500 4400 50  0001 C CNN
 F 4 "Taiyo Yuden" H 5500 4400 50  0001 C CNN "Manufacturer"
-F 5 "UMK107AB7105KA-T" H 5500 4400 50  0001 C CNN "Manufacturer_No"
+F 5 "UMK107BJ105KA-T" H 5500 4400 50  0001 C CNN "Manufacturer_No"
 F 6 "y" H 5500 4400 50  0001 C CNN "Checked"
 F 7 "Mouser" H 5500 4400 50  0001 C CNN "Distributor"
 	1    5500 4400
@@ -497,7 +497,7 @@ F 1 "1uF" H 5942 5255 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5850 5300 50  0001 C CNN
 F 3 "~" H 5850 5300 50  0001 C CNN
 F 4 "Taiyo Yuden" H 5850 5300 50  0001 C CNN "Manufacturer"
-F 5 "UMK107AB7105KA-T" H 5850 5300 50  0001 C CNN "Manufacturer_No"
+F 5 "UMK107BJ105KA-T" H 5850 5300 50  0001 C CNN "Manufacturer_No"
 F 6 "y" H 5850 5300 50  0001 C CNN "Checked"
 F 7 "Mouser" H 5850 5300 50  0001 C CNN "Distributor"
 	1    5850 5300

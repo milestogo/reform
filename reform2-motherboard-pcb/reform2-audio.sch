@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 9
 Title "Reform 2 Audio"
-Date "2020-05-19"
-Rev "2.0D-4"
+Date "2020-09-24"
+Rev "2.0R-1"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
@@ -659,7 +659,7 @@ F 1 "1uF" H 6892 2555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6800 2600 50  0001 C CNN
 F 3 "~" H 6800 2600 50  0001 C CNN
 F 4 "Taiyo Yuden" H 6800 2600 50  0001 C CNN "Manufacturer"
-F 5 "UMK107AB7105KA-T" H 6800 2600 50  0001 C CNN "Manufacturer_No"
+F 5 "UMK107BJ105KA-T" H 6800 2600 50  0001 C CNN "Manufacturer_No"
 F 6 "y" H 6800 2600 50  0001 C CNN "Checked"
 F 7 "Mouser" H 6800 2600 50  0001 C CNN "Distributor"
 	1    6800 2600
@@ -779,6 +779,7 @@ F 4 "Mouser" H 2900 4850 50  0001 C CNN "Distributor"
 F 5 "y" H 2900 4850 50  0001 C CNN "Checked"
 F 6 "Vishay Dale" H 2900 4850 50  0001 C CNN "Manufacturer"
 F 7 "CRCW06030000Z0EAC" H 2900 4850 50  0001 C CNN "Manufacturer_No"
+F 8 "y" H 2900 4850 50  0001 C CNN "DNP"
 	1    2900 4850
 	1    0    0    -1  
 $EndComp
@@ -823,7 +824,7 @@ Wire Wire Line
 	3700 5800 4400 5800
 Connection ~ 4400 5800
 Text Notes 2850 4950 1    50   ~ 0
-NOSTUFF!
+NOSTUFF
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 6A3C71B7
@@ -863,8 +864,8 @@ F 0 "C157" H 7542 4296 50  0000 L CNN
 F 1 "470nF" H 7542 4205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7450 4250 50  0001 C CNN
 F 3 "~" H 7450 4250 50  0001 C CNN
-F 4 "" H 7450 4250 50  0001 C CNN "Manufacturer"
-F 5 "" H 7450 4250 50  0001 C CNN "Manufacturer_No"
+F 4 "Taiyo Yuden" H 7450 4250 50  0001 C CNN "Manufacturer"
+F 5 "TMK107B7474KA-TR" H 7450 4250 50  0001 C CNN "Manufacturer_No"
 F 6 "" H 7450 4250 50  0001 C CNN "Checked"
 F 7 "Mouser" H 7450 4250 50  0001 C CNN "Distributor"
 	1    7450 4250
@@ -887,8 +888,8 @@ F 0 "C159" H 7542 4796 50  0000 L CNN
 F 1 "470nF" H 7542 4705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7450 4750 50  0001 C CNN
 F 3 "~" H 7450 4750 50  0001 C CNN
-F 4 "" H 7450 4750 50  0001 C CNN "Manufacturer"
-F 5 "" H 7450 4750 50  0001 C CNN "Manufacturer_No"
+F 4 "Taiyo Yuden" H 7450 4750 50  0001 C CNN "Manufacturer"
+F 5 "TMK107B7474KA-TR" H 7450 4750 50  0001 C CNN "Manufacturer_No"
 F 6 "" H 7450 4750 50  0001 C CNN "Checked"
 F 7 "Mouser" H 7450 4750 50  0001 C CNN "Distributor"
 	1    7450 4750
@@ -930,7 +931,7 @@ F 1 "1uF" H 5942 1705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5850 1750 50  0001 C CNN
 F 3 "~" H 5850 1750 50  0001 C CNN
 F 4 "Taiyo Yuden" H 5850 1750 50  0001 C CNN "Manufacturer"
-F 5 "UMK107AB7105KA-T" H 5850 1750 50  0001 C CNN "Manufacturer_No"
+F 5 "UMK107BJ105KA-T" H 5850 1750 50  0001 C CNN "Manufacturer_No"
 F 6 "y" H 5850 1750 50  0001 C CNN "Checked"
 F 7 "Mouser" H 5850 1750 50  0001 C CNN "Distributor"
 	1    5850 1750
@@ -947,7 +948,7 @@ F 1 "1uF" H 6250 1600 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6100 1650 50  0001 C CNN
 F 3 "~" H 6100 1650 50  0001 C CNN
 F 4 "Taiyo Yuden" H 6100 1650 50  0001 C CNN "Manufacturer"
-F 5 "UMK107AB7105KA-T" H 6100 1650 50  0001 C CNN "Manufacturer_No"
+F 5 "UMK107BJ105KA-T" H 6100 1650 50  0001 C CNN "Manufacturer_No"
 F 6 "y" H 6100 1650 50  0001 C CNN "Checked"
 F 7 "Mouser" H 6100 1650 50  0001 C CNN "Distributor"
 	1    6100 1650
@@ -1021,8 +1022,8 @@ F 0 "C156" H 6892 4296 50  0000 L CNN
 F 1 "0.1uF" H 6892 4205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6800 4250 50  0001 C CNN
 F 3 "~" H 6800 4250 50  0001 C CNN
-F 4 "" H 6800 4250 50  0001 C CNN "Manufacturer"
-F 5 "" H 6800 4250 50  0001 C CNN "Manufacturer_No"
+F 4 "Yageo" H 6800 4250 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 6800 4250 50  0001 C CNN "Manufacturer_No"
 F 6 "" H 6800 4250 50  0001 C CNN "Checked"
 F 7 "Mouser" H 6800 4250 50  0001 C CNN "Distributor"
 	1    6800 4250
@@ -1039,8 +1040,8 @@ F 0 "C158" H 6992 4546 50  0000 L CNN
 F 1 "0.1uF" H 6992 4455 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6900 4500 50  0001 C CNN
 F 3 "~" H 6900 4500 50  0001 C CNN
-F 4 "" H 6900 4500 50  0001 C CNN "Manufacturer"
-F 5 "" H 6900 4500 50  0001 C CNN "Manufacturer_No"
+F 4 "Yageo" H 6900 4500 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 6900 4500 50  0001 C CNN "Manufacturer_No"
 F 6 "" H 6900 4500 50  0001 C CNN "Checked"
 F 7 "Mouser" H 6900 4500 50  0001 C CNN "Distributor"
 	1    6900 4500
@@ -1059,8 +1060,8 @@ F 0 "C165" H 7092 4796 50  0000 L CNN
 F 1 "0.1uF" H 7092 4705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7000 4750 50  0001 C CNN
 F 3 "~" H 7000 4750 50  0001 C CNN
-F 4 "" H 7000 4750 50  0001 C CNN "Manufacturer"
-F 5 "" H 7000 4750 50  0001 C CNN "Manufacturer_No"
+F 4 "Yageo" H 7000 4750 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 7000 4750 50  0001 C CNN "Manufacturer_No"
 F 6 "" H 7000 4750 50  0001 C CNN "Checked"
 F 7 "Mouser" H 7000 4750 50  0001 C CNN "Distributor"
 	1    7000 4750
@@ -1077,8 +1078,8 @@ F 0 "C166" H 7192 5046 50  0000 L CNN
 F 1 "0.1uF" H 7192 4955 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7100 5000 50  0001 C CNN
 F 3 "~" H 7100 5000 50  0001 C CNN
-F 4 "" H 7100 5000 50  0001 C CNN "Manufacturer"
-F 5 "" H 7100 5000 50  0001 C CNN "Manufacturer_No"
+F 4 "Yageo" H 7100 5000 50  0001 C CNN "Manufacturer"
+F 5 "CC0603JPX7R9BB104" H 7100 5000 50  0001 C CNN "Manufacturer_No"
 F 6 "" H 7100 5000 50  0001 C CNN "Checked"
 F 7 "Mouser" H 7100 5000 50  0001 C CNN "Distributor"
 	1    7100 5000
@@ -1341,6 +1342,9 @@ F 0 "D10" H 8855 3996 50  0000 L CNN
 F 1 "SP0503BAHT" H 8855 3905 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-143" H 8875 3900 50  0001 L CNN
 F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 8775 4075 50  0001 C CNN
+F 4 "Mouser" H 8650 3950 50  0001 C CNN "Distributor"
+F 5 "Littelfuse" H 8650 3950 50  0001 C CNN "Manufacturer"
+F 6 "SP0503BAHT" H 8650 3950 50  0001 C CNN "Manufacturer_No"
 	1    8650 3950
 	1    0    0    -1  
 $EndComp

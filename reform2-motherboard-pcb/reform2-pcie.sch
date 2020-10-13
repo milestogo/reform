@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 9
 Title "MNT Reform 2 PCIe"
-Date "2020-05-19"
-Rev "2.0D-4"
+Date "2020-09-24"
+Rev "2.0R-1"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
@@ -1286,13 +1286,6 @@ Connection ~ 6100 2600
 Wire Wire Line
 	4050 650  4050 1250
 Wire Wire Line
-	5550 6100 5550 4050
-Wire Wire Line
-	5550 4050 6100 4050
-Wire Wire Line
-	6100 4050 6100 3800
-Connection ~ 6100 3800
-Wire Wire Line
 	6700 4750 8200 4750
 Wire Wire Line
 	6700 4650 8200 4650
@@ -1539,7 +1532,7 @@ Wire Wire Line
 Wire Wire Line
 	900  5100 900  5150
 Wire Wire Line
-	700  1850 700  5100
+	700  1850 700  4700
 Connection ~ 700  5100
 Wire Wire Line
 	700  5100 700  5600
@@ -1571,9 +1564,6 @@ F 7 "C0603C103K5RAC3190" H 3250 6500 50  0001 C CNN "Manufacturer_No"
 $EndComp
 Wire Wire Line
 	3250 6400 3250 6100
-Connection ~ 3250 6100
-Wire Wire Line
-	3250 6100 5550 6100
 $Comp
 L power:GND #PWR0215
 U 1 1 5FFD76F1
@@ -1831,4 +1821,45 @@ F 3 "" H 6150 6750 50  0001 C CNN
 $EndComp
 Text Notes 5000 1650 0    50   ~ 0
 Controlled by PCIE1_PWR
+Wire Wire Line
+	3250 6100 3250 5000
+Wire Wire Line
+	3250 5000 1750 5000
+Connection ~ 3250 6100
+Connection ~ 700  5000
+Wire Wire Line
+	700  5000 700  5100
+$Comp
+L Device:R_Small R101
+U 1 1 5FF52117
+P 700 4800
+F 0 "R101" V 600 4800 50  0000 C CNN
+F 1 "0" V 700 4800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 700 4800 50  0001 C CNN
+F 3 "~" H 700 4800 50  0001 C CNN
+F 4 "Vishay Dale" H 700 4800 50  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EAC" H 700 4800 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 700 4800 50  0001 C CNN "Distributor"
+F 7 "y" H 700 4800 50  0001 C CNN "Checked"
+	1    700  4800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	700  4900 700  5000
+Text Notes 850  4850 0    50   ~ 0
+TODO: supply directly \nby AUX 3V3?
+$Comp
+L power:PWR_FLAG #FLG0114
+U 1 1 5FF63199
+P 1750 5000
+F 0 "#FLG0114" H 1750 5075 50  0001 C CNN
+F 1 "PWR_FLAG" V 1750 5127 50  0000 L CNN
+F 2 "" H 1750 5000 50  0001 C CNN
+F 3 "~" H 1750 5000 50  0001 C CNN
+	1    1750 5000
+	1    0    0    -1  
+$EndComp
+Connection ~ 1750 5000
+Wire Wire Line
+	1750 5000 700  5000
 $EndSCHEMATC

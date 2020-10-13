@@ -5,8 +5,8 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 9
 Title "MNT Reform 2"
-Date "2020-05-19"
-Rev "2.0D-4"
+Date "2020-09-24"
+Rev "2.0R-1"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
@@ -1442,20 +1442,6 @@ F 5 "9774010243" H 17400 8800 50  0001 C CNN "Manufacturer_No"
 F 6 "y" H 17400 8800 50  0001 C CNN "Checked"
 F 7 "Mouser" H 17400 8800 50  0001 C CNN "Distributor"
 	1    17400 8800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 5D3EF97D
-P 15050 10250
-F 0 "H4" H 15150 10296 50  0000 L CNN
-F 1 "WEEE" H 15150 10205 50  0000 L CNN
-F 2 "Symbol:WEEE-Logo_4.2x6mm_SilkScreen" H 15050 10250 50  0001 C CNN
-F 3 "~" H 15050 10250 50  0001 C CNN
-F 4 "y" H 15050 10250 50  0001 C CNN "Checked"
-F 5 "None" H 15050 10250 50  0001 C CNN "Distributor"
-F 6 "y" H 15050 10250 50  0001 C CNN "DNP"
-	1    15050 10250
 	1    0    0    -1  
 $EndComp
 $Comp
