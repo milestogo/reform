@@ -1205,8 +1205,6 @@ NoConn ~ 3350 4250
 NoConn ~ 3350 4350
 NoConn ~ 3350 4450
 NoConn ~ 3350 4550
-Text Notes 7150 3800 0    50   ~ 0
-TODO: why 51k??
 Text GLabel 9050 3900 0    50   Input ~ 0
 3V3_PWR_AUX
 $Comp

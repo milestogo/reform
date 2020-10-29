@@ -1748,10 +1748,8 @@ Wire Wire Line
 	10400 5350 11050 5350
 Wire Wire Line
 	10400 5450 11050 5450
-Text Notes 11800 2200 0    50   ~ 0
-TODO: which bead values?\nhttps://www.allaboutcircuits.com/technical-articles/choosing-and-using-ferrite-beads/\nhttps://www.we-online.com/catalog/datasheet/74279265.pdf\n\nsamsung CIS21J121NE
-Text Notes 15400 2500 0    50   ~ 0
-TODO: TVS + Rs
+Text Notes 18900 14250 0    50   ~ 0
+NOTE: optimize bead values?\nhttps://www.allaboutcircuits.com/technical-articles/choosing-and-using-ferrite-beads/\nhttps://www.we-online.com/catalog/datasheet/74279265.pdf\nsamsung CIS21J121NE
 $Comp
 L Mechanical:MountingHole H14
 U 1 1 64382D78

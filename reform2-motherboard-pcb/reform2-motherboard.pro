@@ -1,4 +1,4 @@
-update=2020-05-22T20:29:42 CEST
+update=2020-10-29T21:13:07 CET
 version=1
 last_client=kicad
 [general]
@@ -250,7 +250,7 @@ dPairViaGap=0.25
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=/tmp/
+PlotDirectoryName=../reform2-schematics-pdf/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew

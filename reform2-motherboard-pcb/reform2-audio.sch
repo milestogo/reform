@@ -919,8 +919,6 @@ $EndComp
 Connection ~ 4500 2900
 Wire Wire Line
 	4500 2900 4150 2900
-Text Notes 8050 5650 0    50   ~ 0
-alternative:\n47uF in series for lowpass
 $Comp
 L Device:C_Small C162
 U 1 1 5F6748CF

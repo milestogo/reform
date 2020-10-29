@@ -1846,8 +1846,6 @@ F 7 "y" H 700 4800 50  0001 C CNN "Checked"
 $EndComp
 Wire Wire Line
 	700  4900 700  5000
-Text Notes 850  4850 0    50   ~ 0
-TODO: supply directly \nby AUX 3V3?
 $Comp
 L power:PWR_FLAG #FLG0114
 U 1 1 5FF63199
