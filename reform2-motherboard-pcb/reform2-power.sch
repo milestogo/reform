@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 9 9
 Title "MNT Reform 2 Power System"
-Date "2020-09-24"
-Rev "2.0R-1"
+Date "2020-10-29"
+Rev "2.0R-2C"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
@@ -1319,7 +1319,7 @@ L Device:CP_Small C16
 U 1 1 5D321012
 P 5950 1550
 F 0 "C16" H 6042 1596 50  0000 L CNN
-F 1 "220uF" H 6042 1505 50  0000 L CNN
+F 1 "100uF" H 6042 1505 50  0000 L CNN
 F 2 "Capacitor_SMD:CP_Elec_8x10" H 5950 1550 50  0001 C CNN
 F 3 "~" H 5950 1550 50  0001 C CNN
 F 4 "UCC" H 5950 1550 50  0001 C CNN "Manufacturer"
@@ -1337,7 +1337,7 @@ L Device:CP_Small C17
 U 1 1 5D35EF03
 P 5700 2950
 F 0 "C17" H 5792 2996 50  0000 L CNN
-F 1 "220uF" H 5792 2905 50  0000 L CNN
+F 1 "100uF" H 5792 2905 50  0000 L CNN
 F 2 "Capacitor_SMD:CP_Elec_8x10" H 5700 2950 50  0001 C CNN
 F 3 "~" H 5700 2950 50  0001 C CNN
 F 4 "UCC" H 5700 2950 50  0001 C CNN "Manufacturer"
@@ -1721,10 +1721,10 @@ U 1 1 5E8EBB68
 P 11450 6250
 F 0 "SW2" H 11450 6535 50  0000 C CNN
 F 1 "SW_Push" H 11450 6444 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2" H 11450 6450 50  0001 C CNN
+F 2 "footprints:UK-B0206-G3.8-250-JZ" H 11450 6450 50  0001 C CNN
 F 3 "~" H 11450 6450 50  0001 C CNN
-F 4 "C&K" H 11450 6250 50  0001 C CNN "Manufacturer"
-F 5 "KMR221GLFS" H 11450 6250 50  0001 C CNN "Manufacturer_No"
+F 4 "USAKRO" H 11450 6250 50  0001 C CNN "Manufacturer"
+F 5 "UK-B0206-G3.8-250-JZ" H 11450 6250 50  0001 C CNN "Manufacturer_No"
 F 6 "y" H 11450 6250 50  0001 C CNN "Checked"
 F 7 "Mouser" H 11450 6250 50  0001 C CNN "Distributor"
 	1    11450 6250
@@ -1776,7 +1776,7 @@ F 0 "J8" H 15070 8039 50  0000 R CNN
 F 1 "USB_B_Micro" H 15070 7948 50  0000 R CNN
 F 2 "footprints:WE_629105136821" H 15450 8000 50  0001 C CNN
 F 3 "~" H 15450 8000 50  0001 C CNN
-F 4 "Wuerth" H 15300 8050 50  0001 C CNN "Manufacturer"
+F 4 "Wurth" H 15300 8050 50  0001 C CNN "Manufacturer"
 F 5 "629105136821" H 15300 8050 50  0001 C CNN "Manufacturer_No"
 F 6 "y" H 15300 8050 50  0001 C CNN "Checked"
 F 7 "Mouser" H 15300 8050 50  0001 C CNN "Distributor"
@@ -2098,7 +2098,7 @@ Text Label 12050 7650 0    50   ~ 0
 LPC_~TRST
 Text Label 12050 7250 0    50   ~ 0
 LPC_SCK0a
-Text Label 12050 8450 0    50   ~ 0
+Text Label 11500 7850 0    50   ~ 0
 LPC_MISO1a
 Text Label 12050 8550 0    50   ~ 0
 LPC_AD7
@@ -2602,38 +2602,6 @@ LPC_UART2_RX
 Text GLabel 14700 6250 2    50   Output ~ 0
 LPC_UART2_TX
 Wire Wire Line
-	11500 7850 12550 7850
-Wire Wire Line
-	10950 7750 10950 7850
-Wire Wire Line
-	10950 7850 11000 7850
-Wire Wire Line
-	10900 7650 10900 7950
-Wire Wire Line
-	10900 7950 11000 7950
-Wire Wire Line
-	10900 7650 12550 7650
-Wire Wire Line
-	10850 7550 10850 8050
-Wire Wire Line
-	10850 8050 11000 8050
-Wire Wire Line
-	10850 7550 12550 7550
-Wire Wire Line
-	10800 7450 10800 8150
-Wire Wire Line
-	10800 8150 11000 8150
-Wire Wire Line
-	10800 7450 12550 7450
-Wire Wire Line
-	10750 7350 10750 8250
-Wire Wire Line
-	10750 8250 11000 8250
-Wire Wire Line
-	10750 7350 12550 7350
-Wire Wire Line
-	10950 8350 11000 8350
-Wire Wire Line
 	14050 6550 13950 6550
 Text Label 14050 7250 0    50   ~ 0
 LPC_PIO1_25
@@ -2662,24 +2630,14 @@ Text Label 11350 4400 0    50   ~ 0
 LPC_RXDc
 Text Label 11350 4300 0    50   ~ 0
 LPC_TXDc
-Text Label 11500 8250 0    50   ~ 0
+Text Label 11000 7850 2    50   ~ 0
 LPC_SCK0b
 Wire Wire Line
-	12000 8450 12000 8150
-Wire Wire Line
-	12000 8150 11500 8150
-Wire Wire Line
 	12050 8550 12550 8550
-Text Label 10950 8450 2    50   ~ 0
+Text Label 11500 8250 0    50   ~ 0
 LPC_AD7
 Wire Wire Line
-	10950 8450 11000 8450
-Wire Wire Line
-	12000 8450 12550 8450
-Wire Wire Line
 	12050 8350 12550 8350
-Wire Wire Line
-	10950 8550 11000 8550
 Wire Wire Line
 	11500 8550 11600 8550
 Wire Wire Line
@@ -2994,7 +2952,7 @@ Text Label 7350 4950 0    50   ~ 0
 LPC_VCC
 Text Label 11350 4200 0    50   ~ 0
 LPC_VCC
-Text Label 10950 8550 2    50   ~ 0
+Text Label 11000 8550 2    50   ~ 0
 LPC_VCC
 Wire Wire Line
 	7300 5600 8050 5600
@@ -4305,7 +4263,7 @@ F 7 "Mouser" H 1850 5050 50  0001 C CNN "Distributor"
 	0    1    1    0   
 $EndComp
 Text Notes 4700 4850 0    50   ~ 0
-These values are\ncargoculted from the\nmanual and should\nbe verified with a VNA
+These values are\ncopied from the\ndatasheet and should\nbe verified with a VNA
 Wire Wire Line
 	3350 7900 3250 7900
 Wire Wire Line
@@ -4974,14 +4932,12 @@ Wire Wire Line
 Connection ~ 9850 4150
 Wire Wire Line
 	9850 4150 9850 4250
-Wire Wire Line
-	10950 7750 12550 7750
 $Comp
 L Connector_Generic:Conn_02x08_Odd_Even J22
 U 1 1 61E919B8
 P 11200 8150
-F 0 "J22" H 11250 7300 50  0000 C CNN
-F 1 "LPC_IO" H 11250 7450 50  0000 C CNN
+F 0 "J22" H 11250 7500 50  0000 C CNN
+F 1 "LPC_IO" H 11250 7600 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 11200 8150 50  0001 C CNN
 F 3 "~" H 11200 8150 50  0001 C CNN
 F 4 "Molex" H 11200 8150 50  0001 C CNN "Manufacturer"
@@ -4991,9 +4947,9 @@ F 7 "Mouser" H 11200 8150 50  0001 C CNN "Distributor"
 	1    11200 8150
 	1    0    0    -1  
 $EndComp
-Text Label 11500 8050 0    50   ~ 0
+Text Label 11500 8350 0    50   ~ 0
 LPC_RXDa
-Text Label 11500 7950 0    50   ~ 0
+Text Label 11000 8350 2    50   ~ 0
 LPC_TXDa
 Wire Wire Line
 	6600 6350 6600 6650
@@ -5384,7 +5340,7 @@ Text Notes 14550 6550 0    50   ~ 0
 EN_3V3!
 Text Notes 14550 6650 0    50   ~ 0
 EN_1V2!
-Text Label 10950 8350 2    50   ~ 0
+Text Label 11500 8450 0    50   ~ 0
 LPC_MOSI1a
 Text Label 15200 9500 0    50   ~ 0
 LPC_UVBUS
@@ -5417,7 +5373,7 @@ Wire Wire Line
 	13950 7250 15550 7250
 Wire Wire Line
 	1300 2150 1300 4300
-Text Label 11500 8450 0    50   ~ 0
+Text Label 11000 8250 2    50   ~ 0
 LPC_SCLKa
 $Comp
 L Device:R_Small R194
@@ -5684,6 +5640,7 @@ F 3 "http://www.diodes.com/assets/Datasheets/ds30376.pdf" H 6800 2050 50  0001 L
 F 4 "Mouser" H 6800 2050 50  0001 C CNN "Distributor"
 F 5 "Nexperia" H 6800 2050 50  0001 C CNN "Manufacturer"
 F 6 "PMV50ENEAR" H 6800 2050 50  0001 C CNN "Manufacturer_No"
+F 7 "y" H 6800 2050 50  0001 C CNN "Checked"
 	1    6800 2050
 	1    0    0    -1  
 $EndComp
@@ -5715,6 +5672,7 @@ F 3 "http://www.diodes.com/assets/Datasheets/ds30376.pdf" H 6800 3450 50  0001 L
 F 4 "Mouser" H 6800 3450 50  0001 C CNN "Distributor"
 F 5 "Nexperia" H 6800 3450 50  0001 C CNN "Manufacturer"
 F 6 "PMV50ENEAR" H 6800 3450 50  0001 C CNN "Manufacturer_No"
+F 7 "y" H 6800 3450 50  0001 C CNN "Checked"
 	1    6800 3450
 	1    0    0    -1  
 $EndComp
@@ -5782,6 +5740,7 @@ F 3 "http://www.diodes.com/assets/Datasheets/ds30376.pdf" H 1950 7700 50  0001 L
 F 4 "Mouser" H 1950 7700 50  0001 C CNN "Distributor"
 F 5 "Nexperia" H 1950 7700 50  0001 C CNN "Manufacturer"
 F 6 "PMV50ENEAR" H 1950 7700 50  0001 C CNN "Manufacturer_No"
+F 7 "y" H 1950 7700 50  0001 C CNN "Checked"
 	1    1950 7700
 	1    0    0    -1  
 $EndComp
@@ -5891,6 +5850,7 @@ F 3 "~" H 2250 1000 50  0001 C CNN
 F 4 "Mouser" H 2250 1000 50  0001 C CNN "Distributor"
 F 5 "Vishay" H 2250 1000 50  0001 C CNN "Manufacturer"
 F 6 "SMAJ36CA-E3/5A" H 2250 1000 50  0001 C CNN "Manufacturer_No"
+F 7 "y" H 2250 1000 50  0001 C CNN "Checked"
 	1    2250 1000
 	0    1    1    0   
 $EndComp
@@ -5912,7 +5872,7 @@ Wire Wire Line
 	1400 1300 2250 1300
 Text Label 12050 6850 0    50   ~ 0
 LPC_~USBCON
-Text Label 11500 8350 0    50   ~ 0
+Text Label 11000 8450 2    50   ~ 0
 LPC_~USBCON
 Text GLabel 10050 2850 1    50   Input ~ 0
 3V3_PWR_AUX
@@ -5971,4 +5931,32 @@ Wire Wire Line
 	10550 3200 10700 3200
 Text Notes 10200 3100 0    50   ~ 0
 NOSTUFF
+Wire Wire Line
+	12550 7750 12050 7750
+Wire Wire Line
+	12050 7650 12550 7650
+Wire Wire Line
+	12550 7550 12050 7550
+Wire Wire Line
+	12050 7450 12550 7450
+Wire Wire Line
+	12550 7350 12050 7350
+Wire Wire Line
+	12050 7850 12550 7850
+Wire Wire Line
+	12550 8450 12050 8450
+Text Label 11000 7950 2    50   ~ 0
+LPC_TMS
+Text Label 11500 7950 0    50   ~ 0
+LPC_TDI
+Text Label 11000 8050 2    50   ~ 0
+LPC_~TRST
+Text Label 11500 8050 0    50   ~ 0
+LPC_TDO
+Text Label 11000 8150 2    50   ~ 0
+LPC_AD5
+Text Label 11500 8150 0    50   ~ 0
+LPC_SWDIO
+Text Label 12050 8450 0    50   ~ 0
+LPC_MISO1a
 $EndSCHEMATC

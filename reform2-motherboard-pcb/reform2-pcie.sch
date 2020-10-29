@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 9
 Title "MNT Reform 2 PCIe"
-Date "2020-09-24"
-Rev "2.0R-1"
+Date "2020-10-29"
+Rev "2.0R-2C"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"

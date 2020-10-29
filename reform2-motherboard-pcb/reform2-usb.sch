@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 8 9
 Title "MNT Reform 2 USB"
-Date "2020-09-24"
-Rev "2.0R-1"
+Date "2020-10-29"
+Rev "2.0R-2C"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
@@ -486,9 +486,9 @@ Text GLabel 2900 1900 2    50   Output ~ 0
 USB3_1_OVERCURn
 Text GLabel 2900 1600 2    50   Output ~ 0
 USB3_2_OVERCURn
-Text GLabel 2100 6700 2    50   Output ~ 0
+Text GLabel 2700 6850 2    50   Output ~ 0
 USB3_3_OVERCURn
-Text GLabel 2100 6800 2    50   Output ~ 0
+Text GLabel 2700 6950 2    50   Output ~ 0
 USB3_4_OVERCURn
 Wire Wire Line
 	2900 2300 2900 2450
@@ -520,36 +520,36 @@ Wire Wire Line
 Wire Wire Line
 	1550 2450 2200 2450
 Connection ~ 2200 2450
-Text GLabel 2100 6500 2    50   Output ~ 0
+Text GLabel 2700 6650 2    50   Output ~ 0
 USB3_1_OVERCURn
-Text GLabel 2100 6600 2    50   Output ~ 0
+Text GLabel 2700 6750 2    50   Output ~ 0
 USB3_2_OVERCURn
 Wire Wire Line
-	2050 6450 2050 6500
+	2650 6600 2650 6650
 Wire Wire Line
-	2050 6500 2100 6500
+	2650 6650 2700 6650
 Wire Wire Line
-	2100 6600 1800 6600
+	2700 6750 2400 6750
 Wire Wire Line
-	1550 6700 2100 6700
+	2150 6850 2700 6850
 Wire Wire Line
-	2100 6800 1300 6800
+	2700 6950 1900 6950
 Wire Wire Line
-	1300 6200 1300 6600
+	1900 6350 1900 6750
 Wire Wire Line
-	1300 6200 1550 6200
+	1900 6350 2150 6350
 Wire Wire Line
-	2050 6200 2050 6250
+	2650 6350 2650 6400
 Wire Wire Line
-	1800 6400 1800 6200
-Connection ~ 1800 6200
+	2400 6550 2400 6350
+Connection ~ 2400 6350
 Wire Wire Line
-	1800 6200 2050 6200
+	2400 6350 2650 6350
 Wire Wire Line
-	1550 6500 1550 6200
-Connection ~ 1550 6200
+	2150 6650 2150 6350
+Connection ~ 2150 6350
 Wire Wire Line
-	1550 6200 1800 6200
+	2150 6350 2400 6350
 Text GLabel 6400 1900 2    50   Output ~ 0
 USB3_3_OVERCURn
 Text GLabel 6400 1600 2    50   Output ~ 0
@@ -872,17 +872,15 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR0206
 U 1 1 5E09FF91
-P 1300 6150
-F 0 "#PWR0206" H 1300 6000 50  0001 C CNN
-F 1 "+3V3" H 1315 6323 50  0000 C CNN
-F 2 "" H 1300 6150 50  0001 C CNN
-F 3 "" H 1300 6150 50  0001 C CNN
-	1    1300 6150
+P 1350 6100
+F 0 "#PWR0206" H 1350 5950 50  0001 C CNN
+F 1 "+3V3" H 1365 6273 50  0000 C CNN
+F 2 "" H 1350 6100 50  0001 C CNN
+F 3 "" H 1350 6100 50  0001 C CNN
+	1    1350 6100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1300 6150 1300 6200
-Connection ~ 1300 6200
+Connection ~ 1900 6350
 Wire Wire Line
 	15450 2300 15050 2300
 Connection ~ 13050 2300
@@ -1377,7 +1375,7 @@ F 0 "J5" H 5057 4517 50  0000 C CNN
 F 1 "USB3_A" H 5057 4426 50  0000 C CNN
 F 2 "footprints:692121030100" H 5150 3900 50  0001 C CNN
 F 3 "~" H 5150 3900 50  0001 C CNN
-F 4 "Wuerth" H 5000 3800 50  0001 C CNN "Manufacturer"
+F 4 "Wurth" H 5000 3800 50  0001 C CNN "Manufacturer"
 F 5 "692121030100" H 5000 3800 50  0001 C CNN "Manufacturer_No"
 F 6 "y" H 5000 3800 50  0001 C CNN "Checked"
 F 7 "Mouser" H 5000 3800 50  0001 C CNN "Distributor"
@@ -1437,6 +1435,7 @@ F 45 "" H 13700 9150 50  0001 L BNN "Field45"
 F 46 "Mouser" H 14150 8500 50  0001 C CNN "Distributor"
 F 47 "Littelfuse" H 14150 8500 50  0001 C CNN "Manufacturer"
 F 48 "SP3012-06UTG" H 14150 8500 50  0001 C CNN "Manufacturer_No"
+F 49 "y" H 14150 8500 50  0001 C CNN "Checked"
 	1    14150 8500
 	1    0    0    -1  
 $EndComp
@@ -1493,6 +1492,7 @@ F 45 "" H 11200 9150 50  0001 L BNN "Field45"
 F 46 "Mouser" H 11650 8500 50  0001 C CNN "Distributor"
 F 47 "Littelfuse" H 11650 8500 50  0001 C CNN "Manufacturer"
 F 48 "SP3012-06UTG" H 11650 8500 50  0001 C CNN "Manufacturer_No"
+F 49 "y" H 11650 8500 50  0001 C CNN "Checked"
 	1    11650 8500
 	1    0    0    -1  
 $EndComp
@@ -1549,6 +1549,7 @@ F 45 "" H 8850 9150 50  0001 L BNN "Field45"
 F 46 "Mouser" H 9300 8500 50  0001 C CNN "Distributor"
 F 47 "Littelfuse" H 9300 8500 50  0001 C CNN "Manufacturer"
 F 48 "SP3012-06UTG" H 9300 8500 50  0001 C CNN "Manufacturer_No"
+F 49 "y" H 9300 8500 50  0001 C CNN "Checked"
 	1    9300 8500
 	1    0    0    -1  
 $EndComp
@@ -2178,61 +2179,61 @@ $EndComp
 $Comp
 L Device:R_Small R81
 U 1 1 5DAA3B52
-P 1300 6700
-F 0 "R81" H 1241 6654 50  0000 R CNN
-F 1 "100k" H 1241 6745 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1300 6700 50  0001 C CNN
-F 3 "~" H 1300 6700 50  0001 C CNN
-F 4 "Vishay Dale" H 1300 6700 50  0001 C CNN "Manufacturer"
-F 5 "CRCW0603100KJNEAC" H 1300 6700 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 1300 6700 50  0001 C CNN "Checked"
-F 7 "Mouser" H 1300 6700 50  0001 C CNN "Distributor"
-	1    1300 6700
+P 1900 6850
+F 0 "R81" H 1841 6804 50  0000 R CNN
+F 1 "100k" H 1841 6895 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1900 6850 50  0001 C CNN
+F 3 "~" H 1900 6850 50  0001 C CNN
+F 4 "Vishay Dale" H 1900 6850 50  0001 C CNN "Manufacturer"
+F 5 "CRCW0603100KJNEAC" H 1900 6850 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 1900 6850 50  0001 C CNN "Checked"
+F 7 "Mouser" H 1900 6850 50  0001 C CNN "Distributor"
+	1    1900 6850
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small R84
 U 1 1 5DAA3945
-P 1550 6600
-F 0 "R84" H 1491 6554 50  0000 R CNN
-F 1 "100k" H 1491 6645 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1550 6600 50  0001 C CNN
-F 3 "~" H 1550 6600 50  0001 C CNN
-F 4 "Vishay Dale" H 1550 6600 50  0001 C CNN "Manufacturer"
-F 5 "CRCW0603100KJNEAC" H 1550 6600 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 1550 6600 50  0001 C CNN "Checked"
-F 7 "Mouser" H 1550 6600 50  0001 C CNN "Distributor"
-	1    1550 6600
+P 2150 6750
+F 0 "R84" H 2091 6704 50  0000 R CNN
+F 1 "100k" H 2091 6795 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2150 6750 50  0001 C CNN
+F 3 "~" H 2150 6750 50  0001 C CNN
+F 4 "Vishay Dale" H 2150 6750 50  0001 C CNN "Manufacturer"
+F 5 "CRCW0603100KJNEAC" H 2150 6750 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 2150 6750 50  0001 C CNN "Checked"
+F 7 "Mouser" H 2150 6750 50  0001 C CNN "Distributor"
+	1    2150 6750
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small R85
 U 1 1 5DAA369B
-P 1800 6500
-F 0 "R85" H 1741 6454 50  0000 R CNN
-F 1 "100k" H 1741 6545 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1800 6500 50  0001 C CNN
-F 3 "~" H 1800 6500 50  0001 C CNN
-F 4 "Vishay Dale" H 1800 6500 50  0001 C CNN "Manufacturer"
-F 5 "CRCW0603100KJNEAC" H 1800 6500 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 1800 6500 50  0001 C CNN "Checked"
-F 7 "Mouser" H 1800 6500 50  0001 C CNN "Distributor"
-	1    1800 6500
+P 2400 6650
+F 0 "R85" H 2341 6604 50  0000 R CNN
+F 1 "100k" H 2341 6695 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2400 6650 50  0001 C CNN
+F 3 "~" H 2400 6650 50  0001 C CNN
+F 4 "Vishay Dale" H 2400 6650 50  0001 C CNN "Manufacturer"
+F 5 "CRCW0603100KJNEAC" H 2400 6650 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 2400 6650 50  0001 C CNN "Checked"
+F 7 "Mouser" H 2400 6650 50  0001 C CNN "Distributor"
+	1    2400 6650
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small R86
 U 1 1 5DA9C65D
-P 2050 6350
-F 0 "R86" H 1991 6304 50  0000 R CNN
-F 1 "100k" H 1991 6395 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2050 6350 50  0001 C CNN
-F 3 "~" H 2050 6350 50  0001 C CNN
-F 4 "Vishay Dale" H 2050 6350 50  0001 C CNN "Manufacturer"
-F 5 "CRCW0603100KJNEAC" H 2050 6350 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 2050 6350 50  0001 C CNN "Checked"
-F 7 "Mouser" H 2050 6350 50  0001 C CNN "Distributor"
-	1    2050 6350
+P 2650 6500
+F 0 "R86" H 2591 6454 50  0000 R CNN
+F 1 "100k" H 2591 6545 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2650 6500 50  0001 C CNN
+F 3 "~" H 2650 6500 50  0001 C CNN
+F 4 "Vishay Dale" H 2650 6500 50  0001 C CNN "Manufacturer"
+F 5 "CRCW0603100KJNEAC" H 2650 6500 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 2650 6500 50  0001 C CNN "Checked"
+F 7 "Mouser" H 2650 6500 50  0001 C CNN "Distributor"
+	1    2650 6500
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -2288,7 +2289,7 @@ F 0 "J17" H 5057 7017 50  0000 C CNN
 F 1 "USB3_A" H 5057 6926 50  0000 C CNN
 F 2 "footprints:692121030100" H 5150 6400 50  0001 C CNN
 F 3 "~" H 5150 6400 50  0001 C CNN
-F 4 "Wuerth" H 5000 6300 50  0001 C CNN "Manufacturer"
+F 4 "Wurth" H 5000 6300 50  0001 C CNN "Manufacturer"
 F 5 "692121030100" H 5000 6300 50  0001 C CNN "Manufacturer_No"
 F 6 "y" H 5000 6300 50  0001 C CNN "Checked"
 F 7 "Mouser" H 5000 6300 50  0001 C CNN "Distributor"
@@ -2581,7 +2582,7 @@ F 0 "J6" H 1507 4517 50  0000 C CNN
 F 1 "USB3_A" H 1507 4426 50  0000 C CNN
 F 2 "footprints:692121030100" H 1600 3900 50  0001 C CNN
 F 3 "~" H 1600 3900 50  0001 C CNN
-F 4 "Wuerth" H 1450 3800 50  0001 C CNN "Manufacturer"
+F 4 "Wurth" H 1450 3800 50  0001 C CNN "Manufacturer"
 F 5 "692121030100" H 1450 3800 50  0001 C CNN "Manufacturer_No"
 F 6 "y" H 1450 3800 50  0001 C CNN "Checked"
 F 7 "Mouser" H 1450 3800 50  0001 C CNN "Distributor"
@@ -2888,6 +2889,27 @@ Wire Wire Line
 	10150 2800 10150 3000
 Wire Wire Line
 	5500 5900 6050 5900
-Text Notes 1500 6050 0    50   ~ 0
-TODO: these reverse leak into AUX_PWR_3V3
+$Comp
+L Device:D_Schottky_Small D15
+U 1 1 5F89D5EB
+P 1750 6150
+F 0 "D15" H 1750 5943 50  0000 C CNN
+F 1 "SD0603S040S0R2" H 1750 6034 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric_Castellated" V 1750 6150 50  0001 C CNN
+F 3 "~" V 1750 6150 50  0001 C CNN
+F 4 "Mouser" H 1750 6150 50  0001 C CNN "Distributor"
+F 5 "AVX" H 1750 6150 50  0001 C CNN "Manufacturer"
+F 6 "SD0603S040S0R2" H 1750 6150 50  0001 C CNN "Manufacturer_No"
+F 7 "y" H 1750 6150 50  0001 C CNN "Checked"
+	1    1750 6150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1350 6100 1350 6150
+Wire Wire Line
+	1350 6150 1650 6150
+Wire Wire Line
+	1850 6150 1900 6150
+Wire Wire Line
+	1900 6150 1900 6350
 $EndSCHEMATC

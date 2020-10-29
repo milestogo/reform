@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 9
 Title "Reform 2 Audio"
-Date "2020-09-24"
-Rev "2.0R-1"
+Date "2020-10-29"
+Rev "2.0R-2C"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
@@ -181,13 +181,13 @@ Wire Wire Line
 	4400 6100 4400 6050
 Connection ~ 4400 6050
 Wire Wire Line
-	6200 3650 5950 3650
+	6150 3650 5950 3650
 Wire Wire Line
-	6400 3650 6650 3650
+	6350 3650 6650 3650
 Wire Wire Line
-	6600 3350 6950 3350
+	6350 3350 6950 3350
 Wire Wire Line
-	6400 3350 5950 3350
+	6150 3350 5950 3350
 $Comp
 L Device:R_Small R143
 U 1 1 5F0DB197
@@ -237,7 +237,7 @@ Connection ~ 6950 3850
 Wire Wire Line
 	6950 3850 6650 3850
 Wire Wire Line
-	6050 3150 5950 3150
+	6900 3150 6450 3150
 Wire Wire Line
 	7250 3250 8900 3250
 Connection ~ 7250 3850
@@ -347,31 +347,31 @@ Wire Wire Line
 $Comp
 L Device:C_Small C147
 U 1 1 5F2211CD
-P 6500 3350
-F 0 "C147" V 6550 3200 50  0000 C CNN
-F 1 "47uF" V 6600 3350 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6500 3350 50  0001 C CNN
-F 3 "~" H 6500 3350 50  0001 C CNN
-F 4 "Murata" H 6500 3350 50  0001 C CNN "Manufacturer"
-F 5 "GRM188R60J476ME15D" H 6500 3350 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 6500 3350 50  0001 C CNN "Checked"
-F 7 "Mouser" H 6500 3350 50  0001 C CNN "Distributor"
-	1    6500 3350
+P 6250 3350
+F 0 "C147" V 6300 3200 50  0000 C CNN
+F 1 "47uF" V 6350 3350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6250 3350 50  0001 C CNN
+F 3 "~" H 6250 3350 50  0001 C CNN
+F 4 "Murata" H 6250 3350 50  0001 C CNN "Manufacturer"
+F 5 "GRM188R60J476ME15D" H 6250 3350 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 6250 3350 50  0001 C CNN "Checked"
+F 7 "Mouser" H 6250 3350 50  0001 C CNN "Distributor"
+	1    6250 3350
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:C_Small C127
 U 1 1 5F2217E7
-P 6300 3650
-F 0 "C127" V 6350 3500 50  0000 C CNN
-F 1 "47uF" V 6400 3650 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6300 3650 50  0001 C CNN
-F 3 "~" H 6300 3650 50  0001 C CNN
-F 4 "Murata" H 6300 3650 50  0001 C CNN "Manufacturer"
-F 5 "GRM188R60J476ME15D" H 6300 3650 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 6300 3650 50  0001 C CNN "Checked"
-F 7 "Mouser" H 6300 3650 50  0001 C CNN "Distributor"
-	1    6300 3650
+P 6250 3650
+F 0 "C127" V 6300 3500 50  0000 C CNN
+F 1 "47uF" V 6350 3650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6250 3650 50  0001 C CNN
+F 3 "~" H 6250 3650 50  0001 C CNN
+F 4 "Murata" H 6250 3650 50  0001 C CNN "Manufacturer"
+F 5 "GRM188R60J476ME15D" H 6250 3650 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 6250 3650 50  0001 C CNN "Checked"
+F 7 "Mouser" H 6250 3650 50  0001 C CNN "Distributor"
+	1    6250 3650
 	0    1    1    0   
 $EndComp
 $Comp
@@ -514,6 +514,7 @@ F 1 "LINE_IN" H 5600 1900 50  0000 C CNN
 F 2 "Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical" H 5500 1650 50  0001 C CNN
 F 3 "~" H 5500 1650 50  0001 C CNN
 F 4 "y" H 5500 1650 50  0001 C CNN "DNP"
+F 5 "y" H 5500 1650 50  0001 C CNN "Checked"
 	1    5500 1650
 	1    0    0    -1  
 $EndComp
@@ -562,7 +563,7 @@ F 7 "WM8960CGEFL/V" H 5350 3750 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6250 3150 7250 3150
+	7100 3150 7250 3150
 Wire Wire Line
 	7950 4150 7950 4450
 Wire Wire Line
@@ -653,22 +654,22 @@ $EndComp
 $Comp
 L Device:C_Small C141
 U 1 1 6830926E
-P 6800 2600
-F 0 "C141" H 6892 2646 50  0000 L CNN
-F 1 "1uF" H 6892 2555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6800 2600 50  0001 C CNN
-F 3 "~" H 6800 2600 50  0001 C CNN
-F 4 "Taiyo Yuden" H 6800 2600 50  0001 C CNN "Manufacturer"
-F 5 "UMK107BJ105KA-T" H 6800 2600 50  0001 C CNN "Manufacturer_No"
-F 6 "y" H 6800 2600 50  0001 C CNN "Checked"
-F 7 "Mouser" H 6800 2600 50  0001 C CNN "Distributor"
-	1    6800 2600
+P 7100 2600
+F 0 "C141" H 7192 2646 50  0000 L CNN
+F 1 "1uF" H 7192 2555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7100 2600 50  0001 C CNN
+F 3 "~" H 7100 2600 50  0001 C CNN
+F 4 "Taiyo Yuden" H 7100 2600 50  0001 C CNN "Manufacturer"
+F 5 "UMK107BJ105KA-T" H 7100 2600 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 7100 2600 50  0001 C CNN "Checked"
+F 7 "Mouser" H 7100 2600 50  0001 C CNN "Distributor"
+	1    7100 2600
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5950 2600 6700 2600
+	5950 2600 7000 2600
 Wire Wire Line
-	6900 2600 7250 2600
+	7200 2600 7250 2600
 Wire Wire Line
 	7250 2600 7250 3150
 Connection ~ 7250 3150
@@ -844,16 +845,16 @@ Wire Wire Line
 $Comp
 L Device:R_Small R140
 U 1 1 5F0E8F60
-P 6150 3150
-F 0 "R140" V 6250 3150 50  0000 C CNN
-F 1 "680" V 6050 3150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6150 3150 50  0001 C CNN
-F 3 "~" H 6150 3150 50  0001 C CNN
-F 4 "Yageo" H 6150 3150 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-07680RL" H 6150 3150 50  0001 C CNN "Manufacturer_No"
-F 6 "Mouser" H 6150 3150 50  0001 C CNN "Distributor"
-F 7 "y" H 6150 3150 50  0001 C CNN "Checked"
-	1    6150 3150
+P 7000 3150
+F 0 "R140" V 7100 3150 50  0000 C CNN
+F 1 "680" V 6900 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7000 3150 50  0001 C CNN
+F 3 "~" H 7000 3150 50  0001 C CNN
+F 4 "Yageo" H 7000 3150 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-07680RL" H 7000 3150 50  0001 C CNN "Manufacturer_No"
+F 6 "Mouser" H 7000 3150 50  0001 C CNN "Distributor"
+F 7 "y" H 7000 3150 50  0001 C CNN "Checked"
+	1    7000 3150
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -866,7 +867,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 7450 4250 50  0001 C CNN
 F 3 "~" H 7450 4250 50  0001 C CNN
 F 4 "Taiyo Yuden" H 7450 4250 50  0001 C CNN "Manufacturer"
 F 5 "TMK107B7474KA-TR" H 7450 4250 50  0001 C CNN "Manufacturer_No"
-F 6 "" H 7450 4250 50  0001 C CNN "Checked"
+F 6 "y" H 7450 4250 50  0001 C CNN "Checked"
 F 7 "Mouser" H 7450 4250 50  0001 C CNN "Distributor"
 	1    7450 4250
 	1    0    0    -1  
@@ -890,7 +891,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 7450 4750 50  0001 C CNN
 F 3 "~" H 7450 4750 50  0001 C CNN
 F 4 "Taiyo Yuden" H 7450 4750 50  0001 C CNN "Manufacturer"
 F 5 "TMK107B7474KA-TR" H 7450 4750 50  0001 C CNN "Manufacturer_No"
-F 6 "" H 7450 4750 50  0001 C CNN "Checked"
+F 6 "y" H 7450 4750 50  0001 C CNN "Checked"
 F 7 "Mouser" H 7450 4750 50  0001 C CNN "Distributor"
 	1    7450 4750
 	1    0    0    -1  
@@ -920,8 +921,6 @@ Wire Wire Line
 	4500 2900 4150 2900
 Text Notes 8050 5650 0    50   ~ 0
 alternative:\n47uF in series for lowpass
-Text Notes 2100 5300 0    50   ~ 0
-TODO: actually test 5v
 $Comp
 L Device:C_Small C162
 U 1 1 5F6748CF
@@ -956,8 +955,6 @@ F 7 "Mouser" H 6100 1650 50  0001 C CNN "Distributor"
 $EndComp
 Wire Wire Line
 	6000 1650 5700 1650
-Text Notes 5950 3000 0    50   ~ 0
-NOTE: ref1 used 0.1uF and 2k2
 Wire Wire Line
 	3050 2900 3050 2850
 Text Notes 8150 5450 0    50   ~ 0
@@ -977,6 +974,7 @@ F 3 "~" H 6600 4650 50  0001 C CNN
 F 4 "Mouser" H 6600 4650 50  0001 C CNN "Distributor"
 F 5 "Murata" H 6600 4650 50  0001 C CNN "Manufacturer"
 F 6 "LQH32PB150MN0L" H 6600 4650 50  0001 C CNN "Manufacturer_No"
+F 7 "y" H 6600 4650 50  0001 C CNN "Checked"
 	1    6600 4650
 	0    -1   -1   0   
 $EndComp
@@ -991,6 +989,7 @@ F 3 "~" H 6600 4400 50  0001 C CNN
 F 4 "Mouser" H 6600 4400 50  0001 C CNN "Distributor"
 F 5 "Murata" H 6600 4400 50  0001 C CNN "Manufacturer"
 F 6 "LQH32PB150MN0L" H 6600 4400 50  0001 C CNN "Manufacturer_No"
+F 7 "y" H 6600 4400 50  0001 C CNN "Checked"
 	1    6600 4400
 	0    -1   -1   0   
 $EndComp
@@ -1007,6 +1006,7 @@ F 3 "~" H 6600 4900 50  0001 C CNN
 F 4 "Mouser" H 6600 4900 50  0001 C CNN "Distributor"
 F 5 "Murata" H 6600 4900 50  0001 C CNN "Manufacturer"
 F 6 "LQH32PB150MN0L" H 6600 4900 50  0001 C CNN "Manufacturer_No"
+F 7 "y" H 6600 4900 50  0001 C CNN "Checked"
 	1    6600 4900
 	0    -1   -1   0   
 $EndComp
@@ -1024,7 +1024,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 6800 4250 50  0001 C CNN
 F 3 "~" H 6800 4250 50  0001 C CNN
 F 4 "Yageo" H 6800 4250 50  0001 C CNN "Manufacturer"
 F 5 "CC0603JPX7R9BB104" H 6800 4250 50  0001 C CNN "Manufacturer_No"
-F 6 "" H 6800 4250 50  0001 C CNN "Checked"
+F 6 "y" H 6800 4250 50  0001 C CNN "Checked"
 F 7 "Mouser" H 6800 4250 50  0001 C CNN "Distributor"
 	1    6800 4250
 	1    0    0    -1  
@@ -1042,7 +1042,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 6900 4500 50  0001 C CNN
 F 3 "~" H 6900 4500 50  0001 C CNN
 F 4 "Yageo" H 6900 4500 50  0001 C CNN "Manufacturer"
 F 5 "CC0603JPX7R9BB104" H 6900 4500 50  0001 C CNN "Manufacturer_No"
-F 6 "" H 6900 4500 50  0001 C CNN "Checked"
+F 6 "y" H 6900 4500 50  0001 C CNN "Checked"
 F 7 "Mouser" H 6900 4500 50  0001 C CNN "Distributor"
 	1    6900 4500
 	1    0    0    -1  
@@ -1062,7 +1062,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 7000 4750 50  0001 C CNN
 F 3 "~" H 7000 4750 50  0001 C CNN
 F 4 "Yageo" H 7000 4750 50  0001 C CNN "Manufacturer"
 F 5 "CC0603JPX7R9BB104" H 7000 4750 50  0001 C CNN "Manufacturer_No"
-F 6 "" H 7000 4750 50  0001 C CNN "Checked"
+F 6 "y" H 7000 4750 50  0001 C CNN "Checked"
 F 7 "Mouser" H 7000 4750 50  0001 C CNN "Distributor"
 	1    7000 4750
 	1    0    0    -1  
@@ -1080,7 +1080,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 7100 5000 50  0001 C CNN
 F 3 "~" H 7100 5000 50  0001 C CNN
 F 4 "Yageo" H 7100 5000 50  0001 C CNN "Manufacturer"
 F 5 "CC0603JPX7R9BB104" H 7100 5000 50  0001 C CNN "Manufacturer_No"
-F 6 "" H 7100 5000 50  0001 C CNN "Checked"
+F 6 "y" H 7100 5000 50  0001 C CNN "Checked"
 F 7 "Mouser" H 7100 5000 50  0001 C CNN "Distributor"
 	1    7100 5000
 	1    0    0    -1  
@@ -1129,10 +1129,11 @@ F 3 "~" H 6600 4150 50  0001 C CNN
 F 4 "Mouser" H 6600 4150 50  0001 C CNN "Distributor"
 F 5 "Murata" H 6600 4150 50  0001 C CNN "Manufacturer"
 F 6 "LQH32PB150MN0L" H 6600 4150 50  0001 C CNN "Manufacturer_No"
+F 7 "y" H 6600 4150 50  0001 C CNN "Checked"
 	1    6600 4150
 	0    -1   -1   0   
 $EndComp
-Text Notes 6300 4000 0    50   ~ 0
+Text Notes 6700 4050 0    50   ~ 0
 800mA
 $Comp
 L Device:Ferrite_Bead_Small FB?
@@ -1345,6 +1346,7 @@ F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/do
 F 4 "Mouser" H 8650 3950 50  0001 C CNN "Distributor"
 F 5 "Littelfuse" H 8650 3950 50  0001 C CNN "Manufacturer"
 F 6 "SP0503BAHT" H 8650 3950 50  0001 C CNN "Manufacturer_No"
+F 7 "y" H 8650 3950 50  0001 C CNN "Checked"
 	1    8650 3950
 	1    0    0    -1  
 $EndComp
@@ -1389,4 +1391,41 @@ F 3 "~" H 4400 4400 50  0001 C CNN
 	1    4400 4400
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C_Small C170
+U 1 1 5FA4DDEA
+P 6600 2850
+F 0 "C170" V 6650 2900 50  0000 L CNN
+F 1 "4.7uF" V 6650 2600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6600 2850 50  0001 C CNN
+F 3 "~" H 6600 2850 50  0001 C CNN
+F 4 "TDK" H 6600 2850 50  0001 C CNN "Manufacturer"
+F 5 "C1608X5R1V475K080AC" H 6600 2850 50  0001 C CNN "Manufacturer_No"
+F 6 "y" H 6600 2850 50  0001 C CNN "Checked"
+F 7 "Mouser" H 6600 2850 50  0001 C CNN "Distributor"
+	1    6600 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0125
+U 1 1 5FA55570
+P 6750 2900
+F 0 "#PWR0125" H 6750 2650 50  0001 C CNN
+F 1 "GND" H 6755 2727 50  0000 C CNN
+F 2 "" H 6750 2900 50  0001 C CNN
+F 3 "" H 6750 2900 50  0001 C CNN
+	1    6750 2900
+	1    0    0    -1  
+$EndComp
+Connection ~ 6450 3150
+Wire Wire Line
+	6450 3150 5950 3150
+Wire Wire Line
+	6750 2900 6750 2850
+Wire Wire Line
+	6750 2850 6700 2850
+Wire Wire Line
+	6450 2850 6500 2850
+Wire Wire Line
+	6450 2850 6450 3150
 $EndSCHEMATC

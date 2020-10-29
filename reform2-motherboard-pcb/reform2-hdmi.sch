@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 9
 Title "MNT Reform 2 External Display"
-Date "2020-09-24"
-Rev "2.0R-1"
+Date "2020-10-29"
+Rev "2.0R-2C"
 Comp "MNT Research GmbH"
 Comment1 "https://mntre.com"
 Comment2 "Engineer: Lukas F. Hartmann"
@@ -373,16 +373,16 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR0163
 U 1 1 5D1543CF
-P 6450 3900
-F 0 "#PWR0163" H 6450 3750 50  0001 C CNN
-F 1 "+3V3" H 6465 4073 50  0000 C CNN
-F 2 "" H 6450 3900 50  0001 C CNN
-F 3 "" H 6450 3900 50  0001 C CNN
-	1    6450 3900
+P 6450 3750
+F 0 "#PWR0163" H 6450 3600 50  0001 C CNN
+F 1 "+3V3" H 6465 3923 50  0000 C CNN
+F 2 "" H 6450 3750 50  0001 C CNN
+F 3 "" H 6450 3750 50  0001 C CNN
+	1    6450 3750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6450 3900 6450 4100
+	6450 3750 6450 4100
 Wire Wire Line
 	6450 4100 6350 4100
 $Comp
@@ -586,8 +586,6 @@ F 7 "RC0603FR-0710KL" H 6250 4100 50  0001 C CNN "Manufacturer_No"
 $EndComp
 Wire Wire Line
 	6150 4100 6000 4100
-Text Notes 7650 4500 0    50   ~ 0
-TODO: Test. Datasheet says 1.7k
 $Comp
 L power:PWR_FLAG #FLG0120
 U 1 1 5EEAD7AD
@@ -669,10 +667,8 @@ Wire Wire Line
 Connection ~ 6700 5700
 Wire Wire Line
 	6700 5700 7450 5700
-Text GLabel 5900 3450 0    50   Input ~ 0
+Text GLabel 5600 3450 0    50   Input ~ 0
 USB_PWR
-Wire Wire Line
-	5900 3450 6000 3450
 Wire Wire Line
 	6000 3450 6000 4000
 Wire Wire Line
@@ -687,13 +683,30 @@ Wire Wire Line
 Wire Wire Line
 	6700 4500 6700 4550
 Wire Wire Line
-	6000 3450 6850 3450
+	6000 3450 6150 3450
 Wire Wire Line
 	6850 3450 6850 4500
 Connection ~ 6000 3450
 Connection ~ 6850 4500
 Wire Wire Line
 	6850 4500 6700 4500
-Text Notes 7650 4750 0    50   ~ 0
-TODO: LEAK of LV_SUPPLY into USB_PWR\nwhen USB_PWR is off
+$Comp
+L Device:D_Schottky_Small D14
+U 1 1 5F873F4D
+P 6250 3450
+F 0 "D14" H 6250 3243 50  0000 C CNN
+F 1 "SD0603S040S0R2" H 6250 3334 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric_Castellated" V 6250 3450 50  0001 C CNN
+F 3 "~" V 6250 3450 50  0001 C CNN
+F 4 "Mouser" H 6250 3450 50  0001 C CNN "Distributor"
+F 5 "AVX" H 6250 3450 50  0001 C CNN "Manufacturer"
+F 6 "SD0603S040S0R2" H 6250 3450 50  0001 C CNN "Manufacturer_No"
+F 7 "y" H 6250 3450 50  0001 C CNN "Checked"
+	1    6250 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6350 3450 6850 3450
+Wire Wire Line
+	5600 3450 6000 3450
 $EndSCHEMATC
