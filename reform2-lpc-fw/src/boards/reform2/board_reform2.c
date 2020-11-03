@@ -29,7 +29,16 @@
   #include "protocol/protocol.h"
 #endif
 
+#define REFORM_MBREV_D2 2
+#define REFORM_MBREV_D3 3
+#define REFORM_MBREV_D4 4
+#define REFORM_MBREV_R1 11
+#define REFORM_MBREV_R2 12
+
+// don't forget to set this!
+#define REFORM_MOTHERBOARD_REV REFORM_MBREV_D4
 //#define REF2_DEBUG 1
+#define FW_REV "R2 "
 
 #define INA260_ADDRESS 0x4e
 #define LTC4162F_ADDRESS 0x68
@@ -158,45 +167,67 @@ uint8_t spir[64];
 
 #define OVERVOLTAGE_START_VALUE 3.61
 #define OVERVOLTAGE_STOP_VALUE 3.55
-#define UNDERVOLTAGE_VALUE 2.55
-#define UNDERVOLTAGE_CRITICAL_VALUE 2.4
-#define MISSING_VALUE 5
-#define FULLY_CHARGED_VOLTAGE (3.5*8.0)
+#define UNDERVOLTAGE_VALUE 2.45
+#define UNDERVOLTAGE_CRITICAL_VALUE 2.3
+#define MISSING_VALUE 4.0
+#define FULLY_CHARGED_VOLTAGE 3.5
 
-void measure_cell_voltages_and_control_discharge() {
-  // delay is measured in "ticks", which are basically ms?
-
+void set_discharge_bits(uint16_t bits) {
   // 0x10: WRCFG, write config
   spir[0] = 0x01;
   spir[1] = 0xc7;
 
   spir[2] = 0xe1; // set cdc to 2 = continuous measurement
-  spir[3] = discharge_bits&0xff; // first 8 bits of discharge switches
-  spir[4] = (discharge_bits&0xf00)>>8; // last 4 bits of discharge switches
-  
+  spir[3] = bits&0xff; // first 8 bits of discharge switches
+  spir[4] = (bits&0xf00)>>8; // last 4 bits of discharge switches
+
   spir[5] = 0x0;
   spir[6] = 0x0;
   spir[7] = 0x0;
-
-  if (state == ST_CHARGE) {
-    // we're in normal charge mode, so remove charge current limit
-    LPC_GPIO->SET[1] |= (1 << 25);
-  } else {
-    // we're discharging (balancing), or full charged,
-    // so limit charge current
-    // also don't charge if we have missing cells
-    LPC_GPIO->CLR[1] |= (1 << 25);
-  }
 
   uint8_t pec = 0x41;
   for (int i=2; i<=7; i++) {
     pec = calc_pec(spir[i], pec);
   }
   spir[8] = pec;
-  
+
   LPC_GPIO->CLR[1] = (1 << 23);
   ssp1Send(spir, 9);
   LPC_GPIO->SET[1] = (1 << 23);
+}
+
+void disable_charge_current(void) {
+  if (REFORM_MOTHERBOARD_REV >= REFORM_MBREV_R1) {
+    LPC_GPIO->SET[1] |= (1 << 25);
+  } else {
+    LPC_GPIO->CLR[1] |= (1 << 25);
+  }
+}
+
+void enable_charge_current(void) {
+  if (REFORM_MOTHERBOARD_REV >= REFORM_MBREV_R1) {
+    LPC_GPIO->CLR[1] |= (1 << 25);
+  } else {
+    LPC_GPIO->SET[1] |= (1 << 25);
+  }
+}
+
+void measure_cell_voltages_and_control_discharge() {
+  // first, turn off any discharging
+  set_discharge_bits(0);
+
+  // defensive: make sure not to charge with any discharge bits
+  // turned on, regardless of state
+  if (state == ST_CHARGE && discharge_bits == 0) {
+    // we're in normal charge mode, so remove charge current limit
+    enable_charge_current();
+  } else {
+    // we're discharging (balancing), or full charged,
+    // so limit charge current
+    // also don't charge if we have missing cells
+    disable_charge_current();
+    set_discharge_bits(discharge_bits);
+  }
 
   // 0x10: STCVDC, start adc
   spir[0] = 0x60;
@@ -205,12 +236,13 @@ void measure_cell_voltages_and_control_discharge() {
   ssp1Send(spir, 2);
   LPC_GPIO->SET[1] = (1 << 23);
 
+  // delay is measured in "ticks", which are basically ms?
   delay(50); // FIXME tunable
 
   // 0x4: RDCV, read all cell voltages
   spir[0] = 0x4;
   spir[1] = 0xdc;
-  
+
   LPC_GPIO->CLR[1] = (1 << 23);
   ssp1Send(spir, 2);
   memset(spir, 0, 32);
@@ -300,7 +332,7 @@ void measure_and_accumulate_current() {
 
     if (secondsPassed >= 1) {
       lastTime = thisTime;
-      
+
       // decrease estimated battery capacity
       capacity_accu_ampsecs -= current*(secondsPassed);
     }
@@ -326,19 +358,60 @@ float chg_vbat;
 
 void turn_som_power_on(void) {
   LPC_GPIO->CLR[1] = (1 << 28); // hold in reset
-  LPC_GPIO->SET[1] = (1 << 16); // 3v3, high = on
-  LPC_GPIO->SET[0] = (1 << 20); // PCIe, high = on
-  LPC_GPIO->SET[1] = (1 << 15); // 5v, high = on
-  LPC_GPIO->SET[1] = (1 << 19); // 1v2, high = on
+
+  LPC_GPIO->CLR[0] = (1 << 20); // PCIe off
+  LPC_GPIO->CLR[1] = (1 << 19); // 1v2 off
+  LPC_GPIO->CLR[1] = (1 << 31); // USB 5v off (R1+)
+  LPC_GPIO->CLR[0] = (1 << 7);  // AUX 3v3 off (R1+)
+
+  if (REFORM_MOTHERBOARD_REV >= REFORM_MBREV_R1) {
+    LPC_GPIO->CLR[1] = (1 << 16); // 3v3 on
+    LPC_GPIO->CLR[1] = (1 << 15); // 5v on
+  } else {
+    LPC_GPIO->SET[1] = (1 << 16); // 3v3 on
+    LPC_GPIO->SET[1] = (1 << 15); // 5v on
+  }
+
+  LPC_GPIO->SET[0] = (1 << 20); // PCIe on
+  LPC_GPIO->SET[1] = (1 << 19); // 1v2 on
+  LPC_GPIO->SET[1] = (1 << 31); // USB 5v on (R1+)
+  LPC_GPIO->SET[0] = (1 << 7);  // AUX 3v3 on (R1+)
+
   LPC_GPIO->SET[1] = (1 << 28); // release reset
 }
 
+// TODO: power leak into USB_5V when turned off (~1.5V)
+// try to desolder:
+// - R152 (spkvdd)
+// - R43/R44 (hdmi i2c pullups) -> disappeared!
+// - FB15 (BL_VCC, unlikely)
+// - R61 (USB_VBUS of TUSB, unlikely)
+
+// power leak of 0.5V into AUX_3V3
+// - FB1
+// no, power is leaking through pullups of OVERCUR pins
+
 void turn_som_power_off(void) {
   LPC_GPIO->CLR[1] = (1 << 28); // hold in reset
-  LPC_GPIO->CLR[1] = (1 << 19); // 1v2, high = on
-  LPC_GPIO->CLR[1] = (1 << 15); // 5v, high = on
-  LPC_GPIO->CLR[0] = (1 << 20); // PCIe, high = on
-  LPC_GPIO->CLR[1] = (1 << 16); // 3v3, high = on
+
+  if (REFORM_MOTHERBOARD_REV >= REFORM_MBREV_R1) {
+    LPC_GPIO->SET[1] = (1 << 16); // 3v3 off
+    LPC_GPIO->SET[1] = (1 << 15); // 5v off
+  } else {
+    LPC_GPIO->CLR[1] = (1 << 16); // 3v3 off
+    LPC_GPIO->CLR[1] = (1 << 15); // 5v off
+  }
+
+  LPC_GPIO->CLR[0] = (1 << 20); // PCIe off
+  LPC_GPIO->CLR[1] = (1 << 19); // 1v2 off
+  LPC_GPIO->CLR[1] = (1 << 31); // USB 5v off (R1+)
+  LPC_GPIO->CLR[0] = (1 << 7);  // AUX 3v3 off (R1+)
+}
+
+void turn_periph_power_on(void) {
+}
+
+void turn_periph_power_off(void) {
 }
 
 void brownout_setup(void) {
@@ -357,13 +430,13 @@ void watchdog_feed(void) {
 
 void watchdog_setup(void) {
   LPC_SYSCON->SYSAHBCLKCTRL |= (1<<15); // WWDT enable
-  
-  LPC_SYSCON->WDTOSCCTRL = 
+
+  LPC_SYSCON->WDTOSCCTRL =
     (1<<5) | // FREQSEL 0.6MHz
     31; // DIVSEL 64 (31+1)*2
-  
+
   LPC_SYSCON->PDRUNCFG &= ~(1<<6); // WDTOSC_PD disable
-  
+
   LPC_WWDT->CLKSEL = 1; // WDOSC
 
   LPC_WWDT->TC = 0xffff/5; // timeout counter, ~5 seconds
@@ -371,7 +444,7 @@ void watchdog_setup(void) {
   LPC_WWDT->MOD = 0;
   LPC_WWDT->MOD |= WWDT_WDMOD_WDRESET; // enable WDRESET (watchdog resets system)
   LPC_WWDT->MOD |= WWDT_WDMOD_WDEN; // watchdog enable
-  
+
   watchdog_feed();
 }
 
@@ -381,28 +454,35 @@ void boardInit(void)
   GPIOInit();
   delayInit();
 
-  // 5V regulator on/off
+  // Set up GPIO directions
+
+  // 5V regulator (U7) on/off
   LPC_GPIO->DIR[1] |= (1 << 15);
-  // 3V3 rail transistor on/off
+  // 3V3 regulator (U12) on/off
   LPC_GPIO->DIR[1] |= (1 << 16);
-  // 1V2 regulator on/off
+  // 1V2 regulator (U13) on/off
   LPC_GPIO->DIR[1] |= (1 << 19);
-  // PCIe 1 power supply transistor
+  // PCIe 1 power supply transistor (1V5 regulator U19 and 3V3 load switch)
   LPC_GPIO->DIR[0] |= (1 << 20);
+  // USB 5V rail on/off (U24) (board revision R-1+)
+  LPC_GPIO->DIR[1] |= (1 << 31);
+  // AUX 3V3 power rail on/off (U27), and downstream 1V8 (U17) (board revision R-1+)
+  LPC_GPIO->DIR[0] |= (1 << 7);
 
   // IMX Wake
   LPC_GPIO->DIR[1] |= (1 << 24);
   // IMX Reset
   LPC_GPIO->DIR[1] |= (1 << 28);
-  
+
   // RNG/SS pin of LTC4020: control/limit charge current
   LPC_GPIO->DIR[1] |= (1 << 25);
 
   // start with low charge current
-  LPC_GPIO->CLR[1] |= (1 << 25);
-  
+  disable_charge_current();
+
+  // initially turn the system off
   turn_som_power_off();
-  
+
   uartInit(CFG_UART_BAUDRATE);
   i2cInit(I2CMASTER);
 
@@ -448,7 +528,7 @@ void handle_commands() {
   // 4   command letter expected
   // 5   syntax error (unexpected character)
   // 6   command letter entered
-  
+
   if (cmd_state>=ST_EXPECT_DIGIT_0 && cmd_state<=ST_EXPECT_DIGIT_3) {
     // read number or command
     if (chr >= '0' && chr <= '9') {
@@ -499,7 +579,7 @@ void handle_commands() {
         sprintf(uartBuffer,"\n");
         uartSend((uint8_t*)uartBuffer, strlen(uartBuffer));
       }
-      
+
       // execute
       if (remote_cmd == 'p') {
         // toggle system 5V power
@@ -531,17 +611,17 @@ void handle_commands() {
       else if (remote_cmd == 's') {
         // get charger system state
         if (state == ST_CHARGE) {
-          sprintf(uartBuffer,"idle/charging [%d]\r",cycles_in_state);
+          sprintf(uartBuffer,FW_REV"idle/charging [%d]\r",cycles_in_state);
         } else if (state == ST_OVERVOLTED) {
-          sprintf(uartBuffer,"balancing [%d]\r",cycles_in_state);
+          sprintf(uartBuffer,FW_REV"balancing [%d]\r",cycles_in_state);
         } else if (state == ST_UNDERVOLTED) {
-          sprintf(uartBuffer,"undervolt [%d]\r",cycles_in_state);
+          sprintf(uartBuffer,FW_REV"undervoltage [%d]\r",cycles_in_state);
         } else if (state == ST_MISSING) {
-          sprintf(uartBuffer,"cell missing [%d]\r",cycles_in_state);
+          sprintf(uartBuffer,FW_REV"missing cells (%d)[%d]\r",num_missing_cells,cycles_in_state);
         } else if (state == ST_FULLY_CHARGED) {
-          sprintf(uartBuffer,"fully charged [%d]\r",cycles_in_state);
+          sprintf(uartBuffer,FW_REV"fully charged [%d]\r",cycles_in_state);
         } else {
-          sprintf(uartBuffer,"unknown %d [%d]\r",state,cycles_in_state);
+          sprintf(uartBuffer,FW_REV"unknown %d [%d]\r",state,cycles_in_state);
         }
         uartSend((uint8_t*)uartBuffer, strlen(uartBuffer));
       }
@@ -553,7 +633,7 @@ void handle_commands() {
                 undervoltage_bits &(1<<n)?'u':'.',
                 overvoltage_bits  &(1<<n)?'o':'.',
                 discharge_bits    &(1<<n)?'d':'.');
-        
+
         uartSend((uint8_t*)uartBuffer, strlen(uartBuffer));
       }
       else if (remote_cmd == 'S') {
@@ -577,7 +657,7 @@ void handle_commands() {
         } else {
           // if we never reached full charge,
           // we don't really know where we are.
-          
+
           sprintf(uartBuffer,"? %%\r\n");
           uartSend((uint8_t*)uartBuffer, strlen(uartBuffer));
         }
@@ -590,7 +670,7 @@ void handle_commands() {
         sprintf(uartBuffer, "error:command\r\n");
         uartSend((uint8_t*)uartBuffer, strlen(uartBuffer));
       }
-    
+
       cmd_state = ST_EXPECT_DIGIT_0;
       cmd_number = 0;
     } else {
@@ -618,7 +698,7 @@ void report_to_spi(void)
   if (!reached_full_charge) {
     percentage = -1;
   }
-  
+
   snprintf(report, REPORT_MAX, "(%dmV %dmA %d%%)\n", (int)(volts*1000.0), (int)(current*1000.0), percentage);
 
   report[63] = 0;
@@ -629,7 +709,7 @@ int main(void)
 {
   boardInit();
   reset_discharge_bits();
-  
+
   state = ST_CHARGE;
   cycles_in_state = 0;
 
@@ -639,7 +719,7 @@ int main(void)
   //watchdog_setup();
   //sprintf(uartBuffer, "\r\nwatchdog_setup() completed.\r\n");
   //uartSend((uint8_t*)uartBuffer, strlen(uartBuffer));
-  
+
   while (1)
   {
     // algorithm idea:
