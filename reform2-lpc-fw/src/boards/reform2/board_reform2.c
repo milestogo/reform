@@ -500,13 +500,21 @@ void boardInit(void)
   // SPI0 connected to the main SOM (they're controller)
   ssp0Init();
   ssp0ClockSlow();
-  
-  LPC_GPIO->DIR[1] |= (1 << 31);
-  LPC_GPIO->DIR[1] |= (1 << 25);
 
   // SPI chip select
   LPC_GPIO->DIR[1] |= (1 << 23);
   LPC_GPIO->SET[1] =  (1 << 23); // active low
+
+  // UART connected to i.MX8M ttymxc2 REFORM
+  /* Set 0.14 UART RXD */
+  // this disrupts keyboard communication when main power turned off
+  //LPC_IOCON->PIO1_14 &= ~0x07;
+  //LPC_IOCON->PIO1_14 |= 0x03;
+
+  // only send to reform, don't receive from it
+  /* Set 0.13 UART TXD */
+  LPC_IOCON->PIO1_13 &= ~0x07;
+  LPC_IOCON->PIO1_13 |= 0x3;
 
 #ifdef REF2_DEBUG
   sprintf(uartBuffer, "\r\nMNT Reform 2.0 MCU initialized.\r\n");
