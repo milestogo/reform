@@ -156,6 +156,7 @@ char uartBuffer[255] = {0};
 float cells_v[8] = {0,0,0,0,0,0,0,0};
 int num_undervolted_cells = 0;
 int num_undervolted_critical_cells = 0;
+int num_fully_charged_cells = 0;
 int num_overvolted_cells = 0;
 int num_missing_cells = 0;
 uint8_t reached_full_charge = 0;
@@ -264,6 +265,7 @@ void measure_cell_voltages_and_control_discharge() {
 
   num_missing_cells = 0;
   num_undervolted_cells = 0;
+  num_fully_charged_cells = 0;
   num_overvolted_cells = 0;
   num_undervolted_critical_cells = 0;
 
@@ -279,21 +281,26 @@ void measure_cell_voltages_and_control_discharge() {
              (state != ST_OVERVOLTED && cells_v[i] >= OVERVOLTAGE_START_VALUE)) {
       overvoltage_bits |= (1<<i);
       num_overvolted_cells++;
+      // we assume that overvoltage also means fully charged
+      num_fully_charged_cells++;
+    }
+    else if (cells_v[i] >= FULLY_CHARGED_VOLTAGE) {
+      num_fully_charged_cells++;
     }
     else if (cells_v[i] < UNDERVOLTAGE_VALUE) {
       undervoltage_bits |= (1<<i);
       num_undervolted_cells++;
-      
+
       if (cells_v[i] < UNDERVOLTAGE_CRITICAL_VALUE) {
         num_undervolted_critical_cells++;
       }
     }
   }
-  
+
   // 0x2: RDCFG, read config registers
   /*spir[0] = 0x2;
   spir[1] = 0xce;
-  
+
   LPC_GPIO->CLR[1] = (1 << 23);
   delay(2);
   ssp1Send(spir, 2);
@@ -741,34 +748,34 @@ int main(void)
     calculate_capacity_percentage();
 
     if (state == ST_CHARGE) {
-      if (cycles_in_state > 5) {
-        // some cool-off time
-        if (num_missing_cells > 0) {
-          state = ST_MISSING;
-          // if cells were unplugged, we don't know the capacity anymore.
-          reached_full_charge = 0;
-          cycles_in_state = 0;
+      if (num_missing_cells > 0) {
+        state = ST_MISSING;
+        // if cells were unplugged, we don't know the capacity anymore.
+        reached_full_charge = 0;
+        cycles_in_state = 0;
+      }
+      else if (num_undervolted_cells > 0) {
+        // when transitioning to undervoltage, we assume we reached the bottom
+        // of usable capacity, so record it
+        // but only if we reached top charge once, or our counter will
+        // be off.
+        if (reached_full_charge > 0) {
+          capacity_min_ampsecs = capacity_accu_ampsecs;
         }
-        else if (num_undervolted_cells > 0) {
-          // when transitioning to undervoltage, we assume we reached the bottom
-          // of usable capacity, so record it
-          // but only if we reached top charge once, or our counter will
-          // be off.
-          if (reached_full_charge > 0) {
-            capacity_min_ampsecs = capacity_accu_ampsecs;
-          }
-          state = ST_UNDERVOLTED;
-          cycles_in_state = 0;
-        }
-        else if (num_overvolted_cells > 0) {
+        state = ST_UNDERVOLTED;
+        cycles_in_state = 0;
+      }
+      else if (num_overvolted_cells < 8 && num_fully_charged_cells >= 8) {
+        // when transitioning to fully charged, we assume that we're at max capacity
+        capacity_accu_ampsecs = capacity_max_ampsecs;
+        state = ST_FULLY_CHARGED;
+        reached_full_charge = 1;
+        cycles_in_state = 0;
+      }
+      else if (num_overvolted_cells > 0) {
+        if (cycles_in_state > 5) {
+          // some cool-off time
           state = ST_OVERVOLTED;
-          cycles_in_state = 0;
-        }
-        else if (volts >= FULLY_CHARGED_VOLTAGE) {
-          // when transitioning to fully charged, we assume that we're at max capacity
-          capacity_accu_ampsecs = capacity_max_ampsecs;
-          state = ST_FULLY_CHARGED;
-          reached_full_charge = 1;
           cycles_in_state = 0;
         }
       }
@@ -779,52 +786,49 @@ int main(void)
 
       // TODO: find safe heuristic. here we turn off if half
       // of the cells are undervolted.
-      if (num_undervolted_critical_cells > 0 || num_undervolted_cells > 3) {
+      if (num_undervolted_critical_cells >= 1 || num_undervolted_cells >= 4) {
         turn_som_power_off();
       }
-      
+
       if (cycles_in_state > 5) {
         state = ST_CHARGE;
         cycles_in_state = 0;
       }
     }
     else if (state == ST_OVERVOLTED) {
-      discharge_overvolted_cells();
-
-      // discharge
-      if (cycles_in_state > 5 && (num_overvolted_cells==0 || num_undervolted_cells>0)) {
-        reset_discharge_bits();
+      if (num_missing_cells > 0) {
+        state = ST_MISSING;
+        // if cells were unplugged, we don't know the capacity anymore.
+        reached_full_charge = 0;
         cycles_in_state = 0;
+      } else {
+        discharge_overvolted_cells();
 
-        if (volts >= FULLY_CHARGED_VOLTAGE) {
-          // when transitioning to fully charged, we assume that we're at max capacity
-          capacity_accu_ampsecs = capacity_max_ampsecs;
-          state = ST_FULLY_CHARGED;
-          reached_full_charge = 1;
-        } else {
+        // discharge
+        if (cycles_in_state > 5 && (num_overvolted_cells==0 || num_undervolted_cells>0)) {
+          reset_discharge_bits();
+
           state = ST_CHARGE;
+          cycles_in_state = 0;
         }
       }
     }
     else if (state == ST_MISSING) {
       reset_discharge_bits();
-      
+
       if (cycles_in_state > 5) {
         if (num_missing_cells < 1) {
           state = ST_CHARGE;
           cycles_in_state = 0;
-        }
-        else if (num_overvolted_cells > 0) {
-          state = ST_OVERVOLTED;
-          cycles_in_state = 0;
+        } else {
+          turn_som_power_off();
         }
       }
     }
     else if (state == ST_FULLY_CHARGED) {
-      // fully charged. resume charging once we're 0.2mV
-      // below fully charged state
       if (cycles_in_state > 5) {
-        if (volts < (FULLY_CHARGED_VOLTAGE - 0.2)) {
+        // if none of the cells are fully charged anymore, allow charging again
+        if (num_fully_charged_cells < 1) {
           state = ST_CHARGE;
           cycles_in_state = 0;
         }
