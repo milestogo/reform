@@ -801,8 +801,8 @@ int main(void)
 
       if (cycles_in_state > 1) {
         // TODO: find safe heuristic. here we turn off if half
-        // of the cells are undervolted.
-        if (num_undervolted_critical_cells >= 1 || num_undervolted_cells >= 4) {
+        // of the cells are undervolted and there's no wall power.
+        if (volts < 26 && (num_undervolted_critical_cells >= 1 || num_undervolted_cells >= 4)) {
           turn_som_power_off();
         }
 
@@ -836,7 +836,7 @@ int main(void)
         if (num_missing_cells < 1) {
           state = ST_CHARGE;
           cycles_in_state = 0;
-        } else {
+        } else if (volts < 26) {
           turn_som_power_off();
         }
       }
