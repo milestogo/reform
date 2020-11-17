@@ -174,6 +174,7 @@ uint8_t spir[64];
 #define MISSING_VALUE_HI 4.3
 #define MISSING_VALUE_LO 0.2
 #define FULLY_CHARGED_VOLTAGE 3.4
+#define WALLPOWER_DETECT_VOLTAGE 24
 
 void set_discharge_bits(uint16_t bits) {
   // 0x10: WRCFG, write config
@@ -802,7 +803,7 @@ int main(void)
       if (cycles_in_state > 1) {
         // TODO: find safe heuristic. here we turn off if half
         // of the cells are undervolted and there's no wall power.
-        if (volts < 26 && (num_undervolted_critical_cells >= 1 || num_undervolted_cells >= 4)) {
+        if (volts < WALLPOWER_DETECT_VOLTAGE && (num_undervolted_critical_cells >= 1 || num_undervolted_cells >= 4)) {
           turn_som_power_off();
         }
 
@@ -836,7 +837,7 @@ int main(void)
         if (num_missing_cells < 1) {
           state = ST_CHARGE;
           cycles_in_state = 0;
-        } else if (volts < 26) {
+        } else if (volts < WALLPOWER_DETECT_VOLTAGE) {
           turn_som_power_off();
         }
       }
