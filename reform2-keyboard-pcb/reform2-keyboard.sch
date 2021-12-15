@@ -40,7 +40,7 @@ F 5 "CPG135001D02" H 3400 2250 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D1
+L reform2-keyboard-rescue:D_Small-Device D1
 U 1 1 594D7FFC
 P 2550 2550
 F 0 "D1" V 2596 2482 50  0000 R CNN
@@ -53,7 +53,7 @@ F 5 "MMDL914T1G" H 2550 2550 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D7
+L reform2-keyboard-rescue:D_Small-Device D7
 U 1 1 594D80D3
 P 3400 2550
 F 0 "D7" V 3446 2482 50  0000 R CNN
@@ -92,7 +92,7 @@ F 5 "CPG135001D02" H 5100 2250 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D13
+L reform2-keyboard-rescue:D_Small-Device D13
 U 1 1 594D873A
 P 4250 2550
 F 0 "D13" V 4296 2482 50  0000 R CNN
@@ -105,7 +105,7 @@ F 5 "MMDL914T1G" H 4250 2550 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D19
+L reform2-keyboard-rescue:D_Small-Device D19
 U 1 1 594D8740
 P 5100 2550
 F 0 "D19" V 5146 2482 50  0000 R CNN
@@ -144,7 +144,7 @@ F 5 "CPG135001D02" H 6800 2250 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D25
+L reform2-keyboard-rescue:D_Small-Device D25
 U 1 1 594D8B4C
 P 5950 2550
 F 0 "D25" V 5996 2482 50  0000 R CNN
@@ -157,7 +157,7 @@ F 5 "MMDL914T1G" H 5950 2550 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D31
+L reform2-keyboard-rescue:D_Small-Device D31
 U 1 1 594D8B52
 P 6800 2550
 F 0 "D31" V 6846 2482 50  0000 R CNN
@@ -196,7 +196,7 @@ F 5 "CPG135001D02" H 8500 2250 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D37
+L reform2-keyboard-rescue:D_Small-Device D37
 U 1 1 594D8B66
 P 7650 2550
 F 0 "D37" V 7696 2482 50  0000 R CNN
@@ -209,7 +209,7 @@ F 5 "MMDL914T1G" H 7650 2550 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D43
+L reform2-keyboard-rescue:D_Small-Device D43
 U 1 1 594D8B6C
 P 8500 2550
 F 0 "D43" V 8546 2482 50  0000 R CNN
@@ -248,7 +248,7 @@ F 5 "CPG135001D02" H 10200 2250 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D49
+L reform2-keyboard-rescue:D_Small-Device D49
 U 1 1 594D96E5
 P 9350 2550
 F 0 "D49" V 9396 2482 50  0000 R CNN
@@ -261,7 +261,7 @@ F 5 "MMDL914T1G" H 9350 2550 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D55
+L reform2-keyboard-rescue:D_Small-Device D55
 U 1 1 594D96EB
 P 10200 2550
 F 0 "D55" V 10246 2482 50  0000 R CNN
@@ -300,7 +300,7 @@ F 5 "CPG135001D02" H 11900 2250 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D61
+L reform2-keyboard-rescue:D_Small-Device D61
 U 1 1 594D96FF
 P 11050 2550
 F 0 "D61" V 11096 2482 50  0000 R CNN
@@ -313,7 +313,7 @@ F 5 "MMDL914T1G" H 11050 2550 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D67
+L reform2-keyboard-rescue:D_Small-Device D67
 U 1 1 594D9705
 P 11900 2550
 F 0 "D67" V 11946 2482 50  0000 R CNN
@@ -323,58 +323,6 @@ F 3 "" V 11900 2550 50  0000 C CNN
 F 4 "ON" H 11900 2550 50  0001 C CNN "Manufacturer"
 F 5 "MMDL914T1G" H 11900 2550 50  0001 C CNN "Manufacturer_No"
 	1    11900 2550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L mntcomp-keyboard:Choc SW73
-U 1 1 594D970B
-P 12750 2250
-F 0 "SW73" H 13041 2371 50  0000 L CNN
-F 1 "Choc" H 13041 2280 50  0000 L CNN
-F 2 "keyswitches:PG1350" H 12750 2250 50  0001 C CNN
-F 3 "" H 12750 2250 50  0000 C CNN
-F 4 "Kailh" H 12750 2250 50  0001 C CNN "Manufacturer"
-F 5 "CPG135001D02" H 12750 2250 50  0001 C CNN "Manufacturer_No"
-	1    12750 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L mntcomp-keyboard:Choc SW78
-U 1 1 594D9711
-P 13600 2250
-F 0 "SW78" H 13891 2371 50  0000 L CNN
-F 1 "Choc" H 13891 2280 50  0000 L CNN
-F 2 "keyswitches:PG1350" H 13600 2250 50  0001 C CNN
-F 3 "" H 13600 2250 50  0000 C CNN
-F 4 "Kailh" H 13600 2250 50  0001 C CNN "Manufacturer"
-F 5 "CPG135001D02" H 13600 2250 50  0001 C CNN "Manufacturer_No"
-	1    13600 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D73
-U 1 1 594D9719
-P 12750 2550
-F 0 "D73" V 12796 2482 50  0000 R CNN
-F 1 "MMDL914T1G" V 12705 2482 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 12750 2550 50  0001 C CNN
-F 3 "" V 12750 2550 50  0000 C CNN
-F 4 "ON" H 12750 2550 50  0001 C CNN "Manufacturer"
-F 5 "MMDL914T1G" H 12750 2550 50  0001 C CNN "Manufacturer_No"
-	1    12750 2550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D78
-U 1 1 594D971F
-P 13600 2550
-F 0 "D78" V 13646 2482 50  0000 R CNN
-F 1 "MMDL914T1G" V 13555 2482 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 13600 2550 50  0001 C CNN
-F 3 "" V 13600 2550 50  0000 C CNN
-F 4 "ON" H 13600 2550 50  0001 C CNN "Manufacturer"
-F 5 "MMDL914T1G" H 13600 2550 50  0001 C CNN "Manufacturer_No"
-	1    13600 2550
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -404,7 +352,7 @@ F 5 "CPG135001D02" H 4250 3350 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D8
+L reform2-keyboard-rescue:D_Small-Device D8
 U 1 1 594DAC33
 P 3400 3650
 F 0 "D8" V 3446 3582 50  0000 R CNN
@@ -417,7 +365,7 @@ F 5 "MMDL914T1G" H 3400 3650 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D14
+L reform2-keyboard-rescue:D_Small-Device D14
 U 1 1 594DAC39
 P 4250 3650
 F 0 "D14" V 4296 3582 50  0000 R CNN
@@ -456,7 +404,7 @@ F 5 "CPG135001D02" H 5950 3350 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D20
+L reform2-keyboard-rescue:D_Small-Device D20
 U 1 1 594DAC4C
 P 5100 3650
 F 0 "D20" V 5146 3582 50  0000 R CNN
@@ -469,7 +417,7 @@ F 5 "MMDL914T1G" H 5100 3650 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D26
+L reform2-keyboard-rescue:D_Small-Device D26
 U 1 1 594DAC52
 P 5950 3650
 F 0 "D26" V 5996 3582 50  0000 R CNN
@@ -508,7 +456,7 @@ F 5 "CPG135001D02" H 7650 3350 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D32
+L reform2-keyboard-rescue:D_Small-Device D32
 U 1 1 594DAC65
 P 6800 3650
 F 0 "D32" V 6846 3582 50  0000 R CNN
@@ -521,7 +469,7 @@ F 5 "MMDL914T1G" H 6800 3650 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D38
+L reform2-keyboard-rescue:D_Small-Device D38
 U 1 1 594DAC6B
 P 7650 3650
 F 0 "D38" V 7696 3582 50  0000 R CNN
@@ -560,7 +508,7 @@ F 5 "CPG135001D02" H 9350 3350 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D44
+L reform2-keyboard-rescue:D_Small-Device D44
 U 1 1 594DAC7E
 P 8500 3650
 F 0 "D44" V 8546 3582 50  0000 R CNN
@@ -573,7 +521,7 @@ F 5 "MMDL914T1G" H 8500 3650 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D50
+L reform2-keyboard-rescue:D_Small-Device D50
 U 1 1 594DAC84
 P 9350 3650
 F 0 "D50" V 9396 3582 50  0000 R CNN
@@ -612,7 +560,7 @@ F 5 "CPG135001D02" H 11050 3350 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D56
+L reform2-keyboard-rescue:D_Small-Device D56
 U 1 1 594DAC97
 P 10200 3650
 F 0 "D56" V 10246 3582 50  0000 R CNN
@@ -625,7 +573,7 @@ F 5 "MMDL914T1G" H 10200 3650 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D62
+L reform2-keyboard-rescue:D_Small-Device D62
 U 1 1 594DAC9D
 P 11050 3650
 F 0 "D62" V 11096 3582 50  0000 R CNN
@@ -651,20 +599,7 @@ F 5 "CPG135001D02" H 11900 3350 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L mntcomp-keyboard:Choc SW74
-U 1 1 594DACA9
-P 12750 3350
-F 0 "SW74" H 13041 3471 50  0000 L CNN
-F 1 "Choc" H 13041 3380 50  0000 L CNN
-F 2 "keyswitches:PG1350" H 12750 3350 50  0001 C CNN
-F 3 "" H 12750 3350 50  0000 C CNN
-F 4 "Kailh" H 12750 3350 50  0001 C CNN "Manufacturer"
-F 5 "CPG135001D02" H 12750 3350 50  0001 C CNN "Manufacturer_No"
-	1    12750 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D68
+L reform2-keyboard-rescue:D_Small-Device D68
 U 1 1 594DACB0
 P 11900 3650
 F 0 "D68" V 11946 3582 50  0000 R CNN
@@ -674,45 +609,6 @@ F 3 "" V 11900 3650 50  0000 C CNN
 F 4 "ON" H 11900 3650 50  0001 C CNN "Manufacturer"
 F 5 "MMDL914T1G" H 11900 3650 50  0001 C CNN "Manufacturer_No"
 	1    11900 3650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D74
-U 1 1 594DACB6
-P 12750 3650
-F 0 "D74" V 12796 3582 50  0000 R CNN
-F 1 "MMDL914T1G" V 12705 3582 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 12750 3650 50  0001 C CNN
-F 3 "" V 12750 3650 50  0000 C CNN
-F 4 "ON" H 12750 3650 50  0001 C CNN "Manufacturer"
-F 5 "MMDL914T1G" H 12750 3650 50  0001 C CNN "Manufacturer_No"
-	1    12750 3650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L mntcomp-keyboard:Choc SW79
-U 1 1 594DACBC
-P 13600 3350
-F 0 "SW79" H 13891 3471 50  0000 L CNN
-F 1 "Choc" H 13891 3380 50  0000 L CNN
-F 2 "keyswitches:PG1350" H 13600 3350 50  0001 C CNN
-F 3 "" H 13600 3350 50  0000 C CNN
-F 4 "Kailh" H 13600 3350 50  0001 C CNN "Manufacturer"
-F 5 "CPG135001D02" H 13600 3350 50  0001 C CNN "Manufacturer_No"
-	1    13600 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D79
-U 1 1 594DACC9
-P 13600 3650
-F 0 "D79" V 13646 3582 50  0000 R CNN
-F 1 "MMDL914T1G" V 13555 3582 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 13600 3650 50  0001 C CNN
-F 3 "" V 13600 3650 50  0000 C CNN
-F 4 "ON" H 13600 3650 50  0001 C CNN "Manufacturer"
-F 5 "MMDL914T1G" H 13600 3650 50  0001 C CNN "Manufacturer_No"
-	1    13600 3650
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -742,7 +638,7 @@ F 5 "CPG135001D02" H 4250 4450 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D9
+L reform2-keyboard-rescue:D_Small-Device D9
 U 1 1 594DBB11
 P 3400 4750
 F 0 "D9" V 3446 4682 50  0000 R CNN
@@ -755,7 +651,7 @@ F 5 "MMDL914T1G" H 3400 4750 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D15
+L reform2-keyboard-rescue:D_Small-Device D15
 U 1 1 594DBB17
 P 4250 4750
 F 0 "D15" V 4296 4682 50  0000 R CNN
@@ -794,7 +690,7 @@ F 5 "CPG135001D02" H 5950 4450 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D21
+L reform2-keyboard-rescue:D_Small-Device D21
 U 1 1 594DBB2A
 P 5100 4750
 F 0 "D21" V 5146 4682 50  0000 R CNN
@@ -807,7 +703,7 @@ F 5 "MMDL914T1G" H 5100 4750 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D27
+L reform2-keyboard-rescue:D_Small-Device D27
 U 1 1 594DBB30
 P 5950 4750
 F 0 "D27" V 5996 4682 50  0000 R CNN
@@ -846,7 +742,7 @@ F 5 "CPG135001D02" H 7650 4450 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D33
+L reform2-keyboard-rescue:D_Small-Device D33
 U 1 1 594DBB43
 P 6800 4750
 F 0 "D33" V 6846 4682 50  0000 R CNN
@@ -859,7 +755,7 @@ F 5 "MMDL914T1G" H 6800 4750 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D39
+L reform2-keyboard-rescue:D_Small-Device D39
 U 1 1 594DBB49
 P 7650 4750
 F 0 "D39" V 7696 4682 50  0000 R CNN
@@ -898,7 +794,7 @@ F 5 "CPG135001D02" H 9350 4450 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D45
+L reform2-keyboard-rescue:D_Small-Device D45
 U 1 1 594DBB5C
 P 8500 4750
 F 0 "D45" V 8546 4682 50  0000 R CNN
@@ -911,7 +807,7 @@ F 5 "MMDL914T1G" H 8500 4750 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D51
+L reform2-keyboard-rescue:D_Small-Device D51
 U 1 1 594DBB62
 P 9350 4750
 F 0 "D51" V 9396 4682 50  0000 R CNN
@@ -950,7 +846,7 @@ F 5 "CPG135001D02" H 11050 4450 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D57
+L reform2-keyboard-rescue:D_Small-Device D57
 U 1 1 594DBB75
 P 10200 4750
 F 0 "D57" V 10246 4682 50  0000 R CNN
@@ -963,7 +859,7 @@ F 5 "MMDL914T1G" H 10200 4750 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D63
+L reform2-keyboard-rescue:D_Small-Device D63
 U 1 1 594DBB7B
 P 11050 4750
 F 0 "D63" V 11096 4682 50  0000 R CNN
@@ -989,20 +885,7 @@ F 5 "CPG135001D02" H 11900 4450 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L mntcomp-keyboard:Choc SW75
-U 1 1 594DBB87
-P 12750 4450
-F 0 "SW75" H 13041 4571 50  0000 L CNN
-F 1 "Choc" H 13041 4480 50  0000 L CNN
-F 2 "keyswitches:PG1350" H 12750 4450 50  0001 C CNN
-F 3 "" H 12750 4450 50  0000 C CNN
-F 4 "Kailh" H 12750 4450 50  0001 C CNN "Manufacturer"
-F 5 "CPG135001D02" H 12750 4450 50  0001 C CNN "Manufacturer_No"
-	1    12750 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D69
+L reform2-keyboard-rescue:D_Small-Device D69
 U 1 1 594DBB8E
 P 11900 4750
 F 0 "D69" V 11946 4682 50  0000 R CNN
@@ -1013,32 +896,6 @@ F 4 "ON" H 11900 4750 50  0001 C CNN "Manufacturer"
 F 5 "MMDL914T1G" H 11900 4750 50  0001 C CNN "Manufacturer_No"
 	1    11900 4750
 	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D75
-U 1 1 594DBB94
-P 12750 4750
-F 0 "D75" V 12796 4682 50  0000 R CNN
-F 1 "MMDL914T1G" V 12705 4682 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 12750 4750 50  0001 C CNN
-F 3 "" V 12750 4750 50  0000 C CNN
-F 4 "ON" H 12750 4750 50  0001 C CNN "Manufacturer"
-F 5 "MMDL914T1G" H 12750 4750 50  0001 C CNN "Manufacturer_No"
-	1    12750 4750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L mntcomp-keyboard:Choc SW80
-U 1 1 594DBB9A
-P 13600 4450
-F 0 "SW80" H 13891 4571 50  0000 L CNN
-F 1 "Choc" H 13891 4480 50  0000 L CNN
-F 2 "keyswitches:PG1350" H 13600 4450 50  0001 C CNN
-F 3 "" H 13600 4450 50  0000 C CNN
-F 4 "Kailh" H 13600 4450 50  0001 C CNN "Manufacturer"
-F 5 "CPG135001D02" H 13600 4450 50  0001 C CNN "Manufacturer_No"
-	1    13600 4450
-	1    0    0    -1  
 $EndComp
 $Comp
 L mntcomp-keyboard:Choc SW4
@@ -1054,20 +911,7 @@ F 5 "CPG135001D02" H 2550 5500 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D80
-U 1 1 594DBBA7
-P 13600 4750
-F 0 "D80" V 13646 4682 50  0000 R CNN
-F 1 "MMDL914T1G" V 13555 4682 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 13600 4750 50  0001 C CNN
-F 3 "" V 13600 4750 50  0000 C CNN
-F 4 "ON" H 13600 4750 50  0001 C CNN "Manufacturer"
-F 5 "MMDL914T1G" H 13600 4750 50  0001 C CNN "Manufacturer_No"
-	1    13600 4750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D4
+L reform2-keyboard-rescue:D_Small-Device D4
 U 1 1 594DBBAD
 P 2550 5800
 F 0 "D4" V 2596 5732 50  0000 R CNN
@@ -1106,7 +950,7 @@ F 5 "CPG135001D02" H 4250 5500 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D10
+L reform2-keyboard-rescue:D_Small-Device D10
 U 1 1 594DCA6F
 P 3400 5800
 F 0 "D10" V 3446 5732 50  0000 R CNN
@@ -1119,7 +963,7 @@ F 5 "MMDL914T1G" H 3400 5800 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D16
+L reform2-keyboard-rescue:D_Small-Device D16
 U 1 1 594DCA75
 P 4250 5800
 F 0 "D16" V 4296 5732 50  0000 R CNN
@@ -1158,7 +1002,7 @@ F 5 "CPG135001D02" H 5950 5500 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D22
+L reform2-keyboard-rescue:D_Small-Device D22
 U 1 1 594DCA88
 P 5100 5800
 F 0 "D22" V 5146 5732 50  0000 R CNN
@@ -1171,7 +1015,7 @@ F 5 "MMDL914T1G" H 5100 5800 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D28
+L reform2-keyboard-rescue:D_Small-Device D28
 U 1 1 594DCA8E
 P 5950 5800
 F 0 "D28" V 5996 5732 50  0000 R CNN
@@ -1210,7 +1054,7 @@ F 5 "CPG135001D02" H 7650 5500 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D34
+L reform2-keyboard-rescue:D_Small-Device D34
 U 1 1 594DCAA1
 P 6800 5800
 F 0 "D34" V 6846 5732 50  0000 R CNN
@@ -1223,7 +1067,7 @@ F 5 "MMDL914T1G" H 6800 5800 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D40
+L reform2-keyboard-rescue:D_Small-Device D40
 U 1 1 594DCAA7
 P 7650 5800
 F 0 "D40" V 7696 5732 50  0000 R CNN
@@ -1262,7 +1106,7 @@ F 5 "CPG135001D02" H 9350 5500 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D46
+L reform2-keyboard-rescue:D_Small-Device D46
 U 1 1 594DCABA
 P 8500 5800
 F 0 "D46" V 8546 5732 50  0000 R CNN
@@ -1275,7 +1119,7 @@ F 5 "MMDL914T1G" H 8500 5800 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D52
+L reform2-keyboard-rescue:D_Small-Device D52
 U 1 1 594DCAC0
 P 9350 5800
 F 0 "D52" V 9396 5732 50  0000 R CNN
@@ -1314,7 +1158,7 @@ F 5 "CPG135001D02" H 11050 5500 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D58
+L reform2-keyboard-rescue:D_Small-Device D58
 U 1 1 594DCAD3
 P 10200 5800
 F 0 "D58" V 10246 5732 50  0000 R CNN
@@ -1327,7 +1171,7 @@ F 5 "MMDL914T1G" H 10200 5800 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D64
+L reform2-keyboard-rescue:D_Small-Device D64
 U 1 1 594DCAD9
 P 11050 5800
 F 0 "D64" V 11096 5732 50  0000 R CNN
@@ -1353,20 +1197,7 @@ F 5 "CPG135001D02" H 11900 5500 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L mntcomp-keyboard:Choc SW76
-U 1 1 594DCAE5
-P 12750 5500
-F 0 "SW76" H 13041 5621 50  0000 L CNN
-F 1 "Choc" H 13041 5530 50  0000 L CNN
-F 2 "keyswitches:PG1350" H 12750 5500 50  0001 C CNN
-F 3 "" H 12750 5500 50  0000 C CNN
-F 4 "Kailh" H 12750 5500 50  0001 C CNN "Manufacturer"
-F 5 "CPG135001D02" H 12750 5500 50  0001 C CNN "Manufacturer_No"
-	1    12750 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D70
+L reform2-keyboard-rescue:D_Small-Device D70
 U 1 1 594DCAEC
 P 11900 5800
 F 0 "D70" V 11946 5732 50  0000 R CNN
@@ -1376,45 +1207,6 @@ F 3 "" V 11900 5800 50  0000 C CNN
 F 4 "ON" H 11900 5800 50  0001 C CNN "Manufacturer"
 F 5 "MMDL914T1G" H 11900 5800 50  0001 C CNN "Manufacturer_No"
 	1    11900 5800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D76
-U 1 1 594DCAF2
-P 12750 5800
-F 0 "D76" V 12796 5732 50  0000 R CNN
-F 1 "MMDL914T1G" V 12705 5732 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 12750 5800 50  0001 C CNN
-F 3 "" V 12750 5800 50  0000 C CNN
-F 4 "ON" H 12750 5800 50  0001 C CNN "Manufacturer"
-F 5 "MMDL914T1G" H 12750 5800 50  0001 C CNN "Manufacturer_No"
-	1    12750 5800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L mntcomp-keyboard:Choc SW81
-U 1 1 594DCAF8
-P 13600 5500
-F 0 "SW81" H 13891 5621 50  0000 L CNN
-F 1 "Choc" H 13891 5530 50  0000 L CNN
-F 2 "keyswitches:PG1350" H 13600 5500 50  0001 C CNN
-F 3 "" H 13600 5500 50  0000 C CNN
-F 4 "Kailh" H 13600 5500 50  0001 C CNN "Manufacturer"
-F 5 "CPG135001D02" H 13600 5500 50  0001 C CNN "Manufacturer_No"
-	1    13600 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D81
-U 1 1 594DCB05
-P 13600 5800
-F 0 "D81" V 13646 5732 50  0000 R CNN
-F 1 "MMDL914T1G" V 13555 5732 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 13600 5800 50  0001 C CNN
-F 3 "" V 13600 5800 50  0000 C CNN
-F 4 "ON" H 13600 5800 50  0001 C CNN "Manufacturer"
-F 5 "MMDL914T1G" H 13600 5800 50  0001 C CNN "Manufacturer_No"
-	1    13600 5800
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1444,7 +1236,7 @@ F 5 "CPG135001D02" H 3400 6600 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D5
+L reform2-keyboard-rescue:D_Small-Device D5
 U 1 1 594DCB25
 P 2550 6900
 F 0 "D5" V 2596 6832 50  0000 R CNN
@@ -1457,7 +1249,7 @@ F 5 "MMDL914T1G" H 2550 6900 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D11
+L reform2-keyboard-rescue:D_Small-Device D11
 U 1 1 594DCB2B
 P 3400 6900
 F 0 "D11" V 3446 6832 50  0000 R CNN
@@ -1496,7 +1288,7 @@ F 5 "CPG135001D02" H 5100 6600 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D17
+L reform2-keyboard-rescue:D_Small-Device D17
 U 1 1 594DCB3E
 P 4250 6900
 F 0 "D17" V 4296 6832 50  0000 R CNN
@@ -1509,7 +1301,7 @@ F 5 "MMDL914T1G" H 4250 6900 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D23
+L reform2-keyboard-rescue:D_Small-Device D23
 U 1 1 594DCB44
 P 5100 6900
 F 0 "D23" V 5146 6832 50  0000 R CNN
@@ -1548,7 +1340,7 @@ F 5 "CPG135001D02" H 6800 6600 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D29
+L reform2-keyboard-rescue:D_Small-Device D29
 U 1 1 594DCB57
 P 5950 6900
 F 0 "D29" V 5996 6832 50  0000 R CNN
@@ -1561,7 +1353,7 @@ F 5 "MMDL914T1G" H 5950 6900 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D35
+L reform2-keyboard-rescue:D_Small-Device D35
 U 1 1 594DCB5D
 P 6800 6900
 F 0 "D35" V 6846 6832 50  0000 R CNN
@@ -1600,7 +1392,7 @@ F 5 "CPG135001D02" H 8500 6600 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D41
+L reform2-keyboard-rescue:D_Small-Device D41
 U 1 1 594DCB70
 P 7650 6900
 F 0 "D41" V 7696 6832 50  0000 R CNN
@@ -1613,7 +1405,7 @@ F 5 "MMDL914T1G" H 7650 6900 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D47
+L reform2-keyboard-rescue:D_Small-Device D47
 U 1 1 594DCB76
 P 8500 6900
 F 0 "D47" V 8546 6832 50  0000 R CNN
@@ -1652,7 +1444,7 @@ F 5 "CPG135001D02" H 10200 6600 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D53
+L reform2-keyboard-rescue:D_Small-Device D53
 U 1 1 594DCB89
 P 9350 6900
 F 0 "D53" V 9396 6832 50  0000 R CNN
@@ -1665,7 +1457,7 @@ F 5 "MMDL914T1G" H 9350 6900 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D59
+L reform2-keyboard-rescue:D_Small-Device D59
 U 1 1 594DCB8F
 P 10200 6900
 F 0 "D59" V 10246 6832 50  0000 R CNN
@@ -1704,7 +1496,7 @@ F 5 "CPG135001D02" H 11900 6600 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D65
+L reform2-keyboard-rescue:D_Small-Device D65
 U 1 1 594DCBA2
 P 11050 6900
 F 0 "D65" V 11096 6832 50  0000 R CNN
@@ -1717,7 +1509,7 @@ F 5 "MMDL914T1G" H 11050 6900 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D71
+L reform2-keyboard-rescue:D_Small-Device D71
 U 1 1 594DCBA8
 P 11900 6900
 F 0 "D71" V 11946 6832 50  0000 R CNN
@@ -1730,241 +1522,7 @@ F 5 "MMDL914T1G" H 11900 6900 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L mntcomp-keyboard:Choc SW77
-U 1 1 594DCBAE
-P 12750 6600
-F 0 "SW77" H 13041 6721 50  0000 L CNN
-F 1 "Choc" H 13041 6630 50  0000 L CNN
-F 2 "keyswitches:PG1350" H 12750 6600 50  0001 C CNN
-F 3 "" H 12750 6600 50  0000 C CNN
-F 4 "Kailh" H 12750 6600 50  0001 C CNN "Manufacturer"
-F 5 "CPG135001D02" H 12750 6600 50  0001 C CNN "Manufacturer_No"
-	1    12750 6600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D77
-U 1 1 594DCBBB
-P 12750 6900
-F 0 "D77" V 12796 6832 50  0000 R CNN
-F 1 "MMDL914T1G" V 12705 6832 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 12750 6900 50  0001 C CNN
-F 3 "" V 12750 6900 50  0000 C CNN
-F 4 "ON" H 12750 6900 50  0001 C CNN "Manufacturer"
-F 5 "MMDL914T1G" H 12750 6900 50  0001 C CNN "Manufacturer_No"
-	1    12750 6900
-	0    -1   -1   0   
-$EndComp
-$Comp
-L mntcomp-keyboard:Choc SW82
-U 1 1 594DD691
-P 13600 6600
-F 0 "SW82" H 13891 6721 50  0000 L CNN
-F 1 "Choc" H 13891 6630 50  0000 L CNN
-F 2 "keyswitches:PG1350" H 13600 6600 50  0001 C CNN
-F 3 "" H 13600 6600 50  0000 C CNN
-F 4 "Kailh" H 13600 6600 50  0001 C CNN "Manufacturer"
-F 5 "CPG135001D02" H 13600 6600 50  0001 C CNN "Manufacturer_No"
-	1    13600 6600
-	1    0    0    -1  
-$EndComp
-$Comp
-L mntcomp-keyboard:Choc SW6
-U 1 1 594DD697
-P 2550 7700
-F 0 "SW6" H 2841 7821 50  0000 L CNN
-F 1 "Choc" H 2841 7730 50  0000 L CNN
-F 2 "keyswitches:PG1350" H 2550 7700 50  0001 C CNN
-F 3 "" H 2550 7700 50  0000 C CNN
-F 4 "Kailh" H 2550 7700 50  0001 C CNN "Manufacturer"
-F 5 "CPG135001D02" H 2550 7700 50  0001 C CNN "Manufacturer_No"
-	1    2550 7700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D82
-U 1 1 594DD69F
-P 13600 6900
-F 0 "D82" V 13646 6832 50  0000 R CNN
-F 1 "MMDL914T1G" V 13555 6832 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 13600 6900 50  0001 C CNN
-F 3 "" V 13600 6900 50  0000 C CNN
-F 4 "ON" H 13600 6900 50  0001 C CNN "Manufacturer"
-F 5 "MMDL914T1G" H 13600 6900 50  0001 C CNN "Manufacturer_No"
-	1    13600 6900
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D6
-U 1 1 594DD6A5
-P 2550 8000
-F 0 "D6" V 2596 7932 50  0000 R CNN
-F 1 "MMDL914T1G" V 2505 7932 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2550 8000 50  0001 C CNN
-F 3 "" V 2550 8000 50  0000 C CNN
-F 4 "ON" H 2550 8000 50  0001 C CNN "Manufacturer"
-F 5 "MMDL914T1G" H 2550 8000 50  0001 C CNN "Manufacturer_No"
-	1    2550 8000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L mntcomp-keyboard:Choc SW12
-U 1 1 594DD6AB
-P 3400 7700
-F 0 "SW12" H 3691 7821 50  0000 L CNN
-F 1 "Choc" H 3691 7730 50  0000 L CNN
-F 2 "keyswitches:PG1350" H 3400 7700 50  0001 C CNN
-F 3 "" H 3400 7700 50  0000 C CNN
-F 4 "Kailh" H 3400 7700 50  0001 C CNN "Manufacturer"
-F 5 "CPG135001D02" H 3400 7700 50  0001 C CNN "Manufacturer_No"
-	1    3400 7700
-	1    0    0    -1  
-$EndComp
-$Comp
-L mntcomp-keyboard:Choc SW18
-U 1 1 594DD6B1
-P 4250 7700
-F 0 "SW18" H 4541 7821 50  0000 L CNN
-F 1 "Choc" H 4541 7730 50  0000 L CNN
-F 2 "keyswitches:PG1350" H 4250 7700 50  0001 C CNN
-F 3 "" H 4250 7700 50  0000 C CNN
-F 4 "Kailh" H 4250 7700 50  0001 C CNN "Manufacturer"
-F 5 "CPG135001D02" H 4250 7700 50  0001 C CNN "Manufacturer_No"
-	1    4250 7700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D12
-U 1 1 594DD6B8
-P 3400 8000
-F 0 "D12" V 3446 7932 50  0000 R CNN
-F 1 "MMDL914T1G" V 3355 7932 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3400 8000 50  0001 C CNN
-F 3 "" V 3400 8000 50  0000 C CNN
-F 4 "ON" H 3400 8000 50  0001 C CNN "Manufacturer"
-F 5 "MMDL914T1G" H 3400 8000 50  0001 C CNN "Manufacturer_No"
-	1    3400 8000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D18
-U 1 1 594DD6BE
-P 4250 8000
-F 0 "D18" V 4296 7932 50  0000 R CNN
-F 1 "MMDL914T1G" V 4205 7932 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4250 8000 50  0001 C CNN
-F 3 "" V 4250 8000 50  0000 C CNN
-F 4 "ON" H 4250 8000 50  0001 C CNN "Manufacturer"
-F 5 "MMDL914T1G" H 4250 8000 50  0001 C CNN "Manufacturer_No"
-	1    4250 8000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L mntcomp-keyboard:Choc SW24
-U 1 1 594DD6C4
-P 5100 7700
-F 0 "SW24" H 5391 7821 50  0000 L CNN
-F 1 "Choc" H 5391 7730 50  0000 L CNN
-F 2 "keyswitches:PG1350" H 5100 7700 50  0001 C CNN
-F 3 "" H 5100 7700 50  0000 C CNN
-F 4 "Kailh" H 5100 7700 50  0001 C CNN "Manufacturer"
-F 5 "CPG135001D02" H 5100 7700 50  0001 C CNN "Manufacturer_No"
-	1    5100 7700
-	1    0    0    -1  
-$EndComp
-$Comp
-L mntcomp-keyboard:Choc SW30
-U 1 1 594DD6CA
-P 5950 7700
-F 0 "SW30" H 6241 7821 50  0000 L CNN
-F 1 "Choc" H 6241 7730 50  0000 L CNN
-F 2 "keyswitches:PG1350" H 5950 7700 50  0001 C CNN
-F 3 "" H 5950 7700 50  0000 C CNN
-F 4 "Kailh" H 5950 7700 50  0001 C CNN "Manufacturer"
-F 5 "CPG135001D02" H 5950 7700 50  0001 C CNN "Manufacturer_No"
-	1    5950 7700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D24
-U 1 1 594DD6D1
-P 5100 8000
-F 0 "D24" V 5146 7932 50  0000 R CNN
-F 1 "MMDL914T1G" V 5055 7932 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5100 8000 50  0001 C CNN
-F 3 "" V 5100 8000 50  0000 C CNN
-F 4 "ON" H 5100 8000 50  0001 C CNN "Manufacturer"
-F 5 "MMDL914T1G" H 5100 8000 50  0001 C CNN "Manufacturer_No"
-	1    5100 8000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D30
-U 1 1 594DD6D7
-P 5950 8000
-F 0 "D30" V 5996 7932 50  0000 R CNN
-F 1 "MMDL914T1G" V 5905 7932 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5950 8000 50  0001 C CNN
-F 3 "" V 5950 8000 50  0000 C CNN
-F 4 "ON" H 5950 8000 50  0001 C CNN "Manufacturer"
-F 5 "MMDL914T1G" H 5950 8000 50  0001 C CNN "Manufacturer_No"
-	1    5950 8000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L mntcomp-keyboard:Choc SW36
-U 1 1 594DD6DD
-P 6800 7700
-F 0 "SW36" H 7091 7821 50  0000 L CNN
-F 1 "Choc" H 7091 7730 50  0000 L CNN
-F 2 "keyswitches:PG1350" H 6800 7700 50  0001 C CNN
-F 3 "" H 6800 7700 50  0000 C CNN
-F 4 "Kailh" H 6800 7700 50  0001 C CNN "Manufacturer"
-F 5 "CPG135001D02" H 6800 7700 50  0001 C CNN "Manufacturer_No"
-	1    6800 7700
-	1    0    0    -1  
-$EndComp
-$Comp
-L mntcomp-keyboard:Choc SW42
-U 1 1 594DD6E3
-P 7650 7700
-F 0 "SW42" H 7941 7821 50  0000 L CNN
-F 1 "Choc" H 7941 7730 50  0000 L CNN
-F 2 "keyswitches:PG1350" H 7650 7700 50  0001 C CNN
-F 3 "" H 7650 7700 50  0000 C CNN
-F 4 "Kailh" H 7650 7700 50  0001 C CNN "Manufacturer"
-F 5 "CPG135001D02" H 7650 7700 50  0001 C CNN "Manufacturer_No"
-	1    7650 7700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D36
-U 1 1 594DD6EA
-P 6800 8000
-F 0 "D36" V 6846 7932 50  0000 R CNN
-F 1 "MMDL914T1G" V 6755 7932 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6800 8000 50  0001 C CNN
-F 3 "" V 6800 8000 50  0000 C CNN
-F 4 "ON" H 6800 8000 50  0001 C CNN "Manufacturer"
-F 5 "MMDL914T1G" H 6800 8000 50  0001 C CNN "Manufacturer_No"
-	1    6800 8000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D42
-U 1 1 594DD6F0
-P 7650 8000
-F 0 "D42" V 7696 7932 50  0000 R CNN
-F 1 "MMDL914T1G" V 7605 7932 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7650 8000 50  0001 C CNN
-F 3 "" V 7650 8000 50  0000 C CNN
-F 4 "ON" H 7650 8000 50  0001 C CNN "Manufacturer"
-F 5 "MMDL914T1G" H 7650 8000 50  0001 C CNN "Manufacturer_No"
-	1    7650 8000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D3
+L reform2-keyboard-rescue:D_Small-Device D3
 U 1 1 594DACCF
 P 2550 4750
 F 0 "D3" V 2596 4682 50  0000 R CNN
@@ -2003,7 +1561,7 @@ F 5 "CPG135001D02" H 2550 3350 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D2
+L reform2-keyboard-rescue:D_Small-Device D2
 U 1 1 594EABBD
 P 2550 3650
 F 0 "D2" V 2596 3582 50  0000 R CNN
@@ -2031,8 +1589,6 @@ Text GLabel 1350 2950 0    60   Input ~ 0
 ROW4
 Text GLabel 1350 3050 0    60   Input ~ 0
 ROW5
-Text GLabel 1350 3150 0    60   Input ~ 0
-ROW6
 Text GLabel 2150 1150 1    60   Input ~ 0
 COL1
 Text GLabel 2250 1150 1    60   Input ~ 0
@@ -2057,62 +1613,6 @@ Text GLabel 3150 1150 1    60   Input ~ 0
 COL11
 Text GLabel 3250 1150 1    60   Input ~ 0
 COL12
-Text GLabel 3350 1150 1    60   Input ~ 0
-COL13
-Text GLabel 3450 1150 1    60   Input ~ 0
-COL14
-$Comp
-L mntcomp-keyboard:Choc SW48
-U 1 1 5A664C9C
-P 8500 7700
-F 0 "SW48" H 8791 7821 50  0000 L CNN
-F 1 "Choc" H 8791 7730 50  0000 L CNN
-F 2 "keyswitches:PG1350" H 8500 7700 50  0001 C CNN
-F 3 "" H 8500 7700 50  0000 C CNN
-F 4 "Kailh" H 8500 7700 50  0001 C CNN "Manufacturer"
-F 5 "CPG135001D02" H 8500 7700 50  0001 C CNN "Manufacturer_No"
-	1    8500 7700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D48
-U 1 1 5A664CA2
-P 8500 8000
-F 0 "D48" V 8546 7932 50  0000 R CNN
-F 1 "MMDL914T1G" V 8455 7932 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8500 8000 50  0001 C CNN
-F 3 "" V 8500 8000 50  0000 C CNN
-F 4 "ON" H 8500 8000 50  0001 C CNN "Manufacturer"
-F 5 "MMDL914T1G" H 8500 8000 50  0001 C CNN "Manufacturer_No"
-	1    8500 8000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L mntcomp-keyboard:Choc SW54
-U 1 1 5A664F6B
-P 9350 7700
-F 0 "SW54" H 9641 7821 50  0000 L CNN
-F 1 "Choc" H 9641 7730 50  0000 L CNN
-F 2 "keyswitches:PG1350" H 9350 7700 50  0001 C CNN
-F 3 "" H 9350 7700 50  0000 C CNN
-F 4 "Kailh" H 9350 7700 50  0001 C CNN "Manufacturer"
-F 5 "CPG135001D02" H 9350 7700 50  0001 C CNN "Manufacturer_No"
-	1    9350 7700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D54
-U 1 1 5A664F71
-P 9350 8000
-F 0 "D54" V 9396 7932 50  0000 R CNN
-F 1 "MMDL914T1G" V 9305 7932 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9350 8000 50  0001 C CNN
-F 3 "" V 9350 8000 50  0000 C CNN
-F 4 "ON" H 9350 8000 50  0001 C CNN "Manufacturer"
-F 5 "MMDL914T1G" H 9350 8000 50  0001 C CNN "Manufacturer_No"
-	1    9350 8000
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	2150 1150 2150 1900
 Wire Wire Line
@@ -2143,10 +1643,6 @@ Wire Wire Line
 	1350 3050 1550 3050
 Wire Wire Line
 	1550 3050 1550 7000
-Wire Wire Line
-	1350 3150 1450 3150
-Wire Wire Line
-	1450 3150 1450 8100
 Wire Wire Line
 	2250 1150 2250 1850
 Wire Wire Line
@@ -2214,18 +1710,6 @@ Wire Wire Line
 Wire Wire Line
 	3250 1350 3250 1150
 Wire Wire Line
-	3350 1150 3350 1300
-Wire Wire Line
-	3350 1300 12400 1300
-Wire Wire Line
-	12750 1300 12750 1900
-Wire Wire Line
-	13600 1250 13600 1900
-Wire Wire Line
-	3450 1250 13250 1250
-Wire Wire Line
-	3450 1250 3450 1150
-Wire Wire Line
 	3050 1850 3050 3000
 Connection ~ 3050 1850
 Wire Wire Line
@@ -2238,34 +1722,21 @@ Wire Wire Line
 Connection ~ 3900 5150
 Wire Wire Line
 	3400 6250 3050 6250
-Connection ~ 3050 6250
-Wire Wire Line
-	3050 7350 3400 7350
 Wire Wire Line
 	3900 1800 3900 3000
 Connection ~ 3900 1800
 Wire Wire Line
-	3900 7350 4250 7350
-Wire Wire Line
 	4750 1750 4750 3000
 Connection ~ 4750 1750
-Wire Wire Line
-	4750 7350 5100 7350
 Wire Wire Line
 	5600 1700 5600 3000
 Connection ~ 5600 1700
 Wire Wire Line
-	5600 7350 5950 7350
-Wire Wire Line
 	6450 1650 6450 3000
 Connection ~ 6450 1650
 Wire Wire Line
-	6450 7350 6800 7350
-Wire Wire Line
 	7300 1600 7300 3000
 Connection ~ 7300 1600
-Wire Wire Line
-	7300 7350 7650 7350
 Wire Wire Line
 	8150 1550 8150 3000
 Connection ~ 8150 1550
@@ -2280,12 +1751,6 @@ Wire Wire Line
 	11550 1350 11550 3000
 Connection ~ 11550 1350
 Wire Wire Line
-	12400 1300 12400 3000
-Connection ~ 12400 1300
-Wire Wire Line
-	13250 1250 13250 3000
-Connection ~ 13250 1250
-Wire Wire Line
 	5100 5150 4750 5150
 Connection ~ 4750 5150
 Wire Wire Line
@@ -2296,10 +1761,8 @@ Wire Wire Line
 Connection ~ 3900 3000
 Wire Wire Line
 	4250 6250 3900 6250
-Connection ~ 3900 6250
 Wire Wire Line
 	5100 6250 4750 6250
-Connection ~ 4750 6250
 Wire Wire Line
 	5950 5150 5600 5150
 Connection ~ 5600 5150
@@ -2369,16 +1832,12 @@ Wire Wire Line
 	9000 6250 9350 6250
 Wire Wire Line
 	8500 6250 8150 6250
-Connection ~ 8150 6250
 Wire Wire Line
 	7650 6250 7300 6250
-Connection ~ 7300 6250
 Wire Wire Line
 	6800 6250 6450 6250
-Connection ~ 6450 6250
 Wire Wire Line
 	5950 6250 5600 6250
-Connection ~ 5600 6250
 Wire Wire Line
 	11050 3000 10700 3000
 Connection ~ 10700 3000
@@ -2386,29 +1845,10 @@ Wire Wire Line
 	11900 3000 11550 3000
 Connection ~ 11550 3000
 Wire Wire Line
-	12750 3000 12400 3000
-Connection ~ 12400 3000
-Wire Wire Line
-	13600 3000 13250 3000
-Connection ~ 13250 3000
-Wire Wire Line
-	13600 4100 13250 4100
-Connection ~ 13250 4100
-Wire Wire Line
-	12750 4100 12400 4100
-Connection ~ 12400 4100
-Wire Wire Line
 	11900 4100 11550 4100
 Connection ~ 11550 4100
 Wire Wire Line
 	11550 5150 11900 5150
-Wire Wire Line
-	12750 5150 12400 5150
-Connection ~ 12400 5150
-Wire Wire Line
-	13600 5150 13250 5150
-Wire Wire Line
-	12400 6250 12750 6250
 Wire Wire Line
 	11550 6250 11900 6250
 Wire Wire Line
@@ -2416,12 +1856,6 @@ Wire Wire Line
 Wire Wire Line
 	10700 6250 11050 6250
 Connection ~ 11550 5150
-Wire Wire Line
-	8150 7350 8500 7350
-Wire Wire Line
-	9000 7350 9350 7350
-Connection ~ 9000 6250
-Connection ~ 9850 6250
 Wire Wire Line
 	2150 1900 2150 3000
 Wire Wire Line
@@ -2453,17 +1887,11 @@ Wire Wire Line
 Wire Wire Line
 	11550 1350 11900 1350
 Wire Wire Line
-	12400 1300 12750 1300
-Wire Wire Line
-	13250 1250 13600 1250
-Wire Wire Line
 	3900 5150 3900 6250
 Wire Wire Line
 	4750 4100 4750 5150
 Wire Wire Line
 	4750 3000 4750 4100
-Wire Wire Line
-	3900 6250 3900 7350
 Wire Wire Line
 	4750 5150 4750 6250
 Wire Wire Line
@@ -2507,104 +1935,15 @@ Wire Wire Line
 Wire Wire Line
 	9850 5150 9850 6250
 Wire Wire Line
-	6450 6250 6450 7350
-Wire Wire Line
-	5600 6250 5600 7350
-Wire Wire Line
-	4750 6250 4750 7350
-Wire Wire Line
 	11550 3000 11550 4100
-Wire Wire Line
-	12400 3000 12400 4100
-Wire Wire Line
-	13250 3000 13250 4100
-Wire Wire Line
-	13250 4100 13250 5150
-Wire Wire Line
-	12400 4100 12400 5150
 Wire Wire Line
 	11550 4100 11550 5150
 Wire Wire Line
 	11550 5150 11550 6250
 Wire Wire Line
-	12400 5150 12400 6250
-Wire Wire Line
 	10700 5150 10700 6250
 Wire Wire Line
-	7300 6250 7300 7350
-Wire Wire Line
-	8150 6250 8150 7350
-Wire Wire Line
 	1350 2650 2550 2650
-$Comp
-L mntcomp-keyboard:Choc SW60
-U 1 1 5CC405D4
-P 10200 7700
-F 0 "SW60" H 10491 7821 50  0000 L CNN
-F 1 "Choc" H 10491 7730 50  0000 L CNN
-F 2 "keyswitches:PG1350" H 10200 7700 50  0001 C CNN
-F 3 "" H 10200 7700 50  0000 C CNN
-F 4 "Kailh" H 10200 7700 50  0001 C CNN "Manufacturer"
-F 5 "CPG135001D02" H 10200 7700 50  0001 C CNN "Manufacturer_No"
-	1    10200 7700
-	1    0    0    -1  
-$EndComp
-$Comp
-L mntcomp-keyboard:Choc SW66
-U 1 1 5CC405DA
-P 11050 7700
-F 0 "SW66" H 11341 7821 50  0000 L CNN
-F 1 "Choc" H 11341 7730 50  0000 L CNN
-F 2 "keyswitches:PG1350" H 11050 7700 50  0001 C CNN
-F 3 "" H 11050 7700 50  0000 C CNN
-F 4 "Kailh" H 11050 7700 50  0001 C CNN "Manufacturer"
-F 5 "CPG135001D02" H 11050 7700 50  0001 C CNN "Manufacturer_No"
-	1    11050 7700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D60
-U 1 1 5CC405E0
-P 10200 8000
-F 0 "D60" V 10246 7932 50  0000 R CNN
-F 1 "MMDL914T1G" V 10155 7932 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10200 8000 50  0001 C CNN
-F 3 "" V 10200 8000 50  0000 C CNN
-F 4 "ON" H 10200 8000 50  0001 C CNN "Manufacturer"
-F 5 "MMDL914T1G" H 10200 8000 50  0001 C CNN "Manufacturer_No"
-	1    10200 8000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D66
-U 1 1 5CC405E6
-P 11050 8000
-F 0 "D66" V 11096 7932 50  0000 R CNN
-F 1 "MMDL914T1G" V 11005 7932 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 11050 8000 50  0001 C CNN
-F 3 "" V 11050 8000 50  0000 C CNN
-F 4 "ON" H 11050 8000 50  0001 C CNN "Manufacturer"
-F 5 "MMDL914T1G" H 11050 8000 50  0001 C CNN "Manufacturer_No"
-	1    11050 8000
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9000 6250 9000 7350
-Wire Wire Line
-	9850 7350 10200 7350
-Connection ~ 10700 6250
-Wire Wire Line
-	9850 6250 9850 7350
-Wire Wire Line
-	10700 7350 11050 7350
-Wire Wire Line
-	10700 6250 10700 7350
-Wire Wire Line
-	9350 8100 10200 8100
-Connection ~ 9350 8100
-Connection ~ 10200 8100
-Wire Wire Line
-	10200 8100 11050 8100
 Connection ~ 3400 3750
 Wire Wire Line
 	3400 3750 4250 3750
@@ -2628,8 +1967,6 @@ Wire Wire Line
 Connection ~ 3400 7000
 Wire Wire Line
 	3400 7000 4250 7000
-Wire Wire Line
-	2550 8100 3400 8100
 Connection ~ 5100 3750
 Wire Wire Line
 	5100 3750 5950 3750
@@ -2642,9 +1979,6 @@ Wire Wire Line
 Connection ~ 4250 7000
 Wire Wire Line
 	4250 7000 5100 7000
-Connection ~ 3400 8100
-Wire Wire Line
-	3400 8100 4250 8100
 Connection ~ 5950 3750
 Wire Wire Line
 	5950 3750 6800 3750
@@ -2657,9 +1991,6 @@ Wire Wire Line
 Connection ~ 5100 7000
 Wire Wire Line
 	5100 7000 5950 7000
-Connection ~ 4250 8100
-Wire Wire Line
-	4250 8100 5100 8100
 Connection ~ 6800 3750
 Wire Wire Line
 	6800 3750 7650 3750
@@ -2672,9 +2003,6 @@ Wire Wire Line
 Connection ~ 5950 7000
 Wire Wire Line
 	5950 7000 6800 7000
-Connection ~ 5100 8100
-Wire Wire Line
-	5100 8100 5950 8100
 Connection ~ 7650 3750
 Wire Wire Line
 	7650 3750 8500 3750
@@ -2687,9 +2015,6 @@ Wire Wire Line
 Connection ~ 6800 7000
 Wire Wire Line
 	6800 7000 7650 7000
-Connection ~ 5950 8100
-Wire Wire Line
-	5950 8100 6800 8100
 Connection ~ 8500 3750
 Wire Wire Line
 	8500 3750 9350 3750
@@ -2702,9 +2027,6 @@ Wire Wire Line
 Connection ~ 7650 7000
 Wire Wire Line
 	7650 7000 8500 7000
-Connection ~ 6800 8100
-Wire Wire Line
-	6800 8100 7650 8100
 Connection ~ 9350 3750
 Wire Wire Line
 	9350 3750 10200 3750
@@ -2717,9 +2039,6 @@ Wire Wire Line
 Connection ~ 8500 7000
 Wire Wire Line
 	8500 7000 9350 7000
-Connection ~ 7650 8100
-Wire Wire Line
-	7650 8100 8500 8100
 Connection ~ 10200 3750
 Wire Wire Line
 	10200 3750 11050 3750
@@ -2732,9 +2051,6 @@ Wire Wire Line
 Connection ~ 9350 7000
 Wire Wire Line
 	9350 7000 10200 7000
-Connection ~ 8500 8100
-Wire Wire Line
-	8500 8100 9350 8100
 Connection ~ 11050 3750
 Wire Wire Line
 	11050 3750 11900 3750
@@ -2747,30 +2063,9 @@ Wire Wire Line
 Connection ~ 10200 7000
 Wire Wire Line
 	10200 7000 11050 7000
-Connection ~ 11900 3750
-Wire Wire Line
-	11900 3750 12750 3750
-Connection ~ 11900 4850
-Wire Wire Line
-	11900 4850 12750 4850
-Connection ~ 11900 5900
-Wire Wire Line
-	11900 5900 12750 5900
 Connection ~ 11050 7000
 Wire Wire Line
 	11050 7000 11900 7000
-Connection ~ 12750 3750
-Wire Wire Line
-	12750 3750 13600 3750
-Connection ~ 12750 4850
-Wire Wire Line
-	12750 4850 13600 4850
-Connection ~ 12750 5900
-Wire Wire Line
-	12750 5900 13600 5900
-Connection ~ 11900 7000
-Wire Wire Line
-	11900 7000 12750 7000
 Wire Wire Line
 	1850 3750 2550 3750
 Connection ~ 2550 3750
@@ -2837,68 +2132,10 @@ Wire Wire Line
 Connection ~ 11050 2650
 Wire Wire Line
 	11050 2650 11900 2650
-Connection ~ 11900 2650
-Wire Wire Line
-	11900 2650 12750 2650
-Connection ~ 12750 2650
-Wire Wire Line
-	12750 2650 13600 2650
-Connection ~ 2150 6250
 Connection ~ 3050 5150
-Wire Wire Line
-	13600 6250 13250 6250
-Wire Wire Line
-	13250 6250 13250 5150
-Connection ~ 13250 5150
-Wire Wire Line
-	12750 7000 13600 7000
-Connection ~ 12750 7000
-Wire Wire Line
-	3050 6250 3050 7350
-Wire Wire Line
-	2150 7350 2550 7350
-Wire Wire Line
-	2150 6250 2150 7350
 Wire Wire Line
 	1550 7000 2550 7000
 Connection ~ 2550 7000
-Wire Wire Line
-	2550 8100 1450 8100
-Connection ~ 2550 8100
-$Comp
-L mntcomp-keyboard:Choc SW72
-U 1 1 5D01FA9B
-P 11900 7700
-F 0 "SW72" H 12191 7821 50  0000 L CNN
-F 1 "Choc" H 12191 7730 50  0000 L CNN
-F 2 "keyswitches:PG1350" H 11900 7700 50  0001 C CNN
-F 3 "" H 11900 7700 50  0000 C CNN
-F 4 "Kailh" H 11900 7700 50  0001 C CNN "Manufacturer"
-F 5 "CPG135001D02" H 11900 7700 50  0001 C CNN "Manufacturer_No"
-	1    11900 7700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D72
-U 1 1 5D01FAA5
-P 11900 8000
-F 0 "D72" V 11946 7932 50  0000 R CNN
-F 1 "MMDL914T1G" V 11855 7932 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 11900 8000 50  0001 C CNN
-F 3 "" V 11900 8000 50  0000 C CNN
-F 4 "ON" H 11900 8000 50  0001 C CNN "Manufacturer"
-F 5 "MMDL914T1G" H 11900 8000 50  0001 C CNN "Manufacturer_No"
-	1    11900 8000
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	11550 7350 11900 7350
-Wire Wire Line
-	11550 7350 11550 6250
-Connection ~ 11550 6250
-Wire Wire Line
-	11050 8100 11900 8100
-Connection ~ 11050 8100
 $Sheet
 S 3700 9650 500  500 
 U 5E649921

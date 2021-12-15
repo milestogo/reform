@@ -25,9 +25,11 @@ F 3 "" H 3450 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C1
+L reform2-keyboard-rescue:C_Small-Device C1
 U 1 1 5A2073AA
 P 2050 3850
+AR Path="/5A2073AA" Ref="C1"  Part="1" 
+AR Path="/5A2069AE/5A2073AA" Ref="C1"  Part="1" 
 F 0 "C1" H 2060 3920 50  0000 L CNN
 F 1 "18pF" H 2060 3770 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2050 3850 50  0001 C CNN
@@ -38,9 +40,11 @@ F 5 "CC0603JRNPO9BN180" H 2050 3850 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C2
+L reform2-keyboard-rescue:C_Small-Device C2
 U 1 1 5A2073F7
 P 2650 3850
+AR Path="/5A2073F7" Ref="C2"  Part="1" 
+AR Path="/5A2069AE/5A2073F7" Ref="C2"  Part="1" 
 F 0 "C2" H 2660 3920 50  0000 L CNN
 F 1 "18pF" H 2660 3770 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2650 3850 50  0001 C CNN
@@ -62,9 +66,11 @@ F 3 "" H 2350 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C3
+L reform2-keyboard-rescue:C_Small-Device C3
 U 1 1 5A20764E
 P 3450 4700
+AR Path="/5A20764E" Ref="C3"  Part="1" 
+AR Path="/5A2069AE/5A20764E" Ref="C3"  Part="1" 
 F 0 "C3" H 3460 4770 50  0000 L CNN
 F 1 "1uF" H 3460 4620 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3450 4700 50  0001 C CNN
@@ -101,8 +107,6 @@ Text GLabel 4800 5050 2    60   Input ~ 0
 ROW4
 Text GLabel 4800 4950 2    60   Input ~ 0
 ROW5
-Text GLabel 4800 4750 2    60   Input ~ 0
-ROW6
 Text GLabel 4800 4850 2    60   Input ~ 0
 COL1
 Text GLabel 4800 6050 2    60   Input ~ 0
@@ -127,12 +131,8 @@ Text GLabel 4800 5750 2    60   Input ~ 0
 COL11
 Text GLabel 4800 5850 2    60   Input ~ 0
 COL12
-Text GLabel 4800 5950 2    60   Input ~ 0
-COL13
-Text GLabel 4800 4050 2    60   Input ~ 0
-COL14
 $Comp
-L Device:R_Small R2
+L reform2-keyboard-rescue:R_Small-Device R2
 U 1 1 5A213EDF
 P 3150 4250
 F 0 "R2" V 3250 4200 50  0000 L CNN
@@ -145,7 +145,7 @@ F 5 "CRCW06030000Z0EAC" H 3150 4250 50  0001 C CNN "Manufacturer_No"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R1
+L reform2-keyboard-rescue:R_Small-Device R1
 U 1 1 5A213F64
 P 3150 4150
 F 0 "R1" V 3050 4100 50  0000 L CNN
@@ -158,9 +158,11 @@ F 5 "CRCW06030000Z0EAC" H 3150 4150 50  0001 C CNN "Manufacturer_No"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C5
+L reform2-keyboard-rescue:C_Small-Device C5
 U 1 1 5A2148C0
 P 4800 2400
+AR Path="/5A2148C0" Ref="C5"  Part="1" 
+AR Path="/5A2069AE/5A2148C0" Ref="C5"  Part="1" 
 F 0 "C5" H 4810 2470 50  0000 L CNN
 F 1 "1uF" H 4810 2320 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4800 2400 50  0001 C CNN
@@ -171,9 +173,11 @@ F 5 "C1608X8L1C105K080AC" H 4800 2400 50  0001 C CNN "Manufacturer_No"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C4
+L reform2-keyboard-rescue:C_Small-Device C4
 U 1 1 5A214A09
 P 3800 2400
+AR Path="/5A214A09" Ref="C4"  Part="1" 
+AR Path="/5A2069AE/5A214A09" Ref="C4"  Part="1" 
 F 0 "C4" H 3810 2470 50  0000 L CNN
 F 1 "0.1uF" H 3810 2320 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3800 2400 50  0001 C CNN
@@ -217,7 +221,7 @@ F 3 "" H 4100 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R3
+L reform2-keyboard-rescue:R_Small-Device R3
 U 1 1 5A21443A
 P 3400 2800
 F 0 "R3" H 3430 2820 50  0000 L CNN
@@ -230,9 +234,11 @@ F 5 "RC0603FR-0710KL" H 3400 2800 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Crystal_GND24 Y1
+L reform2-keyboard-rescue:Crystal_GND24-Device Y1
 U 1 1 5A6378F6
 P 2350 3550
+AR Path="/5A6378F6" Ref="Y1"  Part="1" 
+AR Path="/5A2069AE/5A6378F6" Ref="Y1"  Part="1" 
 F 0 "Y1" H 2475 3750 50  0000 L CNN
 F 1 "16MHz" H 2475 3675 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 2350 3550 50  0001 C CNN
@@ -348,7 +354,7 @@ PROG
 Text GLabel 4800 5250 2    60   Input ~ 0
 PROG
 $Comp
-L Switch:SW_SPST SW83
+L reform2-keyboard-rescue:SW_SPST-Switch SW83
 U 1 1 5CF3DA9E
 P 1750 1600
 F 0 "SW83" H 1750 1835 50  0000 C CNN
@@ -378,7 +384,7 @@ $EndComp
 Wire Wire Line
 	2050 1600 1950 1600
 $Comp
-L Switch:SW_DIP_x01 SW84
+L reform2-keyboard-rescue:SW_DIP_x01-Switch SW84
 U 1 1 5CF54073
 P 1750 2200
 F 0 "SW84" H 1750 2500 50  0000 C CNN
@@ -408,7 +414,7 @@ Wire Wire Line
 Wire Wire Line
 	1400 2200 1450 2200
 $Comp
-L Device:R_Small R4
+L reform2-keyboard-rescue:R_Small-Device R4
 U 1 1 5CF5B5C6
 P 3500 3750
 F 0 "R4" H 3530 3770 50  0000 L CNN
@@ -440,7 +446,7 @@ UART_TX
 Text GLabel 4800 4550 2    60   Input ~ 0
 UART_RX
 $Comp
-L Mechanical:MountingHole_Pad H1
+L reform2-keyboard-rescue:MountingHole_Pad-Mechanical H1
 U 1 1 5CFAB6F9
 P 2750 7100
 F 0 "H1" H 2850 7149 50  0000 L CNN
@@ -451,7 +457,7 @@ F 3 "~" H 2750 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H2
+L reform2-keyboard-rescue:MountingHole_Pad-Mechanical H2
 U 1 1 5CFABDD2
 P 3100 7100
 F 0 "H2" H 3200 7149 50  0000 L CNN
@@ -462,7 +468,7 @@ F 3 "~" H 3100 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H3
+L reform2-keyboard-rescue:MountingHole_Pad-Mechanical H3
 U 1 1 5CFAC2C0
 P 3450 7100
 F 0 "H3" H 3550 7149 50  0000 L CNN
@@ -473,7 +479,7 @@ F 3 "~" H 3450 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H4
+L reform2-keyboard-rescue:MountingHole_Pad-Mechanical H4
 U 1 1 5CFAC2CA
 P 3800 7100
 F 0 "H4" H 3900 7149 50  0000 L CNN
@@ -506,7 +512,7 @@ Connection ~ 3450 7200
 Wire Wire Line
 	3450 7200 3800 7200
 $Comp
-L Mechanical:MountingHole GFX1
+L reform2-keyboard-rescue:MountingHole-Mechanical GFX1
 U 1 1 5CFBB66E
 P 5100 7100
 F 0 "GFX1" H 5200 7146 50  0000 L CNN
@@ -517,7 +523,7 @@ F 3 "~" H 5100 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole GFX2
+L reform2-keyboard-rescue:MountingHole-Mechanical GFX2
 U 1 1 5CFBBDCD
 P 5600 7100
 F 0 "GFX2" H 5700 7146 50  0000 L CNN
@@ -605,9 +611,11 @@ Connection ~ 4200 2500
 Wire Wire Line
 	4200 2500 4200 2850
 $Comp
-L Device:C_Small C6
+L reform2-keyboard-rescue:C_Small-Device C6
 U 1 1 5DC43CAF
 P 5050 2400
+AR Path="/5DC43CAF" Ref="C6"  Part="1" 
+AR Path="/5A2069AE/5DC43CAF" Ref="C6"  Part="1" 
 F 0 "C6" H 5060 2470 50  0000 L CNN
 F 1 "0.1uF" H 5100 2300 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5050 2400 50  0001 C CNN
@@ -763,7 +771,7 @@ DISP_SCL
 Text GLabel 6300 3950 0    60   Input ~ 0
 DISP_SDA
 $Comp
-L Device:R_Small R5
+L reform2-keyboard-rescue:R_Small-Device R5
 U 1 1 5DCCE912
 P 6400 3850
 F 0 "R5" H 6459 3896 50  0000 L CNN
@@ -776,7 +784,7 @@ F 5 "RC0603FR-074K7L" H 6400 3850 50  0001 C CNN "Manufacturer_No"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R6
+L reform2-keyboard-rescue:R_Small-Device R6
 U 1 1 5DCD0C98
 P 6700 3850
 F 0 "R6" H 6759 3896 50  0000 L CNN
@@ -817,7 +825,7 @@ Wire Wire Line
 Text Notes 8600 4950 0    60   ~ 0
 To SSD1306
 $Comp
-L Mechanical:MountingHole_Pad H5
+L reform2-keyboard-rescue:MountingHole_Pad-Mechanical H5
 U 1 1 5DC7F0C0
 P 4200 7100
 F 0 "H5" H 4300 7149 50  0000 L CNN
@@ -828,7 +836,7 @@ F 3 "~" H 4200 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H6
+L reform2-keyboard-rescue:MountingHole_Pad-Mechanical H6
 U 1 1 5DC7F6F1
 P 4600 7100
 F 0 "H6" H 4700 7149 50  0000 L CNN
@@ -854,9 +862,11 @@ Connection ~ 3400 2550
 Wire Wire Line
 	3400 2550 3400 2700
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J4
+L reform2-keyboard-rescue:USB_C_Receptacle_USB2.0-Connector J4
 U 1 1 5E62B709
 P 7900 3050
+AR Path="/5E62B709" Ref="J4"  Part="1" 
+AR Path="/5A2069AE/5E62B709" Ref="J4"  Part="1" 
 F 0 "J4" H 8007 3917 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 8007 3826 50  0000 C CNN
 F 2 "Connector_USB:USB_C_Receptacle_Amphenol_12401610E4-2A" H 8050 3050 50  0001 C CNN
@@ -919,7 +929,7 @@ D+
 Wire Wire Line
 	8650 3250 8500 3250
 $Comp
-L Device:R_Small R13
+L reform2-keyboard-rescue:R_Small-Device R13
 U 1 1 5E63CB6C
 P 9050 2650
 F 0 "R13" V 8854 2650 50  0000 C CNN
@@ -933,7 +943,7 @@ F 6 "DNP" H 9050 2650 50  0001 C CNN "Flags"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R14
+L reform2-keyboard-rescue:R_Small-Device R14
 U 1 1 5E63CE03
 P 9300 2750
 F 0 "R14" V 9550 2750 50  0000 C CNN
@@ -975,7 +985,7 @@ NoConn ~ 8500 3650
 Text Notes 7900 2050 0    60   ~ 0
 Only in standalone Keyboard
 $Comp
-L Regulator_Linear:MCP1700-3302E_SOT23 U3
+L reform2-keyboard-rescue:MCP1700-3302E_SOT23-Regulator_Linear U3
 U 1 1 5F214B98
 P 9650 3800
 F 0 "U3" H 9650 4042 50  0000 C CNN
@@ -1030,9 +1040,11 @@ Wire Wire Line
 Wire Wire Line
 	10200 3800 9950 3800
 $Comp
-L Device:C_Small C11
+L reform2-keyboard-rescue:C_Small-Device C11
 U 1 1 5F2226E4
 P 9100 3950
+AR Path="/5F2226E4" Ref="C11"  Part="1" 
+AR Path="/5A2069AE/5F2226E4" Ref="C11"  Part="1" 
 F 0 "C11" H 9110 4020 50  0000 L CNN
 F 1 "1uF" H 9110 3870 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9100 3950 50  0001 C CNN
@@ -1044,9 +1056,11 @@ F 6 "DNP" H 9100 3950 50  0001 C CNN "Flags"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C12
+L reform2-keyboard-rescue:C_Small-Device C12
 U 1 1 5F223065
 P 10200 3950
+AR Path="/5F223065" Ref="C12"  Part="1" 
+AR Path="/5A2069AE/5F223065" Ref="C12"  Part="1" 
 F 0 "C12" H 10210 4020 50  0000 L CNN
 F 1 "1uF" H 10210 3870 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 10200 3950 50  0001 C CNN
@@ -1076,4 +1090,8 @@ Wire Wire Line
 	9650 4150 10200 4150
 Wire Wire Line
 	10200 4150 10200 4050
+Text GLabel 4800 4050 2    60   Input ~ 0
+RGB
+NoConn ~ 4800 4750
+NoConn ~ 4800 5950
 $EndSCHEMATC

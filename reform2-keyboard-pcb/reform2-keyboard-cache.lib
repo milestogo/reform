@@ -24,304 +24,6 @@ X Pin_4 4 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_USB_C_Receptacle_USB2.0
-#
-DEF Connector_USB_C_Receptacle_USB2.0 J 0 40 Y Y 1 F N
-F0 "J" -400 750 50 H V L CNN
-F1 "Connector_USB_C_Receptacle_USB2.0" 750 750 50 H V R CNN
-F2 "" 150 0 50 H I C CNN
-F3 "" 150 0 50 H I C CNN
-$FPLIST
- USB*C*Receptacle*
-$ENDFPLIST
-DRAW
-A -275 -150 75 -1799 -1 0 1 20 N -350 -150 -200 -150
-A -275 -150 25 -1799 -1 0 1 10 N -300 -150 -250 -150
-A -275 -150 25 -1799 -1 0 1 10 F -300 -150 -250 -150
-A -275 150 25 1 1799 0 1 10 F -250 150 -300 150
-A -275 150 25 1 1799 0 1 10 N -250 150 -300 150
-A -275 150 75 1 1799 0 1 20 N -200 150 -350 150
-C -100 45 25 0 1 10 F
-C 0 -230 50 0 1 0 F
-S -10 -700 10 -660 0 0 0 N
-S 400 -590 360 -610 0 0 0 N
-S 400 -490 360 -510 0 0 0 N
-S 400 -190 360 -210 0 0 0 N
-S 400 -90 360 -110 0 0 0 N
-S 400 10 360 -10 0 0 0 N
-S 400 110 360 90 0 0 0 N
-S 400 310 360 290 0 0 0 N
-S 400 410 360 390 0 0 0 N
-S 400 610 360 590 0 0 0 N
-S -400 700 400 -700 0 1 10 f
-S -300 -150 -250 150 0 1 10 F
-S 75 70 125 120 0 1 10 F
-P 2 0 1 20 -350 -150 -350 150 N
-P 2 0 1 20 -200 150 -200 -150 N
-P 2 0 1 20 0 -230 0 170 N
-P 3 0 1 20 0 -130 -100 -30 -100 20 N
-P 3 0 1 20 0 -80 100 20 100 70 N
-P 4 0 1 10 -50 170 0 270 50 170 -50 170 F
-X GND A1 0 -900 200 U 50 50 1 1 W
-X GND A12 0 -900 200 U 50 50 1 1 P N
-X VBUS A4 600 600 200 L 50 50 1 1 W
-X CC1 A5 600 400 200 L 50 50 1 1 B
-X D+ A6 600 -100 200 L 50 50 1 1 B
-X D- A7 600 100 200 L 50 50 1 1 B
-X SBU1 A8 600 -500 200 L 50 50 1 1 B
-X VBUS A9 600 600 200 L 50 50 1 1 P N
-X GND B1 0 -900 200 U 50 50 1 1 P N
-X GND B12 0 -900 200 U 50 50 1 1 P N
-X VBUS B4 600 600 200 L 50 50 1 1 P N
-X CC2 B5 600 300 200 L 50 50 1 1 B
-X D+ B6 600 -200 200 L 50 50 1 1 B
-X D- B7 600 0 200 L 50 50 1 1 B
-X SBU2 B8 600 -600 200 L 50 50 1 1 B
-X VBUS B9 600 600 200 L 50 50 1 1 P N
-X SHIELD S1 -300 -900 200 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_C_Small
-#
-DEF Device_C_Small C 0 10 N N 1 F N
-F0 "C" 10 70 50 H V L CNN
-F1 "Device_C_Small" 10 -80 50 H V L CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- C_*
-$ENDFPLIST
-DRAW
-P 2 0 1 13 -60 -20 60 -20 N
-P 2 0 1 12 -60 20 60 20 N
-X ~ 1 0 100 80 D 50 50 1 1 P
-X ~ 2 0 -100 80 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_Crystal_GND24
-#
-DEF Device_Crystal_GND24 Y 0 40 Y N 1 F N
-F0 "Y" 125 200 50 H V L CNN
-F1 "Device_Crystal_GND24" 125 125 50 H V L CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Crystal*
-$ENDFPLIST
-DRAW
-S -45 100 45 -100 0 1 12 N
-P 2 0 1 0 -100 0 -80 0 N
-P 2 0 1 20 -80 -50 -80 50 N
-P 2 0 1 0 0 -150 0 -140 N
-P 2 0 1 0 0 140 0 150 N
-P 2 0 1 20 80 -50 80 50 N
-P 2 0 1 0 80 0 100 0 N
-P 4 0 1 0 -100 -90 -100 -140 100 -140 100 -90 N
-P 4 0 1 0 -100 90 -100 140 100 140 100 90 N
-X 1 1 -150 0 50 R 50 50 1 1 P
-X 2 2 0 200 50 D 50 50 1 1 P
-X 3 3 150 0 50 L 50 50 1 1 P
-X 4 4 0 -200 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_D_Schottky_Small
-#
-DEF Device_D_Schottky_Small D 0 10 N N 1 F N
-F0 "D" -50 80 50 H V L CNN
-F1 "Device_D_Schottky_Small" -280 -80 50 H V L CNN
-F2 "" 0 0 50 V I C CNN
-F3 "" 0 0 50 V I C CNN
-$FPLIST
- TO-???*
- *_Diode_*
- *SingleDiode*
- D_*
-$ENDFPLIST
-DRAW
-P 2 0 1 0 -30 -40 -30 40 N
-P 2 0 1 0 -30 0 30 0 N
-P 3 0 1 0 -30 -40 -20 -40 -20 -30 N
-P 3 0 1 0 -30 40 -40 40 -40 30 N
-P 4 0 1 0 30 -40 -30 0 30 40 30 -40 N
-X K 1 -100 0 70 R 50 50 1 1 P
-X A 2 100 0 70 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_D_Small
-#
-DEF Device_D_Small D 0 10 N N 1 F N
-F0 "D" -50 80 50 H V L CNN
-F1 "Device_D_Small" -150 -80 50 H V L CNN
-F2 "" 0 0 50 V I C CNN
-F3 "" 0 0 50 V I C CNN
-$FPLIST
- TO-???*
- *_Diode_*
- *SingleDiode*
- D_*
-$ENDFPLIST
-DRAW
-P 2 0 1 0 -30 -40 -30 40 N
-P 2 0 1 0 -30 0 30 0 N
-P 4 0 1 0 30 -40 -30 0 30 40 30 -40 N
-X K 1 -100 0 70 R 50 50 1 1 P
-X A 2 100 0 70 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_LED_Small
-#
-DEF Device_LED_Small D 0 10 N N 1 F N
-F0 "D" -50 125 50 H V L CNN
-F1 "Device_LED_Small" -175 -100 50 H V L CNN
-F2 "" 0 0 50 V I C CNN
-F3 "" 0 0 50 V I C CNN
-$FPLIST
- LED*
- LED_SMD:*
- LED_THT:*
-$ENDFPLIST
-DRAW
-P 2 0 1 0 -30 -40 -30 40 N
-P 2 0 1 0 40 0 -30 0 N
-P 4 0 1 0 30 -40 -30 0 30 40 30 -40 N
-P 5 0 1 0 0 30 -20 50 -10 50 -20 50 -20 40 N
-P 5 0 1 0 20 50 0 70 10 70 0 70 0 60 N
-X K 1 -100 0 70 R 50 50 1 1 P
-X A 2 100 0 70 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_L_Small
-#
-DEF Device_L_Small L 0 10 N N 1 F N
-F0 "L" 30 40 50 H V L CNN
-F1 "Device_L_Small" 30 -40 50 H V L CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Choke_*
- *Coil*
- Inductor_*
- L_*
-$ENDFPLIST
-DRAW
-A 0 -60 20 -899 899 0 1 0 N 0 -80 0 -40
-A 0 -20 20 -899 899 0 1 0 N 0 -40 0 0
-A 0 20 20 -899 899 0 1 0 N 0 0 0 40
-A 0 60 20 -899 899 0 1 0 N 0 40 0 80
-X ~ 1 0 100 20 D 50 50 1 1 P
-X ~ 2 0 -100 20 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_R_Small
-#
-DEF Device_R_Small R 0 10 N N 1 F N
-F0 "R" 30 20 50 H V L CNN
-F1 "Device_R_Small" 30 -40 50 H V L CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- R_*
-$ENDFPLIST
-DRAW
-S -30 70 30 -70 0 1 8 N
-X ~ 1 0 100 30 D 50 50 1 1 P
-X ~ 2 0 -100 30 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Mechanical_MountingHole
-#
-DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
-F0 "H" 0 200 50 H V C CNN
-F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- MountingHole*
-$ENDFPLIST
-DRAW
-C 0 0 50 0 1 50 N
-ENDDRAW
-ENDDEF
-#
-# Mechanical_MountingHole_Pad
-#
-DEF Mechanical_MountingHole_Pad H 0 40 N N 1 F N
-F0 "H" 0 250 50 H V C CNN
-F1 "Mechanical_MountingHole_Pad" 0 175 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- MountingHole*Pad*
-$ENDFPLIST
-DRAW
-C 0 50 50 0 1 50 N
-X 1 1 0 -100 100 U 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# Regulator_Linear_MCP1700-3302E_SOT23
-#
-DEF Regulator_Linear_MCP1700-3302E_SOT23 U 0 10 Y Y 1 F N
-F0 "U" -150 125 50 H V C CNN
-F1 "Regulator_Linear_MCP1700-3302E_SOT23" 0 125 50 H V L CNN
-F2 "Package_TO_SOT_SMD:SOT-23" 0 225 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-ALIAS MCP1700-1202E_SOT23 MCP1700-1802E_SOT23 MCP1700-2502E_SOT23 MCP1700-2802E_SOT23 MCP1700-3302E_SOT23 MCP1700-5002E_SOT23
-$FPLIST
- SOT?23*
-$ENDFPLIST
-DRAW
-S -200 75 200 -200 0 1 10 f
-X GND 1 0 -300 100 U 50 50 1 1 W
-X VO 2 300 0 100 L 50 50 1 1 w
-X VI 3 -300 0 100 R 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
-# Switch_SW_DIP_x01
-#
-DEF Switch_SW_DIP_x01 SW 0 0 Y N 1 F N
-F0 "SW" 0 150 50 H V C CNN
-F1 "Switch_SW_DIP_x01" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- SW?DIP?x1*
-$ENDFPLIST
-DRAW
-C -80 0 20 0 0 0 N
-C 80 0 20 0 0 0 N
-S -150 100 150 -100 0 1 10 f
-P 2 0 0 0 -60 5 93 46 N
-X ~ 1 -300 0 200 R 50 50 1 1 P
-X ~ 2 300 0 200 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Switch_SW_SPST
-#
-DEF Switch_SW_SPST SW 0 0 Y N 1 F N
-F0 "SW" 0 125 50 H V C CNN
-F1 "Switch_SW_SPST" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-C -80 0 20 0 0 0 N
-C 80 0 20 0 0 0 N
-P 2 0 0 0 -60 10 60 70 N
-X A 1 -200 0 100 R 50 50 1 1 P
-X B 2 200 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # mntcomp-keyboard_Choc
 #
 DEF mntcomp-keyboard_Choc SW 0 40 N N 1 F N
@@ -487,6 +189,303 @@ X UCAP 6 -600 200 100 R 50 50 1 1 P
 X VBUS 7 -600 700 100 R 50 50 1 1 I
 X PB0 8 600 1500 100 L 50 50 1 1 T
 X PB1 9 600 1400 100 L 50 50 1 1 T
+ENDDRAW
+ENDDEF
+#
+# reform2-keyboard-rescue_C_Small-Device
+#
+DEF reform2-keyboard-rescue_C_Small-Device C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "reform2-keyboard-rescue_C_Small-Device" 10 -80 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 13 -60 -20 60 -20 N
+P 2 0 1 12 -60 20 60 20 N
+X ~ 1 0 100 80 D 50 50 1 1 P
+X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# reform2-keyboard-rescue_Crystal_GND24-Device
+#
+DEF reform2-keyboard-rescue_Crystal_GND24-Device Y 0 40 Y N 1 F N
+F0 "Y" 125 200 50 H V L CNN
+F1 "reform2-keyboard-rescue_Crystal_GND24-Device" 125 125 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Crystal*
+$ENDFPLIST
+DRAW
+S -45 100 45 -100 0 1 12 N
+P 2 0 1 0 -100 0 -80 0 N
+P 2 0 1 20 -80 -50 -80 50 N
+P 2 0 1 0 0 -150 0 -140 N
+P 2 0 1 0 0 140 0 150 N
+P 2 0 1 20 80 -50 80 50 N
+P 2 0 1 0 80 0 100 0 N
+P 4 0 1 0 -100 -90 -100 -140 100 -140 100 -90 N
+P 4 0 1 0 -100 90 -100 140 100 140 100 90 N
+X 1 1 -150 0 50 R 50 50 1 1 P
+X 2 2 0 200 50 D 50 50 1 1 P
+X 3 3 150 0 50 L 50 50 1 1 P
+X 4 4 0 -200 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# reform2-keyboard-rescue_D_Schottky_Small-Device
+#
+DEF reform2-keyboard-rescue_D_Schottky_Small-Device D 0 10 N N 1 F N
+F0 "D" -50 80 50 H V L CNN
+F1 "reform2-keyboard-rescue_D_Schottky_Small-Device" -280 -80 50 H V L CNN
+F2 "" 0 0 50 V I C CNN
+F3 "" 0 0 50 V I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 -30 -40 -30 40 N
+P 2 0 1 0 -30 0 30 0 N
+P 3 0 1 0 -30 -40 -20 -40 -20 -30 N
+P 3 0 1 0 -30 40 -40 40 -40 30 N
+P 4 0 1 0 30 -40 -30 0 30 40 30 -40 N
+X K 1 -100 0 70 R 50 50 1 1 P
+X A 2 100 0 70 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# reform2-keyboard-rescue_D_Small-Device
+#
+DEF reform2-keyboard-rescue_D_Small-Device D 0 10 N N 1 F N
+F0 "D" -50 80 50 H V L CNN
+F1 "reform2-keyboard-rescue_D_Small-Device" -150 -80 50 H V L CNN
+F2 "" 0 0 50 V I C CNN
+F3 "" 0 0 50 V I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 -30 -40 -30 40 N
+P 2 0 1 0 -30 0 30 0 N
+P 4 0 1 0 30 -40 -30 0 30 40 30 -40 N
+X K 1 -100 0 70 R 50 50 1 1 P
+X A 2 100 0 70 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# reform2-keyboard-rescue_LED_Small-Device
+#
+DEF reform2-keyboard-rescue_LED_Small-Device D 0 10 N N 1 F N
+F0 "D" -50 125 50 H V L CNN
+F1 "reform2-keyboard-rescue_LED_Small-Device" -175 -100 50 H V L CNN
+F2 "" 0 0 50 V I C CNN
+F3 "" 0 0 50 V I C CNN
+$FPLIST
+ LED*
+ LED_SMD:*
+ LED_THT:*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 -30 -40 -30 40 N
+P 2 0 1 0 40 0 -30 0 N
+P 4 0 1 0 30 -40 -30 0 30 40 30 -40 N
+P 5 0 1 0 0 30 -20 50 -10 50 -20 50 -20 40 N
+P 5 0 1 0 20 50 0 70 10 70 0 70 0 60 N
+X K 1 -100 0 70 R 50 50 1 1 P
+X A 2 100 0 70 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# reform2-keyboard-rescue_L_Small-Device
+#
+DEF reform2-keyboard-rescue_L_Small-Device L 0 10 N N 1 F N
+F0 "L" 30 40 50 H V L CNN
+F1 "reform2-keyboard-rescue_L_Small-Device" 30 -40 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Choke_*
+ *Coil*
+ Inductor_*
+ L_*
+$ENDFPLIST
+DRAW
+A 0 -60 20 -899 899 0 1 0 N 0 -80 0 -40
+A 0 -20 20 -899 899 0 1 0 N 0 -40 0 0
+A 0 20 20 -899 899 0 1 0 N 0 0 0 40
+A 0 60 20 -899 899 0 1 0 N 0 40 0 80
+X ~ 1 0 100 20 D 50 50 1 1 P
+X ~ 2 0 -100 20 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# reform2-keyboard-rescue_MCP1700-3302E_SOT23-Regulator_Linear
+#
+DEF reform2-keyboard-rescue_MCP1700-3302E_SOT23-Regulator_Linear U 0 10 Y Y 1 F N
+F0 "U" -150 125 50 H V C CNN
+F1 "reform2-keyboard-rescue_MCP1700-3302E_SOT23-Regulator_Linear" 0 125 50 H V L CNN
+F2 "Package_TO_SOT_SMD:SOT-23" 0 225 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SOT?23*
+$ENDFPLIST
+DRAW
+S -200 75 200 -200 0 1 10 f
+X GND 1 0 -300 100 U 50 50 1 1 W
+X VO 2 300 0 100 L 50 50 1 1 w
+X VI 3 -300 0 100 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# reform2-keyboard-rescue_MountingHole-Mechanical
+#
+DEF reform2-keyboard-rescue_MountingHole-Mechanical H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "reform2-keyboard-rescue_MountingHole-Mechanical" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
+# reform2-keyboard-rescue_MountingHole_Pad-Mechanical
+#
+DEF reform2-keyboard-rescue_MountingHole_Pad-Mechanical H 0 40 N N 1 F N
+F0 "H" 0 250 50 H V C CNN
+F1 "reform2-keyboard-rescue_MountingHole_Pad-Mechanical" 0 175 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*Pad*
+$ENDFPLIST
+DRAW
+C 0 50 50 0 1 50 N
+X 1 1 0 -100 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# reform2-keyboard-rescue_R_Small-Device
+#
+DEF reform2-keyboard-rescue_R_Small-Device R 0 10 N N 1 F N
+F0 "R" 30 20 50 H V L CNN
+F1 "reform2-keyboard-rescue_R_Small-Device" 30 -40 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -30 70 30 -70 0 1 8 N
+X ~ 1 0 100 30 D 50 50 1 1 P
+X ~ 2 0 -100 30 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# reform2-keyboard-rescue_SW_DIP_x01-Switch
+#
+DEF reform2-keyboard-rescue_SW_DIP_x01-Switch SW 0 0 Y N 1 F N
+F0 "SW" 0 150 50 H V C CNN
+F1 "reform2-keyboard-rescue_SW_DIP_x01-Switch" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SW?DIP?x1*
+$ENDFPLIST
+DRAW
+C -80 0 20 0 0 0 N
+C 80 0 20 0 0 0 N
+S -150 100 150 -100 0 1 10 f
+P 2 0 0 0 -60 5 93 46 N
+X ~ 1 -300 0 200 R 50 50 1 1 P
+X ~ 2 300 0 200 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# reform2-keyboard-rescue_SW_SPST-Switch
+#
+DEF reform2-keyboard-rescue_SW_SPST-Switch SW 0 0 Y N 1 F N
+F0 "SW" 0 125 50 H V C CNN
+F1 "reform2-keyboard-rescue_SW_SPST-Switch" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -80 0 20 0 0 0 N
+C 80 0 20 0 0 0 N
+P 2 0 0 0 -60 10 60 70 N
+X A 1 -200 0 100 R 50 50 1 1 P
+X B 2 200 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# reform2-keyboard-rescue_USB_C_Receptacle_USB2.0-Connector
+#
+DEF reform2-keyboard-rescue_USB_C_Receptacle_USB2.0-Connector J 0 40 Y Y 1 F N
+F0 "J" -400 750 50 H V L CNN
+F1 "reform2-keyboard-rescue_USB_C_Receptacle_USB2.0-Connector" 750 750 50 H V R CNN
+F2 "" 150 0 50 H I C CNN
+F3 "" 150 0 50 H I C CNN
+$FPLIST
+ USB*C*Receptacle*
+$ENDFPLIST
+DRAW
+A -275 -150 75 -1799 -1 0 1 20 N -350 -150 -200 -150
+A -275 -150 25 -1799 -1 0 1 10 N -300 -150 -250 -150
+A -275 -150 25 -1799 -1 0 1 10 F -300 -150 -250 -150
+A -275 150 25 1 1799 0 1 10 F -250 150 -300 150
+A -275 150 25 1 1799 0 1 10 N -250 150 -300 150
+A -275 150 75 1 1799 0 1 20 N -200 150 -350 150
+C -100 45 25 0 1 10 F
+C 0 -230 50 0 1 0 F
+S -10 -700 10 -660 0 0 0 N
+S 400 -590 360 -610 0 0 0 N
+S 400 -490 360 -510 0 0 0 N
+S 400 -190 360 -210 0 0 0 N
+S 400 -90 360 -110 0 0 0 N
+S 400 10 360 -10 0 0 0 N
+S 400 110 360 90 0 0 0 N
+S 400 310 360 290 0 0 0 N
+S 400 410 360 390 0 0 0 N
+S 400 610 360 590 0 0 0 N
+S -400 700 400 -700 0 1 10 f
+S -300 -150 -250 150 0 1 10 F
+S 75 70 125 120 0 1 10 F
+P 2 0 1 20 -350 -150 -350 150 N
+P 2 0 1 20 -200 150 -200 -150 N
+P 2 0 1 20 0 -230 0 170 N
+P 3 0 1 20 0 -130 -100 -30 -100 20 N
+P 3 0 1 20 0 -80 100 20 100 70 N
+P 4 0 1 10 -50 170 0 270 50 170 -50 170 F
+X GND A1 0 -900 200 U 50 50 1 1 W
+X GND A12 0 -900 200 U 50 50 1 1 P N
+X VBUS A4 600 600 200 L 50 50 1 1 W
+X CC1 A5 600 400 200 L 50 50 1 1 B
+X D+ A6 600 -100 200 L 50 50 1 1 B
+X D- A7 600 100 200 L 50 50 1 1 B
+X SBU1 A8 600 -500 200 L 50 50 1 1 B
+X VBUS A9 600 600 200 L 50 50 1 1 P N
+X GND B1 0 -900 200 U 50 50 1 1 P N
+X GND B12 0 -900 200 U 50 50 1 1 P N
+X VBUS B4 600 600 200 L 50 50 1 1 P N
+X CC2 B5 600 300 200 L 50 50 1 1 B
+X D+ B6 600 -200 200 L 50 50 1 1 B
+X D- B7 600 0 200 L 50 50 1 1 B
+X SBU2 B8 600 -600 200 L 50 50 1 1 B
+X VBUS B9 600 600 200 L 50 50 1 1 P N
+X SHIELD S1 -300 -900 200 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
