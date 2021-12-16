@@ -1092,6 +1092,7 @@ Wire Wire Line
 	10200 4150 10200 4050
 Text GLabel 4800 4050 2    60   Input ~ 0
 RGB
-NoConn ~ 4800 4750
 NoConn ~ 4800 5950
+Text GLabel 4800 4750 2    60   Input ~ 0
+ROW6
 $EndSCHEMATC

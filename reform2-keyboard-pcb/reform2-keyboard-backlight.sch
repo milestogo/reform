@@ -702,86 +702,6 @@ F 5 "LW Q38E-Q2OO-3K5L" H 7450 3200 50  0001 C CNN "Manufacturer_No"
 	1    7450 3200
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	7850 1700 7850 1650
-$Comp
-L reform2-keyboard-rescue:LED_Small-Device D126
-U 1 1 5E69CF48
-P 7850 2200
-F 0 "D126" V 7896 2132 50  0000 R CNN
-F 1 "WLED" V 7805 2132 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" V 7850 2200 50  0001 C CNN
-F 3 "~" V 7850 2200 50  0001 C CNN
-F 4 "OSRAM" H 7850 2200 50  0001 C CNN "Manufacturer"
-F 5 "LW Q38E-Q2OO-3K5L" H 7850 2200 50  0001 C CNN "Manufacturer_No"
-	1    7850 2200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L reform2-keyboard-rescue:LED_Small-Device D127
-U 1 1 5E69CF52
-P 7850 2400
-F 0 "D127" V 7896 2332 50  0000 R CNN
-F 1 "WLED" V 7805 2332 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" V 7850 2400 50  0001 C CNN
-F 3 "~" V 7850 2400 50  0001 C CNN
-F 4 "OSRAM" H 7850 2400 50  0001 C CNN "Manufacturer"
-F 5 "LW Q38E-Q2OO-3K5L" H 7850 2400 50  0001 C CNN "Manufacturer_No"
-	1    7850 2400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L reform2-keyboard-rescue:LED_Small-Device D128
-U 1 1 5E69CF5C
-P 7850 2600
-F 0 "D128" V 7896 2532 50  0000 R CNN
-F 1 "WLED" V 7805 2532 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" V 7850 2600 50  0001 C CNN
-F 3 "~" V 7850 2600 50  0001 C CNN
-F 4 "OSRAM" H 7850 2600 50  0001 C CNN "Manufacturer"
-F 5 "LW Q38E-Q2OO-3K5L" H 7850 2600 50  0001 C CNN "Manufacturer_No"
-	1    7850 2600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L reform2-keyboard-rescue:LED_Small-Device D129
-U 1 1 5E69CF66
-P 7850 2800
-F 0 "D129" V 7896 2732 50  0000 R CNN
-F 1 "WLED" V 7805 2732 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" V 7850 2800 50  0001 C CNN
-F 3 "~" V 7850 2800 50  0001 C CNN
-F 4 "OSRAM" H 7850 2800 50  0001 C CNN "Manufacturer"
-F 5 "LW Q38E-Q2OO-3K5L" H 7850 2800 50  0001 C CNN "Manufacturer_No"
-	1    7850 2800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L reform2-keyboard-rescue:LED_Small-Device D130
-U 1 1 5E69CF70
-P 7850 3000
-F 0 "D130" V 7896 2932 50  0000 R CNN
-F 1 "WLED" V 7805 2932 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" V 7850 3000 50  0001 C CNN
-F 3 "~" V 7850 3000 50  0001 C CNN
-F 4 "OSRAM" H 7850 3000 50  0001 C CNN "Manufacturer"
-F 5 "LW Q38E-Q2OO-3K5L" H 7850 3000 50  0001 C CNN "Manufacturer_No"
-	1    7850 3000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L reform2-keyboard-rescue:LED_Small-Device D131
-U 1 1 5E69CF7A
-P 7850 3200
-F 0 "D131" V 7896 3132 50  0000 R CNN
-F 1 "WLED" V 7805 3132 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" V 7850 3200 50  0001 C CNN
-F 3 "~" V 7850 3200 50  0001 C CNN
-F 4 "OSRAM" H 7850 3200 50  0001 C CNN "Manufacturer"
-F 5 "LW Q38E-Q2OO-3K5L" H 7850 3200 50  0001 C CNN "Manufacturer_No"
-	1    7850 3200
-	0    -1   -1   0   
-$EndComp
 $Comp
 L reform2-keyboard-rescue:LED_Small-Device D134
 U 1 1 5E6A3974
@@ -977,11 +897,6 @@ Connection ~ 7050 1650
 Wire Wire Line
 	7050 1650 7450 1650
 Connection ~ 7450 1650
-Wire Wire Line
-	7450 1650 7850 1650
-Connection ~ 7850 1650
-Wire Wire Line
-	7850 1650 8250 1650
 Connection ~ 8250 1650
 Wire Wire Line
 	8250 1650 8650 1650
@@ -991,8 +906,6 @@ Wire Wire Line
 	7050 3700 7050 4100
 Wire Wire Line
 	7450 3700 7450 4250
-Wire Wire Line
-	7850 3700 7850 4400
 Wire Wire Line
 	8250 3700 8250 4550
 Text Notes 3100 3550 0    60   ~ 0
@@ -1151,32 +1064,6 @@ F 5 "LW Q38E-Q2OO-3K5L" H 7450 3600 50  0001 C CNN "Manufacturer_No"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L reform2-keyboard-rescue:LED_Small-Device D132
-U 1 1 5E819D55
-P 7850 3400
-F 0 "D132" V 7896 3332 50  0000 R CNN
-F 1 "WLED" V 7805 3332 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" V 7850 3400 50  0001 C CNN
-F 3 "~" V 7850 3400 50  0001 C CNN
-F 4 "OSRAM" H 7850 3400 50  0001 C CNN "Manufacturer"
-F 5 "LW Q38E-Q2OO-3K5L" H 7850 3400 50  0001 C CNN "Manufacturer_No"
-	1    7850 3400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L reform2-keyboard-rescue:LED_Small-Device D133
-U 1 1 5E819D5F
-P 7850 3600
-F 0 "D133" V 7896 3532 50  0000 R CNN
-F 1 "WLED" V 7805 3532 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" V 7850 3600 50  0001 C CNN
-F 3 "~" V 7850 3600 50  0001 C CNN
-F 4 "OSRAM" H 7850 3600 50  0001 C CNN "Manufacturer"
-F 5 "LW Q38E-Q2OO-3K5L" H 7850 3600 50  0001 C CNN "Manufacturer_No"
-	1    7850 3600
-	0    -1   -1   0   
-$EndComp
-$Comp
 L reform2-keyboard-rescue:LED_Small-Device D142
 U 1 1 5E819D69
 P 8250 3400
@@ -1221,32 +1108,6 @@ Wire Wire Line
 	4350 5250 4350 5100
 Wire Wire Line
 	8650 3700 8650 4700
-$Comp
-L reform2-keyboard-rescue:LED_Small-Device D125
-U 1 1 5E69CF3E
-P 7850 2000
-F 0 "D125" V 7896 1932 50  0000 R CNN
-F 1 "WLED" V 7805 1932 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" V 7850 2000 50  0001 C CNN
-F 3 "~" V 7850 2000 50  0001 C CNN
-F 4 "OSRAM" H 7850 2000 50  0001 C CNN "Manufacturer"
-F 5 "LW Q38E-Q2OO-3K5L" H 7850 2000 50  0001 C CNN "Manufacturer_No"
-	1    7850 2000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L reform2-keyboard-rescue:LED_Small-Device D124
-U 1 1 5E69CF33
-P 7850 1800
-F 0 "D124" V 7896 1732 50  0000 R CNN
-F 1 "WLED" V 7805 1732 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" V 7850 1800 50  0001 C CNN
-F 3 "~" V 7850 1800 50  0001 C CNN
-F 4 "OSRAM" H 7850 1800 50  0001 C CNN "Manufacturer"
-F 5 "LW Q38E-Q2OO-3K5L" H 7850 1800 50  0001 C CNN "Manufacturer_No"
-	1    7850 1800
-	0    -1   -1   0   
-$EndComp
 $Comp
 L reform2-keyboard-rescue:LED_Small-Device D97
 U 1 1 5E69363F
@@ -1357,8 +1218,6 @@ Wire Wire Line
 Wire Wire Line
 	5000 4550 8250 4550
 Wire Wire Line
-	7850 4400 5000 4400
-Wire Wire Line
 	5000 4250 7450 4250
 Wire Wire Line
 	7050 4100 5000 4100
@@ -1381,4 +1240,7 @@ F 5 "TPS61185RGET" H 4350 3700 50  0001 C CNN "Manufacturer_No"
 	1    4350 3700
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7450 1650 8250 1650
+NoConn ~ 5000 4400
 $EndSCHEMATC
