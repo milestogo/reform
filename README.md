@@ -1,3 +1,8 @@
+#MNT keyboard remix
+See keyboard-pcb for remix
+
+
+
 # MNT Reform
 
 This is the main repository for the MNT Reform open source laptop.

@@ -62,8 +62,8 @@
       35,
       36
     ],
-    "visible_layers": "000feac_7ffffffe",
-    "zone_display_mode": 1
+    "visible_layers": "000febc_ffffffff",
+    "zone_display_mode": 0
   },
   "meta": {
     "filename": "reform2-keyboard.kicad_prl",
