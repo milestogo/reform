@@ -3,5 +3,5 @@
   (lib (name "SSD1306_OLED-0.91-128x32")(type "Legacy")(uri "${KIPRJMOD}/KiCad-SSD1306_OLED-0.91-128x32/SSD1306_OLED-0.91-128x32.lib")(options "")(descr "")(disabled))
   (lib (name "reform2-keyboard-rescue")(type "Legacy")(uri "${KIPRJMOD}/reform2-keyboard-rescue.lib")(options "")(descr ""))
   (lib (name "keebio")(type "Legacy")(uri "${KIPRJMOD}/keebio-components/keebio.lib")(options "")(descr ""))
-  (lib (name "teensy")(type "Legacy")(uri "${KIPRJMOD}/teensy_library/teensy.lib")(options "")(descr ""))
+  (lib (name "itsybitsy32u4")(type "KiCad")(uri "${KIPRJMOD}/itsybitsy32u4.kicad_sym")(options "")(descr ""))
 )

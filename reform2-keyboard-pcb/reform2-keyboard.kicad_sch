@@ -4584,9 +4584,6 @@
     (path "/00000000-0000-0000-0000-00005a2069ae/495d619c-cde1-487d-9db8-a9076eaef3a4"
       (reference "#FLG0101") (unit 1) (value "PWR_FLAG") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005a2069ae/00000000-0000-0000-0000-00005cf3fa6d"
-      (reference "#PWR01") (unit 1) (value "GND") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-00005a2069ae/00000000-0000-0000-0000-00005cfb0132"
       (reference "#PWR04") (unit 1) (value "GND") (footprint "")
     )
@@ -4614,14 +4611,11 @@
     (path "/00000000-0000-0000-0000-00005e649921/00000000-0000-0000-0000-00005e677c56"
       (reference "#PWR021") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005a2069ae/9a79ec92-7cb7-4988-bf7a-65c0a76317f6"
-      (reference "#PWR0102") (unit 1) (value "+3V3") (footprint "")
+    (path "/00000000-0000-0000-0000-00005a2069ae/206820e5-b091-49f2-9ede-cbf44f3803e1"
+      (reference "#PWR0101") (unit 1) (value "+3V3") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005a2069ae/8fc8b3f6-3283-498e-9c4f-12974adf0afe"
       (reference "#PWR0103") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00005a2069ae/f52aa1dd-c2e2-4ba8-90f1-5dcf0a4312f7"
-      (reference "#PWR0104") (unit 1) (value "+3V3") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005a2069ae/bb3cc2e9-0754-4134-a574-40949073c010"
       (reference "#PWR0105") (unit 1) (value "GND") (footprint "")
@@ -4664,9 +4658,6 @@
     )
     (path "/00000000-0000-0000-0000-00005e649921/2934692a-ac20-47b0-a5fb-0f67cd198ce9"
       (reference "#PWR0118") (unit 1) (value "+5V") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00005a2069ae/1dcffa3c-2dc2-4285-bd42-361a6c29e85f"
-      (reference "#PWR0119") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005e649921/be2d4ecd-12e2-4f3f-a7bb-78a14dca0dfe"
       (reference "#PWR0122") (unit 1) (value "GND") (footprint "")
@@ -4730,15 +4721,6 @@
     )
     (path "/00000000-0000-0000-0000-00005e649921/c72fbf7b-3cb6-4eb5-858f-569c850a65c1"
       (reference "#PWR0147") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00005a2069ae/59fc9750-4ba9-45d2-829e-6d727aab82ed"
-      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00005a2069ae/ee5f5223-c252-4663-9147-334b0d8e25e8"
-      (reference "C1") (unit 1) (value "1uF") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
-    )
-    (path "/00000000-0000-0000-0000-00005a2069ae/5b776867-cdce-478c-9dc5-c459c2f4179e"
-      (reference "C2") (unit 1) (value "1uF") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-00005e649921/00000000-0000-0000-0000-00005e6768bb"
       (reference "C100") (unit 1) (value "1uF") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
@@ -5259,17 +5241,8 @@
     (path "/00000000-0000-0000-0000-000061d0e6c7"
       (reference "SW73") (unit 1) (value "Choc") (footprint "keyswitches:PG1350")
     )
-    (path "/00000000-0000-0000-0000-00005a2069ae/00000000-0000-0000-0000-00005cf3da9e"
-      (reference "SW83") (unit 1) (value "RESET") (footprint "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2")
-    )
-    (path "/00000000-0000-0000-0000-00005a2069ae/a20e2d60-9a8f-467b-a31d-ec0d52abb287"
-      (reference "SW84") (unit 1) (value "SW_DIP_x01") (footprint "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_Omron_A6S-110x_W8.9mm_P2.54mm")
-    )
-    (path "/00000000-0000-0000-0000-00005a2069ae/5d4eb105-5ed6-4d58-bbfe-8d41c8995b0f"
-      (reference "U1") (unit 1) (value "Teensy2.0_(C)") (footprint "teensy:Teensy2.0")
-    )
-    (path "/00000000-0000-0000-0000-00005a2069ae/747f5873-4516-4318-8242-118fd02be52b"
-      (reference "U2") (unit 1) (value "MCP1700-1202E_TO92") (footprint "Package_TO_SOT_THT:TO-92_Inline")
+    (path "/00000000-0000-0000-0000-00005a2069ae/5eca0830-e9e8-48b5-9364-9ea18e004ab3"
+      (reference "U1") (unit 1) (value "itsy-32u4-3v3") (footprint "Itsybitsy32u4:ItsyBitsy-32u4")
     )
   )
 )

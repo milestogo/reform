@@ -3,5 +3,5 @@
   (lib (name "reform2-keyboard")(type "KiCad")(uri "${KIPRJMOD}/reform2-keyboard.pretty")(options "")(descr ""))
   (lib (name "KiCad-SSD1306_OLED-0")(type "KiCad")(uri "${KIPRJMOD}/KiCad-SSD1306_OLED-0.91-128x32")(options "")(descr ""))
   (lib (name "keebio")(type "KiCad")(uri "${KIPRJMOD}/Keebio-Parts.pretty")(options "")(descr ""))
-  (lib (name "teensy")(type "KiCad")(uri "${KIPRJMOD}/teensy.pretty")(options "")(descr ""))
+  (lib (name "Itsy Bitsy 32u4 3V")(type "KiCad")(uri "${KIPRJMOD}/itsybitsy-footprint/Itsy Bitsy 32u4 3V.pretty")(options "")(descr ""))
 )
