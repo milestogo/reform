@@ -4,6 +4,8 @@ This keyboard design is for educational purposes: for me to learn through experi
 Little remains of MNT's tested design. I have not tested. It may have dangerous or time-wasting errors. 
 
 
+![Front of PCB image](https://github.com/milestogo/reform/blob/ergo1-itsybitsy/reform2-keyboard-pcb/reform2-keyboard-ergo-front.png?raw=true "Front of PCB")
+
 Changes from MNT reform
 - Ergonomic key layout. 
 - Removed backlight
