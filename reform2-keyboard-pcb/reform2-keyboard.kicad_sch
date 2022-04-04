@@ -4575,14 +4575,14 @@
   )
 
   (symbol_instances
-    (path "/00000000-0000-0000-0000-00005a2069ae/00000000-0000-0000-0000-00005dc538f6"
-      (reference "#FLG01") (unit 1) (value "PWR_FLAG") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-00005a2069ae/00000000-0000-0000-0000-00005dc6e134"
       (reference "#FLG02") (unit 1) (value "PWR_FLAG") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005a2069ae/495d619c-cde1-487d-9db8-a9076eaef3a4"
       (reference "#FLG0101") (unit 1) (value "PWR_FLAG") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005a2069ae/734b6a1f-9a05-4f9c-aa23-e531d0a7c2c0"
+      (reference "#FLG0102") (unit 1) (value "PWR_FLAG") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005a2069ae/00000000-0000-0000-0000-00005cfb0132"
       (reference "#PWR04") (unit 1) (value "GND") (footprint "")
@@ -4614,6 +4614,9 @@
     (path "/00000000-0000-0000-0000-00005a2069ae/206820e5-b091-49f2-9ede-cbf44f3803e1"
       (reference "#PWR0101") (unit 1) (value "+3V3") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-00005a2069ae/d9a50018-f11c-481e-b0dd-b6744b2afeba"
+      (reference "#PWR0102") (unit 1) (value "GND") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-00005a2069ae/8fc8b3f6-3283-498e-9c4f-12974adf0afe"
       (reference "#PWR0103") (unit 1) (value "GND") (footprint "")
     )
@@ -4634,12 +4637,6 @@
     )
     (path "/00000000-0000-0000-0000-00005e649921/35bb28da-6bed-4d30-b817-73b520f81245"
       (reference "#PWR0110") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00005e649921/8bc5ddad-4a78-43f5-b40d-8548762827fa"
-      (reference "#PWR0111") (unit 1) (value "+5V") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00005e649921/2e1ee703-b743-427f-98c8-733cb6fc9e39"
-      (reference "#PWR0112") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005e649921/c7f6e5f3-fcf8-420a-9dc5-0405bd902c8a"
       (reference "#PWR0113") (unit 1) (value "GND") (footprint "")
@@ -4992,6 +4989,12 @@
     (path "/00000000-0000-0000-0000-00005e649921/8746642b-9032-48dd-81aa-557cf1a50564"
       (reference "D116") (unit 1) (value "WS2812B") (footprint "keebio:SK6812-MINI-E")
     )
+    (path "/00000000-0000-0000-0000-00005a2069ae/6c2dd628-6246-46f7-b03e-d5661252b6f5"
+      (reference "F1") (unit 1) (value "0ZCJ0075AF2E") (footprint "Resistor_SMD:R_1206_3216Metric")
+    )
+    (path "/00000000-0000-0000-0000-00005a2069ae/8ee37bb0-691d-4a67-a114-8a1ab6430206"
+      (reference "FB1") (unit 1) (value "FerriteBead") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+    )
     (path "/00000000-0000-0000-0000-00005a2069ae/00000000-0000-0000-0000-00005cfbb66e"
       (reference "GFX1") (unit 1) (value "MNT") (footprint "reform2-keyboard:mnt-remix-reform")
     )
@@ -5026,7 +5029,7 @@
       (reference "J3") (unit 1) (value "AUX") (footprint "Connector_FFC-FPC:Molex_200528-0040_1x04-1MP_P1.00mm_Horizontal")
     )
     (path "/00000000-0000-0000-0000-00005a2069ae/5b5e9141-c3e3-40c2-852f-c88e1a59ae95"
-      (reference "J4") (unit 1) (value "Desktop USB") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal")
+      (reference "J4") (unit 1) (value "MCU Airwire USB") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-00005e649921/fce1d445-2edd-4de8-bcb9-ec5b08b72435"
       (reference "J5") (unit 1) (value "Conn_01x03") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
@@ -5043,8 +5046,11 @@
     (path "/6f25fc7c-05d3-4a40-bd45-ef108a07b69c"
       (reference "J10") (unit 1) (value "Conn_01x06") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical")
     )
-    (path "/00000000-0000-0000-0000-00005e649921/7ff9d7ea-cfcf-42af-a9f0-baf57fb92662"
-      (reference "J100") (unit 1) (value "Conn_01x03") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
+    (path "/00000000-0000-0000-0000-00005e649921/2f467f40-c1c7-4678-b309-b0c274b5a57f"
+      (reference "J11") (unit 1) (value "Conn_01x01") (footprint "Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical")
+    )
+    (path "/00000000-0000-0000-0000-00005e649921/c148d6a2-b769-45c3-bba5-967203976bd7"
+      (reference "J12") (unit 1) (value "Conn_01x01") (footprint "Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-00005a2069ae/00000000-0000-0000-0000-00005dcce912"
       (reference "R5") (unit 1) (value "4.7k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
@@ -5241,8 +5247,14 @@
     (path "/00000000-0000-0000-0000-000061d0e6c7"
       (reference "SW73") (unit 1) (value "Choc") (footprint "keyswitches:PG1350")
     )
+    (path "/00000000-0000-0000-0000-00005a2069ae/26a5dc76-ff0b-44ff-bbf3-57dfe63a696c"
+      (reference "SW101") (unit 1) (value "SW_SPDT") (footprint "Button_Switch_THT:SW_Push_1P2T_Vertical_E-Switch_800UDP8P1A1M6")
+    )
     (path "/00000000-0000-0000-0000-00005a2069ae/5eca0830-e9e8-48b5-9364-9ea18e004ab3"
       (reference "U1") (unit 1) (value "itsy-32u4-3v3") (footprint "Itsybitsy32u4:ItsyBitsy-32u4")
+    )
+    (path "/00000000-0000-0000-0000-00005a2069ae/7cebf345-36ff-42ff-900e-b65862f64b73"
+      (reference "U3") (unit 1) (value "~") (footprint "Package_TO_SOT_SMD:SOT-23-6_Handsoldering")
     )
   )
 )
