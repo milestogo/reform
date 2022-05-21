@@ -14,7 +14,8 @@ Changes from MNT reform
 - Removed surface mount Atmega32u4 and related voltage chips (cost and chip shortages). Instead it uses the 3 volt Adafruit itsy bitsy. https://learn.adafruit.com/introducting-itsy-bitsy-32u4/pinouts
 you must hack a USB cable to connect the MCU  to the keyboard (see screenprint for "airwire"). 
 - Optional power off switch/jumper that can completly remove power to the keyboard.
-- lots of break out pins, so that it should be possible to use the PCB with other MCUs.  
+- Lots of break out pins, so that it should be possible to use the PCB with other MCUs.  
+- Desktop option for through hole OLED modules. Available from online retailers
 
 
 
